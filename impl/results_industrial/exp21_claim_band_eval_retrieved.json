@@ -1,0 +1,970 @@
+{
+  "schema": "mtp.claim-band-eval/1",
+  "generation": [
+    "results_industrial/exp21_claims.json"
+  ],
+  "retrieval_placement": "pre_rerank",
+  "arm": "rag_nogate",
+  "evidence_mode": null,
+  "n_claims_total": 315,
+  "n_claims_labelled": 297,
+  "n_claims_by_reference_source": {
+    "null": 18,
+    "judge_majority": 205,
+    "rule": 92
+  },
+  "annotator_agreement": {
+    "annotators": [
+      "judge_a_model",
+      "judge_b_model"
+    ],
+    "pairwise": {
+      "judge_a_model vs judge_b_model": {
+        "n_labelled_by_both": 314,
+        "cohens_kappa": 0.40036532713384254,
+        "ci95": [
+          0.31791046186196925,
+          0.48282019240571583
+        ],
+        "agreement_rate": 0.9267515923566879,
+        "crosstab": {
+          "supported | supported": 284,
+          "unsupported | supported": 8,
+          "partially_supported | supported": 6,
+          "unsupported | unsupported": 5,
+          "partially_supported | partially_supported": 2,
+          "partially_supported | contradicted": 3,
+          "supported | unsupported": 3,
+          "supported | partially_supported": 1,
+          "contradicted | supported": 1,
+          "supported | contradicted": 1
+        }
+      }
+    },
+    "n_contested_claims": 23,
+    "n_unlabelled_claims": 18
+  },
+  "agreement_3class": {
+    "n": 297,
+    "cohens_kappa": 0.008874276956543404,
+    "ci95": [
+      -0.07474790648830577,
+      0.09249646040139257
+    ],
+    "bands": [
+      "grounded",
+      "inferred",
+      "uncertain"
+    ],
+    "note": "reference mapped to a band: supported->grounded, partially_supported->inferred, unsupported/contradicted->uncertain"
+  },
+  "agreement_binary": {
+    "n": 297,
+    "cohens_kappa": 0.01746138347884509,
+    "ci95": [
+      -0.06631012970050343,
+      0.1012328966581936
+    ],
+    "note": "band==grounded against reference==supported"
+  },
+  "per_band": {
+    "grounded": {
+      "n": 162,
+      "n_correct": 161,
+      "error_rate": 0.006172839506172839,
+      "error_rate_ci95": [
+        0.0010904620285326905,
+        0.034133510726192307
+      ],
+      "correct_rate_ci95": [
+        0.9658664892738077,
+        0.9989095379714673
+      ],
+      "mean_support": 0.955438305709258
+    },
+    "inferred": {
+      "n": 58,
+      "n_correct": 57,
+      "error_rate": 0.017241379310344827,
+      "error_rate_ci95": [
+        0.0030499598845419307,
+        0.09141072677298334
+      ],
+      "correct_rate_ci95": [
+        0.9085892732270167,
+        0.9969500401154581
+      ],
+      "mean_support": 0.6332306211592255
+    },
+    "uncertain": {
+      "n": 77,
+      "n_correct": 75,
+      "error_rate": 0.025974025974025976,
+      "error_rate_ci95": [
+        0.007152009848138352,
+        0.08984755473247352
+      ],
+      "correct_rate_ci95": [
+        0.9101524452675265,
+        0.9928479901518616
+      ],
+      "mean_support": 0.1768984691813611
+    }
+  },
+  "value_test": {
+    "n_answers": 36,
+    "n_claims": 95,
+    "random_draws_per_answer": 100,
+    "bootstrap_unit": "answer (paired cluster bootstrap)",
+    "curves": {
+      "band": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.037,
+          "risk_ci95": [
+            0.0,
+            0.1111
+          ],
+          "n_answers": 27
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0556,
+          "risk_ci95": [
+            0.0139,
+            0.1111
+          ],
+          "n_answers": 36
+        }
+      ],
+      "random": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0685,
+          "risk_ci95": [
+            0.0148,
+            0.1333
+          ],
+          "n_answers": 27
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0556,
+          "risk_ci95": [
+            0.0139,
+            0.1111
+          ],
+          "n_answers": 36
+        }
+      ],
+      "shortest": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.1481,
+          "risk_ci95": [
+            0.037,
+            0.2963
+          ],
+          "n_answers": 27
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0556,
+          "risk_ci95": [
+            0.0139,
+            0.1111
+          ],
+          "n_answers": 36
+        }
+      ],
+      "longest": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 27
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0556,
+          "risk_ci95": [
+            0.0139,
+            0.1111
+          ],
+          "n_answers": 36
+        }
+      ],
+      "first": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.037,
+          "risk_ci95": [
+            0.0,
+            0.1111
+          ],
+          "n_answers": 27
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0556,
+          "risk_ci95": [
+            0.0139,
+            0.1111
+          ],
+          "n_answers": 36
+        }
+      ]
+    },
+    "comparisons": {
+      "band_minus_random": {
+        "mean_risk_gap": -0.008947368421052633,
+        "mean_risk_gap_ci95": [
+          -0.03150786855838225,
+          0.009811348781936976
+        ],
+        "coverage_points": 95,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_shortest": {
+        "mean_risk_gap": -0.031578947368421054,
+        "mean_risk_gap_ci95": [
+          -0.07692307692307693,
+          0.0
+        ],
+        "coverage_points": 95,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_longest": {
+        "mean_risk_gap": 0.010526315789473684,
+        "mean_risk_gap_ci95": [
+          0.0,
+          0.03614457831325301
+        ],
+        "coverage_points": 95,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_first": {
+        "mean_risk_gap": 0.0,
+        "mean_risk_gap_ci95": [
+          0.0,
+          0.0
+        ],
+        "coverage_points": 95,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      }
+    },
+    "paired": {
+      "band_vs_random": {
+        "n_answers": 36,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.027777777777777776,
+        "mean_kept_errors_baseline": 0.05555555555555555,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 0.31731050786291415,
+        "cohens_dz": -0.16666666666666669,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_shortest": {
+        "n_answers": 36,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.027777777777777776,
+        "mean_kept_errors_baseline": 0.1111111111111111,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 0.08326451666355039,
+        "cohens_dz": -0.29729419500528154,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_longest": {
+        "n_answers": 36,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.027777777777777776,
+        "mean_kept_errors_baseline": 0.0,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 0.31731050786291415,
+        "cohens_dz": 0.16666666666666669,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_first": {
+        "n_answers": 36,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.027777777777777776,
+        "mean_kept_errors_baseline": 0.027777777777777776,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 1.0,
+        "cohens_dz": 0.0,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      }
+    },
+    "position_length_confound": {
+      "spearman_position_vs_length": -0.5081145529369403,
+      "p_value": 1.4694624111057245e-07,
+      "n_claims": 95,
+      "mean_words_first_half": 21.71527777777778,
+      "mean_words_second_half": 14.656481481481482,
+      "note": "a negative correlation means later claims are shorter, so position and length are not the same policy; a positive one means they are",
+      "first_minus_second_half_words": 7.058796296296296,
+      "ci95": [
+        3.402893518518519,
+        11.728935185185184
+      ]
+    }
+  },
+  "circularity_audit": null,
+  "answer_level": {
+    "n_answers": 238,
+    "n_claims": 297,
+    "answers_with_no_wrong_claim": 234,
+    "answers_with_no_wrong_claim_rate": 0.9831932773109243,
+    "answers_clean_after_keeping_grounded_only": 237,
+    "answers_clean_after_keeping_grounded_only_rate": 0.9957983193277311,
+    "grounded_claim_share": 0.5454545454545454,
+    "note": "an answer with no grounded claim at all is vacuously clean under the grounded-only rule; the claim share is reported alongside so the rate is not read on its own"
+  },
+  "band_definitions": {
+    "framework": "noisy-OR of the per-chunk entailment probabilities over the retrieved passages (src/claims.py::assess_claims). This is the band the answer shows the practitioner.",
+    "experiment": "maximum entailment over the same candidates, thresholded at 0.5 (run_generation_eval.py::_claim_support). This is the claim-support rate the papers report.",
+    "n_bands_differ": 109,
+    "crosstab": {
+      "uncertain->uncertain": 86,
+      "grounded->grounded": 97,
+      "inferred->inferred": 23,
+      "inferred->grounded": 67,
+      "uncertain->inferred": 39,
+      "uncertain->grounded": 3
+    },
+    "note": "the two are different functions of the same evidence. The noisy-OR assumes the witnesses fail independently, which they do not -- ten passages about the same subject are not ten independent trials -- so it saturates where the maximum does not."
+  }
+}

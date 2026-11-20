@@ -1,0 +1,363 @@
+{
+  "seed": 20261118,
+  "corpus_stats": {
+    "n_chunks": 2383,
+    "n_documents": 46,
+    "n_categories": 6,
+    "duplicate_chunk_ids": 0,
+    "by_modality": {
+      "text": 2114,
+      "table": 140,
+      "chart": 129
+    },
+    "share_text": 0.8871170793117918,
+    "share_table": 0.058749475451112046,
+    "share_chart": 0.054133445237096095,
+    "total_words": 247770,
+    "mean_words_per_chunk": 103.97398237515736
+  },
+  "benchmark": {
+    "n_queries": 276,
+    "n_answerable": 132,
+    "n_unanswerable": 144,
+    "label_standard": "silver"
+  },
+  "systems": {
+    "A. bm25_only": {
+      "n_queries": 276,
+      "recall@5": 0.8484848484848485,
+      "recall@10": 0.9166666666666666,
+      "recall@20": 0.9545454545454546,
+      "precision@10": 0.09166666666666647,
+      "mrr": 0.6798135820558708,
+      "nDCG@10": 0.7352787246708176,
+      "modality_recall": {
+        "text": 0.8962264150943396,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    "B. dense_only": {
+      "n_queries": 276,
+      "recall@5": 0.5606060606060606,
+      "recall@10": 0.6515151515151515,
+      "recall@20": 0.7196969696969697,
+      "precision@10": 0.06515151515151504,
+      "mrr": 0.4346893976923492,
+      "nDCG@10": 0.482489943881485,
+      "modality_recall": {
+        "text": 0.6698113207547169,
+        "table": 0.5769230769230769
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    "C. hybrid_rrf": {
+      "n_queries": 276,
+      "recall@5": 0.7651515151515151,
+      "recall@10": 0.9242424242424242,
+      "recall@20": 0.9545454545454546,
+      "precision@10": 0.09242424242424221,
+      "mrr": 0.5881015495761935,
+      "nDCG@10": 0.6661783668297662,
+      "modality_recall": {
+        "text": 0.9150943396226415,
+        "table": 0.9615384615384616
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    "D. hybrid_rrf_rerank": {
+      "n_queries": 276,
+      "recall@5": 0.8787878787878788,
+      "recall@10": 0.9318181818181818,
+      "recall@20": 0.9545454545454546,
+      "precision@10": 0.09318181818181798,
+      "mrr": 0.7667501882175796,
+      "nDCG@10": 0.8058490350848879,
+      "modality_recall": {
+        "text": 0.9339622641509434,
+        "table": 0.9230769230769231
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    "E. +category_filter": {
+      "n_queries": 276,
+      "recall@5": 0.9166666666666666,
+      "recall@10": 0.9393939393939394,
+      "recall@20": 0.9621212121212122,
+      "precision@10": 0.09393939393939373,
+      "mrr": 0.795551565437929,
+      "nDCG@10": 0.8301811037489525,
+      "modality_recall": {
+        "text": 0.9433962264150944,
+        "table": 0.9230769230769231
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    "F. +quota_pre_rerank": {
+      "n_queries": 276,
+      "recall@5": 0.8863636363636364,
+      "recall@10": 0.9166666666666666,
+      "recall@20": 0.9166666666666666,
+      "precision@10": 0.09166666666666647,
+      "mrr": 0.7853324915824916,
+      "nDCG@10": 0.817922572315317,
+      "modality_recall": {
+        "text": 0.9056603773584906,
+        "table": 0.9615384615384616
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    "G. +quota_post_rerank": {
+      "n_queries": 276,
+      "recall@5": 0.9166666666666666,
+      "recall@10": 0.9393939393939394,
+      "recall@20": 0.9393939393939394,
+      "precision@10": 0.09393939393939373,
+      "mrr": 0.7937169312169313,
+      "nDCG@10": 0.8300717485889393,
+      "modality_recall": {
+        "text": 0.9339622641509434,
+        "table": 0.9615384615384616
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    }
+  },
+  "comparisons": [
+    {
+      "comparison": "A. bm25_only -> B. dense_only",
+      "mean_recall_a": 0.9166666666666666,
+      "mean_recall_b": 0.6515151515151515,
+      "delta": -0.26515151515151514,
+      "wilcoxon": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 88.0,
+        "p_value": 9.426290530279906e-08,
+        "n": 132,
+        "effect_size": 0.5226222910296089,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference +0.2652 (d_z = +0.523)."
+      },
+      "cliffs_delta": 0.26515151515151514,
+      "wilcoxon_mrr": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 1054.0,
+        "p_value": 4.142935696728928e-07,
+        "n": 132,
+        "effect_size": 0.4984748221904822,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference +0.2451 (d_z = +0.498)."
+      },
+      "delta_mrr": -0.2451241843635219,
+      "wilcoxon_ndcg": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 755.0,
+        "p_value": 3.875960436827708e-08,
+        "n": 132,
+        "effect_size": 0.549460990712428,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference +0.2528 (d_z = +0.549)."
+      },
+      "delta_ndcg": -0.25278878078933303
+    },
+    {
+      "comparison": "B. dense_only -> C. hybrid_rrf",
+      "mean_recall_a": 0.6515151515151515,
+      "mean_recall_b": 0.9242424242424242,
+      "delta": 0.2727272727272727,
+      "wilcoxon": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 0.0,
+        "p_value": 1.9731752900753887e-09,
+        "n": 132,
+        "effect_size": -0.6100484332486158,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.2727 (d_z = -0.610)."
+      },
+      "cliffs_delta": -0.2727272727272727,
+      "wilcoxon_mrr": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 466.5,
+        "p_value": 5.36864751859543e-10,
+        "n": 132,
+        "effect_size": -0.5716511066278236,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.1534 (d_z = -0.572)."
+      },
+      "delta_mrr": 0.15341215188384472,
+      "wilcoxon_ndcg": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 197.0,
+        "p_value": 2.123169576049869e-11,
+        "n": 132,
+        "effect_size": -0.7390836511973057,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.1837 (d_z = -0.739)."
+      },
+      "delta_ndcg": 0.18368842294828164
+    },
+    {
+      "comparison": "C. hybrid_rrf -> D. hybrid_rrf_rerank",
+      "mean_recall_a": 0.9242424242424242,
+      "mean_recall_b": 0.9318181818181818,
+      "delta": 0.007575757575757569,
+      "wilcoxon": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 20.0,
+        "p_value": 0.7388826803635273,
+        "n": 132,
+        "effect_size": -0.028915008396180227,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.0076 (d_z = -0.029)."
+      },
+      "cliffs_delta": -0.007575757575757576,
+      "wilcoxon_mrr": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 548.5,
+        "p_value": 2.0852014269638086e-06,
+        "n": 132,
+        "effect_size": -0.45338530132778015,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.1786 (d_z = -0.453)."
+      },
+      "delta_mrr": 0.17864863864138614,
+      "wilcoxon_ndcg": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 479.0,
+        "p_value": 4.424772518299331e-06,
+        "n": 132,
+        "effect_size": -0.43714180381480944,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.1397 (d_z = -0.437)."
+      },
+      "delta_ndcg": 0.13967066825512175
+    },
+    {
+      "comparison": "D. hybrid_rrf_rerank -> E. +category_filter",
+      "mean_recall_a": 0.9318181818181818,
+      "mean_recall_b": 0.9393939393939394,
+      "delta": 0.00757575757575768,
+      "wilcoxon": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 0.0,
+        "p_value": 0.31731050786291415,
+        "n": 132,
+        "effect_size": -0.08703882797784893,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.0076 (d_z = -0.087)."
+      },
+      "cliffs_delta": -0.007575757575757576,
+      "wilcoxon_mrr": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 27.0,
+        "p_value": 0.05902224886150068,
+        "n": 132,
+        "effect_size": -0.17420455668147422,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.0288 (d_z = -0.174)."
+      },
+      "delta_mrr": 0.028801377220349478,
+      "wilcoxon_ndcg": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 19.0,
+        "p_value": 0.06111494659029139,
+        "n": 132,
+        "effect_size": -0.17598061045567392,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.0243 (d_z = -0.176)."
+      },
+      "delta_ndcg": 0.024332068664064788
+    },
+    {
+      "comparison": "E. +category_filter -> F. +quota_pre_rerank",
+      "mean_recall_a": 0.9393939393939394,
+      "mean_recall_b": 0.9166666666666666,
+      "delta": -0.022727272727272818,
+      "wilcoxon": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 15.0,
+        "p_value": 0.31731050786291415,
+        "n": 132,
+        "effect_size": 0.08703882797784893,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference +0.0227 (d_z = +0.087)."
+      },
+      "cliffs_delta": 0.022727272727272728,
+      "wilcoxon_mrr": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 85.0,
+        "p_value": 0.9826149273641405,
+        "n": 132,
+        "effect_size": 0.057140791662212906,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference +0.0102 (d_z = +0.057)."
+      },
+      "delta_mrr": -0.01021907385543741,
+      "wilcoxon_ndcg": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 70.5,
+        "p_value": 0.7761441521690535,
+        "n": 132,
+        "effect_size": 0.067346995137599,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference +0.0123 (d_z = +0.067)."
+      },
+      "delta_ndcg": -0.012258531433635644
+    },
+    {
+      "comparison": "F. +quota_pre_rerank -> G. +quota_post_rerank",
+      "mean_recall_a": 0.9166666666666666,
+      "mean_recall_b": 0.9393939393939394,
+      "delta": 0.022727272727272818,
+      "wilcoxon": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 15.0,
+        "p_value": 0.31731050786291415,
+        "n": 132,
+        "effect_size": -0.08703882797784891,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.0227 (d_z = -0.087)."
+      },
+      "cliffs_delta": -0.022727272727272728,
+      "wilcoxon_mrr": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 74.5,
+        "p_value": 0.9244876094425071,
+        "n": 132,
+        "effect_size": -0.046623253018149506,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.0084 (d_z = -0.047)."
+      },
+      "delta_mrr": 0.008384439634439689,
+      "wilcoxon_ndcg": {
+        "test": "Wilcoxon signed-rank",
+        "statistic": 72.0,
+        "p_value": 0.8311003798717523,
+        "n": 132,
+        "effect_size": -0.06639830753589326,
+        "effect_name": "Cohen's d_z",
+        "interpretation": "Mean paired difference -0.0121 (d_z = -0.066)."
+      },
+      "delta_ndcg": 0.012149176273622442
+    }
+  ],
+  "bootstrap_recall10": {
+    "system": "E. +category_filter",
+    "point": 0.9393939393939394,
+    "lo": 0.8939393939393939,
+    "hi": 0.9772727272727273
+  }
+}

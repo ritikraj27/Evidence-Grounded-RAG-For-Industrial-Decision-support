@@ -1,0 +1,46 @@
+{
+  "seed": 20261118,
+  "summary": {
+    "corpus": {
+      "corpus_chunks": 735,
+      "corpus_documents": 14,
+      "corpus_tokens": 202529,
+      "rag_context_tokens_mean": 2246.2,
+      "rag_context_tokens_mean_all_queries": 1552.0,
+      "rag_context_tokens_median": 2041.5,
+      "rag_context_chunks_mean": 9.38,
+      "question_tokens_mean": 11.6,
+      "token_ratio_long_over_rag": 89.7,
+      "token_ratio_long_over_rag_all_queries": 129.5,
+      "corpus_fraction_retrieved": 0.00897,
+      "context_window_fits": {
+        "claude-sonnet-4-5 / claude-opus-4-5 (1M)": true,
+        "a 256K-window model": true,
+        "a 128K-window model (most hosted models)": false,
+        "a 32K-window open model": false
+      },
+      "tokenizer": "the corpus's own embedding tokenizer (BGE-M3 / XLM-R)"
+    },
+    "retrieval_proxy": {
+      "n_queries": 32,
+      "sampled": false,
+      "top10_wilson_low": 0.8425539219962727,
+      "top10_wilson_high": 0.9944622826374491,
+      "n_with_gold_found": 32,
+      "candidate_set_size": 735,
+      "gold_in_top10": 0.96875,
+      "gold_in_top20": 1.0,
+      "gold_in_top50": 1.0,
+      "median_gold_rank": 1.0,
+      "mean_gold_rank": 2.21875,
+      "seconds": 570.1
+    },
+    "generative": {
+      "ran": false,
+      "reason": "no API credential reachable from this machine: ANTHROPIC_API_KEY and MTP_LLM_API_KEY are unset, the Claude Code CLI is not logged in, and no local generative model is installed. The cost half and the retrieval-side proxy are reported; the quality half is not run and is not estimated."
+    },
+    "n_answerable": 32,
+    "n_unanswerable": 144
+  },
+  "retrieval_placement": "pre_rerank"
+}

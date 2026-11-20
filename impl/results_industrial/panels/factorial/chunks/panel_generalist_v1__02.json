@@ -1,0 +1,79 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "general",
+  "regime_title": "All four regimes, read without a specialism",
+  "regime_governs": "occupational safety, process safety, environmental control and hazardous-materials transport.",
+  "reader_note": "You are reading pairs from four different regulatory regimes without a specialism in any of them. Apply the rubric as written.",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 25,
+      "passage_a": "(164) ASTM D4629-02, Standard Test Method for Trace Nitrogen in Liquid Petroleum Hydrocarbons by Syringe/Inlet Oxidative Combustion and Chemiluminescence Detection, IBR approved for \u00a7\u00a7 60.49b(e) and 60.335(b).",
+      "passage_b": "(170) ASTM D4629-02, Standard Test Method for Trace Nitrogen in Liquid Petroleum Hydrocarbons by Syringe/Inlet Oxidative Combustion and Chemiluminescence Detection; IBR approved for \u00a7\u00a7 60.49b(e) and 60.335(b)."
+    },
+    {
+      "pair_id": 26,
+      "passage_a": "> #### A.9.3.4 Classification of Mixtures When Data Are Available for All Ingredients or Only for Some Ingredients of the Mixture",
+      "passage_b": "> A.9.3.4 Classification of Mixtures When Data Are Available for All Ingredients or Only for Some Ingredients of the Mixture"
+    },
+    {
+      "pair_id": 27,
+      "passage_a": "(1) Tires shall be completely deflated by removal of the valve core before demounting.",
+      "passage_b": "(1) Tires shall be completely deflated before demounting by removal of the valve core."
+    },
+    {
+      "pair_id": 28,
+      "passage_a": "> | Ingredient classified as: | Cut-off values/concentration limits triggering classification of a mixture as: |  |  |\n|---|---|---|---|\n| Respiratory Sensitizer Category 1 |  | Skin Sensitizer Category 1 |  |\n| Solid/liquid | Gas | All physical states |  |\n| Respiratory Sensitizer, Category 1 | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1A | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1B | \u22651.0% | \u22650.2% |  |\n| Skin Sensitizer, Category 1 |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1A |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1B |  |  | \u22651.0% |",
+      "passage_b": "> Table A.4.5\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as Either Respiratory Sensitizers or Skin Sensitizers That Would Trigger Classification of the Mixture\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |  |\n|---|---|---|---|\n| Respiratory sensitizer Category 1 |  | Skin sensitizer Category 1 |  |\n| Solid/liquid (%) | Gas (%) | All physical states (%) |  |\n| Respiratory Sensitizer Category 1 | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1A | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1B | \u22651.0 | \u22650.2 |  |\n| Skin Sensitizer Category 1 |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1A |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1B |  |  | \u22651.0 |"
+    },
+    {
+      "pair_id": 29,
+      "passage_a": "(77) ASTM D1946-90 (Reapproved 1994), Standard Method for Analysis of Reformed Gas by Gas Chromatography, IBR approved for \u00a7\u00a7 60.18(f), 60.45(f), 60.564(f), 60.614(e), 60.664(e), and 60.704(d).",
+      "passage_b": "(80) ASTM D1946-90 (Reapproved 1994), Standard Method for Analysis of Reformed Gas by Gas Chromatography; IBR approved for \u00a7\u00a7 60.18(f); 60.45(f); 60.564(f); 60.614(e); 60.664(e); 60.704(d)."
+    },
+    {
+      "pair_id": 30,
+      "passage_a": "> #### A.7.2.2 Basis of Classification",
+      "passage_b": "> A.7.2.2 Basis of Classification"
+    },
+    {
+      "pair_id": 31,
+      "passage_a": "> C. Spill Leak and Disposal Procedures.",
+      "passage_b": "> C. Spill, Leak and Disposal Procedures."
+    },
+    {
+      "pair_id": 32,
+      "passage_a": "> (c) Mammalian erythrocyte micronucleus test (OECD 474)",
+      "passage_b": "> (b) Mammalian erythrocyte micronucleus test (OECD 474)"
+    },
+    {
+      "pair_id": 33,
+      "passage_a": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], (Issued August 31, 1981), IBR approved for \u00a7\u00a7 60.56c(b), 60.63(f), 60.106(e), 60.104a(d), (h), (i), and (j), 60.105a(b), (d), (f), and (g), 60.106a(a), 60.107a(a), (c), and (d), tables 1 and 3 to subpart EEEE, tables 2 and 4 to subpart FFFF, table 2 to subpart JJJJ, \u00a7\u00a7 60.285a(f), 60.4415(a), 60.2145(s) and (t), 60.2710(s) and (t), 60.2730(q), 60.4900(b), 60.5220(b), tables 1 and 2 to subpart LLLL, tables 2 and 3 to subpart MMMM, \u00a7\u00a7 60.5406(c), 60.5406a(c), 60.5407a(g), 60.5413(b), 60.5413a(b), and 60.5413a(d).",
+      "passage_b": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], Issued August 31, 1981; IBR approved for \u00a7\u00a7 60.56c(b); 60.63(f); 60.106(e); 60.104a(d), (h), (i), and (j); 60.105a(b), (d), (f), and (g); 60.106a(a); 60.107a(a), (c), and (d); 60.275(e); 60.275a(e); 60.275b(e); Tables 1 and 3 to subpart EEEE; Tables 2 and 4 to subpart FFFF; Table 2 to subpart JJJJ; \u00a7\u00a7 60.285a(f); 60.396(a); 60.614a(b); 60.664a(b); 60.704(b); 60.704a(b); 60.2145(s) and (t); 60.2710(s) and (t); 60.2730(q); 60.4415(a); 60.4415a(b); 60.4900(b); 60.5220(b); Tables 1 and 2 to subpart LLLL; Tables 2 and 3 to subpart MMMM; \u00a7\u00a7 60.5406(c); 60.5406a(c); 60.5406b(c); 60.5407a(g); 60.5407b(g); 60.5413(b); 60.5413a(b) and (d); 60.5413b(b) and (d); 60.5413c(b) and (d); 60.5930(a); Tables 3 and 4 to subpart VVVV; 60.6485(a); Tables 4 and 5 to subpart WWWW."
+    },
+    {
+      "pair_id": 34,
+      "passage_a": "| Maximum quantity | Packing method |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|---|\n| OP1 | OP2 1 | OP3 | OP4 1 | OP5 | OP6 | OP7 | OP8 |  |\n| Solids and combination packagings (liquid and solid) (kg) | 0.5 | 0.5/10 | 5 | 5/25 | 25 | 50 | 50 | 2 400 |\n| Liquids (L) | 0.5 |  | 5 |  | 30 | 60 | 60 | 3 225 |",
+      "passage_b": "Table 2 to Paragraph (d): Maximum Quantity per Packaging/Package[For packing methods OP1 to OP8]\n| Maximum quantity | Packing method |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|---|\n| OP1 | OP2 1 | OP3 | OP4 1 | OP5 | OP6 | OP7 | OP8 |  |\n| Solids and combination packagings (liquid and solid) (kg) | 0.5 | 0.5/10 | 5 | 5/25 | 25 | 50 | 50 | 2 400 |\n| Liquids (L) | 0.5 |  | 5 |  | 30 | 60 | 60 | 3 225 |\n| 1 If two values are given, the first applies to the maximum net mass per inner packaging and the second to the maximum net mass of the complete package. |  |  |  |  |  |  |  |  |\n| 2 60 kg for jerricans/200 kg for boxes and, for solids, 400 kg in combination packagings with outer packagings comprising boxes (4C1, 4C2, 4D, 4F, 4G, 4H1, and 4H2) and with inner packagings of plastics or fiber with a maximum net mass of 25 kg. |  |  |  |  |  |  |  |  |\n| 3 60 L for jerricans. |  |  |  |  |  |  |  |  |"
+    },
+    {
+      "pair_id": 35,
+      "passage_a": "> A.8.2.1.9 Guidance values to assist with classification based on the results obtained from studies conducted in experimental animals for Category 1 and 2",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 36,
+      "passage_a": "(38) ASTM D396-78, Standard Specification for Fuel Oils, IBR approved for \u00a7\u00a7 60.41b, 60.41c, 60.111(b), and 60.111a(b).",
+      "passage_b": "(39) ASTM D396-78, Standard Specification for Fuel Oils; IBR approved for \u00a7\u00a7 60.41b; 60.41c; 60.111(b); 60.111a(b)."
+    }
+  ]
+}

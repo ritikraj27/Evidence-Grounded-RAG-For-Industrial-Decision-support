@@ -1,0 +1,79 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "general",
+  "regime_title": "All four regimes, read without a specialism",
+  "regime_governs": "occupational safety, process safety, environmental control and hazardous-materials transport.",
+  "reader_note": "You are reading pairs from four different regulatory regimes without a specialism in any of them. Apply the rubric as written.",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Follow its decision tree\nin order and stop at the first question that applies.\n\n`quantity_conflict` and `semantic_conflict` are true contradictions.\n`supersession` is a real conflict of a different kind: the two passages are\nthe same rule at two issues, so they cannot both be current.\n`term_mismatch`, `granularity` and `no_conflict` are false alarms.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial\nregulations. Decide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, an entity name, a standard\nnumber or a quantity, but they are not about the same thing: two different\nsubstances, two different pieces of equipment, two different kinds of\nworkplace. A numeric rule fires on \"clearance of 1/2 inch\" in one passage\nand \"clearance of 2 inches\" in another that is about a different machine;\nthat pair is `term_mismatch`, and it is the failure mode a *subject* check\nis meant to suppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Are the two passages two issues of the same rule?\n\n**Yes -> `supersession`**\n\nThe test is **structural**, not a marker test. The two passages address the\nsame requirement, about the same subject, in the same terms, and differ only\nin detail: a renumbered cross-reference, a changed edition of a cited\nstandard, a rewording that preserves the requirement, an added or removed\nparagraph, a changed incorporation-by-reference list. A version marker, an\neffective date, a \"supersedes\" note or an amended cross-reference is one way\nto see this; it is **not the only way**. Recognising that two passages are\nthe same rule as it read at two different times is a reading judgement, and\nyou are being asked to make it.\n\n**What `supersession` means, and what it does not.** It means the two\npassages cannot both be the current rule. It does **not** mean that one of\nthem is wrong, and it does **not** mean the pair is harmless: a practitioner\nholding both has to be told which one governs. If the passages carry no\nmarker saying which is current, that is a fact worth reporting, not a\nreason to call the pair a non-conflict.\n\n**No -> go to question 3.**\n\n## 3. Do the two passages state requirements that cannot both be obeyed?\n\n**A number differs for the same measured quantity, with the subject\nmatched -> `quantity_conflict`**\n\nThe same substance, the same machine, the same requirement, two different\nvalues. \"The permissible exposure limit for cadmium is 5 micrograms per\ncubic meter of air\" against \"the permissible exposure limit for cadmium is\n100 micrograms per cubic meter of air\" is a `quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved. \"The\nemployer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n**Neither -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\n## A note on scope\n\nTwo passages are **not** in conflict merely because they differ. Two\nregulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, for different\nsituations, or for different scopes are not \u2014 read the scope before\njudging the numbers.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 61,
+      "passage_a": "> Table B.12.1\u2014Criteria for Chemicals Which, in Contact With Water, Emit Flammable Gases",
+      "passage_b": "> #### B.12 Chemicals Which, in Contact With Water, Emit Flammable Gases"
+    },
+    {
+      "pair_id": 62,
+      "passage_a": "(a) In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use as reference methods and procedures the test methods in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b).",
+      "passage_b": "(c) Test methods. In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use the following EPA reference test methods and procedures in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b)."
+    },
+    {
+      "pair_id": 63,
+      "passage_a": "(53) ASTM D1193-91, Standard Specification for Reagent Water, IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; and Method 29, Section 7.2.2.",
+      "passage_b": "(53) ASTM D1193-77, Standard Specification for Reagent Water; IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; Method 29, Section 7.2.2."
+    },
+    {
+      "pair_id": 64,
+      "passage_a": "(i) A respirator to each employee and ensure that it is provided and used in accordance with \u00a7 1910.134; and",
+      "passage_b": "(i) A respirator to each employee and ensure that it is provided and used in accordance with \u00a7 1910.134 and"
+    },
+    {
+      "pair_id": 65,
+      "passage_a": "(f) Heating, if provided, shall be steam, hot water, or by other indirect means.",
+      "passage_b": "(f) Heating, if provided, shall be by steam, hot water, or other indirect means."
+    },
+    {
+      "pair_id": 66,
+      "passage_a": "> #### Appendix F to \u00a7 1910.146 - Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)",
+      "passage_b": "> #### Appendix F to \u00a7 1910.146\u2014Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)"
+    },
+    {
+      "pair_id": 67,
+      "passage_a": "> #### Appendix D to \u00a7 1910.1200\u2014Safety Data Sheets (Mandatory)",
+      "passage_b": "> #### Appendix D to \u00a7 1910.1200 Safety Data Sheet (Mandatory)"
+    },
+    {
+      "pair_id": 68,
+      "passage_a": "(86) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal, IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1.",
+      "passage_b": "(89) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal; IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1."
+    },
+    {
+      "pair_id": 69,
+      "passage_a": "(1) Burlap (jute) bag;",
+      "passage_b": "(i) Burlap (jute) bag;"
+    },
+    {
+      "pair_id": 70,
+      "passage_a": "> A.2.2.2.2 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance might be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses could also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system.",
+      "passage_b": "> A.2.2.2.2.4 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance should be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score according to test method used throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses should also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system."
+    },
+    {
+      "pair_id": 71,
+      "passage_a": "(v) Techstreet, a business of Thomson Reuters, 3916 Ranchero Drive, Ann Arbor, MI 48108; Telephone: 800-699-9277 or 734-780-8000; Fax: 734-780-2046; Email: techstreet.service@thomsonreuters.com; Web site: www.Techstreet.com.",
+      "passage_b": "(iii) TechStreet Store, 3916 Ranchero Dr., Ann Arbor, MI 48108; telephone: 877-699-9277; Web site: www.techstreet.com."
+    },
+    {
+      "pair_id": 72,
+      "passage_a": "(75) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, (Approved January 1, 2010), IBR approved for \u00a7\u00a7 60.107a(d), 60.5413(d), 60.5413a(d).",
+      "passage_b": "(77) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, approved January 1, 2010; IBR approved for \u00a7\u00a7 60.107a(d); 60.5413(d); 60.5413a(d); 60.5413b(d); 60.5413c(d)."
+    }
+  ]
+}

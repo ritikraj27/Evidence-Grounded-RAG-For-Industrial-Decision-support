@@ -1,0 +1,4268 @@
+{
+  "label_standard": "silver",
+  "seed": 20261118,
+  "corpus": "InduSight industrial regulatory corpus (eCFR)",
+  "n_queries": 444,
+  "n_answerable": 247,
+  "n_unanswerable": 197,
+  "families": {
+    "definition": 110,
+    "unanswerable_ood": 49,
+    "unanswerable_corpus_anchored_definition": 96,
+    "unanswerable_corpus_anchored_table": 52,
+    "table_lookup": 130,
+    "numeric_fact": 7
+  },
+  "categories": {
+    "environmental_control": 79,
+    "unanswerable": 197,
+    "process_safety": 26,
+    "hazmat_transport": 50,
+    "occupational_safety": 92
+  },
+  "queries": [
+    {
+      "query": "What is dispersion microscopy?",
+      "gold": [
+        "1910.1001_part8::p1::t27"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "dark-field technique when used for asbestos"
+    },
+    {
+      "query": "What is the wavelength of light used in a spectrophotometer?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is immediate use?",
+      "gold": [
+        "1910.1200_part1::p1::t28"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "that the hazardous chemical will be under the control of and used only by the person who transfers it from a labeled container and only within the work shift in which it is transferred"
+    },
+    {
+      "query": "What is clinical Laboratory?",
+      "gold": [
+        "1910.1030_part1::p1::t0"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a workplace where diagnostic or other screening procedures are performed on blood or other potentially infectious materials"
+    },
+    {
+      "query": "What is except when the composition?",
+      "gold": [
+        "173.59_part1::p1::t1"
+      ],
+      "category": "hazmat_transport",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "explosive per se, it also contains one or more of the following: a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge"
+    },
+    {
+      "query": "What is allyl chloride?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are until these controls?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Z?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Z' occurs in a table in the corpus and the column name 'Temperature ( \u00b0C)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for BBB?",
+      "gold": [
+        "60.4_part9::p1::tbl3"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Rubber Tire Manufacturing Industry"
+    },
+    {
+      "query": "What is the pressure drop across a pipe fitting at a given flow rate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is dimethyl sulfate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Grinding.?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Drilling."
+    },
+    {
+      "query": "What is the heat transfer coefficient of an insulated pipe wall?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is basket hitch?",
+      "gold": [
+        "1910.184_part1::p1::t0"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sling configuration whereby the sling is"
+    },
+    {
+      "query": "What is equivalent entity?",
+      "gold": [
+        "1910.184_part1::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "person or organization (including an employer) which, by possession of equipment, technical knowledge and skills, can perform with equal competence the same repairs and tests as the person or organization with which it i"
+    },
+    {
+      "query": "What is transportable outriggers?",
+      "gold": [
+        "1910.66_part1::p1::t19"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "outriggers designed to be moved from one work location to another"
+    },
+    {
+      "query": "What is continuous pressure?",
+      "gold": [
+        "1910.66_part1::p1::t7"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the need for constant manual actuation for a control to function"
+    },
+    {
+      "query": "What are although the atoms?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for NNNa?",
+      "gold": [
+        "60.4_part9::p1::tbl5"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for VV?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'VV' occurs in a table in the corpus and the column name 'Packing method' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the ppm (a) 1 for n-Amyl acetate?",
+      "gold": [
+        "1910.1000_part1::p1::tbl14"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "100"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Diacetone alcohol (4-Hydroxy-4-methyl-2-pentanone)?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Diacetone alcohol (4-Hydroxy-4-methyl-2-pentanone)' occurs in a table in the corpus and the column name 'Notes' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for BBa?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'BBa' occurs in a table in the corpus and the column name 'Grinding wheel diameters' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is boron trifluoride?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the queueing delay at a single server under Poisson arrivals?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is guide roller?",
+      "gold": [
+        "1910.66_part1::p1::t8"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a rotating cylindrical member, operating separately or as part of a guide assembly, designed to provide continuous engagement"
+    },
+    {
+      "query": "What is regulated area?",
+      "gold": [
+        "1910.1027_part1::p1::t2"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "an area demarcated by the employer where an employee's exposure to airborne concentrations of cadmium exceeds, or can reasonably be expected to exceed the"
+    },
+    {
+      "query": "What is isopropylcumyl hydroperoxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for Di-(tert-butylperoxyisopropyl) benzene(s)?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": ">42-100"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for UUUUa?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'UUUUa' occurs in a table in the corpus and the column name 'Temperature ( \u00b0C)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the ppm (a) 1 for Butylamine?",
+      "gold": [
+        "1910.1000_part1::p1::tbl16"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "(C)5"
+    },
+    {
+      "query": "What is immediate outer package?",
+      "gold": [
+        "1910.1200_part1::p1::t28"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the first package enclosing the container of hazardous chemical"
+    },
+    {
+      "query": "What is airborne infection isolation room (AIIR?",
+      "gold": [
+        "1910.502_part1::p1::t6"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a dedicated negative pressure patient-care room, with special air handling capability, which is used to isolate persons with a suspected or confirmed airborne-transmissible infectious disease"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for Allyl glycidyl ether (AGE)?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Allyl glycidyl ether (AGE)' occurs in a table in the corpus and the column name 'Concentration (mass %)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Air pollution control agency for GlennCounty APCD?",
+      "gold": [
+        "60.4_part4::p1::tbl7"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Imperial County APCD"
+    },
+    {
+      "query": "What is hazard class?",
+      "gold": [
+        "1910.1200_part1::p1::t25"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the nature of the physical or health hazards, e"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for o-Dichlorobenzene?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'o-Dichlorobenzene' occurs in a table in the corpus and the column name 'Grinding wheel diameters' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the line balancing takt constraint for a mixed model line?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Subpart for MMM?",
+      "gold": [
+        "60.4_part4::p1::tbl1"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "(Reserved)"
+    },
+    {
+      "query": "What does the kanban method require of the pull system?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for AAa?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'AAa' occurs in a table in the corpus and the column name 'mg/m3 (b) 1' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is buehler assay?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is butyl mercaptan?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for AAA?",
+      "gold": [
+        "60.4_part9::p1::tbl17"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is type B?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Electrical Chemical Machining (ECM).?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Deburring (grinding)."
+    },
+    {
+      "query": "What is healthcare services are delivered through various?",
+      "gold": [
+        "1910.502_part1::p1::t14"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "including: Hospitalization, long-term care, ambulatory care, home health and hospice care, emergency medical response, and patient transport"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for MMM?",
+      "gold": [
+        "60.4_part9::p1::tbl5"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "[Reserved]"
+    },
+    {
+      "query": "What is common areas?",
+      "gold": [
+        "1910.502_part1::p1::t8"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "indoor or outdoor locations under the control of the employer that more than one person may use or where people congregate (e"
+    },
+    {
+      "query": "What is the concentration of a solution prepared from a stock standard?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is carbon dioxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for 1,6-Di-(tert-butylperoxycarbonyloxy)hexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226472"
+    },
+    {
+      "query": "What is diisobutyryl peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is dichloroethyl ether?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are office and rest rooms?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is disuccinic acid peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for AAb?",
+      "gold": [
+        "60.4_part9::p1::tbl1"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is openers and pickers?",
+      "gold": [
+        "1910.262_part1::p1::t12"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a general classification which includes breaker pickers, intermediate pickers, finisher pickers, single process pickers, multiple process pickers, willow machines, card and picker waste cleaners, thread extractors, shred"
+    },
+    {
+      "query": "What is dicyclopentadienyl iron?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is handwashing facilities?",
+      "gold": [
+        "1910.1030_part1::p1::t3"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a facility providing an adequate supply of running potable water, soap, and single-use towels or air-drying machines"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for F?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'F' occurs in a table in the corpus and the column name 'ID No.' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What value is stated for divided by the number of parts of rope in the source documentation?",
+      "gold": [
+        "1910.179_part2::p1::t8"
+      ],
+      "category": "occupational_safety",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "20 percent"
+    },
+    {
+      "query": "What is product identifier?",
+      "gold": [
+        "1910.1200_part1::p1::t33"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the name or number used for a hazardous chemical on a label or in the SDS"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for 3\u20444?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '3\u20444' occurs in a table in the corpus and the column name 'Beryllium oxide operations' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Class of glove for Chlorine?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Chlorine' occurs in a table in the corpus and the column name 'Class of glove' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for 1,1-Di-(tert-butylperoxy)cyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "22"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for Di-tert-butyl peroxyazelate?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226548"
+    },
+    {
+      "query": "What are gaseous audit samples?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are rubber insulating sleeves?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Fault initiation adjacent circuit?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Fault initiation adjacent circuit' occurs in a table in the corpus and the column name 'Beryllium oxide operations' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the economic order quantity for a purchased part?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Allyl propyl disulfide?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "12"
+    },
+    {
+      "query": "What is physical location?",
+      "gold": [
+        "1910.502_part1::p1::t15"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a site (including outdoor and indoor areas, a structure, or a group of structures) or an area within a site where work or any work-related activity (e"
+    },
+    {
+      "query": "What are antimony and compounds?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Chemical Milling.?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Cold Isostatic Pressing (CIP)."
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for 2,5-Dimethyl-2,5-di-(benzoylperoxy)hexane?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '2,5-Dimethyl-2,5-di-(benzoylperoxy)hexane' occurs in a table in the corpus and the column name 'Beryllium oxide operations' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is card clothing?",
+      "gold": [
+        "1910.262_part1::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "material with which many of the surfaces of a card are covered"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for AAA?",
+      "gold": [
+        "60.4_part9::p1::tbl3"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "New Residential Wood Heaters"
+    },
+    {
+      "query": "What value is stated for suspended portion of the equipment in use in the source documentation?",
+      "gold": [
+        "1910.66_part1::p1::t31"
+      ],
+      "category": "occupational_safety",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "130 feet"
+    },
+    {
+      "query": "What is multi-piece rim wheel?",
+      "gold": [
+        "1910.177::p1::t3"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the assemblage of a multi-piece wheel with the tire tube and other components"
+    },
+    {
+      "query": "What is skin of whole body?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Acrylamide?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "0.3"
+    },
+    {
+      "query": "What is the overall equipment effectiveness metric composed of?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is eye irritation?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is peroxylauric acid?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What value is stated for filling density in the source documentation?",
+      "gold": [
+        "173.163::p1::t0"
+      ],
+      "category": "hazmat_transport",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "85 percent"
+    },
+    {
+      "query": "What value is stated for used where the quantity of explosives stored in the source documentation?",
+      "gold": [
+        "1910.109_part1::p1::t10"
+      ],
+      "category": "occupational_safety",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "50 pounds"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for NNNa?",
+      "gold": [
+        "60.4_part9::p1::tbl19"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is the takt time for a production line with a given demand?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is working platform?",
+      "gold": [
+        "1910.66_part1::p1::t20"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "suspended or supported equipment intended to provide access to the face of a building and manned by persons engaged in building maintenance"
+    },
+    {
+      "query": "What is the cost of holding one unit of inventory for a year?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for XXa?",
+      "gold": [
+        "60.4_part9::p1::tbl17"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is ground rigged davit?",
+      "gold": [
+        "1910.66_part1::p1::t8"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a davit which cannot be used to raise a suspended working platform above the building face being serviced"
+    },
+    {
+      "query": "What is loading through open dome?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Effective date for Mar. 1, 1979?",
+      "gold": [
+        "1910.1025_part5::p1::tbl19"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Mar. 1, 1980"
+    },
+    {
+      "query": "What is contaminated Laundry?",
+      "gold": [
+        "1910.1030_part1::p1::t1"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "laundry which has been soiled with blood or other potentially infectious materials or may contain sharps"
+    },
+    {
+      "query": "What is ground rigging?",
+      "gold": [
+        "1910.66_part1::p1::t8"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a method of suspending a working platform starting from a safe surface to a point of suspension above the safe surface"
+    },
+    {
+      "query": "What is the standard casting defect acceptance tolerance?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for 2,2-Di-(tert-butylperoxy)butane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226452"
+    },
+    {
+      "query": "What is inside bucket elevator?",
+      "gold": [
+        "1910.272_part1::p1::t3"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a bucket elevator that has the boot and more than 20 percent of the total leg height (above grade or ground level) inside the grain elevator structure"
+    },
+    {
+      "query": "What are rubber insulating covers?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is calcium oxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for CC?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'CC' occurs in a table in the corpus and the column name 'Beryllium oxide operations' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What are employers and manufacturers?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Water (mass %) for 2,5-Dimethyl-2,5-dihydroperoxyhexane?",
+      "gold": [
+        "173.225_part2::p1::tbl11"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226518"
+    },
+    {
+      "query": "What is service area?",
+      "gold": [
+        "1910.177::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "that part of an employer's premises used for the"
+    },
+    {
+      "query": "According to the table in the source document, what is the GHS for Group 1?",
+      "gold": [
+        "1910.1200_part14::p1::tbl27"
+      ],
+      "category": "process_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Category 1A"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for OOOO?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'OOOO' occurs in a table in the corpus and the column name 'Diluent (mass %)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is rim wheel?",
+      "gold": [
+        "1910.177::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "an assemblage of tire, tube and liner (where appropriate), and wheel components"
+    },
+    {
+      "query": "What is choker hitch?",
+      "gold": [
+        "1910.184_part1::p1::t3"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sling configuration with one end of the sling passing under the load and through an end attachment, handle or eye on the other end of the sling"
+    },
+    {
+      "query": "What are cards of different types?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is single piece rim wheel?",
+      "gold": [
+        "1910.177::p1::t5"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the assemblage of single piece rim wheel with the tire and other components"
+    },
+    {
+      "query": "What is responsible party?",
+      "gold": [
+        "1910.1200_part1::p1::t34"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "someone who can provide additional information on the hazardous chemical and appropriate emergency procedures, if necessary"
+    },
+    {
+      "query": "What is registered professional engineer?",
+      "gold": [
+        "1910.66_part1::p1::t14"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a person who has been duly and currently registered and licensed by an authority within the United States or its territories to practice the profession of engineering"
+    },
+    {
+      "query": "According to the table in the source document, what is the Rems per calendar quarter for Skin of whole body?",
+      "gold": [
+        "1910.1096_part1::p1::tbl9"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "71\u20442"
+    },
+    {
+      "query": "What is the recommended maintenance interval for a centrifugal pump bearing?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the ppm (a) 1 for Arsine?",
+      "gold": [
+        "1910.1000_part1::p1::tbl14"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "0.05"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for Dc?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Dc' occurs in a table in the corpus and the column name 'CAS No. (c)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Subpart for LLL?",
+      "gold": [
+        "60.4_part4::p1::tbl1"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Onshore Natural Gas Processing: SO2 Emissions"
+    },
+    {
+      "query": "What is the network model of a multi-echelon inventory system?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is hot work?",
+      "gold": [
+        "1910.272_part1::p1::t2"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "work involving electric or gas welding, cutting, brazing, or similar flame producing operations"
+    },
+    {
+      "query": "According to the table in the source document, what is the Extent of classified area for up to?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'up to' occurs in a table in the corpus and the column name 'Extent of classified area' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is rated strength?",
+      "gold": [
+        "1910.66_part1::p1::t13"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the strength of wire rope,"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for Ammonia?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "7664-41-7"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for Di-(tert-butylperoxy)phthalate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": ">42-52"
+    },
+    {
+      "query": "What is other Potentially Infectious Materials?",
+      "gold": [
+        "1910.1030_part1::p1::t5"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "(1) The following human body fluids: semen, vaginal secretions, cerebrospinal fluid, synovial fluid, pleural fluid, pericardial fluid, peritoneal fluid, amniotic fluid, saliva in dental procedures, any body fluid that is"
+    },
+    {
+      "query": "What is the little's law relationship between utilisation and queue length?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is speed reducer?",
+      "gold": [
+        "1910.66_part1::p1::t16"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a positive type speed reducing machine"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for AAA?",
+      "gold": [
+        "60.4_part9::p1::tbl3"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "According to the table in the source document, what is the NTP RoC for Group 2A?",
+      "gold": [
+        "1910.1200_part14::p1::tbl27"
+      ],
+      "category": "process_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Reasonably Anticipated (See Note 1)."
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for 3 to 6 inches?",
+      "gold": [
+        "1910.215_part2::p1::tbl7"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Over 6 to 12 inches"
+    },
+    {
+      "query": "What is secondary brake?",
+      "gold": [
+        "1910.66_part1::p1::t16"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a brake designed to arrest the descent of the suspended or supported equipment in the event of an overspeed condition"
+    },
+    {
+      "query": "According to the table in the source document, what is the SECAL (\u00b5g/m3) for Nickel cadmium battery?",
+      "gold": [
+        "1910.1027_part1::p1::tbl15"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "50"
+    },
+    {
+      "query": "What is stability factor?",
+      "gold": [
+        "1910.66_part1::p1::t16"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the ratio of the stabilizing moment to the overturning moment"
+    },
+    {
+      "query": "What is phase contrast?",
+      "gold": [
+        "1910.1001_part3::p1::t26"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "fiber counting technique which excludes non-fibrous particles from the analysis"
+    },
+    {
+      "query": "What is traction hoist?",
+      "gold": [
+        "1910.66_part1::p1::t18"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a type of hoisting machine that does not accumulate the suspension wire rope on the hoisting drum or sheave, and is designed to raise and lower a suspended load by the application of friction forces"
+    },
+    {
+      "query": "According to the table in the source document, what is the Proof-testVoltagerms V for 280-mm(11-in)glove?",
+      "gold": [
+        "1910.137::p1::tbl25"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "360-mm(14-in)glove"
+    },
+    {
+      "query": "What is chlorinated camphene?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is angulated roping?",
+      "gold": [
+        "1910.66_part1::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a suspension method where the upper point of suspension is inboard from the attachments on the suspended unit, thus causing the suspended unit to bear against the face of the building"
+    },
+    {
+      "query": "What value is stated for initiating switch voltage in the source documentation?",
+      "gold": [
+        "1910.255::p1::t7"
+      ],
+      "category": "occupational_safety",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "24 volts"
+    },
+    {
+      "query": "What is the detection limit of an analytical instrument?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is the material requirements planning lot-sizing rule?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is allyl propyl disulfide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the theory of constraints applied to a production system?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for Di-(tert-butylperoxy)phthalate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "UN3107"
+    },
+    {
+      "query": "According to the table in the source document, what is the Nominal outside diameter (inches) for Type K?",
+      "gold": [
+        "1910.110_part1::p1::tbl32"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Type L"
+    },
+    {
+      "query": "According to the table in the source document, what is the Standard size (inches) for Na?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Na' occurs in a table in the corpus and the column name 'Standard size (inches)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is proof test?",
+      "gold": [
+        "1910.184_part1::p1::t7"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "nondestructive tension test performed by the sling manufacturer or an equivalent entity to verify construction and workmanship of a sling"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for SSS?",
+      "gold": [
+        "60.4_part9::p1::tbl5"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Magnetic Tape Coating Operations"
+    },
+    {
+      "query": "What is regulated Waste?",
+      "gold": [
+        "1910.1030_part1::p1::t7"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "liquid or semi-liquid blood or other potentially infectious materials"
+    },
+    {
+      "query": "What is diacetone alcohol?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is physician or other licensed health care professional (PLHCP?",
+      "gold": [
+        "1910.1200_part1::p1::t32"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "an individual whose legally permitted scope of practice (i"
+    },
+    {
+      "query": "According to the table in the source document, what is the NTP RoC for Di-sec octyl phthalate (Di-(2-ethylhexyl) phthalate)?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Di-sec octyl phthalate (Di-(2-ethylhexyl) phthalate)' occurs in a table in the corpus and the column name 'NTP RoC' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is anthophyllite and tremolite or actinolite?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Magnitude(per unit) for Opening surge with single restrike?",
+      "gold": [
+        "1910.269_part10::p1::tbl22"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "3.0"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for Di-tert-butyl peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "OP8"
+    },
+    {
+      "query": "What are blasting explosives?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are rubber insulating blankets?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is ammonium sulfamate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the standard deviation of a measurement process capability index?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is allyl alcohol?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for Carbaryl (Sevin)?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Carbaryl (Sevin)' occurs in a table in the corpus and the column name 'LDEQ' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is part D?",
+      "gold": [
+        "1910.1200_part14::p1::t1"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "table that compares GHS carcinogen hazard categories to carcinogen classifications under IARC and NTP, allowing classifiers to be able to use information from IARC and NTP RoC carcinogen classifications to complete their"
+    },
+    {
+      "query": "What is the standard working week used for a headcount calculation?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is rated load?",
+      "gold": [
+        "1910.66_part1::p1::t13"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the manufacturer's recommended maximum load"
+    },
+    {
+      "query": "What is acetic acid?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for strength?",
+      "gold": [
+        "1910.215_part2::p1::tbl13"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "9\u204416"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Acetylene tetrabromide?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "14"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for 2,2-Di-(tert-butylperoxy)butane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "OP6"
+    },
+    {
+      "query": "What are continuous bleaching ranges?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for Ka?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Ka' occurs in a table in the corpus and the column name 'ID No.' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is barium sulfate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for FFF?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'FFF' occurs in a table in the corpus and the column name 'Packing method' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the vibration acceptance criterion for a rotating machine bearing?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is methyl isobutyl ketone peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for Materials?",
+      "gold": [
+        "1910.215_part2::p1::tbl11"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "1\u20444"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for 4-Aminodiphenyl; see 1910.1011?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '4-Aminodiphenyl; see 1910.1011' occurs in a table in the corpus and the column name 'Source category' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is physical hazard?",
+      "gold": [
+        "1910.1200_part1::p1::t31"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a chemical that is classified as posing one of the following hazardous effects: explosive, flammable (gases, liquids, or solids)"
+    },
+    {
+      "query": "What is the tolerance grade for a turned shaft dimension?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for 1,1-Di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "UN3103"
+    },
+    {
+      "query": "According to the table in the source document, what is the Extent of classified area for Vent?",
+      "gold": [
+        "1910.106_part5::p1::tbl26"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Within 5 feet of open end of vent, extending in all directions."
+    },
+    {
+      "query": "What is industrial organic solvent?",
+      "gold": [
+        "1910.262_part1::p1::t19"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "any organic volatile liquid or compound, or any combination of these substances which are used to dissolve or suspend a nonvolatile or slightly volatile substance for industrial utilization"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Diisobutyryl peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl7"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u221220"
+    },
+    {
+      "query": "What are aniline and homologs?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for Ammonium sulfamate?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "7773-06-0"
+    },
+    {
+      "query": "According to the table in the source document, what is the Extent of classified area for Without mechanical ventilation?",
+      "gold": [
+        "1910.106_part5::p1::tbl26"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Entire area within pit if any part is within a Division 1 or 2 classified area."
+    },
+    {
+      "query": "What is dilauroyl peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Di-(3-methoxybutyl) peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl9"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u22125"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Thermal?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Thermal' occurs in a table in the corpus and the column name 'Temperature ( \u00b0C)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is highly hazardous chemical?",
+      "gold": [
+        "1910.119_part1::p1::t3"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a substance possessing toxic, reactive, flammable, or explosive properties and specified by paragraph (a)(1) of this section"
+    },
+    {
+      "query": "What is rated working load?",
+      "gold": [
+        "1910.66_part1::p1::t14"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the combined static weight of men, materials, and suspended or supported equipment"
+    },
+    {
+      "query": "What is hand hygiene?",
+      "gold": [
+        "1910.502_part1::p1::t13"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the cleaning and/or disinfecting of one's hands by using standard handwashing methods with soap and running water or an alcohol-based hand rub that is at least 60% alcohol"
+    },
+    {
+      "query": "What is obstruction detector?",
+      "gold": [
+        "1910.66_part1::p1::t11"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a control that will stop the suspended or supported unit in the direction of travel if an obstruction is encountered, and will allow the unit to move only in a direction away from the obstruction"
+    },
+    {
+      "query": "What are wavy fibers?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for BBBB?",
+      "gold": [
+        "60.4_part9::p1::tbl21"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is the required forging die temperature for a given alloy?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is retests are required when there?",
+      "gold": [
+        "60.8::p1::t15"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "failure to produce acceptable results for an audit sample"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Diisopropyl peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl9"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u221215"
+    },
+    {
+      "query": "What is hoist rated load?",
+      "gold": [
+        "1910.66_part1::p1::t9"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the hoist manufacturer's maximum allowable operating load"
+    },
+    {
+      "query": "What is bridle wire rope sling?",
+      "gold": [
+        "1910.184_part1::p1::t1"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sling composed of multiple wire rope legs with the top ends gathered in a fitting that goes over the lifting hook"
+    },
+    {
+      "query": "What is trolley carriage?",
+      "gold": [
+        "1910.66_part1::p1::t19"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a carriage suspended from an overhead track structure"
+    },
+    {
+      "query": "What is the total productive maintenance approach to equipment care?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is dicumyl peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the qualification requirement for a brazing operator?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for QQ?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'QQ' occurs in a table in the corpus and the column name 'Diluent (mass %)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is health hazard?",
+      "gold": [
+        "1910.1200_part1::p1::t27"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a chemical which is classified as posing one of the following hazardous effects: acute toxicity (any route of exposure)"
+    },
+    {
+      "query": "What is pigment manufacture?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Buffing.?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Brushing."
+    },
+    {
+      "query": "According to the table in the source document, what is the Criteria for Local lymph node assay?",
+      "gold": [
+        "1910.1200_part6::p1::tbl38"
+      ],
+      "category": "process_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "EC3 value \u22642%."
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Dicumyl peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl5"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "29"
+    },
+    {
+      "query": "What value is stated for test loads in the source documentation?",
+      "gold": [
+        "1910.179_part2::p1::t20"
+      ],
+      "category": "occupational_safety",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "125 percent"
+    },
+    {
+      "query": "What are repairs to gloves?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is multi-piece wheel?",
+      "gold": [
+        "1910.177::p1::t3"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a vehicle wheel consisting of two or more parts, one of which is a side or locking ring designed to hold the tire on the wheel by interlocking components when the tire is inflated"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for Di-n-butyl peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "UN3115"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for Structural?",
+      "gold": [
+        "1910.215_part2::p1::tbl13"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "1\u20448"
+    },
+    {
+      "query": "What value is stated for phase-to-ground peak voltage at gap sparkover (VPPG Peak in the source documentation?",
+      "gold": [
+        "1910.269_part10::p1::t39"
+      ],
+      "category": "occupational_safety",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "110 percent"
+    },
+    {
+      "query": "According to the table in the source document, what is the Minimum distances for 251 to 500 gals?",
+      "gold": [
+        "1910.110_part1::p1::tbl18"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "10 feet"
+    },
+    {
+      "query": "What is carbon tetrachloride?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is separate loading ammunition?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is cutting action?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What cycle time should a workstation be designed for?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for KKa?",
+      "gold": [
+        "60.4_part9::p1::tbl1"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is braided wire rope?",
+      "gold": [
+        "1910.184_part1::p1::t1"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "wire rope formed by plaiting component wire ropes"
+    },
+    {
+      "query": "According to the table in the source document, what is the NTP RoC for Group 1?",
+      "gold": [
+        "1910.1200_part14::p1::tbl27"
+      ],
+      "category": "process_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Known."
+    },
+    {
+      "query": "What is hazard not otherwise classified (HNOC?",
+      "gold": [
+        "1910.1200_part1::p1::t25"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "an adverse physical or health effect identified through evaluation of scientific evidence"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for Melting.?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Melting.' occurs in a table in the corpus and the column name 'ODEQ' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is pinanyl hydroperoxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is combustible dust?",
+      "gold": [
+        "1910.1200_part1::p1::t20"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "finely divided solid particulates of a substance or mixture that pose a flash-fire hazard or explosion hazard when dispersed in air or other oxidizing media"
+    },
+    {
+      "query": "What is the standard work instruction for a machine operator?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is allyl glycidyl ether?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Water (mass %) for Di-4-chlorobenzoyl peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl5"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226523"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for VVb?",
+      "gold": [
+        "60.4_part9::p1::tbl3"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is the surface roughness requirement for a machined bore?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is the number of control chart limits used for a six sigma process?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is carbon monoxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Di-(tert-butylperoxyisopropyl) benzene(s)?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "1, 9"
+    },
+    {
+      "query": "According to the table in the source document, what is the Subpart for Diisopropyl peroxydicarbonate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Diisopropyl peroxydicarbonate' occurs in a table in the corpus and the column name 'Subpart' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is calcium sulfate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the scrap rate target of a pilot production run?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is the service level target of an ABC inventory policy?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is atmospheric tank?",
+      "gold": [
+        "1910.119_part1::p1::t1"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a storage tank which has"
+    },
+    {
+      "query": "What is rim manual?",
+      "gold": [
+        "1910.177::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a publication containing instructions from the manufacturer or other qualified organization for correct mounting, demounting, maintenance, and safety precautions peculiar to the type of wheel being serviced"
+    },
+    {
+      "query": "What is crag herbicide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for EEE?",
+      "gold": [
+        "60.4_part9::p1::tbl3"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "[Reserved]"
+    },
+    {
+      "query": "What is workers so removed?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is chlorine trifluoride?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is methyl isopropyl ketone peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the ppm (a) 1 for Di-(2-ethylhexyl) peroxydicarbonate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Di-(2-ethylhexyl) peroxydicarbonate' occurs in a table in the corpus and the column name 'ppm (a) 1' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for F?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'F' occurs in a table in the corpus and the column name 'mg/m3 (b) 1' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is bloodborne Pathogens?",
+      "gold": [
+        "1910.1030_part1::p1::t0"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "pathogenic microorganisms that are present in human blood and can cause disease in humans"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for 1,1-Di-(tert-Butylperoxy) cyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "UN3109"
+    },
+    {
+      "query": "What is work area?",
+      "gold": [
+        "1910.1200_part1::p1::t37"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a room or defined space in a workplace where hazardous chemicals are produced or"
+    },
+    {
+      "query": "What are the six sigma belt definitions used in a quality programme?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is except when the substance?",
+      "gold": [
+        "173.59_part1::p1::t3"
+      ],
+      "category": "hazmat_transport",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "explosive per se, the ammunition also contains one or more of the following: a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge"
+    },
+    {
+      "query": "What is open wiring on insulators?",
+      "gold": [
+        "1910.399_part2::p1::t14"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "exposed wiring method using cleats, knobs, tubes, and flexible tubing for the protection and support of single insulated conductors run in or on buildings, and not concealed by the building structure"
+    },
+    {
+      "query": "According to the table in the source document, what is the DOT-111not authorizedon or after for Unrefined petroleum products?",
+      "gold": [
+        "173.243::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "January 1, 2018"
+    },
+    {
+      "query": "What is carbon disulfide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for TTTa?",
+      "gold": [
+        "60.4_part9::p1::tbl7"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for 2,2-Di-(tert-butylperoxy)propane?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "OP7"
+    },
+    {
+      "query": "What is carbon black?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is dibutyl phthalate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is selvage edge?",
+      "gold": [
+        "1910.184_part1::p1::t7"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "finished edge of synthetic webbing designed to prevent unraveling"
+    },
+    {
+      "query": "What is occupational Exposure?",
+      "gold": [
+        "1910.1030_part1::p1::t4"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "reasonably anticipated skin, eye, mucous membrane, or parenteral contact with blood or other potentially infectious materials that may result from the performance of an employee's duties"
+    },
+    {
+      "query": "What is grain elevator?",
+      "gold": [
+        "1910.272_part1::p1::t2"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a facility engaged in the receipt, handling, storage, and shipment of bulk raw agricultural commodities such as corn, wheat, oats, barley, sunflower seeds, and soybeans"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for Aldrin?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "309-00-2"
+    },
+    {
+      "query": "What is type K?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Deburring (grinding).?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Cutting."
+    },
+    {
+      "query": "What is respirable fraction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the GHS for Group 2A?",
+      "gold": [
+        "1910.1200_part14::p1::tbl27"
+      ],
+      "category": "process_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Category 1B"
+    },
+    {
+      "query": "What is action level (AL?",
+      "gold": [
+        "1910.1027_part1::p1::t0"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "an airborne concentration of cadmium of 2"
+    },
+    {
+      "query": "What is the machine learning accuracy of a predictive maintenance model?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What are rubber insulating gloves?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the policy for strategic sourcing of a new supplier?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is presently there?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Disuccinic acid peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl13"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "18"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Didecanoyl peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl7"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "30"
+    },
+    {
+      "query": "According to the table in the source document, what is the Subpart for QQQ?",
+      "gold": [
+        "60.4_part4::p1::tbl1"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "VOC Emissions From Petroleum Refinery Wastewater Systems"
+    },
+    {
+      "query": "What is rubber insulating line hose?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is unless the light?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is facilities meeting this definition?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is universal Precautions?",
+      "gold": [
+        "1910.1030_part1::p1::t9"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "approach to infection control"
+    },
+    {
+      "query": "What is calcium hydroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is signal word?",
+      "gold": [
+        "1910.145::p1::t10"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "that portion of a tag's inscription that contains the word or words that are intended to capture the employee's immediate attention"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for 1,1-Di-(tert-butylperoxy)-cyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226472"
+    },
+    {
+      "query": "What are whenever respirators?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for Di-sec-butyl peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "UN3115"
+    },
+    {
+      "query": "What is fabric (metal mesh?",
+      "gold": [
+        "1910.184_part1::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "flexible portion of a metal mesh sling consisting of a series of transverse coils and cross rods"
+    },
+    {
+      "query": "What is the thermodynamic efficiency of a given steam turbine stage?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for 1,1-Di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '1,1-Di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane' occurs in a table in the corpus and the column name 'ODEQ' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is it provides a unique?",
+      "gold": [
+        "1910.1200_part1::p1::t33"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "by which the user can identify the chemical"
+    },
+    {
+      "query": "What is just-in-time purchasing in a supply chain?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What are nominal compositions?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is dimethyl acetamide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for 2,5-Dimethyl-2,5-di-(tert-butylperoxy)hexyne-3?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '2,5-Dimethyl-2,5-di-(tert-butylperoxy)hexyne-3' occurs in a table in the corpus and the column name 'LDEQ' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for Diisopropylbenzene dihydroperoxide?",
+      "gold": [
+        "173.225_part2::p1::tbl9"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u22655"
+    },
+    {
+      "query": "What is assistant Secretary?",
+      "gold": [
+        "1910.1027_part1::p1::t0"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the Assistant Secretary of Labor for Occupational Safety and Health, U"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for UUUUb?",
+      "gold": [
+        "60.4_part9::p1::tbl9"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Di-(2-methylbenzoyl)peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl9"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "30"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for Di-sec-butyl peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "OP4"
+    },
+    {
+      "query": "What is the changeover time between two product families?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is combing machinery?",
+      "gold": [
+        "1910.262_part1::p1::t5"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "general classification, including combers, sliver lap machines, ribbon lap machines, and gill boxes, but excluding cards"
+    },
+    {
+      "query": "What is acetic anhydride?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for 1,1-Di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": ">90-100"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Diisopropylbenzene dihydroperoxide?",
+      "gold": [
+        "173.225_part2::p1::tbl9"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "17"
+    },
+    {
+      "query": "What is single piece wheel?",
+      "gold": [
+        "1910.177::p1::t5"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a vehicle wheel consisting of one part, designed to hold the tire on the wheel when the tire is inflated"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Di-n-butyl peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u221210"
+    },
+    {
+      "query": "What is medical removal?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the throughput of a bottling line at a stated speed?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is commercial account?",
+      "gold": [
+        "1910.1200_part1::p1::t20"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "an arrangement whereby a retail distributor sells hazardous chemicals to an employer, generally in large quantities over time and/or at costs that are below the regular retail price"
+    },
+    {
+      "query": "According to the table in the source document, what is the Nominal outside diameter (inches) for Dimethylaniline (N,N-Dimethylaniline)?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Dimethylaniline (N,N-Dimethylaniline)' occurs in a table in the corpus and the column name 'Nominal outside diameter (inches)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Annealing.?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Boring."
+    },
+    {
+      "query": "How is the bill of materials for an assembly structured?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is building face roller?",
+      "gold": [
+        "1910.66_part1::p1::t5"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a rotating cylindrical member designed to ride on the face of the building wall to prevent the platform from abrading the face of the building and to assist in stabilizing the platform"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for 1\u20442?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '1\u20442' occurs in a table in the corpus and the column name 'Grinding wheel diameters' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is fully vaccinated?",
+      "gold": [
+        "1910.502_part1::p1::t13"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "2 weeks or more following the final dose of a COVID-19 vaccine"
+    },
+    {
+      "query": "What is common name?",
+      "gold": [
+        "1910.1200_part1::p1::t21"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "any designation or identification such as code name, code number, trade name, brand name or generic name used to identify a chemical other than by its chemical name"
+    },
+    {
+      "query": "What is floating roof?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for 1,6-Di-(tert-butylperoxycarbonyloxy)hexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226528"
+    },
+    {
+      "query": "What is suspended scaffold (swinging scaffold?",
+      "gold": [
+        "1910.66_part1::p1::t17"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a scaffold supported on wire or other ropes, used for work on, or for providing access to, vertical sides of structures on a temporary basis"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for satis-?",
+      "gold": [
+        "1910.215_part2::p1::tbl7"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "5\u204416"
+    },
+    {
+      "query": "According to the table in the source document, what is the Water (mass %) for Diisopropylbenzene dihydroperoxide?",
+      "gold": [
+        "173.225_part2::p1::tbl9"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u22655"
+    },
+    {
+      "query": "According to the table in the source document, what is the GHS for 2. Secondary lead production?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '2. Secondary lead production' occurs in a table in the corpus and the column name 'GHS' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for 1,1-Di-(tert-butylperoxy)cyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226413"
+    },
+    {
+      "query": "According to the table in the source document, what is the ppm (a) 1 for Acrolein?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "0.1"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for 3\u20448?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '3\u20448' occurs in a table in the corpus and the column name 'Diluent (mass %)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is type L?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for OOOOb?",
+      "gold": [
+        "60.4_part9::p1::tbl9"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What is master coupling link?",
+      "gold": [
+        "1910.184_part1::p1::t6"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "alloy steel welded coupling link used as an intermediate link to join alloy steel chain to master links"
+    },
+    {
+      "query": "What is safety data sheet (SDS?",
+      "gold": [
+        "1910.1200_part1::p1::t34"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "written or printed material concerning a hazardous chemical that is prepared in accordance with paragraph (g) of this section"
+    },
+    {
+      "query": "What is operating control?",
+      "gold": [
+        "1910.66_part1::p1::t11"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a mechanism regulating or guiding the operation of"
+    },
+    {
+      "query": "What is total dust?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is outdoor drum storage?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for Material?",
+      "gold": [
+        "1910.215_part2::p1::tbl7"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "1\u20444"
+    },
+    {
+      "query": "What is combination cable?",
+      "gold": [
+        "1910.66_part1::p1::t6"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a cable having both steel structural members capable of supporting the platform, and copper or other electrical conductors insulated from each other and the structural members by nonconductive barriers"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Acetaldehyde?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "360"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Abrasive Sawing.?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Abrasive Sawing."
+    },
+    {
+      "query": "What is angle of loading?",
+      "gold": [
+        "1910.184_part1::p1::t0"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "inclination of a leg or branch of a sling measured from the horizontal or vertical plane as shown in Fig"
+    },
+    {
+      "query": "What is becke line analysis?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the ppm (a) 1 for AAb?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'AAb' occurs in a table in the corpus and the column name 'ppm (a) 1' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for MMa?",
+      "gold": [
+        "60.4_part9::p1::tbl3"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for Di-tert-butyl peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "UN3107"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Total dust?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "15"
+    },
+    {
+      "query": "What are dusts and mists?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is dibutyl phosphate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is guide shoe?",
+      "gold": [
+        "1910.66_part1::p1::t9"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a device attached to the platform designed to provide a sliding contact between the platform and the building guides"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for steel?",
+      "gold": [
+        "1910.215_part2::p1::tbl13"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "1\u20448"
+    },
+    {
+      "query": "What is strand laid grommet-hand tucked?",
+      "gold": [
+        "1910.184_part1::p1::t8"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "endless wire rope sling made from one"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for HHH?",
+      "gold": [
+        "60.4_part9::p1::tbl5"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Synthetic Fiber Production"
+    },
+    {
+      "query": "What is the OEE availability factor of a plant at a given uptime?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for AAA?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'AAA' occurs in a table in the corpus and the column name 'ID No.' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Chemical Milling.?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Chemical Milling.' occurs in a table in the corpus and the column name 'mg/m3 (b) 1' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is exposure Incident?",
+      "gold": [
+        "1910.1030_part1::p1::t3"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a specific eye, mouth, other mucous membrane, non-intact skin, or parenteral contact with blood or other potentially infectious materials that results from the performance of an employee's duties"
+    },
+    {
+      "query": "What is competent person?",
+      "gold": [
+        "1910.66_part1::p1::t6"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a person who, because of training and experience, is capable of identifying hazardous or dangerous conditions in powered platform installations and of training employees to identify such conditions"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for R?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'R' occurs in a table in the corpus and the column name 'Temperature ( \u00b0C)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for Allyl propyl disulfide?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "2179-59-1"
+    },
+    {
+      "query": "What is surgical mask?",
+      "gold": [
+        "1910.502_part1::p1::t17"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a mask that covers the user's nose and mouth and provides a physical barrier to fluids and particulate materials"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for XX?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'XX' occurs in a table in the corpus and the column name 'Packing method' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is precautionary statement?",
+      "gold": [
+        "1910.1200_part1::p1::t33"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a phrase that describes recommended measures that should be taken to minimize or prevent adverse effects resulting from exposure to a hazardous chemical, or improper storage or handling"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for 2,5-Dimethyl-2,5-di-(2-ethylhexanoylperoxy)hexane?",
+      "gold": [
+        "173.225_part2::p1::tbl11"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "20"
+    },
+    {
+      "query": "What is chlorine dioxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is a value stream mapping exercise?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Concentration (mass %) for Category 1?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Category 1' occurs in a table in the corpus and the column name 'Concentration (mass %)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is calcium carbonate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Isopropylcumyl hydroperoxide?",
+      "gold": [
+        "173.225_part2::p1::tbl15"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "13"
+    },
+    {
+      "query": "According to the table in the source document, what is the Minimum distances for 501 to 2,000 gals?",
+      "gold": [
+        "1910.110_part1::p1::tbl18"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "25 feet 2"
+    },
+    {
+      "query": "According to the table in the source document, what is the Assay for Acetic anhydride?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Acetic anhydride' occurs in a table in the corpus and the column name 'Assay' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is vertical hitch?",
+      "gold": [
+        "1910.184_part1::p1::t9"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "method of supporting a load by a single, vertical part or leg of the sling"
+    },
+    {
+      "query": "According to the table in the source document, what is the Water (mass %) for Disuccinic acid peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl13"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226528"
+    },
+    {
+      "query": "What is boron oxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the standard qualification procedure for a welding procedure?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Peroxyacetic acid, type D, stabilized?",
+      "gold": [
+        "173.225_part2::p1::tbl17"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "13, 20"
+    },
+    {
+      "query": "According to the table in the source document, what is the Proof-testVoltagerms V for 3\u20448?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '3\u20448' occurs in a table in the corpus and the column name 'Proof-testVoltagerms V' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is dicetyl peroxydicarbonate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Di-sec-butyl peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u221220"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for FFF?",
+      "gold": [
+        "60.4_part9::p1::tbl5"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Flexible Vinyl and Urethane Coating and Printing"
+    },
+    {
+      "query": "What is needleless systems?",
+      "gold": [
+        "1910.1030_part1::p1::t4"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a device that does not use needles for: (1) The collection of bodily fluids or withdrawal of body fluids after initial venous or arterial access is established"
+    },
+    {
+      "query": "What is benzoyl peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for Aluminum, metal (as Al)?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "7429-90-5"
+    },
+    {
+      "query": "What is replacement in kind?",
+      "gold": [
+        "1910.119_part1::p1::t5"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a replacement which satisfies the design specification"
+    },
+    {
+      "query": "What is final medical determination?",
+      "gold": [
+        "1910.1027_part1::p1::t1"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "written medical opinion of the employee's health status by the examining physician under paragraphs (l)(3)-(12) of this section or,"
+    },
+    {
+      "query": "According to the table in the source document, what is the Effective date for 5. Lead pigment manufacturing?",
+      "gold": [
+        "1910.1025_part5::p1::tbl19"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "200"
+    },
+    {
+      "query": "What is dipropionyl peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is calcium silicate?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is benzyl chloride?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Aldrin?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "0.25"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for Allyl propyl disulfide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Allyl propyl disulfide' occurs in a table in the corpus and the column name 'Source category' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Brushing.?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Broaching with green ceramic."
+    },
+    {
+      "query": "What is source Individual?",
+      "gold": [
+        "1910.1030_part1::p1::t8"
+      ],
+      "category": "environmental_control",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "any individual, living or dead, whose blood or other potentially infectious materials may be a source of occupational exposure to the employee"
+    },
+    {
+      "query": "What is ambulatory care?",
+      "gold": [
+        "1910.502_part1::p1::t6"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "healthcare services performed on an outpatient basis, without admission to a hospital or other facility"
+    },
+    {
+      "query": "What is the heat treatment specification for a given steel grade?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for Di-tert-butyl peroxide?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "24"
+    },
+    {
+      "query": "According to the table in the source document, what is the Subpart for OOO?",
+      "gold": [
+        "60.4_part4::p1::tbl1"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Nonmetallic Mineral Processing Plants"
+    },
+    {
+      "query": "What is a failure mode and effects analysis used for?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is didecanoyl peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Grinding wheel diameters for (min.?",
+      "gold": [
+        "1910.215_part2::p1::tbl13"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "3\u204416"
+    },
+    {
+      "query": "What is the lead time for an outsourced component?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What is nickel cadmium battery?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Beryllium oxide operations for Laser Cutting.?",
+      "gold": [
+        "1910.1024_part3::p1::tbl8"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Firing of Refractory Metallization (>1,100 \u00b0C)."
+    },
+    {
+      "query": "According to the table in the source document, what is the Minimum distances for 125 to 250 gals?",
+      "gold": [
+        "1910.110_part1::p1::tbl18"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "10 feet"
+    },
+    {
+      "query": "How is a third party logistics provider selected and evaluated?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "What are drying cans?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Subpart for 1-Chloro-2,3-epoxypropane; see Epichlorohydrin.?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '1-Chloro-2,3-epoxypropane; see Epichlorohydrin.' occurs in a table in the corpus and the column name 'Subpart' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the ppm (a) 1 for Acetaldehyde?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "200"
+    },
+    {
+      "query": "What is methyl ethyl ketone peroxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the SECAL (\u00b5g/m3) for 2 Ordinary.?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '2 Ordinary.' occurs in a table in the corpus and the column name 'SECAL (\u00b5g/m3)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is building maintenance?",
+      "gold": [
+        "1910.66_part1::p1::t5"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "operations such as window cleaning, caulking, metal polishing, reglazing, and general maintenance on building surfaces"
+    },
+    {
+      "query": "What is the coefficient of variation of a batch of measurements?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Air pollution control agency for Lake County AQMD?",
+      "gold": [
+        "60.4_part4::p1::tbl17"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Mariposa County AQMD"
+    },
+    {
+      "query": "What is diisobutyl ketone?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Skin sensitizer for Chlorinated camphene?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Chlorinated camphene' occurs in a table in the corpus and the column name 'Skin sensitizer' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is platform rated load?",
+      "gold": [
+        "1910.66_part1::p1::t12"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the combined weight of workers, tools, equipment and other material which is permitted to be carried by"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for DDDD?",
+      "gold": [
+        "60.4_part9::p1::tbl21"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "What safety stock level should be held for a slow-moving spare?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the mg/m3 (b) 1 for Allyl glycidyl ether (AGE)?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "(C)45"
+    },
+    {
+      "query": "What is serious eye damage?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the difference between a forecast and a demand plan?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the question asks about an industrial engineering topic -- a production, inventory or maintenance method -- that a federal regulatory corpus does not contain; the corpus contains binding requirements, not the methods behind them"
+    },
+    {
+      "query": "According to the table in the source document, what is the Notes for EEE?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'EEE' occurs in a table in the corpus and the column name 'Notes' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is roof powered platform?",
+      "gold": [
+        "1910.66_part1::p1::t14"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a working platform where the hoist(s) used to raise or lower the platform is located on the roof"
+    },
+    {
+      "query": "What is diglycidyl ether?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Packing method for GGG?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'GGG' occurs in a table in the corpus and the column name 'Packing method' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for 1,1-Di-(tert-Butylperoxy) cyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226563"
+    },
+    {
+      "query": "According to the table in the source document, what is the Minimum distances for Underground?",
+      "gold": [
+        "1910.110_part1::p1::tbl18"
+      ],
+      "category": "occupational_safety",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Aboveground"
+    },
+    {
+      "query": "According to the table in the source document, what is the ID No. for 2,2-Di-(tert-butylperoxy)butane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "UN3103"
+    },
+    {
+      "query": "According to the table in the source document, what is the ODEQ for AAb?",
+      "gold": [
+        "60.4_part9::p1::tbl15"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "No"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for KKK?",
+      "gold": [
+        "60.4_part9::p1::tbl5"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "VOC Equipment Leaks From Onshore Natural Gas Processing Plants"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for Office and rest rooms?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Office and rest rooms' occurs in a table in the corpus and the column name 'CAS No. (c)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is designated representative?",
+      "gold": [
+        "1910.1200_part1::p1::t21"
+      ],
+      "category": "process_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "any individual or organization to whom an employee gives written authorization to exercise"
+    },
+    {
+      "query": "What is close contact?",
+      "gold": [
+        "1910.502_part1::p1::t8"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "being within 6 feet of any other person for a cumulative total of 15 minutes or more over a 24-hour period during that person's potential period of transmission"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for Di-(tert-butylperoxy)phthalate?",
+      "gold": [
+        "173.225_part2::p1::tbl3"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226548"
+    },
+    {
+      "query": "According to the table in the source document, what is the Temperature ( \u00b0C) for Dichlorodiphenyltrichloroethane (DDT)?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Dichlorodiphenyltrichloroethane (DDT)' occurs in a table in the corpus and the column name 'Temperature ( \u00b0C)' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the CAS No. (c) for alpha-Alumina?",
+      "gold": [
+        "1910.1000_part1::p1::tbl12"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "1344-28-1"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for 1,1-Di-(tert-butylperoxy)cyclohexane?",
+      "gold": [
+        "173.225_part2::p1::tbl1"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226520"
+    },
+    {
+      "query": "What is female handle (choker?",
+      "gold": [
+        "1910.184_part1::p1::t4"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "handle with a handle eye and a slot of such dimension as to permit passage of a male handle thereby allowing the use of a"
+    },
+    {
+      "query": "According to the table in the source document, what is the Source category for NNN?",
+      "gold": [
+        "60.4_part9::p1::tbl5"
+      ],
+      "category": "environmental_control",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "VOC Emissions from SOCMI Distillation Operations"
+    },
+    {
+      "query": "According to the table in the source document, what is the LDEQ for 1,2-Diaminoethane; see Ethylenediamine.?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '1,2-Diaminoethane; see Ethylenediamine.' occurs in a table in the corpus and the column name 'LDEQ' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Diluent (mass %) for 1,1-Dimethyl-3-hydroxybutylperoxyneoheptanoate?",
+      "gold": [
+        "173.225_part2::p1::tbl11"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u226548"
+    },
+    {
+      "query": "What is roof rigged davit?",
+      "gold": [
+        "1910.66_part1::p1::t15"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "a davit used to raise the suspended working platform above the building face being serviced"
+    },
+    {
+      "query": "What is chlorinated diphenyl oxide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is reaction time?",
+      "gold": [
+        "1910.217_part4::p1::t3"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the time, in seconds, it takes the signal, required to activate/deactivate the system, to travel through the system, measured from the time of signal initiation to the time the function being measured is completed"
+    },
+    {
+      "query": "What is function completion?",
+      "gold": [
+        "1910.217_part4::p1::t3"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "for, electrical, electromechanical and electronic devices, when the circuit produces a change of state in the"
+    },
+    {
+      "query": "What is acetylene tetrabromide?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Water (mass %) for Dicyclohexyl peroxydicarbonate?",
+      "gold": [
+        "173.225_part2::p1::tbl5"
+      ],
+      "category": "hazmat_transport",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "\u22659"
+    },
+    {
+      "query": "What are healthcare services?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is cable laid endless sling-mechanical joint?",
+      "gold": [
+        "1910.184_part1::p1::t1"
+      ],
+      "category": "occupational_safety",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "wire rope sling made endless by joining the ends of a single length of cable laid rope with one or more metallic"
+    }
+  ]
+}

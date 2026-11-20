@@ -1,0 +1,9 @@
+{
+  "status": "not_run",
+  "reason": "the generator rejected the requests, so no arm asked any question and no rate from it is reported: rag_nogate: empty completion (stop_reason='max_tokens', content types=['thinking'])",
+  "model": "MiniMax-M3.1-Flash",
+  "n_answerable": 32,
+  "n_unanswerable": 144,
+  "n_unanswerable_total": 144,
+  "arms": {}
+}

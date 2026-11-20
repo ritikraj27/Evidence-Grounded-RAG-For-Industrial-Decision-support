@@ -1,0 +1,164 @@
+{
+  "status": "run",
+  "n_annotators": 2,
+  "annotators": {
+    "judge_a_model": {
+      "n_labelled": 101,
+      "n_alarms_labelled": 20,
+      "n_alarms_true": 0,
+      "precision": 0.0,
+      "precision_ci95": [
+        0.0,
+        0.16113012549493322
+      ],
+      "recall_estimate": null,
+      "recall_ci95": null,
+      "n_unflagged_sampled": 80,
+      "n_missed_true_in_sample": 0,
+      "unflagged_population": 1330,
+      "sampling_scale": 16.625,
+      "estimated_total_true_contradictions": null,
+      "by_stratum": {
+        "conjunction_alarm": {
+          "n": 20,
+          "n_true": 0
+        },
+        "unflagged_random": {
+          "n": 80,
+          "n_true": 0
+        },
+        "near_miss_diagnostic": {
+          "n": 1,
+          "n_true": 0
+        }
+      },
+      "label_distribution": {
+        "no_conflict": 53,
+        "term_mismatch": 48
+      },
+      "label_distribution_alarms": {
+        "no_conflict": 19,
+        "term_mismatch": 1
+      },
+      "label_distribution_unflagged": {
+        "no_conflict": 33,
+        "term_mismatch": 47
+      },
+      "kind": "model",
+      "model": "MiniMax-M3",
+      "by_branch": {
+        "semantic": {
+          "n": 20,
+          "n_acceptable": 0,
+          "n_true_contradiction": 0,
+          "acceptable_rate": 0.0,
+          "true_contradiction_rate": 0.0
+        }
+      }
+    },
+    "judge_b_frontier": {
+      "n_labelled": 101,
+      "n_alarms_labelled": 20,
+      "n_alarms_true": 0,
+      "precision": 0.0,
+      "precision_ci95": [
+        0.0,
+        0.16113012549493322
+      ],
+      "recall_estimate": null,
+      "recall_ci95": null,
+      "n_unflagged_sampled": 80,
+      "n_missed_true_in_sample": 0,
+      "unflagged_population": 1330,
+      "sampling_scale": 16.625,
+      "estimated_total_true_contradictions": null,
+      "by_stratum": {
+        "conjunction_alarm": {
+          "n": 20,
+          "n_true": 0
+        },
+        "unflagged_random": {
+          "n": 80,
+          "n_true": 0
+        },
+        "near_miss_diagnostic": {
+          "n": 1,
+          "n_true": 0
+        }
+      },
+      "label_distribution": {
+        "no_conflict": 61,
+        "term_mismatch": 40
+      },
+      "label_distribution_alarms": {
+        "no_conflict": 16,
+        "term_mismatch": 4
+      },
+      "label_distribution_unflagged": {
+        "no_conflict": 44,
+        "term_mismatch": 36
+      },
+      "kind": "model",
+      "model": "claude-opus-5-5",
+      "by_branch": {
+        "semantic": {
+          "n": 20,
+          "n_acceptable": 0,
+          "n_true_contradiction": 0,
+          "acceptable_rate": 0.0,
+          "true_contradiction_rate": 0.0
+        }
+      }
+    }
+  },
+  "by_branch": {
+    "semantic": {
+      "n": 40,
+      "n_acceptable": 0,
+      "n_true_contradiction": 0,
+      "acceptable_rate": 0.0,
+      "true_contradiction_rate": 0.0
+    }
+  },
+  "agreement": {
+    "n_compared": 101,
+    "raw_agreement_5way": 0.8217821782178217,
+    "cohen_kappa_5way": 0.6398573692551505,
+    "raw_agreement_2way": 1.0,
+    "cohen_kappa_2way": null,
+    "n_disagreements_2way": 0,
+    "disagreeing_pair_ids": [],
+    "n_alarms_compared": 20,
+    "precision_band_lower": 0.0,
+    "precision_band_upper": 0.0,
+    "precision_band_lower_ci95": [
+      0.0,
+      0.16113012549493322
+    ],
+    "precision_band_upper_ci95": [
+      0.0,
+      0.16113012549493322
+    ]
+  },
+  "positive_control": {
+    "n_pairs": 14,
+    "by_annotator": {
+      "judge_a_model": {
+        "n": 14,
+        "n_correct": 14,
+        "n_correct_contradiction": 6,
+        "n_expected_contradiction": 6,
+        "misses": []
+      },
+      "judge_b_frontier": {
+        "n": 14,
+        "n_correct": 14,
+        "n_correct_contradiction": 6,
+        "n_expected_contradiction": 6,
+        "misses": []
+      }
+    },
+    "note": "The control pairs are synthetic and have known labels, so their score measures the annotator rather than the detector. A judge that scores badly here cannot support any claim about the corpus."
+  },
+  "note": "Precision is computed on the labelled alarms; recall is an estimate from a simple random sample of the unflagged pairs scaled to the unflagged population, with the enriched near-miss stratum excluded. Where two annotators are recorded, each is scored separately, their agreement is reported, and the headline precision is a band whose lower end counts a disagreement between annotators as a false alarm and whose upper end counts it as a true contradiction."
+}

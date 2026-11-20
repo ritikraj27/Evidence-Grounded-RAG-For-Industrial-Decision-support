@@ -1,0 +1,3072 @@
+{
+  "schema": "mtp.revision-eval/1",
+  "n_pairs_annotated": 240,
+  "label_distribution": {
+    "supersession": 84,
+    "term_mismatch": 90,
+    "no_conflict": 64,
+    "granularity": 2
+  },
+  "stratum_distribution": {
+    "revision": 90,
+    "similar": 150
+  },
+  "annotator_agreement": {
+    "pairwise": {
+      "generalist_control vs judge_a_model": {
+        "n_labelled_by_both": 240,
+        "cohens_kappa": 0.3036529680365297,
+        "ci95": [
+          0.22962451097030218,
+          0.3776814251027572
+        ],
+        "agreement_rate": 0.49166666666666664,
+        "crosstab": {
+          "supersession | granularity": 7,
+          "supersession | no_conflict": 72,
+          "term_mismatch | term_mismatch": 73,
+          "term_mismatch | no_conflict": 13,
+          "supersession | supersession": 4,
+          "supersession | term_mismatch": 2,
+          "granularity | no_conflict": 3,
+          "supersession | semantic_conflict": 3,
+          "no_conflict | granularity": 7,
+          "no_conflict | no_conflict": 41,
+          "term_mismatch | granularity": 3,
+          "no_conflict | term_mismatch": 9,
+          "term_mismatch | quantity_conflict": 1,
+          "no_conflict | quantity_conflict": 1,
+          "granularity | term_mismatch": 1
+        }
+      },
+      "generalist_control vs specialist_environmental_control": {
+        "n_labelled_by_both": 52,
+        "cohens_kappa": 0.6856950973807924,
+        "ci95": [
+          0.547127229957221,
+          0.8242629648043638
+        ],
+        "agreement_rate": 0.8269230769230769,
+        "crosstab": {
+          "supersession | supersession": 31,
+          "supersession | no_conflict": 1,
+          "term_mismatch | term_mismatch": 10,
+          "no_conflict | term_mismatch": 7,
+          "term_mismatch | no_conflict": 1,
+          "no_conflict | no_conflict": 2
+        }
+      },
+      "generalist_control vs specialist_hazmat_transport": {
+        "n_labelled_by_both": 11,
+        "cohens_kappa": 0.6507936507936509,
+        "ci95": [
+          0.33491104889570184,
+          0.9666762526916
+        ],
+        "agreement_rate": 0.8181818181818182,
+        "crosstab": {
+          "term_mismatch | no_conflict": 1,
+          "supersession | supersession": 7,
+          "term_mismatch | term_mismatch": 2,
+          "granularity | term_mismatch": 1
+        }
+      },
+      "generalist_control vs specialist_occupational_safety": {
+        "n_labelled_by_both": 133,
+        "cohens_kappa": 0.6614450753867241,
+        "ci95": [
+          0.5727476759052245,
+          0.7501424748682238
+        ],
+        "agreement_rate": 0.8045112781954887,
+        "crosstab": {
+          "supersession | supersession": 9,
+          "no_conflict | no_conflict": 36,
+          "term_mismatch | term_mismatch": 62,
+          "term_mismatch | no_conflict": 8,
+          "term_mismatch | supersession": 3,
+          "no_conflict | granularity": 3,
+          "no_conflict | supersession": 2,
+          "no_conflict | term_mismatch": 7,
+          "supersession | no_conflict": 2,
+          "granularity | term_mismatch": 1
+        }
+      },
+      "generalist_control vs specialist_process_safety": {
+        "n_labelled_by_both": 44,
+        "cohens_kappa": 0.7244258872651355,
+        "ci95": [
+          0.5746939194860877,
+          0.8741578550441832
+        ],
+        "agreement_rate": 0.9318181818181818,
+        "crosstab": {
+          "supersession | supersession": 37,
+          "term_mismatch | supersession": 1,
+          "supersession | term_mismatch": 1,
+          "granularity | no_conflict": 1,
+          "term_mismatch | term_mismatch": 2,
+          "granularity | granularity": 1,
+          "no_conflict | no_conflict": 1
+        }
+      },
+      "judge_a_model vs specialist_environmental_control": {
+        "n_labelled_by_both": 52,
+        "cohens_kappa": 0.20419763882815914,
+        "ci95": [
+          0.0655604319401854,
+          0.3428348457161329
+        ],
+        "agreement_rate": 0.3269230769230769,
+        "crosstab": {
+          "no_conflict | supersession": 25,
+          "supersession | supersession": 4,
+          "no_conflict | no_conflict": 4,
+          "term_mismatch | term_mismatch": 9,
+          "granularity | supersession": 2,
+          "no_conflict | term_mismatch": 6,
+          "granularity | term_mismatch": 1,
+          "quantity_conflict | term_mismatch": 1
+        }
+      },
+      "judge_a_model vs specialist_hazmat_transport": {
+        "n_labelled_by_both": 11,
+        "cohens_kappa": 0.14563106796116504,
+        "ci95": [
+          -0.13963278073260105,
+          0.4308949166549311
+        ],
+        "agreement_rate": 0.2727272727272727,
+        "crosstab": {
+          "term_mismatch | no_conflict": 1,
+          "no_conflict | supersession": 6,
+          "granularity | supersession": 1,
+          "term_mismatch | term_mismatch": 3
+        }
+      },
+      "judge_a_model vs specialist_occupational_safety": {
+        "n_labelled_by_both": 133,
+        "cohens_kappa": 0.4357886617817201,
+        "ci95": [
+          0.33135984954944675,
+          0.5402174740139934
+        ],
+        "agreement_rate": 0.6691729323308271,
+        "crosstab": {
+          "no_conflict | supersession": 11,
+          "granularity | no_conflict": 3,
+          "term_mismatch | term_mismatch": 56,
+          "no_conflict | no_conflict": 32,
+          "term_mismatch | supersession": 2,
+          "no_conflict | term_mismatch": 10,
+          "granularity | term_mismatch": 4,
+          "term_mismatch | no_conflict": 10,
+          "granularity | granularity": 1,
+          "granularity | supersession": 1,
+          "no_conflict | granularity": 2,
+          "quantity_conflict | no_conflict": 1
+        }
+      },
+      "judge_a_model vs specialist_process_safety": {
+        "n_labelled_by_both": 44,
+        "cohens_kappa": 0.0744336569579288,
+        "ci95": [
+          -0.021394287810437063,
+          0.17026160172629468
+        ],
+        "agreement_rate": 0.11363636363636363,
+        "crosstab": {
+          "granularity | supersession": 4,
+          "no_conflict | supersession": 30,
+          "term_mismatch | supersession": 1,
+          "term_mismatch | term_mismatch": 3,
+          "no_conflict | no_conflict": 2,
+          "no_conflict | granularity": 1,
+          "semantic_conflict | supersession": 3
+        }
+      }
+    },
+    "annotators": [
+      "generalist_control",
+      "judge_a_model",
+      "specialist_environmental_control",
+      "specialist_hazmat_transport",
+      "specialist_occupational_safety",
+      "specialist_process_safety"
+    ],
+    "note": "the consensus view takes the majority label and treats a contested pair as not a conflict, so a contested pair can only lower the measured precision, never raise it. Every annotator is also scored alone, so the spread across annotators is visible rather than hidden by the tie-break."
+  },
+  "profiles": {
+    "shipped": {
+      "consensus": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 40,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 26,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.65,
+            "precision_ci95": [
+              0.4950559699353738,
+              0.7786566682895086
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 26,
+              "term_mismatch": 10,
+              "no_conflict": 4
+            },
+            "n_flagged_in_revision_stratum": 28,
+            "n_flagged_in_similar_stratum": 12,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.043733265332143306
+            ],
+            "n_annotated_positives": 84
+          }
+        },
+        "overall": {
+          "n_flagged": 40,
+          "n_flagged_with_a_real_problem": 26,
+          "precision_any_flag": 0.65,
+          "precision_any_flag_ci95": [
+            0.4950559699353738,
+            0.7786566682895086
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.08762453925039232
+          ],
+          "n_pairs_total": 240,
+          "flag_rate": 0.16666666666666666,
+          "recall_any_real_problem": 0.30952380952380953,
+          "n_annotated_conflicts": 84,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 58,
+          "supersession -> semantic": 26,
+          "term_mismatch -> not_flagged": 80,
+          "no_conflict -> not_flagged": 60,
+          "term_mismatch -> semantic": 10,
+          "granularity -> not_flagged": 2,
+          "no_conflict -> semantic": 4
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 75,
+            "n_annotated_conflicts": 74,
+            "conflict_base_rate": 0.9866666666666667,
+            "n_flagged": 24,
+            "n_flagged_with_a_real_problem": 24,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8620194241710247,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 74,
+              "granularity": 1
+            }
+          },
+          "substantive": {
+            "n_pairs": 165,
+            "n_annotated_conflicts": 10,
+            "conflict_base_rate": 0.06060606060606061,
+            "n_flagged": 16,
+            "n_flagged_with_a_real_problem": 2,
+            "precision_any_flag": 0.125,
+            "precision_ci95": [
+              0.034976749337057134,
+              0.3602333143674828
+            ],
+            "label_distribution": {
+              "term_mismatch": 90,
+              "no_conflict": 64,
+              "supersession": 10,
+              "granularity": 1
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 28,
+            "flag_rate": 0.3111111111111111,
+            "n_flagged_with_a_real_problem": 25,
+            "precision_any_flag": 0.8928571428571429,
+            "precision_ci95": [
+              0.7280377463234293,
+              0.9628823079452005
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 28
+            },
+            "label_distribution": {
+              "supersession": 82,
+              "term_mismatch": 4,
+              "no_conflict": 3,
+              "granularity": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 150,
+            "n_flagged": 12,
+            "flag_rate": 0.08,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.08333333333333333,
+            "precision_ci95": [
+              0.014864709450773478,
+              0.35388592179859524
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 12
+            },
+            "label_distribution": {
+              "no_conflict": 61,
+              "term_mismatch": 86,
+              "supersession": 2,
+              "granularity": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 40
+      },
+      "specialist_occupational_safety": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 12,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.25,
+            "precision_ci95": [
+              0.08894003962896138,
+              0.53231033912066
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 3,
+              "no_conflict": 3,
+              "term_mismatch": 6
+            },
+            "n_flagged_in_revision_stratum": 2,
+            "n_flagged_in_similar_stratum": 10,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.21531701192718142
+            ],
+            "n_annotated_positives": 14
+          }
+        },
+        "overall": {
+          "n_flagged": 12,
+          "n_flagged_with_a_real_problem": 3,
+          "precision_any_flag": 0.25,
+          "precision_any_flag_ci95": [
+            0.08894003962896138,
+            0.53231033912066
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "n_pairs_total": 133,
+          "flag_rate": 0.09022556390977443,
+          "recall_any_real_problem": 0.21428571428571427,
+          "n_annotated_conflicts": 14,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 11,
+          "supersession -> semantic": 3,
+          "no_conflict -> semantic": 3,
+          "term_mismatch -> not_flagged": 64,
+          "no_conflict -> not_flagged": 43,
+          "term_mismatch -> semantic": 6,
+          "granularity -> not_flagged": 3
+        },
+        "branches_below_the_precision_floor": [
+          {
+            "branch": "semantic",
+            "precision": 0.25,
+            "n_flagged": 12
+          }
+        ],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 7,
+            "n_annotated_conflicts": 7,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 1,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 7
+            }
+          },
+          "substantive": {
+            "n_pairs": 126,
+            "n_annotated_conflicts": 7,
+            "conflict_base_rate": 0.05555555555555555,
+            "n_flagged": 11,
+            "n_flagged_with_a_real_problem": 2,
+            "precision_any_flag": 0.18181818181818182,
+            "precision_ci95": [
+              0.05136660067100063,
+              0.4769861375782448
+            ],
+            "label_distribution": {
+              "supersession": 7,
+              "no_conflict": 46,
+              "term_mismatch": 70,
+              "granularity": 3
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 7,
+            "n_flagged": 2,
+            "flag_rate": 0.2857142857142857,
+            "n_flagged_with_a_real_problem": 2,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.34237195288961925,
+              1.0
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 2
+            },
+            "label_distribution": {
+              "supersession": 7
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 126,
+            "n_flagged": 10,
+            "flag_rate": 0.07936507936507936,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.1,
+            "precision_ci95": [
+              0.01787574951572113,
+              0.4041563854975721
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 10
+            },
+            "label_distribution": {
+              "no_conflict": 46,
+              "term_mismatch": 70,
+              "supersession": 7,
+              "granularity": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 0
+      },
+      "specialist_environmental_control": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 24,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 21,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.875,
+            "precision_ci95": [
+              0.6899571185214243,
+              0.9565574496068442
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 21,
+              "term_mismatch": 3
+            },
+            "n_flagged_in_revision_stratum": 22,
+            "n_flagged_in_similar_stratum": 2,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.11025900073475385
+            ],
+            "n_annotated_positives": 31
+          }
+        },
+        "overall": {
+          "n_flagged": 24,
+          "n_flagged_with_a_real_problem": 21,
+          "precision_any_flag": 0.875,
+          "precision_any_flag_ci95": [
+            0.6899571185214243,
+            0.9565574496068442
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.13798057582897535
+          ],
+          "n_pairs_total": 52,
+          "flag_rate": 0.46153846153846156,
+          "recall_any_real_problem": 0.6774193548387096,
+          "n_annotated_conflicts": 31,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 10,
+          "supersession -> semantic": 21,
+          "no_conflict -> not_flagged": 4,
+          "term_mismatch -> semantic": 3,
+          "term_mismatch -> not_flagged": 14
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 31,
+            "n_annotated_conflicts": 31,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 21,
+            "n_flagged_with_a_real_problem": 21,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8453561767357979,
+              0.9999999999999999
+            ],
+            "label_distribution": {
+              "supersession": 31
+            }
+          },
+          "substantive": {
+            "n_pairs": 21,
+            "n_annotated_conflicts": 0,
+            "conflict_base_rate": 0.0,
+            "n_flagged": 3,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.5615060804490177
+            ],
+            "label_distribution": {
+              "no_conflict": 4,
+              "term_mismatch": 17
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 33,
+            "n_flagged": 22,
+            "flag_rate": 0.6666666666666666,
+            "n_flagged_with_a_real_problem": 21,
+            "precision_any_flag": 0.9545454545454546,
+            "precision_ci95": [
+              0.7820151050048196,
+              0.9919307806988522
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 22
+            },
+            "label_distribution": {
+              "supersession": 31,
+              "no_conflict": 1,
+              "term_mismatch": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 19,
+            "n_flagged": 2,
+            "flag_rate": 0.10526315789473684,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.6576280471103807
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 2
+            },
+            "label_distribution": {
+              "term_mismatch": 16,
+              "no_conflict": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 24
+      },
+      "specialist_process_safety": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 3,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 1,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.3333333333333333,
+            "precision_ci95": [
+              0.0614903152761605,
+              0.7923450448735121
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 1,
+              "term_mismatch": 2
+            },
+            "n_flagged_in_revision_stratum": 3,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.09181293258383999
+            ],
+            "n_annotated_positives": 38
+          }
+        },
+        "overall": {
+          "n_flagged": 3,
+          "n_flagged_with_a_real_problem": 1,
+          "precision_any_flag": 0.3333333333333333,
+          "precision_any_flag_ci95": [
+            0.0614903152761605,
+            0.7923450448735121
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.5615060804490177
+          ],
+          "n_pairs_total": 44,
+          "flag_rate": 0.06818181818181818,
+          "recall_any_real_problem": 0.02631578947368421,
+          "n_annotated_conflicts": 38,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 37,
+          "supersession -> semantic": 1,
+          "term_mismatch -> semantic": 2,
+          "no_conflict -> not_flagged": 2,
+          "granularity -> not_flagged": 1,
+          "term_mismatch -> not_flagged": 1
+        },
+        "branches_below_the_precision_floor": [
+          {
+            "branch": "semantic",
+            "precision": 0.3333333333333333,
+            "n_flagged": 3
+          }
+        ],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 33,
+            "n_annotated_conflicts": 32,
+            "conflict_base_rate": 0.9696969696969697,
+            "n_flagged": 1,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 32,
+              "granularity": 1
+            }
+          },
+          "substantive": {
+            "n_pairs": 11,
+            "n_annotated_conflicts": 6,
+            "conflict_base_rate": 0.5454545454545454,
+            "n_flagged": 2,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.6576280471103807
+            ],
+            "label_distribution": {
+              "supersession": 6,
+              "term_mismatch": 3,
+              "no_conflict": 2
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 42,
+            "n_flagged": 3,
+            "flag_rate": 0.07142857142857142,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.3333333333333333,
+            "precision_ci95": [
+              0.0614903152761605,
+              0.7923450448735121
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 3
+            },
+            "label_distribution": {
+              "supersession": 38,
+              "term_mismatch": 2,
+              "no_conflict": 1,
+              "granularity": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 2,
+            "n_flagged": 0,
+            "flag_rate": 0.0,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "branch_distribution_of_the_alarms": {},
+            "label_distribution": {
+              "term_mismatch": 1,
+              "no_conflict": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 0
+      },
+      "specialist_hazmat_transport": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 1,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 1,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 1
+            },
+            "n_flagged_in_revision_stratum": 1,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.35433884297520657
+            ],
+            "n_annotated_positives": 7
+          }
+        },
+        "overall": {
+          "n_flagged": 1,
+          "n_flagged_with_a_real_problem": 1,
+          "precision_any_flag": 1.0,
+          "precision_any_flag_ci95": [
+            0.20654329147389294,
+            1.0
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.7934567085261071
+          ],
+          "n_pairs_total": 11,
+          "flag_rate": 0.09090909090909091,
+          "recall_any_real_problem": 0.14285714285714285,
+          "n_annotated_conflicts": 7,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "no_conflict -> not_flagged": 1,
+          "supersession -> not_flagged": 6,
+          "supersession -> semantic": 1,
+          "term_mismatch -> not_flagged": 3
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 4,
+            "n_annotated_conflicts": 4,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 1,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 4
+            }
+          },
+          "substantive": {
+            "n_pairs": 7,
+            "n_annotated_conflicts": 3,
+            "conflict_base_rate": 0.42857142857142855,
+            "n_flagged": 0,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution": {
+              "no_conflict": 1,
+              "supersession": 3,
+              "term_mismatch": 3
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 8,
+            "n_flagged": 1,
+            "flag_rate": 0.125,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 1
+            },
+            "label_distribution": {
+              "no_conflict": 1,
+              "supersession": 7
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 3,
+            "n_flagged": 0,
+            "flag_rate": 0.0,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "branch_distribution_of_the_alarms": {},
+            "label_distribution": {
+              "term_mismatch": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 1
+      },
+      "generalist_control": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 40,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 27,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.675,
+            "precision_ci95": [
+              0.52017458088898,
+              0.7991568303733828
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 27,
+              "term_mismatch": 8,
+              "no_conflict": 5
+            },
+            "n_flagged_in_revision_stratum": 28,
+            "n_flagged_in_similar_stratum": 12,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              3.469446951953614e-18,
+              0.04182853957248131
+            ],
+            "n_annotated_positives": 88
+          }
+        },
+        "overall": {
+          "n_flagged": 40,
+          "n_flagged_with_a_real_problem": 27,
+          "precision_any_flag": 0.675,
+          "precision_any_flag_ci95": [
+            0.52017458088898,
+            0.7991568303733828
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.08762453925039232
+          ],
+          "n_pairs_total": 240,
+          "flag_rate": 0.16666666666666666,
+          "recall_any_real_problem": 0.3068181818181818,
+          "n_annotated_conflicts": 88,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 61,
+          "supersession -> semantic": 27,
+          "term_mismatch -> not_flagged": 82,
+          "granularity -> not_flagged": 4,
+          "term_mismatch -> semantic": 8,
+          "no_conflict -> semantic": 5,
+          "no_conflict -> not_flagged": 53
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 75,
+            "n_annotated_conflicts": 74,
+            "conflict_base_rate": 0.9866666666666667,
+            "n_flagged": 24,
+            "n_flagged_with_a_real_problem": 24,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8620194241710247,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 74,
+              "granularity": 1
+            }
+          },
+          "substantive": {
+            "n_pairs": 165,
+            "n_annotated_conflicts": 14,
+            "conflict_base_rate": 0.08484848484848485,
+            "n_flagged": 16,
+            "n_flagged_with_a_real_problem": 3,
+            "precision_any_flag": 0.1875,
+            "precision_ci95": [
+              0.06591478773586765,
+              0.4300935986845823
+            ],
+            "label_distribution": {
+              "term_mismatch": 90,
+              "supersession": 14,
+              "granularity": 3,
+              "no_conflict": 58
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 28,
+            "flag_rate": 0.3111111111111111,
+            "n_flagged_with_a_real_problem": 26,
+            "precision_any_flag": 0.9285714285714286,
+            "precision_ci95": [
+              0.7735426157408214,
+              0.9801883525522292
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 28
+            },
+            "label_distribution": {
+              "supersession": 84,
+              "term_mismatch": 4,
+              "granularity": 2
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 150,
+            "n_flagged": 12,
+            "flag_rate": 0.08,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.08333333333333333,
+            "precision_ci95": [
+              0.014864709450773478,
+              0.35388592179859524
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 12
+            },
+            "label_distribution": {
+              "no_conflict": 58,
+              "term_mismatch": 86,
+              "supersession": 4,
+              "granularity": 2
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 40
+      },
+      "judge_a_model": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 40,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.075,
+            "precision_ci95": [
+              0.025835556771858226,
+              0.19864530159097524
+            ],
+            "label_distribution_of_flagged": {
+              "no_conflict": 23,
+              "supersession": 3,
+              "term_mismatch": 11,
+              "granularity": 3
+            },
+            "n_flagged_in_revision_stratum": 28,
+            "n_flagged_in_similar_stratum": 12,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.5615060804490177
+            ],
+            "n_annotated_positives": 3
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.6576280471103807
+            ],
+            "n_annotated_positives": 2
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "n_annotated_positives": 4
+          }
+        },
+        "overall": {
+          "n_flagged": 40,
+          "n_flagged_with_a_real_problem": 3,
+          "precision_any_flag": 0.075,
+          "precision_any_flag_ci95": [
+            0.025835556771858226,
+            0.19864530159097524
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.08762453925039232
+          ],
+          "n_pairs_total": 240,
+          "flag_rate": 0.16666666666666666,
+          "recall_any_real_problem": 0.3333333333333333,
+          "n_annotated_conflicts": 9,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "granularity -> not_flagged": 14,
+          "no_conflict -> not_flagged": 106,
+          "no_conflict -> semantic": 23,
+          "term_mismatch -> not_flagged": 74,
+          "supersession -> semantic": 3,
+          "term_mismatch -> semantic": 11,
+          "supersession -> not_flagged": 1,
+          "semantic_conflict -> not_flagged": 3,
+          "granularity -> semantic": 3,
+          "quantity_conflict -> not_flagged": 2
+        },
+        "branches_below_the_precision_floor": [
+          {
+            "branch": "semantic",
+            "precision": 0.075,
+            "n_flagged": 40
+          }
+        ],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 75,
+            "n_annotated_conflicts": 7,
+            "conflict_base_rate": 0.09333333333333334,
+            "n_flagged": 24,
+            "n_flagged_with_a_real_problem": 3,
+            "precision_any_flag": 0.125,
+            "precision_ci95": [
+              0.04344255039315584,
+              0.3100428814785757
+            ],
+            "label_distribution": {
+              "granularity": 5,
+              "no_conflict": 62,
+              "supersession": 4,
+              "term_mismatch": 1,
+              "semantic_conflict": 3
+            }
+          },
+          "substantive": {
+            "n_pairs": 165,
+            "n_annotated_conflicts": 2,
+            "conflict_base_rate": 0.012121212121212121,
+            "n_flagged": 16,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.19361341827271994
+            ],
+            "label_distribution": {
+              "term_mismatch": 84,
+              "no_conflict": 67,
+              "granularity": 12,
+              "quantity_conflict": 2
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 28,
+            "flag_rate": 0.3111111111111111,
+            "n_flagged_with_a_real_problem": 3,
+            "precision_any_flag": 0.10714285714285714,
+            "precision_ci95": [
+              0.03711769205479949,
+              0.2719622536765708
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 28
+            },
+            "label_distribution": {
+              "granularity": 7,
+              "no_conflict": 71,
+              "term_mismatch": 5,
+              "supersession": 4,
+              "semantic_conflict": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 150,
+            "n_flagged": 12,
+            "flag_rate": 0.08,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.2425007574992425
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 12
+            },
+            "label_distribution": {
+              "granularity": 10,
+              "term_mismatch": 80,
+              "no_conflict": 58,
+              "quantity_conflict": 2
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 0
+      },
+      "construction_labels": {
+        "measurement_profile": "operations",
+        "standard_profile": "commercial",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 28,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 28,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.8793527963418923,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "quantity_conflict": 26,
+              "supersession": 2
+            },
+            "n_flagged_in_revision_stratum": 28,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.09890426758938868
+            ],
+            "n_annotated_positives": 35
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.06528714378942788
+            ],
+            "n_annotated_positives": 55
+          }
+        },
+        "overall": {
+          "n_flagged": 28,
+          "n_flagged_with_a_real_problem": 28,
+          "precision_any_flag": 1.0,
+          "precision_any_flag_ci95": [
+            0.8793527963418923,
+            1.0
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.12064720365810762
+          ],
+          "n_pairs_total": 90,
+          "flag_rate": 0.3111111111111111,
+          "recall_any_real_problem": 0.3111111111111111,
+          "n_annotated_conflicts": 90,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 53,
+          "quantity_conflict -> semantic": 26,
+          "quantity_conflict -> not_flagged": 9,
+          "supersession -> semantic": 2
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 74,
+            "n_annotated_conflicts": 74,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 24,
+            "n_flagged_with_a_real_problem": 24,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8620194241710247,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 48,
+              "quantity_conflict": 26
+            }
+          },
+          "substantive": {
+            "n_pairs": 16,
+            "n_annotated_conflicts": 16,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 4,
+            "n_flagged_with_a_real_problem": 4,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "label_distribution": {
+              "quantity_conflict": 9,
+              "supersession": 7
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 28,
+            "flag_rate": 0.3111111111111111,
+            "n_flagged_with_a_real_problem": 28,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8793527963418923,
+              1.0
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 28
+            },
+            "label_distribution": {
+              "supersession": 55,
+              "quantity_conflict": 35
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 0,
+            "n_flagged": 0,
+            "flag_rate": null,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "branch_distribution_of_the_alarms": {},
+            "label_distribution": {},
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 28
+      }
+    },
+    "regulatory": {
+      "consensus": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 38,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 24,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.631578947368421,
+            "precision_ci95": [
+              0.47283672824260115,
+              0.7661598684458619
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 24,
+              "term_mismatch": 10,
+              "no_conflict": 4
+            },
+            "n_flagged_in_revision_stratum": 26,
+            "n_flagged_in_similar_stratum": 12,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 3,
+            "n_label_matching_this_branch": 3,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 1.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.43849391955098227,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 3
+            },
+            "n_flagged_in_revision_stratum": 3,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.03571428571428571,
+            "recall_ci95": [
+              0.01221944777306612,
+              0.09981858432106694
+            ],
+            "n_annotated_positives": 84
+          }
+        },
+        "overall": {
+          "n_flagged": 41,
+          "n_flagged_with_a_real_problem": 27,
+          "precision_any_flag": 0.6585365853658537,
+          "precision_any_flag_ci95": [
+            0.5054955435372689,
+            0.7844138263335655
+          ],
+          "n_flagged_typed_correctly": 3,
+          "precision_typing": 0.07317073170731707,
+          "precision_typing_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "n_pairs_total": 240,
+          "flag_rate": 0.17083333333333334,
+          "recall_any_real_problem": 0.32142857142857145,
+          "n_annotated_conflicts": 84,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 57,
+          "supersession -> semantic": 24,
+          "term_mismatch -> not_flagged": 80,
+          "no_conflict -> not_flagged": 60,
+          "supersession -> revision": 3,
+          "term_mismatch -> semantic": 10,
+          "granularity -> not_flagged": 2,
+          "no_conflict -> semantic": 4
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 75,
+            "n_annotated_conflicts": 74,
+            "conflict_base_rate": 0.9866666666666667,
+            "n_flagged": 25,
+            "n_flagged_with_a_real_problem": 25,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8668035060468213,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 74,
+              "granularity": 1
+            }
+          },
+          "substantive": {
+            "n_pairs": 165,
+            "n_annotated_conflicts": 10,
+            "conflict_base_rate": 0.06060606060606061,
+            "n_flagged": 16,
+            "n_flagged_with_a_real_problem": 2,
+            "precision_any_flag": 0.125,
+            "precision_ci95": [
+              0.034976749337057134,
+              0.3602333143674828
+            ],
+            "label_distribution": {
+              "term_mismatch": 90,
+              "no_conflict": 64,
+              "supersession": 10,
+              "granularity": 1
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 29,
+            "flag_rate": 0.32222222222222224,
+            "n_flagged_with_a_real_problem": 26,
+            "precision_any_flag": 0.896551724137931,
+            "precision_ci95": [
+              0.7361455275293085,
+              0.9641857596186989
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 26,
+              "revision": 3
+            },
+            "label_distribution": {
+              "supersession": 82,
+              "term_mismatch": 4,
+              "no_conflict": 3,
+              "granularity": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 150,
+            "n_flagged": 12,
+            "flag_rate": 0.08,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.08333333333333333,
+            "precision_ci95": [
+              0.014864709450773478,
+              0.35388592179859524
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 12
+            },
+            "label_distribution": {
+              "no_conflict": 61,
+              "term_mismatch": 86,
+              "supersession": 2,
+              "granularity": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 41
+      },
+      "specialist_occupational_safety": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 12,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.25,
+            "precision_ci95": [
+              0.08894003962896138,
+              0.53231033912066
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 3,
+              "no_conflict": 3,
+              "term_mismatch": 6
+            },
+            "n_flagged_in_revision_stratum": 2,
+            "n_flagged_in_similar_stratum": 10,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.21531701192718142
+            ],
+            "n_annotated_positives": 14
+          }
+        },
+        "overall": {
+          "n_flagged": 12,
+          "n_flagged_with_a_real_problem": 3,
+          "precision_any_flag": 0.25,
+          "precision_any_flag_ci95": [
+            0.08894003962896138,
+            0.53231033912066
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "n_pairs_total": 133,
+          "flag_rate": 0.09022556390977443,
+          "recall_any_real_problem": 0.21428571428571427,
+          "n_annotated_conflicts": 14,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 11,
+          "supersession -> semantic": 3,
+          "no_conflict -> semantic": 3,
+          "term_mismatch -> not_flagged": 64,
+          "no_conflict -> not_flagged": 43,
+          "term_mismatch -> semantic": 6,
+          "granularity -> not_flagged": 3
+        },
+        "branches_below_the_precision_floor": [
+          {
+            "branch": "semantic",
+            "precision": 0.25,
+            "n_flagged": 12
+          }
+        ],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 7,
+            "n_annotated_conflicts": 7,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 1,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 7
+            }
+          },
+          "substantive": {
+            "n_pairs": 126,
+            "n_annotated_conflicts": 7,
+            "conflict_base_rate": 0.05555555555555555,
+            "n_flagged": 11,
+            "n_flagged_with_a_real_problem": 2,
+            "precision_any_flag": 0.18181818181818182,
+            "precision_ci95": [
+              0.05136660067100063,
+              0.4769861375782448
+            ],
+            "label_distribution": {
+              "supersession": 7,
+              "no_conflict": 46,
+              "term_mismatch": 70,
+              "granularity": 3
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 7,
+            "n_flagged": 2,
+            "flag_rate": 0.2857142857142857,
+            "n_flagged_with_a_real_problem": 2,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.34237195288961925,
+              1.0
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 2
+            },
+            "label_distribution": {
+              "supersession": 7
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 126,
+            "n_flagged": 10,
+            "flag_rate": 0.07936507936507936,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.1,
+            "precision_ci95": [
+              0.01787574951572113,
+              0.4041563854975721
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 10
+            },
+            "label_distribution": {
+              "no_conflict": 46,
+              "term_mismatch": 70,
+              "supersession": 7,
+              "granularity": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 0
+      },
+      "specialist_environmental_control": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 22,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 19,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.8636363636363636,
+            "precision_ci95": [
+              0.6666458812053,
+              0.9525108273576373
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 19,
+              "term_mismatch": 3
+            },
+            "n_flagged_in_revision_stratum": 20,
+            "n_flagged_in_similar_stratum": 2,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 3,
+            "n_label_matching_this_branch": 3,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 1.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.43849391955098227,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 3
+            },
+            "n_flagged_in_revision_stratum": 3,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0967741935483871,
+            "recall_ci95": [
+              0.03346403609464399,
+              0.2490028999817704
+            ],
+            "n_annotated_positives": 31
+          }
+        },
+        "overall": {
+          "n_flagged": 25,
+          "n_flagged_with_a_real_problem": 22,
+          "precision_any_flag": 0.88,
+          "precision_any_flag_ci95": [
+            0.7004380781662651,
+            0.9583325864293191
+          ],
+          "n_flagged_typed_correctly": 3,
+          "precision_typing": 0.12,
+          "precision_typing_ci95": [
+            0.04166741357068093,
+            0.2995619218337349
+          ],
+          "n_pairs_total": 52,
+          "flag_rate": 0.4807692307692308,
+          "recall_any_real_problem": 0.7096774193548387,
+          "n_annotated_conflicts": 31,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 9,
+          "supersession -> semantic": 19,
+          "supersession -> revision": 3,
+          "no_conflict -> not_flagged": 4,
+          "term_mismatch -> semantic": 3,
+          "term_mismatch -> not_flagged": 14
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 31,
+            "n_annotated_conflicts": 31,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 22,
+            "n_flagged_with_a_real_problem": 22,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8513404742740388,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 31
+            }
+          },
+          "substantive": {
+            "n_pairs": 21,
+            "n_annotated_conflicts": 0,
+            "conflict_base_rate": 0.0,
+            "n_flagged": 3,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.5615060804490177
+            ],
+            "label_distribution": {
+              "no_conflict": 4,
+              "term_mismatch": 17
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 33,
+            "n_flagged": 23,
+            "flag_rate": 0.696969696969697,
+            "n_flagged_with_a_real_problem": 22,
+            "precision_any_flag": 0.9565217391304348,
+            "precision_ci95": [
+              0.7900841350594088,
+              0.9922835330378734
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 20,
+              "revision": 3
+            },
+            "label_distribution": {
+              "supersession": 31,
+              "no_conflict": 1,
+              "term_mismatch": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 19,
+            "n_flagged": 2,
+            "flag_rate": 0.10526315789473684,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.6576280471103807
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 2
+            },
+            "label_distribution": {
+              "term_mismatch": 16,
+              "no_conflict": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 25
+      },
+      "specialist_process_safety": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 3,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 1,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.3333333333333333,
+            "precision_ci95": [
+              0.0614903152761605,
+              0.7923450448735121
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 1,
+              "term_mismatch": 2
+            },
+            "n_flagged_in_revision_stratum": 3,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.09181293258383999
+            ],
+            "n_annotated_positives": 38
+          }
+        },
+        "overall": {
+          "n_flagged": 3,
+          "n_flagged_with_a_real_problem": 1,
+          "precision_any_flag": 0.3333333333333333,
+          "precision_any_flag_ci95": [
+            0.0614903152761605,
+            0.7923450448735121
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.5615060804490177
+          ],
+          "n_pairs_total": 44,
+          "flag_rate": 0.06818181818181818,
+          "recall_any_real_problem": 0.02631578947368421,
+          "n_annotated_conflicts": 38,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 37,
+          "supersession -> semantic": 1,
+          "term_mismatch -> semantic": 2,
+          "no_conflict -> not_flagged": 2,
+          "granularity -> not_flagged": 1,
+          "term_mismatch -> not_flagged": 1
+        },
+        "branches_below_the_precision_floor": [
+          {
+            "branch": "semantic",
+            "precision": 0.3333333333333333,
+            "n_flagged": 3
+          }
+        ],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 33,
+            "n_annotated_conflicts": 32,
+            "conflict_base_rate": 0.9696969696969697,
+            "n_flagged": 1,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 32,
+              "granularity": 1
+            }
+          },
+          "substantive": {
+            "n_pairs": 11,
+            "n_annotated_conflicts": 6,
+            "conflict_base_rate": 0.5454545454545454,
+            "n_flagged": 2,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.6576280471103807
+            ],
+            "label_distribution": {
+              "supersession": 6,
+              "term_mismatch": 3,
+              "no_conflict": 2
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 42,
+            "n_flagged": 3,
+            "flag_rate": 0.07142857142857142,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.3333333333333333,
+            "precision_ci95": [
+              0.0614903152761605,
+              0.7923450448735121
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 3
+            },
+            "label_distribution": {
+              "supersession": 38,
+              "term_mismatch": 2,
+              "no_conflict": 1,
+              "granularity": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 2,
+            "n_flagged": 0,
+            "flag_rate": 0.0,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "branch_distribution_of_the_alarms": {},
+            "label_distribution": {
+              "term_mismatch": 1,
+              "no_conflict": 1
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 0
+      },
+      "specialist_hazmat_transport": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 1,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 1,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 1
+            },
+            "n_flagged_in_revision_stratum": 1,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.35433884297520657
+            ],
+            "n_annotated_positives": 7
+          }
+        },
+        "overall": {
+          "n_flagged": 1,
+          "n_flagged_with_a_real_problem": 1,
+          "precision_any_flag": 1.0,
+          "precision_any_flag_ci95": [
+            0.20654329147389294,
+            1.0
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.7934567085261071
+          ],
+          "n_pairs_total": 11,
+          "flag_rate": 0.09090909090909091,
+          "recall_any_real_problem": 0.14285714285714285,
+          "n_annotated_conflicts": 7,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "no_conflict -> not_flagged": 1,
+          "supersession -> not_flagged": 6,
+          "supersession -> semantic": 1,
+          "term_mismatch -> not_flagged": 3
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 4,
+            "n_annotated_conflicts": 4,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 1,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 4
+            }
+          },
+          "substantive": {
+            "n_pairs": 7,
+            "n_annotated_conflicts": 3,
+            "conflict_base_rate": 0.42857142857142855,
+            "n_flagged": 0,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution": {
+              "no_conflict": 1,
+              "supersession": 3,
+              "term_mismatch": 3
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 8,
+            "n_flagged": 1,
+            "flag_rate": 0.125,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.20654329147389294,
+              1.0
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 1
+            },
+            "label_distribution": {
+              "no_conflict": 1,
+              "supersession": 7
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 3,
+            "n_flagged": 0,
+            "flag_rate": 0.0,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "branch_distribution_of_the_alarms": {},
+            "label_distribution": {
+              "term_mismatch": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 1
+      },
+      "generalist_control": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 38,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 25,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.6578947368421053,
+            "precision_ci95": [
+              0.49891811629074545,
+              0.7878777997354105
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 25,
+              "term_mismatch": 8,
+              "no_conflict": 5
+            },
+            "n_flagged_in_revision_stratum": 26,
+            "n_flagged_in_similar_stratum": 12,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "revision": {
+            "n_flagged": 3,
+            "n_label_matching_this_branch": 3,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 1.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.43849391955098227,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 3
+            },
+            "n_flagged_in_revision_stratum": 3,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.03409090909090909,
+            "recall_ci95": [
+              0.011660785880160493,
+              0.09549762599419709
+            ],
+            "n_annotated_positives": 88
+          }
+        },
+        "overall": {
+          "n_flagged": 41,
+          "n_flagged_with_a_real_problem": 28,
+          "precision_any_flag": 0.6829268292682927,
+          "precision_any_flag_ci95": [
+            0.5301551434425414,
+            0.8043556679468827
+          ],
+          "n_flagged_typed_correctly": 3,
+          "precision_typing": 0.07317073170731707,
+          "precision_typing_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "n_pairs_total": 240,
+          "flag_rate": 0.17083333333333334,
+          "recall_any_real_problem": 0.3181818181818182,
+          "n_annotated_conflicts": 88,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 60,
+          "supersession -> semantic": 25,
+          "term_mismatch -> not_flagged": 82,
+          "supersession -> revision": 3,
+          "granularity -> not_flagged": 4,
+          "term_mismatch -> semantic": 8,
+          "no_conflict -> semantic": 5,
+          "no_conflict -> not_flagged": 53
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 75,
+            "n_annotated_conflicts": 74,
+            "conflict_base_rate": 0.9866666666666667,
+            "n_flagged": 25,
+            "n_flagged_with_a_real_problem": 25,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8668035060468213,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 74,
+              "granularity": 1
+            }
+          },
+          "substantive": {
+            "n_pairs": 165,
+            "n_annotated_conflicts": 14,
+            "conflict_base_rate": 0.08484848484848485,
+            "n_flagged": 16,
+            "n_flagged_with_a_real_problem": 3,
+            "precision_any_flag": 0.1875,
+            "precision_ci95": [
+              0.06591478773586765,
+              0.4300935986845823
+            ],
+            "label_distribution": {
+              "term_mismatch": 90,
+              "supersession": 14,
+              "granularity": 3,
+              "no_conflict": 58
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 29,
+            "flag_rate": 0.32222222222222224,
+            "n_flagged_with_a_real_problem": 27,
+            "precision_any_flag": 0.9310344827586207,
+            "precision_ci95": [
+              0.7803505240414808,
+              0.9808791359020055
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 26,
+              "revision": 3
+            },
+            "label_distribution": {
+              "supersession": 84,
+              "term_mismatch": 4,
+              "granularity": 2
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 150,
+            "n_flagged": 12,
+            "flag_rate": 0.08,
+            "n_flagged_with_a_real_problem": 1,
+            "precision_any_flag": 0.08333333333333333,
+            "precision_ci95": [
+              0.014864709450773478,
+              0.35388592179859524
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 12
+            },
+            "label_distribution": {
+              "no_conflict": 58,
+              "term_mismatch": 86,
+              "supersession": 4,
+              "granularity": 2
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 41
+      },
+      "judge_a_model": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 38,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 1,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 0.02631578947368421,
+            "precision_ci95": [
+              0.004660467553530057,
+              0.13495178436800254
+            ],
+            "label_distribution_of_flagged": {
+              "no_conflict": 23,
+              "term_mismatch": 11,
+              "granularity": 3,
+              "supersession": 1
+            },
+            "n_flagged_in_revision_stratum": 26,
+            "n_flagged_in_similar_stratum": 12,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.5615060804490177
+            ],
+            "n_annotated_positives": 3
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.6576280471103807
+            ],
+            "n_annotated_positives": 2
+          },
+          "revision": {
+            "n_flagged": 3,
+            "n_label_matching_this_branch": 3,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 1.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.43849391955098227,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "supersession": 3
+            },
+            "n_flagged_in_revision_stratum": 3,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.75,
+            "recall_ci95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "n_annotated_positives": 4
+          }
+        },
+        "overall": {
+          "n_flagged": 41,
+          "n_flagged_with_a_real_problem": 4,
+          "precision_any_flag": 0.0975609756097561,
+          "precision_any_flag_ci95": [
+            0.0385964597529614,
+            0.22547975519030555
+          ],
+          "n_flagged_typed_correctly": 3,
+          "precision_typing": 0.07317073170731707,
+          "precision_typing_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "n_pairs_total": 240,
+          "flag_rate": 0.17083333333333334,
+          "recall_any_real_problem": 0.4444444444444444,
+          "n_annotated_conflicts": 9,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "granularity -> not_flagged": 14,
+          "no_conflict -> not_flagged": 106,
+          "no_conflict -> semantic": 23,
+          "term_mismatch -> not_flagged": 74,
+          "supersession -> revision": 3,
+          "term_mismatch -> semantic": 11,
+          "semantic_conflict -> not_flagged": 3,
+          "granularity -> semantic": 3,
+          "supersession -> semantic": 1,
+          "quantity_conflict -> not_flagged": 2
+        },
+        "branches_below_the_precision_floor": [
+          {
+            "branch": "semantic",
+            "precision": 0.02631578947368421,
+            "n_flagged": 38
+          }
+        ],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 75,
+            "n_annotated_conflicts": 7,
+            "conflict_base_rate": 0.09333333333333334,
+            "n_flagged": 25,
+            "n_flagged_with_a_real_problem": 4,
+            "precision_any_flag": 0.16,
+            "precision_ci95": [
+              0.06403347608577989,
+              0.34654013980238163
+            ],
+            "label_distribution": {
+              "granularity": 5,
+              "no_conflict": 62,
+              "supersession": 4,
+              "term_mismatch": 1,
+              "semantic_conflict": 3
+            }
+          },
+          "substantive": {
+            "n_pairs": 165,
+            "n_annotated_conflicts": 2,
+            "conflict_base_rate": 0.012121212121212121,
+            "n_flagged": 16,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.19361341827271994
+            ],
+            "label_distribution": {
+              "term_mismatch": 84,
+              "no_conflict": 67,
+              "granularity": 12,
+              "quantity_conflict": 2
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 29,
+            "flag_rate": 0.32222222222222224,
+            "n_flagged_with_a_real_problem": 4,
+            "precision_any_flag": 0.13793103448275862,
+            "precision_ci95": [
+              0.05497350852047822,
+              0.30559357712699325
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 26,
+              "revision": 3
+            },
+            "label_distribution": {
+              "granularity": 7,
+              "no_conflict": 71,
+              "term_mismatch": 5,
+              "supersession": 4,
+              "semantic_conflict": 3
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 150,
+            "n_flagged": 12,
+            "flag_rate": 0.08,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": 0.0,
+            "precision_ci95": [
+              0.0,
+              0.2425007574992425
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 12
+            },
+            "label_distribution": {
+              "granularity": 10,
+              "term_mismatch": 80,
+              "no_conflict": 58,
+              "quantity_conflict": 2
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 3
+      },
+      "construction_labels": {
+        "measurement_profile": "regulatory",
+        "standard_profile": "regulatory",
+        "per_branch": {
+          "semantic": {
+            "n_flagged": 26,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 26,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.8712669561953784,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "quantity_conflict": 24,
+              "supersession": 2
+            },
+            "n_flagged_in_revision_stratum": 26,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": null,
+            "recall_ci95": [
+              NaN,
+              NaN
+            ],
+            "n_annotated_positives": 0
+          },
+          "quantity": {
+            "n_flagged": 0,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 0,
+            "precision_vs_matching_label": null,
+            "precision_vs_any_real_problem": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "label_distribution_of_flagged": {},
+            "n_flagged_in_revision_stratum": 0,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.09890426758938868
+            ],
+            "n_annotated_positives": 35
+          },
+          "revision": {
+            "n_flagged": 3,
+            "n_label_matching_this_branch": 0,
+            "n_label_a_real_problem": 3,
+            "precision_vs_matching_label": 0.0,
+            "precision_vs_any_real_problem": 1.0,
+            "precision_ci95": [
+              0.43849391955098227,
+              1.0
+            ],
+            "label_distribution_of_flagged": {
+              "quantity_conflict": 3
+            },
+            "n_flagged_in_revision_stratum": 3,
+            "n_flagged_in_similar_stratum": 0,
+            "recall_vs_matching_label": 0.0,
+            "recall_ci95": [
+              0.0,
+              0.06528714378942788
+            ],
+            "n_annotated_positives": 55
+          }
+        },
+        "overall": {
+          "n_flagged": 29,
+          "n_flagged_with_a_real_problem": 29,
+          "precision_any_flag": 1.0,
+          "precision_any_flag_ci95": [
+            0.8830264055344442,
+            1.0
+          ],
+          "n_flagged_typed_correctly": 0,
+          "precision_typing": 0.0,
+          "precision_typing_ci95": [
+            0.0,
+            0.11697359446555587
+          ],
+          "n_pairs_total": 90,
+          "flag_rate": 0.32222222222222224,
+          "recall_any_real_problem": 0.32222222222222224,
+          "n_annotated_conflicts": 90,
+          "note": "precision_any_flag is the fraction of the detector's alarms that correspond to a real conflict of any type -- detection. precision_typing is the fraction whose branch is the branch that owns the conflict -- typing. recall_any_real_problem is the fraction of the annotated conflicts the detector alarms on at all"
+        },
+        "confusion": {
+          "supersession -> not_flagged": 53,
+          "quantity_conflict -> semantic": 24,
+          "quantity_conflict -> not_flagged": 8,
+          "quantity_conflict -> revision": 3,
+          "supersession -> semantic": 2
+        },
+        "branches_below_the_precision_floor": [],
+        "by_change_class": {
+          "editorial": {
+            "n_pairs": 74,
+            "n_annotated_conflicts": 74,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 25,
+            "n_flagged_with_a_real_problem": 25,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8668035060468213,
+              1.0
+            ],
+            "label_distribution": {
+              "supersession": 48,
+              "quantity_conflict": 26
+            }
+          },
+          "substantive": {
+            "n_pairs": 16,
+            "n_annotated_conflicts": 16,
+            "conflict_base_rate": 1.0,
+            "n_flagged": 4,
+            "n_flagged_with_a_real_problem": 4,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "label_distribution": {
+              "quantity_conflict": 9,
+              "supersession": 7
+            }
+          }
+        },
+        "by_stratum": {
+          "revision": {
+            "n_pairs": 90,
+            "n_flagged": 29,
+            "flag_rate": 0.32222222222222224,
+            "n_flagged_with_a_real_problem": 29,
+            "precision_any_flag": 1.0,
+            "precision_ci95": [
+              0.8830264055344442,
+              1.0
+            ],
+            "branch_distribution_of_the_alarms": {
+              "semantic": 26,
+              "revision": 3
+            },
+            "label_distribution": {
+              "supersession": 55,
+              "quantity_conflict": 35
+            },
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          },
+          "similar": {
+            "n_pairs": 0,
+            "n_flagged": 0,
+            "flag_rate": null,
+            "n_flagged_with_a_real_problem": 0,
+            "precision_any_flag": null,
+            "precision_ci95": [
+              NaN,
+              NaN
+            ],
+            "branch_distribution_of_the_alarms": {},
+            "label_distribution": {},
+            "note": "the revision stratum is two issues of the same provision by construction, so its conflict type is known independently of any annotation; the branch distribution says which branch the detector used"
+          }
+        },
+        "surviving_findings": 29
+      }
+    }
+  }
+}

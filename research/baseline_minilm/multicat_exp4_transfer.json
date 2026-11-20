@@ -1,0 +1,449 @@
+{
+  "seed": 20261118,
+  "design": "query-level sufficiency calibration; model and threshold transferred unchanged",
+  "categories": [
+    "facility_layout",
+    "predictive_maintenance",
+    "production_scheduling",
+    "quality_engineering",
+    "reliability_engineering",
+    "supply_chain_management"
+  ],
+  "leave_half_out": {
+    "tuning_categories": [
+      "predictive_maintenance",
+      "production_scheduling",
+      "supply_chain_management"
+    ],
+    "held_out_categories": [
+      "facility_layout",
+      "quality_engineering",
+      "reliability_engineering"
+    ],
+    "weights_tuning_half": [
+      21.818068028536654,
+      1.53719076349937e-15,
+      -3.4124362847984757e-16,
+      -2.052431481398341e-15,
+      -9.005125515373747e-15,
+      -1.0447908102869803e-16
+    ],
+    "weights_held_out_half": [
+      112.37937493483383,
+      -68.23164663563428,
+      43.530721285759455,
+      17.48022400419774,
+      -27.546775155415002,
+      -38.324629907250014
+    ],
+    "weights_all": [
+      0.04150564098693463,
+      4.869340428275429,
+      -3.8281764292304783,
+      -0.0955616100088483,
+      0.17084015411497866,
+      0.8646855658080692
+    ],
+    "tau": 0.05,
+    "tau_refitted_on_held_out": 0.05,
+    "metrics_tuning": {
+      "n_answerable": 132,
+      "n_unanswerable": 144,
+      "answerable_answered": 1.0,
+      "answerable_refused": 0.0,
+      "unanswerable_refused": 0.0,
+      "coverage": 0.4782608695652174,
+      "top1_accuracy_given_accepted": 0.9696969696969697
+    },
+    "metrics_held_out_transferred": {
+      "n_answerable": 132,
+      "n_unanswerable": 144,
+      "answerable_answered": 0.9848484848484849,
+      "answerable_refused": 0.015151515151515152,
+      "unanswerable_refused": 0.0,
+      "coverage": 0.47101449275362317,
+      "top1_accuracy_given_accepted": 0.9846153846153847
+    },
+    "metrics_held_out_refitted": {
+      "n_answerable": 132,
+      "n_unanswerable": 144,
+      "answerable_answered": 0.9848484848484849,
+      "answerable_refused": 0.015151515151515152,
+      "unanswerable_refused": 0.0,
+      "coverage": 0.47101449275362317,
+      "top1_accuracy_given_accepted": 0.9846153846153847
+    },
+    "fixed_tau_comparison": [
+      {
+        "tau": 0.1,
+        "transferred": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        },
+        "refitted_same_tau": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        }
+      },
+      {
+        "tau": 0.25,
+        "transferred": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        },
+        "refitted_same_tau": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        }
+      },
+      {
+        "tau": 0.5,
+        "transferred": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        },
+        "refitted_same_tau": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        }
+      },
+      {
+        "tau": 0.75,
+        "transferred": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        },
+        "refitted_same_tau": {
+          "n_answerable": 132,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9848484848484849,
+          "answerable_refused": 0.015151515151515152,
+          "unanswerable_refused": 0.0,
+          "coverage": 0.47101449275362317,
+          "top1_accuracy_given_accepted": 0.9846153846153847
+        }
+      }
+    ],
+    "weights_stability": {
+      "tuning_intercept": 21.818068028536654,
+      "held_out_intercept": 112.37937493483383,
+      "tuning_top1_rerank": 1.53719076349937e-15,
+      "held_out_top1_rerank": -68.23164663563428
+    }
+  },
+  "leave_one_category_out": [
+    {
+      "held_out_category": "facility_layout",
+      "weights_from_others": [
+        0.08293981805595199,
+        5.66242305913565,
+        -4.125651601882292,
+        -0.34792927560234627,
+        -0.044294042019603186,
+        0.5863088895815546
+      ],
+      "weights_own": [
+        20.02540654837294,
+        3.38238270960079e-15,
+        3.9297324122162854e-15,
+        6.995261451707205e-15,
+        -4.8427244838277013e-14,
+        1.3455490469669487e-15
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.013888888888888888,
+        "coverage": 0.4855072463768116,
+        "top1_accuracy_given_accepted": 0.9696969696969697
+      },
+      "own_fit": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.013888888888888888,
+        "coverage": 0.4855072463768116,
+        "top1_accuracy_given_accepted": 0.9696969696969697
+      }
+    },
+    {
+      "held_out_category": "predictive_maintenance",
+      "weights_from_others": [
+        -0.34957027235278687,
+        5.189747226781082,
+        -4.130968085468826,
+        -0.45989488439150117,
+        0.2860784482566016,
+        0.9982865328942441
+      ],
+      "weights_own": [
+        20.85473423803886,
+        -3.0714586885180004e-15,
+        1.44684176745189e-15,
+        1.3468161504760591e-16,
+        3.1405971655457453e-14,
+        1.4611367743757068e-16
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.0625,
+        "coverage": 0.5108695652173914,
+        "top1_accuracy_given_accepted": 0.9696969696969697
+      },
+      "own_fit": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.0625,
+        "coverage": 0.5108695652173914,
+        "top1_accuracy_given_accepted": 0.9696969696969697
+      }
+    },
+    {
+      "held_out_category": "production_scheduling",
+      "weights_from_others": [
+        0.03823484392486315,
+        5.62482417018867,
+        -3.99683599676971,
+        -0.3797925139904268,
+        0.12836979113064526,
+        0.7998098946234594
+      ],
+      "weights_own": [
+        20.02540654837294,
+        -1.3181351820826726e-14,
+        7.366885167883689e-14,
+        -7.007572966727924e-15,
+        -8.541900087905577e-15,
+        -5.938624988345821e-14
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9924242424242424,
+        "answerable_refused": 0.007575757575757576,
+        "unanswerable_refused": 0.1527777777777778,
+        "coverage": 0.5543478260869565,
+        "top1_accuracy_given_accepted": 0.9694656488549618
+      },
+      "own_fit": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9924242424242424,
+        "answerable_refused": 0.007575757575757576,
+        "unanswerable_refused": 0.1527777777777778,
+        "coverage": 0.5543478260869565,
+        "top1_accuracy_given_accepted": 0.9694656488549618
+      }
+    },
+    {
+      "held_out_category": "quality_engineering",
+      "weights_from_others": [
+        -0.39123885929279584,
+        6.575812743205834,
+        -4.162384681355311,
+        -0.47683509471832036,
+        -0.41030844200746996,
+        0.28889192374474454
+      ],
+      "weights_own": [
+        20.78249237006993,
+        -5.016648105899986e-16,
+        6.276949802726097e-17,
+        1.803672239620184e-15,
+        9.144086582159627e-16,
+        1.2614858603335555e-16
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9393939393939394,
+        "answerable_refused": 0.06060606060606061,
+        "unanswerable_refused": 0.2847222222222222,
+        "coverage": 0.5978260869565217,
+        "top1_accuracy_given_accepted": 0.967741935483871
+      },
+      "own_fit": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9393939393939394,
+        "answerable_refused": 0.06060606060606061,
+        "unanswerable_refused": 0.2847222222222222,
+        "coverage": 0.5978260869565217,
+        "top1_accuracy_given_accepted": 0.967741935483871
+      }
+    },
+    {
+      "held_out_category": "reliability_engineering",
+      "weights_from_others": [
+        -0.3138292199738129,
+        5.627543758943501,
+        -4.350238329959143,
+        -0.4906061380048547,
+        0.09626565486078766,
+        0.9239330559006309
+      ],
+      "weights_own": [
+        115.28944389387566,
+        -133.9517901351178,
+        2.312391651685905,
+        160.1993841179473,
+        385.1470099794851,
+        -26.59374194401971
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.5,
+      "transferred": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.020833333333333332,
+        "coverage": 0.4891304347826087,
+        "top1_accuracy_given_accepted": 0.9696969696969697
+      },
+      "own_fit": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.7651515151515151,
+        "answerable_refused": 0.23484848484848486,
+        "unanswerable_refused": 0.9513888888888888,
+        "coverage": 0.8623188405797102,
+        "top1_accuracy_given_accepted": 0.9702970297029703
+      }
+    },
+    {
+      "held_out_category": "supply_chain_management",
+      "weights_from_others": [
+        -0.5735613172218001,
+        5.245948811143061,
+        -4.439997100149882,
+        -0.1372498802807776,
+        0.6465221771727172,
+        1.1963408680860967
+      ],
+      "weights_own": [
+        21.043632785366835,
+        5.582376092371689e-16,
+        -2.7032559930820384e-16,
+        1.1308552221025158e-16,
+        -9.45703038412176e-16,
+        4.373727500047252e-16
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9848484848484849,
+        "answerable_refused": 0.015151515151515152,
+        "unanswerable_refused": 0.16666666666666666,
+        "coverage": 0.5579710144927537,
+        "top1_accuracy_given_accepted": 0.9692307692307692
+      },
+      "own_fit": {
+        "n_answerable": 132,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9848484848484849,
+        "answerable_refused": 0.015151515151515152,
+        "unanswerable_refused": 0.16666666666666666,
+        "coverage": 0.5579710144927537,
+        "top1_accuracy_given_accepted": 0.9692307692307692
+      }
+    }
+  ],
+  "per_category_retrieval": [
+    {
+      "category": "facility_layout",
+      "n": 10,
+      "recall@10": 1.0,
+      "mrr": 0.6375,
+      "ndcg@10": 0.7238424304577366
+    },
+    {
+      "category": "predictive_maintenance",
+      "n": 24,
+      "recall@10": 0.9583333333333334,
+      "mrr": 0.8097222222222223,
+      "ndcg@10": 0.8434775166115464
+    },
+    {
+      "category": "production_scheduling",
+      "n": 11,
+      "recall@10": 1.0,
+      "mrr": 0.6266233766233766,
+      "ndcg@10": 0.7198780599330923
+    },
+    {
+      "category": "quality_engineering",
+      "n": 22,
+      "recall@10": 1.0,
+      "mrr": 0.7111652236652236,
+      "ndcg@10": 0.7787128314916046
+    },
+    {
+      "category": "reliability_engineering",
+      "n": 36,
+      "recall@10": 0.8055555555555556,
+      "mrr": 0.5049404460004949,
+      "ndcg@10": 0.5707920001625596
+    },
+    {
+      "category": "supply_chain_management",
+      "n": 29,
+      "recall@10": 0.9655172413793104,
+      "mrr": 0.6278126088470914,
+      "ndcg@10": 0.7077773458363773
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "status": "run",
+  "n_answerable": 32,
+  "n_defective": 0,
+  "n_clean": 32,
+  "defective": {},
+  "screen": {
+    "n_hits": 1,
+    "hits": {
+      "What value is stated for the purpose in the source documentation?": "the chunk never states the gold as a complete token"
+    },
+    "note": "the conservative screen the original audit used: it fires whenever the gold's digits begin some other token in the chunk, and it finds the table row by looking under the named column, so it over-reports. The precise rules above adjudicate each hit."
+  },
+  "note": "the gold chunk is correct in every defective case; only the answer string is attached to the wrong question, so the retrieval-side metrics are unaffected",
+  "pre_repair": {
+    "path": "/Users/ritikraj/Documents/MTP/impl/experiments/data/benchmark_pre_repair.json",
+    "n_answerable": 132,
+    "same_corpus": true,
+    "index_note": "the current index does not hold this benchmark's gold chunks, so the counts below were computed against the six-category corpus the benchmark was built on",
+    "n_resolvable_against_the_six_category_corpus": 132,
+    "n_defective_precise": 27,
+    "n_defective_screen": 30,
+    "n_defective": 30
+  },
+  "arms": {
+    "rag_nogate": {
+      "all": {
+        "n": 30,
+        "accuracy_nli": 0.6333333333333333,
+        "accuracy_keyterm": 0.8666666666666667
+      },
+      "clean": {
+        "n": 30,
+        "accuracy_nli": 0.6333333333333333,
+        "accuracy_keyterm": 0.8666666666666667
+      },
+      "n_answerable_total": 32
+    },
+    "rag@fitted": {
+      "all": {
+        "n": 30,
+        "accuracy_nli": 0.8,
+        "accuracy_keyterm": 0.9
+      },
+      "clean": {
+        "n": 30,
+        "accuracy_nli": 0.8,
+        "accuracy_keyterm": 0.9
+      },
+      "n_answerable_total": 32
+    },
+    "rag@random": {
+      "all": {
+        "n": 21,
+        "accuracy_nli": 0.7142857142857143,
+        "accuracy_keyterm": 0.8095238095238095
+      },
+      "clean": {
+        "n": 21,
+        "accuracy_nli": 0.7142857142857143,
+        "accuracy_keyterm": 0.8095238095238095
+      },
+      "n_answerable_total": 32
+    },
+    "rag@transferred": {
+      "all": {
+        "n": 6,
+        "accuracy_nli": 0.3333333333333333,
+        "accuracy_keyterm": 0.6666666666666666
+      },
+      "clean": {
+        "n": 6,
+        "accuracy_nli": 0.3333333333333333,
+        "accuracy_keyterm": 0.6666666666666666
+      },
+      "n_answerable_total": 32
+    },
+    "long_context": {
+      "all": {
+        "n": 31,
+        "accuracy_nli": 0.5483870967741935,
+        "accuracy_keyterm": 0.7741935483870968
+      },
+      "clean": {
+        "n": 31,
+        "accuracy_nli": 0.5483870967741935,
+        "accuracy_keyterm": 0.7741935483870968
+      },
+      "n_answerable_total": 32
+    }
+  },
+  "significance": {
+    "n_pairs": 30,
+    "tests": {
+      "nli_whole_answer": {
+        "retrieval_only": 5,
+        "long_context_only": 3,
+        "p_value": 0.7265625
+      },
+      "nli_first_sentence": {
+        "retrieval_only": 6,
+        "long_context_only": 3,
+        "p_value": 0.5078125
+      },
+      "keyterm_lexical": {
+        "retrieval_only": 3,
+        "long_context_only": 0,
+        "p_value": 0.25
+      }
+    },
+    "answer_length_median": {
+      "rag_nogate": 214,
+      "long_context": 254
+    },
+    "note": "the same answers, scored three ways; a gap that survives all three is a quality difference, and one that survives only the whole-answer test is partly an artefact of scoring a long answer against a short gold"
+  },
+  "retrieval_placement": "pre_rerank"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "process_safety",
+  "regime_title": "Catastrophic-risk management (OSHA PSM and EPA RMP)",
+  "regime_governs": "the standards that manage low-frequency, high-consequence events: process safety management, hazardous waste operations, permit-required confined spaces, lockout/tagout, hazard communication, and EPA's risk management programme rule.",
+  "reader_note": "These rules are unusually explicit about scope and about exemptions, and they are the rules most likely to contain genuine, simultaneous, irreconcilable requirements \u2014 a process safety management programme and a hazard communication programme can demand different things of the same employer at the same time. Read them for whether both can be obeyed together, not for whether they sound different.",
+  "parts": "29 CFR 1910 subparts G, Z; 40 CFR 112",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 79,
+      "passage_a": "> #### A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles",
+      "passage_b": "> A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles"
+    },
+    {
+      "pair_id": 80,
+      "passage_a": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which contain only extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation.",
+      "passage_b": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which predominantly contain extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation."
+    },
+    {
+      "pair_id": 81,
+      "passage_a": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of UN ST/SG/AC.10 (incorporated by reference, see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 83,
+      "passage_a": "> A.4.2.2.2 Human evidence.",
+      "passage_b": "> A.4.2.2.2 Human Evidence"
+    },
+    {
+      "pair_id": 86,
+      "passage_a": "> #### B.5 GASES UNDER PRESSURE",
+      "passage_b": "> #### B.5 Gases Under Pressure"
+    },
+    {
+      "pair_id": 88,
+      "passage_a": "> #### A.2.2.2 Irritation",
+      "passage_b": "> A.2.2.2.2 Skin Irritation"
+    },
+    {
+      "pair_id": 157,
+      "passage_a": "addressed in 1910.120 have been covered in the preceding section and are not re-addressed in each of the generic guidelines. Basic core requirements for training programs that are addressed include > 1. General Hazardous Waste Operations > 2. RCRA operations\u2014Treatment, storage, and disposal facilities. > 3. Emergency Response. > A. General Hazardous Waste Operations and Site-specific Training > 1. Off-site training.Training course content for hazardous waste operations, required by 29 CFR 1910.120(e), should include the following topics or procedures: > a. Regulatory knowledge. > (1) An review of 29 CFR 1910.120 and the core elements of an occupational safety and health program. > (2) The content of a medical surveillance program as outlined in 29 CFR 1910.120(f). > (3) The",
+      "passage_b": "associated hazards and control of such hazards of spill containment work. > These new tools and agents are the things that employers will want to evaluate as part of their new technology program. The treatment of spills of hazardous substances or wastes at an emergency incident as part of the immediate spill containment and control efforts is sometimes acceptable to EPA and a permit exception is described in 40 CFR 264.1(g)(8) and 265.1(c)(11). > #### Appendix D to \u00a7 1910.120\u2014References > The following references may be consulted for further information on the subject of this standard: > 1. OSHA Instruction DFO CPL 2.70\u2014January 29, 1986, Special Emphasis Program: Hazardous Waste Sites. > 2. OSHA Instruction DFO CPL 2-2.37A\u2014January 29, 1986,"
+    },
+    {
+      "pair_id": 165,
+      "passage_a": "of this section, the facility owner or operator may not self-certify alternative measures allowed under \u00a7 112.7(a)(2) or (d), that are included in the facility's Plan. Such measures must be reviewed and certified, in writing, by a licensed Professional Engineer. For each alternative measure allowed under \u00a7 112.7(a)(2), the Plan must be accompanied by a written statement by a Professional Engineer that states the reason for nonconformance and describes the alternative method and how it provides equivalent environmental protection in accordance with \u00a7 112.7(a)(2). For each determination of impracticability of secondary containment pursuant to \u00a7 112.7(d), the Plan must clearly explain why secondary containment measures are not practicable at this facility and provide the alternative measures required in \u00a7 112.7(d)",
+      "passage_b": "does not conform to the applicable requirements in paragraphs (g), (h)(2) and (3), and (i) of this section, or the requirements of subparts B and C of this part, except the secondary containment requirements in paragraph (c) and (h)(1) of this section, and \u00a7\u00a7 112.8(c)(2), 112.8(c)(11), 112.9(c)(2), 112.10(c), 112.12(c)(2), and 112.12(c)(11), you must state the reasons for nonconformance in your Plan and describe in detail alternate methods and how you will achieve equivalent environmental protection. If the Regional Administrator determines that the measures described in your Plan do not provide equivalent environmental protection, he may require that you amend your Plan, following the procedures in \u00a7 112.4(d) and (e). (3) Describe in your Plan the physical layout of the facility"
+    }
+  ]
+}

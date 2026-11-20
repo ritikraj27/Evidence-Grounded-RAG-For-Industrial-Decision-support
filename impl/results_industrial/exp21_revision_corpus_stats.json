@@ -1,0 +1,11 @@
+{
+  "schema": "mtp.revision-corpus-stats/1",
+  "pre_date": "2021-12-31",
+  "post_date": "2026-06-01",
+  "n_sections_pre": 403,
+  "n_sections_post": 404,
+  "n_amended_paragraph_pairs": 948,
+  "n_pairs_stating_different_numbers": 361,
+  "share_stating_different_numbers": 0.3808016877637131,
+  "note": "Paragraphs are aligned across the two snapshots by token-set overlap and kept when the aligned text differs; the numeric count uses the builder's own numbers_changed test. The candidate pairs the RO4 evaluation scores are mined from this corpus by the retriever's signal and are a subset of it."
+}

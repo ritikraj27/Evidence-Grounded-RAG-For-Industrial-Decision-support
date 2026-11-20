@@ -1,0 +1,395 @@
+{
+  "schema": "mtp.claim-band-eval/1",
+  "generation": [
+    "results_industrial/exp19_generator_answers.json"
+  ],
+  "arm": "rag_nogate",
+  "evidence_mode": null,
+  "n_claims_total": 73,
+  "n_claims_labelled": 73,
+  "n_claims_by_reference_source": {
+    "rule": 48,
+    "judge_consensus": 25
+  },
+  "agreement_3class": {
+    "n": 73,
+    "cohens_kappa": -0.04010554089709766,
+    "ci95": [
+      -0.15946276688620362,
+      0.07925168509200828
+    ],
+    "bands": [
+      "grounded",
+      "inferred",
+      "uncertain"
+    ],
+    "note": "reference mapped to a band: supported->grounded, partially_supported->inferred, unsupported/contradicted->uncertain"
+  },
+  "agreement_binary": {
+    "n": 73,
+    "cohens_kappa": -0.0557043385109802,
+    "ci95": [
+      -0.17595325307673124,
+      0.06454457605477085
+    ],
+    "note": "band==grounded against reference==supported"
+  },
+  "per_band": {
+    "grounded": {
+      "n": 21,
+      "n_correct": 19,
+      "error_rate": 0.09523809523809523,
+      "error_rate_ci95": [
+        0.026518208796947218,
+        0.2891458386074067
+      ],
+      "correct_rate_ci95": [
+        0.7108541613925933,
+        0.9734817912030528
+      ],
+      "mean_support": 0.9343951502652251
+    },
+    "inferred": {
+      "n": 24,
+      "n_correct": 24,
+      "error_rate": 0.0,
+      "error_rate_ci95": [
+        0.0,
+        0.13798057582897527
+      ],
+      "correct_rate_ci95": [
+        0.8620194241710247,
+        1.0
+      ],
+      "mean_support": 0.6396825758785297
+    },
+    "uncertain": {
+      "n": 28,
+      "n_correct": 28,
+      "error_rate": 0.0,
+      "error_rate_ci95": [
+        0.0,
+        0.12064720365810766
+      ],
+      "correct_rate_ci95": [
+        0.8793527963418923,
+        1.0
+      ],
+      "mean_support": 0.18874623512677904
+    }
+  },
+  "value_test": {
+    "n_answers": 12,
+    "n_claims": 25,
+    "random_draws_per_answer": 100,
+    "bootstrap_unit": "answer (paired cluster bootstrap)",
+    "curves": {
+      "band": [
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.1818,
+          "risk_ci95": [
+            0.0,
+            0.4545
+          ],
+          "n_answers": 11
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0833,
+          "risk_ci95": [
+            0.0,
+            0.2083
+          ],
+          "n_answers": 12
+        }
+      ],
+      "random": [
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0936,
+          "risk_ci95": [
+            0.0,
+            0.2318
+          ],
+          "n_answers": 11
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0833,
+          "risk_ci95": [
+            0.0,
+            0.2083
+          ],
+          "n_answers": 12
+        }
+      ],
+      "shortest": [
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0909,
+          "risk_ci95": [
+            0.0,
+            0.2727
+          ],
+          "n_answers": 11
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0833,
+          "risk_ci95": [
+            0.0,
+            0.2083
+          ],
+          "n_answers": 12
+        }
+      ],
+      "longest": [
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0909,
+          "risk_ci95": [
+            0.0,
+            0.2727
+          ],
+          "n_answers": 11
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0833,
+          "risk_ci95": [
+            0.0,
+            0.2083
+          ],
+          "n_answers": 12
+        }
+      ],
+      "first": [
+        {
+          "coverage": 0.3333,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 11
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.0833,
+          "risk_ci95": [
+            0.0,
+            0.2083
+          ],
+          "n_answers": 12
+        }
+      ]
+    },
+    "comparisons": {
+      "band_minus_random": {
+        "mean_risk_gap": 0.0388,
+        "mean_risk_gap_ci95": [
+          0.0,
+          0.09791666666666665
+        ],
+        "coverage_points": 25,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_shortest": {
+        "mean_risk_gap": 0.04,
+        "mean_risk_gap_ci95": [
+          0.0,
+          0.13043478260869565
+        ],
+        "coverage_points": 25,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_longest": {
+        "mean_risk_gap": 0.04,
+        "mean_risk_gap_ci95": [
+          0.0,
+          0.13043478260869565
+        ],
+        "coverage_points": 25,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_first": {
+        "mean_risk_gap": 0.08,
+        "mean_risk_gap_ci95": [
+          0.0,
+          0.2
+        ],
+        "coverage_points": 25,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      }
+    },
+    "paired": {
+      "band_vs_random": {
+        "n_answers": 12,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.16666666666666666,
+        "mean_kept_errors_baseline": 0.08333333333333333,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 1.0,
+        "cohens_dz": 0.28867513459481287,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_shortest": {
+        "n_answers": 12,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.16666666666666666,
+        "mean_kept_errors_baseline": 0.08333333333333333,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 1.0,
+        "cohens_dz": 0.28867513459481287,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_longest": {
+        "n_answers": 12,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.16666666666666666,
+        "mean_kept_errors_baseline": 0.08333333333333333,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 1.0,
+        "cohens_dz": 0.28867513459481287,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_first": {
+        "n_answers": 12,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.16666666666666666,
+        "mean_kept_errors_baseline": 0.0,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p": 0.5,
+        "cohens_dz": 0.42817441928883765,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      }
+    },
+    "position_length_confound": {
+      "spearman_position_vs_length": -0.03447015481263403,
+      "p_value": 0.8700655302751721,
+      "n_claims": 25,
+      "mean_words_first_half": 20.916666666666668,
+      "mean_words_second_half": 19.416666666666668,
+      "note": "a negative correlation means later claims are shorter, so position and length are not the same policy; a positive one means they are",
+      "first_minus_second_half_words": 1.5,
+      "ci95": [
+        -1.4166666666666667,
+        4.583333333333333
+      ]
+    }
+  },
+  "circularity_audit": null,
+  "answer_level": {
+    "n_answers": 60,
+    "n_claims": 73,
+    "answers_with_no_wrong_claim": 58,
+    "answers_with_no_wrong_claim_rate": 0.9666666666666667,
+    "answers_clean_after_keeping_grounded_only": 58,
+    "answers_clean_after_keeping_grounded_only_rate": 0.9666666666666667,
+    "grounded_claim_share": 0.2876712328767123,
+    "note": "an answer with no grounded claim at all is vacuously clean under the grounded-only rule; the claim share is reported alongside so the rate is not read on its own"
+  },
+  "band_definitions": {
+    "framework": "noisy-OR of the per-chunk entailment probabilities over the retrieved passages (src/claims.py::assess_claims). This is the band the answer shows the practitioner.",
+    "experiment": "maximum entailment over the same candidates, thresholded at 0.5 (run_generation_eval.py::_claim_support). This is the claim-support rate the papers report.",
+    "n_bands_differ": 0,
+    "crosstab": {
+      "uncertain->uncertain": 28,
+      "grounded->grounded": 21,
+      "inferred->inferred": 24
+    },
+    "note": "the two are different functions of the same evidence. The noisy-OR assumes the witnesses fail independently, which they do not -- ten passages about the same subject are not ten independent trials -- so it saturates where the maximum does not."
+  },
+  "retrieval_placement": "post_rerank"
+}

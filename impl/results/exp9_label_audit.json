@@ -1,0 +1,26 @@
+{
+  "status": "run",
+  "n_answerable": 132,
+  "n_defective": 0,
+  "n_clean": 132,
+  "defective": {},
+  "screen": {
+    "n_hits": 4,
+    "hits": {
+      "What value is stated for replacement or repair in the source documentation?": "the chunk never states the gold as a complete token",
+      "According to the table in the source document, what is the II for Moderate?": "the gold does not sit in the column the question names, in the row the key names",
+      "According to the table in the source document, what is the III for Moderate?": "the gold does not sit in the column the question names, in the row the key names",
+      "What value is stated for the purpose in the source documentation?": "the chunk never states the gold as a complete token"
+    },
+    "note": "the conservative screen the original audit used: it fires whenever the gold's digits begin some other token in the chunk, and it finds the table row by looking under the named column, so it over-reports. The precise rules above adjudicate each hit."
+  },
+  "note": "the gold chunk is correct in every defective case; only the answer string is attached to the wrong question, so the retrieval-side metrics are unaffected",
+  "pre_repair": {
+    "path": "/Users/ritikraj/Documents/MTP/impl/experiments/data/benchmark_pre_repair.json",
+    "n_answerable": 132,
+    "same_corpus": true,
+    "n_defective_precise": 27,
+    "n_defective_screen": 30,
+    "n_defective": 30
+  }
+}

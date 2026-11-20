@@ -1,0 +1,897 @@
+{
+  "schema": "mtp.claim-band-eval/1",
+  "generation": "results_focus/exp8_generation.json",
+  "arm": "rag_nogate",
+  "n_claims_total": 76,
+  "n_claims_labelled": 76,
+  "n_claims_by_reference_source": {
+    "rule": 10,
+    "judge": 66
+  },
+  "agreement_3class": {
+    "n": 76,
+    "cohens_kappa": 0.07878787878787885,
+    "ci95": [
+      -0.0655438320147777,
+      0.2231195895905354
+    ],
+    "bands": [
+      "grounded",
+      "inferred",
+      "uncertain"
+    ],
+    "note": "reference mapped to a band: supported->grounded, partially_supported->inferred, unsupported/contradicted->uncertain"
+  },
+  "agreement_binary": {
+    "n": 76,
+    "cohens_kappa": 0.022342586323628927,
+    "ci95": [
+      -0.1348483954130359,
+      0.17953356806029375
+    ],
+    "note": "band==grounded against reference==supported"
+  },
+  "per_band": {
+    "grounded": {
+      "n": 27,
+      "n_correct": 15,
+      "error_rate": 0.4444444444444444,
+      "error_rate_ci95": [
+        0.37312719479576884,
+        0.7241440232992717
+      ],
+      "mean_support": 0.9484003200532682
+    },
+    "inferred": {
+      "n": 8,
+      "n_correct": 7,
+      "error_rate": 0.125,
+      "error_rate_ci95": [
+        0.5291051942301386,
+        0.9775830911367038
+      ],
+      "mean_support": 0.6824586252247534
+    },
+    "uncertain": {
+      "n": 41,
+      "n_correct": 19,
+      "error_rate": 0.5365853658536586,
+      "error_rate_ci95": [
+        0.32055999118185885,
+        0.6125378465402564
+      ],
+      "mean_support": 0.1260045124651638
+    }
+  },
+  "value_test": {
+    "n_answers": 17,
+    "n_claims": 62,
+    "random_draws_per_answer": 200,
+    "curves": {
+      "band": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.2667,
+            0.9333
+          ],
+          "n": 5
+        },
+        {
+          "coverage": 0.375,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.625,
+          "risk_ci95": [
+            0.5,
+            0.75
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.3182,
+          "risk_ci95": [
+            0.0909,
+            0.5909
+          ],
+          "n": 11
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.4,
+            0.8
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.6333,
+          "risk_ci95": [
+            0.3,
+            0.9667
+          ],
+          "n": 5
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.6667,
+            0.8333
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.5714,
+          "risk_ci95": [
+            0.2857,
+            0.8571
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.8,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.7143,
+            0.7143
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.5625,
+          "risk_ci95": [
+            0.375,
+            0.75
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.4248,
+          "risk_ci95": [
+            0.2483,
+            0.6128
+          ],
+          "n": 17
+        }
+      ],
+      "random": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.6325,
+          "risk_ci95": [
+            0.5875,
+            0.68
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 0.125,
+          "risk": 0.74,
+          "risk_ci95": [
+            0.68,
+            0.8
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.2,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.595,
+          "risk_ci95": [
+            0.5625,
+            0.6288
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.745,
+          "risk_ci95": [
+            0.7075,
+            0.78
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.6457,
+          "risk_ci95": [
+            0.6203,
+            0.671
+          ],
+          "n": 1000
+        },
+        {
+          "coverage": 0.375,
+          "risk": 0.7317,
+          "risk_ci95": [
+            0.7017,
+            0.7583
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.4,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.6081,
+          "risk_ci95": [
+            0.5831,
+            0.6331
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.2769,
+          "risk_ci95": [
+            0.2595,
+            0.2945
+          ],
+          "n": 2200
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.608,
+          "risk_ci95": [
+            0.5855,
+            0.63
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 0.6,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.625,
+          "risk": 0.761,
+          "risk_ci95": [
+            0.744,
+            0.779
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.6438,
+          "risk_ci95": [
+            0.6192,
+            0.6685
+          ],
+          "n": 1000
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.7517,
+          "risk_ci95": [
+            0.7404,
+            0.7642
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.6104,
+          "risk_ci95": [
+            0.5911,
+            0.63
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 0.8,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.7543,
+          "risk_ci95": [
+            0.7457,
+            0.7636
+          ],
+          "n": 200
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.6112,
+          "risk_ci95": [
+            0.5934,
+            0.6281
+          ],
+          "n": 400
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.4248,
+          "risk_ci95": [
+            0.412,
+            0.4387
+          ],
+          "n": 3400
+        }
+      ],
+      "shortest": [
+        {
+          "coverage": 0.1111,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.5,
+            1.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.4,
+            1.0
+          ],
+          "n": 5
+        },
+        {
+          "coverage": 0.375,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.2273,
+          "risk_ci95": [
+            0.0,
+            0.4545
+          ],
+          "n": 11
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.9,
+          "risk_ci95": [
+            0.8,
+            1.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.7,
+          "risk_ci95": [
+            0.3333,
+            0.9667
+          ],
+          "n": 5
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.6667,
+            1.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.5714,
+            0.8571
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.8,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.7143,
+            0.7143
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.6875,
+          "risk_ci95": [
+            0.5,
+            0.875
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.4248,
+          "risk_ci95": [
+            0.2483,
+            0.6128
+          ],
+          "n": 17
+        }
+      ],
+      "first": [
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.125,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.3333,
+            0.9333
+          ],
+          "n": 5
+        },
+        {
+          "coverage": 0.375,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.2045,
+          "risk_ci95": [
+            0.0,
+            0.4318
+          ],
+          "n": 11
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.7,
+          "risk_ci95": [
+            0.3333,
+            0.9667
+          ],
+          "n": 5
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.5714,
+            0.8571
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 0.8,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.7143,
+            0.7143
+          ],
+          "n": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.625,
+          "risk_ci95": [
+            0.5,
+            0.75
+          ],
+          "n": 2
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.4248,
+          "risk_ci95": [
+            0.2483,
+            0.6128
+          ],
+          "n": 17
+        }
+      ]
+    },
+    "comparisons": {
+      "band_minus_random": {
+        "mean_risk_gap": -0.029527678571428555,
+        "mean_risk_gap_ci95": [
+          -0.12562340029761898,
+          0.04965692708333333
+        ],
+        "coverage_points": 20,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage"
+      },
+      "band_minus_shortest": {
+        "mean_risk_gap": -0.10676406926406927,
+        "mean_risk_gap_ci95": [
+          -0.26264853896103896,
+          0.033693993506493394
+        ],
+        "coverage_points": 20,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage"
+      },
+      "band_minus_first": {
+        "mean_risk_gap": 0.05333062770562769,
+        "mean_risk_gap_ci95": [
+          -0.04271766774891775,
+          0.1769422348484848
+        ],
+        "coverage_points": 20,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage"
+      }
+    },
+    "paired": {
+      "band_vs_random": {
+        "n_answers": 17,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.9411764705882353,
+        "mean_kept_errors_baseline": 1.0,
+        "wilcoxon_statistic": 6.0,
+        "wilcoxon_p": 0.6547208460185769,
+        "cohens_dz": -0.10585122480499262,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_shortest": {
+        "n_answers": 17,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.9411764705882353,
+        "mean_kept_errors_baseline": 1.0,
+        "wilcoxon_statistic": 6.5,
+        "wilcoxon_p": 0.7825279247400674,
+        "cohens_dz": -0.07113429940295787,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_first": {
+        "n_answers": 17,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 0.9411764705882353,
+        "mean_kept_errors_baseline": 0.8823529411764706,
+        "wilcoxon_statistic": 2.0,
+        "wilcoxon_p": 0.5637028616507731,
+        "cohens_dz": 0.13719886811400706,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      }
+    }
+  },
+  "circularity_audit": {
+    "scope": "overall",
+    "shipped_hallucination_rate": 0.3824884792626728,
+    "shipped_claim_support_rate": 0.6175115207373272,
+    "reference_hallucination_rate": 0.4605263157894737,
+    "reference_hallucination_rate_ci95": [
+      0.3530754655326989,
+      0.5717757398539667
+    ],
+    "n": 76,
+    "note": "the shipped rate counts a claim as a hallucination when the NLI does not entail it over the retrieved passages; the reference rate counts it when an independent judge reading the gold evidence does not find it supported. The two are not the same measurement, and the gap between them is the size of the circularity."
+  },
+  "answer_level": {
+    "n_answers": 31,
+    "n_claims": 76,
+    "answers_with_no_wrong_claim": 20,
+    "answers_with_no_wrong_claim_rate": 0.6451612903225806,
+    "answers_clean_after_keeping_grounded_only": 25,
+    "answers_clean_after_keeping_grounded_only_rate": 0.8064516129032258,
+    "grounded_claim_share": 0.35526315789473684,
+    "note": "an answer with no grounded claim at all is vacuously clean under the grounded-only rule; the claim share is reported alongside so the rate is not read on its own"
+  },
+  "band_definitions": {
+    "framework": "noisy-OR of the per-chunk entailment probabilities over the retrieved passages (src/claims.py::assess_claims). This is the band the answer shows the practitioner.",
+    "experiment": "maximum entailment over the same candidates, thresholded at 0.5 (run_generation_eval.py::_claim_support). This is the claim-support rate the papers report.",
+    "n_bands_differ": 0,
+    "crosstab": {
+      "grounded->grounded": 24,
+      "inferred->grounded": 3,
+      "uncertain->uncertain": 41,
+      "inferred->inferred": 8
+    },
+    "note": "the two are different functions of the same evidence. The noisy-OR assumes the witnesses fail independently, which they do not -- ten passages about the same subject are not ten independent trials -- so it saturates where the maximum does not."
+  },
+  "retrieval_placement": "post_rerank"
+}

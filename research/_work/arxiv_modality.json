@@ -1,0 +1,909 @@
+{
+ "colpali_family": {
+  "query": "all:\"ColPali\" OR all:\"ColQwen\" OR all:\"ColNEST\" OR all:\"late interaction\" AND all:\"document retrieval\"",
+  "results": [
+   {
+    "arxiv_id": "2602.03992",
+    "title": "Nemotron ColEmbed V2: Top-Performing Late Interaction Embedding Models for Visual Document Retrieval",
+    "authors": [
+     "Gabriel de Souza P. Moreira",
+     "Ronay Ak",
+     "Mengyao Xu",
+     "Oliver Holworthy",
+     "Benedikt Schifferer",
+     "Zhiding Yu",
+     "Yauhen Babakhin",
+     "Radek Osmulski",
+     "Jiarui Cai",
+     "Ryan Chesler",
+     "Bo Liu",
+     "Even Oldridge"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) systems have been popular for generative applications, powering language models by injecting external knowledge. Companies have been trying to leverage their large catalog of documents (e.g. PDFs, presentation slides) in such RAG pipelines, whose first step is the retrieval component. Dense retrieval has been a popular approach, where embedding models are used to generate a dense representation of the user query that is closer to relevant content embeddings. More recently, VLM-based embedding models have become popular for visual document retrieval, as they preserve visual information and simplify the indexing pipeline compared to OCR text extraction. Motivated by the growing demand for visual document retrieval, we introduce Nemotron ColEmbed V2, a family of models that achieve state-of-the-art performance on the ViDoRe benchmarks. We release three variants - with 3B, 4B, and 8B parameters - based on pre-trained VLMs: NVIDIA Eagle 2 with Llama 3.2 3B backbone, Qwen3-VL-4B-Instruct and Qwen3-VL-8B-Instruct, respectively. The 8B model ranks first on the ViDoRe V3 leaderboard as of February 03, 2026, achieving an average NDCG@10 of 63.42. We describe the main techniques used across data processing, training, and post-training - such as cluster-based sampling, hard-negative mining, bidirectional attention, late interaction, and model merging - that helped us build our top-performing models. We also discuss compute and storage engineering challenges posed by the late interaction mechanism and present experiments on how to balance accuracy and storage with lower dimension embeddings.",
+    "published": "2026-02-03",
+    "updated": "2026-04-01",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2602.03992"
+   },
+   {
+    "arxiv_id": "2407.01449",
+    "title": "ColPali: Efficient Document Retrieval with Vision Language Models",
+    "authors": [
+     "Manuel Faysse",
+     "Hugues Sibille",
+     "Tony Wu",
+     "Bilel Omrani",
+     "Gautier Viaud",
+     "C\u00e9line Hudelot",
+     "Pierre Colombo"
+    ],
+    "abstract": "Documents are visually rich structures that convey information through text, but also figures, page layouts, tables, or even fonts. Since modern retrieval systems mainly rely on the textual information they extract from document pages to index documents -often through lengthy and brittle processes-, they struggle to exploit key visual cues efficiently. This limits their capabilities in many practical document retrieval applications such as Retrieval Augmented Generation (RAG). To benchmark current systems on visually rich document retrieval, we introduce the Visual Document Retrieval Benchmark ViDoRe, composed of various page-level retrieval tasks spanning multiple domains, languages, and practical settings. The inherent complexity and performance shortcomings of modern systems motivate a new concept; doing document retrieval by directly embedding the images of the document pages. We release ColPali, a Vision Language Model trained to produce high-quality multi-vector embeddings from images of document pages. Combined with a late interaction matching mechanism, ColPali largely outperforms modern document retrieval pipelines while being drastically simpler, faster and end-to-end trainable. We release models, data, code and benchmarks under open licenses at https://hf.co/vidore.",
+    "published": "2024-06-27",
+    "updated": "2025-02-28",
+    "categories": [
+     "cs.IR",
+     "cs.CL",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2407.01449"
+   },
+   {
+    "arxiv_id": "2505.07730",
+    "title": "Reproducibility, Replicability, and Insights into Visual Document Retrieval with Late Interaction",
+    "authors": [
+     "Jingfen Qiao",
+     "Jia-Huei Ju",
+     "Xinyu Ma",
+     "Evangelos Kanoulas",
+     "Andrew Yates"
+    ],
+    "abstract": "Visual Document Retrieval (VDR) is an emerging research area that focuses on encoding and retrieving document images directly, bypassing the dependence on Optical Character Recognition (OCR) for document search. A recent advance in VDR was introduced by ColPali, which significantly improved retrieval effectiveness through a late interaction mechanism. ColPali's approach demonstrated substantial performance gains over existing baselines that do not use late interaction on an established benchmark. In this study, we investigate the reproducibility and replicability of VDR methods with and without late interaction mechanisms by systematically evaluating their performance across multiple pre-trained vision-language models. Our findings confirm that late interaction yields considerable improvements in retrieval effectiveness; however, it also introduces computational inefficiencies during inference. Additionally, we examine the adaptability of VDR models to textual inputs and assess their robustness across text-intensive datasets within the proposed benchmark, particularly when scaling the indexing mechanism. Furthermore, our research investigates the specific contributions of late interaction by looking into query-patch matching in the context of visual document retrieval. We find that although query tokens cannot explicitly match image patches as in the text retrieval scenario, they tend to match the patch contains visually similar tokens or their surrounding patches.",
+    "published": "2025-05-12",
+    "updated": "2025-05-12",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2505.07730"
+   },
+   {
+    "arxiv_id": "2506.21601",
+    "title": "Hierarchical Patch Compression for ColPali: Efficient Multi-Vector Document Retrieval with Dynamic Pruning and Quantization",
+    "authors": [
+     "Duong Bach"
+    ],
+    "abstract": "Multi-vector document retrieval systems, such as ColPali, excel in fine-grained matching for complex queries but incur significant storage and computational costs due to their reliance on high-dimensional patch embeddings and late-interaction scoring. To address these challenges, we propose HPC-ColPali, a Hierarchical Patch Compression framework that enhances the efficiency of ColPali while preserving its retrieval accuracy. Our approach integrates three innovative techniques: (1) K-Means quantization, which compresses patch embeddings into 1-byte centroid indices, achieving up to 32$\\times$ storage reduction; (2) attention-guided dynamic pruning, utilizing Vision-Language Model attention weights to retain only the top-$p\\%$ most salient patches, reducing late-interaction computation by up to 60\\% with less than 2\\% nDCG@10 loss; and (3) optional binary encoding of centroid indices into $b$-bit strings ($b=\\lceil\\log_2 K\\rceil$), enabling rapid Hamming distance-based similarity search for resource-constrained environments. Evaluated on the ViDoRe and SEC-Filings datasets, HPC-ColPali achieves 30--50\\% lower query latency under HNSW indexing while maintaining high retrieval precision. When integrated into a Retrieval-Augmented Generation pipeline for legal summarization, it reduces hallucination rates by 30\\% and halves end-to-end latency. These advancements establish HPC-ColPali as a scalable and efficient solution for multi-vector document retrieval across diverse applications. Code is available at https://github.com/DngBack/HPC-ColPali.",
+    "published": "2025-06-19",
+    "updated": "2025-07-02",
+    "categories": [
+     "cs.IR",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2506.21601"
+   },
+   {
+    "arxiv_id": "2605.08421",
+    "title": "Beyond Bag-of-Patches: Learning Global Layout via Textual Supervision for Late-Interaction Visual Document Retrieval",
+    "authors": [
+     "Pascal Tilli",
+     "Mohsen Mesgar"
+    ],
+    "abstract": "Visual Document Retrieval (VDR) models mostly rely on late interaction architectures, in which documents are represented by a set of local patch embeddings and then matched against query tokens. While efficient, this architecture prioritizes local similarity over global layout structure of documents to estimate relevancy between documents and query. In practice, this leads to errors as relevance originates from layout structure of documents with heterogeneous layouts combining figures, tables, and text. We make document layout learnable without changing inference. We propose a multimodal encoder that augments local patch representations with a global layout embedding, trained via textual descriptions encoding document layout information. Across four ViDoRe-v2 datasets, our model improves over the strongest architecturally comparable ColPali/ColQwen baseline by +2.4 nDCG@5 and +2.3 MAP@5, with statistically significant per-dataset gains over ColQwen.",
+    "published": "2026-05-08",
+    "updated": "2026-05-08",
+    "categories": [
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2605.08421"
+   },
+   {
+    "arxiv_id": "2511.00903",
+    "title": "ColMate: Contrastive Late Interaction and Masked Text for Multimodal Document Retrieval",
+    "authors": [
+     "Ahmed Masry",
+     "Megh Thakkar",
+     "Patrice Bechard",
+     "Sathwik Tejaswi Madhusudhan",
+     "Rabiul Awal",
+     "Shambhavi Mishra",
+     "Akshay Kalkunte Suresh",
+     "Srivatsava Daruru",
+     "Enamul Hoque",
+     "Spandana Gella",
+     "Torsten Scholak",
+     "Sai Rajeswar"
+    ],
+    "abstract": "Retrieval-augmented generation has proven practical when models require specialized knowledge or access to the latest data. However, existing methods for multimodal document retrieval often replicate techniques developed for text-only retrieval, whether in how they encode documents, define training objectives, or compute similarity scores. To address these limitations, we present ColMate, a document retrieval model that bridges the gap between multimodal representation learning and document retrieval. ColMate utilizes a novel OCR-based pretraining objective, a self-supervised masked contrastive learning objective, and a late interaction scoring mechanism more relevant to multimodal document structures and visual characteristics. ColMate obtains 3.61% improvements over existing retrieval models on the ViDoRe V2 benchmark, demonstrating stronger generalization to out-of-domain benchmarks.",
+    "published": "2025-11-02",
+    "updated": "2025-11-02",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2511.00903"
+   },
+   {
+    "arxiv_id": "2609.07262",
+    "title": "Query-Aware Token Budgeting for Efficient Late-Interaction Visual Document Retrieval",
+    "authors": [
+     "PS Rishi",
+     "Rajeev Ranjan Dwivedi",
+     "Vinod K Kurmi"
+    ],
+    "abstract": "Late-interaction visual document retrievers preserve fine-grained page evidence by storing many token embeddings per page, but the resulting storage and query-time interaction costs make large-scale deployment expensive. Pooling document tokens before indexing offers a natural remedy, yet static pooling must decide which visual evidence to preserve before the query is known. We study an alternative: a heavily compressed hot-path index generates candidates, after which query-aware token budgeting operates on the original token sets of the shortlisted pages. We formulate this stage-two selection as a budgeted MaxSim coverage problem, show that a clipped version is monotone submodular, and compare coverage-only, cluster-guided, token-wise, and marginal-gain policies. On ten ViDoRe tasks with ColModernVBERT, direct static pooling reduces macro normalized discounted cumulative gain at rank five from 0.6309 without compression to 0.4738 at a thirty-two-fold pool factor. Under the same candidate-generation regime and a pool-factor-eight-equivalent reranking budget, token top-k recovers 93.93 percent of the full-token score, while greedy marginal-gain selection recovers 98.39 percent. Held-out and leave-one-dataset-out evaluations yield positive greedy improvements over token top-k on every dataset. The latency analysis reveals two useful operating points: token top-k for interactive retrieval and the naive greedy implementation as a quality upper envelope. Together, these results show that late-interaction visual retrieval benefits from query-aware allocation rather than query-agnostic pooling alone.",
+    "published": "2026-09-07",
+    "updated": "2026-09-07",
+    "categories": [
+     "cs.IR",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2609.07262"
+   },
+   {
+    "arxiv_id": "2510.01149",
+    "title": "ModernVBERT: Towards Smaller Visual Document Retrievers",
+    "authors": [
+     "Paul Teiletche",
+     "Quentin Mac\u00e9",
+     "Max Conti",
+     "Antonio Loison",
+     "Gautier Viaud",
+     "Pierre Colombo",
+     "Manuel Faysse"
+    ],
+    "abstract": "Retrieving specific information from a large corpus of documents is a prevalent industrial use case of modern AI, notably due to the popularity of Retrieval-Augmented Generation (RAG) systems. Although neural document retrieval models have historically operated exclusively in the text space, Visual Document Retrieval (VDR) models - large vision-language decoders repurposed as embedding models which directly work with page screenshots as inputs - are increasingly popular due to the performance and indexing latency gains they offer. In this work, we show that, while cost-efficient, this approach of repurposing generative models bottlenecks retrieval performance. Through controlled experiments, we revisit the entire training pipeline, and establish a principled recipe for improving visual document retrieval models. We notably measure the impact of attention masking, image resolution, modality alignment data regimes, and late interaction centered contrastive objectives which emerge as central performance factors. Building on these insights, we release ModernVBERT, a compact 250M-parameter vision-language encoder that outperforms recent models up to 10 times larger when fine-tuned on document retrieval tasks, enabling efficient inference on cheap CPU hardware and greatly reducing latency and costs while maintaining strong performance. Models, code and data are available at https://huggingface.co/ModernVBERT.",
+    "published": "2025-10-01",
+    "updated": "2025-12-16",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2510.01149"
+   },
+   {
+    "arxiv_id": "2606.04300",
+    "title": "Argus-Retriever: Vision-LLM Late-Interaction Retrieval with Region-Aware Query-Conditioned MoE for Visual Document Retrieval",
+    "authors": [
+     "Abdelrahman Abdallah",
+     "Mahmoud Abdalla",
+     "Mohammed Ali",
+     "Adam Jatowt"
+    ],
+    "abstract": "Late-interaction vision-language retrievers represent each document page as many visual token embeddings and score queries with MaxSim. In systems such as ColPali, ColQwen, ColNomic, and Nemotron ColEmbed, the document embeddings are produced without seeing the query, so the same page is represented identically for a table lookup, a chart question, and a layout-sensitive evidence request. We introduce \\textbf{Argus}, a family of query-conditioned late-interaction retrievers built on Qwen3.5-VL. Argus adds a region-aware Mixture-of-Experts module: the query encoder produces both retrieval embeddings and a compact context vector, the document page is pooled into spatial regions, and a query-aware router selects latent experts per region before MaxSim. The output remains a multi-vector index compatible with ColPali-style retrieval, but the document representation is now dependent on the query (i.e., $\\mathbf{D}(q)$). All Argus models use a 1024-dimensional retrieval head, compared with the 2560-dimensional and 4096-dimensional heads of recent state-of-the-art systems, and are trained on roughly 9\\% of the available public supervision rather than the full pool. The 9B model reaches \\textbf{92.67} NDCG@5 on ViDoRe V1 and \\textbf{86.0} NDCG@5 on the combined V1+V2 leaderboard, the highest reported value for an open late-interaction model on the combined leaderboard. Wrapped in a Qwen3.6-27B agentic retrieval pipeline on ViDoRe V3, Argus-9B further improves its NDCG@10 from 60.28 to \\textbf{64.80} over public tasks, showing that the same retriever serves both as a strong standalone system and as a search primitive for iterative LLM agents.",
+    "published": "2026-06-03",
+    "updated": "2026-06-03",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2606.04300"
+   },
+   {
+    "arxiv_id": "2606.19960",
+    "title": "Stellar: Scalable Multimodal Document Retrieval for Natural Language Queries",
+    "authors": [
+     "Yuxiang Guo",
+     "Zhonghao Hu",
+     "Yuren Mao",
+     "Yuhang Liu",
+     "Congcong Ge",
+     "Xiaolu Zhang",
+     "Jun Zhou",
+     "Yunjun Gao"
+    ],
+    "abstract": "Multimodal document retrieval--selecting the most relevant multimodal document from a large corpus to answer a natural language query--plays an essential role in Retrieval-Augmented Generation (RAG) systems. State-of-the-art methods represent each document and query with multiple token-level embeddings and use late interaction to achieve high effectiveness. However, such multi-vector representations incur substantial memory overhead during retrieval, leading to poor scalability and hindering real-world deployment. In this paper, we present Stellar, a scalable multimodal document retrieval framework that stores token-level document embeddings on disk and loads only a small set of candidate embeddings into memory for late interaction. Stellar comprises two key components: (i) Lexical Representation-based Filtering (LRF), which fine-tunes a Multimodal Large Language Model (MLLM) as a sparse encoder to produce high-quality lexical representations, enabling efficient and effective document filtering to significantly reduce the candidate set; (ii) Efficient Disk-backed Late Interaction (DLI), which designs an on-disk token embedding storage layout guided by a balanced clustering algorithm, and dynamically loads only the necessary token embeddings into memory using a simple yet effective cost model. Extensive experiments on four real-world benchmarks and a newly presented large-scale dataset demonstrate that Stellar reduces memory overhead and query latency by 1-2 orders of magnitude compared to existing methods without compromising retrieval effectiveness.",
+    "published": "2026-06-18",
+    "updated": "2026-06-18",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2606.19960"
+   },
+   {
+    "arxiv_id": "2608.02969",
+    "title": "Coverage Matters: MarginMerge for Compressing Multi-Vector Visual Document Retrievers",
+    "authors": [
+     "Ailar Mahdizadeh",
+     "Aria Salari",
+     "Sohail Rajabi",
+     "Shahriar Mirabbasi",
+     "Panos Nasiopoulos",
+     "Alireza Morsali"
+    ],
+    "abstract": "Multi-vector visual document retrievers such as ColPali and ColQwen achieve strong retrieval by storing fine-grained patch embeddings, but this produces large indexes and costly late-interaction scoring. We argue that effective compression should preserve query-relevant coverage, meaning the diverse document regions that may become the strongest MaxSim match across queries, rather than selecting patches independently by salience. This view also explains why dense rendered pages are easier to compress than natural images. We introduce MarginMerge, a compression method for frozen multi-vector retrievers. It selects coverage-aware anchors, clusters document patches, and uses a lightweight shared network to synthesize one representative per cluster. Compression is performed once during indexing, while retrieval keeps the standard MaxSim interface. Across six datasets on both ColQwen2.5 and ColPali, MarginMerge achieves the highest matched query-agnostic average at 5% and 10% vector retention. Compared with the uncompressed index using the same backbone, it preserves between 97% and 99% of average nDCG@5 while reducing stored document vectors by between 90% and 95%. At 5% retention, it also reduces ranking flips relative to geometric merging on all six ColQwen2.5 datasets by approximately 41% on average. The same model transfers to unseen datasets and retention ratios without retraining.",
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2608.02969"
+   },
+   {
+    "arxiv_id": "2609.01316",
+    "title": "MIDR: Enrichment-Augmented Indexing for Multimodal Document Retrieval",
+    "authors": [
+     "Debanjan Mahata",
+     "Atharva Tendle",
+     "Daniel Preotiuc-Pietro",
+     "Yong Zhuang",
+     "Ozan Irsoy"
+    ],
+    "abstract": "Retrieval over visually rich documents has a representation problem: important content often lives in tables, charts, figures, and layout relations that plain OCR linearizes, corrupts, or omits. ColPali-family visual retrievers address this with patch-level multi-vector indexes and late-interaction scoring, keeping image-derived retrieval on the query-time serving path. We introduce MIDR (Multimodal Indexing for Document Retrieval), a training-free framework for enrichment-augmented indexing that shifts multimodal reasoning to index time. During ingestion, a multimodal LLM converts rendered pages into verified textual fields that are indexed with BM25F and optionally fused with dense retrieval, enabling text-centric serving over multimodally grounded evidence. On ViDoRe V3, MIDR Hybrid achieves 0.6219 average nDCG across five English domains, a 23.0% relative gain over BM25, remaining competitive with ColQwen2.5. On two French-document domains, enrichment bridges English queries and French page text, lifting BM25 from 0.1532 to 0.5448 nDCG and outperforming ColQwen2.5. Across all seven domains, MIDR leads ColQwen2.5 on four while using approximately 9x smaller index memory and approximately 2x lower query latency. These results establish index-time multimodal reasoning as a compelling accuracy-deployment alternative to serving-time visual late interaction.",
+    "published": "2026-09-01",
+    "updated": "2026-09-01",
+    "categories": [
+     "cs.IR",
+     "cs.AI",
+     "cs.CL",
+     "cs.CV",
+     "cs.LG"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2609.01316"
+   }
+  ]
+ },
+ "visrag": {
+  "query": "all:\"VisRAG\" OR all:\"visual retrieval augmented generation\"",
+  "results": [
+   {
+    "arxiv_id": "2410.10594",
+    "title": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+    "authors": [
+     "Shi Yu",
+     "Chaoyue Tang",
+     "Bokai Xu",
+     "Junbo Cui",
+     "Junhao Ran",
+     "Yukun Yan",
+     "Zhenghao Liu",
+     "Shuo Wang",
+     "Xu Han",
+     "Zhiyuan Liu",
+     "Maosong Sun"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) is an effective technique that enables large language models (LLMs) to utilize external knowledge sources for generation. However, current RAG systems are solely based on text, rendering it impossible to utilize vision information like layout and images that play crucial roles in real-world multi-modality documents. In this paper, we introduce VisRAG, which tackles this issue by establishing a vision-language model (VLM)-based RAG pipeline. In this pipeline, instead of first parsing the document to obtain text, the document is directly embedded using a VLM as an image and then retrieved to enhance the generation of a VLM. Compared to traditional text-based RAG, VisRAG maximizes the retention and utilization of the data information in the original documents, eliminating the information loss introduced during the parsing process. We collect both open-source and synthetic data to train the retriever in VisRAG and explore a variety of generation methods. Experiments demonstrate that VisRAG outperforms traditional RAG in both the retrieval and generation stages, achieving a 20--40% end-to-end performance gain over traditional text-based RAG pipeline. Further analysis reveals that VisRAG is efficient in utilizing training data and demonstrates strong generalization capability, positioning it as a promising solution for RAG on multi-modality documents. Our code and data are available at https://github.com/openbmb/visrag.",
+    "published": "2024-10-14",
+    "updated": "2025-03-02",
+    "categories": [
+     "cs.IR",
+     "cs.AI",
+     "cs.CL",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2410.10594"
+   },
+   {
+    "arxiv_id": "2604.09508",
+    "title": "VISOR: Agentic Visual Retrieval-Augmented Generation via Iterative Search and Over-horizon Reasoning",
+    "authors": [
+     "Yucheng Shen",
+     "Jiulong Wu",
+     "Jizhou Huang",
+     "Dawei Yin",
+     "Lingyong Yan",
+     "Min Cao"
+    ],
+    "abstract": "Visual Retrieval-Augmented Generation (VRAG) empowers Vision-Language Models to retrieve and reason over visually rich documents. To tackle complex queries requiring multi-step reasoning, agentic VRAG systems interleave reasoning with iterative retrieval. However, existing agentic VRAG faces two critical bottlenecks. (1) Visual Evidence Sparsity: key evidence is scattered across pages yet processed in isolation, hindering cross-page reasoning; moreover, fine-grained intra-image evidence often requires precise visual actions, whose misuse degrades retrieval quality; (2) Search Drift in Long Horizons: the accumulation of visual tokens across retrieved pages dilutes context and causes cognitive overload, leading agents to deviate from their search objective. To address these challenges, we propose VISOR (Visual Retrieval-Augmented Generation via Iterative Search and Over-horizon Reasoning), a unified single-agent framework. VISOR features a structured Evidence Space for progressive cross-page reasoning, coupled with a Visual Action Evaluation and Correction mechanism to manage visual actions. Additionally, we introduce a Dynamic Trajectory with Sliding Window and Intent Injection to mitigate search drift. They anchor the evidence space while discarding earlier raw interactions, preventing context from being overwhelmed by visual tokens. We train VISOR using a Group Relative Policy Optimization-based Reinforcement Learning (GRPO-based RL) pipeline with state masking and credit assignment tailored for dynamic context reconstruction. Extensive experiments on ViDoSeek, SlideVQA, and MMLongBench demonstrate that VISOR achieves state-of-the-art performance while maintaining reasonable and controllable computational costs for long-horizon visual reasoning tasks. The source code is available at https://github.com/syc1336/VISOR.",
+    "published": "2026-04-10",
+    "updated": "2026-08-18",
+    "categories": [
+     "cs.CV",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2604.09508"
+   },
+   {
+    "arxiv_id": "2510.09733",
+    "title": "VisRAG2.0: Mitigating Visual Hallucinations via Evidence-Guided Multi-Image Reasoning in Visual Retrieval-Augmented Generation",
+    "authors": [
+     "Yubo Sun",
+     "Chunyi Peng",
+     "Yukun Yan",
+     "Shi Yu",
+     "Zhenghao Liu",
+     "Sen Mei",
+     "Chi Chen",
+     "Maosong Sun"
+    ],
+    "abstract": "Visual Retrieval-Augmented Generation (VRAG) has emerged as a promising paradigm for equipping Vision-Language Models (VLMs) with external visual evidence, enabling them to go beyond parametric knowledge when answering visually grounded questions. However, in such multi-image settings, VLMs still often suffer from visual hallucinations and struggle to accurately identify the question-relevant evidence needed for reliable reasoning. Existing methods usually lack an explicit cross-image evidence collection process, and also provide limited credit assignment when jointly optimizing perception and reasoning. To address this issue, we propose EVisRAG, an evidence-guided visual retrieval-augmented framework for multi-image reasoning. EVisRAG first observes the retrieved images, records question-relevant visual evidence from each image, and then performs reasoning and answer generation based on the aggregated evidence. We further introduce RS-GRPO, which aligns reward signals with token spans from different stages, improving training stability and strengthening the joint optimization of evidence localization and reasoning. Experiments on multiple visual question answering benchmarks show that EVisRAG consistently outperforms the backbone VLM by an average of about 19\\%, while substantially reducing visual hallucinations. These results demonstrate that explicit evidence collection and scoped reward design are effective for improving visual grounding and reasoning reliability in multi-image settings. Codes and data are available at https://github.com/OpenBMB/VisRAG",
+    "published": "2025-10-10",
+    "updated": "2026-07-28",
+    "categories": [
+     "cs.CL",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2510.09733"
+   },
+   {
+    "arxiv_id": "2606.17431",
+    "title": "Visual Retrieval-Augmented Generation for Silhouette-Guided Animal Art",
+    "authors": [
+     "Quoc-Duy Tran",
+     "Anh-Tuan Vo",
+     "Trung-Nghia Le"
+    ],
+    "abstract": "Generative AI has advanced the ability to render photorealistic or artistic images, yet it remains limited in a key aspect of human creativity: interpreting ambiguous shapes. This phenomenon, rooted in pareidolia, allows humans to perceive meaningful forms in random patterns such as clouds, stones, or leaves. To computationally replicate this imaginative process, we introduce Visual Retrieval-Augmented Generation (Visual-RAG), a framework that generates animal art directly from natural silhouettes. Our method retrieves structurally similar animal shapes from a curated corpus of 28,586 high-quality silhouettes and uses them as reference exemplars to guide diffusion-based generation with ControlNet and IP-Adapter. Ablation studies confirm that shape Context with RANSAC provides the most accurate alignment, while removing shape standardization reduces the inlier ratio to just 13.4\\%, underscoring the importance of structural fidelity in Visual-RAG. A user study with 12 participants evaluated the outputs in terms of aesthetics, silhouette fidelity, and overall impression. Results reveal that while Visual-RAG provides plausible interpretations, challenges remain in achieving high perceptual impact. This work lays the foundation for computational pareidolia, showing how machines can contribute to the early stages of imaginative discovery.",
+    "published": "2026-06-16",
+    "updated": "2026-06-16",
+    "categories": [
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2606.17431"
+   },
+   {
+    "arxiv_id": "2505.14381",
+    "title": "SCAN: Semantic Document Layout Analysis for Textual and Visual Retrieval-Augmented Generation",
+    "authors": [
+     "Nobuhiro Ueda",
+     "Yuyang Dong",
+     "Kriszti\u00e1n Boros",
+     "Daiki Ito",
+     "Takuya Sera",
+     "Masafumi Oyamada"
+    ],
+    "abstract": "With the increasing adoption of Large Language Models (LLMs) and Vision-Language Models (VLMs), rich document analysis technologies for applications like Retrieval-Augmented Generation (RAG) and visual RAG are gaining significant attention. Recent research indicates that using VLMs yields better RAG performance, but processing rich documents remains a challenge since a single page contains large amounts of information. In this paper, we present SCAN (SemantiC Document Layout ANalysis), a novel approach that enhances both textual and visual Retrieval-Augmented Generation (RAG) systems that work with visually rich documents. It is a VLM-friendly approach that identifies document components with appropriate semantic granularity, balancing context preservation with processing efficiency. SCAN uses a coarse-grained semantic approach that divides documents into coherent regions covering contiguous components. We trained the SCAN model by fine-tuning object detection models on an annotated dataset. Our experimental results across English and Japanese datasets demonstrate that applying SCAN improves end-to-end textual RAG performance by up to 9.4 points and visual RAG performance by up to 10.4 points, outperforming conventional approaches and even commercial document processing solutions.",
+    "published": "2025-05-20",
+    "updated": "2026-02-13",
+    "categories": [
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2505.14381"
+   },
+   {
+    "arxiv_id": "2608.07006",
+    "title": "Does More Retrieved Evidence Help Visual Retrieval-Augmented Generation with Diffusion Language Models?",
+    "authors": [
+     "Jiankun Wang",
+     "Yisen Gao",
+     "Ziwei Zhang",
+     "Xingcheng Fu",
+     "Jiaxin Bai",
+     "Chen Gao"
+    ],
+    "abstract": "Visual retrieval-augmented generation (RAG) commonly expands the retrieved evidence set to improve answer-page coverage, implicitly assuming that all available evidence should be passed to the generator. We show that this assumption does not hold for diffusion language models (DLMs): retrieving more pages increases answer-page recall, whereas unconditionally passing all retrieved pages to the generator often reduces answer accuracy, primarily because of semantic conflict. A latent-source analysis explains this mismatch through source-coherence loss in parallel denoising, where position-wise proposals can combine incompatible visual sources into unsupported answers. We further find that such interference is already visible in the first-step answer-block distribution, making it possible to assess evidence before decoding. To preserve retrieval coverage while limiting harmful visual exposure, we propose the Entropy-Based Candidate Filter (ECF), a training-free evidence-admission framework. To reduce irrelevant content within individual candidates, ECF constructs multi-granularity evidence units; to identify beneficial additional evidence, it uses blank-controlled block confidence and retrieval rank to determine whether and which candidate should enter the final context. Across three multimodal DLMs and five visual QA benchmarks, ECF improves answer accuracy by 2.62 percentage points on average over the strongest fixed top-$k$ input and, with LLaDA2.0-Uni, by 2.37 percentage points on average over the best competing training-free result for each dataset. These results show that broader retrieval benefits visual DLM-RAG through selective evidence admission rather than unconditional evidence expansion. Code is publicly available at https://github.com/wjkuser/ECF.",
+    "published": "2026-08-07",
+    "updated": "2026-08-07",
+    "categories": [
+     "cs.CL",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2608.07006"
+   },
+   {
+    "arxiv_id": "2410.21480",
+    "title": "AiSciVision: A Framework for Specializing Large Multimodal Models in Scientific Image Classification",
+    "authors": [
+     "Brendan Hogan",
+     "Anmol Kabra",
+     "Felipe Siqueira Pacheco",
+     "Laura Greenstreet",
+     "Joshua Fan",
+     "Aaron Ferber",
+     "Marta Ummus",
+     "Alecsander Brito",
+     "Olivia Graham",
+     "Lillian Aoki",
+     "Drew Harvell",
+     "Alex Flecker",
+     "Carla Gomes"
+    ],
+    "abstract": "Trust and interpretability are crucial for the use of Artificial Intelligence (AI) in scientific research, but current models often operate as black boxes offering limited transparency and justifications for their outputs. We introduce AiSciVision, a framework that specializes Large Multimodal Models (LMMs) into interactive research partners and classification models for image classification tasks in niche scientific domains. Our framework uses two key components: (1) Visual Retrieval-Augmented Generation (VisRAG) and (2) domain-specific tools utilized in an agentic workflow. To classify a target image, AiSciVision first retrieves the most similar positive and negative labeled images as context for the LMM. Then the LMM agent actively selects and applies tools to manipulate and inspect the target image over multiple rounds, refining its analysis before making a final prediction. These VisRAG and tooling components are designed to mirror the processes of domain experts, as humans often compare new data to similar examples and use specialized tools to manipulate and inspect images before arriving at a conclusion. Each inference produces both a prediction and a natural language transcript detailing the reasoning and tool usage that led to the prediction. We evaluate AiSciVision on three real-world scientific image classification datasets: detecting the presence of aquaculture ponds, diseased eelgrass, and solar panels. Across these datasets, our method outperforms fully supervised models in low and full-labeled data settings. AiSciVision is actively deployed in real-world use, specifically for aquaculture research, through a dedicated web application that displays and allows the expert users to converse with the transcripts. This work represents a crucial step toward AI systems that are both interpretable and effective, advancing their use in scientific research and scientific discovery.",
+    "published": "2024-10-28",
+    "updated": "2024-10-28",
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CL",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2410.21480"
+   },
+   {
+    "arxiv_id": "2602.22013",
+    "title": "RobustVisRAG: Causality-Aware Vision-Based Retrieval-Augmented Generation under Visual Degradations",
+    "authors": [
+     "I-Hsiang Chen",
+     "Yu-Wei Liu",
+     "Tse-Yu Wu",
+     "Yu-Chien Chiang",
+     "Jen-Chien Yang",
+     "Wei-Ting Chen"
+    ],
+    "abstract": "Vision-based Retrieval-Augmented Generation (VisRAG) leverages vision-language models (VLMs) to jointly retrieve relevant visual documents and generate grounded answers based on multimodal evidence. However, existing VisRAG models degrade in performance when visual inputs suffer from distortions such as blur, noise, low light, or shadow, where semantic and degradation factors become entangled within pretrained visual encoders, leading to errors in both retrieval and generation stages. To address this limitation, we introduce RobustVisRAG, a causality-guided dual-path framework that improves VisRAG robustness while preserving efficiency and zero-shot generalization. RobustVisRAG uses a non-causal path to capture degradation signals through unidirectional attention and a causal path to learn purified semantics guided by these signals. Together with the proposed Non-Causal Distortion Modeling and Causal Semantic Alignment objectives, the framework enforces a clear separation between semantics and degradations, enabling stable retrieval and generation under challenging visual conditions. To evaluate robustness under realistic conditions, we introduce the Distortion-VisRAG dataset, a large-scale benchmark containing both synthetic and real-world degraded documents across seven domains, with 12 synthetic and 5 real distortion types that comprehensively reflect practical visual degradations. Experimental results show that RobustVisRAG improves retrieval, generation, and end-to-end performance by 7.35%, 6.35%, and 12.40%, respectively, on real-world degradations, while maintaining comparable accuracy on clean inputs.",
+    "published": "2026-02-25",
+    "updated": "2026-03-26",
+    "categories": [
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2602.22013"
+   },
+   {
+    "arxiv_id": "2509.24253",
+    "title": "MRAG-Suite: A Diagnostic Evaluation Platform for Visual Retrieval-Augmented Generation",
+    "authors": [
+     "Yuelyu Ji",
+     "Wuwei Lan",
+     "Patrick NG"
+    ],
+    "abstract": "Multimodal Retrieval-Augmented Generation (Visual RAG) significantly advances question answering by integrating visual and textual evidence. Yet, current evaluations fail to systematically account for query difficulty and ambiguity. We propose MRAG-Suite, a diagnostic evaluation platform integrating diverse multimodal benchmarks (WebQA, Chart-RAG, Visual-RAG, MRAG-Bench). We introduce difficulty-based and ambiguity-aware filtering strategies, alongside MM-RAGChecker, a claim-level diagnostic tool. Our results demonstrate substantial accuracy reductions under difficult and ambiguous queries, highlighting prevalent hallucinations. MM-RAGChecker effectively diagnoses these issues, guiding future improvements in Visual RAG systems.",
+    "published": "2025-09-29",
+    "updated": "2026-01-13",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2509.24253"
+   },
+   {
+    "arxiv_id": "2411.01751",
+    "title": "RAGViz: Diagnose and Visualize Retrieval-Augmented Generation",
+    "authors": [
+     "Tevin Wang",
+     "Jingyuan He",
+     "Chenyan Xiong"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) combines knowledge from domain-specific sources into large language models to ground answer generation. Current RAG systems lack customizable visibility on the context documents and the model's attentiveness towards such documents. We propose RAGViz, a RAG diagnosis tool that visualizes the attentiveness of the generated tokens in retrieved documents. With a built-in user interface, retrieval index, and Large Language Model (LLM) backbone, RAGViz provides two main functionalities: (1) token and document-level attention visualization, and (2) generation comparison upon context document addition and removal. As an open-source toolkit, RAGViz can be easily hosted with a custom embedding model and HuggingFace-supported LLM backbone. Using a hybrid ANN (Approximate Nearest Neighbor) index, memory-efficient LLM inference tool, and custom context snippet method, RAGViz operates efficiently with a median query time of about 5 seconds on a moderate GPU node. Our code is available at https://github.com/cxcscmu/RAGViz. A demo video of RAGViz can be found at https://youtu.be/cTAbuTu6ur4.",
+    "published": "2024-11-04",
+    "updated": "2024-11-04",
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2411.01751"
+   },
+   {
+    "arxiv_id": "2609.13268",
+    "title": "Capability-Routed Visual Retrieval and Evidence Threading for Long-Context Document Question Answering",
+    "authors": [
+     "Amirul Rahman",
+     "Aisha Karim",
+     "Kenji Nakamura",
+     "Yi-Fan Ng"
+    ],
+    "abstract": "Annual reports, diligence packs, and infographic dashboards bury numbers in page images: axes, cell grids, and footnotes that OCR pipelines flatten and that page-level visual retrievers still treat as interchangeable in-context examples. We keep a frozen Qwen2.5-VL-7B-Instruct generator and a ColPali / VisRAG-Ret page index, and insert three modules. A capability-aware visual router (CAVR) tags each retrieved page as text, table, chart, layout, or mixed and mixes specialist experts before generation. Weak-to-strong page selection (WSPS) distils a frozen 7B answerability teacher into a 3B selection head so ranking is no longer a single InfoNCE score. Visual evidence threading (VET) builds layout-anchored paths of length at most three and lets the generator read the thread rather than a flat top-$k$ list. On gold-page DocVQA / ChartQA / InfographicVQA the 7B system reaches 96.3 / 90.1 / 85.4. Under the VisRAG top-3 protocol the mean generation accuracy is 62.74 versus 59.39 for the same backbone with concatenation. On MMLongBench-Doc retrieve-then-read, F1 moves from 19.2 to 22.6 and multi-page accuracy from 16.4 to 21.2. ViDoRe nDCG@5 after WSPS reranking is 83.6, with TAT-DQA financial reports at 70.4.",
+    "published": "2026-09-07",
+    "updated": "2026-09-07",
+    "categories": [
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2609.13268"
+   },
+   {
+    "arxiv_id": "2502.15040",
+    "title": "Reducing Hallucinations of Medical Multimodal Large Language Models with Visual Retrieval-Augmented Generation",
+    "authors": [
+     "Yun-Wei Chu",
+     "Kai Zhang",
+     "Christopher Malon",
+     "Martin Renqiang Min"
+    ],
+    "abstract": "Multimodal Large Language Models (MLLMs) have shown impressive performance in vision and text tasks. However, hallucination remains a major challenge, especially in fields like healthcare where details are critical. In this work, we show how MLLMs may be enhanced to support Visual RAG (V-RAG), a retrieval-augmented generation framework that incorporates both text and visual data from retrieved images. On the MIMIC-CXR chest X-ray report generation and Multicare medical image caption generation datasets, we show that Visual RAG improves the accuracy of entity probing, which asks whether a medical entities is grounded by an image. We show that the improvements extend both to frequent and rare entities, the latter of which may have less positive training data. Downstream, we apply V-RAG with entity probing to correct hallucinations and generate more clinically accurate X-ray reports, obtaining a higher RadGraph-F1 score.",
+    "published": "2025-02-20",
+    "updated": "2025-02-20",
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2502.15040"
+   }
+  ]
+ },
+ "multimodal_rag": {
+  "query": "all:\"multimodal retrieval augmented generation\" AND (all:\"survey\" OR all:\"benchmark\")",
+  "results": [
+   {
+    "arxiv_id": "2501.15470",
+    "title": "CogPlanner: Unveiling the Potential of Agentic Multimodal Retrieval Augmented Generation with Planning",
+    "authors": [
+     "Xiaohan Yu",
+     "Zhihan Yang",
+     "Chong Chen"
+    ],
+    "abstract": "Multimodal Retrieval Augmented Generation (MRAG) systems have shown promise in enhancing the generation capabilities of multimodal large language models (MLLMs). However, existing MRAG frameworks primarily adhere to rigid, single-step retrieval strategies that fail to address real-world challenges of information acquisition and query reformulation. In this work, we introduce the task of Multimodal Retrieval Augmented Generation Planning (MRAG Planning) that aims at effective information seeking and integration while minimizing computational overhead. Specifically, we propose CogPlanner, an agentic plug-and-play framework inspired by human cognitive processes, which iteratively determines query reformulation and retrieval strategies to generate accurate and contextually relevant responses. CogPlanner supports parallel and sequential modeling paradigms. Furthermore, we introduce CogBench, a new benchmark designed to rigorously evaluate the MRAG Planning task and facilitate lightweight CogPlanner integration with resource-efficient MLLMs, such as Qwen2-VL-7B-Cog. Experimental results demonstrate that CogPlanner significantly outperforms existing MRAG baselines, offering improvements in both accuracy and efficiency with minimal additional computational costs.",
+    "published": "2025-01-26",
+    "updated": "2025-10-31",
+    "categories": [
+     "cs.IR",
+     "cs.MA"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2501.15470"
+   },
+   {
+    "arxiv_id": "2504.08748",
+    "title": "A Survey of Multimodal Retrieval-Augmented Generation",
+    "authors": [
+     "Lang Mei",
+     "Siyu Mo",
+     "Zhihan Yang",
+     "Chong Chen"
+    ],
+    "abstract": "Multimodal Retrieval-Augmented Generation (MRAG) enhances large language models (LLMs) by integrating multimodal data (text, images, videos) into retrieval and generation processes, overcoming the limitations of text-only Retrieval-Augmented Generation (RAG). While RAG improves response accuracy by incorporating external textual knowledge, MRAG extends this framework to include multimodal retrieval and generation, leveraging contextual information from diverse data types. This approach reduces hallucinations and enhances question-answering systems by grounding responses in factual, multimodal knowledge. Recent studies show MRAG outperforms traditional RAG, especially in scenarios requiring both visual and textual understanding. This survey reviews MRAG's essential components, datasets, evaluation methods, and limitations, providing insights into its construction and improvement. It also identifies challenges and future research directions, highlighting MRAG's potential to revolutionize multimodal information retrieval and generation. By offering a comprehensive perspective, this work encourages further exploration into this promising paradigm.",
+    "published": "2025-03-26",
+    "updated": "2025-03-26",
+    "categories": [
+     "cs.IR",
+     "cs.AI",
+     "cs.CL",
+     "cs.ET",
+     "cs.LG"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2504.08748"
+   },
+   {
+    "arxiv_id": "2412.16701",
+    "title": "AlzheimerRAG: Multimodal Retrieval Augmented Generation for Clinical Use Cases using PubMed articles",
+    "authors": [
+     "Aritra Kumar Lahiri",
+     "Qinmin Vivian Hu"
+    ],
+    "abstract": "Recent advancements in generative AI have fostered the development of highly adept Large Language Models (LLMs) that integrate diverse data types to empower decision-making. Among these, multimodal retrieval-augmented generation (RAG) applications are promising because they combine the strengths of information retrieval and generative models, enhancing their utility across various domains, including clinical use cases. This paper introduces AlzheimerRAG, a Multimodal RAG application for clinical use cases, primarily focusing on Alzheimer's Disease case studies from PubMed articles. This application incorporates cross-modal attention fusion techniques to integrate textual and visual data processing by efficiently indexing and accessing vast amounts of biomedical literature. Our experimental results, compared to benchmarks such as BioASQ and PubMedQA, have yielded improved performance in the retrieval and synthesis of domain-specific information. We also present a case study using our multimodal RAG in various Alzheimer's clinical scenarios. We infer that AlzheimerRAG can generate responses with accuracy non-inferior to humans and with low rates of hallucination.",
+    "published": "2024-12-21",
+    "updated": "2025-08-30",
+    "categories": [
+     "cs.IR",
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2412.16701"
+   },
+   {
+    "arxiv_id": "2602.13179",
+    "title": "Fix Before Search: Benchmarking Agentic Query Visual Pre-processing in Multimodal Retrieval-augmented Generation",
+    "authors": [
+     "Jiankun Zhang",
+     "Shenglai Zeng",
+     "Kai Guo",
+     "Xinnan Dai",
+     "Hui Liu",
+     "Jiliang Tang",
+     "Yi Chang"
+    ],
+    "abstract": "Multimodal Retrieval-Augmented Generation (MRAG) has emerged as a key paradigm for grounding MLLMs with external knowledge. While query pre-processing (e.g., rewriting) is standard in text-based RAG, existing MRAG pipelines predominantly treat visual inputs as static and immutable, implicitly assuming they are noise-free. However, real-world visual queries are often ``imperfect'' -- suffering from geometric distortions, quality degradation, or semantic ambiguity -- leading to catastrophic retrieval failures. To address this gap, we propose V-QPP-Bench, the first comprehensive benchmark dedicated to Visual Query Pre-processing (V-QPP). We formulate V-QPP as an agentic decision-making task where MLLMs must autonomously diagnose imperfections and deploy perceptual tools to refine queries. Our extensive evaluation across 46,700 imperfect queries and diverse MRAG paradigms reveals three critical insights: (1) Vulnerability -- visual imperfections severely degrade both retrieval recall and end-to-end MRAG performance; (2) Restoration Potential \\& Bottleneck -- while oracle preprocessing recovers near-perfect performance, off-the-shelf MLLMs struggle with tool selection and parameter prediction without specialized training; and (3) Training Enhancement -- supervised fine-tuning enables compact models to achieve comparable or superior performance to larger proprietary models, demonstrating the benchmark's value for developing robust MRAG systems The code is available at https://github.com/phycholosogy/VQQP_Bench",
+    "published": "2026-02-13",
+    "updated": "2026-02-13",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2602.13179"
+   },
+   {
+    "arxiv_id": "2508.08816",
+    "title": "Efficient Agent: Optimizing Planning Capability for Multimodal Retrieval Augmented Generation",
+    "authors": [
+     "Yuechen Wang",
+     "Yuming Qiao",
+     "Dan Meng",
+     "Jun Yang",
+     "Haonan Lu",
+     "Zhenyu Yang",
+     "Xudong Zhang"
+    ],
+    "abstract": "Multimodal Retrieval-Augmented Generation (mRAG) has emerged as a promising solution to address the temporal limitations of Multimodal Large Language Models (MLLMs) in real-world scenarios like news analysis and trending topics. However, existing approaches often suffer from rigid retrieval strategies and under-utilization of visual information. To bridge this gap, we propose E-Agent, an agent framework featuring two key innovations: a mRAG planner trained to dynamically orchestrate multimodal tools based on contextual reasoning, and a task executor employing tool-aware execution sequencing to implement optimized mRAG workflows. E-Agent adopts a one-time mRAG planning strategy that enables efficient information retrieval while minimizing redundant tool invocations. To rigorously assess the planning capabilities of mRAG systems, we introduce the Real-World mRAG Planning (RemPlan) benchmark. This novel benchmark contains both retrieval-dependent and retrieval-independent question types, systematically annotated with essential retrieval tools required for each instance. The benchmark's explicit mRAG planning annotations and diverse question design enhance its practical relevance by simulating real-world scenarios requiring dynamic mRAG decisions. Experiments across RemPlan and three established benchmarks demonstrate E-Agent's superiority: 13% accuracy gain over state-of-the-art mRAG methods while reducing redundant searches by 37%.",
+    "published": "2025-08-12",
+    "updated": "2025-08-12",
+    "categories": [
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2508.08816"
+   },
+   {
+    "arxiv_id": "2510.09266",
+    "title": "CFVBench: A Comprehensive Video Benchmark for Fine-grained Multimodal Retrieval-Augmented Generation",
+    "authors": [
+     "Kaiwen Wei",
+     "Xiao Liu",
+     "Jie Zhang",
+     "Zijian Wang",
+     "Ruida Liu",
+     "Yuming Yang",
+     "Xin Xiao",
+     "Xiao Sun",
+     "Haoyang Zeng",
+     "Changzai Pan",
+     "Yidan Zhang",
+     "Jiang Zhong",
+     "Peijin Wang",
+     "Yingchao Feng"
+    ],
+    "abstract": "Multimodal Retrieval-Augmented Generation (MRAG) enables Multimodal Large Language Models (MLLMs) to generate responses with external multimodal evidence, and numerous video-based MRAG benchmarks have been proposed to evaluate model capabilities across retrieval and generation stages. However, existing benchmarks remain limited in modality coverage and format diversity, often focusing on single- or limited-modality tasks, or coarse-grained scene understanding. To address these gaps, we introduce CFVBench, a large-scale, manually verified benchmark constructed from 599 publicly available videos, yielding 5,360 open-ended QA pairs. CFVBench spans high-density formats and domains such as chart-heavy reports, news broadcasts, and software tutorials, requiring models to retrieve and reason over long temporal video spans while maintaining fine-grained multimodal information. Using CFVBench, we systematically evaluate 7 retrieval methods and 14 widely-used MLLMs, revealing a critical bottleneck: current models (even GPT5 or Gemini) struggle to capture transient yet essential fine-grained multimodal details. To mitigate this, we propose Adaptive Visual Refinement (AVR), a simple yet effective framework that adaptively increases frame sampling density and selectively invokes external tools when necessary. Experiments show that AVR consistently enhances fine-grained multimodal comprehension and improves performance across all evaluated MLLMs",
+    "published": "2025-10-10",
+    "updated": "2025-10-10",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2510.09266"
+   },
+   {
+    "arxiv_id": "2412.10704",
+    "title": "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+    "authors": [
+     "Manan Suri",
+     "Puneet Mathur",
+     "Franck Dernoncourt",
+     "Kanika Goswami",
+     "Ryan A. Rossi",
+     "Dinesh Manocha"
+    ],
+    "abstract": "Understanding information from a collection of multiple documents, particularly those with visually rich elements, is important for document-grounded question answering. This paper introduces VisDoMBench, the first comprehensive benchmark designed to evaluate QA systems in multi-document settings with rich multimodal content, including tables, charts, and presentation slides. We propose VisDoMRAG, a novel multimodal Retrieval Augmented Generation (RAG) approach that simultaneously utilizes visual and textual RAG, combining robust visual retrieval capabilities with sophisticated linguistic reasoning. VisDoMRAG employs a multi-step reasoning process encompassing evidence curation and chain-of-thought reasoning for concurrent textual and visual RAG pipelines. A key novelty of VisDoMRAG is its consistency-constrained modality fusion mechanism, which aligns the reasoning processes across modalities at inference time to produce a coherent final answer. This leads to enhanced accuracy in scenarios where critical information is distributed across modalities and improved answer verifiability through implicit context attribution. Through extensive experiments involving open-source and proprietary large language models, we benchmark state-of-the-art document QA methods on VisDoMBench. Extensive results show that VisDoMRAG outperforms unimodal and long-context LLM baselines for end-to-end multimodal document QA by 12-20%.",
+    "published": "2024-12-14",
+    "updated": "2025-02-11",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2412.10704"
+   },
+   {
+    "arxiv_id": "2411.02937",
+    "title": "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+    "authors": [
+     "Yangning Li",
+     "Yinghui Li",
+     "Xinyu Wang",
+     "Yong Jiang",
+     "Zhen Zhang",
+     "Xinran Zheng",
+     "Hui Wang",
+     "Hai-Tao Zheng",
+     "Philip S. Yu",
+     "Fei Huang",
+     "Jingren Zhou"
+    ],
+    "abstract": "Multimodal Retrieval Augmented Generation (mRAG) plays an important role in mitigating the \"hallucination\" issue inherent in multimodal large language models (MLLMs). Although promising, existing heuristic mRAGs typically predefined fixed retrieval processes, which causes two issues: (1) Non-adaptive Retrieval Queries. (2) Overloaded Retrieval Queries. However, these flaws cannot be adequately reflected by current knowledge-seeking visual question answering (VQA) datasets, since the most required knowledge can be readily obtained with a standard two-step retrieval. To bridge the dataset gap, we first construct Dyn-VQA dataset, consisting of three types of \"dynamic\" questions, which require complex knowledge retrieval strategies variable in query, tool, and time: (1) Questions with rapidly changing answers. (2) Questions requiring multi-modal knowledge. (3) Multi-hop questions. Experiments on Dyn-VQA reveal that existing heuristic mRAGs struggle to provide sufficient and precisely relevant knowledge for dynamic questions due to their rigid retrieval processes. Hence, we further propose the first self-adaptive planning agent for multimodal retrieval, OmniSearch. The underlying idea is to emulate the human behavior in question solution which dynamically decomposes complex multimodal questions into sub-question chains with retrieval action. Extensive experiments prove the effectiveness of our OmniSearch, also provide direction for advancing mRAG. The code and dataset will be open-sourced at https://github.com/Alibaba-NLP/OmniSearch.",
+    "published": "2024-11-05",
+    "updated": "2025-05-26",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2411.02937"
+   },
+   {
+    "arxiv_id": "2609.05518",
+    "title": "CrossModalQA: A Cross-modal and Multi-hop Benchmark for Multimodal Retrieval-augmented Generation",
+    "authors": [
+     "Jiacheng Cai",
+     "Zijin Hong",
+     "Zheng Yuan",
+     "Huachi Zhou",
+     "Qinggang Zhang",
+     "Xiao Huang"
+    ],
+    "abstract": "Despite the strong capabilities of multimodal large language models (MLLMs), their parametric knowledge remains incomplete and difficult to update, motivating multimodal retrieval-augmented generation (RAG) to ground responses in external text and images. However, existing benchmarks face two major limitations: (i) they typically emphasize single-hop retrieval or reasoning over a small set of provided contexts rather than open-domain evidence discovery; and (ii) they provide fragmented coverage of cross-modal reasoning paths, leaving complex multi-hop and multi-image reasoning underexplored. In this paper, we introduce CrossModalQA, an open-domain benchmark for evaluating multimodal retrieval and reasoning over heterogeneous corpora. CrossModalQA contains 1,863 question-answer pairs constructed from 4,987 Wikipedia articles and 4,431 Wikimedia Commons images. It covers five complementary reasoning paths: vision-to-text, text-to-vision, vision-to-text-to-vision, multi-image intersection, and image-set reasoning. Every question requires retrieving and composing distributed textual and visual evidence, with an average reasoning depth of 3.50 hops. We construct the benchmark through multimodal knowledge graph-guided subgraph sampling and apply rule-based consistency checking and LLM verification to ensure multimodal dependence and traceable evidence. Extensive experiments demonstrate that existing multimodal RAG systems struggle to recover complete evidence chains and can underperform closed-book models when incomplete retrieval introduces distracting context. Further analysis reveals that complete cross-modal retrieval contributes more to answer accuracy than generator scaling, while multi-image retrieval and reasoning remain the primary bottlenecks limiting end-to-end performance.",
+    "published": "2026-08-31",
+    "updated": "2026-08-31",
+    "categories": [
+     "cs.CV",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2609.05518"
+   },
+   {
+    "arxiv_id": "2502.08826",
+    "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
+    "authors": [
+     "Mohammad Mahdi Abootorabi",
+     "Amirhosein Zobeiri",
+     "Mahdi Dehghani",
+     "Mohammadali Mohammadkhani",
+     "Bardia Mohammadi",
+     "Omid Ghahroodi",
+     "Mahdieh Soleymani Baghshah",
+     "Ehsaneddin Asgari"
+    ],
+    "abstract": "Large Language Models (LLMs) suffer from hallucinations and outdated knowledge due to their reliance on static training data. Retrieval-Augmented Generation (RAG) mitigates these issues by integrating external dynamic information for improved factual grounding. With advances in multimodal learning, Multimodal RAG extends this approach by incorporating multiple modalities such as text, images, audio, and video to enhance the generated outputs. However, cross-modal alignment and reasoning introduce unique challenges beyond those in unimodal RAG. This survey offers a structured and comprehensive analysis of Multimodal RAG systems, covering datasets, benchmarks, metrics, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation. We review training strategies, robustness enhancements, loss functions, and agent-based approaches, while also exploring the diverse Multimodal RAG scenarios. In addition, we outline open challenges and future directions to guide research in this evolving field. This survey lays the foundation for developing more capable and reliable AI systems that effectively leverage multimodal dynamic external knowledge bases. All resources are publicly available at https://github.com/llm-lab-org/Multimodal-RAG-Survey.",
+    "published": "2025-02-12",
+    "updated": "2025-06-02",
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2502.08826"
+   },
+   {
+    "arxiv_id": "2608.16628",
+    "title": "Hypergraph-based Multimodal Retrieval-Augmented Generation with Incremental Refinement",
+    "authors": [
+     "Shenao Chen",
+     "Yidan Xu",
+     "Xiangmin Han",
+     "Rundong Xue",
+     "Duanpo Wu",
+     "Yuhan Gao",
+     "Chenggang Yan",
+     "Yue Gao"
+    ],
+    "abstract": "Modern Multimodal Retrieval-Augmented Generation (M-RAG) systems are fundamentally limited by the binary connectivity paradigm of traditional simple graphs, which fails to capture the intricate, high-order correlations among heterogeneous entities, such as the N-ary relationships between a visual chart, its scattered textual descriptions, and underlying numerical data. Furthermore, existing refinement strategies often rely on exhaustive, full-page reconstruction to align cross-modal information, leading to prohibitive computational redundancy and the introduction of contextual noise in long-form document processing. In this paper, we propose Hyper-M2RAG, a novel framework that redefines multimodal document retrieval through High-order Hypergraph Representation Learning. We first formalize the document structure as a Multimodal Hypergraph, utilizing hyperedges as unified semantic containers to encapsulate multi-way associations across text, images, and tables, thereby transcending point-to-point modeling. To mitigate semantic fragmentation caused by physical pagination, we introduce an Anchor-driven Incremental Refinement mechanism. Rather than performing a global sweep, our approach identifies boundary-crossing anchor nodes and reconstructs their local hyper-topology using one-hop neighborhood contexts. This targeted refinement effectively bridges cross-page knowledge gaps with minimal computational footprints. Extensive evaluations on multimodal benchmarking datasets demonstrate that Hyper-M2RAG significantly outperforms state-of-the-art methods in both retrieval precision and generation coherence. Our code is available at https://github.com/ShenAoChen2001/MMHRAG.",
+    "published": "2026-08-17",
+    "updated": "2026-08-17",
+    "categories": [
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2608.16628"
+   },
+   {
+    "arxiv_id": "2505.23990",
+    "title": "Multi-RAG: A Multimodal Retrieval-Augmented Generation System for Adaptive Video Understanding",
+    "authors": [
+     "Mingyang Mao",
+     "Mariela M. Perez-Cabarcas",
+     "Utteja Kallakuri",
+     "Nicholas R. Waytowich",
+     "Xiaomin Lin",
+     "Tinoosh Mohsenin"
+    ],
+    "abstract": "To effectively engage in human society, the ability to adapt, filter information, and make informed decisions in ever-changing situations is critical. As robots and intelligent agents become more integrated into human life, there is a growing opportunity-and need-to offload the cognitive burden on humans to these systems, particularly in dynamic, information-rich scenarios. To fill this critical need, we present Multi-RAG, a multimodal retrieval-augmented generation system designed to provide adaptive assistance to humans in information-intensive circumstances. Our system aims to improve situational understanding and reduce cognitive load by integrating and reasoning over multi-source information streams, including video, audio, and text. As an enabling step toward long-term human-robot partnerships, Multi-RAG explores how multimodal information understanding can serve as a foundation for adaptive robotic assistance in dynamic, human-centered situations. To evaluate its capability in a realistic human-assistance proxy task, we benchmarked Multi-RAG on the MMBench-Video dataset, a challenging multimodal video understanding benchmark. Our system achieves superior performance compared to existing open-source video large language models (Video-LLMs) and large vision-language models (LVLMs), while utilizing fewer resources and less input data. The results demonstrate Multi- RAG's potential as a practical and efficient foundation for future human-robot adaptive assistance systems in dynamic, real-world contexts.",
+    "published": "2025-05-29",
+    "updated": "2025-06-14",
+    "categories": [
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2505.23990"
+   }
+  ]
+ },
+ "docvqa_benchmarks": {
+  "query": "all:\"DocVQA\" OR all:\"InfographicVQA\" OR all:\"ChartQA\" OR all:\"MMLongBench-Doc\"",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "table_rag": {
+  "query": "all:\"TableRAG\" OR (all:\"table\" AND all:\"retrieval augmented generation\" AND all:\"QA\")",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "raptor_latechunk": {
+  "query": "all:\"RAPTOR\" OR all:\"Late Chunking\"",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "mm_parsing": {
+  "query": "all:\"document parsing\" AND (all:\"OCR-free\" OR all:\"OCR-free document\") AND all:\"retrieval\"",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "anyrag_ragbench": {
+  "query": "all:\"AnyRAG\" OR all:\"RAGBench\" OR all:\"RAG evaluation benchmark\"",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ }
+}

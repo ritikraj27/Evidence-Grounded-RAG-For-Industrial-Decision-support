@@ -1,0 +1,468 @@
+{
+  "schema": "mtp.claim-judge-input/1",
+  "rubric": "Decide how well the reference passage supports the claim.\n\n* `supported` -- the reference passage entails the claim. Everything the\n  claim asserts is stated by the passage.\n* `partially_supported` -- the passage supports part of the claim and the\n  claim adds something the passage does not state.\n* `unsupported` -- the passage does not state what the claim asserts. The\n  claim may still be true; the passage simply does not say it.\n* `contradicted` -- the passage states something that cannot be true at the\n  same time as the claim.\n\nJudge only the claim and the passage. Do not reward a claim for being\nplausible, and do not penalise one for being terse.\n",
+  "labels_allowed": [
+    "supported",
+    "partially_supported",
+    "unsupported",
+    "contradicted"
+  ],
+  "items": [
+    {
+      "key": "1f20d20425cd0758",
+      "claim": "Freight transportation is the movement of goods by rail, road, air, sea, inland waterway, or a combination of these modes",
+      "evidence": "technologies such as bar code scanning and computers, the availability of stocks can be checked in real time. The purpose of having an inventory is to reduce the overall logistical cost while improving service to customers. Having a stockpile of finished goods beforehand can reduce the frequency of transportation and cope with the randomness of customer demands. However, maintaining an inventory requires capital investment and maintaining a warehouse. Freight transportation is a central part of logistics and allows access to broad markets. Transportation policies and warehouse management are closely intertwined. The rise of e-commerce has led to the development of \"e-logistics\". Compared to traditional logistics, e-logistics handles parcels valued at less than a hundred US dollars and delivers them to",
+      "gold_answer": "central part of logistics and allows access to broad markets"
+    },
+    {
+      "key": "bb45bae84e036090",
+      "claim": "John Krafcik coined the term \"Lean\" in 1988",
+      "evidence": "[TABLE] just-in-time-manufacturing section Key figures\n| Person | Contribution |\n| --- | --- |\n| W. Edwards Deming | Developed statistical quality methods; introduced modern efficiency principles to post-war Japan |\n| Walter A. Shewhart | Statistical process control; co-developed foundational methods with Deming |\n| Taiichi Ohno | Primary architect of the Toyota Production System |\n| Shigeo Shingo | Formalized the seven wastes; developed SMED and other TPS tools |\n| Henry Ford | Early application of flow and material efficiency in mass production |\n| John Krafcik | Coined the term \"Lean\" in 1988 |\n| James P. Womack and Daniel T. Jones \"Daniel T. Jones (author)\") | Defined the five Lean principles; co-authored The Machine That Changed the World \"The Machine That Changed the World (book)\") and Lean Thinking |",
+      "gold_answer": "Coined the term \"Lean\" in 1988"
+    },
+    {
+      "key": "82a87dc25100d724",
+      "claim": "Inbound logistics is the procurement and coordination of the inbound movement of materials, parts, or unfinished inventory from suppliers to manufacturing or assembly plants, warehouses, or retail stores",
+      "evidence": "The rise of e-commerce has led to the development of \"e-logistics\". Compared to traditional logistics, e-logistics handles parcels valued at less than a hundred US dollars and delivers them to customers scattered across various destinations worldwide. In e-logistics, customer demand tends to come in waves, unlike in traditional logistics, where demand is more consistent. Inbound logistics is one of the primary logistics processes, focusing on the procurement and coordination of the inbound movement of materials, parts, or unfinished inventory from suppliers to manufacturing or assembly plants, warehouses, or retail stores. Outbound logistics is the process related to the storage and movement of finished products. The related information flows from the end of the production line to the end user. Given",
+      "gold_answer": "the primary logistics processes, focusing on the procurement and coordination of the inbound movement of materials, parts, or unfinished inventory from suppliers to manufacturing or assembly plants, w"
+    },
+    {
+      "key": "2f9e7f602de01a33",
+      "claim": "SF handled a total of **3.05 billion shipments** in 2017",
+      "evidence": "locations. For example, SF Express which is one of the third-party carrier providers on Alibaba and is China\u2019s largest private carrier by market value. In 2017, SF handled a total of 3.05 billion shipments, an 18% increase compared to 2016. All its shipments are distributed by its full-time employees to customers\u2019 doorsteps via self-operated (proprietary) trucks and airplanes, or high-speed trains, which helps SF achieve speedy, reliable, and professional pickup and delivery services. It is 50% faster than public delivery companies and 20% faster than private delivery companies in China.",
+      "gold_answer": "3.05"
+    },
+    {
+      "key": "149f429ccb8bba9f",
+      "claim": "Current reality tree",
+      "evidence": "[TABLE] theory-of-constraints section Thinking processes\n| | Sufficient thinking (\"If\u2026 then\") | Necessary thinking (\"In order to\u2026we must\") |\n| --- | --- | --- |\n| What to change? | Current reality tree \"Current reality tree (theory of constraints)\") | |\n| What to change to? | Future Reality Tree Negative Branch Reservations | Evaporating cloud |\n| **How to change?** | Transition Tree | Prerequisite Tree |",
+      "gold_answer": "Current reality tree \"Current reality tree (theory of constraints)\")"
+    },
+    {
+      "key": "bb6c189226e845ce",
+      "claim": "Kanban cards are physical or electronic signals used to manage inventory and production",
+      "evidence": "that the finished products will be defect-free. 6. Limiting the number of pending requests makes the process more sensitive and reveals inefficiencies. ### Kanban (cards) [edit\") | edit source\")] [![A person's hand is shown holding a transparent plastic bag of bolts (machine screws) together with a yellow card. The card has printed on it: \"ITEM #0014 BIN: A14 NSN:5306-00-151-1419 P/N: NOMEN: BOLT QTY LEFT: 50\".](//thumb.wikimedia.org/wikipedia/commons/thumb/9/96/080527-F-0000A-001.JPG/250px-080527-F-0000A-001.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](/wiki/File:080527-F-0000A-001.JPG) A Kanban card together with the bag of bolts that it refers to Kanban cards are a key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility. The kanban card is, in effect, a message that signals",
+      "gold_answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "key": "96657adb8f60a4bb",
+      "claim": "They indicate when materials, parts, or products need to be replenished or produced",
+      "evidence": "that the finished products will be defect-free. 6. Limiting the number of pending requests makes the process more sensitive and reveals inefficiencies. ### Kanban (cards) [edit\") | edit source\")] [![A person's hand is shown holding a transparent plastic bag of bolts (machine screws) together with a yellow card. The card has printed on it: \"ITEM #0014 BIN: A14 NSN:5306-00-151-1419 P/N: NOMEN: BOLT QTY LEFT: 50\".](//thumb.wikimedia.org/wikipedia/commons/thumb/9/96/080527-F-0000A-001.JPG/250px-080527-F-0000A-001.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](/wiki/File:080527-F-0000A-001.JPG) A Kanban card together with the bag of bolts that it refers to Kanban cards are a key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility. The kanban card is, in effect, a message that signals",
+      "gold_answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "key": "ada4c111d52bc75a",
+      "claim": "Common types include:\n\n- **Production (P) Kanban:** Authorizes a workstation to produce a fixed quantity.\n- **Transportation (T) Kanban:** Authorizes movement of a full container to the next workstation.\n- **Supplier Kanban:** Signals a supplier to supply a predefined quantity, typically through a purchase order",
+      "evidence": "that the finished products will be defect-free. 6. Limiting the number of pending requests makes the process more sensitive and reveals inefficiencies. ### Kanban (cards) [edit\") | edit source\")] [![A person's hand is shown holding a transparent plastic bag of bolts (machine screws) together with a yellow card. The card has printed on it: \"ITEM #0014 BIN: A14 NSN:5306-00-151-1419 P/N: NOMEN: BOLT QTY LEFT: 50\".](//thumb.wikimedia.org/wikipedia/commons/thumb/9/96/080527-F-0000A-001.JPG/250px-080527-F-0000A-001.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](/wiki/File:080527-F-0000A-001.JPG) A Kanban card together with the bag of bolts that it refers to Kanban cards are a key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility. The kanban card is, in effect, a message that signals",
+      "gold_answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "key": "36eb163dd2069ff9",
+      "claim": "Kanban cards are associated with containers and are part of a demand-driven system developed by Taiichi Ohno at Toyota",
+      "evidence": "that the finished products will be defect-free. 6. Limiting the number of pending requests makes the process more sensitive and reveals inefficiencies. ### Kanban (cards) [edit\") | edit source\")] [![A person's hand is shown holding a transparent plastic bag of bolts (machine screws) together with a yellow card. The card has printed on it: \"ITEM #0014 BIN: A14 NSN:5306-00-151-1419 P/N: NOMEN: BOLT QTY LEFT: 50\".](//thumb.wikimedia.org/wikipedia/commons/thumb/9/96/080527-F-0000A-001.JPG/250px-080527-F-0000A-001.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](/wiki/File:080527-F-0000A-001.JPG) A Kanban card together with the bag of bolts that it refers to Kanban cards are a key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility. The kanban card is, in effect, a message that signals",
+      "gold_answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "key": "a379908718206bd6",
+      "claim": "Electronic kanban systems replace physical cards with barcodes, emails, or other electronic messages",
+      "evidence": "that the finished products will be defect-free. 6. Limiting the number of pending requests makes the process more sensitive and reveals inefficiencies. ### Kanban (cards) [edit\") | edit source\")] [![A person's hand is shown holding a transparent plastic bag of bolts (machine screws) together with a yellow card. The card has printed on it: \"ITEM #0014 BIN: A14 NSN:5306-00-151-1419 P/N: NOMEN: BOLT QTY LEFT: 50\".](//thumb.wikimedia.org/wikipedia/commons/thumb/9/96/080527-F-0000A-001.JPG/250px-080527-F-0000A-001.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](/wiki/File:080527-F-0000A-001.JPG) A Kanban card together with the bag of bolts that it refers to Kanban cards are a key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility. The kanban card is, in effect, a message that signals",
+      "gold_answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "key": "d4ed1dd8e8a197ec",
+      "claim": "The rope is the work-release mechanism for the plant",
+      "evidence": "change and the color assigned to the particular work order change with it. Traditional DBR usually calls for buffers at several points in the system: the constraint, synchronization points and at shipping. S-DBR has a buffer at shipping and manages the flow of work across the drum through a load planning mechanism. The rope is the work release mechanism for the plant. Orders are released to the shop floor at one \"buffer time\" before they are due to be processed by the constraint. In other words, if the buffer is 5 days, the order is released 5 days before it is due at the constraint. Putting work into the system earlier than this buffer time is likely to generate too-high",
+      "gold_answer": "work release mechanism for the plant"
+    },
+    {
+      "key": "2c7a81460a92ef2f",
+      "claim": "Orders are released to the shop floor at one \u201cbuffer time\u201d before they are due to be processed by the constraint (the drum)",
+      "evidence": "change and the color assigned to the particular work order change with it. Traditional DBR usually calls for buffers at several points in the system: the constraint, synchronization points and at shipping. S-DBR has a buffer at shipping and manages the flow of work across the drum through a load planning mechanism. The rope is the work release mechanism for the plant. Orders are released to the shop floor at one \"buffer time\" before they are due to be processed by the constraint. In other words, if the buffer is 5 days, the order is released 5 days before it is due at the constraint. Putting work into the system earlier than this buffer time is likely to generate too-high",
+      "gold_answer": "work release mechanism for the plant"
+    },
+    {
+      "key": "fead4635c095b61b",
+      "claim": "Outbound logistics is the process of storing and moving finished products from the end of the production line to the end user",
+      "evidence": "The rise of e-commerce has led to the development of \"e-logistics\". Compared to traditional logistics, e-logistics handles parcels valued at less than a hundred US dollars and delivers them to customers scattered across various destinations worldwide. In e-logistics, customer demand tends to come in waves, unlike in traditional logistics, where demand is more consistent. Inbound logistics is one of the primary logistics processes, focusing on the procurement and coordination of the inbound movement of materials, parts, or unfinished inventory from suppliers to manufacturing or assembly plants, warehouses, or retail stores. Outbound logistics is the process related to the storage and movement of finished products. The related information flows from the end of the production line to the end user. Given",
+      "gold_answer": "process related to the storage and movement of finished products"
+    },
+    {
+      "key": "3cb2217309cb7896",
+      "claim": "Regression analysis is a statistical method used to analyze how one or more independent variables affect a dependent variable",
+      "evidence": "and production amount would be for a new product, based on how demand elasticity affected past company sales. ### Stage 2: model specification There are many different econometric models which differ depending on the analysis that managers wish to perform. The type of model that is chosen to forecast demand depends on many different aspects such as the type of data obtained or the number of observations, etc. In this stage it is important to define the type of variables that will be used to forecast demand. Regression analysis is the main statistical method for forecasting. There are many different types of regression analysis, but fundamentally they provide an analysis of how one or multiple variables affect the dependent variable",
+      "gold_answer": "main statistical method for forecasting"
+    },
+    {
+      "key": "78afaf21f8b8b1c4",
+      "claim": "In demand forecasting, it is the main statistical forecasting method and can be used to estimate parameters, identify relationships, and support forecasts",
+      "evidence": "and production amount would be for a new product, based on how demand elasticity affected past company sales. ### Stage 2: model specification There are many different econometric models which differ depending on the analysis that managers wish to perform. The type of model that is chosen to forecast demand depends on many different aspects such as the type of data obtained or the number of observations, etc. In this stage it is important to define the type of variables that will be used to forecast demand. Regression analysis is the main statistical method for forecasting. There are many different types of regression analysis, but fundamentally they provide an analysis of how one or multiple variables affect the dependent variable",
+      "gold_answer": "main statistical method for forecasting"
+    },
+    {
+      "key": "45f64b7993765596",
+      "claim": "6.7%",
+      "evidence": "[TABLE] six-sigma section Role of the 1.5 sigma shift\n| Starting sigma level | With 1.5\u03c3 shift | DPMO | Percent defective | Percentage yield | Short-term Cpk | Long-term Cpk |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1 | \u22120.5 | 691,462 | 69% | 31% | 0.33 | \u22120.17 |\n| 2 | 0.5 | 308,538 | 31% | 69% | 0.67 | 0.17 |\n| 3 | 1.5 | 66,807 | 6.7% | 93.3% | 1.00 | 0.5 |\n| 4 | 2.5 | 6,210 | 0.62% | 99.38% | 1.33 | 0.83 |\n| 5 | 3.5 | 233 | 0.023% | 99.977% | 1.67 | 1.17 |\n| **6** | **4.5** | **3.4** | **0.00034%** | **99.99966%** | **2.00** | **1.5** |\n| 7 | 5.5 | 0.019 | 0.0000019% | 99.9999981% | 2.33 | 1.83 |",
+      "gold_answer": "6.7%"
+    },
+    {
+      "key": "fc1eb2227f4a7193",
+      "claim": "Future Reality Tree, Negative Branch, Reservations",
+      "evidence": "[TABLE] theory-of-constraints section Thinking processes\n| | Sufficient thinking (\"If\u2026 then\") | Necessary thinking (\"In order to\u2026we must\") |\n| --- | --- | --- |\n| What to change? | Current reality tree \"Current reality tree (theory of constraints)\") | |\n| What to change to? | Future Reality Tree Negative Branch Reservations | Evaporating cloud |\n| **How to change?** | Transition Tree | Prerequisite Tree |",
+      "gold_answer": "Future Reality Tree Negative Branch Reservations"
+    },
+    {
+      "key": "e28c2ced628706aa",
+      "claim": "The sourcing plan is the result of all strategic sourcing planning efforts",
+      "evidence": "The sourcing plan is the result of all planning efforts on strategic sourcing. Into this planning, all sourcing events are organized and detailed with tactical and operational information such as the sourcing team responsible for each event, when the sourcing event is supposed to begin and end based on each RFX step (RFI, RFP, RFQ), the requirements, specifications of all services or materials, and negotiations/cost goals. The objective of the sourcing plan is to manage the timing and quality of all sourcing events in the strategic sourcing program. Many procurement professionals continue to conduct sourcing and RFX activities manually using spreadsheets; however, this creates risk for error and gaps in the sourcing process.[citation needed]",
+      "gold_answer": "result of all planning efforts on strategic sourcing"
+    },
+    {
+      "key": "dc3ddb309fc5558e",
+      "claim": "It organizes and details all sourcing events, including the responsible sourcing team, start and end dates for each RFX step (RFI, RFP, and RFQ), requirements and specifications, and negotiation or cost goals",
+      "evidence": "The sourcing plan is the result of all planning efforts on strategic sourcing. Into this planning, all sourcing events are organized and detailed with tactical and operational information such as the sourcing team responsible for each event, when the sourcing event is supposed to begin and end based on each RFX step (RFI, RFP, RFQ), the requirements, specifications of all services or materials, and negotiations/cost goals. The objective of the sourcing plan is to manage the timing and quality of all sourcing events in the strategic sourcing program. Many procurement professionals continue to conduct sourcing and RFX activities manually using spreadsheets; however, this creates risk for error and gaps in the sourcing process.[citation needed]",
+      "gold_answer": "result of all planning efforts on strategic sourcing"
+    },
+    {
+      "key": "7e06733c5d3e6401",
+      "claim": "Its objective is to manage the timing and quality of all sourcing events in the strategic sourcing program",
+      "evidence": "The sourcing plan is the result of all planning efforts on strategic sourcing. Into this planning, all sourcing events are organized and detailed with tactical and operational information such as the sourcing team responsible for each event, when the sourcing event is supposed to begin and end based on each RFX step (RFI, RFP, RFQ), the requirements, specifications of all services or materials, and negotiations/cost goals. The objective of the sourcing plan is to manage the timing and quality of all sourcing events in the strategic sourcing program. Many procurement professionals continue to conduct sourcing and RFX activities manually using spreadsheets; however, this creates risk for error and gaps in the sourcing process.[citation needed]",
+      "gold_answer": "result of all planning efforts on strategic sourcing"
+    },
+    {
+      "key": "83f9ad1e3ca06d17",
+      "claim": "The theory of constraints (TOC) is a management philosophy introduced by Eliyahu M",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "00ad8e3bf6786f08",
+      "claim": "Goldratt in his 1984 book *The Goal*",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "15d9bf24edd988c0",
+      "claim": "It holds that any manageable system is limited in achieving its goals by one or a very small number of constraints, like the weakest link in a chain",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "89e506fe1830f32e",
+      "claim": "TOC provides a focusing process to identify that constraint and restructure the organization around it",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "35d0edae3920f339",
+      "claim": "Its core measures are:\n- **Throughput** \u2013 the rate at which the system generates money through sales.\n- **Operational expense** \u2013 money spent turning inventory into throughput.\n- **Inventory** \u2013 money invested in goods intended for sale",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "6cb7c9fd7009cdea",
+      "claim": "Goldratt later adapted the concept to project management in *Critical Chain* (1997)",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "1917804fd64b3a3f",
+      "claim": "The Theory of Constraints International Certification Organization (TOCICO) sets exams to maintain consistent standards of competence",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "36091bee2fb6cc4b",
+      "claim": "TOC is now regarded as a systems methodology with roots in manufacturing, used for continuous improvement and change management",
+      "evidence": "The theory of constraints is an overall management philosophy, introduced by Eliyahu M. Goldratt in his 1984 book titled The Goal \"The Goal (novel)\"), that is geared to help organizations continually achieve their goals. Goldratt adapted the concept to project management with his book Critical Chain, published in 1997. An earlier propagator of a similar concept was Wolfgang Mewes\") in Germany with publications on power-oriented management theory (Machtorientierte F\u00fchrungstheorie, 1963) and following with his Energo-Kybernetic System (EKS, 1971), later renamed Engpasskonzentrierte Strategie (Bottleneck-focused Strategy) as a more advanced theory of bottlenecks. The publications of Wolfgang Mewes are marketed through the FAZ Verlag, publishing house of the German newspaper Frankfurter Allgemeine Zeitung. However, the paradigm Theory of constraints was first used",
+      "gold_answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "key": "5d1dc0c8c349b9b2",
+      "claim": "A sourcing business model is a systems-based approach for structuring supplier relationships in situations where multiple parties must work together for success",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "6b9d372964a9441e",
+      "claim": "The seven models are:\n\n1",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "3fda2207ae739bf2",
+      "claim": "Basic Provider  \n2",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "4efd5d065a579d6c",
+      "claim": "Approved Provider  \n3",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "0278db2c5e750250",
+      "claim": "Preferred Provider  \n4",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "39b503f0dd43d646",
+      "claim": "Performance-Based/Managed Services Model  \n5",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "09bf3133ea4cad0c",
+      "claim": "Vested Outsourcing Business Model  \n6",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "46d8bff12174076f",
+      "claim": "Shared Services Model  \n7",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "d196ec0312aef2ac",
+      "claim": "Equity Partnership Model",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "key": "8b9af39404d67c2c",
+      "claim": "**Six Sigma (6\u03c3)** is a set of techniques and tools for process improvement, introduced by Motorola engineer Bill Smith in 1986",
+      "evidence": "Six Sigma mostly finds application in large organizations. According to industry consultants like Thomas Pyzdek and John Kullmann, companies with fewer than 500 employees are less suited to Six Sigma or need to adapt the standard approach to make it work for them. Six Sigma, however, contains a large number of tools and techniques that work well in small to mid-size organizations. The fact that an organization is not big enough to be able to afford black belts does not diminish its ability to make improvements using this set of tools and techniques. The infrastructure described as necessary to support Six Sigma is a result of the size of the organization rather than a requirement of Six Sigma itself. ###",
+      "gold_answer": "result of the size of the organization rather than a requirement of Six Sigma itself"
+    },
+    {
+      "key": "90d008dbe9a20b5e",
+      "claim": "It seeks to improve manufacturing quality by identifying and removing causes of defects and minimizing variability in manufacturing and business processes using statistical quality-management methods",
+      "evidence": "Six Sigma mostly finds application in large organizations. According to industry consultants like Thomas Pyzdek and John Kullmann, companies with fewer than 500 employees are less suited to Six Sigma or need to adapt the standard approach to make it work for them. Six Sigma, however, contains a large number of tools and techniques that work well in small to mid-size organizations. The fact that an organization is not big enough to be able to afford black belts does not diminish its ability to make improvements using this set of tools and techniques. The infrastructure described as necessary to support Six Sigma is a result of the size of the organization rather than a requirement of Six Sigma itself. ###",
+      "gold_answer": "result of the size of the organization rather than a requirement of Six Sigma itself"
+    },
+    {
+      "key": "3a770314498b563d",
+      "claim": "Six Sigma emphasizes:\n\n- Stable, predictable, and measurable process results  \n- Continuous improvement of defined, measured, analyzed, improved, and controlled processes  \n- Decisions based on verifiable data and statistical methods  \n- Strong management leadership and organizational commitment  \n- Measurable and quantifiable financial returns  \n\nThe term refers to the portion of a normal distribution within six standard deviations of the mean, traditionally associated with no more than about **3.4 defects per million opportunities (DPMO)**",
+      "evidence": "Six Sigma mostly finds application in large organizations. According to industry consultants like Thomas Pyzdek and John Kullmann, companies with fewer than 500 employees are less suited to Six Sigma or need to adapt the standard approach to make it work for them. Six Sigma, however, contains a large number of tools and techniques that work well in small to mid-size organizations. The fact that an organization is not big enough to be able to afford black belts does not diminish its ability to make improvements using this set of tools and techniques. The infrastructure described as necessary to support Six Sigma is a result of the size of the organization rather than a requirement of Six Sigma itself. ###",
+      "gold_answer": "result of the size of the organization rather than a requirement of Six Sigma itself"
+    },
+    {
+      "key": "4f575a12202b41d7",
+      "claim": "Operations research is a discipline that applies advanced analytical techniques to support better decision-making",
+      "evidence": "Operations research is a discipline of applying advanced techniques to help make better decisions. Optimization \"Optimization (mathematics)\"), in turn, utilizes mathematical algorithms to rapidly solve a business problem by evaluating all possible outcomes (or many outcomes) and selecting those ones that yield the best solution. When applied to sourcing and supply chain operations, optimization helps the sourcing professional simultaneously evaluate thousands of different procurement inputs. This evaluation can take into consideration the global market, specific current supply chain conditions, and individual supplier conditions, and offers alternatives to address the buyer's sourcing goals. Furthermore, it allows internal stakeholders in the buying organization to impose constraints on the award or specify preferences to favor certain non-cost objectives such as limited switching, reduced",
+      "gold_answer": "discipline of applying advanced techniques to help make better decisions"
+    },
+    {
+      "key": "93d3e8abc7ed2daf",
+      "claim": "In sourcing and supply-chain operations, optimization uses mathematical algorithms to evaluate many possible outcomes and select those that best meet sourcing goals",
+      "evidence": "Operations research is a discipline of applying advanced techniques to help make better decisions. Optimization \"Optimization (mathematics)\"), in turn, utilizes mathematical algorithms to rapidly solve a business problem by evaluating all possible outcomes (or many outcomes) and selecting those ones that yield the best solution. When applied to sourcing and supply chain operations, optimization helps the sourcing professional simultaneously evaluate thousands of different procurement inputs. This evaluation can take into consideration the global market, specific current supply chain conditions, and individual supplier conditions, and offers alternatives to address the buyer's sourcing goals. Furthermore, it allows internal stakeholders in the buying organization to impose constraints on the award or specify preferences to favor certain non-cost objectives such as limited switching, reduced",
+      "gold_answer": "discipline of applying advanced techniques to help make better decisions"
+    },
+    {
+      "key": "c49b3c7c7bbf7e2f",
+      "claim": "The Computer Systems entry is **80% scrap** for quality improvement",
+      "evidence": "[TABLE] just-in-time-manufacturing section Quantified outcomes\n| | Greeley | Fort Collins | Computer Systems | Vancouver |\n| --- | --- | --- | --- | --- |\n| Inventory reduction | 2.8 months | 75% | 75% | |\n| Labor cost reduction | 30% | 15% | | 50% |\n| Space reduction | 50% | 30% | 33% | 40% |\n| WIP stock reduction | 22 days to 1 day | | | |\n| Production increase | 100% | | | |\n| Quality improvement | | 30% scrap, 79% rework | 80% scrap | 30% scrap & rework |\n| Throughput time reduction | | 50% | 17 days to 30 hours | |\n| Standard hours reduction | 50% | | | |\n| No. of shipments increase | | | | 20% |",
+      "gold_answer": "80% scrap"
+    },
+    {
+      "key": "32f76e279c675e98",
+      "claim": "**79% rework** applies to Fort Collins",
+      "evidence": "[TABLE] just-in-time-manufacturing section Quantified outcomes\n| | Greeley | Fort Collins | Computer Systems | Vancouver |\n| --- | --- | --- | --- | --- |\n| Inventory reduction | 2.8 months | 75% | 75% | |\n| Labor cost reduction | 30% | 15% | | 50% |\n| Space reduction | 50% | 30% | 33% | 40% |\n| WIP stock reduction | 22 days to 1 day | | | |\n| Production increase | 100% | | | |\n| Quality improvement | | 30% scrap, 79% rework | 80% scrap | 30% scrap & rework |\n| Throughput time reduction | | 50% | 17 days to 30 hours | |\n| Standard hours reduction | 50% | | | |\n| No. of shipments increase | | | | 20% |",
+      "gold_answer": "80% scrap"
+    },
+    {
+      "key": "7d811a6bfbafaf75",
+      "claim": "Sourcing business models are systems-based approaches for structuring supplier relationships where multiple parties must work together for success",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "55208eff048b1d68",
+      "claim": "The seven models are:\n\n1",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "732d2d4a874ba38f",
+      "claim": "Basic Provider  \n2",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "8a086e8e6506b6d9",
+      "claim": "Approved Provider  \n3",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "5c11b47f52fefde0",
+      "claim": "Preferred Provider  \n4",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "0bb4007941c12be7",
+      "claim": "Performance-Based/Managed Services Model  \n5",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "5890e5d6d50370b9",
+      "claim": "Vested Outsourcing Business Model  \n6",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "9e5a0d73ced8d4ab",
+      "claim": "Shared Services Model  \n7",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "56034669b029ca5b",
+      "claim": "Equity Partnership Model  \n\nThey range from transactional to investment-based and help procurement professionals choose the best fit between buyers and suppliers",
+      "evidence": "Sourcing Business Models are a systems-based approach to structuring supplier relationships. A sourcing business model is a type of business model that is applied to business relationships where more than one party needs to work with another party to be successful. There are seven sourcing business models that range from the transactional to investment-based. The seven models are: 1. Basic Provider 2. Approved Provider 3. Preferred Provider 4. Performance-Based/Managed Services Model 5. Vested outsourcing Business Model 6. Shared Services Model and 7. Equity Partnership Model. Sourcing business models are targeted for procurement professionals who seek a modern approach to achieve the best fit between buyers and suppliers.",
+      "gold_answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "key": "fb288ba4b900468e",
+      "claim": "An RFID tag is a card containing a memory chip and an antenna that transmits signals to a reader",
+      "evidence": "as a sequence of black and white bars varying in width, which when read by laser is translated into a digital sequence, which according to fixed rules can be converted into a decimal number or other data. Sometimes information in a bar code can be transmitted through radio frequency, more typically radio transmission is used in RFID tags. An RFID tag is a card containing a memory chip and an antenna that transmits signals to a reader. RFID may be found on merchandise, animals, vehicles, and people as well.",
+      "gold_answer": "card containing a memory chip and an antenna that transmits signals to a reader"
+    },
+    {
+      "key": "def6f5cca56b9d8c",
+      "claim": "RFID tags may be found on merchandise, animals, vehicles, and people",
+      "evidence": "as a sequence of black and white bars varying in width, which when read by laser is translated into a digital sequence, which according to fixed rules can be converted into a decimal number or other data. Sometimes information in a bar code can be transmitted through radio frequency, more typically radio transmission is used in RFID tags. An RFID tag is a card containing a memory chip and an antenna that transmits signals to a reader. RFID may be found on merchandise, animals, vehicles, and people as well.",
+      "gold_answer": "card containing a memory chip and an antenna that transmits signals to a reader"
+    },
+    {
+      "key": "391b016b56aa6098",
+      "claim": "The drum is the rate at which the physical constraint of the plant can work\u2014the work center, machine, or operation that limits the entire system\u2019s ability to produce more",
+      "evidence": "Drum-buffer-rope is a manufacturing execution methodology based on the fact the output of a system can only be the same as the output at the constraint of the system. Any attempt to produce more than what the constraint can process just leads to excess inventory piling up. The method is named for its three components. The drum is the rate at which the physical constraint of the plant can work: the work center or machine or operation that limits the ability of the entire system to produce more. The rest of the plant follows the beat of the drum. Schedule at the drum decides what the system should produce, in what sequence to produce and how much to produce. They",
+      "gold_answer": "rate at which the physical constraint of the plant can work: the work center or machine or operation that limits the ability of the entire system to produce more"
+    },
+    {
+      "key": "ea7e68bab4c8f090",
+      "claim": "The rest of the plant follows the beat of the drum",
+      "evidence": "Drum-buffer-rope is a manufacturing execution methodology based on the fact the output of a system can only be the same as the output at the constraint of the system. Any attempt to produce more than what the constraint can process just leads to excess inventory piling up. The method is named for its three components. The drum is the rate at which the physical constraint of the plant can work: the work center or machine or operation that limits the ability of the entire system to produce more. The rest of the plant follows the beat of the drum. Schedule at the drum decides what the system should produce, in what sequence to produce and how much to produce. They",
+      "gold_answer": "rate at which the physical constraint of the plant can work: the work center or machine or operation that limits the ability of the entire system to produce more"
+    },
+    {
+      "key": "53e2c9643ad8c444",
+      "claim": "Shigeo Shingo \u2014 Formalized the seven wastes",
+      "evidence": "[TABLE] just-in-time-manufacturing section Key figures\n| Person | Contribution |\n| --- | --- |\n| W. Edwards Deming | Developed statistical quality methods; introduced modern efficiency principles to post-war Japan |\n| Walter A. Shewhart | Statistical process control; co-developed foundational methods with Deming |\n| Taiichi Ohno | Primary architect of the Toyota Production System |\n| Shigeo Shingo | Formalized the seven wastes; developed SMED and other TPS tools |\n| Henry Ford | Early application of flow and material efficiency in mass production |\n| John Krafcik | Coined the term \"Lean\" in 1988 |\n| James P. Womack and Daniel T. Jones \"Daniel T. Jones (author)\") | Defined the five Lean principles; co-authored The Machine That Changed the World \"The Machine That Changed the World (book)\") and Lean Thinking |",
+      "gold_answer": "Formalized the seven wastes; developed SMED and other TPS tools"
+    },
+    {
+      "key": "3250f3062f6b6eec",
+      "claim": "developed SMED and other TPS tools",
+      "evidence": "[TABLE] just-in-time-manufacturing section Key figures\n| Person | Contribution |\n| --- | --- |\n| W. Edwards Deming | Developed statistical quality methods; introduced modern efficiency principles to post-war Japan |\n| Walter A. Shewhart | Statistical process control; co-developed foundational methods with Deming |\n| Taiichi Ohno | Primary architect of the Toyota Production System |\n| Shigeo Shingo | Formalized the seven wastes; developed SMED and other TPS tools |\n| Henry Ford | Early application of flow and material efficiency in mass production |\n| John Krafcik | Coined the term \"Lean\" in 1988 |\n| James P. Womack and Daniel T. Jones \"Daniel T. Jones (author)\") | Defined the five Lean principles; co-authored The Machine That Changed the World \"The Machine That Changed the World (book)\") and Lean Thinking |",
+      "gold_answer": "Formalized the seven wastes; developed SMED and other TPS tools"
+    },
+    {
+      "key": "5b7db09d387553d2",
+      "claim": "Logistics management is the process of planning, implementing, and controlling procedures for the efficient and effective transportation and storage of goods, services, and related information\u2014from the point of origin to the point of consumption\u2014",
+      "evidence": "# Logistics .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+.mw-empty-elt+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}} \"Logistics Management\" redirects here. For the magazine, see Logistics Management (magazine) \"Logistics Management (magazine)\"). For other uses, see Logistics (disambiguation) \"Logistics (disambiguation)\"). Management of the flow of resources A warehouse in New Jersey, a U.S. East Coast epicenter for logistics and warehouse construction outside Philadelphia **Logistics** is the part of supply chain management that deals with the efficient forward and reverse flow of goods, services, and related information from the point of origin to the point of consumption \"Consumption (economics)\") according to the needs of customers, and a **logistician** is a professional working in the field of logistics management. Logistics management is a component that holds the supply chain",
+      "gold_answer": "component that holds the supply chain"
+    },
+    {
+      "key": "b1b256eb6ccc6dcb",
+      "claim": "meeting customer requirements",
+      "evidence": "# Logistics .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+.mw-empty-elt+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}} \"Logistics Management\" redirects here. For the magazine, see Logistics Management (magazine) \"Logistics Management (magazine)\"). For other uses, see Logistics (disambiguation) \"Logistics (disambiguation)\"). Management of the flow of resources A warehouse in New Jersey, a U.S. East Coast epicenter for logistics and warehouse construction outside Philadelphia **Logistics** is the part of supply chain management that deals with the efficient forward and reverse flow of goods, services, and related information from the point of origin to the point of consumption \"Consumption (economics)\") according to the needs of customers, and a **logistician** is a professional working in the field of logistics management. Logistics management is a component that holds the supply chain",
+      "gold_answer": "component that holds the supply chain"
+    },
+    {
+      "key": "407b12aac2898146",
+      "claim": "It includes inbound, outbound, internal, and external movements",
+      "evidence": "# Logistics .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+.mw-empty-elt+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}} \"Logistics Management\" redirects here. For the magazine, see Logistics Management (magazine) \"Logistics Management (magazine)\"). For other uses, see Logistics (disambiguation) \"Logistics (disambiguation)\"). Management of the flow of resources A warehouse in New Jersey, a U.S. East Coast epicenter for logistics and warehouse construction outside Philadelphia **Logistics** is the part of supply chain management that deals with the efficient forward and reverse flow of goods, services, and related information from the point of origin to the point of consumption \"Consumption (economics)\") according to the needs of customers, and a **logistician** is a professional working in the field of logistics management. Logistics management is a component that holds the supply chain",
+      "gold_answer": "component that holds the supply chain"
+    },
+    {
+      "key": "76ac40a9cb0d31ab",
+      "claim": "Production in an existing plant is a constantly changing process: machines are exchanged and new ones are added, allowing the production logistics system to be improved accordingly",
+      "evidence": "Production logistics aims to ensure that each machine and workstation receives the right product in the correct quantity and quality at the right time. The concern is with production, testing, transportation, storage, and supply. Production logistics can operate in existing as well as new plants. Since manufacturing in an existing plant is a constantly changing process, machines are exchanged and new ones added, which allows for improving the production logistics system accordingly. Production logistics provides the means to achieve customer response and capital efficiency. Track and trace solutions, which provide visibility of products through the production line, are an important part of modern production logistics, especially in the automotive and medical industries. The term construction logistics has also been employed",
+      "gold_answer": "constantly changing process, machines are exchanged and new ones added, which allows for improving the production logistics system accordingly"
+    },
+    {
+      "key": "7eccff3c1f3beafa",
+      "claim": "22 days to 1 day",
+      "evidence": "[TABLE] just-in-time-manufacturing section Quantified outcomes\n| | Greeley | Fort Collins | Computer Systems | Vancouver |\n| --- | --- | --- | --- | --- |\n| Inventory reduction | 2.8 months | 75% | 75% | |\n| Labor cost reduction | 30% | 15% | | 50% |\n| Space reduction | 50% | 30% | 33% | 40% |\n| WIP stock reduction | 22 days to 1 day | | | |\n| Production increase | 100% | | | |\n| Quality improvement | | 30% scrap, 79% rework | 80% scrap | 30% scrap & rework |\n| Throughput time reduction | | 50% | 17 days to 30 hours | |\n| Standard hours reduction | 50% | | | |\n| No. of shipments increase | | | | 20% |",
+      "gold_answer": "22 days to 1 day"
+    },
+    {
+      "key": "4e86962f277046ca",
+      "claim": "The rule of thumb is **20% of the replenishment time (RT)**",
+      "evidence": "in the rates of demand and replenishment, a simple recursive algorithm called Buffer Management is used. When the on hand inventory level is in the upper third of the buffer for a full RT, the buffer is reduced by one third (and don't forget rule 3). Alternatively, when the on hand inventory is in the bottom one third of the buffer for too long, the buffer is increased by one third (and don't forget rule 4). The definition of \"too long\" may be changed depending on required service levels, however, a rule of thumb is 20% of the RT. Moving buffers up more readily than down is supported by the usually greater damage caused by shortages as compared to the",
+      "gold_answer": "20%"
+    },
+    {
+      "key": "4b88c76a94419715",
+      "claim": "The percentage yield for **0.023% defective** is **99.977%**",
+      "evidence": "[TABLE] six-sigma section Role of the 1.5 sigma shift\n| Starting sigma level | With 1.5\u03c3 shift | DPMO | Percent defective | Percentage yield | Short-term Cpk | Long-term Cpk |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1 | \u22120.5 | 691,462 | 69% | 31% | 0.33 | \u22120.17 |\n| 2 | 0.5 | 308,538 | 31% | 69% | 0.67 | 0.17 |\n| 3 | 1.5 | 66,807 | 6.7% | 93.3% | 1.00 | 0.5 |\n| 4 | 2.5 | 6,210 | 0.62% | 99.38% | 1.33 | 0.83 |\n| 5 | 3.5 | 233 | 0.023% | 99.977% | 1.67 | 1.17 |\n| **6** | **4.5** | **3.4** | **0.00034%** | **99.99966%** | **2.00** | **1.5** |\n| 7 | 5.5 | 0.019 | 0.0000019% | 99.9999981% | 2.33 | 1.83 |",
+      "gold_answer": "99.977%"
+    },
+    {
+      "key": "d5cb9aceed399c97",
+      "claim": "Safety stock is extra inventory maintained to reduce the risk of stockouts caused by uncertainty in demand, supply, or manufacturing yield",
+      "evidence": "# Safety stock Extra stock kept to mitigate risks **Safety stock** is a term used by logisticians to describe a level of extra stock which is maintained to mitigate the risk of stockouts, which can be caused, for example, by shortfalls in raw material availability or uncertainty in forecasting supply and demand. Adequate safety stock levels permit business operations to proceed according to their plans. Safety stock is held when uncertainty exists in demand, supply, or manufacturing yield, and serves as an insurance against stockouts. Safety stock is an additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock. It acts as a buffer stock in case sales are",
+      "gold_answer": "additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock"
+    },
+    {
+      "key": "8a8d712bd3bf8fde",
+      "claim": "It acts as a buffer when actual sales exceed forecasts or suppliers deliver late or short",
+      "evidence": "# Safety stock Extra stock kept to mitigate risks **Safety stock** is a term used by logisticians to describe a level of extra stock which is maintained to mitigate the risk of stockouts, which can be caused, for example, by shortfalls in raw material availability or uncertainty in forecasting supply and demand. Adequate safety stock levels permit business operations to proceed according to their plans. Safety stock is held when uncertainty exists in demand, supply, or manufacturing yield, and serves as an insurance against stockouts. Safety stock is an additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock. It acts as a buffer stock in case sales are",
+      "gold_answer": "additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock"
+    },
+    {
+      "key": "0d66416d4b2d23b5",
+      "claim": "Too much safety stock raises holding, spoilage, and management costs",
+      "evidence": "# Safety stock Extra stock kept to mitigate risks **Safety stock** is a term used by logisticians to describe a level of extra stock which is maintained to mitigate the risk of stockouts, which can be caused, for example, by shortfalls in raw material availability or uncertainty in forecasting supply and demand. Adequate safety stock levels permit business operations to proceed according to their plans. Safety stock is held when uncertainty exists in demand, supply, or manufacturing yield, and serves as an insurance against stockouts. Safety stock is an additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock. It acts as a buffer stock in case sales are",
+      "gold_answer": "additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock"
+    },
+    {
+      "key": "a36d3b3f8e2eb8bb",
+      "claim": "too little can cause lost sales and lower customer service",
+      "evidence": "# Safety stock Extra stock kept to mitigate risks **Safety stock** is a term used by logisticians to describe a level of extra stock which is maintained to mitigate the risk of stockouts, which can be caused, for example, by shortfalls in raw material availability or uncertainty in forecasting supply and demand. Adequate safety stock levels permit business operations to proceed according to their plans. Safety stock is held when uncertainty exists in demand, supply, or manufacturing yield, and serves as an insurance against stockouts. Safety stock is an additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock. It acts as a buffer stock in case sales are",
+      "gold_answer": "additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock"
+    },
+    {
+      "key": "5a789f19fcb3e550",
+      "claim": "A prominent example is the use of automated production lines in the beverage industry",
+      "evidence": "5 days, the order is released 5 days before it is due at the constraint. Putting work into the system earlier than this buffer time is likely to generate too-high work-in-process and slow down the entire system. ### High-speed automated production lines Automated production lines achieve high throughput rates and output quantities by deploying automation solutions that are highly task-specific. Depending on their design and construction, these machines operate at different speeds and capacities and therefore have varying efficiency levels. A prominent example is the use of automated production lines in the beverage industry. Filling systems usually have several machines executing parts of the complete bottling process, from filling primary containers to secondary packaging and palletisation. To be able to",
+      "gold_answer": "use of automated production lines in the beverage industry"
+    },
+    {
+      "key": "7b7d149a42b9748f",
+      "claim": "The constraint is the limiting factor preventing an organization or system from achieving more of its goals or increasing throughput, even when nothing has broken down",
+      "evidence": "Constraints is analogous to but differs from the constraint \"Constraint (mathematics)\") that shows up in mathematical optimization \"Optimization (mathematics)\"). In TOC, the constraint is used as a focusing mechanism for management of the system. In optimization, the constraint is written into the mathematical expressions to limit the scope of the solution (X can be no greater than 5). Please note: organizations have many problems with equipment, people, policies, etc. (A breakdown is just that \u2013 a breakdown \u2013 and is not a constraint in the true sense of the TOC concept). The constraint is the limiting factor that is preventing the organization from getting more throughput (typically, revenue through sales) even when nothing goes wrong. ### Breaking a constraint If",
+      "gold_answer": "limiting factor that is preventing the organization from getting more throughput (typically, revenue through sales) even when nothing goes wrong"
+    },
+    {
+      "key": "ede7b3e9a4057106",
+      "claim": "It may be internal or external",
+      "evidence": "Constraints is analogous to but differs from the constraint \"Constraint (mathematics)\") that shows up in mathematical optimization \"Optimization (mathematics)\"). In TOC, the constraint is used as a focusing mechanism for management of the system. In optimization, the constraint is written into the mathematical expressions to limit the scope of the solution (X can be no greater than 5). Please note: organizations have many problems with equipment, people, policies, etc. (A breakdown is just that \u2013 a breakdown \u2013 and is not a constraint in the true sense of the TOC concept). The constraint is the limiting factor that is preventing the organization from getting more throughput (typically, revenue through sales) even when nothing goes wrong. ### Breaking a constraint If",
+      "gold_answer": "limiting factor that is preventing the organization from getting more throughput (typically, revenue through sales) even when nothing goes wrong"
+    },
+    {
+      "key": "b35712c886fed48d",
+      "claim": "The average annual variable cost is the sum of three components:\n\n- **Ordering cost:** \\(\\displaystyle \\frac{\\lambda A}{Q}\\)\n- **Holding cost:** \\(\\displaystyle \\frac{IC(Q-s)^2}{2Q}\\)\n- **Backorder cost:** \\(\\displaystyle \\frac{1}{Q}\\left(\\pi\\lambda s+\\frac{1}{2}\\hat{\\pi}s^2\\right)\\)\n\nTherefore,\n\n\\[\n\\mathcal K\n=\n\\frac{\\lambda A}{Q}\n+\n\\frac{IC(Q-s)^2}{2Q}\n+\n\\frac{\\pi\\lambda s+\\tfrac12\\hat{\\pi}s^2}{Q}.\n\\]",
+      "evidence": "T\\_{2}=T-T\\_{1}} !{\\displaystyle T_{2}=T-T_{1}}, T being the cycle length and T 1 = ( Q \u2212 s ) / \u03bb {\\displaystyle T\\_{1}=(Q-s)/\\lambda } !{\\displaystyle T_{1}=(Q-s)/\\lambda }. The average annual variable cost is the sum of order costs, holding inventory costs and backorder costs: : K = \u03bb Q A + 1 2 Q I C ( Q \u2212 s ) 2 + 1 Q [ \u03c0 \u03bb s + 1 2 \u03c0 ^ s 2 ] {\\displaystyle {\\mathcal {K}}={\\frac {\\lambda }{Q}}A+{\\frac {1}{2Q}}IC(Q-s)^{2}+{\\frac {1}{Q}}[\\pi \\lambda s+{\\frac {1}{2}}{\\hat {\\pi }}s^{2}]} ![{\\displaystyle {\\mathcal {K}}={\\frac {\\lambda }{Q}}A+{\\frac {1}{2Q}}IC(Q-s)^{2}+{\\frac {1}{Q}}[\\pi \\lambda s+{\\frac {1}{2}}{\\hat {\\pi }}s^{2}]}](https://wikimedia.org/api/rest_v1/media/math/render/svg/11559846b39de6384880cc4ef33e3dbfb3c1f877) To minimize K {\\displaystyle {\\mathcal {K}}} !{\\displaystyle {\\mathcal {K}}} impose the partial derivatives equal to zero: : \u2202 K \u2202 Q",
+      "gold_answer": "sum of order costs, holding inventory costs and backorder costs: : K = \u03bb Q A + 1 2 Q I C ( Q \u2212 s ) 2 + 1 Q [ \u03c0 \u03bb s + 1 2 \u03c0 ^ s 2 ] {\\displaystyle {\\mathcal {K}}={\\frac {\\lambda }{Q}}A+{\\frac {1}{2Q}}I"
+    },
+    {
+      "key": "c9ec897b349e5dd8",
+      "claim": "The Chartered Institute of Logistics and Transport (CILT) is one of the professional bodies for the logistics and transport sectors that offer professional qualifications or degrees in logistics management",
+      "evidence": "universities and academic institutions train students as logisticians, offering undergraduate and postgraduate programs. A university with a primary focus on logistics is K\u00fchne Logistics University in Hamburg, Germany. It is non-profit and supported by K\u00fchne-Foundation of the logistics entrepreneur Klaus Michael K\u00fchne.[citation needed] In the United States, Michigan State University's Eli Broad College of Business has been ranked number one for its undergraduate supply chain management and logistics program for fifteen consecutive years by U.S. News & World Report. ### Organizations The Chartered Institute of Logistics and Transport (CILT), established in the United Kingdom in 1919, received a Royal Charter in 1926. The Chartered Institute is one of the professional bodies or institutions for the logistics and transport sectors that",
+      "gold_answer": "the professional bodies or institutions for the logistics and transport sectors that"
+    },
+    {
+      "key": "ad6f9cbc476c2b70",
+      "claim": "It was established in the United Kingdom in 1919 and received a Royal Charter in 1926",
+      "evidence": "universities and academic institutions train students as logisticians, offering undergraduate and postgraduate programs. A university with a primary focus on logistics is K\u00fchne Logistics University in Hamburg, Germany. It is non-profit and supported by K\u00fchne-Foundation of the logistics entrepreneur Klaus Michael K\u00fchne.[citation needed] In the United States, Michigan State University's Eli Broad College of Business has been ranked number one for its undergraduate supply chain management and logistics program for fifteen consecutive years by U.S. News & World Report. ### Organizations The Chartered Institute of Logistics and Transport (CILT), established in the United Kingdom in 1919, received a Royal Charter in 1926. The Chartered Institute is one of the professional bodies or institutions for the logistics and transport sectors that",
+      "gold_answer": "the professional bodies or institutions for the logistics and transport sectors that"
+    }
+  ]
+}

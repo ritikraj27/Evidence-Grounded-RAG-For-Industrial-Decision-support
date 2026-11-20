@@ -1,0 +1,159 @@
+{
+  "experiment": "form validator",
+  "question": "Does the runtime query-form check reject malformed requests, and what does it cost in false rejections?",
+  "corpus": "/Users/ritikraj/Documents/MTP/impl/data/corpus",
+  "rules": [
+    "empty",
+    "no_words",
+    "no_content",
+    "incomplete"
+  ],
+  "benchmark": {
+    "description": "every query the benchmark generator produced; well formed by construction, so any refusal is a false rejection",
+    "n": 276,
+    "n_rejected": 1,
+    "false_rejection_rate": 0.0036,
+    "by_family": {
+      "definition": {
+        "n": 86,
+        "n_rejected": 0
+      },
+      "unanswerable_corpus_anchored_definition": {
+        "n": 72,
+        "n_rejected": 0
+      },
+      "unanswerable_corpus_anchored_numeric": {
+        "n": 12,
+        "n_rejected": 0
+      },
+      "table_lookup": {
+        "n": 28,
+        "n_rejected": 1
+      },
+      "unanswerable_corpus_anchored_table": {
+        "n": 26,
+        "n_rejected": 0
+      },
+      "unanswerable_ood": {
+        "n": 34,
+        "n_rejected": 0
+      },
+      "numeric_fact": {
+        "n": 18,
+        "n_rejected": 0
+      }
+    },
+    "rejected_queries": [
+      "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for What to change to??"
+    ]
+  },
+  "hand_authored_well_formed": {
+    "description": "well-formed queries written to include the cases the benchmark's own filter rejects -- acronym, hyphen, gerund, bare keyword, statement, and out-of-domain but well formed",
+    "n": 35,
+    "n_rejected": 0,
+    "false_rejection_rate": 0.0,
+    "rejected_queries": []
+  },
+  "hand_authored_malformed": {
+    "description": "malformed queries written by hand, with the reason each is malformed; two keyboard mashes are expected misses, because the check has no dictionary and no language model",
+    "n": 27,
+    "n_rejected": 25,
+    "n_expected_rejected": 25,
+    "rejection_rate": 1.0,
+    "documented_misses": [],
+    "by_rule": {
+      "empty": 2,
+      "no_words": 3,
+      "no_content": 15,
+      "incomplete": 5
+    }
+  },
+  "harvested_stems": {
+    "description": "the question stems the benchmark generator emits and rejects, harvested from the corpus and labelled by hand; the only population of malformed text not written by the author of the rule",
+    "n_harvested": 90,
+    "n_labelled": 90,
+    "n_unlabelled": 0,
+    "unlabelled_queries": [],
+    "n_malformed": 53,
+    "n_malformed_rejected": 12,
+    "rejection_rate_on_malformed": 0.2264,
+    "n_well_formed": 37,
+    "n_well_formed_rejected": 0,
+    "false_rejection_rate_on_well_formed": 0.0,
+    "false_rejected_queries": [],
+    "missed_malformed_queries": [
+      "What value is stated for another meter shows a mean throughput in the source documentation?",
+      "What value is stated for assume customers arrive at the rate in the source documentation?",
+      "What value is stated for we know the arrival rate in the source documentation?",
+      "What value is stated for sheffield and Lincolnshire Railway in in the source documentation?",
+      "What value is stated for speh published in the source documentation?",
+      "What value is stated for during the scheduled operating time in the source documentation?",
+      "What is this approach?",
+      "What value is stated for it commonly takes in the source documentation?",
+      "What is another example?",
+      "What value is stated for classic TPM process he developed consisting in the source documentation?",
+      "What value is stated for a task that in the source documentation?",
+      "What is NP-hard since the TSP?",
+      "What value is stated for preliminary results show in the source documentation?",
+      "What value is stated for if the customer demand in the source documentation?",
+      "What are once a takt system is implemented there?",
+      "What value is stated for of a Shewhart chart in the source documentation?",
+      "What value is stated for if there in the source documentation?",
+      "What value is stated for with an ISO analysis in the source documentation?",
+      "What value is stated for is a document in the source documentation?",
+      "What value is stated for of the Requirements and Measurements Handbooks in the source documentation?",
+      "What value is stated for given that there in the source documentation?",
+      "What value is stated for hence in the source documentation?",
+      "What value is stated for be it a delay in the source documentation?",
+      "What value is stated for which in the source documentation?",
+      "What is with parallel components the situation?",
+      "What value is stated for where a system whose MTTR in the source documentation?",
+      "What is another practical issue?",
+      "What is the reason why this?",
+      "What is this scoring?",
+      "What is another difference?",
+      "What is this happens if there?",
+      "What is an example of this?",
+      "What is when an item?",
+      "What are gathering Time series data and cross-sectional data?",
+      "What is if this?",
+      "What value is stated for this number had grown to in the source documentation?",
+      "What is the assumption that demand?",
+      "What value is stated for are at a distance in the source documentation?",
+      "What value is stated for in examinations with no additional machines in the source documentation?",
+      "What are these focusing steps?",
+      "What value is stated for if the buffer in the source documentation?"
+    ],
+    "by_rule": {
+      "no_content": 10,
+      "incomplete": 2
+    }
+  },
+  "counterfactual_benchmark_rule": {
+    "description": "what a runtime check that reused the benchmark's own `_subject_is_usable` filter would have done to the same stems; the filter is a rule about subjects, so it is evaluated on the subject",
+    "n_well_formed": 37,
+    "n_well_formed_rejected": 37,
+    "false_rejection_rate_on_well_formed": 1.0,
+    "n_malformed": 53,
+    "n_malformed_rejected": 53,
+    "rejection_rate_on_malformed": 1.0,
+    "false_rejected_examples": [
+      "What is pick and pack warehousing?",
+      "What is performance monitoring?",
+      "What is FMEA?",
+      "What are functions?",
+      "What value is stated for built-in test interval in the source documentation?",
+      "What is root-cause analysis?",
+      "What is flow-shop scheduling?",
+      "What is a special type of flow-shop scheduling problem?",
+      "What is a critical factor in production planning?",
+      "What is Another example of DFI?"
+    ]
+  },
+  "cost": {
+    "microseconds_per_query": 3.9,
+    "timing_repeats": 2000,
+    "note": "the check runs before retrieval, so a request it refuses costs no embedding pass, no cross-encoder pass and no model call"
+  },
+  "retrieval_placement": "pre_rerank"
+}

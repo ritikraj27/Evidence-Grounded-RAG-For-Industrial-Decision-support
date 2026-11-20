@@ -1,0 +1,79 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "general",
+  "regime_title": "All four regimes, read without a specialism",
+  "regime_governs": "occupational safety, process safety, environmental control and hazardous-materials transport.",
+  "reader_note": "You are reading pairs from four different regulatory regimes without a specialism in any of them. Apply the rubric as written.",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 1,
+      "passage_a": "> C.3.3 Where an ingredient with unknown acute toxicity is used in a mixture at a concentration \u22651%, and the mixture is not classified based on testing of the mixture as a whole, a statement that X% of the mixture consists of ingredient(s) of unknown acute toxicity is required on the label.",
+      "passage_b": "> C.3.3 Where an ingredient with unknown acute toxicity is used in a mixture at a concentration \u22651%, and the mixture is not classified based on testing of the mixture as a whole, a statement that X% of the mixture consists of ingredient(s) of unknown acute toxicity (oral/dermal/inhalation) is required on the label and safety data sheet."
+    },
+    {
+      "pair_id": 2,
+      "passage_a": "(4) ASTM A100-74, Standard Specification for Ferrosilicon, IBR approved for \u00a7 60.261.",
+      "passage_b": "(4) ASTM A100-74, Standard Specification for Ferrosilicon; IBR approved for \u00a7 60.261."
+    },
+    {
+      "pair_id": 3,
+      "passage_a": "(57) ASTM D1266-98 (Reapproved 2003) \u03b5, 1 Standard Test Method for Sulfur in Petroleum Products (Lamp Method), IBR approved for \u00a7 60.4415(a).",
+      "passage_b": "(58) ASTM D1266-98 (Reapproved 2003) \u03b5, 1 Standard Test Method for Sulfur in Petroleum Products (Lamp Method); IBR approved for \u00a7\u00a7 60.4360a(c) and 60.4415(a)."
+    },
+    {
+      "pair_id": 4,
+      "passage_a": "> #### B.3.1 Definition",
+      "passage_b": "> #### B.3.1.1 Definition"
+    },
+    {
+      "pair_id": 5,
+      "passage_a": "> > #### Note:",
+      "passage_b": "> #### Note:"
+    },
+    {
+      "pair_id": 6,
+      "passage_a": "> Table B.6.1\u2014Criteria for Flammable Liquids",
+      "passage_b": "> #### Table B.6.1: Criteria for Flammable Liquids"
+    },
+    {
+      "pair_id": 7,
+      "passage_a": "| Maximum net quantity per package from Column 9a of the \u00a7 172.101 table | Maximum authorized net capacity of each inner packaging |  |\n|---|---|---|\n| Glass, earthenware or fiber inner packagings | Metal or plastic inner packagings |  |\n| Liquids: |  |  |\n| Not greater than 0.5L | 0.5L | 0.5L. |\n| Greater than 0.5L. not greater than lL | 0.5L | lL. |\n| Greater than 1L, not greater than 5L | 1L | 5L. |\n| Greater than 5L, not greater than 60L | 2.5L | 10L. |\n| Greater than 60L, not greater than 220L | 5L | 25L. |\n| Greater than 220L | No limit | No limit. |\n| Solids: |  |  |\n| Not greater than 5 kg | 0.5 kg | 1 kg. |\n| Greater than 5 kg, not greater than 25 kg | 1 kg | 2.5 kg. |\n| Greater than 25 kg, not greater than 200 kg | 5 kg | 10 kg. |\n| Greater than 200 kg | No limit | No limit. |",
+      "passage_b": "Table 2 to Paragraph (f)\u2014Maximum Net Capacity of Inner Packaging for Transportation on Cargo Aircraft\n| Maximum net quantity per package from Column 9b of \u00a7 172.101 table | Maximum authorized net capacity of each inner packaging |  |\n|---|---|---|\n| Glass, earthenware or fiber inner packagings | Metal or plastic inner packagings |  |\n| Liquids: |  |  |\n| Not greater than 2.5L | 1 L | 1 L |\n| Greater than 2.5L, not greater than 30L | 2.5 L | 2.5 L |\n| Greater than 30L, not greater than 60L | 5 L | 10 L |\n| Greater than 60L, not greater than 220L | 5 L | 25 L |\n| Class 9: UN1941, UN1990, UN2315, UN3082, UN3151, UN3334 | 10 L | Plastic: 30 L Metal: 40 L |\n| Solids: |  |  |\n| Not greater than 15 kg | 1 kg | 2.5 kg |\n| Greater than 15 kg, not greater than 50 kg | 2.5 kg | 5 kg |\n| Greater than 50 kg, not greater than 200 kg | 5 kg | 10 kg |\n| Class 9: UN1841, UN1931, UN2071, UN2216, UN2590, UN2969, UN3077, UN3152, UN3335, UN3432 | Glass or earthenware: 10 kg Fiber: 50 kg | 50 kg |"
+    },
+    {
+      "pair_id": 8,
+      "passage_a": "Detonators. Articles consisting of a small metal or plastic tube containing explosives such as lead azide, PETN, or combinations of explosives. They are designed to start a detonation train. They may be constructed to detonate instantaneously, or may contain a delay element. They may contain no more than 10 g of total explosives weight, excluding ignition and delay charges, per unit. The term includes: detonators for ammunition; detonators for blasting, both electric and non-electric; and detonating relays without flexible detonating cord.",
+      "passage_b": "Detonators. Articles consisting of a small metal or plastic tube containing explosives such as lead azide, PETN, or combinations of explosives. They are designed to start a detonation train. They may be constructed to detonate instantaneously or may contain a delay element. They may contain no more than 10 g of total explosives weight, excluding ignition and delay charges, per unit. The term includes: detonators for ammunition; detonators for blasting (electric, electronic, and non-electric); and detonating relays without flexible detonating cord."
+    },
+    {
+      "pair_id": 9,
+      "passage_a": "> Note: The available oxygen content (%) of an organic peroxide mixture is given by the formula:",
+      "passage_b": "> The available oxygen content (%) of an organic peroxide mixture is given by the formula:"
+    },
+    {
+      "pair_id": 10,
+      "passage_a": "> \u0394Hc = chemical heat of combustion (kJ/g);",
+      "passage_b": "> \u0394Hc(product) = specific heat of combustion (kJ/g) of the product;"
+    },
+    {
+      "pair_id": 11,
+      "passage_a": "(100) ASTM D2504-88 (Reapproved 1993), Noncondensable Gases in C3 and Lighter Hydrocarbon Products by Gas Chromatography, IBR approved for \u00a7\u00a7 60.485(g) and 60.485a(g).",
+      "passage_b": "(104) ASTM D2504-88 (Reapproved 1993), Noncondensable Gases in C3 and Lighter Hydrocarbon Products by Gas Chromatography; IBR approved for \u00a7\u00a7 60.485(g) and 60.485a(g)."
+    },
+    {
+      "pair_id": 12,
+      "passage_a": "> (b) Non-elevated - a permit space with the entrance portal located less than 4 feet above grade. This type of space will allow the rescue team to transport an injured employee normally.",
+      "passage_b": "> (b) Non-elevated\u2014a permit space with the entrance portal located less than 4 feet above grade. This type of space will allow the rescue team to transport an injured employee normally."
+    }
+  ]
+}

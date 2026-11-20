@@ -1,0 +1,98 @@
+{
+  "schema": "mtp.contradiction-judge-control/1",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of: contradiction, granularity, supersession, term_mismatch, no_conflict. Use the rubric below. `contradiction` means the two passages state incompatible facts about the same subject -- nothing else counts as a true contradiction, and everything else is a false alarm.",
+  "rubric": "# Rubric for labelling the contradiction gate's pairs\n\nYou are given two passages from industrial-engineering documentation. Decide\n**one** of five labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes \u2192 `term_mismatch`**\n\nThe passages share vocabulary, a topic word, an entity name or a number, but\nthey are not about the same thing: two different plants, two different\ncomponents, two different topics. A number-matching rule fires on \"lead time\nis 14 days\" and \"lead time is 21 days\" in two passages that are in fact\nabout two different plants; that pair is `term_mismatch`, and it is the\nfailure mode a *subject* check is meant to suppress.\n\n**No \u2192 go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes \u2192 `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, dates, \"updated\", \"revised\", \"previously\", \"now\", \"as\nof\", version numbers.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it \u2014 that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No \u2192 go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes \u2192 `granularity`**\n\n\"The total cycle time for the machining operation is three days\" and \"the\nannealing sub-step of the machining operation takes three days\" are about a\nwhole and one of its parts. The general figure is true of the component in a\ndifferent sense, so the two do not contradict each other.\n\n**No \u2192 go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes \u2192 `contradiction`**\n\nBoth cannot be true at once, and neither is a later revision of the other.\nTwo kinds count:\n\n* **Numeric**: the same quantity takes two different values (\"the batch\n  size is 500 units\" against \"the batch size is 250 units\"), with the\n  subject matched \u2014 same product, same line, same policy.\n* **Qualitative**: the same subject is asserted to have two different\n  properties (\"the valve is rated for 250 psi\" against \"the valve is rated\n  for 400 psi\"; \"the material is stainless steel\" against \"the material is\n  aluminium\").\n\n**No \u2192 go to question 5.**\n\n## 5. Otherwise \u2192 `no_conflict`\n\nThe two passages are about the same subject and say compatible things. They\nmake different statements, or the same statement in different words, but\nnothing one says is incompatible with anything the other says.\n\n## The labels in one line each\n\n| Label | One-line test | A conflict? |\n|---|---|---|\n| `term_mismatch` | Different subjects that merely share words. | No |\n| `supersession` | Same subject, one is a later revision. | No |\n| `granularity` | Same subject, whole versus part, both true at once. | No |\n| `no_conflict` | Same subject, compatible statements. | No |\n| `contradiction` | Same subject, incompatible statements. | **Yes** |\n\nOnly `contradiction` counts as a confirmed alarm. The other four differ in\n*why* the pair is not a conflict, and the distinction matters because it is\nwhat separates a detector that is too eager from one that is looking in the\nwrong place.\n\n## Notes for the reader\n\n- **`numeric_conflicts` in the detector's own output is a hint, not a label.**\n  It says the two passages attach different values to some distinctive\n  quantity. It does not say the quantity is the same one, and it does not\n  exclude a revision. The sheet shows it so that you can see what the\n  detector saw; decide independently.\n- **When a passage states a value for a quantity and the other passage states\n  a value for a *different* quantity, that is `term_mismatch`,** not a\n  contradiction \u2014 different measurements are not disagreements.\n- **Different granularity is not a contradiction.** This is the category the\n  published conflict taxonomy puts between \"direct conflict\" and\n  \"information-granularity difference\", and it is the one industrial text\n  produces most.\n- **When you are unsure, say so in `notes` and use the closest label.** A\n  labelled sheet with honest uncertainty is more useful than a confident one.\n- If a passage is truncated or a table is split across passages, judge the\n  pair on what is actually there.\n- **Bibliographic text is not evidence.** A citation, an ISBN, a DOI, a\n  publication year or a journal title is not a claim about the subject\n  domain. Two passages that merely cite different papers are `no_conflict`\n  (or `term_mismatch` if they are about different papers).\n\n## After labelling\n\nThe sheet is scored by `python experiments/label_contradiction_pairs.py\n--score`, which reports the precision of the alarms and an estimate of the\nrecall over the whole pair population, each with a 95% interval. The labels\nare published with the results so that a reader can disagree with any of\nthem.\n",
+  "labels_allowed": [
+    "contradiction",
+    "granularity",
+    "supersession",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 0,
+      "stratum": "control",
+      "passage_a": "The economic order quantity for the axial pump assembly is calculated as 500 units per order, based on a 30-day reorder cycle and the plant's weekly consumption rate.",
+      "passage_b": "The economic order quantity for the axial pump assembly is calculated as 250 units per order, based on a 60-day reorder cycle and the plant's weekly consumption rate."
+    },
+    {
+      "pair_id": 1,
+      "stratum": "control",
+      "passage_a": "The safety stock level for the warehouse is set at 120 units, which covers three weeks of average demand.",
+      "passage_b": "The safety stock level for the warehouse is set at 45 units, which covers about one week of average demand."
+    },
+    {
+      "pair_id": 2,
+      "stratum": "control",
+      "passage_a": "Inspection of the control plan requires a sample size of 5 units from every lot before release.",
+      "passage_b": "Inspection of the control plan requires a sample size of 2 units from every lot before release."
+    },
+    {
+      "pair_id": 3,
+      "stratum": "control",
+      "passage_a": "The conveyor belt is specified to run at a maximum speed of 1.8 metres per second under normal load.",
+      "passage_b": "The conveyor belt is specified to run at a maximum speed of 2.6 metres per second under normal load."
+    },
+    {
+      "pair_id": 4,
+      "stratum": "control",
+      "passage_a": "The plant's overall equipment effectiveness target for the assembly line is 85 percent, measured monthly.",
+      "passage_b": "The plant's overall equipment effectiveness target for the assembly line is 62 percent, measured monthly."
+    },
+    {
+      "pair_id": 5,
+      "stratum": "control",
+      "passage_a": "All incoming raw material certificates of conformity must be retained for five years.",
+      "passage_b": "All incoming raw material certificates of conformity must be retained for two years."
+    },
+    {
+      "pair_id": 6,
+      "stratum": "control",
+      "passage_a": "The total cycle time for the machining operation is three days.",
+      "passage_b": "The annealing sub-step of the machining operation takes three days."
+    },
+    {
+      "pair_id": 7,
+      "stratum": "control",
+      "passage_a": "The plant's annual throughput is 40,000 units.",
+      "passage_b": "The paint shop within the plant has an annual throughput of 40,000 units."
+    },
+    {
+      "pair_id": 8,
+      "stratum": "control",
+      "passage_a": "Raw material lead time is 21 days.",
+      "passage_b": "Raw material lead time is 14 days, revised as of the third quarter."
+    },
+    {
+      "pair_id": 9,
+      "stratum": "control",
+      "passage_a": "The inspection frequency for the gearbox is every 500 operating hours.",
+      "passage_b": "The inspection frequency for the gearbox is every 200 operating hours (updated revision, Rev 4)."
+    },
+    {
+      "pair_id": 10,
+      "stratum": "control",
+      "passage_a": "Plant A uses a reorder point of 300 units for the same component.",
+      "passage_b": "Plant B uses a reorder point of 900 units for the same component."
+    },
+    {
+      "pair_id": 11,
+      "stratum": "control",
+      "passage_a": "The forklift aisle width in the distribution centre is 3.5 metres.",
+      "passage_b": "Forklift operators must wear high-visibility vests at all times in the distribution centre."
+    },
+    {
+      "pair_id": 12,
+      "stratum": "control",
+      "passage_a": "The maximum pallet weight in the distribution centre is 1200 kg.",
+      "passage_b": "The maximum pallet weight in the distribution centre is 1200 kilograms, including the pallet itself."
+    },
+    {
+      "pair_id": 13,
+      "stratum": "control",
+      "passage_a": "The distribution centre operates two shifts per day.",
+      "passage_b": "The second shift at the distribution centre starts at 14:00."
+    }
+  ]
+}

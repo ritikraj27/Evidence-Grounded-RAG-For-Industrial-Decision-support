@@ -1,0 +1,80 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "environmental_control",
+  "regime_title": "Environmental control (OSHA air contaminants and EPA new source performance standards)",
+  "regime_governs": "workplace air contaminants and their exposure limits, and emission standards for stationary sources: cement plants, petroleum refineries, storage vessels, smelters, grain elevators, metallic mineral processing, equipment leaks.",
+  "reader_note": "This is the numeric regime. Almost every conflict here is a quantity conflict: the same substance, the same measured quantity, two different numbers. Be careful about *scope* before calling it a conflict \u2014 the same substance routinely has different limits for general industry and for construction, for an 8-hour average and for a 15-minute excursion, and for different equipment. A difference in scope is not a conflict; a difference in the limit applied to the same scope is.",
+  "parts": "29 CFR 1910 subpart Z; 40 CFR 60",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 62,
+      "passage_a": "(a) In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use as reference methods and procedures the test methods in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b).",
+      "passage_b": "(c) Test methods. In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use the following EPA reference test methods and procedures in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b)."
+    },
+    {
+      "pair_id": 63,
+      "passage_a": "(53) ASTM D1193-91, Standard Specification for Reagent Water, IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; and Method 29, Section 7.2.2.",
+      "passage_b": "(53) ASTM D1193-77, Standard Specification for Reagent Water; IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; Method 29, Section 7.2.2."
+    },
+    {
+      "pair_id": 68,
+      "passage_a": "(86) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal, IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1.",
+      "passage_b": "(89) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal; IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1."
+    },
+    {
+      "pair_id": 72,
+      "passage_a": "(75) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, (Approved January 1, 2010), IBR approved for \u00a7\u00a7 60.107a(d), 60.5413(d), 60.5413a(d).",
+      "passage_b": "(77) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, approved January 1, 2010; IBR approved for \u00a7\u00a7 60.107a(d); 60.5413(d); 60.5413a(d); 60.5413b(d); 60.5413c(d)."
+    },
+    {
+      "pair_id": 73,
+      "passage_a": "> C. Spill Leak and Disposal Procedures.",
+      "passage_b": "> C. Spill, Leak and Disposal Procedures."
+    },
+    {
+      "pair_id": 78,
+      "passage_a": "(193) ASTM D6911-15, Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015, IBR approved for appendix A-8: Method 30B.",
+      "passage_b": "(216) ASTM D6911-15 Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015; IBR approved for Appendix A-7: Method 23, Section 8.2.11; Appendix A-8: Method 30B, Section 8.3.3.8."
+    },
+    {
+      "pair_id": 84,
+      "passage_a": "(186) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, (Approved October 1, 2005), IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b) and (d), and 60.5413a(b).",
+      "passage_b": "(206) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, approved October 1, 2005; IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b); 60.5413a(b)."
+    },
+    {
+      "pair_id": 85,
+      "passage_a": "(181) ASTM D6228-98 (Reapproved 2003), Standard Test Method for Determination of Sulfur Compounds in Natural Gas and Gaseous Fuels by Gas Chromatography and Flame Photometric Detection, IBR approved for \u00a7\u00a7 60.4360 and 60.4415.",
+      "passage_b": "(195) ASTM D6228-98 (Reapproved 2003), Standard Test Method for Determination of Sulfur Compounds in Natural Gas and Gaseous Fuels by Gas Chromatography and Flame Photometric Detection; IBR approved for \u00a7\u00a7 60.4360; 60.4360a(c); 60.4415(a)."
+    },
+    {
+      "pair_id": 87,
+      "passage_a": "(45) ASTM D975-98a, Standard Specification for Diesel Fuel Oils, IBR approved for \u00a7\u00a7 60.111(b) and 60.111a(b).",
+      "passage_b": "(45) ASTM D975-96, Standard Specification for Diesel Fuel Oils; IBR approved for \u00a7\u00a7 60.111(b) and 60.111a(b)."
+    },
+    {
+      "pair_id": 97,
+      "passage_a": "this subpart. (2)(i) A list of identification numbers for equipment that are designated for no detectable emissions under the provisions of \u00a7\u00a7 60.482-2(e), 60.482-3(i) and 60.482-7(f). (ii) The designation of equipment as subject to the requirements of \u00a7 60.482-2(e), \u00a7 60.482-3(i), or \u00a7 60.482-7(f) shall be signed by the owner or operator. Alternatively, the owner or operator may establish a mechanism with their permitting authority that satisfies this requirement. (3) A list of equipment identification numbers for pressure relief devices required to comply with \u00a7 60.482-4. (4)(i) The dates of each compliance test as required in \u00a7\u00a7 60.482-2(e), 60.482-3(i), 60.482-4, and 60.482-7(f). (ii) The background level measured during each compliance test. (iii) The maximum instrument reading measured at the equipment",
+      "passage_b": "of liquids dripping. (e) Any pump that is designated, as described in \u00a7 60.486(e)(1) and (2), for no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, is exempt from the requirements of paragraphs (a), (c), and (d) of this section if the pump: (1) Has no externally actuated shaft penetrating the pump housing, (2) Is demonstrated to be operating with no detectable emissions as indicated by an instrument reading of less than 500 ppm above background as measured by the methods specified in \u00a7 60.485(c), and (3) Is tested for compliance with paragraph (e)(2) of this section initially upon designation, annually, and at other times requested by the Administrator. (f) If any pump"
+    },
+    {
+      "pair_id": 103,
+      "passage_a": "affected facility is in compliance with all applicable standards for which performance tests are conducted in accordance with \u00a7 60.8 of this part but during the time such performance tests are being conducted fails to meet any applicable opacity standard, he shall notify the owner or operator and advise him that he may petition the Administrator within 10 days of receipt of notification to make appropriate adjustment to the opacity standard for the affected facility. (7) The Administrator will grant such a petition upon a demonstration by the owner or operator that the affected facility and associated air pollution control equipment was operated and maintained in a manner to minimize the opacity of emissions during the performance tests; that the",
+      "passage_b": "substitute the procedures in Section 16.0 of Performance Specification 2 if the control device exhaust emission rate is less than 50 percent of the level needed to meet the control efficiency requirement. The alternative procedures do not apply if the continuous emission monitoring system is used to determine compliance continuously with the applicable standard. The petition to waive the RA test shall include a detailed description of the procedures to be applied. Included shall be location and procedure for conducting the alternative, the concentration or response levels of the alternative RA materials, and the other equipment checks included in the alternative procedure. The Administrator will review the petition for completeness and applicability. The determination to grant a waiver will depend"
+    },
+    {
+      "pair_id": 105,
+      "passage_a": "Each owner or operator that is subject to the requirements of this subpart shall comply with the emission limitations set forth in this section on and after the date on which the initial performance test, required by \u00a7 60.8, is completed, but not later than 60 days after achieving the maximum production rate at which the affected facility will be operated, or 180 days after initial startup, whichever comes first. (a) No owner or operator subject to the provisions of this subpart shall: (1) Burn in any fuel gas combustion device any fuel gas that contains hydrogen sulfide (H2S) in excess of 230 mg/dscm (0.10 gr/dscf). The combustion in a flare of process upset gases or fuel gas that is",
+      "passage_b": "may be monitored at only one location (i.e., after one of the combustion devices), if monitoring at this location accurately represents the SO2 emissions into the atmosphere from each of the combustion devices. (4) Instead of the SO2 monitor in paragraph (a)(3) of this section for fuel gas combustion devices subject to \u00a7 60.104(a)(1), an instrument for continuously monitoring and recording the concentration (dry basis) of H2S in fuel gases before being burned in any fuel gas combustion device. (i) The span value for this instrument is 425 mg/dscm H2S. (ii) Fuel gas combustion devices having a common source of fuel gas may be monitored at only one location, if monitoring at this location accurately represents the concentration of H2S"
+    }
+  ]
+}

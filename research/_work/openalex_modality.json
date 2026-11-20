@@ -1,0 +1,67 @@
+{
+ "colpali": {
+  "query": "ColPali Efficient Document Retrieval with Vision Language Models",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "visrag": {
+  "query": "VisRAG Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "colqwen": {
+  "query": "ColQwen Enhancing Document Retrieval with Visual Language Model",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "docvqa": {
+  "query": "DocVQA A Large-Scale Multilingual Visual Question Answering Benchmark on Document Images",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "chartqa": {
+  "query": "ChartQA A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "infovqa": {
+  "query": "InfographicVQA Visual Question Answering on Infographics",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "tatdqa": {
+  "query": "TAT-DQA A Multi-Shot Tabular Question Answering Benchmark on Realistic Financial Documents",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "mmbench_doc": {
+  "query": "MMLongBench-Doc Benchmarking Long-Context Document Understanding",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "omni_doc": {
+  "query": "OmniDocBench A Benchmark for Evaluating Document Parsing",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "raptor": {
+  "query": "RAPTOR Recursive Abstractive Processing for Tree-Organized Retrieval",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "late_chunking": {
+  "query": "Late Chunking Contextual Chunk Embeddings Using Long-Context Embedding Models",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "table_rag": {
+  "query": "TableRAG Million-Table Schema Retrieval Augmented Generation",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ },
+ "modality_bias": {
+  "query": "modality bias retrieval augmented generation text table imbalance",
+  "error": "HTTP Error 429: Too Many Requests",
+  "results": []
+ }
+}

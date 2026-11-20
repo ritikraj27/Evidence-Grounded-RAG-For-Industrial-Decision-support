@@ -1,0 +1,10 @@
+{
+  "colpali_family": "all:\"ColPali\" OR all:\"ColQwen\" OR all:\"ColNEST\" OR all:\"late interaction\" AND all:\"document retrieval\"",
+  "visrag": "all:\"VisRAG\" OR all:\"visual retrieval augmented generation\"",
+  "multimodal_rag": "all:\"multimodal retrieval augmented generation\" AND (all:\"survey\" OR all:\"benchmark\")",
+  "docvqa_benchmarks": "all:\"DocVQA\" OR all:\"InfographicVQA\" OR all:\"ChartQA\" OR all:\"MMLongBench-Doc\"",
+  "table_rag": "all:\"TableRAG\" OR (all:\"table\" AND all:\"retrieval augmented generation\" AND all:\"QA\")",
+  "raptor_latechunk": "all:\"RAPTOR\" OR all:\"Late Chunking\"",
+  "mm_parsing": "all:\"document parsing\" AND (all:\"OCR-free\" OR all:\"OCR-free document\") AND all:\"retrieval\"",
+  "anyrag_ragbench": "all:\"AnyRAG\" OR all:\"RAGBench\" OR all:\"RAG evaluation benchmark\""
+}

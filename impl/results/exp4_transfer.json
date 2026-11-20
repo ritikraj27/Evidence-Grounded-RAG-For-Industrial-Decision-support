@@ -1,0 +1,450 @@
+{
+  "seed": 20261118,
+  "design": "query-level sufficiency calibration; model and threshold transferred unchanged",
+  "categories": [
+    "facility_layout",
+    "predictive_maintenance",
+    "production_scheduling",
+    "quality_engineering",
+    "reliability_engineering",
+    "supply_chain_management"
+  ],
+  "leave_half_out": {
+    "tuning_categories": [
+      "predictive_maintenance",
+      "production_scheduling",
+      "supply_chain_management"
+    ],
+    "held_out_categories": [
+      "facility_layout",
+      "quality_engineering",
+      "reliability_engineering"
+    ],
+    "weights_tuning_half": [
+      -1.2237589481041968,
+      3.13859031469985,
+      -2.7050191719367525,
+      0.428581242597502,
+      0.17668681367006484,
+      0.5263487126036257
+    ],
+    "weights_held_out_half": [
+      -1.3834677896862455,
+      0.9548544594507619,
+      0.1924537737933262,
+      -0.006065999773567586,
+      0.682879015494484,
+      -0.1759119523008317
+    ],
+    "weights_all": [
+      -0.24676907090800398,
+      2.112045772480704,
+      -1.0936170661166011,
+      0.144551848338164,
+      0.015181945353606343,
+      0.22655093545384822
+    ],
+    "tau": 0.05,
+    "tau_refitted_on_held_out": 0.05,
+    "metrics_tuning": {
+      "n_answerable": 65,
+      "n_unanswerable": 144,
+      "answerable_answered": 1.0,
+      "answerable_refused": 0.0,
+      "unanswerable_refused": 0.1388888888888889,
+      "coverage": 0.40669856459330145,
+      "top1_accuracy_given_accepted": 0.9846153846153847
+    },
+    "metrics_held_out_transferred": {
+      "n_answerable": 67,
+      "n_unanswerable": 144,
+      "answerable_answered": 1.0,
+      "answerable_refused": 0.0,
+      "unanswerable_refused": 0.1388888888888889,
+      "coverage": 0.41232227488151657,
+      "top1_accuracy_given_accepted": 0.9402985074626866
+    },
+    "metrics_held_out_refitted": {
+      "n_answerable": 67,
+      "n_unanswerable": 144,
+      "answerable_answered": 0.9402985074626866,
+      "answerable_refused": 0.05970149253731343,
+      "unanswerable_refused": 0.2361111111111111,
+      "coverage": 0.4597156398104265,
+      "top1_accuracy_given_accepted": 0.9523809523809523
+    },
+    "fixed_tau_comparison": [
+      {
+        "tau": 0.1,
+        "transferred": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.9253731343283582,
+          "answerable_refused": 0.07462686567164178,
+          "unanswerable_refused": 0.3958333333333333,
+          "coverage": 0.5639810426540285,
+          "top1_accuracy_given_accepted": 0.9516129032258065
+        },
+        "refitted_same_tau": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.8955223880597015,
+          "answerable_refused": 0.1044776119402985,
+          "unanswerable_refused": 0.3402777777777778,
+          "coverage": 0.5165876777251185,
+          "top1_accuracy_given_accepted": 0.95
+        }
+      },
+      {
+        "tau": 0.25,
+        "transferred": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.7313432835820896,
+          "answerable_refused": 0.26865671641791045,
+          "unanswerable_refused": 0.6388888888888888,
+          "coverage": 0.6682464454976303,
+          "top1_accuracy_given_accepted": 0.9387755102040817
+        },
+        "refitted_same_tau": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.835820895522388,
+          "answerable_refused": 0.16417910447761194,
+          "unanswerable_refused": 0.5625,
+          "coverage": 0.6492890995260664,
+          "top1_accuracy_given_accepted": 0.9464285714285714
+        }
+      },
+      {
+        "tau": 0.5,
+        "transferred": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.44776119402985076,
+          "answerable_refused": 0.5522388059701493,
+          "unanswerable_refused": 0.8402777777777778,
+          "coverage": 0.7156398104265402,
+          "top1_accuracy_given_accepted": 0.9333333333333333
+        },
+        "refitted_same_tau": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.373134328358209,
+          "answerable_refused": 0.6268656716417911,
+          "unanswerable_refused": 0.875,
+          "coverage": 0.7156398104265402,
+          "top1_accuracy_given_accepted": 0.92
+        }
+      },
+      {
+        "tau": 0.75,
+        "transferred": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.16417910447761194,
+          "answerable_refused": 0.835820895522388,
+          "unanswerable_refused": 0.9652777777777778,
+          "coverage": 0.7109004739336493,
+          "top1_accuracy_given_accepted": 1.0
+        },
+        "refitted_same_tau": {
+          "n_answerable": 67,
+          "n_unanswerable": 144,
+          "answerable_answered": 0.0,
+          "answerable_refused": 1.0,
+          "unanswerable_refused": 1.0,
+          "coverage": 0.6824644549763034,
+          "top1_accuracy_given_accepted": NaN
+        }
+      }
+    ],
+    "weights_stability": {
+      "tuning_intercept": -1.2237589481041968,
+      "held_out_intercept": -1.3834677896862455,
+      "tuning_top1_rerank": 3.13859031469985,
+      "held_out_top1_rerank": 0.9548544594507619
+    }
+  },
+  "leave_one_category_out": [
+    {
+      "held_out_category": "facility_layout",
+      "weights_from_others": [
+        -0.2320856160634441,
+        0.8794242119057616,
+        -0.6132843843070674,
+        0.17195185570144103,
+        0.5276458993624886,
+        0.372711905035841
+      ],
+      "weights_own": [
+        -2.94839333198332,
+        1.562879344300264,
+        -1.2408317866344998,
+        0.10124995857414887,
+        0.6913011021700239,
+        0.1761994796086919
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.5,
+      "transferred": {
+        "n_answerable": 10,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.0,
+        "coverage": 0.06493506493506493,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 10,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.0,
+        "answerable_refused": 1.0,
+        "unanswerable_refused": 1.0,
+        "coverage": 0.935064935064935,
+        "top1_accuracy_given_accepted": NaN
+      }
+    },
+    {
+      "held_out_category": "predictive_maintenance",
+      "weights_from_others": [
+        -0.6403186641115429,
+        1.5712352136676586,
+        -1.0569141253088028,
+        0.085385792357399,
+        0.4310044016930965,
+        0.16382922586098025
+      ],
+      "weights_own": [
+        -10.552993133221664,
+        2.3887766278040075,
+        -2.7741053270715126,
+        -0.2549066345642281,
+        15.33586848060699,
+        0.5289162076350449
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 24,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.09027777777777778,
+        "coverage": 0.22023809523809523,
+        "top1_accuracy_given_accepted": 0.9583333333333334
+      },
+      "own_fit": {
+        "n_answerable": 24,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9166666666666666,
+        "answerable_refused": 0.08333333333333333,
+        "unanswerable_refused": 0.5833333333333334,
+        "coverage": 0.6309523809523809,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    },
+    {
+      "held_out_category": "production_scheduling",
+      "weights_from_others": [
+        -0.1702474009023595,
+        1.7358000520777863,
+        -1.5061679439213642,
+        0.12998910548611253,
+        0.2665643428782979,
+        0.39006326825531096
+      ],
+      "weights_own": [
+        -3.4713242982729575,
+        3.2697975568333835,
+        -3.691548166118468,
+        -0.3054145888365755,
+        1.1173392941818558,
+        1.0853844459770616
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.5,
+      "transferred": {
+        "n_answerable": 11,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.0,
+        "coverage": 0.07096774193548387,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 11,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.09090909090909091,
+        "answerable_refused": 0.9090909090909091,
+        "unanswerable_refused": 0.9791666666666666,
+        "coverage": 0.9161290322580645,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    },
+    {
+      "held_out_category": "quality_engineering",
+      "weights_from_others": [
+        -0.46074471630981634,
+        2.297109967438175,
+        -1.4255412962584528,
+        0.023954354042356178,
+        0.08355293508599813,
+        0.05172093348356928
+      ],
+      "weights_own": [
+        -2.0261877566129103,
+        -0.6720306439612224,
+        0.07896782898943101,
+        0.5563705653073588,
+        0.11993401862256568,
+        0.842375062983555
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 23,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.0,
+        "coverage": 0.1377245508982036,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 23,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9130434782608695,
+        "answerable_refused": 0.08695652173913043,
+        "unanswerable_refused": 0.04861111111111111,
+        "coverage": 0.16766467065868262,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    },
+    {
+      "held_out_category": "reliability_engineering",
+      "weights_from_others": [
+        -0.5614996909685604,
+        2.311377050184364,
+        -1.8926163288682496,
+        0.0032711121239174545,
+        0.01980692063859402,
+        0.5227653885781673
+      ],
+      "weights_own": [
+        -5.652084035539817,
+        4.34467087651593,
+        -1.5148711134566022,
+        -1.1687586589987462,
+        5.68195636689164,
+        -0.2340526806010978
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 34,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.0,
+        "coverage": 0.19101123595505617,
+        "top1_accuracy_given_accepted": 0.8823529411764706
+      },
+      "own_fit": {
+        "n_answerable": 34,
+        "n_unanswerable": 144,
+        "answerable_answered": 0.9117647058823529,
+        "answerable_refused": 0.08823529411764706,
+        "unanswerable_refused": 0.6666666666666666,
+        "coverage": 0.7134831460674157,
+        "top1_accuracy_given_accepted": 0.9032258064516129
+      }
+    },
+    {
+      "held_out_category": "supply_chain_management",
+      "weights_from_others": [
+        -0.5975761577415925,
+        1.5576026697675374,
+        -0.9590263018798525,
+        -0.12245270856421055,
+        0.6614127345276813,
+        0.18673204094439957
+      ],
+      "weights_own": [
+        -1.5939278256387273,
+        1.9109602113930355,
+        -0.6783428015098244,
+        -0.12900835420281115,
+        0.003179732378550508,
+        -0.1637485871451674
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 30,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.14583333333333334,
+        "coverage": 0.29310344827586204,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 30,
+        "n_unanswerable": 144,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.2152777777777778,
+        "coverage": 0.3505747126436782,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    }
+  ],
+  "per_category_retrieval": [
+    {
+      "category": "facility_layout",
+      "n": 10,
+      "recall@10": 1.0,
+      "mrr": 0.6250000000000001,
+      "ndcg@10": 0.7143090932289436
+    },
+    {
+      "category": "predictive_maintenance",
+      "n": 24,
+      "recall@10": 0.9583333333333334,
+      "mrr": 0.8127367424242425,
+      "ndcg@10": 0.8493780054346924
+    },
+    {
+      "category": "production_scheduling",
+      "n": 11,
+      "recall@10": 1.0,
+      "mrr": 0.7175324675324676,
+      "ndcg@10": 0.7869817411019181
+    },
+    {
+      "category": "quality_engineering",
+      "n": 23,
+      "recall@10": 1.0,
+      "mrr": 0.6512077294685991,
+      "ndcg@10": 0.7376410519150223
+    },
+    {
+      "category": "reliability_engineering",
+      "n": 34,
+      "recall@10": 0.8529411764705882,
+      "mrr": 0.589512932671302,
+      "ndcg@10": 0.6519033587759274
+    },
+    {
+      "category": "supply_chain_management",
+      "n": 30,
+      "recall@10": 1.0,
+      "mrr": 0.8108333333333333,
+      "ndcg@10": 0.8572773189341448
+    }
+  ],
+  "retrieval_placement": "pre_rerank"
+}

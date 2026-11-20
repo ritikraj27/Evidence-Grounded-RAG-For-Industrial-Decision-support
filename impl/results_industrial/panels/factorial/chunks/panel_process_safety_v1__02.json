@@ -1,0 +1,80 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "process_safety",
+  "regime_title": "Catastrophic-risk management (OSHA PSM and EPA RMP)",
+  "regime_governs": "the standards that manage low-frequency, high-consequence events: process safety management, hazardous waste operations, permit-required confined spaces, lockout/tagout, hazard communication, and EPA's risk management programme rule.",
+  "reader_note": "These rules are unusually explicit about scope and about exemptions, and they are the rules most likely to contain genuine, simultaneous, irreconcilable requirements \u2014 a process safety management programme and a hazard communication programme can demand different things of the same employer at the same time. Read them for whether both can be obeyed together, not for whether they sound different.",
+  "parts": "29 CFR 1910 subparts G, Z; 40 CFR 112",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 53,
+      "passage_a": "> Table A.5.1\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as Germ Cell Mutagens That Would Trigger Classification of the Mixture",
+      "passage_b": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |\n|---|---|---|\n| Category 1 | Category 2 |  |\n| Category 1 Target organ toxicant | \u22651.0% |  |\n| Category 2 Target organ toxicant |  | \u22651.0% |"
+    },
+    {
+      "pair_id": 54,
+      "passage_a": "> #### A.1.3.6 Classification of Mixtures Based on Ingredients of the Mixture (Additivity Formula)",
+      "passage_b": "> A.1.3.6 Classification of mixtures based on ingredients of the mixture (additivity formula)"
+    },
+    {
+      "pair_id": 56,
+      "passage_a": "> | Category | Criteria |\n|---|---|\n| 1 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, spontaneously ignites; or the mean pressure rise time of a 1:1 mixture, by mass, of chemical and cellulose is less than that of a 1:1 mixture, by mass, of 50% perchloric acid and cellulose; |\n| 2 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 40% aqueous sodium chlorate solution and cellulose; and the criteria for Category 1 are not met; |\n| 3 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 65% aqueous nitric acid and cellulose; and the criteria for Categories 1 and 2 are not met. |",
+      "passage_b": "> Table B.13.1\u2014 Criteria for Oxidizing Liquids\n| Category | Criteria |\n|---|---|\n| 1 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, spontaneously ignites; or the mean pressure rise time of a 1:1 mixture, by mass, of chemical and cellulose is less than that of a 1:1 mixture, by mass, of 50% perchloric acid and cellulose; |\n| 2 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 40% aqueous sodium chlorate solution and cellulose; and the criteria for Category 1 are not met; |\n| 3 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 65% aqueous nitric acid and cellulose; and the criteria for Categories 1 and 2 are not met. |"
+    },
+    {
+      "pair_id": 59,
+      "passage_a": "> A.1.2.1 Substances can be allocated to one of four toxicity categories based on acute toxicity by the oral, dermal or inhalation route according to the numeric cut-off criteria as shown in Table A.1.1. Acute toxicity values are expressed as (approximate) LD50 (oral, dermal) or LC50 (inhalation) values or as acute toxicity estimates (ATE). See the footnotes following Table A.1.1 for further explanation on the application of these values.",
+      "passage_b": "> A.1.2.1 Substances can be allocated to one of four hazard categories based on acute toxicity by the oral, dermal or inhalation route according to the numeric cut-off criteria as shown in Table A.1.1. Acute toxicity values are expressed as (approximate) LD50 (oral, dermal) or LC50 (inhalation) values or as acute toxicity estimates (ATE). While some in vivo methods determine LD50/LC50 values directly, other newer in vivo methods (e.g., using fewer animals) consider other indicators of acute toxicity, such as significant clinical signs of toxicity, which are used by reference to assign the hazard category. See the footnotes following Table A.1.1 for further explanation on the application of these values."
+    },
+    {
+      "pair_id": 61,
+      "passage_a": "> Table B.12.1\u2014Criteria for Chemicals Which, in Contact With Water, Emit Flammable Gases",
+      "passage_b": "> #### B.12 Chemicals Which, in Contact With Water, Emit Flammable Gases"
+    },
+    {
+      "pair_id": 66,
+      "passage_a": "> #### Appendix F to \u00a7 1910.146 - Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)",
+      "passage_b": "> #### Appendix F to \u00a7 1910.146\u2014Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)"
+    },
+    {
+      "pair_id": 67,
+      "passage_a": "> #### Appendix D to \u00a7 1910.1200\u2014Safety Data Sheets (Mandatory)",
+      "passage_b": "> #### Appendix D to \u00a7 1910.1200 Safety Data Sheet (Mandatory)"
+    },
+    {
+      "pair_id": 70,
+      "passage_a": "> A.2.2.2.2 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance might be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses could also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system.",
+      "passage_b": "> A.2.2.2.2.4 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance should be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score according to test method used throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses should also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system."
+    },
+    {
+      "pair_id": 74,
+      "passage_a": "> #### A.3.4.1 Classification of Mixtures When Data Are Available for the Complete Mixture",
+      "passage_b": "> A.4.3.1 Classification of Mixtures When Data Are Available for the Complete Mixture"
+    },
+    {
+      "pair_id": 75,
+      "passage_a": "> A.2.3.3 The tiered approach explains how to organize information on a substance and to make a weight-of-evidence decision about hazard assessment and hazard classification.",
+      "passage_b": "> A.3.2.2.7 The tiered approach explains how to organize existing information and to make a weight-of-evidence decision about hazard assessment and hazard classification. Although information might be gained from the evaluation of single parameters within a tier, consideration should be given to the totality of existing information and making an overall weight of evidence determination. This is especially true when there is conflict in information available."
+    },
+    {
+      "pair_id": 76,
+      "passage_a": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2",
+      "passage_b": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |\n|---|---|---|\n| Category 1 | Category 2 |  |\n| Category 1 Target organ toxicant | \u22651.0% |  |\n| Category 2 Target organ toxicant |  | \u22651.0% |"
+    },
+    {
+      "pair_id": 77,
+      "passage_a": "> For mixtures classified in accordance with A.1, A.2, A.3, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1.",
+      "passage_b": "> For mixtures classified in accordance with A.1, A.2, A.3, A.4, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1."
+    }
+  ]
+}

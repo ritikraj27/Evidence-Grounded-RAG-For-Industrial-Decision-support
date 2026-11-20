@@ -1,0 +1,28 @@
+{
+  "annotator": "judge_b_frontier",
+  "model": "claude-opus-5-5",
+  "rubric_version": "mtp.contradiction-labels/2",
+  "blind": true,
+  "labels": {
+    "0": "contradiction",
+    "1": "contradiction",
+    "2": "contradiction",
+    "3": "contradiction",
+    "4": "contradiction",
+    "5": "contradiction",
+    "6": "granularity",
+    "7": "granularity",
+    "8": "supersession",
+    "9": "supersession",
+    "10": "term_mismatch",
+    "11": "term_mismatch",
+    "12": "no_conflict",
+    "13": "no_conflict"
+  },
+  "notes": {
+    "11": "Same facility but unrelated subjects (aisle width vs PPE requirement) - term_mismatch.",
+    "7": "Whole (plant throughput) vs part (paint shop throughput) with equal values - granularity."
+  },
+  "raw_responses": {},
+  "unlabelled_pair_ids": []
+}

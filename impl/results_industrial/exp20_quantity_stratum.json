@@ -1,0 +1,224 @@
+{
+  "schema": "mtp.quantity-stratum/1",
+  "profile": "regulatory",
+  "n_measurement_terms": 64,
+  "n_cross_document_conflicts": 1776,
+  "conflicts_by_term": {
+    "action level": 3,
+    "amount": 8,
+    "boiling point": 20,
+    "capacity": 241,
+    "concentration": 229,
+    "design pressure": 6,
+    "diameter": 9,
+    "distance": 100,
+    "dose": 46,
+    "emissions": 9,
+    "employees": 33,
+    "exposure": 92,
+    "flash point": 9,
+    "flashpoint": 1,
+    "flow rate": 5,
+    "height": 17,
+    "level": 246,
+    "limit": 57,
+    "load": 11,
+    "pressure": 333,
+    "quantity": 28,
+    "rating": 1,
+    "separation": 5,
+    "size": 3,
+    "speed": 2,
+    "storage": 17,
+    "temperature": 173,
+    "thickness": 13,
+    "vapor": 6,
+    "vapor pressure": 19,
+    "velocity": 2,
+    "volume": 12,
+    "weight": 15,
+    "width": 3,
+    "yield": 2
+  },
+  "n_pairs_scored": 119,
+  "n_pairs_the_quantity_branch_fired_on": 13,
+  "n_pairs_in_the_judge_sheet": 60,
+  "fired_examples": [
+    {
+      "a": "have adverse reproductive effects. (Ref. 5.1) > #### 1.1.2. Potential workplace exposure > About 90% of the annual production of BD is used to manufacture styrene-butadiene rubber and Polybutadiene ru",
+      "b": "> 5. Solubility in water: Insoluble. > B. Arsenic Trioxide. > 1. Formula: As203, (As406). > 2. Appearance: White powder. > 3. Melting point: 315C. > 4. Specific Gravity (H20 = 1):3.74. > 5. Solubility",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "108.9",
+            "760"
+          ],
+          "values_b": [
+            "130.2"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "have adverse reproductive effects. (Ref. 5.1) > #### 1.1.2. Potential workplace exposure > About 90% of the annual production of BD is used to manufacture styrene-butadiene rubber and Polybutadiene ru",
+      "b": "1910.1045\u2014Substance Technical Guidelines for Acrylonitrile > #### i. Physical and Chemical Data > A. Substance identification: 1. Synonyms: AN; VCN; vinyl cyanide; propenenitrile; cyanoethylene; Acryl",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "108.9",
+            "760"
+          ],
+          "values_b": [
+            "171",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "have adverse reproductive effects. (Ref. 5.1) > #### 1.1.2. Potential workplace exposure > About 90% of the annual production of BD is used to manufacture styrene-butadiene rubber and Polybutadiene ru",
+      "b": "> B. Emergency clean-up. Wear self-contained breathing apparatus and fully clothe the body in the appropriate personal protective clothing and equipment. > #### Appendix B to \u00a7 1910.1050\u2014Substance Tec",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "108.9",
+            "760"
+          ],
+          "values_b": [
+            "398",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "have adverse reproductive effects. (Ref. 5.1) > #### 1.1.2. Potential workplace exposure > About 90% of the annual production of BD is used to manufacture styrene-butadiene rubber and Polybutadiene ru",
+      "b": "> B. Emergency clean-up. Wear self-contained breathing apparatus and fully clothe the body in the appropriate personal protective clothing and equipment. > #### Appendix B to \u00a7 1910.1050\u2014Substance Tec",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "108.9",
+            "760"
+          ],
+          "values_b": [
+            "398",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "have adverse reproductive effects. (Ref. 5.1) > #### 1.1.2. Potential workplace exposure > About 90% of the annual production of BD is used to manufacture styrene-butadiene rubber and Polybutadiene ru",
+      "b": "1910.1045\u2014Substance Technical Guidelines for Acrylonitrile > #### i. Physical and Chemical Data > A. Substance identification: 1. Synonyms: AN; VCN; vinyl cyanide; propenenitrile; cyanoethylene; Acryl",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "108.9",
+            "760"
+          ],
+          "values_b": [
+            "171",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "> 5. Solubility in water: Insoluble. > B. Arsenic Trioxide. > 1. Formula: As203, (As406). > 2. Appearance: White powder. > 3. Melting point: 315C. > 4. Specific Gravity (H20 = 1):3.74. > 5. Solubility",
+      "b": "1910.1045\u2014Substance Technical Guidelines for Acrylonitrile > #### i. Physical and Chemical Data > A. Substance identification: 1. Synonyms: AN; VCN; vinyl cyanide; propenenitrile; cyanoethylene; Acryl",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "130.2"
+          ],
+          "values_b": [
+            "171",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "> 5. Solubility in water: Insoluble. > B. Arsenic Trioxide. > 1. Formula: As203, (As406). > 2. Appearance: White powder. > 3. Melting point: 315C. > 4. Specific Gravity (H20 = 1):3.74. > 5. Solubility",
+      "b": "> B. Emergency clean-up. Wear self-contained breathing apparatus and fully clothe the body in the appropriate personal protective clothing and equipment. > #### Appendix B to \u00a7 1910.1050\u2014Substance Tec",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "130.2"
+          ],
+          "values_b": [
+            "398",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "> 5. Solubility in water: Insoluble. > B. Arsenic Trioxide. > 1. Formula: As203, (As406). > 2. Appearance: White powder. > 3. Melting point: 315C. > 4. Specific Gravity (H20 = 1):3.74. > 5. Solubility",
+      "b": "> B. Emergency clean-up. Wear self-contained breathing apparatus and fully clothe the body in the appropriate personal protective clothing and equipment. > #### Appendix B to \u00a7 1910.1050\u2014Substance Tec",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "130.2"
+          ],
+          "values_b": [
+            "398",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "> 5. Solubility in water: Insoluble. > B. Arsenic Trioxide. > 1. Formula: As203, (As406). > 2. Appearance: White powder. > 3. Melting point: 315C. > 4. Specific Gravity (H20 = 1):3.74. > 5. Solubility",
+      "b": "1910.1045\u2014Substance Technical Guidelines for Acrylonitrile > #### i. Physical and Chemical Data > A. Substance identification: 1. Synonyms: AN; VCN; vinyl cyanide; propenenitrile; cyanoethylene; Acryl",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "130.2"
+          ],
+          "values_b": [
+            "171",
+            "760"
+          ]
+        }
+      ]
+    },
+    {
+      "a": "1910.1045\u2014Substance Technical Guidelines for Acrylonitrile > #### i. Physical and Chemical Data > A. Substance identification: 1. Synonyms: AN; VCN; vinyl cyanide; propenenitrile; cyanoethylene; Acryl",
+      "b": "> B. Emergency clean-up. Wear self-contained breathing apparatus and fully clothe the body in the appropriate personal protective clothing and equipment. > #### Appendix B to \u00a7 1910.1050\u2014Substance Tec",
+      "conflicts": [
+        {
+          "quantity": "boiling point",
+          "unit": "",
+          "values_a": [
+            "171",
+            "760"
+          ],
+          "values_b": [
+            "398",
+            "760"
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "the search groups every (measurement term, value) pair in the corpus and keeps the terms whose values differ across documents. It is exhaustive over the corpus, so the count is exact rather than sampled; the detector is then put to the candidates it produced. The search is deliberately over-inclusive -- two passages about different boilers share the word 'pressure' -- so the count is an upper bound on the conflicts that exist, and the judge sheet is what separates them."
+}

@@ -1,0 +1,18 @@
+{
+  "colpali": {"arxiv": "ti:\"ColPali\"", "crossref": "ColPali Efficient Document Retrieval Vision Language Models"},
+  "visrag": {"arxiv": "ti:\"VisRAG\"", "crossref": "VisRAG Vision-based Retrieval-augmented Generation multi-modality documents"},
+  "colqwen": {"arxiv": "ti:\"ColQwen\"", "crossref": "ColQwen Enhancing Document Retrieval with Visual Language Model"},
+  "docvqa": {"arxiv": "ti:\"DocVQA\"", "crossref": "DocVQA large-scale multilingual visual question answering document images"},
+  "chartqa": {"arxiv": "ti:\"ChartQA\"", "crossref": "ChartQA benchmark question answering about charts visual logical reasoning"},
+  "infovqa": {"arxiv": "ti:\"InfographicVQA\"", "crossref": "InfographicVQA visual question answering infographics"},
+  "tatdqa": {"arxiv": "ti:\"TAT-DQA\"", "crossref": "TAT-DQA multi-shot tabular question answering financial documents"},
+  "mmlongbenchdoc": {"arxiv": "ti:\"MMLongBench-Doc\"", "crossref": "MMLongBench-Doc benchmarking long-context document understanding"},
+  "omnidocbench": {"arxiv": "ti:\"OmniDocBench\"", "crossref": "OmniDocBench benchmark evaluating document parsing"},
+  "raptor": {"arxiv": "ti:\"RAPTOR\"", "crossref": "RAPTOR recursive abstractive processing tree-organized retrieval"},
+  "latechunking": {"arxiv": "ti:\"Late Chunking\"", "crossref": "Late Chunking contextual chunk embeddings long-context embedding models"},
+  "tablerag": {"arxiv": "all:\"TableRAG\"", "crossref": "TableRAG table retrieval augmented generation"},
+  "colnest": {"arxiv": "ti:\"ColNEST\"", "crossref": "ColNEST visually nested multimodal embedding document retrieval"},
+  "vidore": {"arxiv": "all:\"ViDoRe\" AND all:\"benchmark\"", "crossref": "ViDoRe visual document retrieval benchmark"},
+  "charxiv": {"arxiv": "ti:\"CharXiv\"", "crossref": "CharXiv chart understanding reasoning benchmark"},
+  "duedoc": {"arxiv": "ti:\"DUDE\" AND all:\"document\"", "crossref": "DUDE document understanding dataset evaluation"}
+}

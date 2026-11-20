@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<DIV6 N="F" TYPE="SUBPART" VOLUME="7" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-40/part-60/subpart-F&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;40 CFR Part 60 Subpart F&amp;quot;}">
+<HEAD>Subpart F&#x2014;Standards of Performance for Portland Cement Plants</HEAD>
+<DIV8 N="60.60" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.60&quot;,&quot;citation&quot;:&quot;40 CFR 60.60&quot;}">
+<HEAD>&#xA7; 60.60 Applicability and designation of affected facility.</HEAD>
+<P>(a) The provisions of this subpart are applicable to the following affected facilities in portland cement plants: Kiln, clinker cooler, raw mill system, finish mill system, raw mill dryer, raw material storage, clinker storage, finished product storage, conveyor transfer points, bagging and bulk loading and unloading systems.</P>
+<P>(b) Any facility under paragraph (a) of this section that commences construction or modification after August 17, 1971, is subject to the requirements of this subpart.</P>
+<CITA TYPE="N">[42 FR 37936, July 25, 1977]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.61" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.61&quot;,&quot;citation&quot;:&quot;40 CFR 60.61&quot;}">
+<HEAD>&#xA7; 60.61 Definitions.</HEAD>
+<P>As used in this subpart, all terms not defined herein shall have the meaning given them in the Act and in subpart A of this part.</P>
+<P>(a) <I>Portland cement plant</I> means any facility manufacturing portland cement by either the wet or dry process.</P>
+<P>(b) <I>Bypass</I> means any system that prevents all or a portion of the kiln or clinker cooler exhaust gases from entering the main control device and ducts the gases through a separate control device. This does not include emergency systems designed to duct exhaust gases directly to the atmosphere in the event of a malfunction of any control device controlling kiln or clinker cooler emissions.</P>
+<P>(c) <I>Bypass stack</I> means the stack that vents exhaust gases to the atmosphere from the bypass control device.</P>
+<P>(d) <I>Monovent</I> means an exhaust configuration of a building or emission control device (e.g., positive-pressure fabric filter) that extends the length of the structure and has a width very small in relation to its length (i.e., length to width ratio is typically greater than 5:1). The exhaust may be an open vent with or without a roof, louvered vents, or a combination of such features.</P>
+<P>(e) <I>Excess emissions</I> means, with respect to this subpart, results of any required measurements outside the applicable range (e.g., emissions limitations, parametric operating limits) that is permitted by this subpart. The values of measurements will be in the same units and averaging time as the values specified in this subpart for the limitations.</P>
+<P>(f) <I>Operating day</I> means a 24-hour period beginning at 12:00 midnight during which the kiln produces clinker at any time. For calculating 30 day rolling average emissions, an <I>operating day</I> does not include the hours of operation during startup or shutdown.</P>
+<P>(g) <I>Rolling average</I> means the weighted average of all data, meeting QA/QC requirements or otherwise normalized, collected during the applicable averaging period. The period of a rolling average stipulates the frequency of data averaging and reporting. To demonstrate compliance with an operating parameter a 30-day rolling average period requires calculation of a new average value each operating day and shall include the average of all the hourly averages of the specific operating parameter. For demonstration of compliance with an emissions limit based on pollutant concentration, a 30-day rolling average is comprised of the average of all the hourly average concentrations over the previous 30 operating days. For demonstration of compliance with an emissions limit based on lbs-pollutant per production unit, the 30-day rolling average is calculated by summing the hourly mass emissions over the previous 30 operating days, then dividing that sum by the total production during the same period.</P>
+<P>(h) <I>Run average</I> means the average of the recorded parameter values for a run.</P>
+<CITA TYPE="N">[36 FR 24877, Dec. 23, 1971, as amended at 39 FR 20793, June 13, 1974; 53 FR 50363, Dec. 14, 1988; 78 FR 10032, Feb. 12, 2013; 80 FR 44776, July 27, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.62" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.62&quot;,&quot;citation&quot;:&quot;40 CFR 60.62&quot;}">
+<HEAD>&#xA7; 60.62 Standards.</HEAD>
+<P>(a) On and after the date on which the performance test required to be conducted by &#xA7; 60.8 is completed, you may not discharge into the atmosphere from any kiln any gases which:</P>
+<P>(1) Contain particulate matter (PM) in excess of:</P>
+<P>(i) 0.30 pounds per ton of feed (dry basis) to the kiln for kilns constructed, reconstructed, or modified after August 17, 1971 but on or before June 16, 2008.</P>
+<P>(ii) 0.02 pound per ton of clinker if construction or reconstruction of the kiln commenced after June 16, 2008.</P>
+<P>(iii) Kilns that have undergone a modification may not discharge into the atmosphere any gases which contain PM in excess of 0.07 pound per ton of clinker.</P>
+<P>(2) Exhibit greater than 20 percent opacity for kilns constructed, reconstructed, or modified after August 17, 1971 but on or before June 16, 2008, except that this opacity limit does not apply to any kiln subject to a PM limit in paragraph (a)(1) of this section that uses a PM continuous parametric monitoring system (CPMS).</P>
+<P>(3) Exceed 1.50 pounds of nitrogen oxide (NO<E T="52">X</E>) per ton of clinker on a 30-operating day rolling average if construction, reconstruction, or modification of the kiln commences after June 16, 2008, except this limit does not apply to any alkali bypass installed on the kiln. An operating day includes all valid data obtained in any daily 24-hour period during which the kiln operates and excludes any measurements made during the daily 24-hour period when the kiln was not operating.</P>
+<P>(4) Exceed 0.4 pounds of sulfur dioxide (SO<E T="52">2</E>) per ton of clinker on a 30-operating day rolling average if construction, reconstruction, or modification commences after June 16, 2008, unless you are demonstrating a 90 percent SO<E T="52">2</E> emissions reduction measured across the SO<E T="52">2</E> control device. An operating day includes all valid data obtained in any daily 24-hour period during which the kiln operates, and excludes any measurements made during the daily 24-hour period when the kiln was not operating.</P>
+<P>(b) On and after the date on which the performance test required to be conducted by &#xA7; 60.8 is completed, you may not discharge into the atmosphere from any clinker cooler any gases which:</P>
+<P>(1) Contain PM in excess of:</P>
+<P>(i) 0.02 pound per ton of clinker if construction or reconstruction of the clinker cooler commences after June 16, 2008.</P>
+<P>(ii) 0.07 pound per ton of clinker if the clinker cooler has undergone a modification.</P>
+<P>(iii) 0.10 lb per ton of feed (dry basis) for clinker coolers constructed, reconstructed, or modified after August 17, 1971, but on or before June 16, 2008.</P>
+<P>(iv) 10 percent opacity for clinker coolers constructed, reconstructed, or modified after August 17, 1971, but on or before June 16, 2008, except that this opacity limit does not apply to any clinker cooler subject to a PM limit in paragraph (b)(1) of this section that uses a PM continuous parametric monitoring system (CPMS).</P>
+<P>(2) If the kiln and clinker cooler exhaust are combined for energy efficiency purposes and sent to a single control device, the appropriate kiln PM limit may be adjusted using the procedures in &#xA7; 63.1343(b) of this chapter.</P>
+<P>(3) If the kiln has a separated alkali bypass stack and/or an inline coal mill with a separate stack, you must combine the PM emissions from the bypass stack and/or the inline coal mill stack with the PM emissions from the main kiln exhaust to determine total PM emissions.</P>
+<P>(c) On and after the date on which the performance test required to be conducted by &#xA7; 60.8 is completed, you may not discharge into the atmosphere from any affected facility other than the kiln and clinker cooler any gases which exhibit 10 percent opacity, or greater.</P>
+<P>(d) If you have an affected source subject to this subpart with a different emissions limit or requirement for the same pollutant under another regulation in title 40 of this chapter, once you are in compliance with the most stringent emissions limit or requirement, you are not subject to the less stringent requirement. Until you are in compliance with the more stringent limit, the less stringent limit continues to apply.</P>
+<P>(e) The compliance date for all revised monitoring and recordkeeping requirements contained in this rule will be the same as listed in 63.1351(c) unless you commenced construction as of June 16, 2008, at which time the compliance date is November 8, 2010 or upon startup, whichever is later.</P>
+<CITA TYPE="N">[75 FR 55034, Sept. 9, 2010, as amended at 78 FR 10032, Feb. 12, 2013; 80 FR 44777, July 27, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.63" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.63&quot;,&quot;citation&quot;:&quot;40 CFR 60.63&quot;}">
+<HEAD>&#xA7; 60.63 Monitoring of operations.</HEAD>
+<P>(a) [Reserved]</P>
+<P>(b) <I>Clinker production monitoring requirements.</I> For any kiln subject to an emissions limitation on PM, NO<E T="52">X</E>, or SO<E T="52">2</E> emissions (lb/ton of clinker), you must:</P>
+<P>(1) Determine hourly clinker production by one of two methods:</P>
+<P>(i) Install, calibrate, maintain, and operate a permanent weigh scale system to measure and record weight rates of the amount of clinker produced in tons of mass per hour. The system of measuring hourly clinker production must be maintained within &#xB1;5 percent accuracy or</P>
+<P>(ii) Install, calibrate, maintain, and operate a permanent weigh scale system to measure and record weight rates of the amount of feed to the kiln in tons of mass per hour. The system of measuring feed must be maintained within &#xB1;5 percent accuracy. Calculate your hourly clinker production rate using a kiln specific feed-to-clinker ratio based on reconciled clinker production rates determined for accounting purposes and recorded feed rates. This ratio should be updated monthly. Note that if this ratio changes at clinker reconciliation, you must use the new ratio going forward, but you do not have to retroactively change clinker production rates previously estimated.</P>
+<P>(iii) For each kiln operating hour for which you do not have data on clinker production or the amount of feed to the kiln, use the value from the most recent previous hour for which valid data are available.</P>
+<P>(2) Determine, record, and maintain a record of the accuracy of the system of measuring hourly clinker production rates or feed rates before initial use (for new sources) or by the effective compliance date of this rule (for existing sources). During each quarter of source operation, you must determine, record, and maintain a record of the ongoing accuracy of the system of measuring hourly clinker production rates or feed rates.</P>
+<P>(3) If you measure clinker production directly, record the daily clinker production rates; if you measure the kiln feed rates and calculate clinker production, record the daily kiln feed and clinker production rates.</P>
+<P>(c) <I>PM Emissions Monitoring Requirements.</I> (1) For each kiln or clinker cooler subject to a PM emissions limit in &#xA7;&#xA7; 60.62(a)1(ii) and 60.62(a)1(iii) or &#xA7;&#xA7; 60.62(b)(1)(i) and 60.62(b)(1)(ii), you must demonstrate compliance through an initial performance test. You will conduct your performance test using Method 5 or Method 5I at appendix A-3 to part 60 of this chapter. You must also monitor continuous performance through use of a PM CPMS.</P>
+<P>(2) For your PM CPMS, you will establish a site-specific operating limit. If your PM performance test demonstrates your PM emission levels to be below 75 percent of your emission limit you will use the average PM CPMS value recorded during the PM compliance test, the milliamp equivalent of zero output from your PM CPMS, and the average PM result of your compliance test to establish your operating limit equivalent to 75 percent of the standard. If your PM compliance test demonstrates your PM emission levels to be at or above 75 percent of your emission limit you will use the average PM CPMS value recorded during the PM compliance test demonstrating compliance with the PM limit to establish your operating limit. You will use the PM CPMS to demonstrate continuous compliance with your operating limit. You must repeat the performance test annually and reassess and adjust the site-specific operating limit in accordance with the results of the performance test.</P>
+<P>(i) Your PM CPMS must provide a 4-20 milliamp or digital signal output and the establishment of its relationship to manual reference method measurements must be determined in units of milliamps or the monitors digital equivalent.</P>
+<P>(ii) Your PM CPMS operating range must be capable of reading PM concentrations from zero to a level equivalent to two times your allowable emission limit. If your PM CPMS is an auto-ranging instrument capable of multiple scales, the primary range of the instrument must be capable of reading PM concentration from zero to a level equivalent to two times your allowable emission limit.</P>
+<P>(iii) During the initial performance test or any such subsequent performance test that demonstrates compliance with the PM limit, record and average all milliamp or digital output values from the PM CPMS for the periods corresponding to the compliance test runs (<I>e.g.,</I> average all your PM CPMS output values for three corresponding 2-hour Method 5I test runs).</P>
+<P>(3) Determine your operating limit as specified in paragraphs (c)(4)(i) through (c)(5) of this section. If your PM performance test demonstrates your PM emission levels to be below 75 percent of your emission limit, you will use the average PM CPMS value recorded during the PM compliance test, the milliamp or digital equivalent of zero output from your PM CPMS, and the average PM result of your compliance test to establish your operating limit. If your PM compliance test demonstrates your PM emission levels to be at or above 75 percent of your emission limit, you will use the average PM CPMS value recorded during the PM compliance test to establish your operating limit. You must verify an existing or establish a new operating limit after each repeated performance test. You must repeat the performance test at least annually and reassess and adjust the site-specific operating limit in accordance with the results of the performance test.</P>
+<P>(4) If the average of your three Method 5 or 5I compliance test runs are below 75 percent of your PM emission limit, you must calculate an operating limit by establishing a relationship of PM CPMS signal to PM concentration using the PM CPMS instrument zero, the average PM CPMS values corresponding to the three compliance test runs, and the average PM concentration from the Method 5 or 5I compliance test with the procedures in (c)(4)(i)(A) through (D) of this section.</P>
+<P>(i) Determine your PM CPMS instrument zero output with one of the following procedures.</P>
+<P>(A) Zero point data for in-situ instruments should be obtained by removing the instrument from the stack and monitoring ambient air on a test bench.</P>
+<P>(B) Zero point data for extractive instruments should be obtained by removing the extractive probe from the stack and drawing in clean ambient air.</P>
+<P>(C) The zero point can also can be obtained by performing manual reference method measurements when the flue gas is free of PM emissions or contains very low PM concentrations (e.g., when your process is not operating, but the fans are operating or your source is combusting only natural gas) and plotting these with the compliance data to find the zero intercept.</P>
+<P>(D) If none of the steps in paragraphs (c)(4)(i)(A) through (C) of this section are possible, you must use a zero output value provided by the manufacturer.</P>
+<P>(ii) Determine your PM CPMS instrument average in milliamps or digital equivalent and the average of your corresponding three PM compliance test runs, using equation 1.</P>
+<img src="/graphics/er27jy15.006.gif"/>
+<EXTRACT>
+<FP-2>Where:
+</FP-2>
+<FP-2>X<E T="52">1</E> = The PM CPMS data points for the three runs constituting the performance test,
+</FP-2>
+<FP-2>Y<E T="52">1</E> = The PM concentration value for the three runs constituting the performance test, and
+</FP-2>
+<FP-2>n = The number of data points.</FP-2></EXTRACT>
+<P>(iii) With your PM CPMS instrument zero expressed in milliamps or a digital value, your three run average PM CPMS milliamp or digital signal value, and your three run average PM concentration from your three PM performance test runs, determine a relationship of lb/ton-clinker per milliamp or digital signal with equation 2.</P>
+<img src="/graphics/er27jy15.007.gif"/>
+<EXTRACT>
+<FP-2>Where:
+</FP-2>
+<FP-2>R = The relative lb/ton clinker per milliamp or digital equivalent for your PM CPMS.
+</FP-2>
+<FP-2>Y<E T="52">1</E> = The three run average PM lb/ton clinker.
+</FP-2>
+<FP-2>X<E T="52">1</E> = The three run average milliamp or digital signal output from your PM CPMS.
+</FP-2>
+<FP-2>z = The milliamp or digital equivalent of your instrument zero determined from (c)(4)(i) of this section.</FP-2></EXTRACT>
+<P>(iv) Determine your source specific 30-day rolling average operating limit using the lb/ton-clinker per milliamp or digital signal value from Equation 2 above in Equation 3, below. This sets your operating limit at the PM CPMS output value corresponding to 75 percent of your emission limit.</P>
+<img src="/graphics/er27jy15.008.gif"/>
+<EXTRACT>
+<FP-2>Where:
+</FP-2>
+<FP-2>O<E T="52">l</E> = The operating limit for your PM CPMS on a 30-day rolling average, in milliamps or the digital equivalent.
+</FP-2>
+<FP-2>L = Your source emission limit expressed in lb/ton clinker.
+</FP-2>
+<FP-2>z = Your instrument zero in milliamps or a digital equivalent, determined from (1)(i).
+</FP-2>
+<FP-2>R = The relative lb/ton-clinker per milliamp or digital equivalent, for your PM CPMS, from Equation 2.</FP-2></EXTRACT>
+<P>(5) If the average of your three PM compliance test runs is at or above 75 percent of your PM emission limit, you must determine your operating limit by averaging the PM CPMS milliamp or digital equivalent output corresponding to your three PM performance test runs that demonstrate compliance with the emission limit using Equation 4.</P>
+<img src="/graphics/er27jy15.009.gif"/>
+<EXTRACT>
+<FP-2>Where:
+</FP-2>
+<FP-2>X<E T="52">1</E> = The PM CPMS data points for all runs i.
+</FP-2>
+<FP-2>n = The number of data points.
+</FP-2>
+<FP-2>O<E T="52">h</E> = Your site specific operating limit, in milliamps or digital equivalent.</FP-2></EXTRACT>
+<P>(6) To determine continuous compliance, you must record the PM CPMS output data for all periods when the process is operating, and use all the PM CPMS data for calculations when the source is not out-of-control. You must demonstrate continuous compliance by using all quality-assured hourly average data collected by the PM CPMS for all operating hours to calculate the arithmetic average operating parameter in units of the operating limit (milliamps or the digital equivalent) on a 30 operating day rolling average basis, updated at the end of each new kiln operating day. Use Equation 5 to determine the 30 kiln operating day average.</P>
+<img src="/graphics/er27jy15.010.gif"/>
+<EXTRACT>
+<FP-2>Where:
+</FP-2>
+<FP-2>Hpvi = The hourly parameter value for hour i.
+</FP-2>
+<FP-2>n = The number of valid hourly parameter values collected over the previous 30 kiln operating days.</FP-2></EXTRACT>
+<P>(7) Use EPA Method 5 or Method 5I of appendix A to part 60 of this chapter to determine PM emissions. For each performance test, conduct at least three separate runs each while the mill is on and the mill is off under the conditions that exist when the affected source is operating at the level reasonably expected to occur. Conduct each test run to collect a minimum sample volume of 2 dscm for determining compliance with a new source limit and 1 dscm for determining compliance with an existing source limit. Calculate the time weighted average of the results from three consecutive runs to determine compliance. You need not determine the particulate matter collected in the impingers (&#x201C;back half&#x201D;) of the Method 5 or Method 5I particulate sampling train to demonstrate compliance with the PM standards of this subpart. This shall not preclude the permitting authority from requiring a determination of the &#x201C;back half&#x201D; for other purposes.</P>
+<P>(8) For PM performance test reports used to set a PM CPMS operating limit, the electronic submission of the test report must also include the make and model of the PM CPMS instrument, serial number of the instrument, analytical principle of the instrument (<I>e.g.</I> beta attenuation), span of the instruments primary analytical range, milliamp or digital signal value equivalent to the instrument zero output, technique by which this zero value was determined, and the average milliamp or digital equivalent signals corresponding to each PM compliance test run.</P>
+<P>(d) You must install, operate, calibrate, and maintain a CEMS continuously monitoring and recording the concentration by volume of NO<E T="52">X</E> emissions into the atmosphere for any kiln subject to the NO<E T="52">X</E> emissions limit in &#xA7; 60.62(a)(3). If the kiln has an alkali bypass, NO<E T="52">X</E> emissions from the alkali bypass do not need to be monitored, and NO<E T="52">X</E> emission monitoring of the kiln exhaust may be done upstream of any commingled alkali bypass gases.</P>
+<P>(e) You must install, operate, calibrate, and maintain a CEMS for continuously monitoring and recording the concentration by volume of SO<E T="52">2</E> emissions into the atmosphere for any kiln subject to the SO<E T="52">2</E> emissions limit in &#xA7; 60.62(a)(4). If you are complying with the alternative 90 percent SO<E T="52">2</E> emissions reduction emissions limit, you must also continuously monitor and record the concentration by volume of SO<E T="52">2</E> present at the wet scrubber inlet.</P>
+<P>(f) The NO<E T="52">X</E> and SO<E T="52">2</E> CEMS required under paragraphs (d) and (e) of this section must be installed, operated and maintained according to Performance Specification 2 of appendix B of this part and the requirements in paragraphs (f)(1) through (5) of this section.</P>
+<P>(1) The span value of each NO<E T="52">X</E> CEMS monitor must be set at 125 percent of the maximum estimated hourly potential NO<E T="52">X</E> emission concentration that translates to the applicable emissions limit at full clinker production capacity.</P>
+<P>(2) You must conduct performance evaluations of each NO<E T="52">X</E> CEMS monitor according to the requirements in &#xA7; 60.13(c) and Performance Specification 2 of appendix B to this part. You must use Methods 7, 7A, 7C, 7D, or 7E of appendix A-4 to this part for conducting the relative accuracy evaluations. The method ASME PTC 19.10-1981, &#x201C;Flue and Exhaust Gas Analyses,&#x201D; (incorporated by reference&#x2014;see &#xA7; 60.17) is an acceptable alternative to Method 7 or 7C of appendix A-4 to this part.</P>
+<P>(3) The span value for the SO<E T="52">2</E> CEMS monitor is the SO<E T="52">2</E> emission concentration that corresponds to 125 percent of the applicable emissions limit at full clinker production capacity and the expected maximum fuel sulfur content.</P>
+<P>(4) You must conduct performance evaluations of each SO<E T="52">2</E> CEMS monitor according to the requirements in &#xA7; 60.13(c) and Performance Specification 2 of appendix B to this part. You must use Methods 6, 6A, or 6C of appendix A-4 to this part for conducting the relative accuracy evaluations. The method ASME PTC 19.10-1981, &#x201C;Flue and Exhaust Gas Analyses,&#x201D; (incorporated by reference&#x2014;see &#xA7; 60.17) is an acceptable alternative to Method 6 or 6A of appendix A-4 to this part.</P>
+<P>(5) You must comply with the quality assurance requirements in Procedure 1 of appendix F to this part for each NO<E T="52">X</E> and SO<E T="52">2</E> CEMS, including quarterly accuracy determinations for monitors, and daily calibration drift tests.</P>
+<P>(g) For each CPMS or CEMS required under paragraphs (c) through (e) of this section:</P>
+<P>(1) You must operate the monitoring system and collect data at all required intervals at all times the affected source is operating, except for periods of monitoring system malfunctions, repairs associated with monitoring system malfunctions, and required monitoring system quality assurance or quality control activities (including, as applicable, calibration checks and required zero and span adjustments).</P>
+<P>(2) You may not use data recorded during the monitoring system malfunctions, repairs associated with monitoring system malfunctions, or required monitoring system quality assurance or control activities in calculations used to report emissions or operating levels. A monitoring system malfunction is any sudden, infrequent, not reasonably preventable failure of the monitoring system to provide valid data. Monitoring system failures that are caused in part by poor maintenance or careless operation are not malfunctions. An owner or operator must use all the data collected during all other periods in reporting emissions or operating levels.</P>
+<P>(3) You must meet the requirements of &#xA7; 60.13(h) when determining the 1-hour averages of emissions data.</P>
+<P>(h) You must install, operate, calibrate, and maintain instruments for continuously measuring and recording the stack gas flow rate to allow determination of the pollutant mass emissions rate to the atmosphere for each kiln subject to the PM emissions limits in &#xA7; 60.62(a)(1)(ii) and (iii) and (b)(1)(i) and (ii), the NO<E T="52">X</E> emissions limit in &#xA7; 60.62(a)(3), or the SO<E T="52">2</E> emissions limit in &#xA7; 60.62(a)(4) according to the requirements in paragraphs (h)(1) through (10), where appropriate, of this section.</P>
+<P>(1) The owner or operator must install each sensor of the flow rate monitoring system in a location that provides representative measurement of the exhaust gas flow rate at the sampling location of the NO<E T="52">X</E> and/or SO<E T="52">2</E> CEMS, taking into account the manufacturer's recommendations. The flow rate sensor is that portion of the system that senses the volumetric flow rate and generates an output proportional to that flow rate.</P>
+<P>(2) The flow rate monitoring system must be designed to measure the exhaust gas flow rate over a range that extends from a value of at least 20 percent less than the lowest expected exhaust flow rate to a value of at least 20 percent greater than the highest expected exhaust gas flow rate.</P>
+<P>(3) The flow rate monitoring system must have a minimum accuracy of 5 percent of the flow rate.</P>
+<P>(4) The flow rate monitoring system must be equipped with a data acquisition and recording system that is capable of recording values over the entire range specified in paragraph (h)(2) of this section.</P>
+<P>(5) The signal conditioner, wiring, power supply, and data acquisition and recording system for the flow rate monitoring system must be compatible with the output signal of the flow rate sensors used in the monitoring system.</P>
+<P>(6) The flow rate monitoring system must be designed to measure a minimum of one cycle of operational flow for each successive 15-minute period.</P>
+<P>(7) The flow rate sensor must be able to determine the daily zero and upscale calibration drift (CD) (see sections 3.1 and 8.3 of Performance Specification 2 in appendix B to this part for a discussion of CD).</P>
+<P>(i) Conduct the CD tests at two reference signal levels, zero (e.g., 0 to 20 percent of span) and upscale (e.g., 50 to 70 percent of span).</P>
+<P>(ii) The absolute value of the difference between the flow monitor response and the reference signal must be equal to or less than 3 percent of the flow monitor span.</P>
+<P>(8) You must perform an initial relative accuracy test of the flow rate monitoring system according to section 8.2 of Performance Specification 6 of appendix B to this part, with the exceptions noted in paragraphs (h)(8)(i) and (ii) of this section.</P>
+<P>(i) The relative accuracy test is to evaluate the flow rate monitoring system alone rather than a continuous emission rate monitoring system.</P>
+<P>(ii) The relative accuracy of the flow rate monitoring system shall be no greater than 10 percent of the mean value of the reference method data.</P>
+<P>(9) You must verify the accuracy of the flow rate monitoring system at least once per year by repeating the relative accuracy test specified in paragraph (h)(8) of this section.</P>
+<P>(10) You must operate the flow rate monitoring system and record data during all periods of operation of the affected facility including periods of startup, shutdown, and malfunction, except for periods of monitoring system malfunctions, repairs associated with monitoring system malfunctions, and required monitoring system quality assurance or quality control activities (including, as applicable, calibration checks and required zero and span adjustments.</P>
+<P>(i) <I>Development and Submittal (Upon Request) of Monitoring Plans.</I> To demonstrate compliance with any applicable emissions limit through performance stack testing or other emissions monitoring (including PM CPMS), you must develop a site-specific monitoring plan according to the requirements in paragraphs (i)(1) through (4) of this section. This requirement also applies to you if you petition the EPA Administrator for alternative monitoring parameters under &#xA7; 60.13(3)(i). If you use a bag leak detector system (BLDS), you must also meet the requirements specified in paragraph &#xA7; 63.1350(m)(10) of this chapter.</P>
+<P>(1) For each continuous monitoring system (CMS) required in this section, you must develop, and submit to the permitting authority for approval upon request, a site-specific monitoring plan that addresses paragraphs (i)(1)(i) through (iii) of this section. You must submit this site-specific monitoring plan, if requested, at least 30 days before the initial performance evaluation of your CMS.</P>
+<P>(i) Installation of the CMS sampling probe or other interface at a measurement location relative to each affected process unit such that the measurement is representative of control of the exhaust emissions (e.g., on or downstream of the last control device);</P>
+<P>(ii) Performance and equipment specifications for the sample interface, the pollutant concentration or parametric signal analyzer, and the data collection and reduction systems; and</P>
+<P>(iii) Performance evaluation procedures and acceptance criteria (e.g., calibrations).</P>
+<P>(2) In your site-specific monitoring plan, you must also address paragraphs (i)(2)(i) through (iii) of this section.</P>
+<P>(i) Ongoing operation and maintenance procedures in accordance with the general requirements of &#xA7; 63.8(c)(1), (c)(3), and (c)(4)(ii);</P>
+<P>(ii) Ongoing data quality assurance procedures in accordance with the general requirements of &#xA7; 63.8(d); and</P>
+<P>(iii) Ongoing recordkeeping and reporting procedures in accordance with the general requirements of &#xA7; 63.10(c), (e)(1), and (e)(2)(i).</P>
+<P>(3) You must conduct a performance evaluation of each CMS in accordance with your site-specific monitoring plan.</P>
+<P>(4) You must operate and maintain the CMS in continuous operation according to the site-specific monitoring plan.</P>
+<CITA TYPE="N">[75 FR 55035, Sept. 9, 2010, as amended at 78 FR 10032, Feb. 12, 2013; 80 FR 44777, July 27, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.64" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.64&quot;,&quot;citation&quot;:&quot;40 CFR 60.64&quot;}">
+<HEAD>&#xA7; 60.64 Test methods and procedures.</HEAD>
+<P>(a) In conducting the performance tests and relative accuracy tests required in &#xA7; 60.8, you must use reference methods and procedures and the test methods in appendix A of this part or other methods and procedures as specified in this section, except as provided in &#xA7; 60.8(b).</P>
+<P>(b)(1)You must demonstrate compliance with the PM standards in &#xA7; 60.62 using EPA method 5 or method 5I.</P>
+<P>(2) Use Method 9 and the procedures in &#xA7; 60.11 to determine opacity.</P>
+<P>(3) Any sources other than kilns (including associated alkali bypass and clinker cooler) that are subject to the 10 percent opacity limit must follow the appropriate monitoring procedures in &#xA7; 63.1350(f), (m)(1)through (4), (10) and (11), (o), and (p) of this chapter.</P>
+<P>(c) Calculate and record the rolling 30 kiln operating day average emission rate daily of NO<E T="52">X</E> and SO<E T="52">2</E> according to the procedures in paragraph (c)(1) of this section.</P>
+<P>(1) Calculate the rolling 30 kiln operating day average emissions according to equation 6:</P>
+<img src="/graphics/er12fe13.005.gif"/>
+<EXTRACT>
+<FP>Where:
+</FP>
+<FP-2>E<E T="52">30D</E> = 30 kiln operating day average emission rate of NO<E T="52">X</E> or SO<E T="52">2</E>, lb/ton of clinker.
+</FP-2>
+<FP-2>C<E T="52">i</E> = Concentration of NO<E T="52">X</E> or SO<E T="52">2</E> for hour i, ppm.
+</FP-2>
+<FP-2>Q<E T="52">i</E> = Volumetric flow rate of effluent gas for hour i, where
+</FP-2>
+<FP-2>C<E T="52">i</E> and Q<E T="52">i</E> are on the same basis (either wet or dry), scf/hr.
+</FP-2>
+<FP-2>P = 30 days of clinker production during the same time period as the NO<E T="52">X</E> or SO<E T="52">2</E> emissions measured, tons.
+</FP-2>
+<FP-2>k = Conversion factor, 1.194 &#xD7; 10<E T="51">&#x2212;7</E> for NO<E T="52">X</E> and 1.660 &#xD7; 10<E T="51">&#x2212;7</E> for SO<E T="52">2</E>, lb/scf/ppm.
+</FP-2>
+<FP-2>n = Number of kiln operating hours over 30 kiln operating days.</FP-2></EXTRACT>
+<P>(2) [Reserved]</P>
+<P>(d)(1) Within 60 days after the date of completing each performance test (see &#xA7; 60.8) as required by this subpart you must submit the results of the performance tests conducted to demonstrate compliance under this subpart to the EPA's WebFIRE database by using the Compliance and Emissions Data Reporting Interface (CEDRI) that is accessed through the EPA's Central Data Exchange (CDX) (<I>http://www.epa.gov/cdx</I>). Performance test data must be submitted in the file format generated through use of the EPA's Electronic Reporting Tool (ERT) (see <I>http://www.epa.gov/ttn/chief/ert/index.html</I>). Only data collected using test methods on the ERT Web site are subject to this requirement for submitting reports electronically to WebFIRE. Owners or operators who claim that some of the information being submitted for performance tests is confidential business information (CBI) must submit a complete ERT file including information claimed to be CBI on a compact disk, flash drive or other commonly used electronic storage media to the EPA. The electronic media must be clearly marked as CBI and mailed to U.S. EPA/OAPQS/CORE CBI Office, Attention: WebFIRE Administrator, MD C404-02, 4930 Old Page Rd., Durham, NC 27703. The same ERT file with the CBI omitted must be submitted to the EPA via CDX as described earlier in this paragraph. At the discretion of the delegated authority, you must also submit these reports, including the CBI, to the delegated authority in the format specified by the delegated authority. For any performance test conducted using test methods that are not listed on the ERT Web site, you must submit the results of the performance test to the Administrator at the appropriate address listed in &#xA7; 63.13.</P>
+<P>(2) Within 60 days after the date of completing each CEMS performance evaluation test as defined in &#xA7; 63.2, you must submit relative accuracy test audit (RATA) data to the EPA's CDX by using CEDRI in accordance with paragraph (d)(1) of this section. Only RATA pollutants that can be documented with the ERT (as listed on the ERT Web site) are subject to this requirement. For any performance evaluations with no corresponding RATA pollutants listed on the ERT Web site, you must submit the results of the performance evaluation to the Administrator at the appropriate address listed in &#xA7; 63.13.</P>
+<P>(3) For PM performance test reports used to set a PM CPMS operating limit, the electronic submission of the test report must also include the make and model of the PM CPMS instrument, serial number of the instrument, analytical principle of the instrument (e.g. beta attenuation), span of the instruments primary analytical range, milliamp value equivalent to the instrument zero output, technique by which this zero value was determined, and the average milliamp signals corresponding to each PM compliance test run.</P>
+<P>(4) All reports required by this subpart not subject to the requirements in paragraphs (d)(1) and (2) of this section must be sent to the Administrator at the appropriate address listed in &#xA7; 63.13. The Administrator or the delegated authority may request a report in any form suitable for the specific case (e.g., by commonly used electronic media such as Excel spreadsheet, on CD or hard copy). The Administrator retains the right to require submittal of reports subject to paragraph (d)(1) and (2) of this section in paper format.</P>
+<CITA TYPE="N">[78 FR 10035, Feb. 12, 2013, as amended at 80 FR 44778, July 27, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.65" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.65&quot;,&quot;citation&quot;:&quot;40 CFR 60.65&quot;}">
+<HEAD>&#xA7; 60.65 Recordkeeping and reporting requirements.</HEAD>
+<P>(a) Each owner or operator required to install a CPMS or CEMS under sections &#xA7; 60.63(c) through (e) shall submit reports of excess emissions. The content of these reports must comply with the requirements in &#xA7; 60.7(c). Notwithstanding the provisions of &#xA7; 60.7(c), such reports shall be submitted semiannually.</P>
+<P>(b) Each owner or operator of facilities subject to the provisions of &#xA7; 60.63(c) through (e) shall submit semiannual reports of the malfunction information required to be recorded by &#xA7; 60.7(b). These reports shall include the frequency, duration, and cause of any incident resulting in deenergization of any device controlling kiln emissions or in the venting of emissions directly to the atmosphere.</P>
+<P>(c) The requirements of this section remain in force until and unless the Agency, in delegating enforcement authority to a State under section 111(c) of the Clean Air Act, 42 U.S.C. 7411, approves reporting requirements or an alternative means of compliance surveillance adopted by such States. In that event, affected sources within the State will be relieved of the obligation to comply with this section, provided that they comply with the requirements established by the State.</P>
+<CITA TYPE="N">[78 FR 10035, Feb. 12, 2013]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.66" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.66&quot;,&quot;citation&quot;:&quot;40 CFR 60.66&quot;}">
+<HEAD>&#xA7; 60.66 Delegation of authority.</HEAD>
+<P>(a) This subpart can be implemented and enforced by the U.S. EPA or a delegated authority such as a State, local, or Tribal agency. You should contact your U.S. EPA Regional Office to find out if this subpart is delegated to a State, local, or Tribal agency within your State.</P>
+<P>(b) In delegating implementation and enforcement authority to a State, local, or Tribal agency, the approval authorities contained paragraphs (b)(1) through (4) of this section are retained by the Administrator of the U.S EPA and are not transferred to the State, local, or Tribal agency.</P>
+<P>(1) Approval of an alternative to any non-opacity emissions standard.</P>
+<P>(2) Approval of a major change to test methods under &#xA7; 60.8(b). A &#x201C;major change to test method&#x201D; is defined in 40 CFR 63.90.</P>
+<P>(3) Approval of a major change to monitoring under &#xA7; 60.13(i). A &#x201C;major change to monitoring&#x201D; is defined in 40 CFR 63.90.</P>
+<P>(4) Approval of a major change to recordkeeping/reporting under &#xA7; 60.7(b) through (f). A &#x201C;major change to recordkeeping/reporting&#x201D; is defined in 40 CFR 63.90.</P>
+<CITA TYPE="N">[75 FR 55037, Sept. 9, 2010]
+</CITA>
+</DIV8>
+
+</DIV6>

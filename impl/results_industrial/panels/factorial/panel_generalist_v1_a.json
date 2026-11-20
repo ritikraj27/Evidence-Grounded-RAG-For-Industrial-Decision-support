@@ -1,0 +1,619 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "general",
+  "regime_title": "All four regimes, read without a specialism",
+  "regime_governs": "occupational safety, process safety, environmental control and hazardous-materials transport.",
+  "reader_note": "You are reading pairs from four different regulatory regimes without a specialism in any of them. Apply the rubric as written.",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 1,
+      "passage_a": "> C.3.3 Where an ingredient with unknown acute toxicity is used in a mixture at a concentration \u22651%, and the mixture is not classified based on testing of the mixture as a whole, a statement that X% of the mixture consists of ingredient(s) of unknown acute toxicity is required on the label.",
+      "passage_b": "> C.3.3 Where an ingredient with unknown acute toxicity is used in a mixture at a concentration \u22651%, and the mixture is not classified based on testing of the mixture as a whole, a statement that X% of the mixture consists of ingredient(s) of unknown acute toxicity (oral/dermal/inhalation) is required on the label and safety data sheet."
+    },
+    {
+      "pair_id": 2,
+      "passage_a": "(4) ASTM A100-74, Standard Specification for Ferrosilicon, IBR approved for \u00a7 60.261.",
+      "passage_b": "(4) ASTM A100-74, Standard Specification for Ferrosilicon; IBR approved for \u00a7 60.261."
+    },
+    {
+      "pair_id": 3,
+      "passage_a": "(57) ASTM D1266-98 (Reapproved 2003) \u03b5, 1 Standard Test Method for Sulfur in Petroleum Products (Lamp Method), IBR approved for \u00a7 60.4415(a).",
+      "passage_b": "(58) ASTM D1266-98 (Reapproved 2003) \u03b5, 1 Standard Test Method for Sulfur in Petroleum Products (Lamp Method); IBR approved for \u00a7\u00a7 60.4360a(c) and 60.4415(a)."
+    },
+    {
+      "pair_id": 4,
+      "passage_a": "> #### B.3.1 Definition",
+      "passage_b": "> #### B.3.1.1 Definition"
+    },
+    {
+      "pair_id": 5,
+      "passage_a": "> > #### Note:",
+      "passage_b": "> #### Note:"
+    },
+    {
+      "pair_id": 6,
+      "passage_a": "> Table B.6.1\u2014Criteria for Flammable Liquids",
+      "passage_b": "> #### Table B.6.1: Criteria for Flammable Liquids"
+    },
+    {
+      "pair_id": 7,
+      "passage_a": "| Maximum net quantity per package from Column 9a of the \u00a7 172.101 table | Maximum authorized net capacity of each inner packaging |  |\n|---|---|---|\n| Glass, earthenware or fiber inner packagings | Metal or plastic inner packagings |  |\n| Liquids: |  |  |\n| Not greater than 0.5L | 0.5L | 0.5L. |\n| Greater than 0.5L. not greater than lL | 0.5L | lL. |\n| Greater than 1L, not greater than 5L | 1L | 5L. |\n| Greater than 5L, not greater than 60L | 2.5L | 10L. |\n| Greater than 60L, not greater than 220L | 5L | 25L. |\n| Greater than 220L | No limit | No limit. |\n| Solids: |  |  |\n| Not greater than 5 kg | 0.5 kg | 1 kg. |\n| Greater than 5 kg, not greater than 25 kg | 1 kg | 2.5 kg. |\n| Greater than 25 kg, not greater than 200 kg | 5 kg | 10 kg. |\n| Greater than 200 kg | No limit | No limit. |",
+      "passage_b": "Table 2 to Paragraph (f)\u2014Maximum Net Capacity of Inner Packaging for Transportation on Cargo Aircraft\n| Maximum net quantity per package from Column 9b of \u00a7 172.101 table | Maximum authorized net capacity of each inner packaging |  |\n|---|---|---|\n| Glass, earthenware or fiber inner packagings | Metal or plastic inner packagings |  |\n| Liquids: |  |  |\n| Not greater than 2.5L | 1 L | 1 L |\n| Greater than 2.5L, not greater than 30L | 2.5 L | 2.5 L |\n| Greater than 30L, not greater than 60L | 5 L | 10 L |\n| Greater than 60L, not greater than 220L | 5 L | 25 L |\n| Class 9: UN1941, UN1990, UN2315, UN3082, UN3151, UN3334 | 10 L | Plastic: 30 L Metal: 40 L |\n| Solids: |  |  |\n| Not greater than 15 kg | 1 kg | 2.5 kg |\n| Greater than 15 kg, not greater than 50 kg | 2.5 kg | 5 kg |\n| Greater than 50 kg, not greater than 200 kg | 5 kg | 10 kg |\n| Class 9: UN1841, UN1931, UN2071, UN2216, UN2590, UN2969, UN3077, UN3152, UN3335, UN3432 | Glass or earthenware: 10 kg Fiber: 50 kg | 50 kg |"
+    },
+    {
+      "pair_id": 8,
+      "passage_a": "Detonators. Articles consisting of a small metal or plastic tube containing explosives such as lead azide, PETN, or combinations of explosives. They are designed to start a detonation train. They may be constructed to detonate instantaneously, or may contain a delay element. They may contain no more than 10 g of total explosives weight, excluding ignition and delay charges, per unit. The term includes: detonators for ammunition; detonators for blasting, both electric and non-electric; and detonating relays without flexible detonating cord.",
+      "passage_b": "Detonators. Articles consisting of a small metal or plastic tube containing explosives such as lead azide, PETN, or combinations of explosives. They are designed to start a detonation train. They may be constructed to detonate instantaneously or may contain a delay element. They may contain no more than 10 g of total explosives weight, excluding ignition and delay charges, per unit. The term includes: detonators for ammunition; detonators for blasting (electric, electronic, and non-electric); and detonating relays without flexible detonating cord."
+    },
+    {
+      "pair_id": 9,
+      "passage_a": "> Note: The available oxygen content (%) of an organic peroxide mixture is given by the formula:",
+      "passage_b": "> The available oxygen content (%) of an organic peroxide mixture is given by the formula:"
+    },
+    {
+      "pair_id": 10,
+      "passage_a": "> \u0394Hc = chemical heat of combustion (kJ/g);",
+      "passage_b": "> \u0394Hc(product) = specific heat of combustion (kJ/g) of the product;"
+    },
+    {
+      "pair_id": 11,
+      "passage_a": "(100) ASTM D2504-88 (Reapproved 1993), Noncondensable Gases in C3 and Lighter Hydrocarbon Products by Gas Chromatography, IBR approved for \u00a7\u00a7 60.485(g) and 60.485a(g).",
+      "passage_b": "(104) ASTM D2504-88 (Reapproved 1993), Noncondensable Gases in C3 and Lighter Hydrocarbon Products by Gas Chromatography; IBR approved for \u00a7\u00a7 60.485(g) and 60.485a(g)."
+    },
+    {
+      "pair_id": 12,
+      "passage_a": "> (b) Non-elevated - a permit space with the entrance portal located less than 4 feet above grade. This type of space will allow the rescue team to transport an injured employee normally.",
+      "passage_b": "> (b) Non-elevated\u2014a permit space with the entrance portal located less than 4 feet above grade. This type of space will allow the rescue team to transport an injured employee normally."
+    },
+    {
+      "pair_id": 13,
+      "passage_a": "(5) The following square-on-point mark must be displayed on the outer packaging on a background of contrasting color. The width of the line forming the border must be at least 2 mm (0.08 inches) and the letters and numbers must be at least 6 mm (0.24 inches) high. The size of the mark must be such that no side of the diamond is less than 50 mm (1.97 inches) in length as measured from the outside of the lines forming the border. The proper shipping name \u201cBiological substances, Category B\u201d must be marked on the outer packaging adjacent to the diamond-shaped mark in letters that are at least 6 mm (0.24 inches) high.",
+      "passage_b": "(5) The following square-on-point mark must be displayed on the outer packaging on a background of contrasting color. The width of the line forming the border must be at least 2 mm (0.08 inches) and the letters and numbers must be at least 6 mm (0.24 inches) high. The size of the mark must be such that no side of the diamond is less than 50 mm (1.97 inches) in length as measured from the outside of the lines forming the border. For transportation by aircraft, the entire mark must appear on one side of the package. The proper shipping name \u201cBiological substances, Category B\u201d must be marked on the outer packaging adjacent to the diamond-shaped mark in letters that are at least 6 mm (0.24 inches) high."
+    },
+    {
+      "pair_id": 14,
+      "passage_a": "(35) ASTM D388-95, Standard Specification for Classification of Coals by Rank, IBR approved for \u00a7\u00a7 60.41, 60.45(f), 60.41Da, 60.41b, 60.41c, and 60.251.",
+      "passage_b": "(35) ASTM D388-91, Standard Specification for Classification of Coals by Rank; IBR approved for \u00a7\u00a7 60.41; 60.45(f); 60.41Da; 60.41b; 60.41c; 60.251."
+    },
+    {
+      "pair_id": 15,
+      "passage_a": "> A.3.3.1 Existing human and animal data should be the first line of analysis, as they give information directly relevant to effects on the eye. Possible skin corrosion shall be evaluated prior to consideration of serious eye damage/eye irritation in order to avoid testing for local effects on eyes with skin corrosive substances. In vitro alternatives that have been scientifically validated and accepted shall be used to make classification decisions. Likewise, pH extremes like \u22642 and \u226511.5, may indicate serious eye damage, especially when associated with significant buffering capacity. Generally, such substances are expected to produce significant effects on the eyes. In the absence of any other information, a mixture/substance is considered to cause serious eye damage (Eye Category 1) if it has a pH \u22642 or \u226511.5. However, if consideration of acid/alkaline reserve suggests the substance may not have the potential to cause serious eye damage despite the low or high pH value, then further evaluation may be necessary. In some cases enough information may be available from structurally related compounds to make classification decisions.",
+      "passage_b": "> A.3.2.2.4 Likewise, pH extremes like \u22642 and \u226511.5, may indicate serious eye damage, especially when associated with significant acid/alkaline reserve (buffering capacity). Generally, such substances are expected to produce significant effects on the eyes. In the absence of any other information, a substance is considered to cause serious eye damage (Category 1) if it has a pH \u22642 or \u226511.5. However, if consideration of acid/alkaline reserve suggests the substance may not cause serious eye damage despite the low or high pH value, this needs to be confirmed by other data, preferably by data from an appropriate validated in vitro test."
+    },
+    {
+      "pair_id": 16,
+      "passage_a": "(140) ASTM D3792-79, Standard Test Method for Water Content of Water-Reducible Paints by Direct Injection into a Gas Chromatograph, IBR approved for appendix A-7 to part 60: Method 24, Section 6.3.",
+      "passage_b": "(146) ASTM D3792-79, Standard Test Method for Water Content of Water-Reducible Paints by Direct Injection into a Gas Chromatograph; IBR approved for appendix A-7 to part 60: Method 24, Section 6.3."
+    },
+    {
+      "pair_id": 17,
+      "passage_a": "> B.11.2.3 Chemicals with a spontaneous ignition temperature higher than 50 \u00b0C (122 \u00b0F) for a volume of 450 liters shall not be classified in Category 1 of this class.",
+      "passage_b": "> B.11.2.3 Chemicals with a spontaneous ignition temperature higher than 50\u00b0 C (122\u00b0 F) for a volume of 450 liters shall not be classified in Category 1 of this class."
+    },
+    {
+      "pair_id": 18,
+      "passage_a": "> Carcinogen means a substance or a mixture of substances which induce cancer or increase its incidence. Substances and mixtures which have induced benign and malignant tumors in well-performed experimental studies on animals are considered also to be presumed or suspected human carcinogens unless there is strong evidence that the mechanism of tumor formation is not relevant for humans.",
+      "passage_b": "> Carcinogenicity refers to the induction of cancer or an increase in the incidence of cancer occurring after exposure to a substance or mixture. Substances and mixtures which have induced benign and malignant tumors in well-performed experimental studies on animals are considered also to be presumed or suspected human carcinogens unless there is strong evidence that the mechanism of tumor formation is not relevant for humans."
+    },
+    {
+      "pair_id": 19,
+      "passage_a": "> 1. Blood lead level",
+      "passage_b": "(1) Blood lead level;"
+    },
+    {
+      "pair_id": 20,
+      "passage_a": "> A.4.1.1 Respiratory sensitizer means a chemical that will lead to hypersensitivity of the airways following inhalation of the chemical.",
+      "passage_b": "> A.4.1.1 Respiratory sensitization refers to hypersensitivity of the airways occurring after inhalation of a substance or mixture."
+    },
+    {
+      "pair_id": 21,
+      "passage_a": "(170) ASTM D5403-93, Standard Test Methods for Volatile Content of Radiation Curable Materials, IBR approved for appendix A-7 to part 60: Method 24, Section 6.6.",
+      "passage_b": "(180) ASTM D5403-93, Standard Test Methods for Volatile Content of Radiation Curable Materials; IBR approved for appendix A-7 to part 60: Method 24, Section 6.6."
+    },
+    {
+      "pair_id": 22,
+      "passage_a": "(108) ASTM D2879-83Test Method for Vapor Pressure-Temperature Relationship and Initial Decomposition Temperature of Liquids by Isoteniscope, IBR approved for \u00a7\u00a7 60.111b(f)(3), 60.116b(e), 60.116b(f), 60.485(e), and 60.485a(e).",
+      "passage_b": "(113) ASTM D2879-83, Test Method for Vapor Pressure-Temperature Relationship and Initial Decomposition Temperature of Liquids by Isoteniscope, approved 1983; IBR approved for \u00a7\u00a7 60.111b; 60.116b(e) and (f); 60.485(e); 60.485a(e); 60.5403b(d); 60.5406c(d)."
+    },
+    {
+      "pair_id": 23,
+      "passage_a": "(i) The mark must indicate the UN number: \u201cUN3090\u201d for lithium metal cells or batteries; or \u201cUN3480\u201d for lithium ion cells or batteries. Where the lithium cells or batteries are contained in, or packed with, equipment, the UN number \u201cUN3091\u201d or \u201cUN3481,\u201d as appropriate, must be indicated. Where a package contains lithium cells or batteries assigned to different UN numbers, all applicable UN numbers must be indicated on one or more marks. The package must be of such size that there is adequate space to affix the mark on one side without the mark being folded.",
+      "passage_b": "(i) The mark must indicate the UN number: \u201cUN3090\u201d for lithium metal cells or batteries, or \u201cUN3480\u201d for lithium ion cells or batteries. Where the lithium cells or batteries are contained in, or packed with, equipment, the UN number \u201cUN3091\u201d or \u201cUN3481,\u201d as appropriate, must be indicated. Where a package contains lithium cells or batteries assigned to different UN numbers, all applicable UN numbers must be indicated on one or more marks. The package must be of such size that there is adequate space to affix the mark on one side without the mark being folded."
+    },
+    {
+      "pair_id": 24,
+      "passage_a": "> The initial boiling point shall be determined in accordance with ASTM D86-07a or ASTM D1078 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> The initial boiling point shall be determined in accordance with ASTM D86-07a or ASTM D1078 (incorporated by reference; see \u00a7 1910.6). 1"
+    },
+    {
+      "pair_id": 25,
+      "passage_a": "(164) ASTM D4629-02, Standard Test Method for Trace Nitrogen in Liquid Petroleum Hydrocarbons by Syringe/Inlet Oxidative Combustion and Chemiluminescence Detection, IBR approved for \u00a7\u00a7 60.49b(e) and 60.335(b).",
+      "passage_b": "(170) ASTM D4629-02, Standard Test Method for Trace Nitrogen in Liquid Petroleum Hydrocarbons by Syringe/Inlet Oxidative Combustion and Chemiluminescence Detection; IBR approved for \u00a7\u00a7 60.49b(e) and 60.335(b)."
+    },
+    {
+      "pair_id": 26,
+      "passage_a": "> #### A.9.3.4 Classification of Mixtures When Data Are Available for All Ingredients or Only for Some Ingredients of the Mixture",
+      "passage_b": "> A.9.3.4 Classification of Mixtures When Data Are Available for All Ingredients or Only for Some Ingredients of the Mixture"
+    },
+    {
+      "pair_id": 27,
+      "passage_a": "(1) Tires shall be completely deflated by removal of the valve core before demounting.",
+      "passage_b": "(1) Tires shall be completely deflated before demounting by removal of the valve core."
+    },
+    {
+      "pair_id": 28,
+      "passage_a": "> | Ingredient classified as: | Cut-off values/concentration limits triggering classification of a mixture as: |  |  |\n|---|---|---|---|\n| Respiratory Sensitizer Category 1 |  | Skin Sensitizer Category 1 |  |\n| Solid/liquid | Gas | All physical states |  |\n| Respiratory Sensitizer, Category 1 | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1A | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1B | \u22651.0% | \u22650.2% |  |\n| Skin Sensitizer, Category 1 |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1A |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1B |  |  | \u22651.0% |",
+      "passage_b": "> Table A.4.5\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as Either Respiratory Sensitizers or Skin Sensitizers That Would Trigger Classification of the Mixture\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |  |\n|---|---|---|---|\n| Respiratory sensitizer Category 1 |  | Skin sensitizer Category 1 |  |\n| Solid/liquid (%) | Gas (%) | All physical states (%) |  |\n| Respiratory Sensitizer Category 1 | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1A | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1B | \u22651.0 | \u22650.2 |  |\n| Skin Sensitizer Category 1 |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1A |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1B |  |  | \u22651.0 |"
+    },
+    {
+      "pair_id": 29,
+      "passage_a": "(77) ASTM D1946-90 (Reapproved 1994), Standard Method for Analysis of Reformed Gas by Gas Chromatography, IBR approved for \u00a7\u00a7 60.18(f), 60.45(f), 60.564(f), 60.614(e), 60.664(e), and 60.704(d).",
+      "passage_b": "(80) ASTM D1946-90 (Reapproved 1994), Standard Method for Analysis of Reformed Gas by Gas Chromatography; IBR approved for \u00a7\u00a7 60.18(f); 60.45(f); 60.564(f); 60.614(e); 60.664(e); 60.704(d)."
+    },
+    {
+      "pair_id": 30,
+      "passage_a": "> #### A.7.2.2 Basis of Classification",
+      "passage_b": "> A.7.2.2 Basis of Classification"
+    },
+    {
+      "pair_id": 31,
+      "passage_a": "> C. Spill Leak and Disposal Procedures.",
+      "passage_b": "> C. Spill, Leak and Disposal Procedures."
+    },
+    {
+      "pair_id": 32,
+      "passage_a": "> (c) Mammalian erythrocyte micronucleus test (OECD 474)",
+      "passage_b": "> (b) Mammalian erythrocyte micronucleus test (OECD 474)"
+    },
+    {
+      "pair_id": 33,
+      "passage_a": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], (Issued August 31, 1981), IBR approved for \u00a7\u00a7 60.56c(b), 60.63(f), 60.106(e), 60.104a(d), (h), (i), and (j), 60.105a(b), (d), (f), and (g), 60.106a(a), 60.107a(a), (c), and (d), tables 1 and 3 to subpart EEEE, tables 2 and 4 to subpart FFFF, table 2 to subpart JJJJ, \u00a7\u00a7 60.285a(f), 60.4415(a), 60.2145(s) and (t), 60.2710(s) and (t), 60.2730(q), 60.4900(b), 60.5220(b), tables 1 and 2 to subpart LLLL, tables 2 and 3 to subpart MMMM, \u00a7\u00a7 60.5406(c), 60.5406a(c), 60.5407a(g), 60.5413(b), 60.5413a(b), and 60.5413a(d).",
+      "passage_b": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], Issued August 31, 1981; IBR approved for \u00a7\u00a7 60.56c(b); 60.63(f); 60.106(e); 60.104a(d), (h), (i), and (j); 60.105a(b), (d), (f), and (g); 60.106a(a); 60.107a(a), (c), and (d); 60.275(e); 60.275a(e); 60.275b(e); Tables 1 and 3 to subpart EEEE; Tables 2 and 4 to subpart FFFF; Table 2 to subpart JJJJ; \u00a7\u00a7 60.285a(f); 60.396(a); 60.614a(b); 60.664a(b); 60.704(b); 60.704a(b); 60.2145(s) and (t); 60.2710(s) and (t); 60.2730(q); 60.4415(a); 60.4415a(b); 60.4900(b); 60.5220(b); Tables 1 and 2 to subpart LLLL; Tables 2 and 3 to subpart MMMM; \u00a7\u00a7 60.5406(c); 60.5406a(c); 60.5406b(c); 60.5407a(g); 60.5407b(g); 60.5413(b); 60.5413a(b) and (d); 60.5413b(b) and (d); 60.5413c(b) and (d); 60.5930(a); Tables 3 and 4 to subpart VVVV; 60.6485(a); Tables 4 and 5 to subpart WWWW."
+    },
+    {
+      "pair_id": 34,
+      "passage_a": "| Maximum quantity | Packing method |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|---|\n| OP1 | OP2 1 | OP3 | OP4 1 | OP5 | OP6 | OP7 | OP8 |  |\n| Solids and combination packagings (liquid and solid) (kg) | 0.5 | 0.5/10 | 5 | 5/25 | 25 | 50 | 50 | 2 400 |\n| Liquids (L) | 0.5 |  | 5 |  | 30 | 60 | 60 | 3 225 |",
+      "passage_b": "Table 2 to Paragraph (d): Maximum Quantity per Packaging/Package[For packing methods OP1 to OP8]\n| Maximum quantity | Packing method |  |  |  |  |  |  |  |\n|---|---|---|---|---|---|---|---|---|\n| OP1 | OP2 1 | OP3 | OP4 1 | OP5 | OP6 | OP7 | OP8 |  |\n| Solids and combination packagings (liquid and solid) (kg) | 0.5 | 0.5/10 | 5 | 5/25 | 25 | 50 | 50 | 2 400 |\n| Liquids (L) | 0.5 |  | 5 |  | 30 | 60 | 60 | 3 225 |\n| 1 If two values are given, the first applies to the maximum net mass per inner packaging and the second to the maximum net mass of the complete package. |  |  |  |  |  |  |  |  |\n| 2 60 kg for jerricans/200 kg for boxes and, for solids, 400 kg in combination packagings with outer packagings comprising boxes (4C1, 4C2, 4D, 4F, 4G, 4H1, and 4H2) and with inner packagings of plastics or fiber with a maximum net mass of 25 kg. |  |  |  |  |  |  |  |  |\n| 3 60 L for jerricans. |  |  |  |  |  |  |  |  |"
+    },
+    {
+      "pair_id": 35,
+      "passage_a": "> A.8.2.1.9 Guidance values to assist with classification based on the results obtained from studies conducted in experimental animals for Category 1 and 2",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 36,
+      "passage_a": "(38) ASTM D396-78, Standard Specification for Fuel Oils, IBR approved for \u00a7\u00a7 60.41b, 60.41c, 60.111(b), and 60.111a(b).",
+      "passage_b": "(39) ASTM D396-78, Standard Specification for Fuel Oils; IBR approved for \u00a7\u00a7 60.41b; 60.41c; 60.111(b); 60.111a(b)."
+    },
+    {
+      "pair_id": 37,
+      "passage_a": "> Table A.9.1\u2014Guidance Values To Assist in Category 1 Classification",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 38,
+      "passage_a": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method), IBR approved for \u00a7\u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3.",
+      "passage_b": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method); IBR approved for \u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3."
+    },
+    {
+      "pair_id": 39,
+      "passage_a": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3.",
+      "passage_b": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3 of this appendix."
+    },
+    {
+      "pair_id": 40,
+      "passage_a": "> #### A.3.2 Classification Criteria for Substances Using Animal Test Data",
+      "passage_b": "> #### A.3.2 Classification Criteria for Substances"
+    },
+    {
+      "pair_id": 41,
+      "passage_a": "> B.3.3.3 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of the of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.3.3.4 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of UN ST/SG/AC.10 (incorporated by reference; see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 42,
+      "passage_a": "(149) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method), IBR approved for \u00a7 60.334(h).",
+      "passage_b": "(155) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method); IBR approved for \u00a7 60.334(h)."
+    },
+    {
+      "pair_id": 43,
+      "passage_a": "Ds = 63 inches/second \u00d7 Ts;",
+      "passage_b": "Ds = 63 inches/second \u00d7 Ts"
+    },
+    {
+      "pair_id": 44,
+      "passage_a": "> #### A.9.2.7 Effects Considered To Support Classification",
+      "passage_b": "> A.9.2.7 Effects Considered To Support Classification"
+    },
+    {
+      "pair_id": 45,
+      "passage_a": "(84) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood, IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1.",
+      "passage_b": "(87) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood; IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1."
+    },
+    {
+      "pair_id": 46,
+      "passage_a": "(125) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke, IBR approved for \u00a7 60.45(f).",
+      "passage_b": "(131) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke; IBR approved for \u00a7 60.45(f)."
+    },
+    {
+      "pair_id": 47,
+      "passage_a": "(m) Recordkeeping - (1) Exposure measurements. The employer shall maintain an accurate record of all employee exposure measurements required by paragraph (d) of this section.",
+      "passage_b": "(m) Recordkeeping\u2014(1) Exposure measurements. The employer shall maintain an accurate record of all employee exposure measurements required by paragraph (d) of this section."
+    },
+    {
+      "pair_id": 48,
+      "passage_a": "Delegation Status for New Source Performance Standards for San Diego County APCD, San Joaquin Valley Unified APCD, San Luis Obispo County APCD, and Santa Barbara County APCD",
+      "passage_b": "(vii) Delegations for San Diego County Air Pollution Control District, San Joaquin Valley Unified Air Pollution Control District, San Luis Obispo County Air Pollution Control District, and Santa Barbara County Air Pollution Control District are shown in the following table:"
+    },
+    {
+      "pair_id": 49,
+      "passage_a": "> | Exposure route | Category 1 | Category 2 | Category 3 | Category 4 |\n|---|---|---|---|---|\n| Oral (mg/kg bodyweight) |  |  |  |  |\n| see: Note (a) | \u22645 | >5 and \u226450 | >50 and \u2264300 | >300 and \u22642000. |\n| Note (b) |  |  |  |  |\n| Dermal (mg/kg bodyweight) |  |  |  |  |\n| see: Note (a) | \u226450 | >50 and \u2264200 | >200 and \u22641000 | >1000 and \u22642000. |\n| Note (b) |  |  |  |  |\n| Inhalation\u2014Gases (ppmV) |  |  |  |  |\n| see: Note (a) | \u2264100 | >100 and \u2264500 | >500 and \u22642500 | >2500 and \u226420000. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |\n| Inhalation\u2014Vapors (mg/l) |  |  |  |  |\n| see: Note (a) | \u22640.5 | >0.5 and \u22642.0 | >2.0 and \u226410.0 | >10.0 and \u226420.0. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |\n| Note (d) |  |  |  |  |\n| Inhalation\u2014Dusts and Mists (mg/l) |  |  |  |  |\n| see: Note (a) | \u22640.05 | >0.05 and \u22640.5 | >0.5 and \u22641.0 | >1.0 and \u22645.0. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |",
+      "passage_b": "> Table A.1.2\u2014Conversion From Experimentally Obtained Acute Toxicity Range Values (or Acute Toxicity Hazard Categories) to Acute Toxicity Point Estimates for Use in the Formulas for the Classification of Mixtures\n| Exposure routes | Classification category or experimentally obtained acute toxicity range estimate | Converted acute toxicity point estimate |\n|---|---|---|\n| Oral (mg/kg bodyweight) | 0 < Category 1 \u2264 5 | 0.5 |\n|  | 5 < Category 2 \u2264 50 | 5 |\n|  | 50 < Category 3 \u2264 300 | 100 |\n|  | 300 < Category 4 \u2264 2000 | 500 |\n| Dermal (mg/kg bodyweight) | 0 < Category 1 \u2264 50 | 5 |\n|  | 50 < Category 2 \u2264 200 | 50 |\n|  | 200 < Category 3 \u2264 1000 | 300 |\n|  | 1000 < Category 4 \u2264 2000 | 1100 |\n| Gases (ppmV) | 0 < Category 1 \u2264 100 | 10 |\n|  | 100 < Category 2 \u2264 500 | 100 |\n|  | 500 < Category 3 \u2264 2500 | 700 |\n|  | 2500 < Category 4 \u2264 20000 | 4500 |\n| Vapors (mg/l) | 0 < Category 1 \u2264 0.5 | 0.05 |\n|  | 0.5 < Category 2 \u2264 2.0 | 0.5 |\n|  | 2.0 < Category 3 \u2264 10.0 | 3 |\n|  | 10.0 < Category 4 \u2264 20.0 | 11 |\n| Dust/mist (mg/l) | 0 < Category 1 \u2264 0.05 | 0.005 |\n|  | 0.05 < Category 2 \u2264 0.5 | 0.05 |\n|  | 0.5 < Category 3 \u2264 1.0 | 0.5 |\n|  | 1.0 < Category 4 \u2264 5.0 | 1.5 |\n| Note: Gas concentrations are expressed in parts per million per volume (ppmV). |  |  |"
+    },
+    {
+      "pair_id": 50,
+      "passage_a": "(40) ASTM D396-90, Standard Specification for Fuel Oils, IBR approved for \u00a7\u00a7 60.41b, 60.41c, 60.111(b), and 60.111a(b).",
+      "passage_b": "(40) ASTM D396-89, Standard Specification for Fuel Oils; IBR approved for \u00a7\u00a7 60.41b; 60.41c; 60.111(b); 60.111a(b)."
+    },
+    {
+      "pair_id": 51,
+      "passage_a": "(3) Mixtures. (i) Chemical manufacturers, importers, or employers evaluating chemicals shall follow the procedures described in Appendices A and B to \u00a7 1910.1200 to classify the hazards of the chemicals, including determinations regarding when mixtures of the classified chemicals are covered by this section.",
+      "passage_b": "(3) Mixtures. (i) Chemical manufacturers, importers, or employers evaluating chemicals shall follow the procedures described in appendices A and B to \u00a7 1910.1200 to classify the hazards of the chemicals, including determinations regarding when mixtures of the classified chemicals are covered by this section."
+    },
+    {
+      "pair_id": 52,
+      "passage_a": "> Mutagenicity: It is recognized that genetic events are central in the overall process of cancer development. Therefore evidence of mutagenic activity in vivo may indicate that a substance has a potential for carcinogenic effects.",
+      "passage_b": "> Mutagenicity: It is recognized that genetic events are central in the overall process of cancer development. Therefore, evidence of mutagenic activity in vivo may indicate that a substance has a potential for carcinogenic effects."
+    },
+    {
+      "pair_id": 53,
+      "passage_a": "> Table A.5.1\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as Germ Cell Mutagens That Would Trigger Classification of the Mixture",
+      "passage_b": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |\n|---|---|---|\n| Category 1 | Category 2 |  |\n| Category 1 Target organ toxicant | \u22651.0% |  |\n| Category 2 Target organ toxicant |  | \u22651.0% |"
+    },
+    {
+      "pair_id": 54,
+      "passage_a": "> #### A.1.3.6 Classification of Mixtures Based on Ingredients of the Mixture (Additivity Formula)",
+      "passage_b": "> A.1.3.6 Classification of mixtures based on ingredients of the mixture (additivity formula)"
+    },
+    {
+      "pair_id": 55,
+      "passage_a": "1 The Louisiana Department of Environmental Quality (LDEQ) has been delegated all Part 60 standards promulgated by EPA, except subpart AAA - Standards of Performance for New Residential Wood Heaters - as amended in the Federal Register through July 1, 2013.",
+      "passage_b": "(1) New Mexico. The New Mexico Environment Department has been delegated all part 60 standards promulgated by the EPA, except subpart AAA\u2014Standards of Performance for New Residential Wood Heaters; and subpart QQQQ\u2014Standards of Performance for New Residential Hydronic Heaters and Forced-Air Furnaces, as amended in the Federal Register through January 15, 2017."
+    },
+    {
+      "pair_id": 56,
+      "passage_a": "> | Category | Criteria |\n|---|---|\n| 1 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, spontaneously ignites; or the mean pressure rise time of a 1:1 mixture, by mass, of chemical and cellulose is less than that of a 1:1 mixture, by mass, of 50% perchloric acid and cellulose; |\n| 2 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 40% aqueous sodium chlorate solution and cellulose; and the criteria for Category 1 are not met; |\n| 3 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 65% aqueous nitric acid and cellulose; and the criteria for Categories 1 and 2 are not met. |",
+      "passage_b": "> Table B.13.1\u2014 Criteria for Oxidizing Liquids\n| Category | Criteria |\n|---|---|\n| 1 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, spontaneously ignites; or the mean pressure rise time of a 1:1 mixture, by mass, of chemical and cellulose is less than that of a 1:1 mixture, by mass, of 50% perchloric acid and cellulose; |\n| 2 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 40% aqueous sodium chlorate solution and cellulose; and the criteria for Category 1 are not met; |\n| 3 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 65% aqueous nitric acid and cellulose; and the criteria for Categories 1 and 2 are not met. |"
+    },
+    {
+      "pair_id": 57,
+      "passage_a": "(37) ASTM D388-99 (Reapproved 2004) 1 Standard Classification of Coals by Rank, IBR approved for \u00a7\u00a7 60.41, 60.45(f), 60.41Da, 60.41b, 60.41c, 60.251, and 60.5580.",
+      "passage_b": "(38) ASTM D388-99 (Reapproved 2004) 1(ASTM D388-99R04), Standard Classification of Coals by Rank, approved June 1, 2004; IBR approved for \u00a7\u00a7 60.41; 60.45(f); 60.41Da; 60.41b; 60.41c; 60.251; 60.5580; 60.5580a."
+    },
+    {
+      "pair_id": 58,
+      "passage_a": "(f) The requirements of paragraphs (a) through (c) of this section remain in force until and unless EPA, in delegating enforcement authority to a State under section 111(c) of the Act, approves reporting requirements or an alternative means of compliance surveillance adopted by such State. In that event, affected sources within the State will be relieved of the obligation to comply with the requirements of paragraphs (a) through (c) of this section, provided that they comply with the requirements established by the State.",
+      "passage_b": "(f) The requirements of paragraphs (a) through (c) of this section remain in force until and unless EPA, in delegating enforcement authority to a State under section 111(c) of the Act, approves reporting requirements or an alternative means of compliance surveillance adopted by such State. In that event, affected sources within the State will be relieved of the obligation to comply with the requirements of paragraphs (a) through (c) of this section, provided that they comply with the requirements established by the State. The EPA will not approve a waiver of electronic reporting to the EPA in delegating enforcement authority. Thus, electronic reporting to the EPA cannot be waived, and as such, the provisions of this paragraph cannot be used to relieve owners or operators of affected facilities of the requirement to submit the electronic reports required in this section to the EPA."
+    },
+    {
+      "pair_id": 59,
+      "passage_a": "> A.1.2.1 Substances can be allocated to one of four toxicity categories based on acute toxicity by the oral, dermal or inhalation route according to the numeric cut-off criteria as shown in Table A.1.1. Acute toxicity values are expressed as (approximate) LD50 (oral, dermal) or LC50 (inhalation) values or as acute toxicity estimates (ATE). See the footnotes following Table A.1.1 for further explanation on the application of these values.",
+      "passage_b": "> A.1.2.1 Substances can be allocated to one of four hazard categories based on acute toxicity by the oral, dermal or inhalation route according to the numeric cut-off criteria as shown in Table A.1.1. Acute toxicity values are expressed as (approximate) LD50 (oral, dermal) or LC50 (inhalation) values or as acute toxicity estimates (ATE). While some in vivo methods determine LD50/LC50 values directly, other newer in vivo methods (e.g., using fewer animals) consider other indicators of acute toxicity, such as significant clinical signs of toxicity, which are used by reference to assign the hazard category. See the footnotes following Table A.1.1 for further explanation on the application of these values."
+    },
+    {
+      "pair_id": 60,
+      "passage_a": "(85) ASTM D2234-76, Standard Methods for Collection of a Gross Sample of Coal, IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1.",
+      "passage_b": "(88) ASTM D2234-76, Standard Methods for Collection of a Gross Sample of Coal; IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1."
+    },
+    {
+      "pair_id": 61,
+      "passage_a": "> Table B.12.1\u2014Criteria for Chemicals Which, in Contact With Water, Emit Flammable Gases",
+      "passage_b": "> #### B.12 Chemicals Which, in Contact With Water, Emit Flammable Gases"
+    },
+    {
+      "pair_id": 62,
+      "passage_a": "(a) In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use as reference methods and procedures the test methods in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b).",
+      "passage_b": "(c) Test methods. In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use the following EPA reference test methods and procedures in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b)."
+    },
+    {
+      "pair_id": 63,
+      "passage_a": "(53) ASTM D1193-91, Standard Specification for Reagent Water, IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; and Method 29, Section 7.2.2.",
+      "passage_b": "(53) ASTM D1193-77, Standard Specification for Reagent Water; IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; Method 29, Section 7.2.2."
+    },
+    {
+      "pair_id": 64,
+      "passage_a": "(i) A respirator to each employee and ensure that it is provided and used in accordance with \u00a7 1910.134; and",
+      "passage_b": "(i) A respirator to each employee and ensure that it is provided and used in accordance with \u00a7 1910.134 and"
+    },
+    {
+      "pair_id": 65,
+      "passage_a": "(f) Heating, if provided, shall be steam, hot water, or by other indirect means.",
+      "passage_b": "(f) Heating, if provided, shall be by steam, hot water, or other indirect means."
+    },
+    {
+      "pair_id": 66,
+      "passage_a": "> #### Appendix F to \u00a7 1910.146 - Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)",
+      "passage_b": "> #### Appendix F to \u00a7 1910.146\u2014Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)"
+    },
+    {
+      "pair_id": 67,
+      "passage_a": "> #### Appendix D to \u00a7 1910.1200\u2014Safety Data Sheets (Mandatory)",
+      "passage_b": "> #### Appendix D to \u00a7 1910.1200 Safety Data Sheet (Mandatory)"
+    },
+    {
+      "pair_id": 68,
+      "passage_a": "(86) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal, IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1.",
+      "passage_b": "(89) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal; IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1."
+    },
+    {
+      "pair_id": 69,
+      "passage_a": "(1) Burlap (jute) bag;",
+      "passage_b": "(i) Burlap (jute) bag;"
+    },
+    {
+      "pair_id": 70,
+      "passage_a": "> A.2.2.2.2 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance might be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses could also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system.",
+      "passage_b": "> A.2.2.2.2.4 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance should be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score according to test method used throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses should also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system."
+    },
+    {
+      "pair_id": 71,
+      "passage_a": "(v) Techstreet, a business of Thomson Reuters, 3916 Ranchero Drive, Ann Arbor, MI 48108; Telephone: 800-699-9277 or 734-780-8000; Fax: 734-780-2046; Email: techstreet.service@thomsonreuters.com; Web site: www.Techstreet.com.",
+      "passage_b": "(iii) TechStreet Store, 3916 Ranchero Dr., Ann Arbor, MI 48108; telephone: 877-699-9277; Web site: www.techstreet.com."
+    },
+    {
+      "pair_id": 72,
+      "passage_a": "(75) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, (Approved January 1, 2010), IBR approved for \u00a7\u00a7 60.107a(d), 60.5413(d), 60.5413a(d).",
+      "passage_b": "(77) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, approved January 1, 2010; IBR approved for \u00a7\u00a7 60.107a(d); 60.5413(d); 60.5413a(d); 60.5413b(d); 60.5413c(d)."
+    },
+    {
+      "pair_id": 73,
+      "passage_a": "> C. Spill Leak and Disposal Procedures.",
+      "passage_b": "> C. Spill, Leak and Disposal Procedures."
+    },
+    {
+      "pair_id": 74,
+      "passage_a": "> #### A.3.4.1 Classification of Mixtures When Data Are Available for the Complete Mixture",
+      "passage_b": "> A.4.3.1 Classification of Mixtures When Data Are Available for the Complete Mixture"
+    },
+    {
+      "pair_id": 75,
+      "passage_a": "> A.2.3.3 The tiered approach explains how to organize information on a substance and to make a weight-of-evidence decision about hazard assessment and hazard classification.",
+      "passage_b": "> A.3.2.2.7 The tiered approach explains how to organize existing information and to make a weight-of-evidence decision about hazard assessment and hazard classification. Although information might be gained from the evaluation of single parameters within a tier, consideration should be given to the totality of existing information and making an overall weight of evidence determination. This is especially true when there is conflict in information available."
+    },
+    {
+      "pair_id": 76,
+      "passage_a": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2",
+      "passage_b": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |\n|---|---|---|\n| Category 1 | Category 2 |  |\n| Category 1 Target organ toxicant | \u22651.0% |  |\n| Category 2 Target organ toxicant |  | \u22651.0% |"
+    },
+    {
+      "pair_id": 77,
+      "passage_a": "> For mixtures classified in accordance with A.1, A.2, A.3, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1.",
+      "passage_b": "> For mixtures classified in accordance with A.1, A.2, A.3, A.4, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1."
+    },
+    {
+      "pair_id": 78,
+      "passage_a": "(193) ASTM D6911-15, Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015, IBR approved for appendix A-8: Method 30B.",
+      "passage_b": "(216) ASTM D6911-15 Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015; IBR approved for Appendix A-7: Method 23, Section 8.2.11; Appendix A-8: Method 30B, Section 8.3.3.8."
+    },
+    {
+      "pair_id": 79,
+      "passage_a": "> #### A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles",
+      "passage_b": "> A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles"
+    },
+    {
+      "pair_id": 80,
+      "passage_a": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which contain only extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation.",
+      "passage_b": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which predominantly contain extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation."
+    },
+    {
+      "pair_id": 81,
+      "passage_a": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of UN ST/SG/AC.10 (incorporated by reference, see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 82,
+      "passage_a": "(3) Polyethylene-lined burlap or paper bag;",
+      "passage_b": "(iii) Polyethylene-lined burlap or paper bag;"
+    },
+    {
+      "pair_id": 83,
+      "passage_a": "> A.4.2.2.2 Human evidence.",
+      "passage_b": "> A.4.2.2.2 Human Evidence"
+    },
+    {
+      "pair_id": 84,
+      "passage_a": "(186) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, (Approved October 1, 2005), IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b) and (d), and 60.5413a(b).",
+      "passage_b": "(206) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, approved October 1, 2005; IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b); 60.5413a(b)."
+    },
+    {
+      "pair_id": 85,
+      "passage_a": "(181) ASTM D6228-98 (Reapproved 2003), Standard Test Method for Determination of Sulfur Compounds in Natural Gas and Gaseous Fuels by Gas Chromatography and Flame Photometric Detection, IBR approved for \u00a7\u00a7 60.4360 and 60.4415.",
+      "passage_b": "(195) ASTM D6228-98 (Reapproved 2003), Standard Test Method for Determination of Sulfur Compounds in Natural Gas and Gaseous Fuels by Gas Chromatography and Flame Photometric Detection; IBR approved for \u00a7\u00a7 60.4360; 60.4360a(c); 60.4415(a)."
+    },
+    {
+      "pair_id": 86,
+      "passage_a": "> #### B.5 GASES UNDER PRESSURE",
+      "passage_b": "> #### B.5 Gases Under Pressure"
+    },
+    {
+      "pair_id": 87,
+      "passage_a": "(45) ASTM D975-98a, Standard Specification for Diesel Fuel Oils, IBR approved for \u00a7\u00a7 60.111(b) and 60.111a(b).",
+      "passage_b": "(45) ASTM D975-96, Standard Specification for Diesel Fuel Oils; IBR approved for \u00a7\u00a7 60.111(b) and 60.111a(b)."
+    },
+    {
+      "pair_id": 88,
+      "passage_a": "> #### A.2.2.2 Irritation",
+      "passage_b": "> A.2.2.2.2 Skin Irritation"
+    },
+    {
+      "pair_id": 89,
+      "passage_a": "(ii) For domestic transportation, an overpack marked prior to January 1, 2017 and in conformance with the requirements of this paragraph in effect on December 31, 2014, may continue in service until the end of its useful life.",
+      "passage_b": "(4) The overpack is marked with the word \u201cOVERPACK\u201d when specification packagings are required, or for Class 7 (radioactive) material when a Type A, Type B(U), Type B(M) or industrial package is required. The \u201cOVERPACK\u201d marking is not required when the required markings representative of each package type contained in the overpack are visible from outside of the overpack. The lettering on the \u201cOVERPACK\u201d marking must be at least 12 mm (0.5 inches) high. For domestic transportation, an overpack marked prior to January 1, 2017, and in conformance with the requirements of this paragraph in effect on December 31, 2014, may continue in service until the end of its useful life."
+    },
+    {
+      "pair_id": 90,
+      "passage_a": "(s) The following material is available for purchase from the National Electrical Manufacturer's Association (NEMA):",
+      "passage_b": "(w) The following material is available for purchase from the National Electrical Manufacturer's Association (NEMA):"
+    },
+    {
+      "pair_id": 91,
+      "passage_a": "or Montana and which is burned in a cyclone-fired unit. (b) Except as provided under paragraphs (c), (d), and (e) of this section, when different fossil fuels are burned simultaneously in any combination, the applicable standard (in ng/J) is determined by proration using the following formula: > Where: > PSNOX = Prorated standard for NOX when burning different fuels simultaneously, in ng/J heat input derived from all fossil fuels fired or from all fossil fuels and wood residue fired; > w = Percentage of total heat input derived from lignite; > x = Percentage of total heat input derived from gaseous fossil fuel; > y = Percentage of total heat input derived from liquid fossil fuel; and > z =",
+      "passage_b": "> x = Percentage of total heat input derived from gaseous fossil fuel; > y = Percentage of total heat input derived from liquid fossil fuel; and > z = Percentage of total heat input derived from solid fossil fuel (except lignite). (c) When a fossil fuel containing at least 25 percent, by weight, of coal refuse is burned in combination with gaseous, liquid, or other solid fossil fuel or wood residue, the standard for NOX does not apply. (d) Except as provided under paragraph (e) of this section, cyclone-fired units which burn fuels containing at least 25 percent of lignite that is mined in North Dakota, South Dakota, or Montana remain subject to paragraph (a)(5) of this section regardless"
+    },
+    {
+      "pair_id": 92,
+      "passage_a": "cord or cable assemblies or open conductors. If run as open conductors, they shall be fastened at ceiling height every 3.05 m (10.0 ft). (C) No branch-circuit conductor may be laid on the floor. (D) Each branch circuit that supplies receptacles or fixed equipment shall contain a separate equipment grounding conductor if run as open conductors. (vi) Receptacles shall be of the grounding type. Unless installed in a continuous grounded metallic raceway or metallic covered cable, each branch circuit shall contain a separate equipment grounding conductor and all receptacles shall be electrically connected to the grounding conductor. (vii) No bare conductors nor earth returns may be used for the wiring of any temporary circuit. (viii) Suitable disconnecting switches or plug",
+      "passage_b": "both the normal and final stopping device from stopping the working platform. > (d) Means shall be provided on the roof car and working platform for grounding portable electric tools. > (e) The working platform shall be grounded through a grounding connection in a traveling cable. Electrically powered tools utilized on the working platform shall be grounded. > (vi) Electrical receptacles located on the roof or other exterior location shall be of a weatherproof type and shall be located so as not to be subject to contact with water or accumulated snow. The receptacles shall be grounded and the electric cable shall include a grounding conductor. The receptacle and plug shall be a type designed to avoid hazard to persons"
+    },
+    {
+      "pair_id": 93,
+      "passage_a": "> Table A-1\u2014Conversion From \u201cPercent Noise Exposure\u201d or \u201cDose\u201d to \u201c8-Hour Time-Weighted Average Sound Level\u201d (TWA) (continued)",
+      "passage_b": "0.5 \u00b5gm/m 3 as an 8-hour time-weighted average (TWA) under any expected conditions of use. (b) Definitions. For the purposes of this section the following definitions apply: Action level means a concentration of airborne chromium (VI) of 2.5 micrograms per cubic meter of air (2.5 \u00b5gm/m 3) calculated as an 8-hour time-weighted average (TWA). Assistant Secretary means the Assistant Secretary of Labor for Occupational Safety and Health, U.S. Department of Labor, or designee. Chromium (VI) [hexavalent chromium or Cr(VI)] means chromium with a valence of positive six, in any form and in any compound. Director means the Director of the National Institute for Occupational Safety and Health (NIOSH), U.S. Department of Health and Human Services, or designee. Emergency means any"
+    },
+    {
+      "pair_id": 94,
+      "passage_a": "must fit your face and head snugly. Respirators must not be loosened or removed in work situations where their use is required. > Acrylonitrile does not have a detectable odor except at levels above the permissible exposure limits. Do not depend on odor to warn you when a respirator cartridge or canister is exhausted. Cartridges or canisters must be changed daily or before the end-of-service-life, whichever comes first. Reuse of these may allow acrylonitrille to gradually filter through the cartridge and cause exposures which you cannot detect by odor. If you can smell acrylonitrile while wearing a respirator, proceed immediately to fresh air. If you experience difficulty breathing while wearing a respirator, tell your employer. > B. Supplied-air suits: In",
+      "passage_b": "each containing 0.3 ml, should be maintained at each site where acrylonitrile is used. When a person is suspected of receiving an overexposure to acrylonitrile, immediately remove that person from the contaminated area using established rescue procedures. Contaminated clothing must be removed and the acrylonitrile washed from the skin immediately. Artificial respiration should be started at once if breathing has stopped. If the person is unconscious, amyl nitrite may be used as an antidote by a properly trained individual in accordance with established emergency procedures. Medical aid should be obtained immediately. > #### iv. Respirators and Protective Clothing > A. Respirators. You may be required to wear a respirator for nonroutine activities, in emergencies, while your employer is in the"
+    },
+    {
+      "pair_id": 95,
+      "passage_a": "shackle, swivel, bearing, sheaves, pins, and frame suspended by the hoisting rope. (47) Magnet means an electromagnetic device carried on a crane hook to pick up loads magnetically. (48) Main hoist means the hoist mechanism provided for lifting the maximum rated load. (49) A man trolley is a trolley having an operator's cab attached thereto. (50) Rated load means the maximum load for which a crane or individual hoist is designed and built by the manufacturer and shown on the equipment nameplate(s). (51) Rope refers to wire rope, unless otherwise specified. (52) Running sheave means a sheave which rotates as the load block is raised or lowered. (53) Runway means an assembly of rails, beams, girders, brackets, and framework on",
+      "passage_b": "for the main hoist. (18) A brake is a device used for retarding or stopping motion by friction or power means. (19) A drag brake is a brake which provides retarding force without external control. (20) A holding brake is a brake that automatically prevents motion when power is off. (21) Bridge means that part of a crane consisting of girders, trucks, end ties, footwalks, and drive mechanism which carries the trolley or trolleys. (22) Bridge travel means the crane movement in a direction parallel to the crane runway. (23) A bumper (buffer) is an energy absorbing device for reducing impact when a moving crane or trolley reaches the end of its permitted travel; or when two moving cranes or"
+    },
+    {
+      "pair_id": 96,
+      "passage_a": "(A) Review the findings, determinations, and recommendations of the first two PLHCPs; and (B) Conduct such examinations, consultations, laboratory tests and discussions with the prior PLHCPs as the specialist deems necessary to resolve the disagreements of the prior health care professionals. (v) The written opinion of the specialist shall be the definitive medical determination. The employer shall act consistent with the definitive medical determination, unless the employer and employee agree that the written opinion of one of the other two PLHCPs shall be the definitive medical determination. (vi) The employer and the employee or authorized employee representative may agree upon the use of any expeditious alternate health care professional determination mechanism in lieu of the multiple health care professional review",
+      "passage_b": "such examinations, consultations, laboratory tests, and discussions with the prior physicians as the third physician deems necessary to resolve the disagreement of the prior physicians. (v) The employer shall act consistent with the findings, determinations, and recommendations of the third physician, unless the employer and the employee reach an agreement which is otherwise consistent with the recommendations of at least one of the three physicians. (7) Information provided to the examining and consulting physicians. (i) The employer shall provide the following information to the examining physician: (A) A copy of this regulation and its appendices; (B) A description of the affected employee's duties as they relate to the employee's potential exposure to MDA; (C) The employee's current actual or representative"
+    },
+    {
+      "pair_id": 97,
+      "passage_a": "this subpart. (2)(i) A list of identification numbers for equipment that are designated for no detectable emissions under the provisions of \u00a7\u00a7 60.482-2(e), 60.482-3(i) and 60.482-7(f). (ii) The designation of equipment as subject to the requirements of \u00a7 60.482-2(e), \u00a7 60.482-3(i), or \u00a7 60.482-7(f) shall be signed by the owner or operator. Alternatively, the owner or operator may establish a mechanism with their permitting authority that satisfies this requirement. (3) A list of equipment identification numbers for pressure relief devices required to comply with \u00a7 60.482-4. (4)(i) The dates of each compliance test as required in \u00a7\u00a7 60.482-2(e), 60.482-3(i), 60.482-4, and 60.482-7(f). (ii) The background level measured during each compliance test. (iii) The maximum instrument reading measured at the equipment",
+      "passage_b": "of liquids dripping. (e) Any pump that is designated, as described in \u00a7 60.486(e)(1) and (2), for no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, is exempt from the requirements of paragraphs (a), (c), and (d) of this section if the pump: (1) Has no externally actuated shaft penetrating the pump housing, (2) Is demonstrated to be operating with no detectable emissions as indicated by an instrument reading of less than 500 ppm above background as measured by the methods specified in \u00a7 60.485(c), and (3) Is tested for compliance with paragraph (e)(2) of this section initially upon designation, annually, and at other times requested by the Administrator. (f) If any pump"
+    },
+    {
+      "pair_id": 98,
+      "passage_a": "used outside of buildings above or below ground. If used above ground, the piping shall either be secured to prevent disengagement at the fitting or the piping system shall be so designed that any spill resulting from such disengagement could not unduly expose persons, important buildings or structures, and could be readily controlled by remote valves. (4) Supports. Piping systems shall be substantially supported and protected against physical damage and excessive stresses arising from settlement, vibration, expansion, or contraction. (5) Protection against corrosion. All piping for flammable liquids, both aboveground and underground, where subject to external corrosion, shall be painted or otherwise protected. (6) Valves. Piping systems shall contain a sufficient number of valves to operate the system properly and",
+      "passage_b": "No open end valves or petcocks shall be used, except that in drips located out of doors, underground, and not readily accessible, valves may be used at such points if they are equipped with means to secure them in the closed position. Pipes leading to the surface of the ground shall be cased or jacketed where necessary to prevent loosening or breaking. (v) Gas cocks or valves shall be provided for all buildings at points where they will be readily accessible for shutting off the gas supply to these buildings in any emergency. There shall also be provided a shutoff valve in the discharge line from the generator, gas holder, manifold or other source of supply. (vi) Shutoff valves shall"
+    },
+    {
+      "pair_id": 99,
+      "passage_a": "(v) Delegations for Modoc Air Pollution Control District, Mojave Desert Air Quality Management District, Monterey Bay Unified Air Pollution Control District and North Coast Unified Air Quality Management District are shown in the following table: Table 7 to Paragraph (d)(2)(v)\u2014Delegation Status for New Source Performance Standards for Modoc County APCD, Mojave Desert AQMD, Monterey Bay Unified APCD, and North Coast Unified AQMD",
+      "passage_b": "Table 11 to Paragraph (d)(2)(ix)\u2014Delegation Status for New Source Performance Standards for Tuolumne County APCD, Ventura County APCD, and Yolo-Solano AQMD (continued)"
+    },
+    {
+      "pair_id": 100,
+      "passage_a": "tool alongside an insulator string with broken units may further reduce the overall insulating strength. The number of good units that must be present in a string for it to be \u201cinsulated\u201d as defined by \u00a7 1910.269(x) depends on the maximum overvoltage possible at the worksite. > #### B. Minimum Approach Distances Based on Known, Maximum-Anticipated Per-Unit Transient Overvoltages > 1. Determining the minimum approach distance for AC systems. Under \u00a7 1910.269(l)(3)(ii), the employer must determine the maximum anticipated per-unit transient overvoltage, phase-to-ground, through an engineering analysis or must assume a maximum anticipated per-unit transient overvoltage, phase-to-ground, in accordance with Table R-9. When the employer conducts an engineering analysis of the system and determines that the maximum transient overvoltage is",
+      "passage_b": "Table 6 through Table 13 until March 31, 2015. Table 6\u2014Minimum Approach Distances Until December 31, 2014"
+    },
+    {
+      "pair_id": 101,
+      "passage_a": "respective lockout or tagout procedures, and each employer shall ensure that his or her personnel understand and comply with restrictions and prohibitions of the energy control procedures being used. (v) If energy isolating devices are installed in a central location and are under the exclusive control of a system operator, the following requirements apply: (A) The employer shall use a procedure that affords employees a level of protection equivalent to that provided by the implementation of a personal lockout or tagout device. (B) The system operator shall place and remove lockout and tagout devices in place of the authorized employee under paragraphs (d)(4), (d)(6)(iv), and (d)(7)(iv) of this section. (C) Provisions shall be made to identify the authorized employee who",
+      "passage_b": "Employees may not ride a coal- or ash-handling conveyor belt at any time. Employees may not cross over the conveyor belt, except at walkways, unless the conveyor's energy source has been deenergized and has been locked out or tagged in accordance with paragraph (d) of this section. (ix) A conveyor that could cause injury when started may not be started until personnel in the area are alerted by a signal or by a designated person that the conveyor is about to start. (x) If a conveyor that could cause injury when started is automatically controlled or is controlled from a remote location, an audible device shall be provided that sounds an alarm that will be recognized by each employee as"
+    },
+    {
+      "pair_id": 102,
+      "passage_a": "and A.2.4. In these cases the mixture could be classified according to those data (See Use of cut-off values/concentration limits, paragraph A.0.4.3 of this Appendix). > A.2.3.3.6 If there are data showing that (an) ingredient(s) may be corrosive or irritant to skin at a concentration of <1% (corrosive) or <3% (irritant), the mixture shall be classified accordingly (See Use of cut-off values/concentration limits, paragraph A.0.4.3 of this Appendix). > Table A.2.3\u2014Concentration of Ingredients of a Mixture Classified as Skin Category 1 or 2 That Would Trigger Classification of the Mixture as Hazardous to Skin (Category 1 or 2) as Hazardous to Skin (Category 1 or 2)",
+      "passage_b": "[TABLE] 1910.1200_part6 section \u00a7 1910.1200 Hazard communication.\n| Sum of ingredients classified as | Concentration triggering classification of a mixture as | |\n|---|---|---|\n| Serious eye damage | Eye irritation | |\n| Category 1 | Category 2/2A | |\n| Skin corrosion (Category 1) + Serious eye damage (Category 1) a | \u22653% | \u22651% but <3% |\n| Eye irritation (Category 2) | | \u226510% b |\n| 10 \u00d7 (Skin corrosion (Category 1) + Serious eye damage (Category 1)) a + Eye irritation (Category 2) | | \u226510% |\n| Notes: | | |\n| a If an ingredient is classified as both skin Category 1 and eye Category 1 its concentration is considered only once in the calculation. | | |\n| b A mixture may be classified as Eye Irritation Category 2B in cases when all relevant ingredients are classified as Eye Irritation Category 2B. | | |"
+    },
+    {
+      "pair_id": 103,
+      "passage_a": "affected facility is in compliance with all applicable standards for which performance tests are conducted in accordance with \u00a7 60.8 of this part but during the time such performance tests are being conducted fails to meet any applicable opacity standard, he shall notify the owner or operator and advise him that he may petition the Administrator within 10 days of receipt of notification to make appropriate adjustment to the opacity standard for the affected facility. (7) The Administrator will grant such a petition upon a demonstration by the owner or operator that the affected facility and associated air pollution control equipment was operated and maintained in a manner to minimize the opacity of emissions during the performance tests; that the",
+      "passage_b": "substitute the procedures in Section 16.0 of Performance Specification 2 if the control device exhaust emission rate is less than 50 percent of the level needed to meet the control efficiency requirement. The alternative procedures do not apply if the continuous emission monitoring system is used to determine compliance continuously with the applicable standard. The petition to waive the RA test shall include a detailed description of the procedures to be applied. Included shall be location and procedure for conducting the alternative, the concentration or response levels of the alternative RA materials, and the other equipment checks included in the alternative procedure. The Administrator will review the petition for completeness and applicability. The determination to grant a waiver will depend"
+    },
+    {
+      "pair_id": 104,
+      "passage_a": "be provided on an as needed basis in order to follow up on a positive answer on the health questionnaire, or in response to an abnormal CBC. Physical examination of workers who will no longer be working in jobs with BD exposure are intended to rule out lymphohematopoietic disorders. > The need for physical examinations for workers concerned about adverse reproductive effects from their exposure to BD should be identified by the physician or other licensed health care professional and provided accordingly. For these workers, such consultations and examinations may relate to developmental toxicity and reproductive capacity. > Physical examination of workers acutely exposed to significant levels of BD should be especially directed at the respiratory system, eyes, sinuses, skin,",
+      "passage_b": "as well as workers with anemia or heart disease and those concurrently exposed to carbon monoxide are at especially high risk of toxic effects because of an already reduced oxygen carrying capacity of the blood. > A comprehensive or interim medical and work history should also include occurrence of headache, dizziness, fatigue, chest pain, shortness of breath, pain in the limbs, and irritation of the skin and eyes. > In addition, it is important for the physician or other licensed health care professional to become familiar with the operating conditions in which exposure to MC is likely to occur. The physician or other licensed health care professional also must become familiar with the signs and symptoms that may indicate that"
+    },
+    {
+      "pair_id": 105,
+      "passage_a": "Each owner or operator that is subject to the requirements of this subpart shall comply with the emission limitations set forth in this section on and after the date on which the initial performance test, required by \u00a7 60.8, is completed, but not later than 60 days after achieving the maximum production rate at which the affected facility will be operated, or 180 days after initial startup, whichever comes first. (a) No owner or operator subject to the provisions of this subpart shall: (1) Burn in any fuel gas combustion device any fuel gas that contains hydrogen sulfide (H2S) in excess of 230 mg/dscm (0.10 gr/dscf). The combustion in a flare of process upset gases or fuel gas that is",
+      "passage_b": "may be monitored at only one location (i.e., after one of the combustion devices), if monitoring at this location accurately represents the SO2 emissions into the atmosphere from each of the combustion devices. (4) Instead of the SO2 monitor in paragraph (a)(3) of this section for fuel gas combustion devices subject to \u00a7 60.104(a)(1), an instrument for continuously monitoring and recording the concentration (dry basis) of H2S in fuel gases before being burned in any fuel gas combustion device. (i) The span value for this instrument is 425 mg/dscm H2S. (ii) Fuel gas combustion devices having a common source of fuel gas may be monitored at only one location, if monitoring at this location accurately represents the concentration of H2S"
+    },
+    {
+      "pair_id": 106,
+      "passage_a": "the temporary piping meets the following conditions: (1) Liquid piping inside the building shall conform to the requirements of paragraph (b)(8) of this section, and shall not exceed three-fourths iron pipe size. Copper tubing with an outside diameter of three-fourths inch or less may be used provided it conforms to Type K of Specifications for Seamless Water Tube, ANSI H23.1-1970 (ASTM B88-69) (see Table H-24). All such piping shall be protected against construction hazards. Liquid piping inside buildings shall be kept to a minimum. Such piping shall be securely fastened to walls or other surfaces so as to provide adequate protection from breakage and so located as to subject the liquid line to lowest ambient temperatures. (2) A shutoff valve",
+      "passage_b": "to the public, shall be covered with approved nonconductive mats. Cables and mats shall be arranged so as not to present a tripping hazard. (ix) A box or fitting shall be installed at each connection point, outlet, switch point, or junction point. (3) Inside tents and concessions. Electrical wiring for temporary lighting, where installed inside of tents and concessions, shall be securely installed, and, where subject to physical damage, shall be provided with mechanical protection. All temporary lamps for general illumination shall be protected from accidental breakage by a suitable fixture or lampholder with a guard. (4) Portable distribution and termination boxes. Employers may only use portable distribution and termination boxes that meet the following requirements: (i) Boxes shall be"
+    },
+    {
+      "pair_id": 107,
+      "passage_a": "C is the total length of the work day, in hours, and T is the reference duration corresponding to the measured sound level, L, as given in Table G-16a or by the formula shown as a footnote to that table. > (ii) When the workshift noise exposure is composed of two or more periods of noise at different levels, the total noise dose over the work day is given by: > D = 100(C1 / T1 + C2 / T2 + Cn / Tn), > where Cn indicates the total time of exposure at a specific noise level, and Tn indicates the reference duration for that level as given by Table G-16a. > (2) The eight-hour time-weighted average sound level",
+      "passage_b": "> Table A-1\u2014Conversion From \u201cPercent Noise Exposure\u201d or \u201cDose\u201d to \u201c8-Hour Time-Weighted Average Sound Level\u201d (TWA) (continued)"
+    },
+    {
+      "pair_id": 108,
+      "passage_a": "from a pool have not been run at the time of the update, then the limits should be based on as many as have been run provided at least 20 quality control samples from each pool have been run over 20 different days. > The trends that should be looked for on the control charts are: > 1. 10 consecutive quality control samples falling above or below the mean; > 2. 3 consecutive quality control samples falling more than 2\u03c3 from the mean (above or below the 2\u03c3 lines of the chart); or > 3. the mean calculated to update the control limits falls more than 10% above or below the theoretical mean of 1.000. > If any of these",
+      "passage_b": "example, if 300 compliance samples of an analyte are run, then at least 16 quality control samples should be run (16 is the smallest multiple of four that is greater than 15, which is 5% of 300). > Control charts for each pool of an analyte (and for each instrument in the laboratory to be used for analysis of compliance samples) should be established by plotting F/T versus date as the quality control sample results are reported. On the graph there should be lines representing the control limits for the pool, the mean F/T limits for the pool, and the theoretical F/T of 1.000. Lines representing plus or minus (\u00b1) \u03c3 should also be represented on the charts. A theoretical"
+    },
+    {
+      "pair_id": 109,
+      "passage_a": "before starting the analysis of samples. Calculate the experimental characteristic mass value from the average integrated absorbance reading and injection volume of the analyzed working standard. Compare this value to the manufacturer's suggested value as a check of proper instrument operation. > 3.11.6. Analyze the reagent blank, working standard, and sample solutions. Record and label the peak area (abs-sec) readings and the peak and background peak profiles on the printer/plotter. > 3.11.7. It is recommended the entire series of working standards be analyzed at the beginning and end of the analysis of a set of samples. Establish a concentration-response curve and ensure standard readings agree with each other and are reproducible. Also, analyze a working standard after every five or",
+      "passage_b": "the following experiments: > 1. An analysis of 24 samples (six samples each at 0.1, 0.5, 1 and 2 times the TWA-PEL) for the analytical method recovery study of the flame AAS analytical technique. > 2. An analysis of 18 samples (six samples each at 0.5, 1 and 2 times the Action Level TWA-PEL) for the analytical method recovery study of the AAS-HGA analytical technique. > 3. Multiple analyses of the reagent blank and a series of standard solutions to determine the working standard range and the qualitative and quantitative detection limits for both atomic absorption analytical techniques. > 4.1.2. The analytical method recovery results at all test levels were calculated from concentration-response curves and statistically examined for outliers at"
+    },
+    {
+      "pair_id": 110,
+      "passage_a": "the transport unit. (3) If restraints such as banding or straps are used, these straps must not be over-tightened to an extent that causes damage or deformation to the Flexible Bulk Container. (4) Flexible Bulk Containers must be transported in a conveyance with rigid sides and ends that extend at least two-thirds of the height of the Flexible Bulk Container. (5) Flexible Bulk Containers must not be stacked for highway or rail transportation. (6) Flexible Bulk Containers must not be transported in cargo transport units when offered for transportation by vessel. (7) Flexible Bulk Containers when transported by barge must be stowed in such a way that there are no void spaces between the Flexible Bulk Containers in the barge.",
+      "passage_b": "B infectious substance meeting the definition of a hazard class other than Division 6.2 must be offered for transportation or transported in accordance with applicable requirements of this subchapter. (1) A Category B infectious substance must be packaged in a triple packaging consisting of a primary receptacle, a secondary packaging, and a rigid outer packaging. (2) Primary receptacles must be packed in secondary packaging in such a way that, under normal conditions of transport, they cannot break, be punctured, or leak their contents into the secondary packaging. (3) Secondary packagings must be secured in rigid outer packagings with suitable cushioning material such that any leakage of the contents will not impair the protective properties of the cushioning material or the"
+    },
+    {
+      "pair_id": 111,
+      "passage_a": "S.M. Cohen, V. Dellarco, R.N. Hill, L. Lehman-McKeeman, D.G. Longfellow, T. Pastoor, J. Seed, D.E. Patton. 2003. A framework for human relevance analysis of information on carcinogenic modes of action. Crit. Rev. Toxicol. 33(6):591-653. > Sonich-Mullin, C., R. Fielder, J. Wiltse, K. Baetcke, J. Dempsey, P. Fenner-Crisp, D. Grant, M. Hartley, A. Knapp, D. Kroese, I. Mangelsdorf, E. Meek, J.M. Rice, and M. Younes. 2001. The conceptual framework for evaluating a mode of action for chemical carcinogenesis. Reg. Toxicol. Pharm. 34:146-152. > International Programme on Chemical Safety Harmonization Group. 2004. Report of the First Meeting of the Cancer Working Group. World Health Organization. Report IPCS/HSC-CWG-1/04. Geneva. > International Agency for Research on Cancer. IARC Monographs on the Evaluation of Carcinogenic",
+      "passage_b": "Parsonnet, J., and Banaei, N. (2013). Challenges with QuantiFERON-TB gold assay for large-scale, routine screening of U.S. healthcare workers. Am J Respir Crit Care Med, 188, 1005-1010. > Steenland, K., Mannetje, A., Boffetta, P., Stayner, L., Attfield, M., Chen, J., Dosemeci, M., DeKlerk, N., Hnizdo, E., Koskela, R., and Checkoway, H. (2001). International Agency for Research on Cancer. Pooled exposure-response analyses and risk assessment for lung cancer in 10 cohorts of silica-exposed workers: An IARC multicentre study. Cancer Causes Control, 12(9):773-84. > Steenland, K. and Ward E. (2014). Silica: A lung carcinogen. CA Cancer J Clin, 64, 63-69. > Townsend, M.C. ACOEM Guidance Statement. (2011). Spirometry in the occupational health setting\u20142011 Update. J Occup Environ Med, 53, 569-584. > ####"
+    },
+    {
+      "pair_id": 112,
+      "passage_a": "cord or cable assemblies or open conductors. If run as open conductors, they shall be fastened at ceiling height every 3.05 m (10.0 ft). (C) No branch-circuit conductor may be laid on the floor. (D) Each branch circuit that supplies receptacles or fixed equipment shall contain a separate equipment grounding conductor if run as open conductors. (vi) Receptacles shall be of the grounding type. Unless installed in a continuous grounded metallic raceway or metallic covered cable, each branch circuit shall contain a separate equipment grounding conductor and all receptacles shall be electrically connected to the grounding conductor. (vii) No bare conductors nor earth returns may be used for the wiring of any temporary circuit. (viii) Suitable disconnecting switches or plug",
+      "passage_b": "metal handles and controls accessible to the operating personnel shall be effectively grounded. Unpowered equipment and enclosures are considered to be grounded where connected to an attached coaxial cable with an effectively grounded metallic shield. (f) Solar photovoltaic systems. This paragraph covers solar photovoltaic systems that can be interactive with other electric power production sources or can stand alone with or without electrical energy storage such as batteries. These systems may have ac or dc output for utilization. (1) Conductors of different systems. Photovoltaic source circuits and photovoltaic output circuits may not be contained in the same raceway, cable tray, cable, outlet box, junction box, or similar fitting as feeders or branch circuits of other systems, unless the conductors of"
+    },
+    {
+      "pair_id": 113,
+      "passage_a": "ending December 31, 1998 and for the period beginning January 1, 1999. > (B) The results of the biological monitoring for the initial medical exam and the subsequent exams shall determine an employee's biological monitoring result category. > #### Actions Triggered by Biological Monitoring > (A) > (i) The actions triggered by biological monitoring for an employee are set forth in appendix A Table B. > (ii) The biological monitoring results for each employee under section (1)(3) shall determine the actions required for that employee. That is, for any employee in biological monitoring category C, the employer will perform all of the actions for which there is an X in column C of appendix A Table B. > (iii) An",
+      "passage_b": "Each employer who has a workplace or work operation covered by this section, shall perform initial monitoring to determine accurately the airborne concentrations of BD to which employees may be exposed, or shall rely on objective data pursuant to paragraph (a)(2)(i) of this section to fulfill this requirement. The initial monitoring required under this paragraph shall be completed within 60 days of the introduction of BD into the workplace. (ii) Where the employer has monitored within two years prior to the effective date of this section and the monitoring satisfies all other requirements of this section, the employer may rely on such earlier monitoring results to satisfy the requirements of paragraph (d)(2)(i) of this section, provided that the conditions under"
+    },
+    {
+      "pair_id": 114,
+      "passage_a": "[TABLE] 1910.266_part3 section \u00a7 1910.266 Logging operations.\n|---|---|---|\n| SAE J1040 | ISO 3471-1 | Performance Criteria for Rollover Protective Structures (ROPS) for Construction, Earthmoving, Forestry and Mining Machines. |\n| SAE J397 | ISO 3164 | Deflection Limiting Volume\u2014ROPS/FOPS Laboratory Evaluation. |\n| SAE J231 | ISO 3449 | Minimum Performance Criteria for Falling Object Protective Structures (FOPS). |\n| SAE J386 | ISO 6683 | Operator Restraint Systems for Off-Road Work Machines. |\n| SAE J185 | ISO 2897 | Access Systems for Off-Road Machines. |",
+      "passage_b": "Structure (FOPS), IBR approved for \u00a7 1910.266(f)(3)(ii). (3) SAE J386, June 1985, Operator Restraint Systems for Off-Road Work Machines, IBR approved for \u00a7 1910.266(d)(3)(iv). (4) SAE J397, April 1988, Deflection Limiting Volume-ROPS/FOPS Laboratory Evaluation, IBR approved for \u00a7 1910.266(f)(3)(iv). (5) SAE 765 (1961) SAE Recommended Practice: Crane Loading Stability Test Code, IBR approved for \u00a7 1910.180 (c)(1)(iii) and (e)(2)(iii)(a). (6) SAE J1040, April 1988, Performance Criteria for Rollover Protective Structures (ROPS) for Construction, Earthmoving, Forestry and Mining Machines, IBR approved for \u00a7 1910.266(f)(3)(ii). (cc) The following material is available for purchase from Underwriters Laboratories (UL), 207 East Ohio Street, Chicago, IL 60611: (1) UL 58-61 Steel Underground Tanks for Flammable and Combustible Liquids, 5th Ed., IBR approved for \u00a7 1910.106(b)(1)(iii)(a)(1)."
+    },
+    {
+      "pair_id": 115,
+      "passage_a": "determined by the attending physician. The guidelines in the Occupational Safety and Health Guidance Manual for Hazardous Waste Site Activities (See appendix D, Reference #10) should be consulted. (5) Examination by a physician and costs. All medical examinations and procedures shall be performed by or under the supervision of a licensed physician, preferably one knowledgeable in occupational medicine, and shall be provided without cost to the employee, without loss of pay, and at a reasonable time and place. (6) Information provided to the physician. The employer shall provide one copy of this standard and its appendices to the attending physician, and in addition the following for each employee: (i) A description of the employee's duties as they relate to the",
+      "passage_b": "within 6 months preceding termination of employment, the employer shall make such examination available to the employee prior to such termination. (4) Additional examinations. If the employee for any reason develops signs or symptoms which may be associated with exposure to AN, the employer shall provide an appropriate examination and emergency medical treatment. (5) Information provided to the physician. The employer shall provide the following information to the examining physician: (i) A copy of this standard and its appendixes; (ii) A description of the affected employee's duties as they relate to the employee's exposure; (iii) The employee's representative exposure level; (iv) The employee's anticipated or estimated exposure level (for preplacement examinations or in cases of exposure due to an emergency);"
+    },
+    {
+      "pair_id": 116,
+      "passage_a": "(a) The owner or operator subject to the provisions of this subpart shall conduct a performance test and submit to the Administrator a written report of the results of the test as specified in \u00a7 60.8(a). (b) During the initial performance test of a wet scrubber, and at least weekly thereafter, the owner or operator shall record the measurements of both the change in pressure of the gas stream across the scrubber and the scrubbing liquid flow rate. (c) After the initial performance test of a wet scrubber, the owner or operator shall submit semiannual reports to the Administrator of occurrences when the measurements of the scrubber pressure loss (or gain) or liquid flow rate differ by more than \u00b130",
+      "passage_b": "> On a separate page, describe any changes since last quarter in CMS, process or controls. I certify that the information contained in this report is true, accurate, and complete. > Name > Signature > Title > Date (e)(1) Notwithstanding the frequency of reporting requirements specified in paragraph (c) of this section, an owner or operator who is required by an applicable subpart to submit excess emissions and monitoring systems performance reports (and summary reports) on a quarterly (or more frequent) basis may reduce the frequency of reporting for that standard to semiannual if the following conditions are met: (i) For 1 full year (e.g., 4 quarterly or 12 monthly reporting periods) the affected facility's excess emissions and monitoring systems"
+    },
+    {
+      "pair_id": 117,
+      "passage_a": "[TABLE] 1910.137 section \u00a7 1910.137 Electrical protective equipment.\n| Class of equipment | Maximumuse voltage 1AC rms | Retestvoltage 2AC rms | Retestvoltage 2DC avg |\n|---|---|---|---|\n| 00 | 500 | 2,500 | 10,000 |\n| 0 | 1,000 | 5,000 | 20,000 |\n| 1 | 7,500 | 10,000 | 40,000 |\n| 2 | 17,000 | 20,000 | 50,000 |\n| 3 | 26,500 | 30,000 | 60,000 |\n| 4 | 36,000 | 40,000 | 70,000 |\n| 1 The maximum use voltage is the ac voltage (rms) classification of the protective equipment that designates the maximum nominal design voltage of the energized system that may be safely worked. The nominal design voltage is equal to the phase-to-phase voltage on multiphase circuits. However, the phase-to-ground potential is considered to be the nominal design voltage if: | | | |\n| (1) There is no multiphase exposure in a system area and the voltage exposure is limited to the phase-to-ground potential, or | | | |\n| (2) The electric equipment and devices are insulated or isolated or both so that the multiphase exposure on a grounded wye circuit is removed. | | | |\n| 2 The proof-test voltage shall be applied continuously for at least 1 minute, but no more than 3 minutes. | | | |",
+      "passage_b": "than 30 volts and 1000 volt-amperes. (ii) A Class 1 remote control circuit or a Class 1 signaling circuit shall have a voltage not exceeding 600 volts; however, the power output of the source need not be limited. (iii) The power source for a Class 2 or Class 3 circuit shall be listed equipment marked as a Class 2 or Class 3 power source, except as follows: (A) Thermocouples do not require listing as a Class 2 power source; and (B) A dry cell battery is considered an inherently limited Class 2 power source, provided the voltage is 30 volts or less and the capacity is less than or equal to that available from series-connected No. 6 carbon zinc cells."
+    },
+    {
+      "pair_id": 118,
+      "passage_a": "be used to open and close metal containers. These containers must be effectively grounded. > C. Do not incinerate BD cartridges, tanks or other containers. > D. Employers must advise employees of all areas and operations where exposure to BD might occur. > #### Appendix C to \u00a7 1910.1051\u2014Medical Screening and Surveillance for 1,3-Butadiene (Non-Mandatory) > #### I. Basis for Medical Screening and Surveillance Requirements > #### A. Route of Entry Inhalation > #### B. Toxicology > Inhalation of BD has been linked to an increased risk of cancer, damage to the reproductive organs, and fetotoxicity. Butadiene can be converted via oxidation to epoxybutene and diepoxybutane, two genotoxic metabolites that may play a role in the expression of BD's toxic",
+      "passage_b": "relate to developmental toxicity and reproductive capacity. > Physical examination of workers acutely exposed to significant levels of BD should be especially directed at the respiratory system, eyes, sinuses, skin, nervous system, and any region associated with particular complaints. If the worker has received a severe acute exposure, hospitalization may be required to assure proper medical management. Since this type of exposure may place workers at greater risk of blood abnormalities, a CBC must be obtained within 48 hours and repeated at one, two, and three months. > #### Appendix D to \u00a7 1910.1051\u2014Sampling and Analytical Method for 1,3-Butadiene (Non-Mandatory) > OSHA Method No.: 56. > Matrix: Air. > Target concentration: 1 ppm (2.21 mg/m 3) > Procedure: Air samples"
+    },
+    {
+      "pair_id": 119,
+      "passage_a": "[TABLE] 1910.252_part2 section \u00a7 1910.252 General requirements.\n| Welding zone | Minimum air flow 1 cubic feet/minute | Duct diameter, inches 2 |\n|---|---|---|\n| 4 to 6 inches from arc or torch | 150 | 3 |\n| 6 to 8 inches from arc or torch | 275 | 31\u20442 |\n| 8 to 10 inches from arc or torch | 425 | 41\u20442 |\n| 10 to 12 inches from arc or torch | 600 | 51\u20442 |\n| 1 When brazing with cadmium bearing materials or when cutting on such materials increased rates of ventilation may be required. | | |\n| 2 Nearest half-inch duct diameter based on 4,000 feet per minute velocity in pipe. | | |",
+      "passage_b": "duct system. Vent cooker/dryer by opening access door at discharge end and top center door to allow natural ventilation throughout the entry. If faster cooling is needed, use a portable ventilation fan to increase ventilation. Cooling water may be circulated through the jacket to reduce both outer and inner surface temperatures of cooker/dryers faster. Check air and inner surface temperatures in cooker/dryer to assure they are within acceptable limits before entering, or use proper protective clothing. > Fire and fume hazards. Careful site preparation, such as cleaning the area within 4 inches (10.16 cm) of all welding or torch cutting operations, and proper ventilation are the preferred controls. All welding and cutting operations shall be done in accordance with the"
+    },
+    {
+      "pair_id": 120,
+      "passage_a": "retesting of all insulating gloves, blankets, and other rubber insulating equipment. This retesting shall be electrical, visual and mechanical. The following maximum retesting intervals shall apply:",
+      "passage_b": "employee uses rubber insulating gloves or rubber insulating gloves and sleeves as insulation from energized parts (under paragraph (l)(3)(iii)(A) of this section), the employer shall ensure that the employee: (A) Puts on the rubber insulating gloves and sleeves in a position where he or she cannot reach into the minimum approach distance, established by the employer under paragraph (l)(3)(i) of this section; and (B) Does not remove the rubber insulating gloves and sleeves until he or she is in a position where he or she cannot reach into the minimum approach distance, established by the employer under paragraph (l)(3)(i) of this section. (5) Working position. (i) The employer shall ensure that each employee, to the extent that other safety-related conditions"
+    }
+  ]
+}

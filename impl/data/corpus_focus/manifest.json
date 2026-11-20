@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Economic order quantity",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/economic-order-quantity.md",
+    "bytes": 45156
+  },
+  {
+    "title": "Incoterms",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/incoterms.md",
+    "bytes": 68701
+  },
+  {
+    "title": "Safety stock",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/safety-stock.md",
+    "bytes": 34670
+  },
+  {
+    "title": "Just-in-time manufacturing",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/just-in-time-manufacturing.md",
+    "bytes": 59762
+  },
+  {
+    "title": "Material requirements planning",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/material-requirements-planning.md",
+    "bytes": 12305
+  },
+  {
+    "title": "Bill of materials",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/bill-of-materials.md",
+    "bytes": 25850
+  },
+  {
+    "title": "Kanban",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/kanban.md",
+    "bytes": 47854
+  },
+  {
+    "title": "Theory of constraints",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/theory-of-constraints.md",
+    "bytes": 96071
+  },
+  {
+    "title": "Inventory management",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/inventory-management.md",
+    "bytes": 4026
+  },
+  {
+    "title": "Strategic sourcing",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/strategic-sourcing.md",
+    "bytes": 28645
+  },
+  {
+    "title": "Third-party logistics",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/third-party-logistics.md",
+    "bytes": 48809
+  },
+  {
+    "title": "Logistics",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/logistics.md",
+    "bytes": 114359
+  },
+  {
+    "title": "Demand forecasting",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/demand-forecasting.md",
+    "bytes": 50005
+  },
+  {
+    "title": "Six Sigma",
+    "category": "supply_chain_management",
+    "path": "data/corpus_focus/supply_chain_management/six-sigma.md",
+    "bytes": 107514
+  }
+]

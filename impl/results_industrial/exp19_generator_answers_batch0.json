@@ -1,0 +1,86 @@
+{
+  "generator": "claude_agent_industrial_gen",
+  "batch": 0,
+  "answers": [
+    {
+      "index": 0,
+      "answer": "Dispersion microscopy, or dispersion staining, is the method of choice for the identification of asbestos in bulk materials. When used for asbestos it is a dark-field technique, in which particles are imaged with scattered light."
+    },
+    {
+      "index": 1,
+      "answer": "Immediate use means that the hazardous chemical will be under the control of and used only by the person who transfers it from a labeled container, and only within the work shift in which it is transferred."
+    },
+    {
+      "index": 2,
+      "answer": "Clinical Laboratory means a workplace where diagnostic or other screening procedures are performed on blood or other potentially infectious materials."
+    },
+    {
+      "index": 3,
+      "answer": "Except when the composition is an explosive per se, it also contains one or more of the following: a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge. The parallel clause for ammunition, smoke reads \"Except when the substance is an explosive per se, the ammunition also contains one or more of the following: a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge.\""
+    },
+    {
+      "index": 4,
+      "answer": "Rubber Tire Manufacturing Industry."
+    },
+    {
+      "index": 5,
+      "answer": "Drilling."
+    },
+    {
+      "index": 6,
+      "answer": "Basket hitch is a sling configuration whereby the sling is passed under the load and has both ends, end attachments, eyes or handles on the hook or a single master link."
+    },
+    {
+      "index": 7,
+      "answer": "Equivalent entity is a person or organization (including an employer) which, by possession of equipment, technical knowledge and skills, can perform with equal competence the same repairs and tests as the person or organization with which it is equated."
+    },
+    {
+      "index": 8,
+      "answer": "Transportable outriggers means outriggers designed to be moved from one work location to another."
+    },
+    {
+      "index": 9,
+      "answer": "Continuous pressure means the need for constant manual actuation for a control to function."
+    },
+    {
+      "index": 10,
+      "answer": "No."
+    },
+    {
+      "index": 11,
+      "answer": "100."
+    },
+    {
+      "index": 12,
+      "answer": "Guide roller means a rotating cylindrical member, operating separately or as part of a guide assembly, designed to provide continuous engagement between the platform and the building guides or guideways."
+    },
+    {
+      "index": 13,
+      "answer": "Regulated area means an area demarcated by the employer where an employee's exposure to airborne concentrations of cadmium exceeds, or can reasonably be expected to exceed, the permissible exposure limit (PEL)."
+    },
+    {
+      "index": 14,
+      "answer": ">42-100 for UN3106, and <=42 for the Exempt entry."
+    },
+    {
+      "index": 15,
+      "answer": "(C)5."
+    },
+    {
+      "index": 16,
+      "answer": "Immediate outer package means the first package enclosing the container of hazardous chemical."
+    },
+    {
+      "index": 17,
+      "answer": "Airborne infection isolation room (AIIR) means a dedicated negative pressure patient-care room, with special air handling capability, which is used to isolate persons with a suspected or confirmed airborne-transmissible infectious disease. AIIRs include both permanent rooms and temporary structures (e.g., a booth, tent or other enclosure designed to operate under negative pressure)."
+    },
+    {
+      "index": 18,
+      "answer": "Imperial County APCD."
+    },
+    {
+      "index": 19,
+      "answer": "Hazard class means the nature of the physical or health hazards, e.g., flammable solid, carcinogen, oral acute toxicity. Hazard category means the division of criteria within each hazard class, e.g., oral acute toxicity and flammable liquids include four hazard categories."
+    }
+  ]
+}

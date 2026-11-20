@@ -1,0 +1,79 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "general",
+  "regime_title": "All four regimes, read without a specialism",
+  "regime_governs": "occupational safety, process safety, environmental control and hazardous-materials transport.",
+  "reader_note": "You are reading pairs from four different regulatory regimes without a specialism in any of them. Apply the rubric as written.",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Follow its decision tree\nin order and stop at the first question that applies.\n\n`quantity_conflict` and `semantic_conflict` are true contradictions.\n`supersession` is a real conflict of a different kind: the two passages are\nthe same rule at two issues, so they cannot both be current.\n`term_mismatch`, `granularity` and `no_conflict` are false alarms.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial\nregulations. Decide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, an entity name, a standard\nnumber or a quantity, but they are not about the same thing: two different\nsubstances, two different pieces of equipment, two different kinds of\nworkplace. A numeric rule fires on \"clearance of 1/2 inch\" in one passage\nand \"clearance of 2 inches\" in another that is about a different machine;\nthat pair is `term_mismatch`, and it is the failure mode a *subject* check\nis meant to suppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Are the two passages two issues of the same rule?\n\n**Yes -> `supersession`**\n\nThe test is **structural**, not a marker test. The two passages address the\nsame requirement, about the same subject, in the same terms, and differ only\nin detail: a renumbered cross-reference, a changed edition of a cited\nstandard, a rewording that preserves the requirement, an added or removed\nparagraph, a changed incorporation-by-reference list. A version marker, an\neffective date, a \"supersedes\" note or an amended cross-reference is one way\nto see this; it is **not the only way**. Recognising that two passages are\nthe same rule as it read at two different times is a reading judgement, and\nyou are being asked to make it.\n\n**What `supersession` means, and what it does not.** It means the two\npassages cannot both be the current rule. It does **not** mean that one of\nthem is wrong, and it does **not** mean the pair is harmless: a practitioner\nholding both has to be told which one governs. If the passages carry no\nmarker saying which is current, that is a fact worth reporting, not a\nreason to call the pair a non-conflict.\n\n**No -> go to question 3.**\n\n## 3. Do the two passages state requirements that cannot both be obeyed?\n\n**A number differs for the same measured quantity, with the subject\nmatched -> `quantity_conflict`**\n\nThe same substance, the same machine, the same requirement, two different\nvalues. \"The permissible exposure limit for cadmium is 5 micrograms per\ncubic meter of air\" against \"the permissible exposure limit for cadmium is\n100 micrograms per cubic meter of air\" is a `quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved. \"The\nemployer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n**Neither -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\n## A note on scope\n\nTwo passages are **not** in conflict merely because they differ. Two\nregulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, for different\nsituations, or for different scopes are not \u2014 read the scope before\njudging the numbers.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 37,
+      "passage_a": "> Table A.9.1\u2014Guidance Values To Assist in Category 1 Classification",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 38,
+      "passage_a": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method), IBR approved for \u00a7\u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3.",
+      "passage_b": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method); IBR approved for \u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3."
+    },
+    {
+      "pair_id": 39,
+      "passage_a": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3.",
+      "passage_b": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3 of this appendix."
+    },
+    {
+      "pair_id": 40,
+      "passage_a": "> #### A.3.2 Classification Criteria for Substances Using Animal Test Data",
+      "passage_b": "> #### A.3.2 Classification Criteria for Substances"
+    },
+    {
+      "pair_id": 41,
+      "passage_a": "> B.3.3.3 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of the of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.3.3.4 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of UN ST/SG/AC.10 (incorporated by reference; see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 42,
+      "passage_a": "(149) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method), IBR approved for \u00a7 60.334(h).",
+      "passage_b": "(155) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method); IBR approved for \u00a7 60.334(h)."
+    },
+    {
+      "pair_id": 43,
+      "passage_a": "Ds = 63 inches/second \u00d7 Ts;",
+      "passage_b": "Ds = 63 inches/second \u00d7 Ts"
+    },
+    {
+      "pair_id": 44,
+      "passage_a": "> #### A.9.2.7 Effects Considered To Support Classification",
+      "passage_b": "> A.9.2.7 Effects Considered To Support Classification"
+    },
+    {
+      "pair_id": 45,
+      "passage_a": "(84) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood, IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1.",
+      "passage_b": "(87) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood; IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1."
+    },
+    {
+      "pair_id": 46,
+      "passage_a": "(125) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke, IBR approved for \u00a7 60.45(f).",
+      "passage_b": "(131) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke; IBR approved for \u00a7 60.45(f)."
+    },
+    {
+      "pair_id": 47,
+      "passage_a": "(m) Recordkeeping - (1) Exposure measurements. The employer shall maintain an accurate record of all employee exposure measurements required by paragraph (d) of this section.",
+      "passage_b": "(m) Recordkeeping\u2014(1) Exposure measurements. The employer shall maintain an accurate record of all employee exposure measurements required by paragraph (d) of this section."
+    },
+    {
+      "pair_id": 48,
+      "passage_a": "Delegation Status for New Source Performance Standards for San Diego County APCD, San Joaquin Valley Unified APCD, San Luis Obispo County APCD, and Santa Barbara County APCD",
+      "passage_b": "(vii) Delegations for San Diego County Air Pollution Control District, San Joaquin Valley Unified Air Pollution Control District, San Luis Obispo County Air Pollution Control District, and Santa Barbara County Air Pollution Control District are shown in the following table:"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "process_safety",
+  "regime_title": "Catastrophic-risk management (OSHA PSM and EPA RMP)",
+  "regime_governs": "the standards that manage low-frequency, high-consequence events: process safety management, hazardous waste operations, permit-required confined spaces, lockout/tagout, hazard communication, and EPA's risk management programme rule.",
+  "reader_note": "These rules are unusually explicit about scope and about exemptions, and they are the rules most likely to contain genuine, simultaneous, irreconcilable requirements \u2014 a process safety management programme and a hazard communication programme can demand different things of the same employer at the same time. Read them for whether both can be obeyed together, not for whether they sound different.",
+  "parts": "29 CFR 1910 subparts G, Z; 40 CFR 112",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 28,
+      "passage_a": "> | Ingredient classified as: | Cut-off values/concentration limits triggering classification of a mixture as: |  |  |\n|---|---|---|---|\n| Respiratory Sensitizer Category 1 |  | Skin Sensitizer Category 1 |  |\n| Solid/liquid | Gas | All physical states |  |\n| Respiratory Sensitizer, Category 1 | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1A | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1B | \u22651.0% | \u22650.2% |  |\n| Skin Sensitizer, Category 1 |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1A |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1B |  |  | \u22651.0% |",
+      "passage_b": "> Table A.4.5\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as Either Respiratory Sensitizers or Skin Sensitizers That Would Trigger Classification of the Mixture\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |  |\n|---|---|---|---|\n| Respiratory sensitizer Category 1 |  | Skin sensitizer Category 1 |  |\n| Solid/liquid (%) | Gas (%) | All physical states (%) |  |\n| Respiratory Sensitizer Category 1 | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1A | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1B | \u22651.0 | \u22650.2 |  |\n| Skin Sensitizer Category 1 |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1A |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1B |  |  | \u22651.0 |"
+    },
+    {
+      "pair_id": 30,
+      "passage_a": "> #### A.7.2.2 Basis of Classification",
+      "passage_b": "> A.7.2.2 Basis of Classification"
+    },
+    {
+      "pair_id": 32,
+      "passage_a": "> (c) Mammalian erythrocyte micronucleus test (OECD 474)",
+      "passage_b": "> (b) Mammalian erythrocyte micronucleus test (OECD 474)"
+    },
+    {
+      "pair_id": 35,
+      "passage_a": "> A.8.2.1.9 Guidance values to assist with classification based on the results obtained from studies conducted in experimental animals for Category 1 and 2",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 37,
+      "passage_a": "> Table A.9.1\u2014Guidance Values To Assist in Category 1 Classification",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 39,
+      "passage_a": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3.",
+      "passage_b": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3 of this appendix."
+    },
+    {
+      "pair_id": 40,
+      "passage_a": "> #### A.3.2 Classification Criteria for Substances Using Animal Test Data",
+      "passage_b": "> #### A.3.2 Classification Criteria for Substances"
+    },
+    {
+      "pair_id": 41,
+      "passage_a": "> B.3.3.3 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of the of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.3.3.4 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of UN ST/SG/AC.10 (incorporated by reference; see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 44,
+      "passage_a": "> #### A.9.2.7 Effects Considered To Support Classification",
+      "passage_b": "> A.9.2.7 Effects Considered To Support Classification"
+    },
+    {
+      "pair_id": 49,
+      "passage_a": "> | Exposure route | Category 1 | Category 2 | Category 3 | Category 4 |\n|---|---|---|---|---|\n| Oral (mg/kg bodyweight) |  |  |  |  |\n| see: Note (a) | \u22645 | >5 and \u226450 | >50 and \u2264300 | >300 and \u22642000. |\n| Note (b) |  |  |  |  |\n| Dermal (mg/kg bodyweight) |  |  |  |  |\n| see: Note (a) | \u226450 | >50 and \u2264200 | >200 and \u22641000 | >1000 and \u22642000. |\n| Note (b) |  |  |  |  |\n| Inhalation\u2014Gases (ppmV) |  |  |  |  |\n| see: Note (a) | \u2264100 | >100 and \u2264500 | >500 and \u22642500 | >2500 and \u226420000. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |\n| Inhalation\u2014Vapors (mg/l) |  |  |  |  |\n| see: Note (a) | \u22640.5 | >0.5 and \u22642.0 | >2.0 and \u226410.0 | >10.0 and \u226420.0. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |\n| Note (d) |  |  |  |  |\n| Inhalation\u2014Dusts and Mists (mg/l) |  |  |  |  |\n| see: Note (a) | \u22640.05 | >0.05 and \u22640.5 | >0.5 and \u22641.0 | >1.0 and \u22645.0. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |",
+      "passage_b": "> Table A.1.2\u2014Conversion From Experimentally Obtained Acute Toxicity Range Values (or Acute Toxicity Hazard Categories) to Acute Toxicity Point Estimates for Use in the Formulas for the Classification of Mixtures\n| Exposure routes | Classification category or experimentally obtained acute toxicity range estimate | Converted acute toxicity point estimate |\n|---|---|---|\n| Oral (mg/kg bodyweight) | 0 < Category 1 \u2264 5 | 0.5 |\n|  | 5 < Category 2 \u2264 50 | 5 |\n|  | 50 < Category 3 \u2264 300 | 100 |\n|  | 300 < Category 4 \u2264 2000 | 500 |\n| Dermal (mg/kg bodyweight) | 0 < Category 1 \u2264 50 | 5 |\n|  | 50 < Category 2 \u2264 200 | 50 |\n|  | 200 < Category 3 \u2264 1000 | 300 |\n|  | 1000 < Category 4 \u2264 2000 | 1100 |\n| Gases (ppmV) | 0 < Category 1 \u2264 100 | 10 |\n|  | 100 < Category 2 \u2264 500 | 100 |\n|  | 500 < Category 3 \u2264 2500 | 700 |\n|  | 2500 < Category 4 \u2264 20000 | 4500 |\n| Vapors (mg/l) | 0 < Category 1 \u2264 0.5 | 0.05 |\n|  | 0.5 < Category 2 \u2264 2.0 | 0.5 |\n|  | 2.0 < Category 3 \u2264 10.0 | 3 |\n|  | 10.0 < Category 4 \u2264 20.0 | 11 |\n| Dust/mist (mg/l) | 0 < Category 1 \u2264 0.05 | 0.005 |\n|  | 0.05 < Category 2 \u2264 0.5 | 0.05 |\n|  | 0.5 < Category 3 \u2264 1.0 | 0.5 |\n|  | 1.0 < Category 4 \u2264 5.0 | 1.5 |\n| Note: Gas concentrations are expressed in parts per million per volume (ppmV). |  |  |"
+    },
+    {
+      "pair_id": 51,
+      "passage_a": "(3) Mixtures. (i) Chemical manufacturers, importers, or employers evaluating chemicals shall follow the procedures described in Appendices A and B to \u00a7 1910.1200 to classify the hazards of the chemicals, including determinations regarding when mixtures of the classified chemicals are covered by this section.",
+      "passage_b": "(3) Mixtures. (i) Chemical manufacturers, importers, or employers evaluating chemicals shall follow the procedures described in appendices A and B to \u00a7 1910.1200 to classify the hazards of the chemicals, including determinations regarding when mixtures of the classified chemicals are covered by this section."
+    },
+    {
+      "pair_id": 52,
+      "passage_a": "> Mutagenicity: It is recognized that genetic events are central in the overall process of cancer development. Therefore evidence of mutagenic activity in vivo may indicate that a substance has a potential for carcinogenic effects.",
+      "passage_b": "> Mutagenicity: It is recognized that genetic events are central in the overall process of cancer development. Therefore, evidence of mutagenic activity in vivo may indicate that a substance has a potential for carcinogenic effects."
+    }
+  ]
+}

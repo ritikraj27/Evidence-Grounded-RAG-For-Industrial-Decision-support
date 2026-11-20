@@ -1,0 +1,79 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "general",
+  "regime_title": "All four regimes, read without a specialism",
+  "regime_governs": "occupational safety, process safety, environmental control and hazardous-materials transport.",
+  "reader_note": "You are reading pairs from four different regulatory regimes without a specialism in any of them. Apply the rubric as written.",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Follow its decision tree\nin order and stop at the first question that applies.\n\n`quantity_conflict` and `semantic_conflict` are true contradictions.\n`supersession` is a real conflict of a different kind: the two passages are\nthe same rule at two issues, so they cannot both be current.\n`term_mismatch`, `granularity` and `no_conflict` are false alarms.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial\nregulations. Decide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, an entity name, a standard\nnumber or a quantity, but they are not about the same thing: two different\nsubstances, two different pieces of equipment, two different kinds of\nworkplace. A numeric rule fires on \"clearance of 1/2 inch\" in one passage\nand \"clearance of 2 inches\" in another that is about a different machine;\nthat pair is `term_mismatch`, and it is the failure mode a *subject* check\nis meant to suppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Are the two passages two issues of the same rule?\n\n**Yes -> `supersession`**\n\nThe test is **structural**, not a marker test. The two passages address the\nsame requirement, about the same subject, in the same terms, and differ only\nin detail: a renumbered cross-reference, a changed edition of a cited\nstandard, a rewording that preserves the requirement, an added or removed\nparagraph, a changed incorporation-by-reference list. A version marker, an\neffective date, a \"supersedes\" note or an amended cross-reference is one way\nto see this; it is **not the only way**. Recognising that two passages are\nthe same rule as it read at two different times is a reading judgement, and\nyou are being asked to make it.\n\n**What `supersession` means, and what it does not.** It means the two\npassages cannot both be the current rule. It does **not** mean that one of\nthem is wrong, and it does **not** mean the pair is harmless: a practitioner\nholding both has to be told which one governs. If the passages carry no\nmarker saying which is current, that is a fact worth reporting, not a\nreason to call the pair a non-conflict.\n\n**No -> go to question 3.**\n\n## 3. Do the two passages state requirements that cannot both be obeyed?\n\n**A number differs for the same measured quantity, with the subject\nmatched -> `quantity_conflict`**\n\nThe same substance, the same machine, the same requirement, two different\nvalues. \"The permissible exposure limit for cadmium is 5 micrograms per\ncubic meter of air\" against \"the permissible exposure limit for cadmium is\n100 micrograms per cubic meter of air\" is a `quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved. \"The\nemployer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n**Neither -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\n## A note on scope\n\nTwo passages are **not** in conflict merely because they differ. Two\nregulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, for different\nsituations, or for different scopes are not \u2014 read the scope before\njudging the numbers.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 13,
+      "passage_a": "(5) The following square-on-point mark must be displayed on the outer packaging on a background of contrasting color. The width of the line forming the border must be at least 2 mm (0.08 inches) and the letters and numbers must be at least 6 mm (0.24 inches) high. The size of the mark must be such that no side of the diamond is less than 50 mm (1.97 inches) in length as measured from the outside of the lines forming the border. The proper shipping name \u201cBiological substances, Category B\u201d must be marked on the outer packaging adjacent to the diamond-shaped mark in letters that are at least 6 mm (0.24 inches) high.",
+      "passage_b": "(5) The following square-on-point mark must be displayed on the outer packaging on a background of contrasting color. The width of the line forming the border must be at least 2 mm (0.08 inches) and the letters and numbers must be at least 6 mm (0.24 inches) high. The size of the mark must be such that no side of the diamond is less than 50 mm (1.97 inches) in length as measured from the outside of the lines forming the border. For transportation by aircraft, the entire mark must appear on one side of the package. The proper shipping name \u201cBiological substances, Category B\u201d must be marked on the outer packaging adjacent to the diamond-shaped mark in letters that are at least 6 mm (0.24 inches) high."
+    },
+    {
+      "pair_id": 14,
+      "passage_a": "(35) ASTM D388-95, Standard Specification for Classification of Coals by Rank, IBR approved for \u00a7\u00a7 60.41, 60.45(f), 60.41Da, 60.41b, 60.41c, and 60.251.",
+      "passage_b": "(35) ASTM D388-91, Standard Specification for Classification of Coals by Rank; IBR approved for \u00a7\u00a7 60.41; 60.45(f); 60.41Da; 60.41b; 60.41c; 60.251."
+    },
+    {
+      "pair_id": 15,
+      "passage_a": "> A.3.3.1 Existing human and animal data should be the first line of analysis, as they give information directly relevant to effects on the eye. Possible skin corrosion shall be evaluated prior to consideration of serious eye damage/eye irritation in order to avoid testing for local effects on eyes with skin corrosive substances. In vitro alternatives that have been scientifically validated and accepted shall be used to make classification decisions. Likewise, pH extremes like \u22642 and \u226511.5, may indicate serious eye damage, especially when associated with significant buffering capacity. Generally, such substances are expected to produce significant effects on the eyes. In the absence of any other information, a mixture/substance is considered to cause serious eye damage (Eye Category 1) if it has a pH \u22642 or \u226511.5. However, if consideration of acid/alkaline reserve suggests the substance may not have the potential to cause serious eye damage despite the low or high pH value, then further evaluation may be necessary. In some cases enough information may be available from structurally related compounds to make classification decisions.",
+      "passage_b": "> A.3.2.2.4 Likewise, pH extremes like \u22642 and \u226511.5, may indicate serious eye damage, especially when associated with significant acid/alkaline reserve (buffering capacity). Generally, such substances are expected to produce significant effects on the eyes. In the absence of any other information, a substance is considered to cause serious eye damage (Category 1) if it has a pH \u22642 or \u226511.5. However, if consideration of acid/alkaline reserve suggests the substance may not cause serious eye damage despite the low or high pH value, this needs to be confirmed by other data, preferably by data from an appropriate validated in vitro test."
+    },
+    {
+      "pair_id": 16,
+      "passage_a": "(140) ASTM D3792-79, Standard Test Method for Water Content of Water-Reducible Paints by Direct Injection into a Gas Chromatograph, IBR approved for appendix A-7 to part 60: Method 24, Section 6.3.",
+      "passage_b": "(146) ASTM D3792-79, Standard Test Method for Water Content of Water-Reducible Paints by Direct Injection into a Gas Chromatograph; IBR approved for appendix A-7 to part 60: Method 24, Section 6.3."
+    },
+    {
+      "pair_id": 17,
+      "passage_a": "> B.11.2.3 Chemicals with a spontaneous ignition temperature higher than 50 \u00b0C (122 \u00b0F) for a volume of 450 liters shall not be classified in Category 1 of this class.",
+      "passage_b": "> B.11.2.3 Chemicals with a spontaneous ignition temperature higher than 50\u00b0 C (122\u00b0 F) for a volume of 450 liters shall not be classified in Category 1 of this class."
+    },
+    {
+      "pair_id": 18,
+      "passage_a": "> Carcinogen means a substance or a mixture of substances which induce cancer or increase its incidence. Substances and mixtures which have induced benign and malignant tumors in well-performed experimental studies on animals are considered also to be presumed or suspected human carcinogens unless there is strong evidence that the mechanism of tumor formation is not relevant for humans.",
+      "passage_b": "> Carcinogenicity refers to the induction of cancer or an increase in the incidence of cancer occurring after exposure to a substance or mixture. Substances and mixtures which have induced benign and malignant tumors in well-performed experimental studies on animals are considered also to be presumed or suspected human carcinogens unless there is strong evidence that the mechanism of tumor formation is not relevant for humans."
+    },
+    {
+      "pair_id": 19,
+      "passage_a": "> 1. Blood lead level",
+      "passage_b": "(1) Blood lead level;"
+    },
+    {
+      "pair_id": 20,
+      "passage_a": "> A.4.1.1 Respiratory sensitizer means a chemical that will lead to hypersensitivity of the airways following inhalation of the chemical.",
+      "passage_b": "> A.4.1.1 Respiratory sensitization refers to hypersensitivity of the airways occurring after inhalation of a substance or mixture."
+    },
+    {
+      "pair_id": 21,
+      "passage_a": "(170) ASTM D5403-93, Standard Test Methods for Volatile Content of Radiation Curable Materials, IBR approved for appendix A-7 to part 60: Method 24, Section 6.6.",
+      "passage_b": "(180) ASTM D5403-93, Standard Test Methods for Volatile Content of Radiation Curable Materials; IBR approved for appendix A-7 to part 60: Method 24, Section 6.6."
+    },
+    {
+      "pair_id": 22,
+      "passage_a": "(108) ASTM D2879-83Test Method for Vapor Pressure-Temperature Relationship and Initial Decomposition Temperature of Liquids by Isoteniscope, IBR approved for \u00a7\u00a7 60.111b(f)(3), 60.116b(e), 60.116b(f), 60.485(e), and 60.485a(e).",
+      "passage_b": "(113) ASTM D2879-83, Test Method for Vapor Pressure-Temperature Relationship and Initial Decomposition Temperature of Liquids by Isoteniscope, approved 1983; IBR approved for \u00a7\u00a7 60.111b; 60.116b(e) and (f); 60.485(e); 60.485a(e); 60.5403b(d); 60.5406c(d)."
+    },
+    {
+      "pair_id": 23,
+      "passage_a": "(i) The mark must indicate the UN number: \u201cUN3090\u201d for lithium metal cells or batteries; or \u201cUN3480\u201d for lithium ion cells or batteries. Where the lithium cells or batteries are contained in, or packed with, equipment, the UN number \u201cUN3091\u201d or \u201cUN3481,\u201d as appropriate, must be indicated. Where a package contains lithium cells or batteries assigned to different UN numbers, all applicable UN numbers must be indicated on one or more marks. The package must be of such size that there is adequate space to affix the mark on one side without the mark being folded.",
+      "passage_b": "(i) The mark must indicate the UN number: \u201cUN3090\u201d for lithium metal cells or batteries, or \u201cUN3480\u201d for lithium ion cells or batteries. Where the lithium cells or batteries are contained in, or packed with, equipment, the UN number \u201cUN3091\u201d or \u201cUN3481,\u201d as appropriate, must be indicated. Where a package contains lithium cells or batteries assigned to different UN numbers, all applicable UN numbers must be indicated on one or more marks. The package must be of such size that there is adequate space to affix the mark on one side without the mark being folded."
+    },
+    {
+      "pair_id": 24,
+      "passage_a": "> The initial boiling point shall be determined in accordance with ASTM D86-07a or ASTM D1078 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> The initial boiling point shall be determined in accordance with ASTM D86-07a or ASTM D1078 (incorporated by reference; see \u00a7 1910.6). 1"
+    }
+  ]
+}

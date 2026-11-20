@@ -1,0 +1,9 @@
+{
+  "status": "not_run",
+  "reason": "the generator rejected the requests, so no arm asked any question and no rate from it is reported: HTTP 429 -- Token Plan usage limit reached: Upgrade your Token Plan or purchase Credits for more usage. (2056)",
+  "model": "MiniMax-M3",
+  "n_answerable": 247,
+  "n_unanswerable": 197,
+  "n_unanswerable_total": 197,
+  "arms": {}
+}

@@ -1,0 +1,2497 @@
+{
+  "label_standard": "silver",
+  "seed": 20261118,
+  "n_queries": 276,
+  "n_answerable": 132,
+  "n_unanswerable": 144,
+  "families": {
+    "unanswerable_near_miss": 110,
+    "numeric_fact": 18,
+    "table_lookup": 28,
+    "unanswerable_ood": 34,
+    "definition": 86
+  },
+  "categories": {
+    "unanswerable": 144,
+    "quality_engineering": 23,
+    "predictive_maintenance": 24,
+    "reliability_engineering": 34,
+    "production_scheduling": 11,
+    "supply_chain_management": 30,
+    "facility_layout": 10
+  },
+  "queries": [
+    {
+      "query": "What is the setup time for product family EQ-3319?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU PLT-8422?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for a ratio in the source documentation?",
+      "gold": [
+        "design-for-manufacturability::p1::t19"
+      ],
+      "category": "quality_engineering",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "3"
+    },
+    {
+      "query": "What is the standard cycle time for job MC-9585?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the No. of certificates for Russian Federation?",
+      "gold": [
+        "iso-9001::p1::tbl21"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "53,152"
+    },
+    {
+      "query": "According to the table in the source document, what is the III for Moderate?",
+      "gold": [
+        "failure-mode-and-effects-analysis::p1::tbl52"
+      ],
+      "category": "predictive_maintenance",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Moderate"
+    },
+    {
+      "query": "What is the tax rate in a country named Freedonia?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre MC-6534?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is structural reliability or the reliability of structures?",
+      "gold": [
+        "reliability-engineering::p1::t105"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "application of reliability theory to the behavior of structures"
+    },
+    {
+      "query": "What is the material handling cost for work centre ASM-8080?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the average depth of the Mariana Trench?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset AST-2073?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for the Total Calendar Time in the source documentation?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::t36"
+      ],
+      "category": "predictive_maintenance",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "7"
+    },
+    {
+      "query": "How do I remove a coffee stain from a wool sweater?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is net available time?",
+      "gold": [
+        "takt-time::p1::t6"
+      ],
+      "category": "production_scheduling",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "amount of time available for work to be done"
+    },
+    {
+      "query": "According to the table in the source document, what is the II for Moderate?",
+      "gold": [
+        "failure-mode-and-effects-analysis::p1::tbl52"
+      ],
+      "category": "predictive_maintenance",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Moderate"
+    },
+    {
+      "query": "What is the failure rate for component VND-8798?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a generalization of the Weibull distribution?",
+      "gold": [
+        "weibull-distribution::p1::t19"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "hyperbolastic distribution of type III"
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-1339?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a reliability program?",
+      "gold": [
+        "reliability-engineering::p1::t28"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "complex learning and knowledge-based system unique to one's products and processes"
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-9251?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is inbound logistics?",
+      "gold": [
+        "logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the primary logistics processes, focusing on the procurement and coordination of the inbound movement of materials, parts, or unfinished inventory from suppliers to manufacturing or assembly plants, w"
+    },
+    {
+      "query": "What is regression analysis?",
+      "gold": [
+        "demand-forecasting::p1::t11"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "main statistical method for forecasting"
+    },
+    {
+      "query": "According to the table in the source document, what is the Edition of ISO 9001 for 2015?",
+      "gold": [
+        "iso-9001::p1::tbl39"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "5th Edition"
+    },
+    {
+      "query": "What is the failure rate for component ASM-4663?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component MC-6050?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a common reliability metric?",
+      "gold": [
+        "reliability-engineering::p1::t101"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "number of software faults per line of code (FLOC), usually expressed as faults per thousand lines of code"
+    },
+    {
+      "query": "What is the economic order quantity for SKU AST-834?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part PLT-5821?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset AST-2755?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is plant attached cold storage?",
+      "gold": [
+        "warehouse::p1::t37"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "preferred option for some manufacturers who want to keep their cold storage in house"
+    },
+    {
+      "query": "What is the standard cycle time for job ASM-6293?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU JOB-795?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the Chartered Institute?",
+      "gold": [
+        "logistics::p1::t87"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the professional bodies or institutions for the logistics and transport sectors that"
+    },
+    {
+      "query": "According to the table in the source document, what is the ISO 9001 for ISO/TC 176/SC 2 Quality systems?",
+      "gold": [
+        "iso-9001::p1::tbl25"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Committee"
+    },
+    {
+      "query": "What is an OR gate?",
+      "gold": [
+        "fault-tree-analysis::p1::t46"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "superposition (addition of rates) of the two input failure frequencies or failure rates which are modeled as Poisson point processes"
+    },
+    {
+      "query": "What are problem statements?",
+      "gold": [
+        "root-cause-analysis::p1::t15"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "North Star of the RCA as it keeps the team focused on what they are investigating and prevents them from going astray"
+    },
+    {
+      "query": "What is the safety stock level maintained for component VND-6624?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine MC-9431?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre VND-483?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for a TEEP in the source documentation?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::t34"
+      ],
+      "category": "predictive_maintenance",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "100%"
+    },
+    {
+      "query": "What is the systems engineering process?",
+      "gold": [
+        "reliability-engineering::p1::t114"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "discovery process that is often unlike a manufacturing process"
+    },
+    {
+      "query": "What is the warranty period on a diesel generator?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is remote visual inspection?",
+      "gold": [
+        "predictive-maintenance::p1::t13"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "first non-destructive testing"
+    },
+    {
+      "query": "What is the rate of photosynthesis in wheat?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for a recording limit in the source documentation?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::t46"
+      ],
+      "category": "predictive_maintenance",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "1"
+    },
+    {
+      "query": "What was the outcome of his work?",
+      "gold": [
+        "total-productive-maintenance::p1::t6"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "application of the TPM process in 1971"
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset ASM-4911?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component VND-9373?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Who was the first person to set foot on Antarctica?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement PLT-2084?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I plant a hedge in a clay soil?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for so for our case in the source documentation?",
+      "gold": [
+        "line-balancing::p1::t6"
+      ],
+      "category": "production_scheduling",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "800"
+    },
+    {
+      "query": "What is rotating equipment?",
+      "gold": [
+        "condition-monitoring::p1::t6"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "industry umbrella term that includes gearboxes, reciprocating and centrifugal machinery"
+    },
+    {
+      "query": "What is the freezing point of ethanol in Fahrenheit?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for replacement or repair in the source documentation?",
+      "gold": [
+        "reliability-engineering::p1::t111"
+      ],
+      "category": "reliability_engineering",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "1"
+    },
+    {
+      "query": "What is the disjunctive graph?",
+      "gold": [
+        "job-shop-scheduling::p1::t10"
+      ],
+      "category": "production_scheduling",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the popular models used for describing the job-shop scheduling problem instances"
+    },
+    {
+      "query": "What is the chemical formula for table salt?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are systems with coupled orbits?",
+      "gold": [
+        "queueing-theory::p1::t41"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "important part in queueing theory in the application to wireless networks and signal processing"
+    },
+    {
+      "query": "What is the material handling cost for work centre WC-4471?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a common relaxation?",
+      "gold": [
+        "job-shop-scheduling::p1::t1"
+      ],
+      "category": "production_scheduling",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "**flexible** job shop, where each operation can be processed on any machine of a given set (the machines in each set are identical)"
+    },
+    {
+      "query": "What is the shape parameter k?",
+      "gold": [
+        "weibull-distribution::p1::t13"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "same as above, while the scale parameter is b = \u03bb \u2212 k {\\displaystyle b=\\lambda ^{-k}}"
+    },
+    {
+      "query": "What is a Gantt chart?",
+      "gold": [
+        "gantt-chart::p1::t6"
+      ],
+      "category": "production_scheduling",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "type of bar chart that illustrates a project schedule"
+    },
+    {
+      "query": "What value is stated for an OEE in the source documentation?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::t1"
+      ],
+      "category": "predictive_maintenance",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "100%"
+    },
+    {
+      "query": "What is the economic order quantity for SKU EQ-8961?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the deepest point in the Atlantic Ocean?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are designed experiments?",
+      "gold": [
+        "statistical-process-control::p1::t26"
+      ],
+      "category": "quality_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "means of objectively quantifying the relative importance (strength) of sources of variation"
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine PN-9318?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for the purpose in the source documentation?",
+      "gold": [
+        "six-sigma::p1::t42"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "6"
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset INV-3928?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part MC-6713?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What was the civil aviation industry?",
+      "gold": [
+        "failure-mode-and-effects-analysis::p1::t22"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "early adopter of FMEA, with the Society for Automotive Engineers (SAE, an organization covering aviation and other transportation beyond just automotive, despite its name) publishing ARP926 in 1967"
+    },
+    {
+      "query": "What is the setup time for product family AST-4470?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I change the tyre pressure on a bicycle?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine AST-543?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement JOB-6357?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the output of an AND gate?",
+      "gold": [
+        "fault-tree-analysis::p1::t47"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "combination of independent input events 1 and 2 to the AND gate: : Failure Frequency = \u03bb1Q2 + \u03bb2Q1 where Q = 1 - e-\u03bbt \u2248 \u03bbt if \u03bbt < 0"
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine PN-1222?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU AST-1902?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the Availability Metric?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::t6"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "pure measurement of Uptime that is designed to exclude the effects of Quality and Performance"
+    },
+    {
+      "query": "What is the software FMEA?",
+      "gold": [
+        "failure-mode-and-effects-analysis::p1::t69"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "design FMEA in that the goal is to identify missing, insufficient or incorrect design specifications before the code is written"
+    },
+    {
+      "query": "What is the legal age to vote in Japan?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is an RFID tag?",
+      "gold": [
+        "logistics::p1::t85"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "card containing a memory chip and an antenna that transmits signals to a reader"
+    },
+    {
+      "query": "What is the average annual variable cost?",
+      "gold": [
+        "economic-order-quantity::p1::t18"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sum of order costs, holding inventory costs and backorder costs: : K = \u03bb Q A + 1 2 Q I C ( Q \u2212 s ) 2 + 1 Q [ \u03c0 \u03bb s + 1 2 \u03c0 ^ s 2 ] {\\displaystyle {\\mathcal {K}}={\\frac {\\lambda }{Q}}A+{\\frac {1}{2Q}}I"
+    },
+    {
+      "query": "What is the economic order quantity for SKU ASM-6014?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-4542?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the capital city of Mongolia?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the Weibull distribution?",
+      "gold": [
+        "weibull-distribution::p1::t37"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "maximum entropy distribution for a non-negative real random variate with a fixed expected value of *x**k* equal to"
+    },
+    {
+      "query": "What is a process signature?",
+      "gold": [
+        "statistical-process-control::p1::t26"
+      ],
+      "category": "quality_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "plotted points compared with the capability index"
+    },
+    {
+      "query": "What is interpreting the vibration signal obtained?",
+      "gold": [
+        "condition-monitoring::p1::t7"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "elaborate procedure that requires specialized training and experience"
+    },
+    {
+      "query": "What is the standard cycle time for job AST-3346?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part PN-9539?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is safety stock?",
+      "gold": [
+        "safety-stock::p1::t0"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock"
+    },
+    {
+      "query": "What is the control limit for measurement MC-4841?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is residual risk?",
+      "gold": [
+        "reliability-engineering::p1::t26"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "risk that is left over after all reliability activities have finished, and includes the unidentified risk\u2014and is therefore not completely quantifiable"
+    },
+    {
+      "query": "What is the sourcing plan?",
+      "gold": [
+        "strategic-sourcing::p1::t9"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "result of all planning efforts on strategic sourcing"
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset WC-6013?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I make sourdough bread rise faster?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Edition of ISO 9001 for 1987?",
+      "gold": [
+        "iso-9001::p1::tbl39"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "1st Edition"
+    },
+    {
+      "query": "What is the MTBF?",
+      "gold": [
+        "mean-time-between-failures::p1::t7"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "expected value of the random variable T {\\displaystyle T}"
+    },
+    {
+      "query": "What value is stated for an MTBF in the source documentation?",
+      "gold": [
+        "reliability-engineering::p1::t91"
+      ],
+      "category": "reliability_engineering",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "1000 hours"
+    },
+    {
+      "query": "What is Semiconductor DFM?",
+      "gold": [
+        "design-for-manufacturability::p1::t6"
+      ],
+      "category": "quality_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "set of principles and techniques used in integrated circuit (IC) design to ensure that those designs transition smoothly into high-volume manufacturing with optimal yield and reliability"
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset WC-2797?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the No. of certificates for Japan?",
+      "gold": [
+        "iso-9001::p1::tbl17"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "45,785"
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset PN-141?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the molecular weight of sucrose?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset WC-2203?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the aim?",
+      "gold": [
+        "iso-9001::p1::t52"
+      ],
+      "category": "quality_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "continual review and assessment process to verify that the system is working as it is supposed to, find out where it can improve, and correct or prevent identified problems"
+    },
+    {
+      "query": "What is the economic order quantity for SKU AST-5454?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component SKU-5632?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Who painted the ceiling of the Sistine Chapel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU VND-2599?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component MC-2885?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is logistics management?",
+      "gold": [
+        "logistics::p1::t13"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "component that holds the supply chain"
+    },
+    {
+      "query": "What is the line of defense?",
+      "gold": [
+        "root-cause-analysis::p1::t9"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "regulatory requirements, applicable procedures, physical barriers, and cyber barriers that are in place to manage operations and prevent events"
+    },
+    {
+      "query": "What is the economic order quantity for SKU MC-780?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre ASM-973?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre PLT-1263?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What was the population of Paris in 1850?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is queueing analysis?",
+      "gold": [
+        "queueing-theory::p1::t10"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "probabilistic analysis of waiting lines, and thus the results, also referred to as the operating characteristics, are probabilistic rather than deterministic"
+    },
+    {
+      "query": "What is a special case of mission success?",
+      "gold": [
+        "reliability-engineering::p1::t77"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "single-shot device or system"
+    },
+    {
+      "query": "What is the economic order quantity for SKU INV-7671?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is weibull distribution?",
+      "gold": [
+        "weibull-distribution::p1::t12"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "\"pure\" imitation/rejection model"
+    },
+    {
+      "query": "What is useful life?",
+      "gold": [
+        "reliability-engineering::p1::t88"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "estimated economic life of the product, which is defined as the time can be used before the cost of repair do not justify"
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-4439?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Process observation for Regression control chart?",
+      "gold": [
+        "control-chart::p1::tbl40"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Quality characteristic measurement within one subgroup"
+    },
+    {
+      "query": "What is the constraint?",
+      "gold": [
+        "theory-of-constraints::p1::t13"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "limiting factor that is preventing the organization from getting more throughput (typically, revenue through sales) even when nothing goes wrong"
+    },
+    {
+      "query": "What is the material handling cost for work centre EQ-1905?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is MTBF of a component?",
+      "gold": [
+        "mean-time-between-failures::p1::t5"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sum of the lengths of the operational periods divided by the number of observed failures: : MTBF = \u2211 ( start of downtime \u2212 start of uptime ) number of failures"
+    },
+    {
+      "query": "What was the simplest form of quality control?",
+      "gold": [
+        "quality-control::p1::t6"
+      ],
+      "category": "quality_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sketch of the desired item"
+    },
+    {
+      "query": "What is an example?",
+      "gold": [
+        "warehouse::p1::t18"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "Fondaco dei Tedeschi, the substantial quarters of German traders in Venice, which combined a dwelling, warehouse, market and quarters for travellers"
+    },
+    {
+      "query": "What is the standard cycle time for job WC-1931?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component MC-260?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU EQ-2316?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for the part in quantities in the source documentation?",
+      "gold": [
+        "design-for-manufacturability::p1::t14"
+      ],
+      "category": "quality_engineering",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "10"
+    },
+    {
+      "query": "What is using control charts?",
+      "gold": [
+        "statistical-process-control::p1::t25"
+      ],
+      "category": "quality_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "continuous activity, ongoing over time"
+    },
+    {
+      "query": "What is the system requirements specification?",
+      "gold": [
+        "reliability-engineering::p1::t73"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "criterion against which reliability is measured"
+    },
+    {
+      "query": "According to the table in the source document, what is the Greeley for Inventory reduction?",
+      "gold": [
+        "lean-manufacturing::p1::tbl28"
+      ],
+      "category": "production_scheduling",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "2.8 months"
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-3815?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component PRT-4769?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are failure reporting analysis and corrective action systems?",
+      "gold": [
+        "reliability-engineering::p1::t44"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "common approach for product/process reliability monitoring"
+    },
+    {
+      "query": "What are sourcing Business Models?",
+      "gold": [
+        "strategic-sourcing::p1::t15"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "query": "What is the theory of constraints?",
+      "gold": [
+        "theory-of-constraints::p1::t5"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "query": "What is the acceptable tolerance for part PRT-8861?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the half-life of the isotope carbon-14?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the recommended daily intake of vitamin D for adults?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job PN-5419?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Walter A. Shewhart?",
+      "gold": [
+        "lean-manufacturing::p1::tbl36"
+      ],
+      "category": "production_scheduling",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Statistical process control; co-developed foundational methods with Deming"
+    },
+    {
+      "query": "What is queueing theory?",
+      "gold": [
+        "queueing-theory::p1::t10"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the major areas of study in the discipline of management science"
+    },
+    {
+      "query": "Who wrote the opera The Magic Flute?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component JOB-9599?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-8576?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Who composed the Brandenburg Concertos?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component INV-7634?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the Quality Metric?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::t22"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "pure measurement of Process Yield that is designed to exclude the effects of Availability and Performance"
+    },
+    {
+      "query": "Who wrote the play A Doll's House?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset PRT-4691?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component PRT-5972?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for compliance deadlines of July and December in the source documentation?",
+      "gold": [
+        "failure-mode-and-effects-analysis::p1::t28"
+      ],
+      "category": "predictive_maintenance",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "2022."
+    },
+    {
+      "query": "What is the next job to be served?",
+      "gold": [
+        "queueing-theory::p1::t44"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "one with the smallest size"
+    },
+    {
+      "query": "According to the table in the source document, what is the Process observation for c-chart?",
+      "gold": [
+        "control-chart::p1::tbl40"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Number of nonconformances within one subgroup"
+    },
+    {
+      "query": "What is the setup time for product family INV-8497?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Description for 1968?",
+      "gold": [
+        "quality-control::p1::tbl10"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Japanese-style total quality control."
+    },
+    {
+      "query": "What is the speed of light in a vacuum?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for 6,210?",
+      "gold": [
+        "six-sigma::p1::tbl46"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "0.62%"
+    },
+    {
+      "query": "What is the Weibull plot?",
+      "gold": [
+        "weibull-distribution::p1::t40"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "plot of the empirical cumulative distribution function F ^ ( x ) {\\displaystyle {\\widehat {F}}(x)}"
+    },
+    {
+      "query": "What is the material handling cost for work centre JOB-1428?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement PLT-2271?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-2876?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Performance for Waiting?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::tbl10"
+      ],
+      "category": "predictive_maintenance",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Minor Stops"
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Taiichi Ohno?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl36"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Primary architect of the Toyota Production System"
+    },
+    {
+      "query": "What value is stated for a rule of thumb in the source documentation?",
+      "gold": [
+        "theory-of-constraints::p1::t37"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "20%"
+    },
+    {
+      "query": "What is oil analysis?",
+      "gold": [
+        "predictive-maintenance::p1::t16"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "long-term program that, where relevant, can eventually be more predictive than any"
+    },
+    {
+      "query": "According to the table in the source document, what is the No. of certificates for Italy?",
+      "gold": [
+        "iso-9001::p1::tbl21"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "130,066"
+    },
+    {
+      "query": "What is the failure rate for component ASM-7350?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are kanban cards?",
+      "gold": [
+        "kanban::p1::t19"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "query": "What is the MTBF of the systems?",
+      "gold": [
+        "mean-time-between-failures::p1::t4"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "average of the three failure times, which is 116"
+    },
+    {
+      "query": "What is the rope?",
+      "gold": [
+        "theory-of-constraints::p1::t28"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "work release mechanism for the plant"
+    },
+    {
+      "query": "What value is stated for assuming a real interest rate in the source documentation?",
+      "gold": [
+        "material-handling::p1::t26"
+      ],
+      "category": "facility_layout",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "1.7%"
+    },
+    {
+      "query": "What is the risk here?",
+      "gold": [
+        "reliability-engineering::p1::t24"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "combination of probability and severity of the failure incident (scenario) occurring"
+    },
+    {
+      "query": "What is the Loading Metric?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::t35"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "pure measurement of Schedule effectiveness and is designed to exclude the effects how well that equipment may perform"
+    },
+    {
+      "query": "According to the table in the source document, what is the Performance for Breakdowns?",
+      "gold": [
+        "overall-equipment-effectiveness::p1::tbl10"
+      ],
+      "category": "predictive_maintenance",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Reduced Speed"
+    },
+    {
+      "query": "What is the reorder point for supplier part JOB-6985?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I train for a marathon in eight weeks?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU AST-6561?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset ASM-1096?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the boiling point of diesel fuel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part AST-8342?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the recommended word count for a college essay?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is site reliability engineering Software reliability?",
+      "gold": [
+        "reliability-engineering::p1::t96"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "special aspect of reliability engineering"
+    },
+    {
+      "query": "How do I convert a PNG file to a JPEG?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a prominent example?",
+      "gold": [
+        "theory-of-constraints::p1::t29"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "use of automated production lines in the beverage industry"
+    },
+    {
+      "query": "What was the London Warehouse Picadilly?",
+      "gold": [
+        "warehouse::p1::t45"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "four warehouses built by the Manchester, Sheffield and Lincolnshire Railway in about 1865 to service the new London Road Station"
+    },
+    {
+      "query": "What is the reorder point for supplier part PLT-2391?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the currency of Switzerland?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre SKU-2144?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset VND-8108?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement INV-9467?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the tallest building in South America?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component AST-5132?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part SKU-7771?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Description for 1986?",
+      "gold": [
+        "quality-control::p1::tbl10"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Statistical quality control applied to business strategy; originated by Motorola"
+    },
+    {
+      "query": "What is the standard cycle time for job WC-1256?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Item for 1.1.1.1?",
+      "gold": [
+        "failure-mode-and-effects-analysis::p1::tbl36"
+      ],
+      "category": "predictive_maintenance",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Brake manifold ref. designator 2b, channel A, o-ring"
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-780?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component ASM-9585?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset PRT-4953?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is six Sigma?",
+      "gold": [
+        "six-sigma::p1::t47"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "result of the size of the organization rather than a requirement of Six Sigma itself"
+    },
+    {
+      "query": "What is a sourcing business model?",
+      "gold": [
+        "strategic-sourcing::p1::t15"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "query": "What value is stated for a Run in the source documentation?",
+      "gold": [
+        "control-chart::p1::t17"
+      ],
+      "category": "quality_engineering",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "7"
+    },
+    {
+      "query": "What is the control limit for measurement PN-2578?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is freight transportation?",
+      "gold": [
+        "logistics::p1::t29"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "central part of logistics and allows access to broad markets"
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine MC-2993?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How many bones are in the adult human hand?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre SKU-6972?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reason for this change of variables?",
+      "gold": [
+        "weibull-distribution::p1::t40"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "cumulative distribution function can be linearized: : F ( x ) = 1 \u2212 e \u2212 ("
+    },
+    {
+      "query": "What is Since the MTBF?",
+      "gold": [
+        "mean-time-between-failures::p1::t9"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "expected value of T {\\displaystyle T}"
+    },
+    {
+      "query": "What is outbound logistics?",
+      "gold": [
+        "logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "process related to the storage and movement of finished products"
+    },
+    {
+      "query": "What is the goal of TPM?",
+      "gold": [
+        "total-productive-maintenance::p1::t8"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "improvement of equipment effectiveness through engaging those that impact on it in small group improvement activities"
+    },
+    {
+      "query": "What is the control limit for measurement PLT-130?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job VND-8034?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is mechanical movement?",
+      "gold": [
+        "failure-rate::p1::t26"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "predominant failure mechanism causing mechanical and electromechanical devices to wear out"
+    },
+    {
+      "query": "What is the safety stock level maintained for component MC-3203?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the average rate of dropouts?",
+      "gold": [
+        "queueing-theory::p1::t46"
+      ],
+      "category": "facility_layout",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "significant parameter describing a queue"
+    },
+    {
+      "query": "What is operations research?",
+      "gold": [
+        "strategic-sourcing::p1::t11"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "discipline of applying advanced techniques to help make better decisions"
+    },
+    {
+      "query": "What is the material handling cost for work centre MC-3086?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the boiling point of water at 2000 metres altitude?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for albers also established a lower bound in the source documentation?",
+      "gold": [
+        "job-shop-scheduling::p1::t18"
+      ],
+      "category": "production_scheduling",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "1.852."
+    },
+    {
+      "query": "According to the table in the source document, what is the ISO 9001 for International Organization for Standardization?",
+      "gold": [
+        "iso-9001::p1::tbl25"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Organization"
+    },
+    {
+      "query": "What is the setup time for product family AST-4267?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the No. of certificates for France?",
+      "gold": [
+        "iso-9001::p1::tbl17"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "29,122"
+    },
+    {
+      "query": "What is the control limit for measurement EQ-2886?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for a total in the source documentation?",
+      "gold": [
+        "failure-rate::p1::t35"
+      ],
+      "category": "reliability_engineering",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "7,502"
+    },
+    {
+      "query": "What is the control limit for measurement ASM-5533?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component ASM-4009?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are extent of Cause reviews?",
+      "gold": [
+        "root-cause-analysis::p1::t24"
+      ],
+      "category": "predictive_maintenance",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "Achilles heel in the vast"
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine JOB-1527?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part ASM-7491?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part WC-7588?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control chart?",
+      "gold": [
+        "control-chart::p1::t5"
+      ],
+      "category": "quality_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the seven basic tools of quality control"
+    },
+    {
+      "query": "What is MTBF value prediction?",
+      "gold": [
+        "mean-time-between-failures::p1::t12"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "important element in the development of products"
+    },
+    {
+      "query": "Which planet has the shortest day?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for according to Zendeq there in the source documentation?",
+      "gold": [
+        "warehouse::p1::t32"
+      ],
+      "category": "facility_layout",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "13"
+    },
+    {
+      "query": "What is the reorder point for supplier part VND-2036?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part PN-214?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Greeley for WIP stock reduction?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl28"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "22 days to 1 day"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for What to change??",
+      "gold": [
+        "theory-of-constraints::p1::tbl49"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Current reality tree \"Current reality tree (theory of constraints)\")"
+    },
+    {
+      "query": "What is the setup time for product family EQ-2468?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is since manufacturing in an existing plant?",
+      "gold": [
+        "logistics::p1::t38"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "constantly changing process, machines are exchanged and new ones added, which allows for improving the production logistics system accordingly"
+    },
+    {
+      "query": "According to the table in the source document, what is the Computer Systems for 30% scrap, 79% rework?",
+      "gold": [
+        "lean-manufacturing::p1::tbl28"
+      ],
+      "category": "production_scheduling",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "80% scrap"
+    },
+    {
+      "query": "What is the safety stock level maintained for component ASM-7718?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family PRT-8920?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for SF handled a total in the source documentation?",
+      "gold": [
+        "third-party-logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "3.05"
+    },
+    {
+      "query": "What is a cut set?",
+      "gold": [
+        "fault-tree-analysis::p1::t33"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "combination of events, typically component failures, causing the"
+    },
+    {
+      "query": "Who won the 1998 FIFA World Cup final?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a good software development plan?",
+      "gold": [
+        "reliability-engineering::p1::t99"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "key aspect of the software reliability program"
+    },
+    {
+      "query": "What is the parts stress modelling approach?",
+      "gold": [
+        "reliability-engineering::p1::t70"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "empirical method for prediction based on counting the number and type of components of"
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for 0.019?",
+      "gold": [
+        "six-sigma::p1::tbl46"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "0.0000019%"
+    },
+    {
+      "query": "What is the setup time for product family INV-1140?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU SKU-3148?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I weld aluminium to steel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part SKU-2742?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU ASM-7186?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the drum?",
+      "gold": [
+        "theory-of-constraints::p1::t25"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "rate at which the physical constraint of the plant can work: the work center or machine or operation that limits the ability of the entire system to produce more"
+    },
+    {
+      "query": "What is the acceptable tolerance for part PRT-8863?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the No. of certificates for India?",
+      "gold": [
+        "iso-9001::p1::tbl19"
+      ],
+      "category": "quality_engineering",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "33,250"
+    },
+    {
+      "query": "What is the most common reliability parameter?",
+      "gold": [
+        "reliability-engineering::p1::t75"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "mean time to failure (MTTF), which can also be specified as the failure rate (this is expressed as a frequency or conditional probability density function (PDF)) or the number of failures during a giv"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for What to change to??",
+      "gold": [
+        "theory-of-constraints::p1::tbl49"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Future Reality Tree Negative Branch Reservations"
+    },
+    {
+      "query": "What is the acceptable tolerance for part EQ-6359?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Henry Ford?",
+      "gold": [
+        "lean-manufacturing::p1::tbl36"
+      ],
+      "category": "production_scheduling",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Early application of flow and material efficiency in mass production"
+    },
+    {
+      "query": "What is time lag?",
+      "gold": [
+        "failure-rate::p1::t24"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the serious drawbacks of all failure rate estimations"
+    },
+    {
+      "query": "What is takt time?",
+      "gold": [
+        "takt-time::p1::t3"
+      ],
+      "category": "production_scheduling",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "borrowing of the Japanese word takuto taimu (\u30bf\u30af\u30c8\u30bf\u30a4\u30e0), which in turn was borrowed from the German word **Taktzeit**, meaning 'cycle time'"
+    },
+    {
+      "query": "What is warranty life?",
+      "gold": [
+        "reliability-engineering::p1::t89"
+      ],
+      "category": "reliability_engineering",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "product should perform the function within the specified time period"
+    },
+    {
+      "query": "What is the failure rate for component PLT-6263?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre PRT-7879?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine MC-5497?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    }
+  ]
+}

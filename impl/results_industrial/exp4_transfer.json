@@ -1,0 +1,353 @@
+{
+  "seed": 20261118,
+  "design": "query-level sufficiency calibration; model and threshold transferred unchanged",
+  "categories": [
+    "environmental_control",
+    "hazmat_transport",
+    "occupational_safety",
+    "process_safety"
+  ],
+  "leave_half_out": {
+    "tuning_categories": [
+      "hazmat_transport",
+      "occupational_safety"
+    ],
+    "held_out_categories": [
+      "environmental_control",
+      "process_safety"
+    ],
+    "weights_tuning_half": [
+      -0.7684860907031263,
+      1.5025029545614652,
+      0.8220728308837696,
+      0.9653086611095824,
+      -0.3643581493692073,
+      -0.388628415638185
+    ],
+    "weights_held_out_half": [
+      -0.869595724374088,
+      1.5973475081633737,
+      1.0901802391062996,
+      -0.3086215076172788,
+      0.3872445701220801,
+      -0.9360270434634413
+    ],
+    "weights_all": [
+      0.28654126550947445,
+      1.3128502926439676,
+      0.9296660689699697,
+      0.35425281722276014,
+      -0.08654547249483398,
+      -0.5239036005544085
+    ],
+    "tau": 0.05,
+    "tau_refitted_on_held_out": 0.05,
+    "metrics_tuning": {
+      "n_answerable": 142,
+      "n_unanswerable": 197,
+      "answerable_answered": 0.9929577464788732,
+      "answerable_refused": 0.007042253521126761,
+      "unanswerable_refused": 0.29949238578680204,
+      "coverage": 0.5899705014749262,
+      "top1_accuracy_given_accepted": 1.0
+    },
+    "metrics_held_out_transferred": {
+      "n_answerable": 105,
+      "n_unanswerable": 197,
+      "answerable_answered": 1.0,
+      "answerable_refused": 0.0,
+      "unanswerable_refused": 0.29949238578680204,
+      "coverage": 0.543046357615894,
+      "top1_accuracy_given_accepted": 1.0
+    },
+    "metrics_held_out_refitted": {
+      "n_answerable": 105,
+      "n_unanswerable": 197,
+      "answerable_answered": 1.0,
+      "answerable_refused": 0.0,
+      "unanswerable_refused": 0.25888324873096447,
+      "coverage": 0.5165562913907285,
+      "top1_accuracy_given_accepted": 1.0
+    },
+    "fixed_tau_comparison": [
+      {
+        "tau": 0.1,
+        "transferred": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 0.9619047619047619,
+          "answerable_refused": 0.0380952380952381,
+          "unanswerable_refused": 0.4213197969543147,
+          "coverage": 0.609271523178808,
+          "top1_accuracy_given_accepted": 1.0
+        },
+        "refitted_same_tau": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 1.0,
+          "answerable_refused": 0.0,
+          "unanswerable_refused": 0.34517766497461927,
+          "coverage": 0.5728476821192053,
+          "top1_accuracy_given_accepted": 1.0
+        }
+      },
+      {
+        "tau": 0.25,
+        "transferred": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 0.7142857142857143,
+          "answerable_refused": 0.2857142857142857,
+          "unanswerable_refused": 0.700507614213198,
+          "coverage": 0.7052980132450332,
+          "top1_accuracy_given_accepted": 1.0
+        },
+        "refitted_same_tau": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 0.9619047619047619,
+          "answerable_refused": 0.0380952380952381,
+          "unanswerable_refused": 0.5583756345177665,
+          "coverage": 0.6986754966887417,
+          "top1_accuracy_given_accepted": 1.0
+        }
+      },
+      {
+        "tau": 0.5,
+        "transferred": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 0.5142857142857142,
+          "answerable_refused": 0.4857142857142857,
+          "unanswerable_refused": 0.8274111675126904,
+          "coverage": 0.7185430463576159,
+          "top1_accuracy_given_accepted": 1.0
+        },
+        "refitted_same_tau": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 0.6857142857142857,
+          "answerable_refused": 0.3142857142857143,
+          "unanswerable_refused": 0.8121827411167513,
+          "coverage": 0.7682119205298014,
+          "top1_accuracy_given_accepted": 1.0
+        }
+      },
+      {
+        "tau": 0.75,
+        "transferred": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 0.3333333333333333,
+          "answerable_refused": 0.6666666666666666,
+          "unanswerable_refused": 0.9187817258883249,
+          "coverage": 0.7152317880794702,
+          "top1_accuracy_given_accepted": 1.0
+        },
+        "refitted_same_tau": {
+          "n_answerable": 105,
+          "n_unanswerable": 197,
+          "answerable_answered": 0.3142857142857143,
+          "answerable_refused": 0.6857142857142857,
+          "unanswerable_refused": 0.934010152284264,
+          "coverage": 0.7185430463576159,
+          "top1_accuracy_given_accepted": 1.0
+        }
+      }
+    ],
+    "weights_stability": {
+      "tuning_intercept": -0.7684860907031263,
+      "held_out_intercept": -0.869595724374088,
+      "tuning_top1_rerank": 1.5025029545614652,
+      "held_out_top1_rerank": 1.5973475081633737
+    }
+  },
+  "leave_one_category_out": [
+    {
+      "held_out_category": "environmental_control",
+      "weights_from_others": [
+        -0.35278639541236567,
+        2.0999683923012267,
+        0.300585736362676,
+        0.6394413303057075,
+        -0.28588410105187256,
+        -0.2952127397599826
+      ],
+      "weights_own": [
+        -1.5738773875514094,
+        -0.6420821170965951,
+        2.6439607775056078,
+        -0.3717224082803641,
+        0.3453353391805945,
+        -0.6759740551761984
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 79,
+        "n_unanswerable": 197,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.3401015228426396,
+        "coverage": 0.5289855072463768,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 79,
+        "n_unanswerable": 197,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.28426395939086296,
+        "coverage": 0.4891304347826087,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    },
+    {
+      "held_out_category": "hazmat_transport",
+      "weights_from_others": [
+        -0.2481260214489782,
+        1.7473965407135217,
+        0.9804392119485635,
+        -0.12051155312634856,
+        0.08681506806626055,
+        -0.8581067374582648
+      ],
+      "weights_own": [
+        -2.692339850017675,
+        -3.2083479191072137,
+        2.817562541644613,
+        1.8551901723762603,
+        0.09346722574745352,
+        0.5889133340836856
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 50,
+        "n_unanswerable": 197,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.25888324873096447,
+        "coverage": 0.4089068825910931,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 50,
+        "n_unanswerable": 197,
+        "answerable_answered": 0.92,
+        "answerable_refused": 0.08,
+        "unanswerable_refused": 0.751269035532995,
+        "coverage": 0.7854251012145749,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    },
+    {
+      "held_out_category": "occupational_safety",
+      "weights_from_others": [
+        -0.6304860875117373,
+        -0.013381551525688672,
+        2.067582448159552,
+        0.2925006922062698,
+        0.22631038724711897,
+        -0.7293401415379157
+      ],
+      "weights_own": [
+        -2.6946273013632442,
+        3.0650760605528737,
+        0.9890775042064353,
+        0.14326856455367018,
+        1.5313261558186968,
+        -0.6671053639129341
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 92,
+        "n_unanswerable": 197,
+        "answerable_answered": 0.9891304347826086,
+        "answerable_refused": 0.010869565217391304,
+        "unanswerable_refused": 0.233502538071066,
+        "coverage": 0.4740484429065744,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 92,
+        "n_unanswerable": 197,
+        "answerable_answered": 0.9565217391304348,
+        "answerable_refused": 0.043478260869565216,
+        "unanswerable_refused": 0.5888324873096447,
+        "coverage": 0.7058823529411765,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    },
+    {
+      "held_out_category": "process_safety",
+      "weights_from_others": [
+        -0.22141841241246632,
+        0.8306087003713724,
+        1.5685770264751406,
+        0.3050681016604249,
+        0.13421881167392438,
+        -0.47252793844535157
+      ],
+      "weights_own": [
+        -8.121867672981432,
+        3.6847266823863083,
+        -0.619427385509324,
+        0.08227317304335013,
+        6.804057955552572,
+        -0.3357345192351084
+      ],
+      "tau_transferred": 0.05,
+      "tau_refitted": 0.05,
+      "transferred": {
+        "n_answerable": 26,
+        "n_unanswerable": 197,
+        "answerable_answered": 1.0,
+        "answerable_refused": 0.0,
+        "unanswerable_refused": 0.233502538071066,
+        "coverage": 0.32286995515695066,
+        "top1_accuracy_given_accepted": 1.0
+      },
+      "own_fit": {
+        "n_answerable": 26,
+        "n_unanswerable": 197,
+        "answerable_answered": 0.9230769230769231,
+        "answerable_refused": 0.07692307692307693,
+        "unanswerable_refused": 0.8477157360406091,
+        "coverage": 0.8565022421524664,
+        "top1_accuracy_given_accepted": 1.0
+      }
+    }
+  ],
+  "per_category_retrieval": [
+    {
+      "category": "environmental_control",
+      "n": 79,
+      "recall@10": 0.9620253164556962,
+      "mrr": 0.6932757959340239,
+      "ndcg@10": 0.7575507478097028
+    },
+    {
+      "category": "hazmat_transport",
+      "n": 50,
+      "recall@10": 1.0,
+      "mrr": 0.8163333333333334,
+      "ndcg@10": 0.8622634663452184
+    },
+    {
+      "category": "occupational_safety",
+      "n": 92,
+      "recall@10": 0.9782608695652174,
+      "mrr": 0.8207427536231883,
+      "ndcg@10": 0.8585380324020354
+    },
+    {
+      "category": "process_safety",
+      "n": 26,
+      "recall@10": 1.0,
+      "mrr": 0.7820512820512822,
+      "ndcg@10": 0.8374121331580088
+    }
+  ]
+}

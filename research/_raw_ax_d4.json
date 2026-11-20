@@ -1,0 +1,13 @@
+{
+ "ti:\"contradiction\" AND abs:\"natural language inference\"": [],
+ "ti:\"fact verification\" AND abs:\"entailment\"": [],
+ "abs:\"knowledge conflict\" AND abs:\"large language model\"": [],
+ "ti:\"retrieval-augmented generation\" AND abs:\"conflict\"": [],
+ "abs:\"context-aware decoding\"": [],
+ "ti:\"corrective retrieval augmented generation\"": [],
+ "abs:\"contradiction\" AND abs:\"retrieval-augmented generation\" AND abs:\"hallucination\"": [],
+ "abs:\"multi-source truth discovery\"": [],
+ "ti:\"natural language inference\" AND abs:\"document-level\"": [],
+ "abs:\"adversarial\" AND abs:\"natural language inference\" AND abs:\"dataset\"": [],
+ "abs:\"unanswerable\" AND abs:\"retrieval-augmented generation\" AND abs:\"abstain\"": []
+}

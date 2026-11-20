@@ -1,0 +1,280 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "environmental_control",
+  "regime_title": "Environmental control (OSHA air contaminants and EPA new source performance standards)",
+  "regime_governs": "workplace air contaminants and their exposure limits, and emission standards for stationary sources: cement plants, petroleum refineries, storage vessels, smelters, grain elevators, metallic mineral processing, equipment leaks.",
+  "reader_note": "This is the numeric regime. Almost every conflict here is a quantity conflict: the same substance, the same measured quantity, two different numbers. Be careful about *scope* before calling it a conflict \u2014 the same substance routinely has different limits for general industry and for construction, for an 8-hour average and for a 15-minute excursion, and for different equipment. A difference in scope is not a conflict; a difference in the limit applied to the same scope is.",
+  "parts": "29 CFR 1910 subpart Z; 40 CFR 60",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Follow its decision tree\nin order and stop at the first question that applies.\n\n`quantity_conflict` and `semantic_conflict` are true contradictions.\n`supersession` is a real conflict of a different kind: the two passages are\nthe same rule at two issues, so they cannot both be current.\n`term_mismatch`, `granularity` and `no_conflict` are false alarms.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial\nregulations. Decide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, an entity name, a standard\nnumber or a quantity, but they are not about the same thing: two different\nsubstances, two different pieces of equipment, two different kinds of\nworkplace. A numeric rule fires on \"clearance of 1/2 inch\" in one passage\nand \"clearance of 2 inches\" in another that is about a different machine;\nthat pair is `term_mismatch`, and it is the failure mode a *subject* check\nis meant to suppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Are the two passages two issues of the same rule?\n\n**Yes -> `supersession`**\n\nThe test is **structural**, not a marker test. The two passages address the\nsame requirement, about the same subject, in the same terms, and differ only\nin detail: a renumbered cross-reference, a changed edition of a cited\nstandard, a rewording that preserves the requirement, an added or removed\nparagraph, a changed incorporation-by-reference list. A version marker, an\neffective date, a \"supersedes\" note or an amended cross-reference is one way\nto see this; it is **not the only way**. Recognising that two passages are\nthe same rule as it read at two different times is a reading judgement, and\nyou are being asked to make it.\n\n**What `supersession` means, and what it does not.** It means the two\npassages cannot both be the current rule. It does **not** mean that one of\nthem is wrong, and it does **not** mean the pair is harmless: a practitioner\nholding both has to be told which one governs. If the passages carry no\nmarker saying which is current, that is a fact worth reporting, not a\nreason to call the pair a non-conflict.\n\n**No -> go to question 3.**\n\n## 3. Do the two passages state requirements that cannot both be obeyed?\n\n**A number differs for the same measured quantity, with the subject\nmatched -> `quantity_conflict`**\n\nThe same substance, the same machine, the same requirement, two different\nvalues. \"The permissible exposure limit for cadmium is 5 micrograms per\ncubic meter of air\" against \"the permissible exposure limit for cadmium is\n100 micrograms per cubic meter of air\" is a `quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved. \"The\nemployer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n**Neither -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\n## A note on scope\n\nTwo passages are **not** in conflict merely because they differ. Two\nregulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, for different\nsituations, or for different scopes are not \u2014 read the scope before\njudging the numbers.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 2,
+      "passage_a": "(4) ASTM A100-74, Standard Specification for Ferrosilicon, IBR approved for \u00a7 60.261.",
+      "passage_b": "(4) ASTM A100-74, Standard Specification for Ferrosilicon; IBR approved for \u00a7 60.261."
+    },
+    {
+      "pair_id": 3,
+      "passage_a": "(57) ASTM D1266-98 (Reapproved 2003) \u03b5, 1 Standard Test Method for Sulfur in Petroleum Products (Lamp Method), IBR approved for \u00a7 60.4415(a).",
+      "passage_b": "(58) ASTM D1266-98 (Reapproved 2003) \u03b5, 1 Standard Test Method for Sulfur in Petroleum Products (Lamp Method); IBR approved for \u00a7\u00a7 60.4360a(c) and 60.4415(a)."
+    },
+    {
+      "pair_id": 5,
+      "passage_a": "> > #### Note:",
+      "passage_b": "> #### Note:"
+    },
+    {
+      "pair_id": 11,
+      "passage_a": "(100) ASTM D2504-88 (Reapproved 1993), Noncondensable Gases in C3 and Lighter Hydrocarbon Products by Gas Chromatography, IBR approved for \u00a7\u00a7 60.485(g) and 60.485a(g).",
+      "passage_b": "(104) ASTM D2504-88 (Reapproved 1993), Noncondensable Gases in C3 and Lighter Hydrocarbon Products by Gas Chromatography; IBR approved for \u00a7\u00a7 60.485(g) and 60.485a(g)."
+    },
+    {
+      "pair_id": 14,
+      "passage_a": "(35) ASTM D388-95, Standard Specification for Classification of Coals by Rank, IBR approved for \u00a7\u00a7 60.41, 60.45(f), 60.41Da, 60.41b, 60.41c, and 60.251.",
+      "passage_b": "(35) ASTM D388-91, Standard Specification for Classification of Coals by Rank; IBR approved for \u00a7\u00a7 60.41; 60.45(f); 60.41Da; 60.41b; 60.41c; 60.251."
+    },
+    {
+      "pair_id": 16,
+      "passage_a": "(140) ASTM D3792-79, Standard Test Method for Water Content of Water-Reducible Paints by Direct Injection into a Gas Chromatograph, IBR approved for appendix A-7 to part 60: Method 24, Section 6.3.",
+      "passage_b": "(146) ASTM D3792-79, Standard Test Method for Water Content of Water-Reducible Paints by Direct Injection into a Gas Chromatograph; IBR approved for appendix A-7 to part 60: Method 24, Section 6.3."
+    },
+    {
+      "pair_id": 19,
+      "passage_a": "> 1. Blood lead level",
+      "passage_b": "(1) Blood lead level;"
+    },
+    {
+      "pair_id": 21,
+      "passage_a": "(170) ASTM D5403-93, Standard Test Methods for Volatile Content of Radiation Curable Materials, IBR approved for appendix A-7 to part 60: Method 24, Section 6.6.",
+      "passage_b": "(180) ASTM D5403-93, Standard Test Methods for Volatile Content of Radiation Curable Materials; IBR approved for appendix A-7 to part 60: Method 24, Section 6.6."
+    },
+    {
+      "pair_id": 22,
+      "passage_a": "(108) ASTM D2879-83Test Method for Vapor Pressure-Temperature Relationship and Initial Decomposition Temperature of Liquids by Isoteniscope, IBR approved for \u00a7\u00a7 60.111b(f)(3), 60.116b(e), 60.116b(f), 60.485(e), and 60.485a(e).",
+      "passage_b": "(113) ASTM D2879-83, Test Method for Vapor Pressure-Temperature Relationship and Initial Decomposition Temperature of Liquids by Isoteniscope, approved 1983; IBR approved for \u00a7\u00a7 60.111b; 60.116b(e) and (f); 60.485(e); 60.485a(e); 60.5403b(d); 60.5406c(d)."
+    },
+    {
+      "pair_id": 25,
+      "passage_a": "(164) ASTM D4629-02, Standard Test Method for Trace Nitrogen in Liquid Petroleum Hydrocarbons by Syringe/Inlet Oxidative Combustion and Chemiluminescence Detection, IBR approved for \u00a7\u00a7 60.49b(e) and 60.335(b).",
+      "passage_b": "(170) ASTM D4629-02, Standard Test Method for Trace Nitrogen in Liquid Petroleum Hydrocarbons by Syringe/Inlet Oxidative Combustion and Chemiluminescence Detection; IBR approved for \u00a7\u00a7 60.49b(e) and 60.335(b)."
+    },
+    {
+      "pair_id": 29,
+      "passage_a": "(77) ASTM D1946-90 (Reapproved 1994), Standard Method for Analysis of Reformed Gas by Gas Chromatography, IBR approved for \u00a7\u00a7 60.18(f), 60.45(f), 60.564(f), 60.614(e), 60.664(e), and 60.704(d).",
+      "passage_b": "(80) ASTM D1946-90 (Reapproved 1994), Standard Method for Analysis of Reformed Gas by Gas Chromatography; IBR approved for \u00a7\u00a7 60.18(f); 60.45(f); 60.564(f); 60.614(e); 60.664(e); 60.704(d)."
+    },
+    {
+      "pair_id": 31,
+      "passage_a": "> C. Spill Leak and Disposal Procedures.",
+      "passage_b": "> C. Spill, Leak and Disposal Procedures."
+    },
+    {
+      "pair_id": 33,
+      "passage_a": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], (Issued August 31, 1981), IBR approved for \u00a7\u00a7 60.56c(b), 60.63(f), 60.106(e), 60.104a(d), (h), (i), and (j), 60.105a(b), (d), (f), and (g), 60.106a(a), 60.107a(a), (c), and (d), tables 1 and 3 to subpart EEEE, tables 2 and 4 to subpart FFFF, table 2 to subpart JJJJ, \u00a7\u00a7 60.285a(f), 60.4415(a), 60.2145(s) and (t), 60.2710(s) and (t), 60.2730(q), 60.4900(b), 60.5220(b), tables 1 and 2 to subpart LLLL, tables 2 and 3 to subpart MMMM, \u00a7\u00a7 60.5406(c), 60.5406a(c), 60.5407a(g), 60.5413(b), 60.5413a(b), and 60.5413a(d).",
+      "passage_b": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], Issued August 31, 1981; IBR approved for \u00a7\u00a7 60.56c(b); 60.63(f); 60.106(e); 60.104a(d), (h), (i), and (j); 60.105a(b), (d), (f), and (g); 60.106a(a); 60.107a(a), (c), and (d); 60.275(e); 60.275a(e); 60.275b(e); Tables 1 and 3 to subpart EEEE; Tables 2 and 4 to subpart FFFF; Table 2 to subpart JJJJ; \u00a7\u00a7 60.285a(f); 60.396(a); 60.614a(b); 60.664a(b); 60.704(b); 60.704a(b); 60.2145(s) and (t); 60.2710(s) and (t); 60.2730(q); 60.4415(a); 60.4415a(b); 60.4900(b); 60.5220(b); Tables 1 and 2 to subpart LLLL; Tables 2 and 3 to subpart MMMM; \u00a7\u00a7 60.5406(c); 60.5406a(c); 60.5406b(c); 60.5407a(g); 60.5407b(g); 60.5413(b); 60.5413a(b) and (d); 60.5413b(b) and (d); 60.5413c(b) and (d); 60.5930(a); Tables 3 and 4 to subpart VVVV; 60.6485(a); Tables 4 and 5 to subpart WWWW."
+    },
+    {
+      "pair_id": 36,
+      "passage_a": "(38) ASTM D396-78, Standard Specification for Fuel Oils, IBR approved for \u00a7\u00a7 60.41b, 60.41c, 60.111(b), and 60.111a(b).",
+      "passage_b": "(39) ASTM D396-78, Standard Specification for Fuel Oils; IBR approved for \u00a7\u00a7 60.41b; 60.41c; 60.111(b); 60.111a(b)."
+    },
+    {
+      "pair_id": 38,
+      "passage_a": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method), IBR approved for \u00a7\u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3.",
+      "passage_b": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method); IBR approved for \u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3."
+    },
+    {
+      "pair_id": 42,
+      "passage_a": "(149) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method), IBR approved for \u00a7 60.334(h).",
+      "passage_b": "(155) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method); IBR approved for \u00a7 60.334(h)."
+    },
+    {
+      "pair_id": 45,
+      "passage_a": "(84) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood, IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1.",
+      "passage_b": "(87) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood; IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1."
+    },
+    {
+      "pair_id": 46,
+      "passage_a": "(125) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke, IBR approved for \u00a7 60.45(f).",
+      "passage_b": "(131) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke; IBR approved for \u00a7 60.45(f)."
+    },
+    {
+      "pair_id": 48,
+      "passage_a": "Delegation Status for New Source Performance Standards for San Diego County APCD, San Joaquin Valley Unified APCD, San Luis Obispo County APCD, and Santa Barbara County APCD",
+      "passage_b": "(vii) Delegations for San Diego County Air Pollution Control District, San Joaquin Valley Unified Air Pollution Control District, San Luis Obispo County Air Pollution Control District, and Santa Barbara County Air Pollution Control District are shown in the following table:"
+    },
+    {
+      "pair_id": 50,
+      "passage_a": "(40) ASTM D396-90, Standard Specification for Fuel Oils, IBR approved for \u00a7\u00a7 60.41b, 60.41c, 60.111(b), and 60.111a(b).",
+      "passage_b": "(40) ASTM D396-89, Standard Specification for Fuel Oils; IBR approved for \u00a7\u00a7 60.41b; 60.41c; 60.111(b); 60.111a(b)."
+    },
+    {
+      "pair_id": 55,
+      "passage_a": "1 The Louisiana Department of Environmental Quality (LDEQ) has been delegated all Part 60 standards promulgated by EPA, except subpart AAA - Standards of Performance for New Residential Wood Heaters - as amended in the Federal Register through July 1, 2013.",
+      "passage_b": "(1) New Mexico. The New Mexico Environment Department has been delegated all part 60 standards promulgated by the EPA, except subpart AAA\u2014Standards of Performance for New Residential Wood Heaters; and subpart QQQQ\u2014Standards of Performance for New Residential Hydronic Heaters and Forced-Air Furnaces, as amended in the Federal Register through January 15, 2017."
+    },
+    {
+      "pair_id": 57,
+      "passage_a": "(37) ASTM D388-99 (Reapproved 2004) 1 Standard Classification of Coals by Rank, IBR approved for \u00a7\u00a7 60.41, 60.45(f), 60.41Da, 60.41b, 60.41c, 60.251, and 60.5580.",
+      "passage_b": "(38) ASTM D388-99 (Reapproved 2004) 1(ASTM D388-99R04), Standard Classification of Coals by Rank, approved June 1, 2004; IBR approved for \u00a7\u00a7 60.41; 60.45(f); 60.41Da; 60.41b; 60.41c; 60.251; 60.5580; 60.5580a."
+    },
+    {
+      "pair_id": 58,
+      "passage_a": "(f) The requirements of paragraphs (a) through (c) of this section remain in force until and unless EPA, in delegating enforcement authority to a State under section 111(c) of the Act, approves reporting requirements or an alternative means of compliance surveillance adopted by such State. In that event, affected sources within the State will be relieved of the obligation to comply with the requirements of paragraphs (a) through (c) of this section, provided that they comply with the requirements established by the State.",
+      "passage_b": "(f) The requirements of paragraphs (a) through (c) of this section remain in force until and unless EPA, in delegating enforcement authority to a State under section 111(c) of the Act, approves reporting requirements or an alternative means of compliance surveillance adopted by such State. In that event, affected sources within the State will be relieved of the obligation to comply with the requirements of paragraphs (a) through (c) of this section, provided that they comply with the requirements established by the State. The EPA will not approve a waiver of electronic reporting to the EPA in delegating enforcement authority. Thus, electronic reporting to the EPA cannot be waived, and as such, the provisions of this paragraph cannot be used to relieve owners or operators of affected facilities of the requirement to submit the electronic reports required in this section to the EPA."
+    },
+    {
+      "pair_id": 60,
+      "passage_a": "(85) ASTM D2234-76, Standard Methods for Collection of a Gross Sample of Coal, IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1.",
+      "passage_b": "(88) ASTM D2234-76, Standard Methods for Collection of a Gross Sample of Coal; IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1."
+    },
+    {
+      "pair_id": 62,
+      "passage_a": "(a) In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use as reference methods and procedures the test methods in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b).",
+      "passage_b": "(c) Test methods. In conducting the performance tests required in \u00a7 60.8, the owner or operator shall use the following EPA reference test methods and procedures in appendix A of this part or other methods and procedures as specified in this section, except as provided in \u00a7 60.8(b)."
+    },
+    {
+      "pair_id": 63,
+      "passage_a": "(53) ASTM D1193-91, Standard Specification for Reagent Water, IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; and Method 29, Section 7.2.2.",
+      "passage_b": "(53) ASTM D1193-77, Standard Specification for Reagent Water; IBR approved for appendix A-3 to part 60: Method 5, Section 7.1.3; Method 5E, Section 7.2.1; Method 5F, Section 7.2.1; appendix A-4 to part 60: Method 6, Section 7.1.1; Method 7, Section 7.1.1; Method 7C, Section 7.1.1; Method 7D, Section 7.1.1; Method 10A, Section 7.1.1; appendix A-5 to part 60: Method 11, Section 7.1.3; Method 12, Section 7.1.3; Method 13A, Section 7.1.2; appendix A-8 to part 60: Method 26, Section 7.1.2; Method 26A, Section 7.1.2; Method 29, Section 7.2.2."
+    },
+    {
+      "pair_id": 68,
+      "passage_a": "(86) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal, IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1.",
+      "passage_b": "(89) ASTM D2234-96, Standard Methods for Collection of a Gross Sample of Coal; IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1."
+    },
+    {
+      "pair_id": 72,
+      "passage_a": "(75) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, (Approved January 1, 2010), IBR approved for \u00a7\u00a7 60.107a(d), 60.5413(d), 60.5413a(d).",
+      "passage_b": "(77) ASTM D1945-03 (Reapproved 2010), Standard Method for Analysis of Natural Gas by Gas Chromatography, approved January 1, 2010; IBR approved for \u00a7\u00a7 60.107a(d); 60.5413(d); 60.5413a(d); 60.5413b(d); 60.5413c(d)."
+    },
+    {
+      "pair_id": 73,
+      "passage_a": "> C. Spill Leak and Disposal Procedures.",
+      "passage_b": "> C. Spill, Leak and Disposal Procedures."
+    },
+    {
+      "pair_id": 78,
+      "passage_a": "(193) ASTM D6911-15, Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015, IBR approved for appendix A-8: Method 30B.",
+      "passage_b": "(216) ASTM D6911-15 Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015; IBR approved for Appendix A-7: Method 23, Section 8.2.11; Appendix A-8: Method 30B, Section 8.3.3.8."
+    },
+    {
+      "pair_id": 84,
+      "passage_a": "(186) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, (Approved October 1, 2005), IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b) and (d), and 60.5413a(b).",
+      "passage_b": "(206) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, approved October 1, 2005; IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b); 60.5413a(b)."
+    },
+    {
+      "pair_id": 85,
+      "passage_a": "(181) ASTM D6228-98 (Reapproved 2003), Standard Test Method for Determination of Sulfur Compounds in Natural Gas and Gaseous Fuels by Gas Chromatography and Flame Photometric Detection, IBR approved for \u00a7\u00a7 60.4360 and 60.4415.",
+      "passage_b": "(195) ASTM D6228-98 (Reapproved 2003), Standard Test Method for Determination of Sulfur Compounds in Natural Gas and Gaseous Fuels by Gas Chromatography and Flame Photometric Detection; IBR approved for \u00a7\u00a7 60.4360; 60.4360a(c); 60.4415(a)."
+    },
+    {
+      "pair_id": 87,
+      "passage_a": "(45) ASTM D975-98a, Standard Specification for Diesel Fuel Oils, IBR approved for \u00a7\u00a7 60.111(b) and 60.111a(b).",
+      "passage_b": "(45) ASTM D975-96, Standard Specification for Diesel Fuel Oils; IBR approved for \u00a7\u00a7 60.111(b) and 60.111a(b)."
+    },
+    {
+      "pair_id": 97,
+      "passage_a": "this subpart. (2)(i) A list of identification numbers for equipment that are designated for no detectable emissions under the provisions of \u00a7\u00a7 60.482-2(e), 60.482-3(i) and 60.482-7(f). (ii) The designation of equipment as subject to the requirements of \u00a7 60.482-2(e), \u00a7 60.482-3(i), or \u00a7 60.482-7(f) shall be signed by the owner or operator. Alternatively, the owner or operator may establish a mechanism with their permitting authority that satisfies this requirement. (3) A list of equipment identification numbers for pressure relief devices required to comply with \u00a7 60.482-4. (4)(i) The dates of each compliance test as required in \u00a7\u00a7 60.482-2(e), 60.482-3(i), 60.482-4, and 60.482-7(f). (ii) The background level measured during each compliance test. (iii) The maximum instrument reading measured at the equipment",
+      "passage_b": "of liquids dripping. (e) Any pump that is designated, as described in \u00a7 60.486(e)(1) and (2), for no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, is exempt from the requirements of paragraphs (a), (c), and (d) of this section if the pump: (1) Has no externally actuated shaft penetrating the pump housing, (2) Is demonstrated to be operating with no detectable emissions as indicated by an instrument reading of less than 500 ppm above background as measured by the methods specified in \u00a7 60.485(c), and (3) Is tested for compliance with paragraph (e)(2) of this section initially upon designation, annually, and at other times requested by the Administrator. (f) If any pump"
+    },
+    {
+      "pair_id": 103,
+      "passage_a": "affected facility is in compliance with all applicable standards for which performance tests are conducted in accordance with \u00a7 60.8 of this part but during the time such performance tests are being conducted fails to meet any applicable opacity standard, he shall notify the owner or operator and advise him that he may petition the Administrator within 10 days of receipt of notification to make appropriate adjustment to the opacity standard for the affected facility. (7) The Administrator will grant such a petition upon a demonstration by the owner or operator that the affected facility and associated air pollution control equipment was operated and maintained in a manner to minimize the opacity of emissions during the performance tests; that the",
+      "passage_b": "substitute the procedures in Section 16.0 of Performance Specification 2 if the control device exhaust emission rate is less than 50 percent of the level needed to meet the control efficiency requirement. The alternative procedures do not apply if the continuous emission monitoring system is used to determine compliance continuously with the applicable standard. The petition to waive the RA test shall include a detailed description of the procedures to be applied. Included shall be location and procedure for conducting the alternative, the concentration or response levels of the alternative RA materials, and the other equipment checks included in the alternative procedure. The Administrator will review the petition for completeness and applicability. The determination to grant a waiver will depend"
+    },
+    {
+      "pair_id": 105,
+      "passage_a": "Each owner or operator that is subject to the requirements of this subpart shall comply with the emission limitations set forth in this section on and after the date on which the initial performance test, required by \u00a7 60.8, is completed, but not later than 60 days after achieving the maximum production rate at which the affected facility will be operated, or 180 days after initial startup, whichever comes first. (a) No owner or operator subject to the provisions of this subpart shall: (1) Burn in any fuel gas combustion device any fuel gas that contains hydrogen sulfide (H2S) in excess of 230 mg/dscm (0.10 gr/dscf). The combustion in a flare of process upset gases or fuel gas that is",
+      "passage_b": "may be monitored at only one location (i.e., after one of the combustion devices), if monitoring at this location accurately represents the SO2 emissions into the atmosphere from each of the combustion devices. (4) Instead of the SO2 monitor in paragraph (a)(3) of this section for fuel gas combustion devices subject to \u00a7 60.104(a)(1), an instrument for continuously monitoring and recording the concentration (dry basis) of H2S in fuel gases before being burned in any fuel gas combustion device. (i) The span value for this instrument is 425 mg/dscm H2S. (ii) Fuel gas combustion devices having a common source of fuel gas may be monitored at only one location, if monitoring at this location accurately represents the concentration of H2S"
+    },
+    {
+      "pair_id": 116,
+      "passage_a": "(a) The owner or operator subject to the provisions of this subpart shall conduct a performance test and submit to the Administrator a written report of the results of the test as specified in \u00a7 60.8(a). (b) During the initial performance test of a wet scrubber, and at least weekly thereafter, the owner or operator shall record the measurements of both the change in pressure of the gas stream across the scrubber and the scrubbing liquid flow rate. (c) After the initial performance test of a wet scrubber, the owner or operator shall submit semiannual reports to the Administrator of occurrences when the measurements of the scrubber pressure loss (or gain) or liquid flow rate differ by more than \u00b130",
+      "passage_b": "> On a separate page, describe any changes since last quarter in CMS, process or controls. I certify that the information contained in this report is true, accurate, and complete. > Name > Signature > Title > Date (e)(1) Notwithstanding the frequency of reporting requirements specified in paragraph (c) of this section, an owner or operator who is required by an applicable subpart to submit excess emissions and monitoring systems performance reports (and summary reports) on a quarterly (or more frequent) basis may reduce the frequency of reporting for that standard to semiannual if the following conditions are met: (i) For 1 full year (e.g., 4 quarterly or 12 monthly reporting periods) the affected facility's excess emissions and monitoring systems"
+    },
+    {
+      "pair_id": 118,
+      "passage_a": "be used to open and close metal containers. These containers must be effectively grounded. > C. Do not incinerate BD cartridges, tanks or other containers. > D. Employers must advise employees of all areas and operations where exposure to BD might occur. > #### Appendix C to \u00a7 1910.1051\u2014Medical Screening and Surveillance for 1,3-Butadiene (Non-Mandatory) > #### I. Basis for Medical Screening and Surveillance Requirements > #### A. Route of Entry Inhalation > #### B. Toxicology > Inhalation of BD has been linked to an increased risk of cancer, damage to the reproductive organs, and fetotoxicity. Butadiene can be converted via oxidation to epoxybutene and diepoxybutane, two genotoxic metabolites that may play a role in the expression of BD's toxic",
+      "passage_b": "relate to developmental toxicity and reproductive capacity. > Physical examination of workers acutely exposed to significant levels of BD should be especially directed at the respiratory system, eyes, sinuses, skin, nervous system, and any region associated with particular complaints. If the worker has received a severe acute exposure, hospitalization may be required to assure proper medical management. Since this type of exposure may place workers at greater risk of blood abnormalities, a CBC must be obtained within 48 hours and repeated at one, two, and three months. > #### Appendix D to \u00a7 1910.1051\u2014Sampling and Analytical Method for 1,3-Butadiene (Non-Mandatory) > OSHA Method No.: 56. > Matrix: Air. > Target concentration: 1 ppm (2.21 mg/m 3) > Procedure: Air samples"
+    },
+    {
+      "pair_id": 131,
+      "passage_a": "the applicable standard in \u00a7 60.44. Facilities complying with the 30-day NOX standard shall use the most current associated NOX compliance and monitoring requirements in \u00a7\u00a7 60.48Da and 60.49Da of subpart Da of this part. (4) Particulate matter. Excess emissions for affected facilities using a CEMS for measuring PM are defined as any boiler operating day period during which the average emissions (arithmetic average of all operating one-hour periods) exceed the applicable standards in \u00a7 60.42. Affected facilities using PM CEMS must follow the most current applicable compliance and monitoring provisions in \u00a7\u00a7 60.48Da and 60.49Da of subpart Da of this part. (h) The owner or operator of an affected facility subject to the opacity limits in \u00a7 60.42 that",
+      "passage_b": "particulate matter run, and the average of the three determinations shall be computed."
+    },
+    {
+      "pair_id": 136,
+      "passage_a": "records must be kept for at least thirty (30) years. Medical records must be kept for the period of your employment plus thirty (30) years. > D. Your employer is required to release your exposure and medical records to your physician or designated representative upon your written request. > #### Appendix H to \u00a7 1910.1001\u2014Medical Surveillance Guidelines for Asbestos Non-Mandatory > #### I. Route of Entry Inhalation, Ingestion > #### II. Toxicology > Clinical evidence of the adverse effects associated with exposure to asbestos is present in the form of several well-conducted epidemiological studies of occupationally exposed workers, family contacts of workers, and persons living near asbestos mines. These studies have shown a definite association between exposure to asbestos and",
+      "passage_b": "maintain this record for at least 40 years or the duration of employment plus 20 years, whichever is longer. (3) Availability. (i) The employer shall assure that all records required to be maintained by this section be made available upon request to the Assistant Secretary and the Director for examination and copying. (ii) Employee exposure monitoring records and employee medical records required by this paragraph shall be provided upon request to employees, designated representatives, and the Assistant Secretary in accordance with 29 CFR 1910.1020 (a) through (e) and (g) through (i). (4) Transfer of records. (i) If the employer ceases to do business, the successor employer shall receive and retain all records required to be maintained by paragraph (p) of"
+    },
+    {
+      "pair_id": 144,
+      "passage_a": "of liquids dripping. (e) Any pump that is designated, as described in \u00a7 60.486(e)(1) and (2), for no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, is exempt from the requirements of paragraphs (a), (c), and (d) of this section if the pump: (1) Has no externally actuated shaft penetrating the pump housing, (2) Is demonstrated to be operating with no detectable emissions as indicated by an instrument reading of less than 500 ppm above background as measured by the methods specified in \u00a7 60.485(c), and (3) Is tested for compliance with paragraph (e)(2) of this section initially upon designation, annually, and at other times requested by the Administrator. (f) If any pump",
+      "passage_b": "its use by the procedures specified in Method 21. The following calibration gases shall be used: (i) Zero air (less than 10 ppm of hydrocarbon in air); and (ii) A mixture of methane or n-hexane and air at a concentration of about, but less than, 10,000 ppm methane or n-hexane. (c) The owner or operator shall determine compliance with the no detectable emission standards in \u00a7\u00a7 60.482-2(e), 60.482-3(i), 60.482-4, 60.482-7(f), and 60.482-10(e) as follows: (1) The requirements of paragraph (b) shall apply. (2) Method 21 shall be used to determine the background level. All potential leak interfaces shall be traversed as close to the interface as possible. The arithmetic difference between the maximum concentration indicated by the instrument and the"
+    },
+    {
+      "pair_id": 146,
+      "passage_a": "emission limits in Table 3 of this subpart must be based on the average of the five 6-minute averages. (d) To demonstrate compliance with the fugitive emission limits for buildings specified in \u00a7 60.672(e)(1), the owner or operator must complete the testing specified in paragraph (d)(1) and (2) of this section. Performance tests must be conducted while all affected facilities inside the building are operating. (1) If the building encloses any affected facility that commences construction, modification, or reconstruction on or after April 22, 2008, the owner or operator of the affected facility must conduct an initial Method 9 (40 CFR part 60, appendix A-4) performance test according to this section and \u00a7 60.11. (2) If the building encloses only",
+      "passage_b": "affected facility or the combined effluent from two or more affected facilities is released to the atmosphere through more than one point. (j) An alternative to the relative accuracy (RA) test specified in Performance Specification 2 of appendix B may be requested as follows: (1) An alternative to the reference method tests for determining RA is available for sources with emission rates demonstrated to be less than 50 percent of the applicable standard. A source owner or operator may petition the Administrator to waive the RA test in Section 8.4 of Performance Specification 2 and substitute the procedures in Section 16.0 if the results of a performance test conducted according to the requirements in \u00a7 60.8 of this subpart or"
+    },
+    {
+      "pair_id": 149,
+      "passage_a": "allow determination of the pollutant mass emissions rate to the atmosphere for each kiln subject to the PM emissions limits in \u00a7 60.62(a)(1)(ii) and (iii) and (b)(1)(i) and (ii), the NOX emissions limit in \u00a7 60.62(a)(3), or the SO2 emissions limit in \u00a7 60.62(a)(4) according to the requirements in paragraphs (h)(1) through (10), where appropriate, of this section. (1) The owner or operator must install each sensor of the flow rate monitoring system in a location that provides representative measurement of the exhaust gas flow rate at the sampling location of the NOX and/or SO2 CEMS, taking into account the manufacturer's recommendations. The flow rate sensor is that portion of the system that senses the volumetric flow rate and generates",
+      "passage_b": "Method 2 shall be used to determine the volumetric flow rate (Qr). (ii) The emission correction factor, integrated sampling and analysis procedure of Method 3B shall be used to determine CO2, CO, and O2 concentrations. (4) Method 9 and the procedures of \u00a7 60.11 shall be used to determine opacity. (c) If auxiliary liquid or solid fossil-fuels are burned in an incinerator-waste heat boiler, the owner or operator shall determine the emission rate of PM permitted in \u00a7 60.102(b) as follows: (1) The allowable emission rate (Es) of PM shall be computed for each run using the following equation: Es = F + A (H/Rc) > Where: > Es = Emission rate of PM allowed, kg/Mg (lb/ton) of coke burn-off"
+    },
+    {
+      "pair_id": 170,
+      "passage_a": "with your job will also be provided by your employer. If you are exposed over the permissible exposure limit, your employer must inform you of that fact and the actions he is taking to reduce your exposures. > #### Appendix B to \u00a7 1910.1018\u2014Substance Technical Guidelines > #### arsenic, arsenic trioxide, arsenic trichloride (three examples) > I. Physical and chemical properties > A. Arsenic (metal). > 1. Formula: As. > 2. Appearance: Gray metal. > 3. Melting point: Sublimes without melting at 613C. > 4. Specific Gravity: (H20 = 1):5.73. > 5. Solubility in water: Insoluble. > B. Arsenic Trioxide. > 1. Formula: As203, (As406). > 2. Appearance: White powder. > 3. Melting point: 315C. > 4. Specific Gravity (H20",
+      "passage_b": "this Substance Safety Data Sheet for DBCP. In addition, your employer must instruct you in the safe use of DBCP, emergency procedures, and the correct use of protective equipment. > B. Your employer is required to determine whether you are being exposed to DBCP. You or your representative have the right to observe employee exposure measurements and to record the result obtained. Your employer is required to inform you of your exposure. If your employer determines that you are being overexposed, he is required to inform you of the actions which are being taken to reduce your exposure. > C. Your employer is required to keep records of your exposure and medical examinations. Your employer is required to keep exposure"
+    },
+    {
+      "pair_id": 181,
+      "passage_a": "(a) Except during pressure releases, each pressure relief device in gas/vapor service shall be operated with no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, as determined by the methods specified in \u00a7 60.485(c). (b)(1) After each pressure release, the pressure relief device shall be returned to a condition of no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, as soon as practicable, but no later than 5 calendar days after the pressure release, except as provided in \u00a7 60.482-9. (2) No later than 5 calendar days after the pressure release, the pressure relief device shall be monitored to confirm the conditions of no detectable emissions,",
+      "passage_b": "its use by the procedures specified in Method 21. The following calibration gases shall be used: (i) Zero air (less than 10 ppm of hydrocarbon in air); and (ii) A mixture of methane or n-hexane and air at a concentration of about, but less than, 10,000 ppm methane or n-hexane. (c) The owner or operator shall determine compliance with the no detectable emission standards in \u00a7\u00a7 60.482-2(e), 60.482-3(i), 60.482-4, 60.482-7(f), and 60.482-10(e) as follows: (1) The requirements of paragraph (b) shall apply. (2) Method 21 shall be used to determine the background level. All potential leak interfaces shall be traversed as close to the interface as possible. The arithmetic difference between the maximum concentration indicated by the instrument and the"
+    },
+    {
+      "pair_id": 195,
+      "passage_a": "underlying calibration curve; and > 6.3 Optimizes methods and instruments to obtain a quantitative limit of detection that represents a value no higher than 25 percent of the PEL based on sample air volume. > #### Appendix B to \u00a7 1910.1053\u2014Medical Surveillance Guidelines > #### Introduction > The purpose of this Appendix is to provide medical information and recommendations to aid physicians and other licensed health care professionals (PLHCPs) regarding compliance with the medical surveillance provisions of the respirable crystalline silica standard (29 CFR 1910.1053). Appendix B is for informational and guidance purposes only and none of the statements in Appendix B should be construed as imposing a mandatory requirement on employers that is not otherwise imposed by the standard.",
+      "passage_b": "micrometers in diameter. Objective data means information, such as air monitoring data from industry-wide surveys or calculations based on the composition of a substance, demonstrating employee exposure to respirable crystalline silica associated with a particular product or material or a specific process, task, or activity. The data must reflect workplace conditions closely resembling or with a higher exposure potential than the processes, types of material, control methods, work practices, and environmental conditions in the employer's current operations. Physician or other licensed health care professional [PLHCP] means an individual whose legally permitted scope of practice (i.e., license, registration, or certification) allows him or her to independently provide or be delegated the responsibility to provide some or all of the particular health"
+    },
+    {
+      "pair_id": 199,
+      "passage_a": "shall receive and retain all records required to be maintained by this section for the prescribed period. (ii) The employer shall also comply with any additional requirements involving transfer of records set forth in 29 CFR 1910.1020(h). (r) Observation of monitoring\u2014(1) Employee observation. The employer shall provide affected employees, or their designated representatives, an opportunity to observe any monitoring of employee exposure to AN conducted pursuant to paragraph (e) of this section. (2) Observation procedures. (i) Whenever observation of the monitoring of employee exposure to AN requires entry into an area where the use of protective clothing or equipment is required, the employer shall provide the observer with personal protective clothing and equipment required to be worn by employees working",
+      "passage_b": "should also receive a copy of this opinion. The physician must not tell your employer any conditions he detects unrelated to occupational exposure to arsenic but must tell you those conditions. > #### vii. observation of monitoring > Your employer is required to monitor your exposure to arsenic and you or your representatives are entitled to observe the monitoring procedure. You are entitled to receive an explanation of the measurement procedure, and to record the results obtained. When the monitoring procedure is taking place in an area where respirators or personal protective clothing and equipment are required to be worn, you must also be provided with and must wear the protective clothing and equipment. > #### viii. access to records"
+    },
+    {
+      "pair_id": 203,
+      "passage_a": "anyone having the specific written consent of the subject employee, and to the Assistant Secretary in accordance with 29 CFR 1910.1020. (7) Transfer of records. The employer shall comply with the requirements involving transfer of records set forth in 29 CFR 1910.1020(h). (o) Observation of monitoring\u2014(1) Employee observation. The employer shall provide affected employees, or their designated representatives, an opportunity to observe the measuring or monitoring of employee exposure to MDA conducted pursuant to paragraph (e) of this section. (2) Observation procedures. When observation of the measuring or monitoring of employee exposure to MDA requires entry into areas where the use of protective clothing and equipment or respirators is required, the employer shall provide the observer with personal protective clothing",
+      "passage_b": "replaced by a more recent record. (6) Availability of records. (i) Upon request, the employer shall make all records maintained as a requirement of this standard available for examination and copying to the Assistant Secretary and the Director. (ii) The employer shall make employee exposure records, including estimates made from representative monitoring and available upon request for examination, and copying to the subject employee, or former employee, and employee representatives in accordance with 29 CFR 1910.1020 (a)-(e) and (g)-(i). (iii) Employee medical records required by this standard shall be provided upon request for examination and coying, to the subject employee or former employee or to anyone having the specific written consent of the subject employee or former employee in accordance"
+    },
+    {
+      "pair_id": 212,
+      "passage_a": "section, in accordance with 29 CFR 1910.1020. (ii) This record shall include: (A) The name and description of the duties of the employee; (B) The employer's copy of the physician's written opinion on the initial, periodic, and any special examinations, including results of medical examination and all tests, opinions, and recommendations; (C) Results of any airborne exposure monitoring done for that employee and the representative exposure levels supplied to the physician; and (D) Any employee medical complaints related to exposure to MDA; (iii) The employer shall keep, or assure that the examining physician keeps, the following medical records: (A) A copy of this standard and its appendices, except that the employer may keep one copy of the standard and its",
+      "passage_b": "use of protective clothing or equipment and respirators; and (D) A statement that the employee has been informed by the physician of the results of the medical examination and any medical conditions resulting from MDA exposure which require further explanation or treatment. (ii) The written opinion obtained by the employer shall not reveal specific findings or diagnoses unrelated to occupational exposures. (9) Medical removal\u2014(i) Temporary medical removal of an employee\u2014(A) Temporary removal resulting from occupational exposure. The employee shall be removed from work environments in which exposure to MDA is at or above the action level or where dermal exposure to MDA may occur, following an initial examination (paragraph (m)(2) of this section), periodic examinations (paragraph (m)(3) of this section),"
+    },
+    {
+      "pair_id": 216,
+      "passage_a": "required under \u00a7 60.8 is conducted. Otherwise, the owner or operator of an affected facility shall conduct a performance evaluation of the COMS or continuous emission monitoring system (CEMS) during any performance test required under \u00a7 60.8 or within 30 days thereafter in accordance with the applicable performance specification in appendix B of this part, The owner or operator of an affected facility shall conduct COMS or CEMS performance evaluations at such other times as may be required by the Administrator under section 114 of the Act. (1) The owner or operator of an affected facility using a COMS to determine opacity compliance during any performance test required under \u00a7 60.8 and as described in \u00a7 60.11(e)(5) shall furnish the",
+      "passage_b": "(a) Except as specified in paragraphs (a)(1),(a)(2), (a)(3), and (a)(4) of this section, within 60 days after achieving the maximum production rate at which the affected facility will be operated, but not later than 180 days after initial startup of such facility, or at such other times specified by this part, and at such other times as may be required by the Administrator under section 114 of the Act, the owner or operator of such facility shall conduct performance test(s) and furnish the Administrator a written report of the results of such performance test(s). (1) If a force majeure is about to occur, occurs, or has occurred for which the affected owner or operator intends to assert a claim of"
+    },
+    {
+      "pair_id": 226,
+      "passage_a": "be used to open and close metal containers. These containers must be effectively grounded. > C. Do not incinerate BD cartridges, tanks or other containers. > D. Employers must advise employees of all areas and operations where exposure to BD might occur. > #### Appendix C to \u00a7 1910.1051\u2014Medical Screening and Surveillance for 1,3-Butadiene (Non-Mandatory) > #### I. Basis for Medical Screening and Surveillance Requirements > #### A. Route of Entry Inhalation > #### B. Toxicology > Inhalation of BD has been linked to an increased risk of cancer, damage to the reproductive organs, and fetotoxicity. Butadiene can be converted via oxidation to epoxybutene and diepoxybutane, two genotoxic metabolites that may play a role in the expression of BD's toxic",
+      "passage_b": "transferring the liquid from one container to another. Such operations should be well ventilated and good work practices must be established to avoid spills. > B. Use non-sparking tools to open benzene containers which are effectively grounded and bonded prior to opening and pouring. > C. Employers must advise employees of all plant areas and operations where exposure to benzene could occur. Common operations in which high exposures to benzene may be encountered are: the primary production and utilization of benzene, and transfer of benzene. > #### Appendix C to \u00a7 1910.1028\u2014Medical Surveillance Guidelines for Benzene > #### I. Route of Entry > Inhalation; skin absorption. > #### II. Toxicology > Benzene is primarily an inhalation hazard. Systemic absorption may"
+    },
+    {
+      "pair_id": 232,
+      "passage_a": "[TABLE] 60.4_part5 section \u00a7 60.4 Address.\n| | Subpart | Air pollution control agency | | | |\n|---|---|---|---|---|---|\n| VV | Equipment Leaks of VOC in the Synthetic Organic Chemicals Manufacturing Industry | X | | | X |\n| WW | Beverage Can Surface Coating Industry | X | | | X |\n| XX | Bulk Gasoline Terminals | | | | |\n| AAA | New Residential Wool Heaters | X | | | X |\n| BBB | Rubber Tire Manufacturing Industry | X | | | X |\n| CCC | (Reserved) | | | | |\n| DDD | Volatile Organic Compounds (VOC) Emissions from the Polymer Manufacturing Industry | X | | | X |\n| EEE | (Reserved) | | | | |\n| FFF | Flexible Vinyl and Urethane Coating and Printing | X | | | X |\n| GGG | Equipment Leaks of VOC in Petroleum Refineries | X | | | X |\n| HHH | Synthetic Fiber Production Facilities | X | | | X |\n| III | Volatile Organic Compound (VOC) Emissions From the Synthetic Organic Chemical Manufacturing Industry (SOCMI) Air Oxidation Unit Processes | X | | | X |\n| JJJ | Petroleum Dry Cleaners | X | | | X |\n| KKK | Equipment Leaks of VOC From Onshore Natural Gas Processing Plants | X | | | X |\n| LLL | Onshore Natural Gas Processing: SO2 Emissions | X | | | X |\n| MMM | (Reserved) | | | | |\n| NNN | Volatile Organic Compound (VOC) Emissions From Synthetic Organic Chemical Manufacturing Industry (SOCMI) Distillation Operations | X | | | X |\n| OOO | Nonmetallic Mineral Processing Plants | X | | | X |\n| PPP | Wool Fiberglass Insulation Manufacturing Plants | X | | | X |",
+      "passage_b": "[TABLE] 60.4_part1 section \u00a7 60.4 Address.\n| | Subpart | State | | | |\n|---|---|---|---|---|---|\n| KKK | Equipment Leaks of VOC from Onshore Natural Gas Processing Plants | | | | |\n| LLL | Onshore Natural Gas Processing Plants; SO2 Emissions | | X | | |\n| OOO | Nonmetallic Mineral Processing Plants | | X | X | |\n| PPP | Wool Fiberglass Insulation Manufacturing Plants | | X | X | |"
+    }
+  ]
+}

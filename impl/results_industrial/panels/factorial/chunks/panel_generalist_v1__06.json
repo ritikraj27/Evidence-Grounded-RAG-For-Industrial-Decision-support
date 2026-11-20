@@ -1,0 +1,79 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "general",
+  "regime_title": "All four regimes, read without a specialism",
+  "regime_governs": "occupational safety, process safety, environmental control and hazardous-materials transport.",
+  "reader_note": "You are reading pairs from four different regulatory regimes without a specialism in any of them. Apply the rubric as written.",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 73,
+      "passage_a": "> C. Spill Leak and Disposal Procedures.",
+      "passage_b": "> C. Spill, Leak and Disposal Procedures."
+    },
+    {
+      "pair_id": 74,
+      "passage_a": "> #### A.3.4.1 Classification of Mixtures When Data Are Available for the Complete Mixture",
+      "passage_b": "> A.4.3.1 Classification of Mixtures When Data Are Available for the Complete Mixture"
+    },
+    {
+      "pair_id": 75,
+      "passage_a": "> A.2.3.3 The tiered approach explains how to organize information on a substance and to make a weight-of-evidence decision about hazard assessment and hazard classification.",
+      "passage_b": "> A.3.2.2.7 The tiered approach explains how to organize existing information and to make a weight-of-evidence decision about hazard assessment and hazard classification. Although information might be gained from the evaluation of single parameters within a tier, consideration should be given to the totality of existing information and making an overall weight of evidence determination. This is especially true when there is conflict in information available."
+    },
+    {
+      "pair_id": 76,
+      "passage_a": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2",
+      "passage_b": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |\n|---|---|---|\n| Category 1 | Category 2 |  |\n| Category 1 Target organ toxicant | \u22651.0% |  |\n| Category 2 Target organ toxicant |  | \u22651.0% |"
+    },
+    {
+      "pair_id": 77,
+      "passage_a": "> For mixtures classified in accordance with A.1, A.2, A.3, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1.",
+      "passage_b": "> For mixtures classified in accordance with A.1, A.2, A.3, A.4, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1."
+    },
+    {
+      "pair_id": 78,
+      "passage_a": "(193) ASTM D6911-15, Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015, IBR approved for appendix A-8: Method 30B.",
+      "passage_b": "(216) ASTM D6911-15 Standard Guide for Packaging and Shipping Environmental Samples for Laboratory Analysis, approved January 15, 2015; IBR approved for Appendix A-7: Method 23, Section 8.2.11; Appendix A-8: Method 30B, Section 8.3.3.8."
+    },
+    {
+      "pair_id": 79,
+      "passage_a": "> #### A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles",
+      "passage_b": "> A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles"
+    },
+    {
+      "pair_id": 80,
+      "passage_a": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which contain only extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation.",
+      "passage_b": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which predominantly contain extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation."
+    },
+    {
+      "pair_id": 81,
+      "passage_a": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of UN ST/SG/AC.10 (incorporated by reference, see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 82,
+      "passage_a": "(3) Polyethylene-lined burlap or paper bag;",
+      "passage_b": "(iii) Polyethylene-lined burlap or paper bag;"
+    },
+    {
+      "pair_id": 83,
+      "passage_a": "> A.4.2.2.2 Human evidence.",
+      "passage_b": "> A.4.2.2.2 Human Evidence"
+    },
+    {
+      "pair_id": 84,
+      "passage_a": "(186) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, (Approved October 1, 2005), IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b) and (d), and 60.5413a(b).",
+      "passage_b": "(206) ASTM D6522-00 (Reapproved 2005), Standard Test Method for Determination of Nitrogen Oxides, Carbon Monoxide, and Oxygen Concentrations in Emissions from Natural Gas-Fired Reciprocating Engines, Combustion Turbines, Boilers, and Process Heaters Using Portable Analyzers, approved October 1, 2005; IBR approved for table 2 to subpart JJJJ, \u00a7\u00a7 60.5413(b); 60.5413a(b)."
+    }
+  ]
+}

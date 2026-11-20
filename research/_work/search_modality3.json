@@ -1,0 +1,37 @@
+{
+ "modality_balance": {
+  "query": "\"modality balance\" OR \"modality imbalance\" OR \"modality quota\" OR \"modality-aware retrieval\" OR \"modality routing\"",
+  "error": "HTTP Error 400: Bad Request",
+  "results": []
+ },
+ "modality_select_rag": {
+  "query": "\"multimodal retrieval augmented generation\" AND (\"modality selection\" OR \"modality filter\")",
+  "error": "HTTP Error 400: Bad Request",
+  "results": []
+ },
+ "rag_chunk_multimodal": {
+  "query": "\"retrieval augmented generation\" AND \"chunking\" AND (\"table\" OR \"chart\" OR \"image\")",
+  "error": "HTTP Error 400: Bad Request",
+  "results": []
+ },
+ "doc_parsing_rag": {
+  "query": "\"document parsing\" AND \"retrieval augmented generation\" AND (benchmark OR evaluation)",
+  "error": "HTTP Error 400: Bad Request",
+  "results": []
+ },
+ "chart_table_rag": {
+  "query": "\"chart\" AND \"table\" AND \"retrieval augmented generation\" AND question answering",
+  "error": "HTTP Error 400: Bad Request",
+  "results": []
+ },
+ "industrial_rag": {
+  "query": "\"retrieval augmented generation\" AND (manufacturing OR industrial OR \"supply chain\")",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "ocr_free_retrieval": {
+  "query": "\"OCR-free\" AND \"document\" AND retrieval",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ }
+}

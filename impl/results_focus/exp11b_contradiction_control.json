@@ -1,0 +1,164 @@
+{
+  "n_pairs": 11,
+  "n_correct": 11,
+  "accuracy": 1.0,
+  "by_class": {
+    "contradiction": {
+      "n": 5,
+      "correct": 5
+    },
+    "revision": {
+      "n": 2,
+      "correct": 2
+    },
+    "compatible": {
+      "n": 2,
+      "correct": 2
+    },
+    "different_subject": {
+      "n": 2,
+      "correct": 2
+    }
+  },
+  "n_flagged": 7,
+  "flagged_precision": 1.0,
+  "flagged_by_branch": {
+    "semantic": 4,
+    "quantity": 1,
+    "revision": 2
+  },
+  "n_correctly_quiet": 4,
+  "quiet_specificity": 1.0,
+  "note": "The control measures whether the detector can do its job, not whether the corpus exercises it. The corpus cannot: the reader labelling in Experiment 11 found no contradiction among the alarms or among a random sample of the unflagged pairs. The corroboration share between this control and that measurement is the claim that the mechanism works and the corpus does not test it -- as opposed to the claim that the mechanism does not work.",
+  "pairs": [
+    {
+      "expected_class": "contradiction",
+      "expected_branch": [
+        "quantity",
+        "semantic"
+      ],
+      "fired_branch": "semantic",
+      "ok": true,
+      "nli_contradiction_prob": 0.9063091855895833,
+      "topical_similarity": 0.9943030708378056,
+      "entity_overlap": 0.8461538461538461,
+      "reason": "NLI contradiction probability 0.906 >= 0.70 and the same-subject check passed (cos=0.994, shared-object Jaccard=0.846)"
+    },
+    {
+      "expected_class": "contradiction",
+      "expected_branch": [
+        "quantity",
+        "semantic"
+      ],
+      "fired_branch": "quantity",
+      "ok": true,
+      "nli_contradiction_prob": 0.999255283200517,
+      "topical_similarity": 0.9673639524767585,
+      "entity_overlap": 0.8,
+      "reason": "the two passages attach different values to the same measured quantity: [{'quantity': 'safety stock', 'unit': 'units', 'values_a': ['120'], 'values_b': ['45']}]"
+    },
+    {
+      "expected_class": "contradiction",
+      "expected_branch": [
+        "quantity",
+        "semantic"
+      ],
+      "fired_branch": "semantic",
+      "ok": true,
+      "nli_contradiction_prob": 0.9990315177152111,
+      "topical_similarity": 0.9919891701403101,
+      "entity_overlap": 1.0,
+      "reason": "NLI contradiction probability 0.999 >= 0.70 and the same-subject check passed (cos=0.992, shared-object Jaccard=1.000)"
+    },
+    {
+      "expected_class": "contradiction",
+      "expected_branch": [
+        "quantity",
+        "semantic"
+      ],
+      "fired_branch": "semantic",
+      "ok": true,
+      "nli_contradiction_prob": 0.9993186528489557,
+      "topical_similarity": 0.9863632299968583,
+      "entity_overlap": 0.8181818181818182,
+      "reason": "NLI contradiction probability 0.999 >= 0.70 and the same-subject check passed (cos=0.986, shared-object Jaccard=0.818)"
+    },
+    {
+      "expected_class": "contradiction",
+      "expected_branch": [
+        "quantity",
+        "semantic"
+      ],
+      "fired_branch": "semantic",
+      "ok": true,
+      "nli_contradiction_prob": 0.9992710542692709,
+      "topical_similarity": 0.9594273552698208,
+      "entity_overlap": 0.8,
+      "reason": "NLI contradiction probability 0.999 >= 0.70 and the same-subject check passed (cos=0.959, shared-object Jaccard=0.800)"
+    },
+    {
+      "expected_class": "revision",
+      "expected_branch": [
+        "revision"
+      ],
+      "fired_branch": "revision",
+      "ok": true,
+      "nli_contradiction_prob": 0.9794444435793881,
+      "topical_similarity": 0.8098999870580408,
+      "entity_overlap": 0.4117647058823529,
+      "reason": "the two passages describe the same term at two different issues of the same standard: [{'standard': 'incoterms', 'versions_a': ['2020'], 'versions_b': ['2010'], 'shared_terms': ['CIF']}]"
+    },
+    {
+      "expected_class": "revision",
+      "expected_branch": [
+        "revision"
+      ],
+      "fired_branch": "revision",
+      "ok": true,
+      "nli_contradiction_prob": 0.43353175560181867,
+      "topical_similarity": 0.9127781426376738,
+      "entity_overlap": 0.6,
+      "reason": "the two passages describe the same term at two different issues of the same standard: [{'standard': 'revision', 'versions_a': ['4'], 'versions_b': ['2'], 'shared_terms': ['SOP']}]"
+    },
+    {
+      "expected_class": "compatible",
+      "expected_branch": [],
+      "fired_branch": null,
+      "ok": true,
+      "nli_contradiction_prob": 0.0005550916771188488,
+      "topical_similarity": 0.8301434897717781,
+      "entity_overlap": 0.4,
+      "reason": "NLI contradiction probability 0.001 < 0.70"
+    },
+    {
+      "expected_class": "compatible",
+      "expected_branch": [],
+      "fired_branch": null,
+      "ok": true,
+      "nli_contradiction_prob": 0.0058822789811540975,
+      "topical_similarity": 0.8692722273386532,
+      "entity_overlap": 0.45454545454545453,
+      "reason": "NLI contradiction probability 0.006 < 0.70"
+    },
+    {
+      "expected_class": "different_subject",
+      "expected_branch": [],
+      "fired_branch": null,
+      "ok": true,
+      "nli_contradiction_prob": 0.4131204855381472,
+      "topical_similarity": 0.8882951239108303,
+      "entity_overlap": 0.6666666666666666,
+      "reason": "NLI contradiction probability 0.413 < 0.70"
+    },
+    {
+      "expected_class": "different_subject",
+      "expected_branch": [],
+      "fired_branch": null,
+      "ok": true,
+      "nli_contradiction_prob": 0.0005901277954777877,
+      "topical_similarity": 0.34270262481666436,
+      "entity_overlap": 0.3333333333333333,
+      "reason": "NLI contradiction probability 0.001 < 0.70; the same-subject check failed (cos=0.343, shared-object Jaccard=0.333)"
+    }
+  ]
+}

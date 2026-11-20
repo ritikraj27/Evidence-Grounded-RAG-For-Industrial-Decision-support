@@ -1,0 +1,7945 @@
+{
+  "schema": "mtp.claim-band-eval/1",
+  "generation": [
+    "results_focus/exp8_generation.json",
+    "results_focus/exp8_generation_answering.json"
+  ],
+  "arm": "all",
+  "evidence_mode": "gold",
+  "n_claims_total": 350,
+  "n_claims_labelled": 347,
+  "n_claims_by_reference_source": {
+    "null": 3,
+    "rule": 24,
+    "judge_majority": 323
+  },
+  "annotator_agreement": {
+    "annotators": [
+      "adjudicator",
+      "judge_b_reader",
+      "judge_specialist_supply_chain"
+    ],
+    "pairwise": {
+      "adjudicator vs judge_b_reader": {
+        "n_labelled_by_both": 20,
+        "cohens_kappa": 0.5934959349593496,
+        "ci95": [
+          0.35150218378020015,
+          0.835489686138499
+        ],
+        "agreement_rate": 0.75,
+        "crosstab": {
+          "partially_supported | partially_supported": 8,
+          "unsupported | unsupported": 1,
+          "supported | supported": 6,
+          "partially_supported | contradicted": 1,
+          "partially_supported | unsupported": 3,
+          "supported | partially_supported": 1
+        }
+      },
+      "adjudicator vs judge_specialist_supply_chain": {
+        "n_labelled_by_both": 20,
+        "cohens_kappa": -0.18577075098814227,
+        "ci95": [
+          -0.42439328023140255,
+          0.05285177825511797
+        ],
+        "agreement_rate": 0.25,
+        "crosstab": {
+          "partially_supported | unsupported": 8,
+          "unsupported | partially_supported": 1,
+          "supported | partially_supported": 6,
+          "partially_supported | partially_supported": 4,
+          "supported | supported": 1
+        }
+      },
+      "judge_b_reader vs judge_specialist_supply_chain": {
+        "n_labelled_by_both": 350,
+        "cohens_kappa": 0.9016949980461118,
+        "ci95": [
+          0.869944560732012,
+          0.9334454353602115
+        ],
+        "agreement_rate": 0.9342857142857143,
+        "crosstab": {
+          "supported | supported": 142,
+          "unsupported | unsupported": 112,
+          "partially_supported | unsupported": 11,
+          "contradicted | contradicted": 14,
+          "unsupported | partially_supported": 4,
+          "partially_supported | partially_supported": 59,
+          "supported | partially_supported": 6,
+          "contradicted | partially_supported": 1,
+          "partially_supported | supported": 1
+        }
+      }
+    },
+    "n_contested_claims": 23,
+    "n_unlabelled_claims": 3
+  },
+  "agreement_3class": {
+    "n": 347,
+    "cohens_kappa": 0.05601411964541644,
+    "ci95": [
+      -0.00938223162786319,
+      0.12141047091869606
+    ],
+    "bands": [
+      "grounded",
+      "inferred",
+      "uncertain"
+    ],
+    "note": "reference mapped to a band: supported->grounded, partially_supported->inferred, unsupported/contradicted->uncertain"
+  },
+  "agreement_binary": {
+    "n": 347,
+    "cohens_kappa": 0.04921799213737465,
+    "ci95": [
+      -0.025896467277239342,
+      0.12433245155198863
+    ],
+    "note": "band==grounded against reference==supported"
+  },
+  "per_band": {
+    "grounded": {
+      "n": 144,
+      "n_correct": 66,
+      "error_rate": 0.5416666666666666,
+      "error_rate_ci95": [
+        0.4602583768392712,
+        0.6209095758885131
+      ],
+      "correct_rate_ci95": [
+        0.37909042411148686,
+        0.5397416231607288
+      ],
+      "mean_support": 0.958380741695881
+    },
+    "inferred": {
+      "n": 39,
+      "n_correct": 19,
+      "error_rate": 0.5128205128205128,
+      "error_rate_ci95": [
+        0.36199108645696576,
+        0.661350712168669
+      ],
+      "correct_rate_ci95": [
+        0.3386492878313309,
+        0.6380089135430342
+      ],
+      "mean_support": 0.6415101574465607
+    },
+    "uncertain": {
+      "n": 164,
+      "n_correct": 64,
+      "error_rate": 0.6097560975609756,
+      "error_rate_ci95": [
+        0.5334019013900264,
+        0.6810860443874208
+      ],
+      "correct_rate_ci95": [
+        0.3189139556125792,
+        0.4665980986099736
+      ],
+      "mean_support": 0.11433752805021785
+    }
+  },
+  "value_test": {
+    "n_answers": 30,
+    "n_claims": 345,
+    "random_draws_per_answer": 100,
+    "bootstrap_unit": "answer (paired cluster bootstrap)",
+    "curves": {
+      "band": [
+        {
+          "coverage": 0.0227,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0312,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0385,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0435,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0455,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0526,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0625,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0682,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0714,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0769,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0833,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.087,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0909,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.75
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.0938,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1053,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1136,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1154,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1304,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1364,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1429,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1538,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1562,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1579,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1591,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.1739,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1818,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.75
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.1875,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1923,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.3571,
+          "risk_ci95": [
+            0.0714,
+            0.7143
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2045,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2105,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.25,
+            0.25
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2143,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2174,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2188,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2273,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2308,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.8333,
+            0.8333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.5714,
+          "risk_ci95": [
+            0.1429,
+            0.8571
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2609,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2632,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.2,
+            0.2
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2692,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.7143,
+            0.7143
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2727,
+          "risk": 0.2917,
+          "risk_ci95": [
+            0.0,
+            0.75
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.2812,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2857,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2955,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.6667,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3043,
+          "risk": 0.5714,
+          "risk_ci95": [
+            0.5714,
+            0.5714
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3077,
+          "risk": 0.625,
+          "risk_ci95": [
+            0.625,
+            0.625
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3158,
+          "risk": 0.1667,
+          "risk_ci95": [
+            0.1667,
+            0.1667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3182,
+          "risk": 0.5714,
+          "risk_ci95": [
+            0.1429,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.4048,
+          "risk_ci95": [
+            0.119,
+            0.7143
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.3409,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3438,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3462,
+          "risk": 0.5556,
+          "risk_ci95": [
+            0.5556,
+            0.5556
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3478,
+          "risk": 0.625,
+          "risk_ci95": [
+            0.625,
+            0.625
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3571,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3636,
+          "risk": 0.2656,
+          "risk_ci95": [
+            0.0,
+            0.7031
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.3684,
+          "risk": 0.1429,
+          "risk_ci95": [
+            0.1429,
+            0.1429
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.375,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3846,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3864,
+          "risk": 0.9412,
+          "risk_ci95": [
+            0.9412,
+            0.9412
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3913,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.3929,
+          "risk_ci95": [
+            0.1429,
+            0.6786
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4062,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4091,
+          "risk": 0.5278,
+          "risk_ci95": [
+            0.1111,
+            0.9444
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4167,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4211,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.25,
+            0.25
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4231,
+          "risk": 0.5455,
+          "risk_ci95": [
+            0.5455,
+            0.5455
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4286,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4318,
+          "risk": 0.8947,
+          "risk_ci95": [
+            0.8947,
+            0.8947
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4348,
+          "risk": 0.7,
+          "risk_ci95": [
+            0.7,
+            0.7
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4375,
+          "risk": 0.9643,
+          "risk_ci95": [
+            0.9286,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4545,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.675
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.4615,
+          "risk": 0.5833,
+          "risk_ci95": [
+            0.5833,
+            0.5833
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4688,
+          "risk": 0.9667,
+          "risk_ci95": [
+            0.9333,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4737,
+          "risk": 0.2222,
+          "risk_ci95": [
+            0.2222,
+            0.2222
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4773,
+          "risk": 0.9048,
+          "risk_ci95": [
+            0.9048,
+            0.9048
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4783,
+          "risk": 0.7273,
+          "risk_ci95": [
+            0.7273,
+            0.7273
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.4456,
+          "risk_ci95": [
+            0.251,
+            0.6548
+          ],
+          "n_answers": 17
+        },
+        {
+          "coverage": 0.5217,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5227,
+          "risk": 0.913,
+          "risk_ci95": [
+            0.913,
+            0.913
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5263,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.2,
+            0.2
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5312,
+          "risk": 0.9706,
+          "risk_ci95": [
+            0.9412,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5385,
+          "risk": 0.5714,
+          "risk_ci95": [
+            0.5714,
+            0.5714
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5455,
+          "risk": 0.2396,
+          "risk_ci95": [
+            0.0,
+            0.6562
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.3,
+          "risk_ci95": [
+            0.0,
+            0.6
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5625,
+          "risk": 0.9722,
+          "risk_ci95": [
+            0.9444,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5652,
+          "risk": 0.6923,
+          "risk_ci95": [
+            0.6923,
+            0.6923
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5682,
+          "risk": 0.84,
+          "risk_ci95": [
+            0.84,
+            0.84
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5714,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5769,
+          "risk": 0.5333,
+          "risk_ci95": [
+            0.5333,
+            0.5333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5789,
+          "risk": 0.1818,
+          "risk_ci95": [
+            0.1818,
+            0.1818
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5833,
+          "risk": 0.1429,
+          "risk_ci95": [
+            0.1429,
+            0.1429
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5909,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.1538,
+            0.8462
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5938,
+          "risk": 0.9737,
+          "risk_ci95": [
+            0.9474,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.381,
+          "risk_ci95": [
+            0.1429,
+            0.619
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6087,
+          "risk": 0.6429,
+          "risk_ci95": [
+            0.6429,
+            0.6429
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6136,
+          "risk": 0.8519,
+          "risk_ci95": [
+            0.8519,
+            0.8519
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6154,
+          "risk": 0.5625,
+          "risk_ci95": [
+            0.5625,
+            0.5625
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 0.975,
+          "risk_ci95": [
+            0.95,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6316,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.25,
+            0.25
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6364,
+          "risk": 0.2411,
+          "risk_ci95": [
+            0.0,
+            0.6161
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.6429,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6522,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6538,
+          "risk": 0.5294,
+          "risk_ci95": [
+            0.5294,
+            0.5294
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6562,
+          "risk": 0.9762,
+          "risk_ci95": [
+            0.9524,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6591,
+          "risk": 0.7931,
+          "risk_ci95": [
+            0.7931,
+            0.7931
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.3095,
+          "risk_ci95": [
+            0.1429,
+            0.4762
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6818,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.2,
+            0.8
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6842,
+          "risk": 0.2308,
+          "risk_ci95": [
+            0.2308,
+            0.2308
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6875,
+          "risk": 0.9773,
+          "risk_ci95": [
+            0.9545,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6923,
+          "risk": 0.5556,
+          "risk_ci95": [
+            0.5556,
+            0.5556
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6957,
+          "risk": 0.5625,
+          "risk_ci95": [
+            0.5625,
+            0.5625
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.7857,
+          "risk_ci95": [
+            0.5714,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7045,
+          "risk": 0.8065,
+          "risk_ci95": [
+            0.8065,
+            0.8065
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7143,
+          "risk": 0.9,
+          "risk_ci95": [
+            0.9,
+            0.9
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7188,
+          "risk": 0.9783,
+          "risk_ci95": [
+            0.9565,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7273,
+          "risk": 0.2969,
+          "risk_ci95": [
+            0.0625,
+            0.6406
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.7308,
+          "risk": 0.5789,
+          "risk_ci95": [
+            0.5789,
+            0.5789
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7368,
+          "risk": 0.2143,
+          "risk_ci95": [
+            0.2143,
+            0.2143
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7391,
+          "risk": 0.5294,
+          "risk_ci95": [
+            0.5294,
+            0.5294
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.5395,
+          "risk_ci95": [
+            0.2381,
+            0.8253
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.7692,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7727,
+          "risk": 0.5294,
+          "risk_ci95": [
+            0.2353,
+            0.8235
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.2857,
+          "risk_ci95": [
+            0.0,
+            0.5714
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7812,
+          "risk": 0.98,
+          "risk_ci95": [
+            0.96,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7826,
+          "risk": 0.5556,
+          "risk_ci95": [
+            0.5556,
+            0.5556
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7857,
+          "risk": 0.9091,
+          "risk_ci95": [
+            0.9091,
+            0.9091
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7895,
+          "risk": 0.2667,
+          "risk_ci95": [
+            0.2667,
+            0.2667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7955,
+          "risk": 0.8286,
+          "risk_ci95": [
+            0.8286,
+            0.8286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.3393,
+          "risk_ci95": [
+            0.125,
+            0.6071
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.8077,
+          "risk": 0.619,
+          "risk_ci95": [
+            0.619,
+            0.619
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8125,
+          "risk": 0.9808,
+          "risk_ci95": [
+            0.9615,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8182,
+          "risk": 0.2847,
+          "risk_ci95": [
+            0.0556,
+            0.6319
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.8261,
+          "risk": 0.5789,
+          "risk_ci95": [
+            0.5789,
+            0.5789
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8333,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.0,
+            0.4
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.8409,
+          "risk": 0.8108,
+          "risk_ci95": [
+            0.8108,
+            0.8108
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8421,
+          "risk": 0.3125,
+          "risk_ci95": [
+            0.3125,
+            0.3125
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8438,
+          "risk": 0.9815,
+          "risk_ci95": [
+            0.963,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8462,
+          "risk": 0.6364,
+          "risk_ci95": [
+            0.6364,
+            0.6364
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8571,
+          "risk": 0.9167,
+          "risk_ci95": [
+            0.9167,
+            0.9167
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8636,
+          "risk": 0.5132,
+          "risk_ci95": [
+            0.2105,
+            0.8158
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8696,
+          "risk": 0.55,
+          "risk_ci95": [
+            0.55,
+            0.55
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.9821,
+          "risk_ci95": [
+            0.9643,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8846,
+          "risk": 0.6522,
+          "risk_ci95": [
+            0.6522,
+            0.6522
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8864,
+          "risk": 0.8205,
+          "risk_ci95": [
+            0.8205,
+            0.8205
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.3125,
+          "risk_ci95": [
+            0.0,
+            0.625
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8947,
+          "risk": 0.3529,
+          "risk_ci95": [
+            0.3529,
+            0.3529
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.7778,
+          "risk_ci95": [
+            0.6667,
+            0.8889
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9062,
+          "risk": 0.9828,
+          "risk_ci95": [
+            0.9655,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9091,
+          "risk": 0.2812,
+          "risk_ci95": [
+            0.05,
+            0.6438
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.913,
+          "risk": 0.5714,
+          "risk_ci95": [
+            0.5714,
+            0.5714
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9167,
+          "risk": 0.4545,
+          "risk_ci95": [
+            0.4545,
+            0.4545
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9231,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9286,
+          "risk": 0.9231,
+          "risk_ci95": [
+            0.9231,
+            0.9231
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9318,
+          "risk": 0.8293,
+          "risk_ci95": [
+            0.8293,
+            0.8293
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9375,
+          "risk": 0.9833,
+          "risk_ci95": [
+            0.9667,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9474,
+          "risk": 0.3889,
+          "risk_ci95": [
+            0.3889,
+            0.3889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9545,
+          "risk": 0.5357,
+          "risk_ci95": [
+            0.2381,
+            0.8333
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9565,
+          "risk": 0.5455,
+          "risk_ci95": [
+            0.5455,
+            0.5455
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9615,
+          "risk": 0.68,
+          "risk_ci95": [
+            0.68,
+            0.68
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9688,
+          "risk": 0.9839,
+          "risk_ci95": [
+            0.9677,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9773,
+          "risk": 0.8372,
+          "risk_ci95": [
+            0.8372,
+            0.8372
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.373,
+          "risk_ci95": [
+            0.2505,
+            0.4993
+          ],
+          "n_answers": 30
+        }
+      ],
+      "random": [
+        {
+          "coverage": 0.0227,
+          "risk": 0.76,
+          "risk_ci95": [
+            0.76,
+            0.76
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0312,
+          "risk": 0.985,
+          "risk_ci95": [
+            0.97,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0385,
+          "risk": 0.74,
+          "risk_ci95": [
+            0.74,
+            0.74
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0435,
+          "risk": 0.43,
+          "risk_ci95": [
+            0.43,
+            0.43
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0455,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.4,
+            0.8
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0526,
+          "risk": 0.49,
+          "risk_ci95": [
+            0.49,
+            0.49
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0625,
+          "risk": 0.9875,
+          "risk_ci95": [
+            0.975,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0682,
+          "risk": 0.8167,
+          "risk_ci95": [
+            0.8167,
+            0.8167
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0714,
+          "risk": 0.91,
+          "risk_ci95": [
+            0.91,
+            0.91
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0769,
+          "risk": 0.705,
+          "risk_ci95": [
+            0.705,
+            0.705
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0833,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.087,
+          "risk": 0.46,
+          "risk_ci95": [
+            0.46,
+            0.46
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0909,
+          "risk": 0.3169,
+          "risk_ci95": [
+            0.045,
+            0.6469
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.0938,
+          "risk": 0.9867,
+          "risk_ci95": [
+            0.9733,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1,
+          "risk": 0.775,
+          "risk_ci95": [
+            0.68,
+            0.87
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1053,
+          "risk": 0.4,
+          "risk_ci95": [
+            0.4,
+            0.4
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1111,
+          "risk": 0.4,
+          "risk_ci95": [
+            0.15,
+            0.65
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1136,
+          "risk": 0.83,
+          "risk_ci95": [
+            0.83,
+            0.83
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1154,
+          "risk": 0.68,
+          "risk_ci95": [
+            0.68,
+            0.68
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.125,
+          "risk": 0.9838,
+          "risk_ci95": [
+            0.9675,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1304,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1364,
+          "risk": 0.5825,
+          "risk_ci95": [
+            0.3333,
+            0.8317
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1429,
+          "risk": 0.92,
+          "risk_ci95": [
+            0.92,
+            0.92
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1538,
+          "risk": 0.69,
+          "risk_ci95": [
+            0.69,
+            0.69
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1562,
+          "risk": 0.984,
+          "risk_ci95": [
+            0.968,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1579,
+          "risk": 0.4167,
+          "risk_ci95": [
+            0.4167,
+            0.4167
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1591,
+          "risk": 0.8386,
+          "risk_ci95": [
+            0.8386,
+            0.8386
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1667,
+          "risk": 0.2367,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.1739,
+          "risk": 0.5075,
+          "risk_ci95": [
+            0.5075,
+            0.5075
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1818,
+          "risk": 0.3113,
+          "risk_ci95": [
+            0.0425,
+            0.6494
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.1875,
+          "risk": 0.9842,
+          "risk_ci95": [
+            0.9683,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1923,
+          "risk": 0.676,
+          "risk_ci95": [
+            0.676,
+            0.676
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.3807,
+          "risk_ci95": [
+            0.1629,
+            0.6193
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2045,
+          "risk": 0.8433,
+          "risk_ci95": [
+            0.8433,
+            0.8433
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2105,
+          "risk": 0.39,
+          "risk_ci95": [
+            0.39,
+            0.39
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2143,
+          "risk": 0.9333,
+          "risk_ci95": [
+            0.9333,
+            0.9333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2174,
+          "risk": 0.504,
+          "risk_ci95": [
+            0.504,
+            0.504
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2188,
+          "risk": 0.9836,
+          "risk_ci95": [
+            0.9671,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.36,
+          "risk_ci95": [
+            0.1,
+            0.62
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2273,
+          "risk": 0.5745,
+          "risk_ci95": [
+            0.312,
+            0.837
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2308,
+          "risk": 0.675,
+          "risk_ci95": [
+            0.675,
+            0.675
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.5733,
+          "risk_ci95": [
+            0.2641,
+            0.8509
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2609,
+          "risk": 0.5083,
+          "risk_ci95": [
+            0.5083,
+            0.5083
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2632,
+          "risk": 0.386,
+          "risk_ci95": [
+            0.386,
+            0.386
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2692,
+          "risk": 0.6843,
+          "risk_ci95": [
+            0.6843,
+            0.6843
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2727,
+          "risk": 0.3042,
+          "risk_ci95": [
+            0.0367,
+            0.6446
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.2812,
+          "risk": 0.9861,
+          "risk_ci95": [
+            0.9722,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2857,
+          "risk": 0.92,
+          "risk_ci95": [
+            0.92,
+            0.92
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2955,
+          "risk": 0.8346,
+          "risk_ci95": [
+            0.8346,
+            0.8346
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3,
+          "risk": 0.7933,
+          "risk_ci95": [
+            0.7067,
+            0.88
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3043,
+          "risk": 0.51,
+          "risk_ci95": [
+            0.51,
+            0.51
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3077,
+          "risk": 0.6875,
+          "risk_ci95": [
+            0.6875,
+            0.6875
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3125,
+          "risk": 0.9855,
+          "risk_ci95": [
+            0.971,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3158,
+          "risk": 0.385,
+          "risk_ci95": [
+            0.385,
+            0.385
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3182,
+          "risk": 0.5682,
+          "risk_ci95": [
+            0.3043,
+            0.8321
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.2979,
+          "risk_ci95": [
+            0.1547,
+            0.4393
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.3409,
+          "risk": 0.8347,
+          "risk_ci95": [
+            0.8347,
+            0.8347
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3438,
+          "risk": 0.985,
+          "risk_ci95": [
+            0.97,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3462,
+          "risk": 0.68,
+          "risk_ci95": [
+            0.68,
+            0.68
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3478,
+          "risk": 0.5175,
+          "risk_ci95": [
+            0.5175,
+            0.5175
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3571,
+          "risk": 0.922,
+          "risk_ci95": [
+            0.922,
+            0.922
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3636,
+          "risk": 0.3045,
+          "risk_ci95": [
+            0.0413,
+            0.6455
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.3684,
+          "risk": 0.3786,
+          "risk_ci95": [
+            0.3786,
+            0.3786
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.375,
+          "risk": 0.9858,
+          "risk_ci95": [
+            0.9717,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3846,
+          "risk": 0.678,
+          "risk_ci95": [
+            0.678,
+            0.678
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3864,
+          "risk": 0.8341,
+          "risk_ci95": [
+            0.8341,
+            0.8341
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3913,
+          "risk": 0.5178,
+          "risk_ci95": [
+            0.5178,
+            0.5178
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.3804,
+          "risk_ci95": [
+            0.1614,
+            0.618
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4062,
+          "risk": 0.9854,
+          "risk_ci95": [
+            0.9708,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4091,
+          "risk": 0.5656,
+          "risk_ci95": [
+            0.2989,
+            0.8322
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4167,
+          "risk": 0.474,
+          "risk_ci95": [
+            0.474,
+            0.474
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4211,
+          "risk": 0.3812,
+          "risk_ci95": [
+            0.3812,
+            0.3812
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4231,
+          "risk": 0.6891,
+          "risk_ci95": [
+            0.6891,
+            0.6891
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4286,
+          "risk": 0.9217,
+          "risk_ci95": [
+            0.9217,
+            0.9217
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4318,
+          "risk": 0.8332,
+          "risk_ci95": [
+            0.8332,
+            0.8332
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4348,
+          "risk": 0.523,
+          "risk_ci95": [
+            0.523,
+            0.523
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4375,
+          "risk": 0.9861,
+          "risk_ci95": [
+            0.9721,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.3787,
+          "risk_ci95": [
+            0.12,
+            0.6375
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4545,
+          "risk": 0.3011,
+          "risk_ci95": [
+            0.04,
+            0.6459
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.4615,
+          "risk": 0.6867,
+          "risk_ci95": [
+            0.6867,
+            0.6867
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4688,
+          "risk": 0.986,
+          "risk_ci95": [
+            0.972,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4737,
+          "risk": 0.3856,
+          "risk_ci95": [
+            0.3856,
+            0.3856
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4773,
+          "risk": 0.8362,
+          "risk_ci95": [
+            0.8362,
+            0.8362
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4783,
+          "risk": 0.53,
+          "risk_ci95": [
+            0.53,
+            0.53
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.4563,
+          "risk_ci95": [
+            0.2731,
+            0.642
+          ],
+          "n_answers": 17
+        },
+        {
+          "coverage": 0.5217,
+          "risk": 0.5325,
+          "risk_ci95": [
+            0.5325,
+            0.5325
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5227,
+          "risk": 0.8339,
+          "risk_ci95": [
+            0.8339,
+            0.8339
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5263,
+          "risk": 0.376,
+          "risk_ci95": [
+            0.376,
+            0.376
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5312,
+          "risk": 0.9859,
+          "risk_ci95": [
+            0.9718,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5385,
+          "risk": 0.6986,
+          "risk_ci95": [
+            0.6986,
+            0.6986
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5455,
+          "risk": 0.2997,
+          "risk_ci95": [
+            0.0408,
+            0.6451
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.385,
+          "risk_ci95": [
+            0.12,
+            0.65
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5625,
+          "risk": 0.9853,
+          "risk_ci95": [
+            0.9706,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5652,
+          "risk": 0.5408,
+          "risk_ci95": [
+            0.5408,
+            0.5408
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5682,
+          "risk": 0.834,
+          "risk_ci95": [
+            0.834,
+            0.834
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5714,
+          "risk": 0.9187,
+          "risk_ci95": [
+            0.9187,
+            0.9187
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5769,
+          "risk": 0.698,
+          "risk_ci95": [
+            0.698,
+            0.698
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5789,
+          "risk": 0.38,
+          "risk_ci95": [
+            0.38,
+            0.38
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5833,
+          "risk": 0.4957,
+          "risk_ci95": [
+            0.4957,
+            0.4957
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5909,
+          "risk": 0.5598,
+          "risk_ci95": [
+            0.2831,
+            0.8365
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5938,
+          "risk": 0.9853,
+          "risk_ci95": [
+            0.9705,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.3755,
+          "risk_ci95": [
+            0.1588,
+            0.616
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6087,
+          "risk": 0.5471,
+          "risk_ci95": [
+            0.5471,
+            0.5471
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6136,
+          "risk": 0.8378,
+          "risk_ci95": [
+            0.8378,
+            0.8378
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6154,
+          "risk": 0.6969,
+          "risk_ci95": [
+            0.6969,
+            0.6969
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 0.9855,
+          "risk_ci95": [
+            0.971,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6316,
+          "risk": 0.3783,
+          "risk_ci95": [
+            0.3783,
+            0.3783
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6364,
+          "risk": 0.3026,
+          "risk_ci95": [
+            0.045,
+            0.6496
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.6429,
+          "risk": 0.92,
+          "risk_ci95": [
+            0.92,
+            0.92
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6522,
+          "risk": 0.5487,
+          "risk_ci95": [
+            0.5487,
+            0.5487
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6538,
+          "risk": 0.6994,
+          "risk_ci95": [
+            0.6994,
+            0.6994
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6562,
+          "risk": 0.9857,
+          "risk_ci95": [
+            0.9714,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6591,
+          "risk": 0.8369,
+          "risk_ci95": [
+            0.8369,
+            0.8369
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.3079,
+          "risk_ci95": [
+            0.1582,
+            0.4547
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6818,
+          "risk": 0.5598,
+          "risk_ci95": [
+            0.2813,
+            0.8383
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6842,
+          "risk": 0.3746,
+          "risk_ci95": [
+            0.3746,
+            0.3746
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6875,
+          "risk": 0.9855,
+          "risk_ci95": [
+            0.9709,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6923,
+          "risk": 0.6978,
+          "risk_ci95": [
+            0.6978,
+            0.6978
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6957,
+          "risk": 0.5575,
+          "risk_ci95": [
+            0.5575,
+            0.5575
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.7993,
+          "risk_ci95": [
+            0.6986,
+            0.9
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7045,
+          "risk": 0.84,
+          "risk_ci95": [
+            0.84,
+            0.84
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7143,
+          "risk": 0.918,
+          "risk_ci95": [
+            0.918,
+            0.918
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7188,
+          "risk": 0.985,
+          "risk_ci95": [
+            0.97,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7273,
+          "risk": 0.3037,
+          "risk_ci95": [
+            0.0462,
+            0.6534
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.7308,
+          "risk": 0.6979,
+          "risk_ci95": [
+            0.6979,
+            0.6979
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7368,
+          "risk": 0.3714,
+          "risk_ci95": [
+            0.3714,
+            0.3714
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7391,
+          "risk": 0.5529,
+          "risk_ci95": [
+            0.5529,
+            0.5529
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.5772,
+          "risk_ci95": [
+            0.2633,
+            0.8569
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.7692,
+          "risk": 0.698,
+          "risk_ci95": [
+            0.698,
+            0.698
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7727,
+          "risk": 0.5579,
+          "risk_ci95": [
+            0.2782,
+            0.8376
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.3843,
+          "risk_ci95": [
+            0.1129,
+            0.6557
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7812,
+          "risk": 0.9852,
+          "risk_ci95": [
+            0.9704,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7826,
+          "risk": 0.5594,
+          "risk_ci95": [
+            0.5594,
+            0.5594
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7857,
+          "risk": 0.9209,
+          "risk_ci95": [
+            0.9209,
+            0.9209
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7895,
+          "risk": 0.3713,
+          "risk_ci95": [
+            0.3713,
+            0.3713
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7955,
+          "risk": 0.8383,
+          "risk_ci95": [
+            0.8383,
+            0.8383
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.3673,
+          "risk_ci95": [
+            0.1552,
+            0.6102
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.8077,
+          "risk": 0.6943,
+          "risk_ci95": [
+            0.6943,
+            0.6943
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8125,
+          "risk": 0.9852,
+          "risk_ci95": [
+            0.9704,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8182,
+          "risk": 0.3012,
+          "risk_ci95": [
+            0.0456,
+            0.6517
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.8261,
+          "risk": 0.5626,
+          "risk_ci95": [
+            0.5626,
+            0.5626
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8333,
+          "risk": 0.23,
+          "risk_ci95": [
+            0.0,
+            0.51
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.8409,
+          "risk": 0.8386,
+          "risk_ci95": [
+            0.8386,
+            0.8386
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8421,
+          "risk": 0.3713,
+          "risk_ci95": [
+            0.3713,
+            0.3713
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8438,
+          "risk": 0.9854,
+          "risk_ci95": [
+            0.9707,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8462,
+          "risk": 0.6945,
+          "risk_ci95": [
+            0.6945,
+            0.6945
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8571,
+          "risk": 0.9217,
+          "risk_ci95": [
+            0.9217,
+            0.9217
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8636,
+          "risk": 0.5582,
+          "risk_ci95": [
+            0.2774,
+            0.8389
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8696,
+          "risk": 0.5645,
+          "risk_ci95": [
+            0.5645,
+            0.5645
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.9854,
+          "risk_ci95": [
+            0.9707,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8846,
+          "risk": 0.697,
+          "risk_ci95": [
+            0.697,
+            0.697
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8864,
+          "risk": 0.84,
+          "risk_ci95": [
+            0.84,
+            0.84
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.3881,
+          "risk_ci95": [
+            0.1138,
+            0.6625
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8947,
+          "risk": 0.3712,
+          "risk_ci95": [
+            0.3712,
+            0.3712
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.7994,
+          "risk_ci95": [
+            0.7033,
+            0.8956
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9062,
+          "risk": 0.9857,
+          "risk_ci95": [
+            0.9714,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9091,
+          "risk": 0.3016,
+          "risk_ci95": [
+            0.0455,
+            0.6537
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.913,
+          "risk": 0.5643,
+          "risk_ci95": [
+            0.5643,
+            0.5643
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9167,
+          "risk": 0.5082,
+          "risk_ci95": [
+            0.5082,
+            0.5082
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9231,
+          "risk": 0.695,
+          "risk_ci95": [
+            0.695,
+            0.695
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9286,
+          "risk": 0.9246,
+          "risk_ci95": [
+            0.9246,
+            0.9246
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9318,
+          "risk": 0.8412,
+          "risk_ci95": [
+            0.8412,
+            0.8412
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9375,
+          "risk": 0.985,
+          "risk_ci95": [
+            0.97,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9474,
+          "risk": 0.3683,
+          "risk_ci95": [
+            0.3683,
+            0.3683
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9545,
+          "risk": 0.5575,
+          "risk_ci95": [
+            0.2743,
+            0.8407
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9565,
+          "risk": 0.5627,
+          "risk_ci95": [
+            0.5627,
+            0.5627
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9615,
+          "risk": 0.6916,
+          "risk_ci95": [
+            0.6916,
+            0.6916
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9688,
+          "risk": 0.9847,
+          "risk_ci95": [
+            0.9694,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9773,
+          "risk": 0.8412,
+          "risk_ci95": [
+            0.8412,
+            0.8412
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.373,
+          "risk_ci95": [
+            0.2505,
+            0.4993
+          ],
+          "n_answers": 30
+        }
+      ],
+      "shortest": [
+        {
+          "coverage": 0.0227,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0312,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0385,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0435,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0455,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0526,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0625,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0682,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0714,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0769,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0833,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.087,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0909,
+          "risk": 0.4375,
+          "risk_ci95": [
+            0.0,
+            0.875
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.0938,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1053,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1136,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1154,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.125,
+          "risk": 0.875,
+          "risk_ci95": [
+            0.75,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1304,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1364,
+          "risk": 0.9167,
+          "risk_ci95": [
+            0.8333,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1429,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1538,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1562,
+          "risk": 0.9,
+          "risk_ci95": [
+            0.8,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1579,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1591,
+          "risk": 0.8571,
+          "risk_ci95": [
+            0.8571,
+            0.8571
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1667,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.1739,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1818,
+          "risk": 0.4062,
+          "risk_ci95": [
+            0.0,
+            0.8125
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.1875,
+          "risk": 0.9167,
+          "risk_ci95": [
+            0.8333,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1923,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.6429,
+          "risk_ci95": [
+            0.2857,
+            0.9286
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2045,
+          "risk": 0.8889,
+          "risk_ci95": [
+            0.8889,
+            0.8889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2105,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2143,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2174,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2188,
+          "risk": 0.9286,
+          "risk_ci95": [
+            0.8571,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2273,
+          "risk": 0.85,
+          "risk_ci95": [
+            0.8,
+            0.9
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2308,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.3977,
+          "risk_ci95": [
+            0.0,
+            0.7727
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2609,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2632,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2692,
+          "risk": 0.8571,
+          "risk_ci95": [
+            0.8571,
+            0.8571
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2727,
+          "risk": 0.4167,
+          "risk_ci95": [
+            0.0,
+            0.8333
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.2812,
+          "risk": 0.9444,
+          "risk_ci95": [
+            0.8889,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2857,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2955,
+          "risk": 0.7692,
+          "risk_ci95": [
+            0.7692,
+            0.7692
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3043,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.7143,
+            0.7143
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3077,
+          "risk": 0.875,
+          "risk_ci95": [
+            0.875,
+            0.875
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3125,
+          "risk": 0.95,
+          "risk_ci95": [
+            0.9,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3158,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.8333,
+            0.8333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3182,
+          "risk": 0.7857,
+          "risk_ci95": [
+            0.7143,
+            0.8571
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.2619,
+          "risk_ci95": [
+            0.0476,
+            0.5476
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.3409,
+          "risk": 0.7333,
+          "risk_ci95": [
+            0.7333,
+            0.7333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3438,
+          "risk": 0.9545,
+          "risk_ci95": [
+            0.9091,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3462,
+          "risk": 0.8889,
+          "risk_ci95": [
+            0.8889,
+            0.8889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3478,
+          "risk": 0.625,
+          "risk_ci95": [
+            0.625,
+            0.625
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3571,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3636,
+          "risk": 0.375,
+          "risk_ci95": [
+            0.0,
+            0.75
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.3684,
+          "risk": 0.8571,
+          "risk_ci95": [
+            0.8571,
+            0.8571
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.375,
+          "risk": 0.9583,
+          "risk_ci95": [
+            0.9167,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3846,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3864,
+          "risk": 0.7647,
+          "risk_ci95": [
+            0.7647,
+            0.7647
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3913,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.3929,
+          "risk_ci95": [
+            0.2143,
+            0.5714
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4062,
+          "risk": 0.9615,
+          "risk_ci95": [
+            0.9231,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4091,
+          "risk": 0.6944,
+          "risk_ci95": [
+            0.6667,
+            0.7222
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4167,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4211,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4231,
+          "risk": 0.8182,
+          "risk_ci95": [
+            0.8182,
+            0.8182
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4286,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4318,
+          "risk": 0.6842,
+          "risk_ci95": [
+            0.6842,
+            0.6842
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4348,
+          "risk": 0.7,
+          "risk_ci95": [
+            0.7,
+            0.7
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4375,
+          "risk": 0.9643,
+          "risk_ci95": [
+            0.9286,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4545,
+          "risk": 0.325,
+          "risk_ci95": [
+            0.0,
+            0.65
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.4615,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.8333,
+            0.8333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4688,
+          "risk": 0.9667,
+          "risk_ci95": [
+            0.9333,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4737,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4773,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.7143,
+            0.7143
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4783,
+          "risk": 0.7273,
+          "risk_ci95": [
+            0.7273,
+            0.7273
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.417,
+          "risk_ci95": [
+            0.236,
+            0.6059
+          ],
+          "n_answers": 17
+        },
+        {
+          "coverage": 0.5217,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5227,
+          "risk": 0.7391,
+          "risk_ci95": [
+            0.7391,
+            0.7391
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5263,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5312,
+          "risk": 0.9706,
+          "risk_ci95": [
+            0.9412,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5385,
+          "risk": 0.8571,
+          "risk_ci95": [
+            0.8571,
+            0.8571
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5455,
+          "risk": 0.3542,
+          "risk_ci95": [
+            0.0833,
+            0.625
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.0,
+            0.4
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5625,
+          "risk": 0.9722,
+          "risk_ci95": [
+            0.9444,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5652,
+          "risk": 0.7692,
+          "risk_ci95": [
+            0.7692,
+            0.7692
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5682,
+          "risk": 0.76,
+          "risk_ci95": [
+            0.76,
+            0.76
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5714,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5769,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5789,
+          "risk": 0.5455,
+          "risk_ci95": [
+            0.5455,
+            0.5455
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5833,
+          "risk": 0.1429,
+          "risk_ci95": [
+            0.1429,
+            0.1429
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5909,
+          "risk": 0.6154,
+          "risk_ci95": [
+            0.4615,
+            0.7692
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5938,
+          "risk": 0.9737,
+          "risk_ci95": [
+            0.9474,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.1429,
+            0.5476
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6087,
+          "risk": 0.7857,
+          "risk_ci95": [
+            0.7857,
+            0.7857
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6136,
+          "risk": 0.7778,
+          "risk_ci95": [
+            0.7778,
+            0.7778
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6154,
+          "risk": 0.8125,
+          "risk_ci95": [
+            0.8125,
+            0.8125
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 0.975,
+          "risk_ci95": [
+            0.95,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6316,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6364,
+          "risk": 0.3393,
+          "risk_ci95": [
+            0.0714,
+            0.625
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.6429,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6522,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6538,
+          "risk": 0.8235,
+          "risk_ci95": [
+            0.8235,
+            0.8235
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6562,
+          "risk": 0.9762,
+          "risk_ci95": [
+            0.9524,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6591,
+          "risk": 0.7931,
+          "risk_ci95": [
+            0.7931,
+            0.7931
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.2143,
+          "risk_ci95": [
+            0.0714,
+            0.3571
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6818,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.4,
+            0.8
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6842,
+          "risk": 0.4615,
+          "risk_ci95": [
+            0.4615,
+            0.4615
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6875,
+          "risk": 0.9773,
+          "risk_ci95": [
+            0.9545,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6923,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.8333,
+            0.8333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6957,
+          "risk": 0.8125,
+          "risk_ci95": [
+            0.8125,
+            0.8125
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.5714,
+            0.8571
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7045,
+          "risk": 0.8065,
+          "risk_ci95": [
+            0.8065,
+            0.8065
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7143,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7188,
+          "risk": 0.9783,
+          "risk_ci95": [
+            0.9565,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7273,
+          "risk": 0.3281,
+          "risk_ci95": [
+            0.0625,
+            0.6406
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.7308,
+          "risk": 0.7895,
+          "risk_ci95": [
+            0.7895,
+            0.7895
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7368,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.4286,
+            0.4286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7391,
+          "risk": 0.7647,
+          "risk_ci95": [
+            0.7647,
+            0.7647
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.5395,
+          "risk_ci95": [
+            0.2381,
+            0.8253
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.7692,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7727,
+          "risk": 0.5882,
+          "risk_ci95": [
+            0.3529,
+            0.8235
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.3571,
+          "risk_ci95": [
+            0.1429,
+            0.5714
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7812,
+          "risk": 0.98,
+          "risk_ci95": [
+            0.96,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7826,
+          "risk": 0.7222,
+          "risk_ci95": [
+            0.7222,
+            0.7222
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7857,
+          "risk": 0.9091,
+          "risk_ci95": [
+            0.9091,
+            0.9091
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7895,
+          "risk": 0.4,
+          "risk_ci95": [
+            0.4,
+            0.4
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7955,
+          "risk": 0.8286,
+          "risk_ci95": [
+            0.8286,
+            0.8286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.3571,
+          "risk_ci95": [
+            0.1607,
+            0.5893
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.8077,
+          "risk": 0.7143,
+          "risk_ci95": [
+            0.7143,
+            0.7143
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8125,
+          "risk": 0.9808,
+          "risk_ci95": [
+            0.9615,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8182,
+          "risk": 0.3194,
+          "risk_ci95": [
+            0.0556,
+            0.6528
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.8261,
+          "risk": 0.6842,
+          "risk_ci95": [
+            0.6842,
+            0.6842
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8333,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.0,
+            0.4
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.8409,
+          "risk": 0.8108,
+          "risk_ci95": [
+            0.8108,
+            0.8108
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8421,
+          "risk": 0.375,
+          "risk_ci95": [
+            0.375,
+            0.375
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8438,
+          "risk": 0.9815,
+          "risk_ci95": [
+            0.963,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8462,
+          "risk": 0.6818,
+          "risk_ci95": [
+            0.6818,
+            0.6818
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8571,
+          "risk": 0.9167,
+          "risk_ci95": [
+            0.9167,
+            0.9167
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8636,
+          "risk": 0.5658,
+          "risk_ci95": [
+            0.3158,
+            0.8158
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8696,
+          "risk": 0.65,
+          "risk_ci95": [
+            0.65,
+            0.65
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.9821,
+          "risk_ci95": [
+            0.9643,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8846,
+          "risk": 0.6522,
+          "risk_ci95": [
+            0.6522,
+            0.6522
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8864,
+          "risk": 0.8205,
+          "risk_ci95": [
+            0.8205,
+            0.8205
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.375,
+          "risk_ci95": [
+            0.125,
+            0.625
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8947,
+          "risk": 0.3529,
+          "risk_ci95": [
+            0.3529,
+            0.3529
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.7778,
+          "risk_ci95": [
+            0.6667,
+            0.8889
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9062,
+          "risk": 0.9828,
+          "risk_ci95": [
+            0.9655,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9091,
+          "risk": 0.3063,
+          "risk_ci95": [
+            0.05,
+            0.6438
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.913,
+          "risk": 0.619,
+          "risk_ci95": [
+            0.619,
+            0.619
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9167,
+          "risk": 0.4545,
+          "risk_ci95": [
+            0.4545,
+            0.4545
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9231,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9286,
+          "risk": 0.9231,
+          "risk_ci95": [
+            0.9231,
+            0.9231
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9318,
+          "risk": 0.8293,
+          "risk_ci95": [
+            0.8293,
+            0.8293
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9375,
+          "risk": 0.9833,
+          "risk_ci95": [
+            0.9667,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9474,
+          "risk": 0.3889,
+          "risk_ci95": [
+            0.3889,
+            0.3889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9545,
+          "risk": 0.5595,
+          "risk_ci95": [
+            0.2857,
+            0.8333
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9565,
+          "risk": 0.5909,
+          "risk_ci95": [
+            0.5909,
+            0.5909
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9615,
+          "risk": 0.68,
+          "risk_ci95": [
+            0.68,
+            0.68
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9688,
+          "risk": 0.9839,
+          "risk_ci95": [
+            0.9677,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9773,
+          "risk": 0.8372,
+          "risk_ci95": [
+            0.8372,
+            0.8372
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.373,
+          "risk_ci95": [
+            0.2505,
+            0.4993
+          ],
+          "n_answers": 30
+        }
+      ],
+      "longest": [
+        {
+          "coverage": 0.0227,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0312,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0385,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0435,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0455,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0526,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0625,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0682,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0714,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0769,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0833,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.087,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0909,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.75
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.0938,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1053,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1111,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1136,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1154,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1304,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1364,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1429,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1538,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1562,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1579,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1591,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1667,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.1739,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1818,
+          "risk": 0.2188,
+          "risk_ci95": [
+            0.0,
+            0.6562
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.1875,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1923,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.1429,
+            0.8571
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2045,
+          "risk": 0.8889,
+          "risk_ci95": [
+            0.8889,
+            0.8889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2105,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.25,
+            0.25
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2143,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2174,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2188,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2273,
+          "risk": 0.45,
+          "risk_ci95": [
+            0.0,
+            0.9
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2308,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.7013,
+          "risk_ci95": [
+            0.4026,
+            0.987
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2609,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2632,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.2,
+            0.2
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2692,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.4286,
+            0.4286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2727,
+          "risk": 0.2292,
+          "risk_ci95": [
+            0.0,
+            0.6875
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.2812,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2857,
+          "risk": 0.75,
+          "risk_ci95": [
+            0.75,
+            0.75
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2955,
+          "risk": 0.9231,
+          "risk_ci95": [
+            0.9231,
+            0.9231
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3043,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3077,
+          "risk": 0.375,
+          "risk_ci95": [
+            0.375,
+            0.375
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3158,
+          "risk": 0.1667,
+          "risk_ci95": [
+            0.1667,
+            0.1667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3182,
+          "risk": 0.4643,
+          "risk_ci95": [
+            0.0,
+            0.9286
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.4762,
+          "risk_ci95": [
+            0.1429,
+            0.8095
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.3409,
+          "risk": 0.9333,
+          "risk_ci95": [
+            0.9333,
+            0.9333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3438,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3462,
+          "risk": 0.4444,
+          "risk_ci95": [
+            0.4444,
+            0.4444
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3478,
+          "risk": 0.125,
+          "risk_ci95": [
+            0.125,
+            0.125
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3571,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3636,
+          "risk": 0.2344,
+          "risk_ci95": [
+            0.0,
+            0.7031
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.3684,
+          "risk": 0.1429,
+          "risk_ci95": [
+            0.1429,
+            0.1429
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.375,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3846,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3864,
+          "risk": 0.9412,
+          "risk_ci95": [
+            0.9412,
+            0.9412
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3913,
+          "risk": 0.2222,
+          "risk_ci95": [
+            0.2222,
+            0.2222
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.1429,
+            0.7143
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4062,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4091,
+          "risk": 0.4722,
+          "risk_ci95": [
+            0.0,
+            0.9444
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4167,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4211,
+          "risk": 0.125,
+          "risk_ci95": [
+            0.125,
+            0.125
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4231,
+          "risk": 0.5455,
+          "risk_ci95": [
+            0.5455,
+            0.5455
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4286,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.8333,
+            0.8333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4318,
+          "risk": 0.9474,
+          "risk_ci95": [
+            0.9474,
+            0.9474
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4348,
+          "risk": 0.3,
+          "risk_ci95": [
+            0.3,
+            0.3
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4375,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.625,
+          "risk_ci95": [
+            0.25,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4545,
+          "risk": 0.2375,
+          "risk_ci95": [
+            0.0,
+            0.7125
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.4615,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4688,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4737,
+          "risk": 0.1111,
+          "risk_ci95": [
+            0.1111,
+            0.1111
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4773,
+          "risk": 0.9524,
+          "risk_ci95": [
+            0.9524,
+            0.9524
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4783,
+          "risk": 0.3636,
+          "risk_ci95": [
+            0.3636,
+            0.3636
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.4912,
+          "risk_ci95": [
+            0.2688,
+            0.7265
+          ],
+          "n_answers": 17
+        },
+        {
+          "coverage": 0.5217,
+          "risk": 0.4167,
+          "risk_ci95": [
+            0.4167,
+            0.4167
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5227,
+          "risk": 0.9565,
+          "risk_ci95": [
+            0.9565,
+            0.9565
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5263,
+          "risk": 0.1,
+          "risk_ci95": [
+            0.1,
+            0.1
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5312,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5385,
+          "risk": 0.5714,
+          "risk_ci95": [
+            0.5714,
+            0.5714
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5455,
+          "risk": 0.2812,
+          "risk_ci95": [
+            0.0,
+            0.7188
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.2,
+            0.8
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5625,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5652,
+          "risk": 0.4615,
+          "risk_ci95": [
+            0.4615,
+            0.4615
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5682,
+          "risk": 0.96,
+          "risk_ci95": [
+            0.96,
+            0.96
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5714,
+          "risk": 0.875,
+          "risk_ci95": [
+            0.875,
+            0.875
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5769,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5789,
+          "risk": 0.0909,
+          "risk_ci95": [
+            0.0909,
+            0.0909
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5833,
+          "risk": 0.8571,
+          "risk_ci95": [
+            0.8571,
+            0.8571
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5909,
+          "risk": 0.4615,
+          "risk_ci95": [
+            0.0,
+            0.9231
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5938,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.3571,
+          "risk_ci95": [
+            0.0952,
+            0.6667
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6087,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6136,
+          "risk": 0.8889,
+          "risk_ci95": [
+            0.8889,
+            0.8889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6154,
+          "risk": 0.625,
+          "risk_ci95": [
+            0.625,
+            0.625
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6316,
+          "risk": 0.0833,
+          "risk_ci95": [
+            0.0833,
+            0.0833
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6364,
+          "risk": 0.2589,
+          "risk_ci95": [
+            0.0,
+            0.6696
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.6429,
+          "risk": 0.8889,
+          "risk_ci95": [
+            0.8889,
+            0.8889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6522,
+          "risk": 0.5333,
+          "risk_ci95": [
+            0.5333,
+            0.5333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6538,
+          "risk": 0.5882,
+          "risk_ci95": [
+            0.5882,
+            0.5882
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6562,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6591,
+          "risk": 0.8966,
+          "risk_ci95": [
+            0.8966,
+            0.8966
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.3214,
+          "risk_ci95": [
+            0.0952,
+            0.5833
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6818,
+          "risk": 0.45,
+          "risk_ci95": [
+            0.0,
+            0.9
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6842,
+          "risk": 0.1538,
+          "risk_ci95": [
+            0.1538,
+            0.1538
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6875,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6923,
+          "risk": 0.6111,
+          "risk_ci95": [
+            0.6111,
+            0.6111
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6957,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.8571,
+          "risk_ci95": [
+            0.7143,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7045,
+          "risk": 0.871,
+          "risk_ci95": [
+            0.871,
+            0.871
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7143,
+          "risk": 0.9,
+          "risk_ci95": [
+            0.9,
+            0.9
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7188,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7273,
+          "risk": 0.2578,
+          "risk_ci95": [
+            0.0309,
+            0.6484
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.7308,
+          "risk": 0.6316,
+          "risk_ci95": [
+            0.6316,
+            0.6316
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7368,
+          "risk": 0.2143,
+          "risk_ci95": [
+            0.2143,
+            0.2143
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7391,
+          "risk": 0.5294,
+          "risk_ci95": [
+            0.5294,
+            0.5294
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.6407,
+          "risk_ci95": [
+            0.3074,
+            0.9264
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.7692,
+          "risk": 0.65,
+          "risk_ci95": [
+            0.65,
+            0.65
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7727,
+          "risk": 0.4706,
+          "risk_ci95": [
+            0.1176,
+            0.8235
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.1429,
+            0.7143
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7812,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7826,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7857,
+          "risk": 0.9091,
+          "risk_ci95": [
+            0.9091,
+            0.9091
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7895,
+          "risk": 0.2667,
+          "risk_ci95": [
+            0.2667,
+            0.2667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7955,
+          "risk": 0.8286,
+          "risk_ci95": [
+            0.8286,
+            0.8286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.3036,
+          "risk_ci95": [
+            0.0714,
+            0.5893
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.8077,
+          "risk": 0.619,
+          "risk_ci95": [
+            0.619,
+            0.619
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8182,
+          "risk": 0.2778,
+          "risk_ci95": [
+            0.0417,
+            0.6528
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.8261,
+          "risk": 0.4737,
+          "risk_ci95": [
+            0.4737,
+            0.4737
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8333,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.0,
+            0.6
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.8409,
+          "risk": 0.8378,
+          "risk_ci95": [
+            0.8378,
+            0.8378
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8421,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.25,
+            0.25
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8438,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8462,
+          "risk": 0.6364,
+          "risk_ci95": [
+            0.6364,
+            0.6364
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8571,
+          "risk": 0.9167,
+          "risk_ci95": [
+            0.9167,
+            0.9167
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8636,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.1579,
+            0.8421
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8696,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8846,
+          "risk": 0.6522,
+          "risk_ci95": [
+            0.6522,
+            0.6522
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8864,
+          "risk": 0.8462,
+          "risk_ci95": [
+            0.8462,
+            0.8462
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.4375,
+          "risk_ci95": [
+            0.125,
+            0.75
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8947,
+          "risk": 0.2941,
+          "risk_ci95": [
+            0.2941,
+            0.2941
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.6667,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9062,
+          "risk": 0.9828,
+          "risk_ci95": [
+            0.9655,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9091,
+          "risk": 0.2875,
+          "risk_ci95": [
+            0.05,
+            0.6625
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.913,
+          "risk": 0.5238,
+          "risk_ci95": [
+            0.5238,
+            0.5238
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9167,
+          "risk": 0.5455,
+          "risk_ci95": [
+            0.5455,
+            0.5455
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9231,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9286,
+          "risk": 0.9231,
+          "risk_ci95": [
+            0.9231,
+            0.9231
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9318,
+          "risk": 0.8537,
+          "risk_ci95": [
+            0.8537,
+            0.8537
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9375,
+          "risk": 0.9833,
+          "risk_ci95": [
+            0.9667,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9474,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9545,
+          "risk": 0.5357,
+          "risk_ci95": [
+            0.2381,
+            0.8333
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9565,
+          "risk": 0.5455,
+          "risk_ci95": [
+            0.5455,
+            0.5455
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9615,
+          "risk": 0.68,
+          "risk_ci95": [
+            0.68,
+            0.68
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9688,
+          "risk": 0.9839,
+          "risk_ci95": [
+            0.9677,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9773,
+          "risk": 0.8372,
+          "risk_ci95": [
+            0.8372,
+            0.8372
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.373,
+          "risk_ci95": [
+            0.2505,
+            0.4993
+          ],
+          "n_answers": 30
+        }
+      ],
+      "first": [
+        {
+          "coverage": 0.0227,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0312,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0385,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0435,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0455,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0526,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0625,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.0682,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0714,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0769,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0833,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.087,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.0909,
+          "risk": 0.125,
+          "risk_ci95": [
+            0.0,
+            0.375
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.0938,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1053,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1111,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1136,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1154,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.125,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1304,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1364,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1429,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1538,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1562,
+          "risk": 0.9,
+          "risk_ci95": [
+            0.8,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1579,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1591,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.4286,
+            0.4286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1667,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.1739,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.1818,
+          "risk": 0.125,
+          "risk_ci95": [
+            0.0,
+            0.375
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.1875,
+          "risk": 0.9167,
+          "risk_ci95": [
+            0.8333,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.1923,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.2,
+            0.2
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2,
+          "risk": 0.2143,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2045,
+          "risk": 0.5556,
+          "risk_ci95": [
+            0.5556,
+            0.5556
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2105,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2143,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2174,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2188,
+          "risk": 0.9286,
+          "risk_ci95": [
+            0.8571,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2222,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2273,
+          "risk": 0.3,
+          "risk_ci95": [
+            0.0,
+            0.6
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2308,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.25,
+          "risk": 0.3588,
+          "risk_ci95": [
+            0.0,
+            0.6964
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.2609,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2632,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2692,
+          "risk": 0.2857,
+          "risk_ci95": [
+            0.2857,
+            0.2857
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2727,
+          "risk": 0.1667,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.2812,
+          "risk": 0.9444,
+          "risk_ci95": [
+            0.8889,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.2857,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.2955,
+          "risk": 0.6923,
+          "risk_ci95": [
+            0.6923,
+            0.6923
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3,
+          "risk": 0.8333,
+          "risk_ci95": [
+            0.6667,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3043,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3077,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.25,
+            0.25
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3125,
+          "risk": 0.95,
+          "risk_ci95": [
+            0.9,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3158,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3182,
+          "risk": 0.3571,
+          "risk_ci95": [
+            0.0,
+            0.7143
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3333,
+          "risk": 0.0952,
+          "risk_ci95": [
+            0.0,
+            0.1905
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.3409,
+          "risk": 0.7333,
+          "risk_ci95": [
+            0.7333,
+            0.7333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3438,
+          "risk": 0.9545,
+          "risk_ci95": [
+            0.9091,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3462,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3478,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3571,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3636,
+          "risk": 0.1875,
+          "risk_ci95": [
+            0.0,
+            0.5625
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.3684,
+          "risk": 0.1429,
+          "risk_ci95": [
+            0.1429,
+            0.1429
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.375,
+          "risk": 0.9583,
+          "risk_ci95": [
+            0.9167,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.3846,
+          "risk": 0.3,
+          "risk_ci95": [
+            0.3,
+            0.3
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3864,
+          "risk": 0.7647,
+          "risk_ci95": [
+            0.7647,
+            0.7647
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.3913,
+          "risk": 0.1111,
+          "risk_ci95": [
+            0.1111,
+            0.1111
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.2143,
+          "risk_ci95": [
+            0.0,
+            0.5
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.4062,
+          "risk": 0.9615,
+          "risk_ci95": [
+            0.9231,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4091,
+          "risk": 0.3889,
+          "risk_ci95": [
+            0.0,
+            0.7778
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4167,
+          "risk": 0.0,
+          "risk_ci95": [
+            0.0,
+            0.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4211,
+          "risk": 0.125,
+          "risk_ci95": [
+            0.125,
+            0.125
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4231,
+          "risk": 0.2727,
+          "risk_ci95": [
+            0.2727,
+            0.2727
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4286,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4318,
+          "risk": 0.7895,
+          "risk_ci95": [
+            0.7895,
+            0.7895
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4348,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.2,
+            0.2
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4375,
+          "risk": 0.9643,
+          "risk_ci95": [
+            0.9286,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4444,
+          "risk": 0.375,
+          "risk_ci95": [
+            0.25,
+            0.5
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4545,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.0,
+            0.6
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.4615,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4688,
+          "risk": 0.9667,
+          "risk_ci95": [
+            0.9333,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.4737,
+          "risk": 0.1111,
+          "risk_ci95": [
+            0.1111,
+            0.1111
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4773,
+          "risk": 0.8095,
+          "risk_ci95": [
+            0.8095,
+            0.8095
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.4783,
+          "risk": 0.2727,
+          "risk_ci95": [
+            0.2727,
+            0.2727
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.3822,
+          "risk_ci95": [
+            0.1954,
+            0.5858
+          ],
+          "n_answers": 17
+        },
+        {
+          "coverage": 0.5217,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5227,
+          "risk": 0.8261,
+          "risk_ci95": [
+            0.8261,
+            0.8261
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5263,
+          "risk": 0.1,
+          "risk_ci95": [
+            0.1,
+            0.1
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5312,
+          "risk": 0.9706,
+          "risk_ci95": [
+            0.9412,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5385,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.4286,
+            0.4286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5455,
+          "risk": 0.25,
+          "risk_ci95": [
+            0.0,
+            0.625
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.5556,
+          "risk": 0.4,
+          "risk_ci95": [
+            0.2,
+            0.6
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5625,
+          "risk": 0.9722,
+          "risk_ci95": [
+            0.9444,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5652,
+          "risk": 0.3846,
+          "risk_ci95": [
+            0.3846,
+            0.3846
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5682,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5714,
+          "risk": 1.0,
+          "risk_ci95": [
+            1.0,
+            1.0
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5769,
+          "risk": 0.4667,
+          "risk_ci95": [
+            0.4667,
+            0.4667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5789,
+          "risk": 0.0909,
+          "risk_ci95": [
+            0.0909,
+            0.0909
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5833,
+          "risk": 0.2857,
+          "risk_ci95": [
+            0.2857,
+            0.2857
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.5909,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.2308,
+            0.7692
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.5938,
+          "risk": 0.9737,
+          "risk_ci95": [
+            0.9474,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.2857,
+          "risk_ci95": [
+            0.0476,
+            0.5714
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6087,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.4286,
+            0.4286
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6136,
+          "risk": 0.7778,
+          "risk_ci95": [
+            0.7778,
+            0.7778
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6154,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.625,
+          "risk": 0.975,
+          "risk_ci95": [
+            0.95,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6316,
+          "risk": 0.1667,
+          "risk_ci95": [
+            0.1667,
+            0.1667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6364,
+          "risk": 0.2679,
+          "risk_ci95": [
+            0.0,
+            0.5893
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.6429,
+          "risk": 0.8889,
+          "risk_ci95": [
+            0.8889,
+            0.8889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6522,
+          "risk": 0.4667,
+          "risk_ci95": [
+            0.4667,
+            0.4667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6538,
+          "risk": 0.5294,
+          "risk_ci95": [
+            0.5294,
+            0.5294
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6562,
+          "risk": 0.9762,
+          "risk_ci95": [
+            0.9524,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6591,
+          "risk": 0.7931,
+          "risk_ci95": [
+            0.7931,
+            0.7931
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6667,
+          "risk": 0.1905,
+          "risk_ci95": [
+            0.0357,
+            0.3574
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.6818,
+          "risk": 0.55,
+          "risk_ci95": [
+            0.3333,
+            0.7667
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6842,
+          "risk": 0.2308,
+          "risk_ci95": [
+            0.2308,
+            0.2308
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6875,
+          "risk": 0.9773,
+          "risk_ci95": [
+            0.9545,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.6923,
+          "risk": 0.5556,
+          "risk_ci95": [
+            0.5556,
+            0.5556
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.6957,
+          "risk": 0.5,
+          "risk_ci95": [
+            0.5,
+            0.5
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.7857,
+          "risk_ci95": [
+            0.5714,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7045,
+          "risk": 0.7742,
+          "risk_ci95": [
+            0.7742,
+            0.7742
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7143,
+          "risk": 0.9,
+          "risk_ci95": [
+            0.9,
+            0.9
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7188,
+          "risk": 0.9783,
+          "risk_ci95": [
+            0.9565,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7273,
+          "risk": 0.2734,
+          "risk_ci95": [
+            0.0,
+            0.5859
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.7308,
+          "risk": 0.5789,
+          "risk_ci95": [
+            0.5789,
+            0.5789
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7368,
+          "risk": 0.2857,
+          "risk_ci95": [
+            0.2857,
+            0.2857
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7391,
+          "risk": 0.5294,
+          "risk_ci95": [
+            0.5294,
+            0.5294
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.75,
+          "risk": 0.5352,
+          "risk_ci95": [
+            0.2381,
+            0.8209
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.7692,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7727,
+          "risk": 0.5735,
+          "risk_ci95": [
+            0.3529,
+            0.7941
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7778,
+          "risk": 0.4286,
+          "risk_ci95": [
+            0.1429,
+            0.7143
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7812,
+          "risk": 0.98,
+          "risk_ci95": [
+            0.96,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.7826,
+          "risk": 0.5556,
+          "risk_ci95": [
+            0.5556,
+            0.5556
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7857,
+          "risk": 0.9091,
+          "risk_ci95": [
+            0.9091,
+            0.9091
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7895,
+          "risk": 0.3333,
+          "risk_ci95": [
+            0.3333,
+            0.3333
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.7955,
+          "risk": 0.8,
+          "risk_ci95": [
+            0.8,
+            0.8
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.3036,
+          "risk_ci95": [
+            0.0714,
+            0.5893
+          ],
+          "n_answers": 7
+        },
+        {
+          "coverage": 0.8077,
+          "risk": 0.619,
+          "risk_ci95": [
+            0.619,
+            0.619
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8125,
+          "risk": 0.9808,
+          "risk_ci95": [
+            0.9615,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8182,
+          "risk": 0.2847,
+          "risk_ci95": [
+            0.0,
+            0.6042
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.8261,
+          "risk": 0.5789,
+          "risk_ci95": [
+            0.5789,
+            0.5789
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8333,
+          "risk": 0.2,
+          "risk_ci95": [
+            0.0,
+            0.4
+          ],
+          "n_answers": 3
+        },
+        {
+          "coverage": 0.8409,
+          "risk": 0.8108,
+          "risk_ci95": [
+            0.8108,
+            0.8108
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8421,
+          "risk": 0.375,
+          "risk_ci95": [
+            0.375,
+            0.375
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8438,
+          "risk": 0.9815,
+          "risk_ci95": [
+            0.963,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8462,
+          "risk": 0.6364,
+          "risk_ci95": [
+            0.6364,
+            0.6364
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8571,
+          "risk": 0.9167,
+          "risk_ci95": [
+            0.9167,
+            0.9167
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8636,
+          "risk": 0.5658,
+          "risk_ci95": [
+            0.3158,
+            0.8158
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8696,
+          "risk": 0.6,
+          "risk_ci95": [
+            0.6,
+            0.6
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.875,
+          "risk": 0.9821,
+          "risk_ci95": [
+            0.9643,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8846,
+          "risk": 0.6522,
+          "risk_ci95": [
+            0.6522,
+            0.6522
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8864,
+          "risk": 0.8205,
+          "risk_ci95": [
+            0.8205,
+            0.8205
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.8889,
+          "risk": 0.375,
+          "risk_ci95": [
+            0.125,
+            0.625
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.8947,
+          "risk": 0.4118,
+          "risk_ci95": [
+            0.4118,
+            0.4118
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.7778,
+          "risk_ci95": [
+            0.6667,
+            0.8889
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9062,
+          "risk": 0.9828,
+          "risk_ci95": [
+            0.9655,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9091,
+          "risk": 0.2812,
+          "risk_ci95": [
+            0.0,
+            0.6187
+          ],
+          "n_answers": 4
+        },
+        {
+          "coverage": 0.913,
+          "risk": 0.619,
+          "risk_ci95": [
+            0.619,
+            0.619
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9167,
+          "risk": 0.4545,
+          "risk_ci95": [
+            0.4545,
+            0.4545
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9231,
+          "risk": 0.6667,
+          "risk_ci95": [
+            0.6667,
+            0.6667
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9286,
+          "risk": 0.9231,
+          "risk_ci95": [
+            0.9231,
+            0.9231
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9318,
+          "risk": 0.8293,
+          "risk_ci95": [
+            0.8293,
+            0.8293
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9375,
+          "risk": 0.9833,
+          "risk_ci95": [
+            0.9667,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9474,
+          "risk": 0.3889,
+          "risk_ci95": [
+            0.3889,
+            0.3889
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9545,
+          "risk": 0.5595,
+          "risk_ci95": [
+            0.2857,
+            0.8333
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9565,
+          "risk": 0.5909,
+          "risk_ci95": [
+            0.5909,
+            0.5909
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9615,
+          "risk": 0.68,
+          "risk_ci95": [
+            0.68,
+            0.68
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 0.9688,
+          "risk": 0.9839,
+          "risk_ci95": [
+            0.9677,
+            1.0
+          ],
+          "n_answers": 2
+        },
+        {
+          "coverage": 0.9773,
+          "risk": 0.8372,
+          "risk_ci95": [
+            0.8372,
+            0.8372
+          ],
+          "n_answers": 1
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.373,
+          "risk_ci95": [
+            0.2505,
+            0.4993
+          ],
+          "n_answers": 30
+        }
+      ]
+    },
+    "comparisons": {
+      "band_minus_random": {
+        "mean_risk_gap": -0.016496408527692467,
+        "mean_risk_gap_ci95": [
+          -0.06312593405808614,
+          0.029706098401521667
+        ],
+        "coverage_points": 345,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_shortest": {
+        "mean_risk_gap": -0.0514798969303428,
+        "mean_risk_gap_ci95": [
+          -0.10980886461037075,
+          0.042393815577078144
+        ],
+        "coverage_points": 345,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_longest": {
+        "mean_risk_gap": -0.004574622053011577,
+        "mean_risk_gap_ci95": [
+          -0.04888369415962631,
+          0.03366566760392766
+        ],
+        "coverage_points": 345,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      },
+      "band_minus_first": {
+        "mean_risk_gap": 0.09226333630271252,
+        "mean_risk_gap_ci95": [
+          0.01609003616333253,
+          0.1331526549925016
+        ],
+        "coverage_points": 345,
+        "note": "negative means the band's risk is lower than the baseline's at matched coverage; the gap is computed per answer and the interval is a paired cluster bootstrap over answers"
+      }
+    },
+    "paired": {
+      "band_vs_random": {
+        "n_answers": 30,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 3.1333333333333333,
+        "mean_kept_errors_baseline": 3.3,
+        "wilcoxon_statistic": 43.0,
+        "wilcoxon_p": 0.5384571747489246,
+        "cohens_dz": -0.12671852991977015,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_shortest": {
+        "n_answers": 30,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 3.1333333333333333,
+        "mean_kept_errors_baseline": 3.3,
+        "wilcoxon_statistic": 25.5,
+        "wilcoxon_p": 0.8342715726466404,
+        "cohens_dz": -0.10151657393365245,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_longest": {
+        "n_answers": 30,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 3.1333333333333333,
+        "mean_kept_errors_baseline": 3.2333333333333334,
+        "wilcoxon_statistic": 46.0,
+        "wilcoxon_p": 0.670232338341443,
+        "cohens_dz": -0.07028779970274224,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      },
+      "band_vs_first": {
+        "n_answers": 30,
+        "k": "half the claims of each answer",
+        "mean_kept_errors_band": 3.1333333333333333,
+        "mean_kept_errors_baseline": 2.6333333333333333,
+        "wilcoxon_statistic": 4.5,
+        "wilcoxon_p": 0.00810688677465752,
+        "cohens_dz": 0.4652073843435433,
+        "note": "a negative difference means the band kept fewer wrong claims than the baseline at the same k"
+      }
+    },
+    "position_length_confound": {
+      "spearman_position_vs_length": -0.19456985719218375,
+      "p_value": 0.00027726530008015545,
+      "n_claims": 345,
+      "mean_words_first_half": 19.192331742331742,
+      "mean_words_second_half": 18.38689352314352,
+      "note": "a negative correlation means later claims are shorter, so position and length are not the same policy; a positive one means they are",
+      "first_minus_second_half_words": 0.8054382191882196,
+      "ci95": [
+        -2.2844825186387685,
+        3.530990034271283
+      ]
+    }
+  },
+  "circularity_audit": {
+    "scope": "overall",
+    "shipped_hallucination_rate": 0.3824884792626728,
+    "shipped_claim_support_rate": 0.6175115207373272,
+    "reference_hallucination_rate": 0.5706051873198847,
+    "reference_hallucination_rate_ci95": [
+      0.5180302473941568,
+      0.6216339201389979
+    ],
+    "n": 347,
+    "note": "the shipped rate counts a claim as a hallucination when the NLI does not entail it over the retrieved passages; the reference rate counts it when an independent judge reading the evidence this run used does not find the claim supported. The two are not the same measurement, and the gap between them is the size of the circularity.",
+    "evidence_mode": "gold"
+  },
+  "answer_level": {
+    "n_answers": 32,
+    "n_claims": 347,
+    "answers_with_no_wrong_claim": 11,
+    "answers_with_no_wrong_claim_rate": 0.34375,
+    "answers_clean_after_keeping_grounded_only": 16,
+    "answers_clean_after_keeping_grounded_only_rate": 0.5,
+    "grounded_claim_share": 0.414985590778098,
+    "note": "an answer with no grounded claim at all is vacuously clean under the grounded-only rule; the claim share is reported alongside so the rate is not read on its own"
+  },
+  "band_definitions": {
+    "framework": "noisy-OR of the per-chunk entailment probabilities over the retrieved passages (src/claims.py::assess_claims). This is the band the answer shows the practitioner.",
+    "experiment": "maximum entailment over the same candidates, thresholded at 0.5 (run_generation_eval.py::_claim_support). This is the claim-support rate the papers report.",
+    "n_bands_differ": 23,
+    "crosstab": {
+      "grounded->grounded": 133,
+      "uncertain->uncertain": 165,
+      "inferred->inferred": 29,
+      "uncertain->inferred": 11,
+      "inferred->grounded": 12
+    },
+    "note": "the two are different functions of the same evidence. The noisy-OR assumes the witnesses fail independently, which they do not -- ten passages about the same subject are not ten independent trials -- so it saturates where the maximum does not."
+  },
+  "retrieval_placement": "post_rerank"
+}

@@ -1,0 +1,34 @@
+{
+  "annotator": "specialist_hazmat_transport",
+  "model": "none (reader)",
+  "rubric_version": "mtp.revision-labels/2",
+  "regime": "hazmat_transport",
+  "blind": true,
+  "labels": {
+    "7": "no_conflict",
+    "8": "supersession",
+    "13": "supersession",
+    "23": "supersession",
+    "34": "supersession",
+    "69": "supersession",
+    "82": "supersession",
+    "89": "supersession",
+    "139": "term_mismatch",
+    "160": "term_mismatch",
+    "168": "term_mismatch"
+  },
+  "notes": {
+    "7": "Both are the sibling tables of 49 CFR 173.27(f)(3): A = Table 1 (inner-packaging net capacity keyed to Column 9a = passenger-carrying aircraft), B = Table 2 (keyed to Column 9b = cargo aircraft). Same requirement under two different transport modes, so both are in force at once; the row bands even differ (A: <=0.5 L, <=5 kg; B: <=2.5 L, <=15 kg) because the source column differs. Closest call in the panel: term_mismatch was the alternative, but both passages regulate the same thing (inner-packaging capacity) under different conditions, so Q1 does not fire.",
+    "8": "49 CFR 173.59 definition of 'Detonators'. eCFR history: 2016-08-15 to 2022-08-24 reads 'detonators for blasting, both electric and non-electric' (A); the issue effective 2022-08-25 reads 'detonators for blasting (electric, electronic, and non-electric)' (B). Same rule, two issues; no marker says which is current.",
+    "13": "49 CFR 173.199(a)(5) (Category B infectious substances, square-on-point mark). The sentence 'For transportation by aircraft, the entire mark must appear on one side of the package' is absent before the 2022-08-25 issue (A) and present after it (B). Same paragraph, one added sentence.",
+    "23": "49 CFR 173.185 (lithium cells and batteries), UN-number mark. Issue 2020-05-11 to 2023-01-19 reads 'UN3090 ...; or UN3480' with a semicolon (A); issue 2023-01-20 onward reads ', or' (B). Requirement is identical, but the two cannot both be the current text - a punctuation-level rewording across issues, which is what the supersession branch asks for.",
+    "34": "49 CFR 173.225(d)(4), Table 2 to paragraph (d), the OP1-OP8 maximum-quantity table. Every quantity is identical in A and B. B is the current rendering (caption 'Table 2 to Paragraph (d)' plus footnotes 1-3 inside the table); A is the pre-2024-05-10 rendering, where the caption and the footnote rows sat outside the table element and so were dropped. Same rule at two issues, and the footnotes B carries (60 kg jerricans / 200 kg boxes / 400 kg combination packagings / 60 L jerricans) materially qualify the numbers, so which one governs matters. Alternative reading considered: granularity (A is a part of B) - rejected because the difference is issue vintage, not scope.",
+    "69": "49 CFR 173.218 (fish meal or fish scrap) packaging list. Before the 2022-08-25 issue the list is '(1) Burlap (jute) bag; (2) Multi-wall paper bag; (3) Polyethylene-lined burlap or paper bag; (4) Cargo tank;'; from 2022-08-25 it is renumbered '(i) ... (ii) ... (iii)'. Same list item, two issues, renumbered - the rubric's own supersession marker.",
+    "82": "Same 49 CFR 173.218 list and same 2022-08-25 renumbering as pair 69, item (3) -> (iii).",
+    "89": "49 CFR 173.25(a)(4) (authorized packagings and overpacks). Before 2023-01-26 the overpack marking text ended with subparagraphs '(i) Transitional exception...' and '(ii) For domestic transportation, an overpack marked prior to January 1, 2017 ...' (A); the 2023-01-26 issue merges them into a single paragraph (4) with a comma after '2017' (B). Same rule, restructured and renumbered.",
+    "139": "A is 49 CFR 173.33 (hazardous materials in cargo tank motor vehicles): the cargo tank's MAWP must exceed the pressure from 173.315/173.318, tank static head plus 1 psig, vapor pressure at 115 F not over 1 psig. B is 49 CFR 173.32 (requirements for the use of portable tanks): DOT Spec 51/60, IM and UN portable tanks. Different equipment (cargo tanks vs portable tanks), so the shared pressure vocabulary and MAWP numbers are not a same-subject comparison.",
+    "160": "A is 49 CFR 173.159a(d) (exceptions for non-spillable batteries: electrolyte must not flow from a ruptured case, aircraft carriage only as cargo). B is 49 CFR 173.220(a) (applicability to internal combustion engines, self-propelled vehicles, machinery, battery-powered and fuel cell-powered vehicles or equipment). Shared phrase 'battery-powered device, equipment or vehicle', different subjects.",
+    "168": "A is 49 CFR 173.56 (new explosives - classification and approval: when cartridges, small arms may be assigned code 1.4S, and the Associate Administrator's authority to modify classification). B is the magazine-storage provision (class II magazine separation distances of 150 ft / 50 ft and the 750,000 / 750 lb exemptions - 29 CFR 1910.109(c)). Classification criteria versus storage siting; the numbers and the 'small arms ammunition' vocabulary are shared but the subjects are not."
+  },
+  "unlabelled_pair_ids": []
+}

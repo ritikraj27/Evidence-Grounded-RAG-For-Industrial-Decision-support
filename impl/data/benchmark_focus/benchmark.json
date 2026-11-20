@@ -1,0 +1,1604 @@
+{
+  "label_standard": "silver",
+  "seed": 20261118,
+  "n_queries": 176,
+  "n_answerable": 32,
+  "n_unanswerable": 144,
+  "families": {
+    "unanswerable_corpus_anchored_definition": 72,
+    "unanswerable_ood": 34,
+    "unanswerable_corpus_anchored_table": 36,
+    "definition": 21,
+    "table_lookup": 8,
+    "numeric_fact": 3,
+    "unanswerable_corpus_anchored_numeric": 2
+  },
+  "categories": {
+    "unanswerable": 144,
+    "supply_chain_management": 32
+  },
+  "queries": [
+    {
+      "query": "What is sustainable management?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the recommended daily intake of vitamin D for adults?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I weld aluminium to steel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is inventory reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the speed of light in a vacuum?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are military logistics?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the overall aim?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the tax rate in a country named Freedonia?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for W. Edwards Deming?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'W. Edwards Deming' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is process capability?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the rate of photosynthesis in wheat?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is freight transportation?",
+      "gold": [
+        "logistics::p1::t29"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "central part of logistics and allows access to broad markets"
+    },
+    {
+      "query": "Who wrote the opera The Magic Flute?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for Inventory reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Inventory reduction' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for John Krafcik?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl36"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Coined the term \"Lean\" in 1988"
+    },
+    {
+      "query": "What is the model?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is a typical line setup?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for Labor cost reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Labor cost reduction' occurs in a table in the corpus and the column name 'Percent defective' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is inbound logistics?",
+      "gold": [
+        "logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the primary logistics processes, focusing on the procurement and coordination of the inbound movement of materials, parts, or unfinished inventory from suppliers to manufacturing or assembly plants, w"
+    },
+    {
+      "query": "What is once a logistic system?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What value is stated for the purpose in the source documentation?",
+      "gold": [
+        "six-sigma::p1::t42"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "6"
+    },
+    {
+      "query": "What is an inventory node?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "Who painted the ceiling of the Sistine Chapel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for SF handled a total in the source documentation?",
+      "gold": [
+        "third-party-logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "3.05"
+    },
+    {
+      "query": "What is scientific management?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for National?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'National' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Improve phase?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Improve phase' occurs in a table in the corpus and the column name 'Contribution' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "Which planet has the shortest day?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Fort Collins for School?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'School' occurs in a table in the corpus and the column name 'Fort Collins' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the limiting factor?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is takt time?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the only problem?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are management cybernetics?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What value is stated for an inventory node in the source documentation?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_numeric",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus, the benchmark's numeric branch never finds a value for it, and no digit appears within two sentences of any occurrence of it, so the corpus states no value for it anywhere"
+    },
+    {
+      "query": "What is the linear regression model?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is management development?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "Who wrote the play A Doll's House?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for Space reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Space reduction' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Space reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Space reduction' occurs in a table in the corpus and the column name 'Contribution' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for What to change??",
+      "gold": [
+        "theory-of-constraints::p1::tbl49"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Current reality tree \"Current reality tree (theory of constraints)\")"
+    },
+    {
+      "query": "What are kanban cards?",
+      "gold": [
+        "kanban::p1::t19"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "query": "According to the table in the source document, what is the DPMO for Taiichi Ohno?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Taiichi Ohno' occurs in a table in the corpus and the column name 'DPMO' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is management system?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is voice of the customer?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the statement?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is safety inventory?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is among them?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is frugal innovation?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Fort Collins for Taiichi Ohno?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Taiichi Ohno' occurs in a table in the corpus and the column name 'Fort Collins' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for Shigeo Shingo?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Shigeo Shingo' occurs in a table in the corpus and the column name 'Percent defective' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Greeley for Henry Ford?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Henry Ford' occurs in a table in the corpus and the column name 'Greeley' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "How many bones are in the adult human hand?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is whenever a limit?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is phD in management?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the rope?",
+      "gold": [
+        "theory-of-constraints::p1::t28"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "work release mechanism for the plant"
+    },
+    {
+      "query": "What is outbound logistics?",
+      "gold": [
+        "logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "process related to the storage and movement of finished products"
+    },
+    {
+      "query": "What is quality improvement?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Computer Systems for Other?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Other' occurs in a table in the corpus and the column name 'Computer Systems' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the purpose of the TOC distribution solution?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is management fad?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is planned obsolescence?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "How do I plant a hedge in a clay soil?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for National?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'National' occurs in a table in the corpus and the column name 'Contribution' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the method?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is regression analysis?",
+      "gold": [
+        "demand-forecasting::p1::t11"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "main statistical method for forecasting"
+    },
+    {
+      "query": "What is a goal of the kanban system?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are managerial economics?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is analyse phase?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is customer orientation?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for - Outline - Designer?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '- Outline - Designer' occurs in a table in the corpus and the column name 'Percent defective' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the primary work?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for 66,807?",
+      "gold": [
+        "six-sigma::p1::tbl46"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "6.7%"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for What to change to??",
+      "gold": [
+        "theory-of-constraints::p1::tbl49"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Future Reality Tree Negative Branch Reservations"
+    },
+    {
+      "query": "What is the sourcing plan?",
+      "gold": [
+        "strategic-sourcing::p1::t9"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "result of all planning efforts on strategic sourcing"
+    },
+    {
+      "query": "What is corporate governance?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the purpose of the sigma value?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for What to change??",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'What to change' occurs in a table in the corpus and the column name 'Percent defective' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is evaporating cloud?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are a rebuttal to these criticisms?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the freezing point of ethanol in Fahrenheit?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are unit loads?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is seasonal inventory?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for Henry Ford?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Henry Ford' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is a prerequisite in the theory?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the theory of constraints?",
+      "gold": [
+        "theory-of-constraints::p1::t5"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "query": "What is the boiling point of water at 2000 metres altitude?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are classic examples?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the chemical formula for table salt?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I make sourdough bread rise faster?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What are distribution logistics?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is pareto chart?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Greeley for Other?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Other' occurs in a table in the corpus and the column name 'Greeley' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is a sourcing business model?",
+      "gold": [
+        "strategic-sourcing::p1::t15"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "query": "What is six Sigma?",
+      "gold": [
+        "six-sigma::p1::t47"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "result of the size of the organization rather than a requirement of Six Sigma itself"
+    },
+    {
+      "query": "What is operations research?",
+      "gold": [
+        "strategic-sourcing::p1::t11"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "discipline of applying advanced techniques to help make better decisions"
+    },
+    {
+      "query": "What is the backorder cost per cycle?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is management style?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the idea behind this metric?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What are three basic situations?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Computer Systems for 30% scrap, 79% rework?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl28"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "80% scrap"
+    },
+    {
+      "query": "What are sourcing Business Models?",
+      "gold": [
+        "strategic-sourcing::p1::t15"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "query": "What is the boiling point of diesel fuel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is an RFID tag?",
+      "gold": [
+        "logistics::p1::t85"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "card containing a memory chip and an antenna that transmits signals to a reader"
+    },
+    {
+      "query": "What is the drum?",
+      "gold": [
+        "theory-of-constraints::p1::t25"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "rate at which the physical constraint of the plant can work: the work center or machine or operation that limits the ability of the entire system to produce more"
+    },
+    {
+      "query": "What is annual updating of data and formulae?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is managerial psychology?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the DPMO for DMAIC?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'DMAIC' occurs in a table in the corpus and the column name 'DPMO' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the recommended word count for a college essay?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the TOC distribution solution?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the DPMO for National?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'National' occurs in a table in the corpus and the column name 'DPMO' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is operational expense?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "Who won the 1998 FIFA World Cup final?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I remove a coffee stain from a wool sweater?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Computer Systems for What to change to??",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'What to change to' occurs in a table in the corpus and the column name 'Computer Systems' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Shigeo Shingo?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl36"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Formalized the seven wastes; developed SMED and other TPS tools"
+    },
+    {
+      "query": "What is the half-life of the isotope carbon-14?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is logistics management?",
+      "gold": [
+        "logistics::p1::t13"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "component that holds the supply chain"
+    },
+    {
+      "query": "What is the term and its etymology?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for WIP stock reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'WIP stock reduction' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Fort Collins for What to change??",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'What to change' occurs in a table in the corpus and the column name 'Fort Collins' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is since manufacturing in an existing plant?",
+      "gold": [
+        "logistics::p1::t38"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "constantly changing process, machines are exchanged and new ones added, which allows for improving the production logistics system accordingly"
+    },
+    {
+      "query": "What is executive compensation?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Computer Systems for Shigeo Shingo?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Shigeo Shingo' occurs in a table in the corpus and the column name 'Computer Systems' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "How do I convert a PNG file to a JPEG?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Greeley for WIP stock reduction?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl28"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "22 days to 1 day"
+    },
+    {
+      "query": "What is often there?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "How do I train for a marathon in eight weeks?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Fort Collins for International?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'International' occurs in a table in the corpus and the column name 'Fort Collins' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Greeley for Concepts?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Concepts' occurs in a table in the corpus and the column name 'Greeley' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the deepest point in the Atlantic Ocean?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for Taiichi Ohno?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Taiichi Ohno' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "How do I change the tyre pressure on a bicycle?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the molecular weight of sucrose?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the purpose of having an inventory?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the summary of the article?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for Other?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Other' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "Who was the first person to set foot on Antarctica?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for a rule of thumb in the source documentation?",
+      "gold": [
+        "theory-of-constraints::p1::t37"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "20%"
+    },
+    {
+      "query": "What is labor cost reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is improve phase?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the kanban card?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for - Outline - Designer?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '- Outline - Designer' occurs in a table in the corpus and the column name 'Contribution' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "According to the table in the source document, what is the Fort Collins for - Outline - Designer?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label '- Outline - Designer' occurs in a table in the corpus and the column name 'Fort Collins' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is collaborative method?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is virtual management?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Percentage yield for 0.023%?",
+      "gold": [
+        "six-sigma::p1::tbl46"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "99.977%"
+    },
+    {
+      "query": "What is safety stock?",
+      "gold": [
+        "safety-stock::p1::t0"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for Analyse phase?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Analyse phase' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the term?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the buffer size?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the average depth of the Mariana Trench?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the warranty period on a diesel generator?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for School?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'School' occurs in a table in the corpus and the column name 'Contribution' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the capital city of Mongolia?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the overall throughput of the line?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the DPMO for Inventory reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Inventory reduction' occurs in a table in the corpus and the column name 'DPMO' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the currency of Switzerland?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is an internal constraint?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is once inventory?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is a prominent example?",
+      "gold": [
+        "theory-of-constraints::p1::t29"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "use of automated production lines in the beverage industry"
+    },
+    {
+      "query": "What is the legal age to vote in Japan?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for International?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'International' occurs in a table in the corpus and the column name 'Contribution' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "Who composed the Brandenburg Concertos?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What was the population of Paris in 1850?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the concern?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for Labor cost reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Labor cost reduction' occurs in a table in the corpus and the column name 'Sufficient thinking (\"If\u2026 then\")' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is space reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Throughput time reduction?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_table",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the row label 'Throughput time reduction' occurs in a table in the corpus and the column name 'Contribution' is a header of a table in the corpus, but the two never occur together in any table, so the corpus has no cell for this lookup"
+    },
+    {
+      "query": "What is the constraint?",
+      "gold": [
+        "theory-of-constraints::p1::t13"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "limiting factor that is preventing the organization from getting more throughput (typically, revenue through sales) even when nothing goes wrong"
+    },
+    {
+      "query": "What is systems science portal?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is control phase?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the tallest building in South America?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the average annual variable cost?",
+      "gold": [
+        "economic-order-quantity::p1::t18"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sum of order costs, holding inventory costs and backorder costs: : K = \u03bb Q A + 1 2 Q I C ( Q \u2212 s ) 2 + 1 Q [ \u03c0 \u03bb s + 1 2 \u03c0 ^ s 2 ] {\\displaystyle {\\mathcal {K}}={\\frac {\\lambda }{Q}}A+{\\frac {1}{2Q}}I"
+    },
+    {
+      "query": "What is defects beyond the far specification limit?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_definition",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus and the corpus never defines it: no sentence in the corpus states the subject with a copula and an article, so the benchmark's own definition branch finds no answer"
+    },
+    {
+      "query": "What is the Chartered Institute?",
+      "gold": [
+        "logistics::p1::t87"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the professional bodies or institutions for the logistics and transport sectors that"
+    },
+    {
+      "query": "What value is stated for a typical line setup in the source documentation?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_corpus_anchored_numeric",
+      "modality_target": null,
+      "answer": null,
+      "label_certificate": "the subject occurs in the corpus, the benchmark's numeric branch never finds a value for it, and no digit appears within two sentences of any occurrence of it, so the corpus states no value for it anywhere"
+    }
+  ]
+}

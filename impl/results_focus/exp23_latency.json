@@ -1,0 +1,2753 @@
+{
+  "seed": null,
+  "measurement": "Wall-clock of the retrieval path (query embedding, dense leg, lexical leg, rank fusion, modality quota, cross-encoder rerank, confidence gate) on the real index with the real models, measured on this machine. The generation stage is not measured here; it is derived from the archived arm totals.",
+  "machine": {
+    "cpu_count": 10,
+    "platform": "darwin",
+    "python": "3.12.15",
+    "numpy": "2.5.4"
+  },
+  "config": {
+    "embedding_model": "BAAI/bge-m3",
+    "rerank_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "rerank_pool": 50,
+    "final_context_chunks": 10
+  },
+  "n_queries": 176,
+  "n_chunks": 735,
+  "total": {
+    "n": 176,
+    "mean_ms": 123.7,
+    "median_ms": 157.8,
+    "p90_ms": 164.1,
+    "p95_ms": 166.4,
+    "max_ms": 189.7,
+    "min_ms": 47.0
+  },
+  "stages": {
+    "embed": {
+      "n": 176,
+      "mean_ms": 0.8,
+      "median_ms": 0.6,
+      "p90_ms": 1.2,
+      "p95_ms": 1.4,
+      "max_ms": 2.9,
+      "min_ms": 0.3
+    },
+    "dense_top_k": {
+      "n": 176,
+      "mean_ms": 0.7,
+      "median_ms": 0.7,
+      "p90_ms": 0.8,
+      "p95_ms": 0.8,
+      "max_ms": 1.7,
+      "min_ms": 0.6
+    },
+    "bm25": {
+      "n": 176,
+      "mean_ms": 0.1,
+      "median_ms": 0.1,
+      "p90_ms": 0.2,
+      "p95_ms": 0.2,
+      "max_ms": 0.3,
+      "min_ms": 0.1
+    },
+    "fusion": {
+      "n": 176,
+      "mean_ms": 0.0,
+      "median_ms": 0.0,
+      "p90_ms": 0.0,
+      "p95_ms": 0.0,
+      "max_ms": 0.0,
+      "min_ms": 0.0
+    },
+    "quota": {
+      "n": 176,
+      "mean_ms": 0.0,
+      "median_ms": 0.0,
+      "p90_ms": 0.0,
+      "p95_ms": 0.0,
+      "max_ms": 0.1,
+      "min_ms": 0.0
+    },
+    "rerank": {
+      "n": 176,
+      "mean_ms": 121.7,
+      "median_ms": 155.8,
+      "p90_ms": 161.9,
+      "p95_ms": 164.1,
+      "max_ms": 187.7,
+      "min_ms": 45.5
+    },
+    "gate": {
+      "n": 176,
+      "mean_ms": 0.0,
+      "median_ms": 0.0,
+      "p90_ms": 0.0,
+      "p95_ms": 0.0,
+      "max_ms": 0.1,
+      "min_ms": 0.0
+    }
+  },
+  "gate_refused": {
+    "n": 60,
+    "mean_ms": 135.3,
+    "median_ms": 160.4,
+    "p90_ms": 164.0,
+    "p95_ms": 164.7,
+    "max_ms": 167.1,
+    "min_ms": 58.3,
+    "n_refused": 60
+  },
+  "gate_accepted": {
+    "n": 116,
+    "mean_ms": 117.8,
+    "median_ms": 128.9,
+    "p90_ms": 164.1,
+    "p95_ms": 166.9,
+    "max_ms": 189.7,
+    "min_ms": 47.0
+  },
+  "per_query": [
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 167.1,
+      "stage_ms": {
+        "embed": 0.38,
+        "dense_top_k": 0.95,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 165.06,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 113.8,
+      "stage_ms": {
+        "embed": 1.08,
+        "dense_top_k": 0.68,
+        "bm25": 0.15,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 111.41,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.0,
+      "stage_ms": {
+        "embed": 1.35,
+        "dense_top_k": 0.61,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.5,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 58.8,
+      "stage_ms": {
+        "embed": 0.49,
+        "dense_top_k": 0.71,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 57.03,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 164.7,
+      "stage_ms": {
+        "embed": 2.17,
+        "dense_top_k": 0.68,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.28,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 80.9,
+      "stage_ms": {
+        "embed": 1.46,
+        "dense_top_k": 0.69,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 78.24,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 51.0,
+      "stage_ms": {
+        "embed": 1.0,
+        "dense_top_k": 0.66,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 48.71,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.4,
+      "stage_ms": {
+        "embed": 0.43,
+        "dense_top_k": 0.68,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.7,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 160.2,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.69,
+        "bm25": 0.26,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.33,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 95.1,
+      "stage_ms": {
+        "embed": 0.48,
+        "dense_top_k": 0.7,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 93.39,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 159.6,
+      "stage_ms": {
+        "embed": 1.17,
+        "dense_top_k": 0.64,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 157.3,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 48.9,
+      "stage_ms": {
+        "embed": 0.97,
+        "dense_top_k": 0.71,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 46.6,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.7,
+      "stage_ms": {
+        "embed": 0.42,
+        "dense_top_k": 0.75,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 159.92,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 128.4,
+      "stage_ms": {
+        "embed": 1.13,
+        "dense_top_k": 0.71,
+        "bm25": 0.19,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 125.87,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 162.5,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.71,
+        "bm25": 0.16,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.62,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 163.6,
+      "stage_ms": {
+        "embed": 1.17,
+        "dense_top_k": 0.69,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.25,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 91.7,
+      "stage_ms": {
+        "embed": 1.1,
+        "dense_top_k": 0.76,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 89.22,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 103.3,
+      "stage_ms": {
+        "embed": 0.48,
+        "dense_top_k": 0.65,
+        "bm25": 0.2,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 101.5,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 49.9,
+      "stage_ms": {
+        "embed": 0.44,
+        "dense_top_k": 0.77,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 48.14,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 49.6,
+      "stage_ms": {
+        "embed": 0.68,
+        "dense_top_k": 0.73,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 47.62,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": true,
+      "total_ms": 160.4,
+      "stage_ms": {
+        "embed": 0.31,
+        "dense_top_k": 0.72,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.82,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 52.5,
+      "stage_ms": {
+        "embed": 1.14,
+        "dense_top_k": 0.69,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 50.13,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 159.4,
+      "stage_ms": {
+        "embed": 0.55,
+        "dense_top_k": 0.68,
+        "bm25": 0.05,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 157.66,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 158.3,
+      "stage_ms": {
+        "embed": 0.53,
+        "dense_top_k": 0.76,
+        "bm25": 0.16,
+        "fusion": 0.04,
+        "quota": 0.03,
+        "rerank": 156.34,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.1,
+      "stage_ms": {
+        "embed": 0.5,
+        "dense_top_k": 0.7,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.37,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.3,
+      "stage_ms": {
+        "embed": 0.54,
+        "dense_top_k": 0.68,
+        "bm25": 0.18,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.45,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 74.5,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.69,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 72.67,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 61.1,
+      "stage_ms": {
+        "embed": 0.33,
+        "dense_top_k": 0.66,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 59.6,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 91.6,
+      "stage_ms": {
+        "embed": 1.11,
+        "dense_top_k": 0.75,
+        "bm25": 0.17,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 89.03,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.1,
+      "stage_ms": {
+        "embed": 1.19,
+        "dense_top_k": 0.66,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 158.77,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 163.1,
+      "stage_ms": {
+        "embed": 1.1,
+        "dense_top_k": 0.7,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.82,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.2,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.71,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.51,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 159.8,
+      "stage_ms": {
+        "embed": 1.15,
+        "dense_top_k": 0.69,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.41,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 156.9,
+      "stage_ms": {
+        "embed": 1.12,
+        "dense_top_k": 0.69,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 154.54,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 78.3,
+      "stage_ms": {
+        "embed": 0.5,
+        "dense_top_k": 0.71,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 76.56,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 160.0,
+      "stage_ms": {
+        "embed": 0.54,
+        "dense_top_k": 0.67,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.21,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 160.4,
+      "stage_ms": {
+        "embed": 1.06,
+        "dense_top_k": 0.7,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 158.14,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.3,
+      "stage_ms": {
+        "embed": 1.35,
+        "dense_top_k": 0.71,
+        "bm25": 0.17,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.63,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 58.7,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.69,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 56.89,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 162.4,
+      "stage_ms": {
+        "embed": 1.0,
+        "dense_top_k": 0.71,
+        "bm25": 0.16,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.09,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 95.1,
+      "stage_ms": {
+        "embed": 1.08,
+        "dense_top_k": 0.68,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 92.83,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 90.7,
+      "stage_ms": {
+        "embed": 0.38,
+        "dense_top_k": 0.7,
+        "bm25": 0.15,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 89.0,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 160.4,
+      "stage_ms": {
+        "embed": 1.44,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 157.77,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 47.6,
+      "stage_ms": {
+        "embed": 0.53,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 45.91,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 159.9,
+      "stage_ms": {
+        "embed": 0.3,
+        "dense_top_k": 0.7,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.47,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 156.8,
+      "stage_ms": {
+        "embed": 0.47,
+        "dense_top_k": 0.73,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 155.06,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 160.6,
+      "stage_ms": {
+        "embed": 1.04,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.36,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 77.4,
+      "stage_ms": {
+        "embed": 1.11,
+        "dense_top_k": 0.7,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 75.07,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 89.3,
+      "stage_ms": {
+        "embed": 1.07,
+        "dense_top_k": 0.68,
+        "bm25": 0.15,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 86.99,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 99.1,
+      "stage_ms": {
+        "embed": 1.13,
+        "dense_top_k": 0.67,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 96.76,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 124.3,
+      "stage_ms": {
+        "embed": 0.46,
+        "dense_top_k": 0.66,
+        "bm25": 0.15,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 122.61,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 96.3,
+      "stage_ms": {
+        "embed": 0.53,
+        "dense_top_k": 0.67,
+        "bm25": 0.12,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 94.58,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 47.0,
+      "stage_ms": {
+        "embed": 0.31,
+        "dense_top_k": 0.64,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 45.54,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 157.0,
+      "stage_ms": {
+        "embed": 0.3,
+        "dense_top_k": 0.68,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 155.45,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 88.8,
+      "stage_ms": {
+        "embed": 1.06,
+        "dense_top_k": 0.68,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 86.53,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 161.0,
+      "stage_ms": {
+        "embed": 1.17,
+        "dense_top_k": 0.66,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 158.65,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 86.2,
+      "stage_ms": {
+        "embed": 0.34,
+        "dense_top_k": 0.74,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 84.58,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 160.8,
+      "stage_ms": {
+        "embed": 1.02,
+        "dense_top_k": 0.64,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.56,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 162.4,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.75,
+        "bm25": 0.1,
+        "fusion": 0.04,
+        "quota": 0.03,
+        "rerank": 160.57,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 164.9,
+      "stage_ms": {
+        "embed": 0.5,
+        "dense_top_k": 0.71,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 163.14,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 52.4,
+      "stage_ms": {
+        "embed": 0.5,
+        "dense_top_k": 0.7,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 50.68,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.4,
+      "stage_ms": {
+        "embed": 0.58,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.62,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 69.5,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.69,
+        "bm25": 0.12,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 67.79,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 129.5,
+      "stage_ms": {
+        "embed": 1.06,
+        "dense_top_k": 0.69,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 127.2,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 130.7,
+      "stage_ms": {
+        "embed": 1.18,
+        "dense_top_k": 0.7,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 128.28,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 49.0,
+      "stage_ms": {
+        "embed": 0.42,
+        "dense_top_k": 0.69,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 47.32,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 159.3,
+      "stage_ms": {
+        "embed": 0.41,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.68,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 89.3,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.7,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 87.61,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 48.8,
+      "stage_ms": {
+        "embed": 1.14,
+        "dense_top_k": 0.67,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 46.46,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.3,
+      "stage_ms": {
+        "embed": 0.56,
+        "dense_top_k": 0.69,
+        "bm25": 0.17,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.44,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.7,
+      "stage_ms": {
+        "embed": 0.43,
+        "dense_top_k": 0.71,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 160.04,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 160.0,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.72,
+        "bm25": 0.17,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.13,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 165.4,
+      "stage_ms": {
+        "embed": 1.07,
+        "dense_top_k": 0.71,
+        "bm25": 0.16,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 163.0,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 52.1,
+      "stage_ms": {
+        "embed": 0.34,
+        "dense_top_k": 0.7,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 50.53,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.0,
+      "stage_ms": {
+        "embed": 0.43,
+        "dense_top_k": 0.68,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.36,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 96.2,
+      "stage_ms": {
+        "embed": 1.05,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 93.87,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 103.1,
+      "stage_ms": {
+        "embed": 1.16,
+        "dense_top_k": 0.68,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 100.73,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 157.2,
+      "stage_ms": {
+        "embed": 0.5,
+        "dense_top_k": 0.68,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 155.53,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 100.4,
+      "stage_ms": {
+        "embed": 1.15,
+        "dense_top_k": 0.7,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 98.01,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 159.3,
+      "stage_ms": {
+        "embed": 1.06,
+        "dense_top_k": 0.65,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.06,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 173.0,
+      "stage_ms": {
+        "embed": 0.48,
+        "dense_top_k": 0.72,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 171.32,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 158.8,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.74,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 156.98,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 164.5,
+      "stage_ms": {
+        "embed": 1.04,
+        "dense_top_k": 0.7,
+        "bm25": 0.18,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 162.1,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.2,
+      "stage_ms": {
+        "embed": 0.49,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.55,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 161.5,
+      "stage_ms": {
+        "embed": 1.24,
+        "dense_top_k": 0.68,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.02,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 160.4,
+      "stage_ms": {
+        "embed": 1.26,
+        "dense_top_k": 0.71,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.9,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.2,
+      "stage_ms": {
+        "embed": 1.03,
+        "dense_top_k": 0.69,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.02,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 88.1,
+      "stage_ms": {
+        "embed": 0.56,
+        "dense_top_k": 0.69,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 86.32,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 162.5,
+      "stage_ms": {
+        "embed": 0.45,
+        "dense_top_k": 0.64,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.88,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 162.3,
+      "stage_ms": {
+        "embed": 1.08,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.99,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 164.1,
+      "stage_ms": {
+        "embed": 0.98,
+        "dense_top_k": 0.71,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.91,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 127.3,
+      "stage_ms": {
+        "embed": 1.18,
+        "dense_top_k": 0.7,
+        "bm25": 0.12,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 124.8,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 52.6,
+      "stage_ms": {
+        "embed": 0.95,
+        "dense_top_k": 0.7,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 50.4,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 49.6,
+      "stage_ms": {
+        "embed": 0.58,
+        "dense_top_k": 0.7,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 47.81,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 112.3,
+      "stage_ms": {
+        "embed": 1.14,
+        "dense_top_k": 0.69,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 109.93,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 162.9,
+      "stage_ms": {
+        "embed": 1.13,
+        "dense_top_k": 0.67,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.55,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 164.0,
+      "stage_ms": {
+        "embed": 1.07,
+        "dense_top_k": 0.72,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.66,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 52.1,
+      "stage_ms": {
+        "embed": 0.37,
+        "dense_top_k": 0.69,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 50.53,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 167.8,
+      "stage_ms": {
+        "embed": 0.62,
+        "dense_top_k": 0.79,
+        "bm25": 0.12,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 165.77,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 189.7,
+      "stage_ms": {
+        "embed": 0.46,
+        "dense_top_k": 0.72,
+        "bm25": 0.21,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 187.65,
+        "gate": 0.07
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 176.6,
+      "stage_ms": {
+        "embed": 0.77,
+        "dense_top_k": 1.68,
+        "bm25": 0.16,
+        "fusion": 0.03,
+        "quota": 0.06,
+        "rerank": 173.28,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 95.4,
+      "stage_ms": {
+        "embed": 0.48,
+        "dense_top_k": 0.71,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 93.66,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 163.8,
+      "stage_ms": {
+        "embed": 0.52,
+        "dense_top_k": 0.71,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 162.0,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 49.4,
+      "stage_ms": {
+        "embed": 1.04,
+        "dense_top_k": 0.68,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 47.11,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 93.2,
+      "stage_ms": {
+        "embed": 0.42,
+        "dense_top_k": 0.69,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 91.59,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.8,
+      "stage_ms": {
+        "embed": 2.89,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.74,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 68.3,
+      "stage_ms": {
+        "embed": 1.14,
+        "dense_top_k": 0.72,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 65.81,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 159.0,
+      "stage_ms": {
+        "embed": 0.54,
+        "dense_top_k": 0.75,
+        "bm25": 0.12,
+        "fusion": 0.04,
+        "quota": 0.03,
+        "rerank": 157.14,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.7,
+      "stage_ms": {
+        "embed": 1.09,
+        "dense_top_k": 0.66,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.42,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 53.4,
+      "stage_ms": {
+        "embed": 0.58,
+        "dense_top_k": 0.68,
+        "bm25": 0.12,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 51.53,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 160.3,
+      "stage_ms": {
+        "embed": 0.34,
+        "dense_top_k": 0.69,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 158.69,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 163.6,
+      "stage_ms": {
+        "embed": 0.45,
+        "dense_top_k": 0.71,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.91,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 164.7,
+      "stage_ms": {
+        "embed": 1.4,
+        "dense_top_k": 0.68,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 162.06,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 62.7,
+      "stage_ms": {
+        "embed": 1.08,
+        "dense_top_k": 0.67,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 60.32,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 80.7,
+      "stage_ms": {
+        "embed": 1.11,
+        "dense_top_k": 0.69,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 78.33,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 159.2,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.7,
+        "bm25": 0.05,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.5,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 167.0,
+      "stage_ms": {
+        "embed": 1.09,
+        "dense_top_k": 0.71,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 164.58,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 96.3,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.67,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 94.64,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 160.5,
+      "stage_ms": {
+        "embed": 1.1,
+        "dense_top_k": 0.7,
+        "bm25": 0.19,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.04,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 60.8,
+      "stage_ms": {
+        "embed": 0.54,
+        "dense_top_k": 0.66,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 59.07,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 48.2,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.75,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 46.33,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 160.6,
+      "stage_ms": {
+        "embed": 0.46,
+        "dense_top_k": 0.68,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.96,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 83.5,
+      "stage_ms": {
+        "embed": 0.34,
+        "dense_top_k": 0.67,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 81.87,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 81.4,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.69,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 79.68,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 161.9,
+      "stage_ms": {
+        "embed": 0.53,
+        "dense_top_k": 0.68,
+        "bm25": 0.15,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.05,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 163.2,
+      "stage_ms": {
+        "embed": 0.53,
+        "dense_top_k": 0.67,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.51,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.0,
+      "stage_ms": {
+        "embed": 1.65,
+        "dense_top_k": 0.75,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 157.94,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 87.1,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.67,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 85.38,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 166.9,
+      "stage_ms": {
+        "embed": 0.45,
+        "dense_top_k": 0.67,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 165.22,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 98.1,
+      "stage_ms": {
+        "embed": 0.4,
+        "dense_top_k": 0.69,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 96.48,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 84.3,
+      "stage_ms": {
+        "embed": 0.44,
+        "dense_top_k": 0.72,
+        "bm25": 0.17,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 82.47,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 160.8,
+      "stage_ms": {
+        "embed": 0.57,
+        "dense_top_k": 0.67,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.01,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 166.9,
+      "stage_ms": {
+        "embed": 1.12,
+        "dense_top_k": 0.73,
+        "bm25": 0.06,
+        "fusion": 0.04,
+        "quota": 0.02,
+        "rerank": 164.53,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 52.4,
+      "stage_ms": {
+        "embed": 0.45,
+        "dense_top_k": 0.72,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 50.66,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 164.5,
+      "stage_ms": {
+        "embed": 2.53,
+        "dense_top_k": 0.7,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.75,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 162.1,
+      "stage_ms": {
+        "embed": 1.19,
+        "dense_top_k": 0.66,
+        "bm25": 0.16,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.65,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 59.1,
+      "stage_ms": {
+        "embed": 0.47,
+        "dense_top_k": 0.67,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 57.45,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": true,
+      "total_ms": 161.6,
+      "stage_ms": {
+        "embed": 1.03,
+        "dense_top_k": 0.7,
+        "bm25": 0.12,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.23,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 55.2,
+      "stage_ms": {
+        "embed": 1.22,
+        "dense_top_k": 0.69,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 52.79,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 73.3,
+      "stage_ms": {
+        "embed": 0.45,
+        "dense_top_k": 0.7,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 71.71,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 96.5,
+      "stage_ms": {
+        "embed": 0.98,
+        "dense_top_k": 0.7,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 94.3,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 162.6,
+      "stage_ms": {
+        "embed": 1.08,
+        "dense_top_k": 0.75,
+        "bm25": 0.16,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.11,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.3,
+      "stage_ms": {
+        "embed": 0.54,
+        "dense_top_k": 0.73,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.45,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 162.0,
+      "stage_ms": {
+        "embed": 0.53,
+        "dense_top_k": 0.68,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.32,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 161.0,
+      "stage_ms": {
+        "embed": 1.33,
+        "dense_top_k": 0.67,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 158.47,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 158.6,
+      "stage_ms": {
+        "embed": 1.21,
+        "dense_top_k": 0.69,
+        "bm25": 0.16,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 156.02,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 48.8,
+      "stage_ms": {
+        "embed": 1.1,
+        "dense_top_k": 0.69,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 46.47,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 100.2,
+      "stage_ms": {
+        "embed": 0.37,
+        "dense_top_k": 0.7,
+        "bm25": 0.18,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 98.49,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 56.0,
+      "stage_ms": {
+        "embed": 0.48,
+        "dense_top_k": 0.66,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 54.38,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 159.0,
+      "stage_ms": {
+        "embed": 0.48,
+        "dense_top_k": 0.69,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.36,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 144.1,
+      "stage_ms": {
+        "embed": 1.12,
+        "dense_top_k": 0.68,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 141.83,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 138.6,
+      "stage_ms": {
+        "embed": 1.02,
+        "dense_top_k": 0.67,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 136.41,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 76.9,
+      "stage_ms": {
+        "embed": 0.51,
+        "dense_top_k": 0.7,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 75.14,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 161.2,
+      "stage_ms": {
+        "embed": 0.43,
+        "dense_top_k": 0.7,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 159.61,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 58.0,
+      "stage_ms": {
+        "embed": 0.37,
+        "dense_top_k": 0.68,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 56.41,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 105.8,
+      "stage_ms": {
+        "embed": 0.56,
+        "dense_top_k": 0.78,
+        "bm25": 0.13,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 103.85,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 148.1,
+      "stage_ms": {
+        "embed": 0.38,
+        "dense_top_k": 0.75,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 146.39,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 166.4,
+      "stage_ms": {
+        "embed": 0.37,
+        "dense_top_k": 0.71,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 164.83,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 53.0,
+      "stage_ms": {
+        "embed": 1.16,
+        "dense_top_k": 0.7,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 50.57,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 53.7,
+      "stage_ms": {
+        "embed": 0.36,
+        "dense_top_k": 0.69,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 52.04,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 99.0,
+      "stage_ms": {
+        "embed": 2.31,
+        "dense_top_k": 0.75,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 95.37,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 58.3,
+      "stage_ms": {
+        "embed": 0.54,
+        "dense_top_k": 0.69,
+        "bm25": 0.12,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 56.46,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 164.3,
+      "stage_ms": {
+        "embed": 1.11,
+        "dense_top_k": 0.67,
+        "bm25": 0.05,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 162.03,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 91.1,
+      "stage_ms": {
+        "embed": 1.14,
+        "dense_top_k": 0.66,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 88.83,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 96.4,
+      "stage_ms": {
+        "embed": 1.04,
+        "dense_top_k": 0.69,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 94.12,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 122.6,
+      "stage_ms": {
+        "embed": 0.53,
+        "dense_top_k": 0.79,
+        "bm25": 0.2,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 120.63,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 163.0,
+      "stage_ms": {
+        "embed": 0.54,
+        "dense_top_k": 0.63,
+        "bm25": 0.06,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.31,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 162.9,
+      "stage_ms": {
+        "embed": 1.1,
+        "dense_top_k": 0.8,
+        "bm25": 0.15,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.35,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 167.1,
+      "stage_ms": {
+        "embed": 1.45,
+        "dense_top_k": 0.98,
+        "bm25": 0.07,
+        "fusion": 0.04,
+        "quota": 0.02,
+        "rerank": 164.06,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 164.3,
+      "stage_ms": {
+        "embed": 1.02,
+        "dense_top_k": 0.77,
+        "bm25": 0.09,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 161.98,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 73.1,
+      "stage_ms": {
+        "embed": 0.33,
+        "dense_top_k": 0.7,
+        "bm25": 0.08,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 71.55,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": true,
+      "total_ms": 162.4,
+      "stage_ms": {
+        "embed": 0.43,
+        "dense_top_k": 0.7,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 160.67,
+        "gate": 0.04
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 141.9,
+      "stage_ms": {
+        "embed": 0.55,
+        "dense_top_k": 0.7,
+        "bm25": 0.1,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 140.03,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 62.3,
+      "stage_ms": {
+        "embed": 1.22,
+        "dense_top_k": 0.67,
+        "bm25": 0.11,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 59.84,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "supply_chain_management",
+      "gate_rejected": false,
+      "total_ms": 159.5,
+      "stage_ms": {
+        "embed": 0.48,
+        "dense_top_k": 0.71,
+        "bm25": 0.07,
+        "fusion": 0.03,
+        "quota": 0.02,
+        "rerank": 157.81,
+        "gate": 0.03
+      }
+    },
+    {
+      "query_id": null,
+      "category": "unanswerable",
+      "gate_rejected": false,
+      "total_ms": 162.4,
+      "stage_ms": {
+        "embed": 0.67,
+        "dense_top_k": 0.69,
+        "bm25": 0.14,
+        "fusion": 0.03,
+        "quota": 0.03,
+        "rerank": 160.42,
+        "gate": 0.03
+      }
+    }
+  ]
+}

@@ -1,0 +1,1216 @@
+%% Deliverable 2b — IEEE two-column conference paper
+%% Compile with:  pdflatex Deliverable_2b_IEEE_Conference_Paper.tex   (twice, for the TOC)
+%% Requires IEEEtran.cls (standard in every TeX Live / MiKTeX install).
+%%
+%% This file compiles to 12 pages in IEEE two-column format, references
+%% included. It was 12 pages: the abstract was 500 words against IEEE's
+%% 150--250, the results prose was a data dump, the related work carried
+%% every prior-art finding twice over, and the bibliography spelled out every
+%% author of every paper. It was then cut to 9 and to 10 as the related work
+%% gained the 2026 literature that bears directly on the claims, and is now
+%% 12 again because the paper gained a second corpus -- 110 United States
+%% federal regulatory documents read at two past dates -- with the ablation
+%% replicated on it, the conflict detector's precision measured as two
+%% numbers rather than one, and a 2x2 factorial over the annotation rubric.
+%% The number here is the measured one and the budget is recorded in
+%% deliverables/scripts/check_latex.py with its reason.
+%% The technical report (Deliverable 2a) and the journal version
+%% (Deliverable 2c) carry the same material at their own lengths: this file
+%% is the condensed venue version, and nothing was dropped from the thesis,
+%% only from this one.
+%%
+%% The six figures live in deliverables/figures/ and are included by
+%% relative path, so that directory has to travel with this file.
+
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{url}
+
+\hyphenation{re-tri-ev-al}
+
+\begin{document}
+
+\title{An Evidence-Grounded Retrieval-Augmented Generation
+Framework for Industrial Decision Support:
+Architecture, Evaluation Protocol, and Failure-Mode Characterisation}
+
+\author{\IEEEauthorblockN{Ritik Raj}
+\IEEEauthorblockA{Department of Industrial and Systems Engineering,
+Indian Institute of Technology Kharagpur, Kharagpur, India}
+\and
+\IEEEauthorblockN{Supervisor: Dr. Sri Krishna Kumar}
+\IEEEauthorblockA{Department of Industrial and Systems Engineering,
+Indian Institute of Technology Kharagpur, Kharagpur, India}}
+
+\maketitle
+
+\begin{abstract}
+Industrial practitioners decide from paperwork: standard operating
+procedures, failure-mode analyses and control plans. Retrieval-augmented
+generation (RAG) grounds an answer in retrieved passages, but existing systems
+trust the retriever unconditionally, ignore modality diversity, and silently
+select one source when documents conflict. We present a five-mechanism
+framework, every component of which has published prior art we position
+against rather than claim priority over: a code-level, non-bypassable
+retrieval-confidence gate that returns an explicit no-evidence response
+without invoking the model; per-modality retrieval quotas; hybrid
+lexical--dense retrieval fused by reciprocal rank fusion and reranked by a
+cross-encoder; contradiction surfacing through a joint NLI and topical gate;
+and per-claim three-band confidence tagging. On an encyclopaedic industrial
+corpus, four properties of the original specification were wrong: a category
+pre-filter on one retrieval leg is a no-op, a general-purpose sentence encoder
+costs the fusion its ordering, the modality quota belongs before the
+cross-encoder, and a reader confirms under two per cent of the contradiction
+gate's alarms. We then repeat every measurement on a second corpus of 110
+United States federal regulations read at two past dates, which supplies
+conflicts whose types are known by construction. There a conflict detector's
+precision splits into two numbers nine-fold apart, so the mechanism finds the
+conflicts and reports them as the wrong kind; and a $2\times2$ factorial shows
+the annotation rubric, not the reader's specialisation, moved that number by a
+factor of nine. Auditing our own benchmark showed its unanswerable class
+separable from the question text alone, so we rebuilt it; the gate now refuses
+23.6\% of the repaired hard class against the
+91.7\% the defective class suggested.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Retrieval-augmented generation, industrial decision support, hallucination
+reduction, confidence gating, selective prediction, hybrid retrieval,
+per-claim attribution, evaluation methodology.
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Industrial decision-making depends on timely access to evidence in technical
+documentation. Practitioners across quality, maintenance, logistics and
+process operations consult standards such as ISO 9001, GS1 specifications,
+Incoterms rules and original-equipment-manufacturer service procedures. It
+has grown with industrial digitalisation faster than it can be synthesised,
+so decisions are made with partial information, at a cost to efficiency,
+compliance and safety.
+
+The proposal behind this work described a twelve-category industrial benchmark
+spanning industrial engineering, machine learning and data analytics. This
+paper evaluates six of the nine industrial-engineering categories, on three
+corpora that could be obtained and redistributed, and claims nothing about
+the twelve-category benchmark: the three machine-learning categories are
+numerical series-reasoning problems rather than document-retrieval problems,
+and three industrial categories are descoped because the binding artefacts the
+proposal names are proprietary and not redistributable. The reconciliation, with
+the reason for every row, is in the supplementary documentation.
+
+Large language models (LLMs) and retrieval-augmented generation (RAG) have
+been proposed to address the cost of locating, cross-referencing and
+verifying evidence under time pressure. Three properties industrial users
+require remain absent from generic systems: no \emph{evidence trail} saying
+which passage supports which claim; no \emph{confidence check}, so the system
+answers when retrieval is weak; and no \emph{contradiction handling}, so when
+two accepted passages disagree it silently selects one.
+
+SQuAD 2.0 established the general form of the problem with an evaluation
+requiring a system to answer answerable questions correctly \emph{and}
+decline unanswerable ones, and reported a strong neural system at 86\% F1 on
+SQuAD but only 66\% on SQuAD 2.0. Twenty points are lost to confidently
+answering unanswerable questions in a general-domain setting; no such loss
+is acceptable for a plant's reorder policy.
+
+We measure which reliability mechanisms pay for themselves in industrial
+text; the measurement, not the architecture, is the contribution, in three
+parts. The \emph{architectural} part is incremental: by late 2026 prior art
+publishes a code-level pre-generation gate with a calibrated decision policy
+(Sieve and Sage~\cite{won2026sievesage};
+HALT-RAG~\cite{goswami2025haltrag}), set-level sufficiency verification and
+structural certificates (SURE-RAG~\cite{qiu2026surerag};
+Certify~\cite{zhang2026certify}), and the argument that modality routing is
+performed at the wrong decision point (Modality Relevance is not Modality
+Utility~\cite{chen2026modalityutility}), so we position against it, not
+claiming priority. The
+\emph{empirical} part is a failure-mode characterisation with negative
+results: the dense leg costs the fusion its ordering until the encoder is
+replaced, the modality quota's pipeline position inverts the framework's
+design rule, and the confidence gate cannot separate absence of evidence
+from retrieval failure, making it an answer-in-context
+detector~\cite{li2026relevance}, not a sufficiency judge. The
+\emph{methodological} part is an evaluation protocol
+treating the gate as a selective-prediction policy, reporting a
+risk--coverage curve and a false-positive rate at a stated operating point
+against two degenerate baselines (never refuse, always refuse) rather than
+the sweep endpoints.
+
+A fourth part is a metric contribution, and it is the paper's clearest new
+result. A conflict detector's precision, reported as one number, conflates
+two questions: \emph{is the alarm pointing at something real}, and \emph{is
+the branch that raised it the branch that owns the conflict}. We measure both,
+on a second corpus of United States federal regulations read at two past
+dates, where the same provision at two issues \emph{is} a conflict with its
+type known by construction and so needs no annotation. The two numbers come
+apart by a factor of nine, and the mechanism finds the conflicts and reports
+them as the wrong kind.
+
+A second methodological contribution follows from auditing the benchmark:
+its unanswerable class proved separable from the question text alone, making
+the headline refusal rate an upper bound rather than a measurement, so the
+class was rebuilt to make unanswerability decidable only from the evidence
+(Section~\ref{sec:unansaudit}). The repair changes what the headline number
+means, so it is a contribution rather than a caveat.
+
+\section{Related Work}
+
+\subsection{Retrieval-augmented generation and its failure modes}
+
+RAG~\cite{lewis2020rag} set the retrieve-then-generate paradigm; dense passage
+retrieval~\cite{karpukhin2020dpr} set dual-encoder search, beating a strong
+Lucene-BM25 baseline by 9--19 percentage points absolute in top-20 passage
+retrieval accuracy. Self-RAG~\cite{asai2024selfrag} trains reflection tokens
+deciding when to retrieve and whether a passage supports the output;
+CRAG~\cite{yan2024crag} inserts a retrieval evaluator whose confidence degree
+triggers one of four corrective actions; FLARE~\cite{jiang2023flare} and
+DRAGIN~\cite{su2024dragin} trigger retrieval mid-generation from the model's
+own information need; Adaptive-RAG~\cite{jeong2024adaptive} routes queries by
+complexity. Our gate is not \emph{when to retrieve} but \emph{whether to
+answer}, and no by default when the evidence is weak. The premise is
+published: enterprise RAG needs purpose-built architectures and its own
+evaluation framework, and three of our five mechanisms have been implemented
+independently in cross-modal financial QA. Neither the premise nor the
+mechanisms are claimed as new.
+
+\subsection{Confidence, calibration and abstention}
+
+SQuAD 2.0~\cite{rajpurkar2018squad2} set the unanswerable class; Kadath et
+al.~\cite{kadavath2022know} showed verbalised confidence is informative;
+semantic entropy~\cite{kuhn2023semantic} and Farquhar et
+al.~\cite{farquhar2024semantic} separate \emph{confabulation} from
+\emph{consistent error}. Joren et al.~\cite{joren2024sufficient} is the
+closest result: large models answer well on sufficient context but answer
+wrongly rather than abstain when the context is insufficient, so a gate on the
+\emph{generated answer} inherits that failure while a gate on the
+\emph{retrieval} attacks the right variable. Decian et
+al.~\cite{decian2026dynamic} combine hybrid retrieval with an entropy-based
+dynamic threshold; Gei{\ss}ler et al.~\cite{geissler2026dependable} obtain
+answer-quality gains up to 6\% and inconsistency detection up to 77\%, with
+guarantees conditional on exchangeability, which the same machinery extends to
+pre-generation filtering~\cite{chen2026principled} and per-claim
+factuality~\cite{feng2025conformal,claimconformal2026}; entropy-based
+uncertainty also has a model-dependent failure mode~\cite{phillips2026entropy}.
+Thakur et al.~\cite{thakur2026declinecraft} show query rewriting and reranking
+\emph{lower} the correct-abstention rate for all 12 models. SYNCHECK
+~\cite{syncheck2024} is the sharpest challenge to D1 --- decoding beats
+abstention by over 10\% on faithfulness --- but it asks whether a generated
+sentence is faithful to the context, while the gate asks whether the context
+contains enough to answer at all, settled before generation, since a sentence
+from inadequate evidence cannot be repaired afterwards. Long-context
+architectures are ahead of semantic RAG in manufacturing safety at a materially
+higher token cost~\cite{longcontext2026tokentax}; published defences against
+query-time poisoning can measure benchmark construction rather than
+filtering~\cite{ranking2026notdeciding}; better retrieval reduces abstention,
+so the operating point must be re-fitted per configuration. I-CALM
+~\cite{zong2026icalm} recovers each abstention's counterfactual answer, with
+coverage, error-capture and correct-retention rates at matched coverage,
+although coverage often collapses; TAPS~\cite{zhang2026taps} splits abstention
+risk into answering and distinguishing ability; UAEval4RAG~\cite{peng2025uaeval4rag}
+treats prompt restrictiveness as an explicit factor, which we follow by
+comparing arms at matched coverage. The Selection Effect
+~\cite{tikhomirov2026selection} shows encoder gating can forward a slice where
+the downstream component is no better than the baseline, and
+Recognition--Refusal Misalignment~\cite{du2026recognition} shows recognising
+impossibility is nearly orthogonal to routing it to abstention, so our null
+result is reported as the prompt having already realised the gate's function on
+that slice. Models overcommit and rarely abstain~\cite{cocchieri2026overcommit},
+so one generator cannot carry a general claim. Jev-as-a-Judge
+~\cite{rosario2026jev} is statistically indistinguishable on the conventional
+metric yet disagrees on 15.2\% of claims and admits very different unsupported
+rates, 23.2\% against 14.1\%, on the same 495 human-labelled claims; a matched
+random-escalation control does as well, so we run that control too: an arm
+refusing as many questions as the fitted gate, picked at random. RCL
+~\cite{ravuri2026rcl}, HIRA~\cite{tian2026hira} and CiteGuard-RAG
+~\cite{zheng2026citeguard} place a screening layer between retrieval and
+generation, so the mechanism is prior art; what we claim is the
+\emph{measurement} --- per-claim confidence banding with a cited evidence
+trail, on industrial text, at the level of the answer claim.
+
+Several 2026 papers pre-empt the gate's architecture, and this work is
+positioned against them. Sieve and Sage~\cite{won2026sievesage} screen the
+retrieved set in a module outside the model, the same pre-LLM placement used
+here; SURE-RAG~\cite{qiu2026surerag} makes sufficiency a set-level property
+that independent passage scoring cannot detect; Certify~\cite{zhang2026certify}
+makes it structural, with Horn-closure certificates reported to beat learned
+sufficiency judges; and other work computes confidence in the orchestrator,
+never asking the model. What is left distinct is a calibrated detector with a
+stated operating point and a risk--coverage curve, not a certificate. The label
+follows the same literature, which reserves \emph{sufficiency} for the
+set-level property~\cite{li2026relevance}, so the quantity predicted here is
+named \emph{answer-in-context detectability}; and since a model's apparent
+willingness to abstain can be produced by the prompt rather than by genuine
+uncertainty~\cite{ling2026promptartifact}, the gate's contribution is measured
+against a prompt-conditioned baseline under two prompt conditions differing by
+a single sentence.
+
+\subsection{Multimodal retrieval}
+
+ColPali~\cite{faysse2025colpali} introduced page-image retrieval with
+multi-vector vision-language embeddings and late-interaction matching.
+VisDoMRAG~\cite{suri2024visdom} fuses modalities under a consistency
+constraint, our closest prior art on modality balancing.
+T\textsuperscript{2}-RAGBench~\cite{strich2026t2} provides a text-and-table
+benchmark of 23{,}088 expert-validated triples, hybrid BM25 best on
+text-plus-table queries. Modality-balanced retrieval is already in the
+literature, so our claim concerns the \emph{mechanism}, a hard non-bypassable
+quota on the final context, and the domain. \emph{Modality Relevance is not
+Modality Utility}~\cite{chen2026modalityutility} shows modality relevance a
+weak predictor of modality utility, so a modality quota is mis-specified unless
+utility is ranked; a placebo-controlled ablation of four retrieval mechanisms
+across two corpora \cite{sharma2026placebo} finds naive hierarchical and
+structure-aware variants can hurt, corpus-conditionally. The trade has a
+published mechanism: constraint-induced displacement shows
+that candidates conflicting with the query's period, segment, metric scope or
+table scope consume top-$k$ slots and displace the evidence that would have
+answered it, costing Recall@10 by 0.147 against an equally difficult
+compatible pool. The quota studied here displaces in the same way, so the
+measurement below is of a published mechanism.
+
+\paragraph{Lexical or dense on technical and regulatory text.} That lexical
+retrieval beats an off-the-shelf dense encoder on legal and regulatory text
+is established, and this paper says so in the first line of the section that
+reports it. On Court of Justice of the European Union passages, BM25
+``surpassing off-the-shelf dense models in 4 out of 7 performance metrics'',
+and the same study reports that fine-tuning a dense model on domain-specific
+data overtakes BM25~\cite{mori2025lexical}; statutory article retrieval in
+Dutch and French finds BM25 ``remains a competitive baseline'' against
+zero-shot dense models~\cite{lotfi2024bsard}; and a benchmark of ten
+retrieval strategies over 23{,}088 financial text-and-table queries reports
+that BM25 ``outperforms state-of-the-art dense retrieval on financial
+documents, challenging the common assumption that semantic search universally
+dominat[es]''~\cite{akarsu2026bm25}. The counter-case is reported too: on
+Greek statutory retrieval, vanilla dense retrieval outperforms vanilla sparse
+at Recall@100, though query reformulation closes the gap~\cite{beta2026greekbar}.
+TeleEmbedBench~\cite{gajjar2026teleembed} exists because general-purpose
+benchmarks fail to capture the dense, acronym-heavy nature of technical
+corpora. Three consequences follow: the comparison is \textbf{not} claimed as
+new and does not appear in the abstract; the dense leg here is a
+general-purpose encoder a domain-adapted one could overtake, so the result is
+a boundary condition on this pipeline rather than a claim about dense
+retrieval as a class; and the \emph{corollary} is the new part --- on this
+corpus the lexical leg carried the pipeline, and neither the fusion nor the
+category pre-filter added anything measurable on top of it.
+
+\subsection{Attribution, evaluation, and the failure of ``reported a number''}
+
+ALCE~\cite{gao2023alce} defined citation recall and precision, with even the
+best models lacking complete citation support for ELI5 half the time;
+RAGAS~\cite{es2024ragas} defined faithfulness, answer relevancy and context
+precision; ARES~\cite{saadfalcon2024ares} provides a reference-free framework;
+FActScore~\cite{min2023factscore} decomposes generations into atomic facts,
+with ChatGPT biographies only 58\% factually supported. Two 2026 papers change
+how these are reported: benchmark construction cues can dominate measured
+filter performance in query-time RAG poisoning defences, AUROC falling from
+0.953 to 0.758 once a cue is removed; and cheap LLM judges give AUROC as low as
+0.603, with position bias flipping 66 of 80 queries. We adopt both as
+requirements on our own evaluation. A third finding constrains the labels
+rather than the metrics: automated labelers tend to conflate reference
+faithfulness with factual correctness~\cite{valjakka2026labeling}, which is
+why the labels here are audited rather than trusted. Nor is this the first
+industrial benchmark: comparable corpora now cover manufacturing safety,
+automotive requirements engineering, industrial standards, semiconductor QA,
+regulated documents and data-lake QA, with RealDocBench and IndusSpec-QA the
+closest in kind~\cite{joshi2026realdocbench,park2026induspecqa}. Those are
+expert-annotated and domain-authentic where this one is derived and
+encyclopaedic; the contribution here is the refusal half.
+
+A fourth finding constrains what a model-annotated measurement may be
+reported to mean, and it bites hardest in the second corpus this paper
+introduces. The annotation guideline is a \emph{first-class error source} in
+model annotation, not a formality: SILICON decomposes LLM-annotation
+measurement error into four sources, the first being guideline-induced error
+from inconsistent annotation criteria, and frames model identity as an error
+to control rather than a capability to buy~\cite{cheng2024silicon}; a 2026
+ACL main-conference paper reports that models ``often struggle with the
+specialized conventions of gold-standard benchmarks'' and proposes guideline
+refinement as an alignment mechanism~\cite{kim2026guidelines}. The principle
+is published; what this paper adds is a factor of nine, and that it lands on
+the \emph{reported system measurement} rather than only on the labels.
+
+\subsection{Contradiction and conflict detection}
+
+NLI is the standard instrument~\cite{williams2018mnli,nie2020anli}.
+ContextConflict~\cite{yang2026contextconflict}: six conflict types, factual,
+inferential, temporal, granularity, perspective and ambiguity, of which only
+two are genuine contradictions, the strongest published justification for a
+\emph{topical} gate and a conflict \emph{type}, not a binary flag.
+ConflictScore~\cite{liu2026conflictscore}: decomposes responses into atomic
+claims and labels each against each grounding document.
+
+\paragraph{What changed in 2026, and what it forces us to narrow.} GRAB-RAG
+\cite{setiawan2026grabrag} finds that models still answer \emph{41.6\%} of
+misleading questions under explicit abstention prompting, and concludes that
+prompt-based abstention asks whether context is sufficient rather than
+whether it is correct. This work reproduces that finding in industrial text,
+so the negative result corroborates it in a new domain rather than surprising
+locally; with SURE-RAG, Certify and Sieve and Sage as above, our gate is
+consequently an \emph{answer-in-context detector}, not a sufficiency judge.
+HALT-RAG \cite{goswami2025haltrag}, the closest published pre-emption,
+combines a calibrated NLI ensemble with lexical signals under a
+precision-constrained abstention policy, and Kontrast \cite{wei2026kontrast}
+formalises the temporal-change distinction we implement as a supersession
+check; HALT-RAG is a \emph{post-hoc} verifier that never retrieves, and its
+Future Work names integrating detectors like it in a live RAG pipeline as the
+critical next step, which is our Section~\ref{sec:industrial}, where the
+detector is measured end-to-end on a corpus that contains conflicts.
+Beyond the Reranker
+\cite{singh2026beyondreranker} finds that retrieval enhancements stop paying
+once a strong reranker is present, and that the gains come almost exclusively
+from homogeneous, predominantly Wikipedia prose corpora, which ours is not.
+WIKICOLLIDE, with CLAIRE \cite{semnani2025wikicollide}, measures at least
+3.3\% of English Wikipedia facts as contradicting another fact, and the
+inconsistency propagates into 7.3\% of FEVEROUS examples, a corpus built from
+industrial documentation; theirs is a corpus-level measurement whose unit is a
+pair of facts anywhere in the corpus, ours a surface mechanism over the
+passages retrieved for one query, so no corpus-level consistency rate is
+claimed here and the absence of contradictions in this corpus is a property of
+a narrow slice of encyclopaedic prose rather than a finding about Wikipedia.
+
+\paragraph{Point-in-time regulatory corpora, and what they are for.}
+Building a corpus that provably contains conflicts, with their types known
+without annotation, is a published method. NitiBench+\cite{akarajaradwong2026nitibench}
+constructs a temporal legal question-answering benchmark across 17 Thai
+domains from point-in-time statute snapshots; Asking For An Old Friend
+\cite{prior2026oldfriend} diagnoses temporal failure modes in statutory
+question answering over the same kind of snapshot; and When Do LLMs Apply the
+Wrong Law?\cite{huang2026wronglaw} applies versioned statutes to the question
+of which law applies. This paper does not claim the method. Those works use a
+versioned corpus to decide \emph{which law applies}; here the same provision
+read at two issues \emph{is} a conflict, with its type known by construction,
+so the published method is pointed at a new task. On the detector side,
+\emph{Detecting Is Not Resolving}~\cite{yu2026detecting} names the gap this
+paper measures --- a system can detect that two sources conflict and still
+fail to say which one governs --- and DRAGged into Conflicts
+\cite{cattan2025dragged} builds a benchmark of conflicting sources and
+addresses them with an intervention rather than a taxonomy.
+
+\section{The Framework}
+
+The framework has three stages: ingestion (offline), retrieval and generation
+(online).
+
+\begin{figure}[t]
+\centering
+\begin{minipage}{0.92\linewidth}
+\small
+\textbf{Stage 1 --- Ingestion (offline).}
+parse $\rightarrow$ chunk (text\,$\vert$\,table\,$\vert$\,chart) $\rightarrow$
+tag category $\rightarrow$ embed $\rightarrow$ index.
+
+\textbf{Stage 2 --- Retrieval (online, per query).}
+form check $\rightarrow$ embed query $\rightarrow$ category pre-filter
+$\rightarrow$ BM25 leg $+$ dense
+leg $\rightarrow$ reciprocal rank fusion $\rightarrow$ cross-encoder rerank
+$\rightarrow$ \textbf{confidence gate} $\rightarrow$ modality quota.
+
+\textbf{Stage 3 --- Generation (online, per accepted query).}
+per-claim tagging $\rightarrow$ citations $\rightarrow$ contradiction flag
+$\rightarrow$ tagged answer.
+\end{minipage}
+\vspace{2pt}
+\caption{The three-stage pipeline. The confidence gate is the load-bearing
+element: when it rejects, the language model is never invoked.}
+\label{fig:pipeline}
+\end{figure}
+
+\subsection{Ingestion and retrieval}
+
+A PDF is a visual object: a page lays out text blocks, ruled tables and
+figures, and becomes a table only once the ruling lines are understood. An
+industrial corpus keeps its binding requirements in tables, so the parser is
+structural: blocks with bounding boxes are classified as \emph{text},
+\emph{table} or \emph{chart}. Tables are serialised to markdown, merged cells
+forward-filled, never split; text is chunked into 120-word windows with
+30-word overlap. Modality composition is measured and reported, since it
+predicts whether modality-balancing can have any effect.
+
+The lexical leg is BM25~\cite{robertson2004prf}, implemented from first
+principles:
+\begin{equation}
+\mathrm{BM25}(q,D)=\sum_{t\in Q}\mathrm{IDF}(t)\,
+\frac{f(t,D)(k_1+1)}{f(t,D)+k_1\big(1-b+b|D|/\overline{dl}\big)},
+\label{eq:bm25}
+\end{equation}
+with $k_1=1.2$ and $b=0.75$. The dense leg embeds the query and every chunk
+with \texttt{BAAI/bge-m3} (1024 dimensions, L2-normalised) and ranks by
+cosine similarity. The two rankings are fused by Reciprocal Rank
+Fusion~\cite{cormack2009rrf},
+\begin{equation}
+\mathrm{RRF}(d)=\sum_i \frac{1}{k+r_i(d)},\qquad k=60,
+\label{eq:rrf}
+\end{equation}
+because BM25 scores, cosine similarities and cross-encoder logits are
+incomparable: summing them needs a fitted weighting that does not transfer
+across corpora, whereas rank is scale-free. Bruch et
+al.~\cite{bruch2023fusion} found RRF at least as good as learned
+score-combination across 23 runs, with \emph{tuned} weights failing to
+generalise out of domain. A cross-encoder then reranks the shortlist; its
+output is a \emph{logit, not a probability}, whose distribution shifts with
+query difficulty.
+
+\subsection{The confidence gate}
+
+With $R$ the event that a chunk is relevant and $d$ the evidence, Bayes'
+theorem in odds form is
+\begin{equation}
+P(R\mid d)=\frac{P(R)}{P(d\mid\neg R)}\cdot\frac{P(d\mid R)}{P(d\mid\neg R)},
+\label{eq:bayes}
+\end{equation}
+and the gate uses a logistic model on log-odds,
+\begin{equation}
+P(R\mid d)=\sigma(\beta_0+\beta_1 x),\qquad \sigma(z)=\frac{1}{1+e^{-z}},
+\label{eq:posterior}
+\end{equation}
+fitted by maximum likelihood on a split held out by \emph{query}, not by
+candidate.
+
+The gate is a \emph{query-level} decision: not whether this candidate is the
+gold chunk, but whether the context contains the answer at all. With about
+fifty candidates per query and one gold chunk, chunk-level positives have a
+base rate of roughly 2\%, so a classifier answering ``nothing is relevant''
+is right 98\% of the time; fitting against that label yields a large negative
+intercept and a nearly flat slope, so calibration metrics look excellent:
+they measure the base rate, not the filter. The label is therefore 1 when the
+context contains a gold chunk, found or missed: in both cases the correct
+behaviour is to refuse. The five features, all available before generation:
+the top cross-encoder score, the mean of the top three scores, the best BM25
+and RRF scores, and the number of candidates clearing a low relevance bar.
+
+The gate is control flow:
+\begin{equation}
+\begin{aligned}
+&\text{if } P(\text{context sufficient}) < \tau:\ \text{return no-evidence response},\\[-1pt]
+&\text{else } \mathcal{C}=\text{accepted chunks}.
+\end{aligned}
+\label{eq:gate}
+\end{equation}
+It cannot be talked past: no output reaches it; its refusal is auditable
+(``maximum calibrated relevance probability $0.312$ against threshold
+$0.500$'' is checkable, ``the model seemed unsure'' is not); and it is
+portable without retraining, which matters across industrial categories:
+Self-RAG's reflection tokens would be re-learned per category, and Huang
+et al.~\cite{huang2024selfcorrect} show self-correction degrades without
+external feedback. The \emph{calibration} is a separate matter and is not
+portable: the threshold is a fitted parameter, and it is re-fitted per corpus
+and per retriever, which is measured rather than assumed. CRAG, the nearest prior art, responds to low confidence by
+improving the evidence and continuing, and calls the LLM in every branch.
+
+\subsection{The other three mechanisms}
+
+A form check runs before retrieval, refusing an empty query, a query of only
+function words or deictics, and a query ending on a word that cannot end a
+question; it is measured rather than asserted, and on
+the focus domain it refused 6 of
+16 hand-labelled malformed stems
+(37.5\%) against 0 false
+rejections among 13 well-formed stems.
+
+The \emph{modality quota} is a floor on the share of the context taken by
+tables (0.15) and charts (0.05), implemented as a swap. Its
+\emph{pipeline position} is decisive: before the reranker it proposes a
+membership for the final ten, which the reranker can reorder but not change,
+so the floor binds; after the reranker it swaps the lowest-ranked chunk for
+one the reranker already ranked below the cut, which tends to import the
+wrong chunk and displace a good one. Section~V reports the measured
+difference: on the focus domain and the six-category corpus it belongs before the cross-encoder rather than after it, while on the industrial corpus the ordering reverses by 0.8 points of Recall@10, and
+None of these differences is statistically significant at the 0.05 level (p = 0.157, 0.480, 0.317 respectively). The
+shipped system applies the quota before the cross-encoder --- it was built
+the other way round and was moved on 16 November 2026, after which
+the measurements that depend on the retrieval were re-taken with it, apart from the per-claim band evaluation against the gold evidence, the per-claim band evaluation against the retrieved evidence and the industrial corpus's per-claim band replication, whose labels come from a panel of reader agents under a written protocol and could not be reproduced.
+
+Two accepted chunks conflict only when two gates agree,
+\begin{equation}
+\mathrm{flag}(A,B)=\mathrm{contradiction}(A,B)\wedge\mathrm{same\_subject}(A,B),
+\label{eq:flag}
+\end{equation}
+where \texttt{contradiction} is the NLI probability from a DeBERTa-v3 MNLI
+model and \texttt{same\_subject} combines embedding cosine similarity
+(threshold 0.55) with Jaccard overlap of concrete identifiers (threshold
+0.10). The conjunction lets the two error types be traded off separately. A
+\emph{numeric conflict}, two passages attaching different values to the same
+quantity, is an explicit contradiction regardless of confidence. A
+\emph{revision-supersession check} is required: ``Rev 3 sets EOQ at 187 units''
+and ``Rev 4 sets EOQ at 95 units'' are both true (Rev 4 replaced Rev 3), so
+calling that a contradiction is wrong.
+
+Answers are decomposed into atomic claims by sentence and split at discourse
+markers. For each claim the NLI model gives an entailment probability $e_i$
+per retrieved chunk, combined by the noisy-OR model: each chunk is a fallible
+witness and the claim is supported if one covers it,
+\begin{equation}
+q = 1-\prod_i (1-e_i).
+\label{eq:noisyor}
+\end{equation}
+The band is cut on $q$: $q\geq0.80$ is \emph{grounded}, $q\geq0.45$
+\emph{inferred}, otherwise \emph{uncertain}; information gain in bits is
+reported beside it, and is symmetric about $q=0.5$.
+
+\section{Evaluation Protocol}
+\label{sec:protocol}
+
+\paragraph{Benchmark.} We evaluate on a \emph{silver-standard} benchmark
+derived from an independently constructed public industrial corpus, not the
+300-query expert-annotated SupplyChainQA v7 of the earlier project report,
+which is proprietary and unreleased. Labels are derived from the document: a
+table cell becomes a lookup question with the table chunk as gold, a
+definitional or numeric sentence a question with its chunk as gold. This is
+slightly optimistic, since the derived gold chunk always contains the answer
+somewhere, inflating \emph{absolute} recall without biasing the
+\emph{comparison} between systems scored against the same labels. The
+benchmark contains deliberately unanswerable questions on topics absent from
+the corpus, without which no confidence-gating experiment is meaningful: a
+system answering everything scores 100\% recall and 0\% hallucination.
+
+\paragraph{The corpus and its provenance.} Every measurement here uses a public
+corpus of 46 industrial-engineering articles
+(2{,}383 chunks, six categories), assembled from
+English Wikipedia via the MediaWiki API, licensed CC BY-SA 4.0. It
+substitutes for the specification's corpus of 634 chunks across 24
+proprietary supply-chain documents, which cannot be redistributed and so
+cannot ship with the paper or be re-run. The substitute ships in full with a
+manifest giving each document's Wikipedia URL, upstream revision, the SHA-256
+of the bytes used, and its chunk count. The focus is one industrial domain,
+supply chain management (14 documents,
+735 chunks, 176 questions); the rest
+support the cross-category transfer objective.
+
+\paragraph{What ``silver-standard'' means here.} The first version was worse
+than that word suggests: a quarter of its answerable questions were malformed,
+because the generator's subject pattern could match mid-clause or after a
+truncated word, giving questions like
+``What value is stated for a teep in the source documentation?''. A benchmark
+whose questions are a quarter malformed measures nothing. The generator now
+anchors each match to a sentence start, rejects subjects with a verb, pronoun
+or dangling preposition, rejects table cells with markup, and keeps acronyms
+in their own case, so questions ask about TEEP rather than ``teep''. The result
+is a smaller benchmark, and it remains silver-standard: labels are derived,
+not annotated.
+
+\paragraph{Metrics and statistics.} Retrieval is measured by Recall@$k$,
+Precision@$k$, MRR, nDCG@$k$ with graded relevance
+(3 for a chunk carrying a binding specification, 1 otherwise), and
+\emph{per-modality recall}; generation by faithfulness, citation precision
+and citation recall. Queries with no gold set are excluded from recall and
+nDCG aggregates, not averaged in as zero. Comparisons are paired on the same
+queries: binary outcomes by McNemar's exact test, continuous per-query
+outcomes by the Wilcoxon signed-rank test, which suits bounded, left-skewed
+faithfulness. Effect sizes (Cohen's $d_z$, Cliff's $\delta$) accompany every
+$p$-value, and bootstrap percentile intervals cover the headline figure.
+
+\paragraph{Gate as a selective-prediction policy.} We sweep $\tau$ and report
+the fraction of answerable questions answered, the fraction of unanswerable
+questions refused, abstention precision and coverage. The operating point
+follows a stated rule, the highest $\tau$ still answering
+at least 90\% of answerable questions, not a favourable metric, and the full
+risk--coverage curve is reported. Because reranking in hybrid retrieval
+lowers the correct abstention rate, the calibration is fitted
+\emph{separately for each retrieval configuration compared}.
+
+\section{Results}
+
+\subsection{Retrieval ablation}
+
+Seven systems were compared on the same 176 queries over the
+735-chunk, 14-document focus corpus,
+supply chain management. The six-category corpus carries the transfer
+experiment, which needs more than one category. Table~\ref{tab:ablation} reports
+the results; paired Wilcoxon tests between adjacent rungs appear in the last
+column.
+
+\begin{table}[t]
+\caption{Retrieval ablation on 176 silver-standard queries over the
+735-chunk focus-domain corpus. $\Delta$R@10 is the paired Wilcoxon signed-rank
+difference to the preceding rung.}
+\label{tab:ablation}
+\centering
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+System & R@5 & R@10 & R@20 & MRR & nDCG@10 & Tbl R@10 \\
+% The rows between \midrule and \bottomrule are written by
+% deliverables/scripts/make_tex_results.py from the measured ablation JSON.
+% A hand-written copy of a generated table is a copy that goes stale
+% silently, and this one had: it still carried the pre-encoder-swap numbers.
+% The empty row is a placeholder so that the table compiles before the
+% generator runs; it carries no measurement and is replaced either way.
+\midrule
+A. BM25 only & .969 & .969 & 1.000 & .736 & .792 & 1.000 \\
+B. Dense only & .781 & .812 & .875 & .652 & .688 & .875 \\
+C. Hybrid (RRF) & .969 & 1.000 & 1.000 & .798 & .847 & 1.000 \\
+D. \quad$+$ rerank & .906 & .969 & 1.000 & .795 & .836 & 1.000 \\
+E. \quad$+$ category filter & .906 & .969 & 1.000 & .795 & .836 & 1.000 \\
+F. \quad$+$ quota (pre-rerank) & .969 & 1.000 & 1.000 & .819 & .864 & 1.000 \\
+G. \quad$+$ quota (post-rerank) & .906 & .938 & .938 & .789 & .826 & 1.000 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\begin{tabular}{lrl}
+\toprule
+Rung & $\Delta$R@10 & $p$ (Wilcoxon) \\
+\midrule
+A$\to$B & $-0.156$ & $2.5\!\times\!10^{-2}$ \\
+B$\to$C & $+0.188$ & $1.4\!\times\!10^{-2}$ \\
+C$\to$D & $-0.031$ & $3.2\!\times\!10^{-1}$ \\
+D$\to$E & $+0.000$ & $1.0\!\times\!10^{0}$ \\
+E$\to$F & $+0.031$ & $3.2\!\times\!10^{-1}$ \\
+F$\to$G & $-0.062$ & $1.6\!\times\!10^{-1}$ \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+% BEGIN RESULTS-NUMERIC
+\paragraph{Fusion beats the dense leg, and the dense leg is the weaker one.}
+Recall@10 was 0.969 for BM25 alone, 0.812 for dense
+alone and 1.000 for the fused system. Against the dense leg that
+is a gain of +0.188 ($p=1.4\!\times\!10^{-2}$); against the lexical leg it is
++0.031 ($p=3.2\!\times\!10^{-1}$), which is not significant --- fusion stopped
+being a loss, and on this corpus it is not demonstrably a win.
+The dense-only system is still behind BM25, which is a property of the encoder rather than a defect of the framework: retrieval is asymmetric, so a passage does not resemble a question, it \emph{answers} it. The first version of this work used a general-purpose sentence encoder here and the deficit was larger; a retrieval-trained encoder narrowed it. A hybrid is only as good as its weaker leg, and the weaker leg spends the stronger leg its slots.
+
+\paragraph{Reranking moves nothing on this corpus, and its recall effect depends on the pool it is given.}
+With a top-50 rerank pool, reranking lowered Recall@10 from 1.000 to 0.969 ($p=3.2\!\times\!10^{-1}$),
+and moved MRR from 0.798 to 0.795 and nDCG@10 from
+0.847 to 0.836. With a top-10 pool --- the same size as
+the final context --- the same reranker left Recall@20 unchanged at 1.000, because a reranker can only
+reorder within the pool it is given, so a small pool forces it to discard
+relevant tail items. On the six-category corpus, sweeping the pool size over 5, 10, 20, 50, 100 gives a curve that rises and then falls: Recall@10 climbs from 0.902 at a pool of 5 to a peak of 0.955 at a pool of 10, and then declines to 0.932 by a pool of 100. The extra candidates are distractors competing for the same ten slots, so a larger pool costs. A pool the size of the final context is the best of the sweep, not the smallest.
+
+\paragraph{The category pre-filter is a no-op on the focus domain.} The filter left Recall@10 unchanged at 0.969 ($p=1.0\!\times\!10^{0}$)
+and table-specific Recall@10 was unchanged at 1.000. Neither overall recall nor table-specific recall moves, and that is the expected outcome: the focus corpus has one category, so there is nothing for the filter to remove.
+
+\paragraph{The quota's effect depends on where it is applied.} Applied before the reranker it moves Recall@10 by +0.031 (0.969 to 1.000, $p=3.2\!\times\!10^{-1}$) and reaches table recall 1.000. Applied after the reranker it moves recall by -0.031 and reaches table recall 1.000 --- so the post-rerank placement is 6.2 points worse on Recall@10 than the pre-rerank one ($p=1.6\!\times\!10^{-1}$). The mechanism is about what each stage can undo: a pre-rerank quota proposes the membership of the final ten and the cross-encoder can only reorder it, whereas a post-rerank quota must import candidates the cross-encoder already ranked below the cut.
+
+
+\paragraph{The corpus composition predicts the outcome.} The corpus is
+88.8\% text, 6.0\% table and
+5.2\% chart, closely matching the 2.3\% chart and 7.1\%
+table of the earlier project-report corpus. With so few non-text chunks, a
+two-table quota can only draw on tables deep in the ranking --- tables less
+likely to be relevant --- displacing relevant prose, so a null or negative
+modality effect is the \emph{expected} outcome on such a corpus, not a bug.
+That is why the framework measures the modality composition, and it explains
+the previously reported null result as a power limitation rather than a
+defect. On this corpus the post-rerank quota left table recall unchanged at 1.000 while costing
+3.1 points of overall recall.
+% END RESULTS-NUMERIC
+
+\subsection{The confidence gate, contradiction surfacing and transfer}
+The gate was evaluated as a selective-prediction policy over a threshold
+sweep with the calibration fitted on a query-level 60/40 split. The fitted
+coefficients differ substantially from the earlier project report's values
+($\beta_0=2.943$, $\beta_1=1.680$, fitted on 30 queries of a different
+corpus), which is not a contradiction but a demonstration that \emph{the
+calibration is a fitted parameter of the deployment, not a constant of the
+architecture}. The operating point trades coverage for correctness and both
+sides must be reported: the always-answer baseline refuses no unanswerable
+questions, so reporting only the refusal rate overstates the gain while
+reporting only the answerable answer rate hides the cost.
+
+The joint contradiction gate was compared against the NLI-only gate over every
+pair of accepted chunks, with the prevalence of true conflicts and the
+always-flag and never-flag baselines reported alongside. The same-subject check
+suppresses precisely the pairs an NLI model labels \emph{contradiction} when
+forced to produce a label on two passages about different sub-topics. Its
+precision was then measured against reader labels rather than against a proxy.
+The gate's precision, measured against reader labels rather than against a proxy, is 0\%: none of the 20 labelled alarms was called a contradiction by either of two annotators that do not share a model, both blind to the detector's scores, both 14 of 14 on a control set with known labels, in agreement on the contradiction decision for 101 of the 101 pairs they labelled (95\% upper bound 16.1\%). The annotators are models rather than people, so the number says the alarms are unconfirmed by a reader rather than that no reader would confirm one. The measurement also exposed two defects in the detector, which were repaired: the quantity branch keyed numbers to the nearest distinctive word, so it fired on citation years, and the subject check let topical similarity through on its own, which made it a topic check. Requiring a shared measurement and a shared instance cut the alarms from 81 to 20. The readers also find 0 contradictions in a random sample of 80 pairs the gate did not flag: this corpus holds concept-level prose, not instance records, so it does not contain the phenomenon the mechanism detects. The
+gate's findings are surfaced only when the measured precision of the branch
+that raised them clears a calibration floor --- the same discipline the answer
+gate applies to an answer --- which on this corpus leaves
+20 findings surfaced and 0 withheld.
+The detector's own positive control -- pairs whose correct behaviour is known in advance, written in the industrial register but not drawn from the corpus -- is 11 of 11, with every contradiction caught and every non-conflict left alone. So the mechanism works; this corpus does not test it. The
+revision-supersession check suppresses a further class whose importance is not
+a matter of degree: telling a practitioner that a policy is inconsistent when
+it was in fact updated is the single most damaging error available to the
+system.
+
+The gate's coefficients and threshold were fitted on one half of the six
+industrial categories and applied unchanged to the held-out half, with a
+leave-one-category-out variant. The \emph{ranking} of configurations transfers
+across industrial sub-domains; the \emph{threshold} does not, and the error is
+systematic --- a threshold fitted on one configuration is too permissive where it
+is transferred, and too permissive in the direction that flatters the
+configuration it is transferred to. At the tuning half's threshold applied
+unchanged to the held-out half, the gate answers
+1.000 of the answerable questions against
+0.940 when the weights are refitted there, and refuses
+0.139 of the unanswerable ones against
+0.236. This is the practical form of the decline in
+abstention reported by Thakur et al., and it is why the calibration is
+re-fitted per arm.
+
+\subsection{A defect in our own benchmark, found by auditing it and then
+repaired}
+\label{sec:unansaudit}
+
+The unanswerable half of a refusal benchmark is where the benchmark lives or
+dies, and it was the half we audited last. The audit found a serious defect.
+A classifier that saw only the question --- no retrieval, no evidence, no
+reasoning about the corpus --- told the answerable questions from the
+unanswerable ones at an ROC AUC of 0.999. The mechanism was
+concrete: the half's designated hard case asked about an identifier verified
+absent from the corpus (\texttt{SKU AST-5454}), and every one of those
+questions carried an identifier shape that no answerable question carried, so
+one regular expression separated the two classes perfectly, catching
+76.4\% of the class with no false positives at all. If a
+system's unanswerability is visible in the question, a system refusing on the
+question's shape scores as well as one reading the passages, and the benchmark
+cannot tell them apart.
+
+We rebuilt the half rather than reporting around it. The repaired class uses
+the answerable class's own three question stems, its own source documents and
+its own label machinery --- the definition branch finds a definition, the
+numeric branch finds a value, a table cell holds the answer --- and is labelled
+by the complement of exactly those tests. Each repaired question was further
+drawn to have a \emph{structural twin} in the answerable class: the same stem,
+the same subject size, the same shape markers, and no word in common;
+106 of 110 of them have one. Re-measured, the shape-only classifier
+scores 0.608 against a permutation null of 0.468, and
+the one-rule shortcut carries 0.0\%. A question-only policy
+--- a model given the question and no documents, asked whether the corpus
+could answer it --- discriminates the two classes at a ROC AUC of
+0.675 before the repair and 0.564 after,
+where 0.5 is no discrimination at all. The same artefact has been reported in
+the same task for a clinical question-answering benchmark, where the
+unanswerable questions ``can often be discerned simply by filtering with
+specific N-gram patterns'' and the evaluation is thereby compromised
+\cite{yang2024ehrsql}; the shortcut-removal construction used here is the one
+applied to insufficient-evidence examples elsewhere
+\cite{mondal2026beforeanswering}; and framing a benchmark repair as the
+contribution follows the precedent of \cite{brunello2026folio}. What is not
+reported anywhere is the question-only separation of an answerable/unanswerable
+split in a RAG \emph{refusal} benchmark, its effect on the reported refusal
+rate, and a repair by regenerating the unanswerable class with answerable-style
+templates \cite{gautam2023unanswerable}.
+
+The refusal rate is now reported by stratum. At $\tau = 0.05$ the gate
+refuses 23.6\% of the corpus-anchored questions
+(26 of 110) --- questions the corpus discusses but states no
+value for --- and 76.5\% of the out-of-domain ones
+(26 of 34), the latter being unanswerable for any system that
+knows what the corpus is about.
+
+% BEGIN INDUSTRIAL-SECTION
+\section{External Validity: A Second, Authentic, Versioned Corpus}
+\label{sec:industrial}
+
+The corpus of Section~\ref{sec:protocol} is encyclopaedic prose, and it
+cannot close two of the objectives this paper sets: it contains no conflict
+a practitioner would recognise as one, and it is not the class of document a
+practitioner reads. A second corpus closes both. It is the United States
+\emph{Electronic Code of Federal Regulations}, read through the versioner
+API, which serves any regulation as it stood on any past date. The text is
+authentic and binding --- these are the regulations a plant is measured
+against --- and public domain, so it ships with the paper. It is also
+versioned: the same section read on 2021-12-31 and on
+2026-06-01 is the same rule at two issues, and
+948 amended-paragraph pairs result, of
+which 361
+(38.1\%) state different
+numbers in the two vintages. Such a pair \emph{is} a conflict, and its
+type is known by construction, with no annotation required.
+
+The corpus holds 110 documents and 2,443 chunks
+in 4 regulatory regimes, with a
+444-query benchmark (247 answerable,
+197 unanswerable) audited for the same shortcut the
+first benchmark had: the one-rule identifier shortcut catches
+0 of
+197, and a question-only classifier separates the two
+classes at ROC AUC 0.708 against a permutation null of
+0.505.
+
+\subsection{The retrieval findings replicate}
+
+The seven-rung ablation was re-run unchanged on the industrial corpus.
+
+\begin{table}[t]
+\centering
+\caption{Retrieval ablation on the industrial corpus: 247 answerable queries over 110 federal regulatory documents (2,443 chunks). Tbl R@10 is the recall over the table-bearing chunks only.}
+\label{tab:ind-ablation}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+System & R@5 & R@10 & MRR & nDCG@10 & Tbl R@10 \\
+\midrule
+A. BM25 only & 0.8785 & 0.9595 & 0.7554 & 0.8026 & 0.969 \\
+B. Dense only & 0.8300 & 0.8785 & 0.6600 & 0.7104 & 0.846 \\
+C. Hybrid (RRF) & 0.9312 & 0.9595 & 0.7711 & 0.8160 & 0.946 \\
+D. $+$ cross-encoder & 0.9757 & 0.9879 & 0.8269 & 0.8671 & 0.977 \\
+E. $+$ category filter & 0.9717 & 0.9879 & 0.8339 & 0.8724 & 0.977 \\
+F. $+$ quota (pre-rerank) & 0.9717 & 0.9798 & 0.8378 & 0.8740 & 0.985 \\
+G. $+$ quota (post-rerank) & 0.9717 & 0.9879 & 0.8333 & 0.8724 & 0.977 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+The lexical leg carried the pipeline: BM25 reached Recall@10
+0.9595 against the dense encoder's
+0.8785 (-0.081,
+$p=0.0003$, $n=247$). Lexical
+retrieval beating an off-the-shelf dense encoder on legal text is already
+published, so it is not claimed as new; what the measurement contributes is
+the corollary, that neither the fusion (+0.000,
+$p=1.0000$) nor the category pre-filter
+(+0.000, $p=1.0000$) added anything
+measurable on top of the lexical baseline.
+
+The candidate-pool curve, saturated on the focus corpus, is sharp here: at a
+pool of 50, Recall@20 reaches
+1.000 while Recall@10 stands at
+0.988, so 1.21\% of the golds are found
+and then pushed out of the ten-chunk context by the reranker's own ordering.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig1_pool_size.pdf}
+\caption{Recall against the size of the rerank candidate pool, on the focus corpus and on the industrial corpus.}
+\label{fig:fig1}
+\end{figure}
+
+
+\subsection{Detection and typing decompose}
+
+This is the clearest new result in the paper, and it needed a corpus that
+contains conflicts to be visible. 240 pairs were
+assembled --- 90 amendment pairs and
+150 retrieval neighbours --- mined by
+the \emph{retriever's} signal and never by the detector's, so the pool
+cannot flatter the detector. They were read by a panel of domain
+specialists, one per regulatory regime, with a generalist control, all blind
+to the detector.
+
+A conflict detector's precision is two numbers, not one. \textbf{Detection}
+asks whether the alarm points at something real; \textbf{typing} asks
+whether the branch that raised it is the branch that owns the conflict.
+Against the panel's labels, detection precision is
+0.659 (95\% CI
+0.505--0.784)
+and typing precision 0.073 (95\% CI
+0.025--0.194).
+Against the construction labels, whose conflict type is known without
+judgement, the separation is starker: detection
+1.000 --- every alarm points at a real
+conflict --- and typing 0.000. The
+semantic branch fired on 26 construction-labelled pairs, of
+which 24
+were quantity conflicts; the revision branch fired on 3,
+of which 3
+were quantity conflicts; and the quantity branch fired on
+0, with a recall of
+0.000 against the
+35 construction-labelled limit changes.
+
+So the mechanism \textbf{finds} the conflicts and \textbf{reports them as
+the wrong kind}: it calls supersessions contradictions and cannot say which
+version is in force, because nothing in the retrieved passages says which
+issue either of them is.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig6_contradiction_precision.pdf}
+\caption{The contradiction detector's precision against the base rate of real conflicts in the same population, with 95\% Wilson intervals; a filled marker clears the framework's 0.5 calibration floor and the branch would act, a hollow one does not.}
+\label{fig:fig6}
+\end{figure}
+
+
+\subsection{The annotation, not the detector, was the binding constraint}
+
+The comparison above was confounded --- the old-rubric reader was a
+generalist, so ``old rubric'' and ``generalist'' were the same cell. A
+$2\times2$ factorial separates them, with the pairs, the detector and the
+regime briefs held constant.
+
+\begin{table}[t]
+\centering
+\caption{The rubric $\times$ reader-specialisation factorial. Each cell is an independent reading of the same 240 pairs by the same detector, under the same regime briefs. Detection precision is the fraction of the reader's alarms that correspond to a real conflict; typing precision is the fraction raised by the branch that owns it. The lower block is the difference in detection precision between the two cells of each row and column.}
+\label{tab:ind-factorial}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llrr}
+\toprule
+Reader & Rubric & Detection & Typing \\
+\midrule
+generalist & old (marker test) & 0.293 & 0.073 \\
+generalist & sharpened (structural test) & 0.659 & 0.073 \\
+specialist & old (marker test) & 0.341 & 0.073 \\
+specialist & sharpened (structural test) & 0.659 & 0.073 \\
+\bottomrule
+\end{tabular}
+\vspace{3pt}
+\begin{tabular}{lr}
+\toprule
+Effect & $\Delta$ detection \\
+\midrule
+\emph{Rubric}, at the generalist & \textbf{+0.366} \\
+\emph{Rubric}, at the specialist & \textbf{+0.317} \\
+\emph{Specialisation}, at the old rubric & +0.049 \\
+\emph{Specialisation}, at the sharpened rubric & +0.000 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+\emph{The rubric's wording moved the measured precision by about a third of
+a point; the reader's domain specialisation moved it by almost nothing.}
+The mechanism is concrete: the old rubric required a version marker, and a
+regulation does not write its own version in its text, so it missed
+63 of the
+82 supersessions it was asked to find, calling them
+\texttt{no\_conflict}. The lesson is about measurement: a number that
+moves by a factor of nine with the wording of its own rubric is not yet a
+measurement of the thing under test. The qualification is owed: the rubric
+changed the definition of the target as well as the procedure for
+recognising one, and ``specialisation'' was a brief to a fixed reader model,
+not a different capability.
+
+\subsection{The per-claim band measures agreement, not correctness}
+
+The third mechanism was measured on both corpora, with the same generator,
+under two evidence protocols each.
+
+\begin{table}[t]
+\centering
+\caption{The per-claim confidence band against an independent reference, on both corpora and both evidence protocols. The kappa column is the agreement between the band and the reference on the binary question \emph{is this claim supported}. The band-error column gives the error rate of the \emph{grounded}, \emph{inferred} and \emph{uncertain} bands in that order. The last column is the share of answers containing no wrong claim, before and after keeping only the \emph{grounded} claims.}
+\label{tab:ind-band}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+Corpus and protocol & $\kappa$ & Band error (g/i/u) & Clean \\\midrule
+Focus, gold & 0.049 (-0.026, +0.124) & 0.542 / 0.513 / 0.610 & 34.4\% $\rightarrow$ 50.0\% \\
+Focus, retrieved & 0.069 (-0.002, +0.139) & 0.118 / 0.103 / 0.220 & 59.4\% $\rightarrow$ 81.2\% \\
+Industrial, gold & 0.055 (-0.027, +0.138) & 0.077 / 0.119 / 0.139 & 91.1\% $\rightarrow$ 94.9\% \\
+Industrial, retrieved & 0.017 (-0.066, +0.101) & 0.006 / 0.017 / 0.026 & 98.3\% $\rightarrow$ 99.6\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+\emph{Caveat.} the focus corpus's gold protocol and the focus corpus's retrieved protocol were measured before the modality quota was moved to the other side of the cross-encoder, and the reference labels they rest on come from a panel of reader agents under a written protocol that could not be reproduced. They are quoted here as the earlier configuration's result.
+
+Against an independent reference the band is at chance on all four
+combinations ($\kappa$ 0.049, 0.069, 0.055,
+0.017); the three bands are indistinguishable on the gold
+protocols (0.542 / 0.513 / 0.610 and
+0.077 / 0.119 / 0.139) and ordered on
+the evidence the band itself saw (0.118 / 0.103 /
+0.220 and 0.006 / 0.017 /
+0.026). \textbf{The band measures whether the retrieved
+passages entail the claim --- agreement with itself --- not whether the claim
+is true.} As a filter it works: keeping only the \emph{grounded} claims
+raises the share of answers with no wrong claim from
+34.4\% to
+50.0\%
+on the focus corpus's gold protocol and from
+91.1\% to
+94.9\%
+on the industrial one. The positional comparison --- keeping the first half
+of an answer --- is the evidence for that reading rather than the finding
+itself: one of the four combinations gives a significant positional result
+and three do not ($p=0.0081$, $p=0.4174$, $p=1.0000$,
+$p=1.0000$).
+
+\subsection{What the second corpus does not establish}
+
+One jurisdiction, one language, one regulatory family. The labels are
+model-generated: the panel's agreement is reported in full, but agreement
+between readers is not confirmation that a label is right, and the thesis's
+own limitation table names this as the cost of replacing human annotators.
+The positional comparison did not replicate on three of four combinations, so
+the band is reported as a filter with a measurement decomposition, not as a
+ranking. And the lexical-over-dense result is a boundary condition on this
+pipeline with a general-purpose encoder, not a claim about dense retrieval.
+% END INDUSTRIAL-SECTION
+
+\section{Discussion}
+
+The framework's strongest property is that each mechanism is \emph{structural}:
+the gate is a branch rather than an instruction, the quota is enforced on the
+artefact the generator consumes, and the conflict report is an orthogonal
+conjunction rather than one classifier's opinion. Such properties are auditable,
+and auditability is functional: a refusal whose reason can be reconstructed
+from a score and a threshold is usable in a regulatory conversation. The second
+strength is the explicit separation of coverage from correctness: a single
+hallucination rate hides the trade-off. The third is the separation of
+\emph{detection} from \emph{typing} in the contradiction gate: a single
+precision number would have hidden the more consequential of the two, which
+is that the mechanism finds real conflicts and then reports them under the
+wrong label.
+
+The framework does \emph{not} resolve contradictions; it surfaces them, which
+the evidence suggests beats resolving. On the second corpus it goes further
+and does not even say which version of a superseded provision is in force,
+because nothing in the retrieved passages carries the version: a detector for
+regulatory text needs version metadata, or must be scoped to detection alone.
+It does not guarantee its own
+confidence: the calibration is empirical, under an exchangeability assumption a
+single-category corpus violates, so the conformal diagnostics are a limitation,
+not a guarantee. The runtime form check does not parse English: being lexical,
+it misses stems whose malformation is grammatical and cannot see a keyboard
+mash. It refuses 37.5\% of the hand-labelled malformed stems
+and fails open on what it cannot judge, the conservative direction.
+
+It does not beat long context on this corpus, and we measured both halves of that comparison. The most serious threat is a 2026 study reporting
+long-context systems ahead of semantic RAG in manufacturing safety; our corpus
+fits a modern context window, so the baseline is feasible. Experiment~7
+measures the cost half: the whole corpus is 202,529 tokens against
+the RAG arm's 2,246, priced in dollars. The long-context arm sends 74x more input tokens per query than the pipeline, which at the provider's cached-prefix pricing, with the corpus prefix served as a cache read on 33.0\% of the long-context arm's input tokens is a 58.8x input-cost ratio rather than 74x: the token ratio and the cost ratio are different numbers, and only the second one is a cost.
+The six-category corpus exceeds the 128K window most hosted models offer but
+fits the generator's 1M-token window, so the answer-quality half is measured on
+the focus domain, where the corpora are never pooled, not because the
+comparison was impossible. The answer-quality half of the comparison was measured on the focus domain. With the whole corpus in the prompt the generator answered 31 of 32 answerable questions, the same coverage as the pipeline, and it declined the unanswerable questions at a comparable rate (76 of 144 against 77 of 144), for 74 times the input actually sent per query. On coverage and on cost the result is settled: the whole-corpus prompt declines no more unanswerable questions than the pipeline does and costs 74 times as much to do it. On answer quality the margin is directional but not statistically significant once the answers are scored without the length confound.
+
+Three results bear on this threat. Agri-Query~\cite{chen2026agriquery}, the
+closest analogue to ours, favours retrieval: it places a 165-page
+agricultural-machinery manual (roughly 59K tokens) in the prompt and reports
+hybrid RAG beating direct long context, naive insertion significantly worse.
+The 2025--2026 consensus is not \emph{which} to use but \emph{when to route}:
+LaRA~\cite{lu2025lara} escalates only the queries that need it, and our
+long-context arm is the always-long-context arm of that decision, measured
+rather than assumed. Finally, \emph{Length Is Cheap, Competition Is Not}~\cite{liu2026lengthcheap}
+predicts our own failure mode: attention mass on evidence explains about 58\%
+of the variance in retrieval loss against at most 8\% for log-length, and one
+competing value multiplies the loss by 9--110x, so a whole-corpus prompt fails
+through competition among similar values, not length.
+MiniMax-M3 answered the same 32 answerable and 144 unanswerable questions behind five arms that share the generator, the prompt wording, the question set and the scorer, so a difference between them is attributable to the context and the gate and to nothing else. With the generator permitted to decline -- the deployed system -- the rate of answering the unanswerable questions was 0.535 (77 of 144), 0.417 (60 of 144), 0.375 (54 of 144) for the gate removed, the fitted framework and the random-refusal control respectively, and the accuracy on the answerable ones 0.633 (30 of 32), 0.800 (30 of 32), 0.714 (21 of 32) respectively. The gate's contribution is measured under both prompt conditions, and it holds in both. Under the cautious prompt -- the deployed system -- the hypothesis is supported, at a price: the gate reduced the rate of answering unanswerable questions from 0.535 to 0.417, a fall of 11.8 points, at the cost of answering 30 of 32 answerable questions. Paired question by question, the gate refused 23 of the questions the ungated arm answered and let through 6 of the ones it did not (exact McNemar p = 0.002). Under the answering prompt, which differs from the cautious one by a single sentence and by nothing else, the hypothesis is supported, at a price: the gate reduced the rate of answering unanswerable questions from 0.938 to 0.528, a fall of 41.0 points, at the cost of answering 30 of 32 answerable questions. Paired question by question, the gate refused 60 of the questions the ungated arm answered and let through 1 of the ones it did not (exact McNemar p = < 0.001). What the framework claims is therefore not that the gate reduces hallucination whatever the generator does, but that it is the one component whose behaviour does not depend on the generator's cooperation: the prompt can be wrong, and the gate still holds.
+
+\section{Conclusion}
+
+We presented an evidence-grounded RAG framework for industrial decision
+support and were deliberate about each claim's strength. The architectural
+contribution is incremental, positioned against published prior art rather than
+asserted as priority. The empirical contribution is a failure-mode
+characterisation: on an independently constructed public industrial corpus,
+cross-encoder reranking is shown to improve recall only when its candidate
+pool is an order of magnitude larger than the final context, the modality quota
+to bind only before the reranker, the category pre-filter to cost no recall while improving the ordering, its benefit coming
+from restricting the candidate pool the reranker sees rather than from reordering the fused
+ranking, so that the soft-prior alternative proposed as its repair does not reproduce it, and the corpus's modality composition to
+determine whether a modality-aware mechanism can have any effect at all. The
+methodological contribution is an evaluation protocol treating the confidence
+gate as a selective-prediction policy with a risk--coverage curve and a
+false-positive rate at a stated operating point, with always-flag and never-flag
+baselines.
+
+Its value depends on each mechanism being structural, on their trade-offs being
+measured rather than assumed, and on every claim naming its supporting passage.
+On a second corpus of versioned federal regulations those negative findings
+replicate --- the lexical leg carried the pipeline and neither the fusion nor
+the category pre-filter added anything measurable on top of it --- and the
+candidate-pool curve stops being saturated, so that the displacement of
+retrieved evidence out of the context becomes directly measurable. The
+clearest new result there is the decomposition: detection precision
+0.659 against readers' labels and
+1.000 against construction labels, against typing
+precision 0.073 and 0.000. A
+$2\times2$ factorial then shows that the wording of the annotation rubric,
+not the reader's domain specialisation, moved that measured precision, which
+is a warning about the measurement rather than a clean result about the
+mechanism.
+
+\section*{Acknowledgment}
+The author thanks Dr. Sri Krishna Kumar for supervision, and acknowledges the
+Department of Industrial and Systems Engineering, IIT Kharagpur.
+
+\begin{thebibliography}{99}
+\bibitem{lewis2020rag} P. Lewis, E. Perez, A. Piktus, et al., ``Retrieval-augmented generation for knowledge-intensive NLP tasks,'' in \emph{NeurIPS}, 2020, pp. 9459--9474.
+\bibitem{karpukhin2020dpr} V. Karpukhin, B. Oguz, S. Min, et al., ``Dense passage retrieval for open-domain question answering,'' in \emph{EMNLP}, 2020, pp. 6769--6781.
+\bibitem{asai2024selfrag} A. Asai, Z. Wu, Y. Wang, A. Sil, and H. Hajishirzi, ``Self-RAG: Learning to retrieve, generate, and critique through self-reflection,'' in \emph{ICLR}, 2024.
+\bibitem{yan2024crag} S.-Q. Yan, J.-C. Gu, Y. Zhu, and Z.-H. Ling, ``Corrective retrieval augmented generation,'' 2024. [Online]. Available: arXiv:2401.15884
+\bibitem{jiang2023flare} Z. Jiang, F. F. Xu, L. Gao, et al., ``Active retrieval augmented generation,'' in \emph{EMNLP}, 2023.
+\bibitem{su2024dragin} W. Su, Y. Tang, Q. Ai, and Z. Wu, ``DRAGIN: Dynamic retrieval augmented generation based on the real-time information needs of large language models,'' in \emph{ACL}, 2024.
+\bibitem{jeong2024adaptive} S. Jeong, J. Baek, S. Cho, and S. J. Hwang, ``Adaptive-RAG: Learning to adapt retrieval-augmented LLMs through question complexity,'' in \emph{NAACL}, 2024.
+\bibitem{rajpurkar2018squad2} P. Rajpurkar, R. Jia, and P. Liang, ``Know what you don't know: Unanswerable questions for SQuAD,'' in \emph{ACL}, 2018, pp. 518--528.
+\bibitem{kadavath2022know} S. Kadavath, T. Conerly, A. Askell, and T. Henighan, ``Language models (mostly) know what they know,'' 2022. [Online]. Available: arXiv:2207.05221
+\bibitem{kuhn2023semantic} L. Kuhn, Y. Gal, and S. Farquhar, ``Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation,'' in \emph{ICLR}, 2023.
+\bibitem{farquhar2024semantic} S. Farquhar, J. Kossen, L. Kuhn, and Y. Gal, ``Detecting hallucinations in large language models using semantic entropy,'' \emph{Nature}, vol. 630, no. 8015, pp. 625--630, 2024.
+\bibitem{joren2024sufficient} H. Joren, J. Zhang, C.-S. Ferng, D.-C. Juan, and A. Taly, ``Sufficient context: A new lens on retrieval augmented generation systems,'' 2024. [Online]. Available: arXiv:2411.06037
+\bibitem{geissler2026dependable} F. Gei{\ss}ler, F. Carella, L. Fieback, and J. Spiegelberg, ``Towards dependable retrieval-augmented generation using factual confidence prediction,'' 2026. [Online]. Available: arXiv:2605.05244
+\bibitem{phillips2026entropy} E. Phillips, F. Gustafsson, S. Wu, A. Thakur, and D. A. Clifton, ``Entropy alone is insufficient for safe selective prediction in LLMs,'' 2026. [Online]. Available: arXiv:2603.21172
+\bibitem{thakur2026declinecraft} A. Thakur, A. Saparov, and B. Ribeiro, ``DeclineCraft: A RAG abstention benchmark for jointly measuring combined retrieval and parametric knowledge,'' 2026. [Online]. Available: arXiv:2610.28340
+\bibitem{faysse2025colpali} M. Faysse, H. Sibille, T. Wu, et al., ``ColPali: Efficient document retrieval with vision language models,'' in \emph{ICLR}, 2025.
+\bibitem{suri2024visdom} M. Suri, P. Mathur, F. Dernoncourt, et al., ``VisDoM: Multi-document QA with visually rich elements using multimodal retrieval-augmented generation,'' 2024. [Online]. Available: arXiv:2412.10704
+\bibitem{strich2026t2} J. Strich, E. K. Isgorur, M. Trescher, et al., ``T2-RAGBench: Text-and-table benchmark for evaluating retrieval-augmented generation,'' in \emph{EACL}, 2026.
+\bibitem{decian2026dynamic} J. Decian, C. Njeh, and H. Nakouri, ``Dynamic RAG with hybrid retrieval: A novel approach to robust LLMs and hallucination prevention,'' \emph{Neurocomputing}, vol. 705, art. 134911, 2026. https://doi.org/10.1016/j.neucom.2026.134911
+\bibitem{gao2023alce} T. Gao, H. Yen, J.-T. Yu, and D. Chen, ``Enabling large language models to generate text with citations,'' in \emph{EMNLP}, 2023.
+\bibitem{chen2026principled} Y. Chen, et al., ``Principled context engineering for RAG: Statistical guarantees via conformal prediction,'' in \emph{ECIR}, 2026. [Online]. Available: arXiv:2511.17908
+\bibitem{longcontext2026tokentax} ``The token tax of epistemic accuracy: Comparing RAG and long-context architectures for document-grounded generative AI applications,'' 2026. [Online]. Available: arXiv:2606.20898
+\bibitem{ranking2026notdeciding} ``Ranking is not deciding: Benchmark shortcuts and operating-point collapse in query-time RAG poisoning defenses,'' 2026. [Online]. Available: arXiv:2610.33849
+\bibitem{claimconformal2026} ``Claim-level conformal prediction for retrieval-augmented generation,'' 2026. [Online]. Available: arXiv:2610.34872
+\bibitem{feng2025conformal} N. Feng, Y. Sui, S. Hou, et al., ``Response quality assessment for retrieval-augmented generation via conditional conformal factuality,'' in \emph{SIGIR}, 2025. [Online]. Available: arXiv:2506.20978
+\bibitem{syncheck2024} D. Wu, J.-C. Gu, F. Yin, and N. Peng, ``Synchronous faithfulness monitoring for trustworthy retrieval-augmented generation,'' in \emph{EMNLP}, 2024, pp. 9390--9406. [Online]. Available: \url{https://doi.org/10.18653/v1/2024.emnlp-main.527}
+\bibitem{es2024ragas} S. Es, J. James, L. Espinosa-Anke, and S. Schockaert, ``RAGAS: Automated evaluation of retrieval augmented generation,'' in \emph{EACL System Demonstrations}, 2024.
+\bibitem{saadfalcon2024ares} J. Saad-Falcon, O. Khattab, C. Potts, et al., ``ARES: An automated evaluation framework for retrieval-augmented generation systems,'' in \emph{NAACL}, 2024.
+\bibitem{min2023factscore} S. Min, K. Krishna, X. Lyu, et al., ``FActScore: Fine-grained atomic evaluation of factual precision in long form text generation,'' in \emph{EMNLP}, 2023.
+\bibitem{williams2018mnli} A. Williams, N. Nangia, P. Bowman, et al., ``An extensive evaluation of the natural language inference task,'' in \emph{ACL}, 2018.
+\bibitem{nie2020anli} Y. Nie, A. H. Zhou, R. Socher, and J. Gao, ``ANLI: Annotating adversarially with natural language inference,'' in \emph{ACL}, 2020.
+\bibitem{yang2026contextconflict} X. Yang, Z. Liu, R. Li, et al., ``Large language models in resolving contextual knowledge conflicts,'' in \emph{EMNLP}, 2026, pp. 21142--21169.
+\bibitem{liu2026conflictscore} S. Liu, A. Halfaker, D. Roth, et al., ``ConflictScore: Identifying and measuring how language models handle conflicting evidence,'' in \emph{EMNLP}, 2026, pp. 58825--58845.
+\bibitem{cormack2009rrf} G. V. Cormack, C. L. A. Clarke, and S. B\"uttcher, ``Reciprocal rank fusion outperforms Condorcet and individual rank learning methods,'' in \emph{SIGIR}, 2009, pp. 758--759.
+\bibitem{bruch2023fusion} S. Bruch, S. Gai, and A. Ingber, ``An analysis of fusion functions for hybrid retrieval,'' \emph{ACM Trans. Inf. Syst.}, vol. 41, no. 6, 2023.
+\bibitem{robertson2004prf} S. Robertson, H. Zaragoza, and J. Taylor, ``Probabilistic relevance framework: BM25 and beyond,'' \emph{Found. Trends Inf. Retr.}, vol. 3, no. 4, pp. 333--389, 2004.
+\bibitem{huang2024selfcorrect} J. Huang, X. Chen, S. R. Mishra, et al., ``Large language models cannot self-correct reasoning yet,'' in \emph{ICLR}, 2024.
+\bibitem{goswami2025haltrag} S. Goswami and S. Kurra, ``HALT-RAG: A task-adaptable framework for hallucination detection with calibrated NLI ensembles and abstention,'' 2025. [Online]. Available: arXiv:2509.07475
+\bibitem{zong2026icalm} Y. Zong, Y. Li, X. Long, L. Chang, T. Wu, and R. Hadfield, ``I-CALM: Incentivizing confidence-aware abstention for LLM selective answering,'' 2026. [Online]. Available: arXiv:2604.03904
+\bibitem{zhang2026taps} Y. Zhang, S. Wang, L. Yang, et al., ``Strong yet controllable LLM abstention without learning to abstain,'' 2026. [Online]. Available: arXiv:2610.16318
+\bibitem{peng2025uaeval4rag} T. Peng, S. Choubey, X. Xiong, and W. Wu, ``Unanswerability evaluation for retrieval augmented generation,'' in \emph{ACL}, 2025. [Online]. Available: \url{https://aclanthology.org/2025.acl-long.415/}
+\bibitem{tikhomirov2026selection} A. Tikhomirov and V. Savchenko, ``The selection effect: Why compact LLM verifiers for emotion classification fail behind encoder confidence gates,'' in \emph{EMNLP}, 2026. [Online]. Available: \url{https://aclanthology.org/2026.emnlp-main.1049/}
+\bibitem{du2026recognition} S. Du and L. Hu, ``Recognition--refusal misalignment in LLMs: Why models answer structurally unanswerable questions,'' in \emph{EMNLP}, 2026. [Online]. Available: \url{https://aclanthology.org/2026.emnlp-main.1078/}
+\bibitem{cocchieri2026overcommit} E. Cocchieri, L. Ragazzi, M. Tagliavini, and M. Moro, ``LLMs (almost) never abstain under medical uncertainty,'' in \emph{ACL}, 2026. [Online]. Available: \url{https://aclanthology.org/2026.acl-long.1365/}
+\bibitem{chen2026agriquery} ``Agri-Query: A case study on RAG vs. long-context LLMs for cross-lingual technical question answering,'' 2025. [Online]. Available: arXiv:2508.18093
+\bibitem{lu2025lara} ``LaRA: Benchmarking retrieval-augmented generation and long-context LLMs --- no silver bullet for LC or RAG routing,'' 2025. [Online]. Available: arXiv:2502.09977
+\bibitem{liu2026lengthcheap} ``Length is cheap, competition is not: Attention predicts context rot in retrieval,'' 2026. [Online]. Available: arXiv:2611.04169
+\bibitem{rosario2026jev} S. Do Rosario and M. Atef, ``Jev-as-a-judge for RAG claim verification: Confidence-gated cascading between a non-generative verifier and a frontier LLM,'' 2026. [Online]. Available: arXiv:2610.20634
+\bibitem{ravuri2026rcl} ``RCL: A retrieval-confidence layer for detecting insufficient context in enterprise retrieval-augmented code generation,'' 2026. [Online]. Available: arXiv:2609.11023
+\bibitem{zheng2026citeguard} ``CiteGuard-RAG: A validation-centered AI system for evidence-grounded question answering,'' 2026. [Online]. Available: arXiv:2609.15830
+\bibitem{tian2026hira} Y. Tian, X. Chen, and L. Queiroz, ``HIRA: A human-in-the-loop retrieval-augmented cascade for document classification in regulated industries,'' in \emph{CIKM}, 2026. [Online]. Available: arXiv:2608.21792
+\bibitem{chen2026modalityutility} ``Modality relevance is not modality utility: Post-hoc selective modality escalation for cost-aware multimodal RAG,'' 2026. [Online]. Available: arXiv:2607.05438
+\bibitem{sharma2026placebo} ``Does document structure help dense retrieval? A placebo-controlled ablation of four mechanisms across two corpora,'' 2026. [Online]. Available: arXiv:2610.10170
+
+\bibitem{yang2024ehrsql} Y. Yang, S. Kim, S. Kim, G. Lee, S.-Y. Yun, and E. Choi, ``Towards unbiased evaluation of detecting unanswerable questions in EHRSQL,'' 2024. [Online]. Available: arXiv:2405.01588
+\bibitem{mondal2026beforeanswering} J. J. Mondal, M. S. A. Apurba, M. Banik, M. M. Al Mahmud, and I. F. Shihab, ``Before answering: Evidence sufficiency under size-matched memory construction,'' 2026. [Online]. Available: arXiv:2609.32269
+\bibitem{brunello2026folio} A. Brunello, C. Curaba, L. Geatti, M. Mignani, A. Montanari, and N. Saccomanno, ``Fixing FOLIO and MALLS: Verified annotations and an LLM-assisted framework to focus human relabeling,'' 2026. [Online]. Available: arXiv:2606.02837
+\bibitem{gautam2023unanswerable} V. Gautam, M. Zhang, and D. Klakow, ``A lightweight method to generate unanswerable questions in English,'' in \emph{Findings of EMNLP}, 2023. [Online]. Available: arXiv:2310.19403
+\bibitem{semnani2025wikicollide} S. J. Semnani, J. Burapacheep, A. Khatua, et al., ``Detecting corpus-level knowledge inconsistencies in Wikipedia with large language models,'' in \emph{EMNLP}, 2025. [Online]. Available: arXiv:2509.23233
+\bibitem{won2026sievesage} J. Won, S. G. An, and J.-Y. Lee, ``Sieve and Sage: Efficient distraction filtering for reliable RALM abstention,'' in \emph{Findings of EMNLP}, 2026. [Online]. Available: arXiv:2609.35794
+\bibitem{li2026relevance} Y. Li, S. Li, Z. Xu, et al., ``Relevance is not sufficiency: What actually closes the evidence gap in long-term memory QA,'' 2026. [Online]. Available: arXiv:2610.09348
+\bibitem{setiawan2026grabrag} Y. A. Setiawan, ``Prompt-based abstention fails under misleading context: A controlled study of small frozen RAG models,'' in \emph{AACL-IJCNLP}, 2026. [Online]. Available: arXiv:2608.22228
+\bibitem{ling2026promptartifact} Z. Ling, S. Liu, Y. Tang, et al., ``LLM abstention can be a prompt artifact, in addition to genuine uncertainty,'' in \emph{EMNLP}, 2026, pp. 12612--12633. [Online]. Available: \url{https://doi.org/10.18653/2026.emnlp-main.549}
+\bibitem{singh2026beyondreranker} S. Singh, A. Reddy, and M. Chopra, ``Beyond the reranker: Do RAG retrieval enhancements help once a strong reranker is present?'' 2026. [Online]. Available: arXiv:2606.28367
+Y. Zhou, J. Yin, F. Zhang, et al., ``Financial evidence crowding: Diagnosing and mitigating constraint-induced displacement in retrieval-augmented generation,'' 2026. [Online]. Available: arXiv:2609.35782
+\bibitem{zhang2026certify} X. Zhang and W. Sun, ``Knowing when the evidence is enough: Requirement-directed search with Horn-closure certificates,'' 2026. [Online]. Available: arXiv:2610.34684
+\bibitem{qiu2026surerag} J. Qiu, Z. Han, and C. Huang, ``SURE-RAG: Sufficiency and uncertainty-aware evidence verification for selective retrieval-augmented generation,'' 2026. [Online]. Available: arXiv:2605.03534
+\bibitem{wei2026kontrast} F. Wei, T. Ehrhart, and R. Troncy, ``Detecting knowledge inconsistencies across text, tables, and knowledge graphs,'' 2026. [Online]. Available: arXiv:2607.25959
+\bibitem{valjakka2026labeling} J. Valjakka, J. Kivim\"aki, J. Myll\"ari, and J. K. Nurminen, ``The labeling problem in hallucination detection benchmarks: An empirical evaluation,'' in \emph{NeurIPS Datasets and Benchmarks}, 2026. [Online]. Available: arXiv:2610.08026
+\bibitem{joshi2026realdocbench} A. Joshi, J. Kim, G. Eggert, et al., ``RealDocBench: A benchmark for field-level QA and layout understanding on real-world regulated documents,'' 2026. [Online]. Available: arXiv:2606.07401
+\bibitem{park2026induspecqa} J. Park, H. Jeon, Y. Lee, and M. Kim, ``Ontology-based knowledge graphs for industrial standards with scope-aware logical rule structuring,'' in \emph{EMNLP}, 2026, pp. 33282--33311. [Online]. Available: \url{https://doi.org/10.18653/2026.emnlp-main.1456}
+\bibitem{mori2025lexical} L. Mori, et al., ``Assessing the performance gap between lexical and semantic models for information retrieval with formulaic legal language,'' 2025. [Online]. Available: arXiv:2506.12895
+\bibitem{lotfi2024bsard} E. Lotfi, et al., ``Bilingual BSARD: Extending statutory article retrieval to Dutch,'' in \emph{RegNLP}, 2025. [Online]. Available: arXiv:2412.07462
+\bibitem{akarsu2026bm25} M. Akarsu, et al., ``From BM25 to corrective RAG: Benchmarking retrieval strategies for text-and-table documents,'' 2026. [Online]. Available: arXiv:2604.01733
+\bibitem{beta2026greekbar} E. Beta, et al., ``GreekBarRetrieval: A benchmark for Greek statutory retrieval,'' in \emph{NLLP}, 2026. [Online]. Available: arXiv:2608.18752
+\bibitem{gajjar2026teleembed} P. Gajjar and V. K. Shah, ``TeleEmbedBench: A multi-corpus embedding benchmark for RAG in telecommunications,'' 2026. [Online]. Available: arXiv:2604.17778
+\bibitem{cheng2024silicon} X. Cheng, et al., ``To err is human; to annotate, SILICON? Toward robust reproducibility in LLM annotation,'' 2024. [Online]. Available: arXiv:2412.14461
+\bibitem{kim2026guidelines} K. W. Kim, et al., ``Refining and reusing annotation guidelines for LLM annotation,'' in \emph{ACL}, 2026. [Online]. Available: arXiv:2605.20809
+\bibitem{akarajaradwong2026nitibench} P. Akarajaradwong, et al., ``NitiBench+: A temporal Thai legal question answering benchmark across 17 domains,'' 2026. [Online]. Available: arXiv:2611.03576
+\bibitem{prior2026oldfriend} M. Prior, et al., ``Asking for an old friend: Diagnosing and mitigating temporal failure modes in LLM-based statutory question answering,'' in \emph{ICAIL}, 2026. [Online]. Available: arXiv:2605.23497
+\bibitem{huang2026wronglaw} Y. Huang, et al., ``When do LLMs apply the wrong law? Diagnosing LLM failures in temporal legal reasoning,'' 2026. [Online]. Available: arXiv:2608.14610
+\bibitem{yu2026detecting} Z. Yu, et al., ``Detecting is not resolving: The monitoring control gap in retrieval augmented LLMs,'' 2026. [Online]. Available: arXiv:2605.27157
+\bibitem{cattan2025dragged} A. Cattan, et al., ``DRAGged into conflicts: Detecting and addressing conflicting sources in search-augmented LLMs,'' 2025. [Online]. Available: arXiv:2506.08500
+\end{thebibliography}
+
+\end{document}

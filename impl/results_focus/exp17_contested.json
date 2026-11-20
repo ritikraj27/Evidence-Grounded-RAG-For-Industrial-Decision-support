@@ -1,0 +1,212 @@
+{
+  "schema": "mtp.contested/1",
+  "items": [
+    {
+      "key": "026f433853840ea4",
+      "claim": "In a traditional system, cards are attached to containers and moved with them",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "02e60993a6017d67",
+      "claim": "Common tools include process mapping, statistical process control, Pareto analysis, root-cause analysis, FMEA, design of experiments, and value-stream mapping",
+      "votes": {
+        "reader": "unsupported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "215da4cc7ec1a51a",
+      "claim": "It allows operations to continue according to plan when actual sales exceed forecasts or suppliers deliver late",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "2ed1141c1bedfe68",
+      "claim": "It forms the external focus of logistics and includes activities such as order processing, order fulfillment, warehousing, cross-docking, and shipping products through the distribution network",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "36eb163dd2069ff9",
+      "claim": "Kanban cards are associated with containers and are part of a demand-driven system developed by Taiichi Ohno at Toyota",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "584b498610956679",
+      "claim": "Safety stock is extra inventory maintained to prevent stockouts when actual demand exceeds forecasts, suppliers deliver late, or production yields fall short",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "590e22acfaa0a2d3",
+      "claim": "It acts as a buffer when sales exceed forecasts or suppliers deliver late",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "73cb68a43cf8964b",
+      "claim": "Kanban cards are visual signals used to manage inventory and production",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "74a407f605ac3821",
+      "claim": "The system was developed by Taiichi Ohno at Toyota to reduce excess inventory and reveal process inefficiencies",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "7819f7e79aa0a33a",
+      "claim": "Each container may have a production (P) kanban authorizing a fixed quantity to be produced and a transportation (T) kanban authorizing the full container to be moved downstream",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8280a66dd8ca84cf",
+      "claim": "They only mention the **Chartered Institute of Logistics and Transport (CILT)** as a professional body established in the United Kingdom in 1919 that offers qualifications and degrees in logistics management",
+      "votes": {
+        "reader": "contradicted",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "84b5f705b55e15e0",
+      "claim": "Its level depends on forecast accuracy, service targets, demand variability, and replenishment lead time",
+      "votes": {
+        "reader": "unsupported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8553f07878156234",
+      "claim": "It is attached to a container of materials and moves through the replenishment cycle",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8a8d712bd3bf8fde",
+      "claim": "It acts as a buffer when actual sales exceed forecasts or suppliers deliver late or short",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8b4213a1207e72fb",
+      "claim": "Processes issue kanban requests when supplies are consumed.\n2",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8b9af39404d67c2c",
+      "claim": "**Six Sigma (6\u03c3)** is a set of techniques and tools for process improvement, introduced by Motorola engineer Bill Smith in 1986",
+      "votes": {
+        "reader": "unsupported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8f46812bcde6f8c5",
+      "claim": "It offers professional qualifications or degrees in logistics management, and its programs are generally offered at the postgraduate level",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "909a7167dc1be76a",
+      "claim": "**Six Sigma (6\u03c3)** is a data-driven set of techniques and tools for process improvement",
+      "votes": {
+        "reader": "unsupported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "9ed3aa4880c8144a",
+      "claim": "It is a central part of logistics, providing access to broad markets and supporting warehouse management and inventory activities",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "9f3e5d3ca3467a94",
+      "claim": "The request remains attached to the item.\n5",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "a0ace26873b4d6cf",
+      "claim": "In traditional systems, cards are attached to material containers",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "a28153dc3e28fefb",
+      "claim": "Operations research is a discipline that applies advanced analytical techniques and mathematical optimization to support better business decisions",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "a8980c2c2b0cf981",
+      "claim": "Traditionally, kanban cards are attached to containers and circulate through the process",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    }
+  ]
+}

@@ -1,0 +1,2246 @@
+<?xml version="1.0"?>
+<DIV6 N="C" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-49/part-173/subpart-C&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;49 CFR Part 173 Subpart C&amp;quot;}">
+<HEAD>Subpart C&#x2014;Definitions, Classification and Packaging for Class 1</HEAD>
+<SOURCE>
+<HED>Source:</HED><PSPACE>Amdt. 173-224, 55 FR 52617, Dec. 21, 1990, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV8 N="173.50" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.50&quot;,&quot;citation&quot;:&quot;49 CFR 173.50&quot;}">
+<HEAD>&#xA7; 173.50 Class 1&#x2014;Definitions.</HEAD>
+<P>(a) <I>Explosive.</I> For the purposes of this subchapter, an <I>explosive</I> means any substance or article, including a device, which is designed to function by explosion (<I>i.e.,</I> an extremely rapid release of gas and heat) or which, by chemical reaction within itself, is able to function in a similar manner even if not designed to function by explosion, unless the substance or article is otherwise classed under the provisions of this subchapter. The term includes a pyrotechnic substance or article, unless the substance or article is otherwise classed under the provisions of this subchapter.</P>
+<P>(b) Explosives in Class 1 are divided into six divisions as follows:</P>
+<P>(1) <I>Division 1.1</I> consists of explosives that have a mass explosion hazard. A mass explosion is one which affects almost the entire load instantaneously.</P>
+<P>(2) <I>Division 1.2</I> consists of explosives that have a projection hazard but not a mass explosion hazard.</P>
+<P>(3) <I>Division 1.3</I> consists of explosives that have a fire hazard and either a minor blast hazard or a minor projection hazard or both, but not a mass explosion hazard.</P>
+<P>(4) <I>Division 1.4</I> consists of explosives that present a minor explosion hazard. The explosive effects are largely confined to the package and no projection of fragments of appreciable size or range is to be expected. An external fire must not cause virtually instantaneous explosion of almost the entire contents of the package.</P>
+<P>(5) <I>Division 1.5</I>
+<SU>1</SU>
+<FTREF/> consists of very insensitive explosives. This division is comprised of substances which have a mass explosion hazard but are so insensitive that there is very little probability of initiation or of transition from burning to detonation under normal conditions of transport.</P>
+<FTNT>
+<P><SU>1</SU> The probability of transition from burning to detonation is greater when large quantities are transported in a vessel.</P></FTNT>
+<P>(6) <I>Division 1.6</I>
+<SU>2</SU>
+<FTREF/> consists of extremely insensitive articles that do not have a mass explosion hazard. This division is comprised of articles which predominately contain extremely insensitive substances and that demonstrate a negligible probability of accidental initiation or propagation.</P>
+<FTNT>
+<P><SU>2</SU> The risk from articles of Division 1.6 is limited to the explosion of a single article.</P></FTNT>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617 Dec. 21, 1990, as amended at 56 FR 66267, Dec. 20, 1991; 66 FR 45183, Aug. 28, 2001; 68 FR 48569, Aug. 14, 2003; 78 FR 1074, Jan. 7, 2013; 82 FR 15876, Mar. 30, 2017]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.51" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.51&quot;,&quot;citation&quot;:&quot;49 CFR 173.51&quot;}">
+<HEAD>&#xA7; 173.51 Authorization to offer and transport explosives.</HEAD>
+<P>(a) Unless otherwise provided in this subpart, no person may offer for transportation or transport an explosive, unless it has been tested and classed and approved by the Associate Administrator (&#xA7; 173.56).</P>
+<P>(b) Reports of explosives approved by the Department of Defense or the Department of Energy must be filed with, and receive acknowledgement in writing by, the Associate Administrator prior to such explosives being offered for transportation.</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617, Dec. 21, 1990, as amended by 66 FR 45379, Aug. 28, 2001]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.52" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.52&quot;,&quot;citation&quot;:&quot;49 CFR 173.52&quot;}">
+<HEAD>&#xA7; 173.52 Classification codes and compatibility groups of explosives.</HEAD>
+<P>(a) The classification code for an explosive, which is assigned by the Associate Administrator in accordance with this subpart, consists of the division number followed by the compatibility group letter. Compatibility group letters are used to specify the controls for the transportation, and storage related thereto, of explosives and to prevent an increase in hazard that might result if certain types of explosives were stored or transported together. Transportation compatibility requirements for carriers are prescribed in &#xA7;&#xA7; 174.81, 175.78. 176.83 and 177.848 of this subchapter for transportation by rail, air, vessel, and public highway, respectively, and storage incidental thereto.</P>
+<P>(b) Compatibility groups and classification codes for the various types of explosives are set forth in the following tables. Table 1 sets forth compatibility groups and classification codes for substances and articles described in the first column of table 1. Table 2 shows the number of classification codes that are possible within each explosive division. Altogether, there are 35 possible classification codes for explosives.</P>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%" data-point-width="198">
+<CAPTION><P class="title">Table 1&#x2014;Classification Codes</P></CAPTION>
+<THEAD>
+<TR>
+<TH class="center border-top-single border-bottom-single border-right-single">Description of substances or article to be classified</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Compatibility group</TH>
+<TH class="center border-top-single border-bottom-single">Classification code</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">Primary explosive substance</TD>
+<TD class="left border-right-single">A</TD>
+<TD class="left">1.1A</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Article containing a primary explosive substance and not containing two or more effective protective features. Some articles, such as detonators for blasting, detonator assemblies for blasting and primers, cap-type, are included, even though they do not contain primary explosives.</TD>
+<TD class="left border-right-single">B</TD>
+<TD class="left">1.1B<br/>1.2B<br/>1.4B</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Propellant explosive substance or other deflagrating explosive substance or article containing such explosive substance</TD>
+<TD class="left border-right-single">C</TD>
+<TD class="left">1.1C<br/>1.2C<br/>1.3C<br/>1.4C</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Secondary detonating explosive substance or black powder or article containing a secondary detonating explosive substance, in each case without means of initiation and without a propelling charge, or article containing a primary explosive substance and containing two or more effective protective features</TD>
+<TD class="left border-right-single">D</TD>
+<TD class="left">1.1D<br/>1.2D<br/>1.4D<br/>1.5D</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Article containing a secondary detonating explosive substance, without means of initiation, with a propelling charge (other than one containing flammable liquid or gel or hypergolic liquid)</TD>
+<TD class="left border-right-single">E</TD>
+<TD class="left">1.1E<br/>1.2E<br/>1.4E</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Article containing a secondary detonating explosive substance with its means of initiation, with a propelling charge (other than one containing flammable liquid or gel or hypergolic liquid) or without a propelling charge</TD>
+<TD class="left border-right-single">F</TD>
+<TD class="left">1.1F<br/>1.2F<br/>1.3F<br/>1.4F</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Pyrotechnic substance or article containing a pyrotechnic substance, or article containing both an explosive substance and an illuminating, incendiary, tear-producing or smoke-producing substance (other than a water-activated article or one containing white phosphorus, phosphide or flammable liquid or gel or hypergolic liquid)</TD>
+<TD class="left border-right-single">G</TD>
+<TD class="left">1.1G<br/>1.2G<br/>1.3G<br/>1.4G</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Article containing both an explosive substance and white phosphorus</TD>
+<TD class="left border-right-single">H</TD>
+<TD class="left">1.2H<br/>1.3H</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Article containing both an explosive substance and flammable liquid or gel</TD>
+<TD class="left border-right-single">J</TD>
+<TD class="left">1.1J<br/>1.2J<br/>1.3J</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Article containing both an explosive substance and a toxic chemical agent</TD>
+<TD class="left border-right-single">K</TD>
+<TD class="left">1.2K<br/>1.3K</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Explosive substance or article containing an explosive substance and presenting a special risk (e.g., due to water-activation or presence of hybergolic liquids, phosphides or pyrophoric substances) needing isolation of each type</TD>
+<TD class="left border-right-single">L</TD>
+<TD class="left">1.1L<br/>1.2L<br/>1.3L</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Articles predominantly containing extremely insensitive substances</TD>
+<TD class="left border-right-single">N</TD>
+<TD class="left">1.6N</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single">Substance or article so packed or designed that any hazardous effects arising from accidental functioning are limited to the extent that they do not significantly hinder or prohibit fire fighting or other emergency response efforts in the immediate vicinity of the package</TD>
+<TD class="left border-bottom-single border-right-single">S</TD>
+<TD class="left border-bottom-single">1.4S</TD>
+</TR>
+</TBODY>
+</TABLE>
+</DIV></DIV>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%" data-point-width="235">
+<CAPTION><P class="title">Table 2&#x2014;Scheme of Classification of Explosives, Combination of Hazard Division with Compatibility Group</P></CAPTION>
+<THEAD>
+<TR>
+<TH rowspan="2" class="center border-top-single border-bottom-single border-right-single">Hazard division</TH>
+<TH colspan="14" class="center border-top-single border-bottom-single">Compatibility group</TH>
+</TR>
+<TR>
+<TH class="center border-bottom-single border-right-single">A</TH>
+<TH class="center border-bottom-single border-right-single">B</TH>
+<TH class="center border-bottom-single border-right-single">C</TH>
+<TH class="center border-bottom-single border-right-single">D</TH>
+<TH class="center border-bottom-single border-right-single">E</TH>
+<TH class="center border-bottom-single border-right-single">F</TH>
+<TH class="center border-bottom-single border-right-single">G</TH>
+<TH class="center border-bottom-single border-right-single">H</TH>
+<TH class="center border-bottom-single border-right-single">J</TH>
+<TH class="center border-bottom-single border-right-single">K</TH>
+<TH class="center border-bottom-single border-right-single">L</TH>
+<TH class="center border-bottom-single border-right-single">N</TH>
+<TH class="center border-bottom-single border-right-single">S</TH>
+<TH class="center border-bottom-single">A-S</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">1.1</TD>
+<TD class="right border-right-single">1.1A</TD>
+<TD class="right border-right-single">1.1B</TD>
+<TD class="right border-right-single">1.1C</TD>
+<TD class="right border-right-single">1.1D</TD>
+<TD class="right border-right-single">1.1E</TD>
+<TD class="right border-right-single">1.1F</TD>
+<TD class="right border-right-single">1.1G</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.1J</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.1L</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right">9</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1.2</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.2B</TD>
+<TD class="right border-right-single">1.2C</TD>
+<TD class="right border-right-single">1.2D</TD>
+<TD class="right border-right-single">1.2E</TD>
+<TD class="right border-right-single">1.2F</TD>
+<TD class="right border-right-single">1.2G</TD>
+<TD class="right border-right-single">1.2H</TD>
+<TD class="right border-right-single">1.2J</TD>
+<TD class="right border-right-single">1.2K</TD>
+<TD class="right border-right-single">1.2L</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right">10</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1.3</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.3C</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.3F</TD>
+<TD class="right border-right-single">1.3G</TD>
+<TD class="right border-right-single">1.3H</TD>
+<TD class="right border-right-single">1.3J</TD>
+<TD class="right border-right-single">1.3K</TD>
+<TD class="right border-right-single">1.3L</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right">7</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1.4</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.4B</TD>
+<TD class="right border-right-single">1.4C</TD>
+<TD class="right border-right-single">1.4D</TD>
+<TD class="right border-right-single">1.4E</TD>
+<TD class="right border-right-single">1.4F</TD>
+<TD class="right border-right-single">1.4G</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.4S</TD>
+<TD class="right">7</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1.5</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.5D</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right">1</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1.6</TD>
+<TD class="right border-bottom-single border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">1.6N</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right">1</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single primary-indent-hanging-2">Total</TD>
+<TD class="right border-bottom-single border-right-single">1</TD>
+<TD class="right border-bottom-single border-right-single">3</TD>
+<TD class="right border-bottom-single border-right-single">4</TD>
+<TD class="right border-bottom-single border-right-single">4</TD>
+<TD class="right border-bottom-single border-right-single">3</TD>
+<TD class="right border-bottom-single border-right-single">4</TD>
+<TD class="right border-bottom-single border-right-single">4</TD>
+<TD class="right border-bottom-single border-right-single">2</TD>
+<TD class="right border-bottom-single border-right-single">3</TD>
+<TD class="right border-bottom-single border-right-single">2</TD>
+<TD class="right border-bottom-single border-right-single">3</TD>
+<TD class="right border-bottom-single border-right-single">1</TD>
+<TD class="right border-bottom-single border-right-single">1</TD>
+<TD class="right border-bottom-single">35</TD>
+</TR>
+</TBODY>
+</TABLE>
+</DIV></DIV>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617, Dec. 21, 1990, as amended by Amdt. 173-241, 59 FR 67492, Dec. 29, 1994; 64 FR 51918, Sept. 27, 1999; 66 FR 45379, Aug. 28, 2001; 76 FR 56315, Sept. 13, 2011; 78 FR 1074, Jan. 7, 2013; 82 FR 15876, Mar. 30, 2017]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.53" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.53&quot;,&quot;citation&quot;:&quot;49 CFR 173.53&quot;}">
+<HEAD>&#xA7; 173.53 Provisions for using old classifications of explosives.</HEAD>
+<P>Where the classification system in effect prior to January 1, 1991, is referenced in State or local laws, ordinances or regulations not pertaining to the transportation of hazardous materials, the following table may be used to compare old and new hazard class names:</P>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%" data-point-width="102">
+<THEAD>
+<TR>
+<TH class="center border-top-single border-bottom-single border-right-single">Current classification</TH>
+<TH class="center border-top-single border-bottom-single">Class name prior to Jan. 1, 1991</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">Division 1.1</TD>
+<TD class="left">Class A explosives.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Division 1.2</TD>
+<TD class="left">Class A or Class B explosives.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Division 1 3</TD>
+<TD class="left">Class B explosive.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Division 1.4</TD>
+<TD class="left">Class C explosives.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Division 1.5</TD>
+<TD class="left">Blasting agents.</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single">Division 1.6</TD>
+<TD class="left border-bottom-single">No applicable hazard class.</TD>
+</TR>
+</TBODY>
+</TABLE>
+</DIV></DIV>
+</DIV8>
+
+<DIV8 N="173.54" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.54&quot;,&quot;citation&quot;:&quot;49 CFR 173.54&quot;}">
+<HEAD>&#xA7; 173.54 Forbidden explosives.</HEAD>
+<P>Unless otherwise provided in this subchapter, the following explosives shall not be offered for transportation or transported:</P>
+<P>(a) An explosive that has not been approved in accordance with &#xA7; 173.56 of this subpart.</P>
+<P>(b) An explosive mixture or device containing a chlorate and also containing:</P>
+<P>(1) An ammonium salt, including a substituted ammonium or quaternary ammonium salt; or</P>
+<P>(2) An acidic substance, including a salt of a weak base and a strong acid.</P>
+<P>(c) A leaking or damaged package or article containing an explosive.</P>
+<P>(d) Propellants that are unstable, condemned or deteriorated.</P>
+<P>(e) Nitroglycerin, diethylene glycol dinitrate, or any other liquid explosives not specifically authorized by this subchapter.</P>
+<P>(f) A loaded firearm (except as provided in 49 CFR 1544.219).</P>
+<P>(g) Fireworks that combine an explosive and a detonator.</P>
+<P>(h) Fireworks containing yellow or white phosphorus.</P>
+<P>(i) A toy torpedo, the maximum outside dimension of which exceeds 23 mm (0.906 inch), or a toy torpedo containing a mixture of potassium chlorate, black antimony (antimony sulfide), and sulfur, if the weight of the explosive material in the device exceeds 0.26 g (0.01 ounce).</P>
+<P>(j) Explosives specifically forbidden in the &#xA7; 172.101 table of this subchapter.</P>
+<P>(k) Explosives not meeting the acceptance criteria specified in &#xA7; 173.57 of this subchapter.</P>
+<P>(l) An explosive article with its means of initiation or ignition installed, unless approved in accordance with &#xA7; 173.56.</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617 Dec. 21, 1990, as amended at 56 FR 66267, Dec. 20, 1991; Amdt. 173-236, 58 FR 50236, Sept. 24, 1993; 67 FR 61013, Sept. 27, 2002; 68 FR 48569, Aug. 14, 2003]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.55" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.55&quot;,&quot;citation&quot;:&quot;49 CFR 173.55&quot;}">
+<HEAD>&#xA7; 173.55 [Reserved]</HEAD>
+</DIV8>
+
+<DIV8 N="173.56" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.56&quot;,&quot;citation&quot;:&quot;49 CFR 173.56&quot;}">
+<HEAD>&#xA7; 173.56 New explosives&#x2014;definition and procedures for classification and approval.</HEAD>
+<P>(a) <I>Definition of new explosive.</I> For the purposes of this subchapter a <I>new explosive</I> means an explosive produced by a person who:</P>
+<P>(1) Has not previously produced that explosive; or</P>
+<P>(2) Has previously produced that explosive but has made a change in the formulation, design or process so as to alter any of the properties of the explosive. An explosive will not be considered a &#x201C;new explosive&#x201D; if an agency listed in paragraph (b) of this section has determined, and confirmed in writing to the Associate Administrator, that there are no significant differences in hazard characteristics from the explosive previously approved.</P>
+<P>(b) <I>Examination, classification and approval.</I> Except as provided in &#xA7;&#xA7; 173.64, 173.65, and 173.67, no person may offer a new explosive for transportation unless that person has specified to the examining agency the ranges of composition of ingredients and compounds, showing the intended manufacturing tolerances in the composition of substances or design of articles which will be allowed in that material or device, and unless it has been examined, classed and approved as follows:</P>
+<P>(1) Except for an explosive made by or under the direction or supervision of the Department of Defense (DOD) or the Department of Energy (DOE), a new explosive must be examined and assigned a recommended shipping description, division and compatibility group, based on the tests and criteria prescribed in &#xA7;&#xA7; 173.52, 173.57 and 173.58. The person requesting approval of the new explosive must submit to the Associate Administrator a report of the examination and assignment of a recommended shipping description, division, and compatibility group. If the Associate Administrator finds the approval request meets the regulatory criteria, the new explosive will be approved in writing and assigned an EX number. The examination must be performed by a person who is approved by the Associate Administrator under the provisions of subpart H of part 107 of this chapter and who&#x2014;</P>
+<P>(i) Has (directly, or through an employee involved in the examination) at least ten years of experience in the examination, testing and evaluation of explosives;</P>
+<P>(ii) Does not manufacture or market explosives, and is not controlled by or financially dependent on any entity that manufactures or markets explosives, and whose work with respect to explosives is limited to examination, testing and evaluation; and</P>
+<P>(iii) Is a resident of the United States.</P>
+<P>(2) A new explosive made by or under the direction or supervision of a component of the DOD may be examined, classed, and concurred in by:</P>
+<P>(i) U.S. Army Technical Center for Explosives Safety (SMCAC-EST), Naval Sea Systems Command (SEA-9934), or Air Force Safety Agency (SEW), when approved by the Chairman, DOD Explosives Board, in accordance with the DOD Ammunition and Explosives Hazard Classification Procedures (IBR, see &#xA7; 171.7 of the subchapter); or</P>
+<P>(ii) The agencies and procedures specified in paragraph (b)(1) of this section.</P>
+<P>(3) A new explosive made by or under the direction or supervision of the Department of Energy (DOE) may be&#x2014;</P>
+<P>(i) Examined by the DOE in accordance with the DOD Explosives Hazard Classification Procedures, and must be classed and approved by DOE; or</P>
+<P>(ii) Examined, classed, and approved in accordance with paragraph (b)(1) of this section.</P>
+<P>(4) For a material shipped under the description of &#x201C;ammonium nitrate-fuel oil mixture (ANFO)&#x201D;, the only test required for classification purposes is the Cap Sensitivity Test&#x2014;Test Method 5(a) prescribed in the Explosive Test Manual (UN Manual of Tests and Criteria) (IBR, see &#xA7; 171.7 of the subchapter). The test must be performed by an agency listed in paragraph (b)(1), (b)(2), or (b)(3) of this section, the manufacturer, or the shipper. A copy of the test report must be submitted to the Associate Administrator before the material is offered for transportation, and a copy of the test report must be retained by the shipper for as long as that material is shipped. At a minimum, the test report must contain the name and address of the person or organization conducting the test, date of the test, quantitative description of the mixture, including prill size and porosity, and a description of the test results.</P>
+<P>(c) <I>Filing DOD or DOE approval report.</I> DOD or DOE must file a copy of each approval, accompanied by supporting laboratory data, with the Associate Administrator and receive acknowledgement in writing before offering the new explosive for transportation, unless the new explosive is:</P>
+<P>(1) Being transported under paragraph (d) or (e) of this section; or</P>
+<P>(2) Covered by a national security classification currently in effect.</P>
+<P>(d) <I>Transportation of explosive samples for examination.</I> Notwithstanding the requirements of paragraph (b) of this section with regard to the transportation of a new explosive that has not been approved, a person may offer a sample of a new explosive for transportation, by railroad, highway, or vessel from the place where it was produced to an agency identified in paragraph (b) of this section, for examination if&#x2014;</P>
+<P>(1) The new explosive has been assigned a tentative shipping description and class in writing by the testing agency;</P>
+<P>(2) The new explosive is packaged as required by this part according to the tentative description and class assigned, unless otherwise specified in writing by the testing agency; and,</P>
+<P>(3) The package is labeled as required by this subchapter and the following is marked on the package:</P>
+<P>(i) The words &#x201C;SAMPLE FOR LABORATORY EXAMINATION&#x201D;;</P>
+<P>(ii) The net weight of the new explosive; and</P>
+<P>(iii) The tentative shipping name and identification number.</P>
+<P>(e) <I>Transportation of unapproved explosives for developmental testing.</I> Notwithstanding the requirements of paragraph (b) of this section, the owner of a new explosive that has not been examined or approved may transport that new explosive from the place where it was produced to an explosives testing range if&#x2014;</P>
+<P>(1) It is not a primary (a 1.1A initiating) explosive or a forbidden explosive according to this subchapter;</P>
+<P>(2) It is described as a Division 1.1 explosive (substance or article) and is packed, marked, labeled, described on shipping papers and is otherwise offered for transportation in conformance with the requirements of this subchapter applicable to Division 1.1;</P>
+<P>(3) It is transported in a motor vehicle operated by the owner of the explosive; and</P>
+<P>(4) It is accompanied by a person, in addition to the operator of the motor vehicle, who is qualified by training and experience to handle the explosive.</P>
+<P>(f) Notwithstanding the requirements of paragraphs (b) and (d) of this section, the Associate Administrator may approve a new explosive on the basis of an approval issued for the explosive by the competent authority of a foreign government, or when examination of the explosive by a person approved by the Associate Administrator is impracticable, on the basis of reports of tests conducted by disinterested third parties, or may approve the transportation of an explosives sample for the purpose of examination by a person approved by the Associate Administrator.</P>
+<P>(g) An explosive may be transported under subparts B or C of part 171 or &#xA7; 176.11 of this subchapter without the approval of the Associate Administrator as required by paragraph (b) of this section if the Associate Administrator has acknowledged in writing the acceptability of an approval issued by the competent authority of a foreign government pursuant to the provisions of the UN Recommendations, the ICAO Technical Instructions, the IMDG Code (IBR, see &#xA7; 171.7 of this subchapter), or other national or international regulations based on the UN Recommendations. In such a case, a copy of the foreign competent authority approval, and a copy of the written acknowledgement of its acceptance must accompany each shipment of that explosive.</P>
+<P>(h) The requirements of this section do not apply to cartridges, small arms which are:</P>
+<P>(1) Not a forbidden explosive under &#xA7; 173.54 of this subchapter;</P>
+<P>(2) Ammunition for rifle, pistol, shotgun, or tools;</P>
+<P>(3) Ammunition with inert projectile or blank ammunition; and</P>
+<P>(4) Ammunition not exceeding 50 caliber for rifle or pistol cartridges or 8 gauge for shotgun shells.</P>
+<FP>Cartridges, small arms meeting the criteria of this paragraph (h) may be assigned a classification code of 1.4S by the manufacturer.
+</FP>
+<P>(i) If experience or other data indicate that the hazard of a material or a device containing an explosive composition is greater or less than indicated according to the definition and criteria specified in &#xA7;&#xA7; 173.50, 173.56, and 173.58 of this subchapter, the Associate Administrator may specify a classification or except the material or device from the requirements of this subchapter.</P>
+<P>(j) [Reserved]</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617 Dec. 21, 1990, as amended at 56 FR 66267, Dec. 20, 1991; Amdt. 173-234, 58 FR 51532, Oct. 1, 1993; 62 FR 51560, Oct. 1, 1997; 63 FR 37461, July 10, 1998; 64 FR 10777, Mar. 5, 1999; 66 FR 45379, Aug. 28, 2001; 68 FR 75743, Dec. 31, 2003; 72 FR 25177, May 3, 2007; 78 FR 1074, Jan. 7, 2013; 78 FR 42477, July 16, 2013; 83 FR 55809, Nov. 7, 2018; 85 FR 75713, Nov. 25, 2020]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.57" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.57&quot;,&quot;citation&quot;:&quot;49 CFR 173.57&quot;}">
+<HEAD>&#xA7; 173.57 Acceptance criteria for new explosives.</HEAD>
+<P>(a) Unless otherwise excepted, an explosive substance must be subjected to the Drop Weight Impact Sensitivity Test (Test Method 3(a)(i)), the Friction Sensitivity Test (Test Method 3(b)(iii)), the Thermal Stability Test (Test Method 3(c)) at 75 &#xB0;C (167 &#xB0;F) and the Small-Scale Burning Test (Test Method 3(d)(i)), each as described in the Explosive Test Manual (UN Manual of Tests and Criteria) (IBR, see &#xA7; 171.7 of this subchapter). A substance is forbidden for transportation if any one of the following occurs:</P>
+<P>(1) For a liquid, failure to pass the test criteria when tested in the Drop Weight Impact Sensitivity Test apparatus for liquids;</P>
+<P>(2) For a solid, failure to pass the test criteria when tested in the Drop Weight Impact Sensitivity Test apparatus for solids;</P>
+<P>(3) The substance has a friction sensitiveness equal to or greater than that of dry pentaerythrite tetranitrate (PETN) when tested in the Friction Sensitivity Test;</P>
+<P>(4) The substance fails to pass the test criteria specified in the Thermal Stability Test at 75 &#xB0;C (167 &#xB0;F); or</P>
+<P>(5) Explosion occurs when tested in the Small-Scale Burning Test.</P>
+<P>(b) An explosive article, packaged or unpackaged, or a packaged explosive substance must be subjected to the Thermal Stability Test for Articles and Packaged Articles (Test method 4(a)(i)) and the Twelve Meter Drop Test (Test Method 4(b)(ii)), when appropriate, in the Explosive Test Manual. An article or packaged substance is forbidden for transportation if evidence of thermal instability or excessive impact sensitivity is found in those tests according to the criteria and methods of assessing results prescribed therein.</P>
+<P>(c) Dynamite (explosive, blasting, type A) is forbidden for transportation if any of the following occurs:</P>
+<P>(1) It does not have, when uniformly mixed with the absorbent material, a satisfactory antacid in a quantity sufficient to have the acid neutralizing power of an amount of magnesium carbonate equal to one percent of the nitroglycerin or other liquid explosive ingredient;</P>
+<P>(2) During the centrifuge test (Test Method D-2, in appendix D to this part) or the compression test (Test Method D-3 in appendix D to this part), a non-gelatin dynamite loses more than 3 percent by weight of the liquid explosive or a gelatin dynamite loses more than 10 percent by weight of the liquid explosive; or</P>
+<P>(3) During the leakage test (Test Method D-1 in appendix D to this part), there is any loss of liquid.</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617 Dec. 21, 1990, as amended at 58 FR 51532, Oct. 1, 1993; 64 FR 51918, Sept. 27, 1999; 68 FR 75743, Dec. 31, 2003; 76 FR 56315, Sept. 13, 2011]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.58" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.58&quot;,&quot;citation&quot;:&quot;49 CFR 173.58&quot;}">
+<HEAD>&#xA7; 173.58 Assignment of class and division for new explosives.</HEAD>
+<P>(a) <I>Division 1.1, 1.2, 1.3, and 1.4 explosives.</I> In addition to the test prescribed in &#xA7; 173.57 of this subchapter, a substance or article in these divisions must be subjected to Test Methods 6(a), 6(b), and 6(c), as described in the UN Manual of Tests and Criteria (IBR, see &#xA7; 171.7 of this subchapter), for assignment to an appropriate division. The criteria for assignment of class and division are as follows:</P>
+<P>(1) Division 1.1 if the major hazard is mass explosion;</P>
+<P>(2) Division 1.2 if the major hazard is dangerous projections;</P>
+<P>(3) Division 1.3 if the major hazard is radiant heat or violent burning, or both, but there is no blast or projection hazard;</P>
+<P>(4) Division 1.4 if there is a small hazard with no mass explosion and no projection of fragments of appreciable size or range;</P>
+<P>(5) Division 1.4 Compatibility Group S (1.4S) if the hazardous effects are confined within the package or the blast and projection effects do not significantly hinder emergency response efforts. The UN Test Type 6(d) is used to determine whether a Division 1.4S classification is appropriate for an item assigned a proper shipping name to which special provision 347 (<I>see</I> &#xA7; 172.102 of this subchapter) applies; or</P>
+<P>(6) Not in the explosive class if the substance or article does not have significant explosive hazard or if the effects of explosion are completely confined within the article.</P>
+<P>(b) <I>Division 1.5 explosive.</I> Except for ANFO, a substance that has been examined in accordance with the provisions &#xA7; 173.57(a) of this subchapter, must be subjected to the following additional tests: Cap Sensitivity Test, Princess Incendiary Spark Test, DDT Test, and External Fire Test, each as described in the Explosive Test Manual. A material may not be classed as a Division 1.5 explosive if any of the following occurs:</P>
+<P>(1) Detonation occurs in the Cap Sensitivity Test (Test Method 5(a));</P>
+<P>(2) Detonation occurs in the DDT Test (Test Method 5(b)(ii));</P>
+<P>(3) An explosion, evidenced by a loud noise and projection of fragments, occurs in the External Fire Test (Test Method 5(c), or</P>
+<P>(4) Ignition or explosion occurs in the Princess Incendiary Spark Test (Test Method 5(d)).</P>
+<P>(c) Division 1.6 explosive. (1) In order to be classed as a 1.6 explosive, an article must pass all of the following tests, as prescribed in the Explosive Test Manual:</P>
+<P>(i) The 1.6 Article External Fire Test;</P>
+<P>(ii) The 1.6 Article Slow Cook-off Test;</P>
+<P>(iii) The 1.6 Article Propagation Test; and</P>
+<P>(iv) The 1.6 Article Bullet Impact Test.</P>
+<P>(2) A substance intended for use as the explosive load in an article of Division 1.6 must be an extremely insensitive detonating substance (EIDS). In order to determine if a substance is an EIDS, it must be subjected to the tests in paragraphs (c)(2)(i) through (c)(2)(x) of this section, which are described in the Explosive Test Manual. The substance must be tested in the form (i.e., composition, granulation, density, etc.) in which it is to be used in the article. A substance is not an EIDS if it fails any of the following tests:</P>
+<P>(i) The Drop Weight Impact Sensitivity Test;</P>
+<P>(ii) The Friction Sensitivity Test;</P>
+<P>(iii) The Thermal Sensitivity Test at 75 &#xB0;C (167 &#xB0;F);</P>
+<P>(iv) The Small Scale Burning Test;</P>
+<P>(v) The EIDS Cap Test;</P>
+<P>(vi) The EIDS Gap Test;</P>
+<P>(vii) The Susan Test;</P>
+<P>(viii) The EIDS Bullet Impact Test;</P>
+<P>(ix) The EIDS External Fire Test; and</P>
+<P>(x) The EIDS Slow Cook-off Test.</P>
+<P>(d) The Associate Administrator may waive or modify certain test(s) identified in &#xA7;&#xA7; 173.57 and 173.58 of this subchapter, or require additional testing, if appropriate. In addition, the Associate Administrator may limit the quantity of explosive in a device.</P>
+<P>(e) Each explosive is assigned a compatibility group letter by the Associate Administrator based on the criteria prescribed in &#xA7; 173.52(b) of this subchapter.</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617 Dec. 21, 1990, as amended at 56 FR 66267, Dec. 20, 1991; 63 FR 52849, Oct. 1, 1998; 66 FR 45379, Aug. 28, 2001; 68 FR 75743, Dec. 31, 2003; 76 FR 3371, Jan. 19, 2011; 76 FR 56315, Sept. 13, 2011]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.59" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.59&quot;,&quot;citation&quot;:&quot;49 CFR 173.59&quot;}">
+<HEAD>&#xA7; 173.59 Description of terms for explosives.</HEAD>
+<P>For the purpose of this subchapter, a description of the following terms is provided for information only. They must not be used for purposes of classification or to replace proper shipping names prescribed in &#xA7; 172.101 of this subchapter.</P>
+<P><I>Ammonium-nitrate&#x2014;fuel oil mixture (ANFO).</I> A blasting explosive containing no essential ingredients other than prilled ammonium nitrate and fuel oil.</P>
+<P><I>Ammunition.</I> Generic term related mainly to articles of military application consisting of all types of bombs, grenades, rockets, mines, projectiles and other similar devices or contrivances.</P>
+<P><I>Ammunition, illuminating, with or without burster, expelling charge or propelling charge.</I> Ammunition designed to produce a single source of intense light for lighting up an area. The term includes illuminating cartridges, grenades and projectiles, and illuminating and target identification bombs. The term excludes the following articles which are listed separately: <I>cartridges, signal; signal devices; hand signals; distress flares, aerial</I> and <I>flares, surface.</I></P>
+<P><I>Ammunition, incendiary.</I> Ammunition containing an incendiary substance which may be a solid, liquid or gel including white phosphorus. Except when the composition is an explosive <I>per se,</I> it also contains one or more of the following: a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge. The term includes: <I>Ammunition, incendiary,</I> liquid or gel, with burster, expelling charge or propelling charge; <I>Ammunition, incendiary</I> with or without burster, expelling charge or propelling charge; and <I>Ammunition, incendiary, white phosphorus,</I> with burster, expelling charge or propelling charge.</P>
+<P><I>Ammunition, practice.</I> Ammunition without a main bursting charge, containing a burster or expelling charge. Normally it also contains a fuze and propelling charge. The term excludes the following article which is listed separately: <I>Grenades, practice.</I></P>
+<P><I>Ammunition, proof.</I> Ammunition containing pyrotechnic substance, used to test the performance or strength of new ammunition, weapon component or assemblies.</P>
+<P><I>Ammunition, smoke.</I> Ammunition containing a smoke-producing substance such as chlorosulphonic acid mixture (CSAM), titanium tetrachloride (FM), white phosphorus, or smoke-producing substance whose composition is based on hexachlorothannol (HC) or red phosphorus. Except when the substance is an explosive <I>per se,</I> the ammunition also contains one or more of the following: a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge. The term includes: <I>Ammunition, smoke,</I> with or without burster, expelling charge or propelling charge; <I>Ammunition, smoke, white phosphorus</I> with burster, expelling charge or propelling charge.</P>
+<P><I>Ammunition, tear-producing with burster, expelling charge or propelling charge.</I> Ammunition containing tear-producing substance. It may also contain one or more of the following: a pyrotechnic substance, a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge.</P>
+<P><I>Ammunition, toxic.</I> Ammunition containing toxic agent. It may also contain one or more of the following: a pyrotechnic substance, a propelling charge with primer and igniter charge, or a fuze with burster or expelling charge.</P>
+<P><I>Articles, explosive, extremely insensitive (Articles, EEI).</I> Articles that contain only extremely insensitive substances and which demonstrate a negligible probability of accidental initiation or propagation under normal conditions of transport and which have passed Test Series 7.</P>
+<P><I>Articles, pyrophoric.</I> Articles which contain a pyrophoric substance (capable of spontaneous ignition when exposed to air) and an explosive substance or component. The term excludes articles containing white phosphorus.</P>
+<P><I>Articles, pyrotechnic for technical purposes.</I> Articles which contain pyrotechnic substances and are used for technical purposes, such as heat generation, gas generation, theatrical effects, etc. The term excludes the following articles which are listed separately: all ammunition; <I>cartridges, signal; cutters, cable, explosive; fireworks; flares, aerial; flares, surface; release devices, explosives; rivets, explosive; signal devices, hand; signals, distress; signals, railway track, explosive</I>; and <I>signals, smoke.</I></P>
+<P><I>Auxiliary explosive component, isolated.</I> A small device that explosively performs an operation related to the article's functioning, other than its main explosive loads' performance. Functioning of the component does not cause any reaction of the main explosive loads contained within the article.</P>
+<P><I>Black powder (gunpowder).</I> Substance consisting of an intimate mixture of charcoal or other carbon and either potassium or sodium nitrate, and sulphur. It may be meal, granular, compressed, or pelletized.</P>
+<P><I>Bombs.</I> Explosive articles which are dropped from aircraft. They may contain a flammable liquid with bursting charge, a photo-flash composition or bursting charge. The term excludes <I>torpedoes</I> (aerial) and includes <I>bombs, photo-flash; bombs</I> with bursting charge; <I>bombs with flammable liquids,</I> with bursting charge.</P>
+<P><I>Boosters.</I> Articles consisting of a charge of detonating explosive without means of initiation. They are used to increase the initiating power of detonators or detonating cord.</P>
+<P><I>Bursters, explosive.</I> Articles consisting of a small charge of explosive to open projectiles or other ammunition in order to disperse their contents.</P>
+<P><I>Cartridges, blank.</I> Articles that consist of a cartridge case with a center or rim fire primer and a confined charge of smokeless or black powder, but no projectile. Used in training, saluting, or in starter pistols, tools, etc.</P>
+<P><I>Cartridges, flash.</I> Articles consisting of a casing, a primer and flash powder, all assembled in one piece for firing.</P>
+<P><I>Cartridges for weapons.</I> (1) Fixed (assembled) or semi-fixed (partially assembled) ammunition designed to be fired from weapons. Each cartridge includes all the components necessary to function the weapon once. The name and description should be used for military small arms cartridges that cannot be described as cartridges, small arms. Separate loading ammunition is included under this name and description when the propelling charge and projectile are packed together (see also Cartridges, blank).</P>
+<P>(2) Incendiary, smoke, toxic, and tear-producing cartridges are described under <I>ammunition, incendiary,</I> etc.</P>
+<P><I>Cartridges for weapons, inert projectile.</I> Ammunition consisting of a casing with propelling charge and a solid or empty projectile.</P>
+<P><I>Cartridges, oil well.</I> Articles consisting of a casing of thin fiber, metal or other material containing only propellant explosive. The term excludes charges, shaped, commercial.</P>
+<P><I>Cartridges, power device.</I> Articles designed to accomplish mechanical actions. They consist of a casing with a charge of deflagrating explosive and a means of ignition. The gaseous products of the deflagration produce inflation, linear or rotary motion; activate diaphragms, valves or switches, or project fastening devices or extinguishing agents.</P>
+<P><I>Cartridges, signal.</I> Articles designed to fire colored flares or other signals from signal pistols or devices.</P>
+<P><I>Cartridges, small arms.</I> Ammunition consisting of a cartridge case fitted with a center or rim fire primer and containing both a propelling charge and solid projectile(s). They are designed to be fired in weapons of caliber not larger than 19.1 mm. Shotgun cartridges of any caliber are included in this description. The term excludes: Cartridges, small arms, blank, and some military small arms cartridges listed under <I>Cartridges for weapons, inert projectile.</I></P>
+<P><I>Cases, cartridge, empty with primer.</I> Articles consisting of a cartridge case made from metal, plastics or other non-flammable materials, in which only the explosive component is the primer.</P>
+<P><I>Cases, combustible, empty, without primer.</I> Articles consisting of cartridge cases made partly or entirely from nitrocellulose.</P>
+<P><I>Charges, bursting.</I> Articles consisting of a charge of detonating explosive such as hexolite, octolite, or plastics-bonded explosive designed to produce effect by blast or fragmentation.</P>
+<P><I>Charges, demolition.</I> Articles consisting of a charge of detonating explosive in a casing of fiberboard, plastics, metal or other material. The term excludes articles identified as bombs, mines, etc.</P>
+<P><I>Charges, depth.</I> Articles consisting of a charge of detonating explosive contained in a drum or projectile. They are designed to detonate under water.</P>
+<P><I>Charges, expelling.</I> A charge of deflagrating explosive designed to eject the payload from the parent article without damage.</P>
+<P><I>Charges, explosive, without detonator.</I> Articles consisting of a charge of detonating explosive without means of initiation, used for explosive welding, joining, forming, and other processes.</P>
+<P><I>Charges, propelling.</I> Articles consisting of propellant charge in any physical form, with or without a casing, for use in cannon or for reducing drag for projectiles or as a component of rocket motors.</P>
+<P><I>Charges, propelling for cannon.</I> Articles consisting of a propellant charge in any physical form, with or without a casing, for use in a cannon.</P>
+<P><I>Charges, shaped, without detonator.</I> Articles consisting of a casing containing a charge of detonating explosive with a cavity lined with rigid material, without means of initiation. They are designed to produce a powerful, penetrating jet effect.</P>
+<P><I>Charges, shaped, flexible, linear.</I> Articles consisting of a V-shaped core of a detonating explosive clad by a flexible metal sheath.</P>
+<P><I>Charges, supplementary, explosive.</I> Articles consisting of a small removable booster used in the cavity of a projectile between the fuze and the bursting charge.</P>
+<P><I>Components, explosive train, n.o.s.</I> Articles containing an explosive designed to transmit a detonation or deflagration within an explosive train.</P>
+<P><I>Consumer firework.</I> Any finished firework device that is in a form intended for use by the public that complies with any limits and requirements of the APA Standard 87-1A (IBR, see &#xA7; 171.7 of this subchapter) and the construction, performance, chemical composition, and labeling requirements codified by the U.S. Consumer Product Safety Commission in 16 CFR parts 1500 and 1507. A consumer firework does not include firework devices, kits or components banned by the U.S. Consumer Product Safety Commission in 16 CFR 1500.17(a)(8).</P>
+<P><I>Contrivance, water-activated with burster, expelling charge or propelling charge.</I> Articles whose functioning depends of physico-chemical reaction of their contents with water.</P>
+<P><I>Cord, detonating, flexible.</I> Articles consisting of a core of detonating explosive enclosed in spun fabric with plastics or other covering.</P>
+<P><I>Cord (fuse) detonating, metal clad.</I> Articles consisting of a core of detonating explosive clad by a soft metal tube with or without protective covering. When the core contains a sufficiently small quantity of explosive, the words &#x201C;mild effect&#x201D; are added.</P>
+<P><I>Cord igniter.</I> Articles consisting of textile yarns covered with black powder or another fast-burning pyrotechnic composition and a flexible protective covering, or consisting of a core of black powder surrounded by a flexible woven fabric. It burns progressively along its length with an external flame and is used to transmit ignition from a device to a charge or primer.</P>
+<P><I>Cutters, cable, explosive.</I> Articles consisting of a knife-edged device which is driven by a small charge of deflagrating explosive into an anvil.</P>
+<P><I>Detonator assemblies, non-electric, for blasting.</I> Non-electric detonators assembled with and activated by such means as safety fuse, shock tube, flash tube, or detonating cord. They may be of instantaneous design or incorporate delay elements. Detonating relays incorporating detonating cord are included. Other detonating relays are included in Detonators, nonelectric.</P>
+<P><I>Detonators.</I> Articles consisting of a small metal or plastic tube containing explosives such as lead azide, PETN, or combinations of explosives. They are designed to start a detonation train. They may be constructed to detonate instantaneously or may contain a delay element. They may contain no more than 10 g of total explosives weight, excluding ignition and delay charges, per unit. The term includes: detonators for ammunition; detonators for blasting (electric, electronic, and non-electric); and detonating relays without flexible detonating cord.</P>
+<P><I>Detonators, electronic programmable for blasting.</I> Detonators using electronic components, such as an integrated circuit and/or micro processing technology to provide communications, energy control and storage capability, timing delay information, and validated commands to send a firing signal to the initiating charge.</P>
+<P><I>Dynamite.</I> A detonating explosive containing a liquid explosive ingredient (generally nitroglycerin, similar organic nitrate esters, or both) that is uniformly mixed with an absorbent material, such as wood pulp, and usually contains materials such as nitrocellulose, sodium and ammonium nitrate.</P>
+<P><I>Entire load and total contents.</I> The phrase means such a substantial portion of the material explodes that the practical hazard should be assessed by assuming simultaneous explosion of the whole of the explosive content of the load or package.</P>
+<P><I>Explode.</I> The term indicates those explosive effects capable of endangering life and property through blast, heat, and projection of missiles. It encompasses both deflagration and detonation.</P>
+<P><I>Explosion of the total contents.</I> The phrase is used in testing a single article or package or a small stack of articles or packages.</P>
+<P><I>Explosive, blasting.</I> Detonating explosive substances used in mining, construction, and similar tasks. Blasting explosives are assigned to one of five types. In addition to the ingredients listed below for each type, blasting explosives may also contain inert components, such as kieselguhr, and other minor ingredients, such as coloring agents and stabilizers.</P>
+<P><I>Explosive, blasting, type A.</I> Substances consisting of liquid organic nitrates, such as nitroglycerin, or a mixture of such ingredients with one or more of the following: nitrocellulose, ammonium nitrate or other inorganic nitrates, aromatic nitro-derivatives, or combustible materials, such as wood-meal and aluminum powder. Such explosives must be in powdery, gelatinous, plastic or elastic form. The term includes dynamite, blasting gelatine and gelatine dynamites.</P>
+<P><I>Explosive, blasting, type B.</I> Substances consisting of a mixture of ammonium nitrate or other inorganic nitrates with an explosive, such as trinitrotoluene, with or without other substances, such as wood-meal or aluminum powder, or a mixture of ammonium nitrate or other inorganic nitrates with other combustible substances which are not explosive ingredients. Such explosives may not contain nitroglycerin, similar liquid organic nitrates, or chlorates.</P>
+<P><I>Explosive, blasting, type C.</I> Substances consisting of a mixture of either potassium or sodium chlorate or potassium, sodium or ammonium perchlorate with organic nitro-derivatives or combustible materials, such as wood-meal or aluminum powder, or a hydrocarbon. Such explosives must not contain nitroglycerin or any similar liquid organic nitrate.</P>
+<P><I>Explosive, blasting, type D.</I> Substances consisting of a mixture of organic nitrate compounds and combustible materials, such as hydrocarbons and aluminum powder. Such explosives must not contain nitroglycerin, any similar liquid organic nitrate, chlorate or ammonium-nitrate. The term generally includes plastic explosives.</P>
+<P><I>Explosive, blasting, type E.</I> Substances consisting of water as an essential ingredient and high proportions of ammonium nitrate or other oxidizer, some or all of which are in solution. The other constituents may include nitro-derivatives, such as trinitrotoluene, hydrocarbons or aluminum powder. The term includes: explosives, emulsion; explosives, slurry; and explosives, watergel.</P>
+<P><I>Explosive, deflagrating.</I> A substance, e.g., propellant, which reacts by deflagration rather than detonation when ignited and used in its normal manner.</P>
+<P><I>Explosive, detonating.</I> A substance which reacts by detonation rather than deflagration when initiated and used in its normal manner.</P>
+<P><I>Explosive, extremely insensitive substance (EIS).</I> A substance that has demonstrated through tests that it is so insensitive that there is very little probability of accidental initiation.</P>
+<P><I>Explosive, primary.</I> Explosive substance which is manufactured with a view to producing a practical effect by explosion, is very sensitive to heat, impact, or friction, and even in very small quantities, detonates. The major primary explosives are mercury fulminate, lead azide, and lead styphnate.</P>
+<P><I>Explosive, secondary.</I> An explosive substance which is relatively insensitive (when compared to primary explosives) and is usually initiated by primary explosives with or without the aid of boosters or supplementary charges. Such an explosive may react as a deflagrating or as a detonating explosive.</P>
+<P><I>Fireworks.</I> Pyrotechnic articles designed for entertainment.</P>
+<P><I>Flares.</I> Articles containing pyrotechnic substances which are designed to illuminate, identify, signal, or warn. The term includes: flares, aerial and flares, surface.</P>
+<P><I>Flash powder.</I> Pyrotechnic substance which, when ignited, produces an intense light.</P>
+<P><I>Fracturing devices, explosive, for oil wells, without detonators.</I> Articles consisting of a charge of detonating explosive contained in a casing without the means of initiation. They are used to fracture the rock around a drill shaft to assist the flow of crude oil from the rock.</P>
+<P><I>Fuse/Fuze.</I> Although these two words have a common origin (French fusee, fusil) and are sometimes considered to be different spellings, it is useful to maintain the convention that fuse refers to a cord-like igniting device, whereas fuze refers to a device used in ammunition which incorporates mechanical, electrical, chemical, or hydrostatic components to initiate a train by deflagration or detonation.</P>
+<P><I>Fuse, igniter.</I> Articles consisting of a metal tube with a core of deflagrating explosives.</P>
+<P><I>Fuse, instantaneous, non-detonating (Quickmatch).</I> Article consisting of cotton yarns impregnated with fine black powder. It burns with an external flame and is used in ignition trains for fireworks, etc.</P>
+<P><I>Fuse, safety.</I> Article consisting of a core of fine-grained black powder surrounded by a flexible woven fabric with one or more protective outer coverings. When ignited, it burns at a predetermined rate without any explosive effect.</P>
+<P><I>Fuzes.</I> Articles designed to start a detonation or deflagration in ammunition. They incorporate mechanical, electrical, chemical, or hydrostatic components and generally protective features. The term includes: Fuzes, detonating; fuzes detonating with protective features; and fuzes igniting.</P>
+<P><I>Grenades,</I> hand or rifle. Articles which are designed to be thrown by hand or to be projected by rifle. The term includes: grenades, hand or rifle, with bursting charge; and grenades, practice, hand or rifle. The term excludes: grenades, smoke.</P>
+<P><I>Igniters.</I> Articles containing one or more explosive substance used to start deflagration of an explosive train. They may be actuated chemically, electrically, or mechanically. The term excludes: cord, igniter; fuse, igniter; fuse, instantaneous, non-detonating; fuze, igniting; lighters, fuse, instantaneous, non-detonating; fuzes, igniting; lighters, fuse; primers, cap type; and primers, tubular.</P>
+<P><I>Ignition, means of.</I> A general term used in connection with the method employed to ignite a deflagrating train of explosive or pyrotechnic substances (for example: a primer for propelling charge, an igniter for a rocket motor or an igniting fuze).</P>
+<P><I>Initiation, means of.</I> (1) A device intended to cause the detonation of an explosive (for example: detonator, detonator for ammunition, or detonating fuze).</P>
+<P>(2) The term <I>with its own means of initiation</I> means that the contrivance has its normal initiating device assembled to it and this device is considered to present a significant risk during transport but not one great enough to be unacceptable. The term does not apply, however, to a contrivance packed together with its means of initiation, provided the device is packaged so as to eliminate the risk of causing detonation of the contrivance in the event of functioning of the initiating device. The initiating device can even be assembled in the contrivance provided there are protective features ensuring that the device is very unlikely to cause detonation of the contrivance under conditions which are associated with transport.</P>
+<P>(3) For the purposes of classification, any means of initiation without two effective protective features should be regarded as Compatibility Group B; an article with its own means of initiation, without two effective protective features, is Compatibility Group F. A means of initiation which itself possesses two effective protective features is Compatibility Group D, and an article with its own means of initiation which possesses two effective features is Compatibility Group D or E. A means of initiation, adjudged as having two effective protective features, must be approved by the Associate Administrator. A common and effective way of achieving the necessary degree of protection is to use a means of initiation which incorporates two or more independent safety features.</P>
+<P><I>Jet perforating guns, charged, oil well, without detonator.</I> Articles consisting of a steel tube or metallic strip, into which are inserted shaped charges connected by detonating cord, without means of initiation.</P>
+<P><I>Lighters, fuse.</I> Articles of various design actuated by friction, percussion, or electricity and used to ignite safety fuse.</P>
+<P><I>Mass explosion.</I> Explosion which affects almost the entire load virtually instantaneously.</P>
+<P><I>Mines.</I> Articles consisting normally of metal or composition receptacles and bursting charge. They are designed to be operated by the passage of ships, vehicles, or personnel. The term includes Bangalore torpedoes.</P>
+<P><I>Phlegmatized.</I> The term means that a substance (or &#x201C;phlegmatizer&#x201D;) has been added to an explosive to enhance its safety in handling and transport. The phlegmatizer renders the explosive insensitive, or less sensitive, to the following actions: heat, shock, impact, percussion or friction. Typical phlegmatizing agents include, but are not limited to: wax, paper, water, polymers (such as chlorofluoropolymers), alcohol and oils (such as petroleum jelly and paraffin).</P>
+<P><I>Powder cake (powder paste).</I> Substance consisting of nitrocellulose impregnated with not more than 60 percent of nitroglycerin or other liquid organic nitrates or a mixture of these.</P>
+<P><I>Powder, smokeless.</I> Substance based on nitrocellulose used as propellant. The term includes propellants with a single base (nitrocellulose (NC) alone), those with a double base (such as NC and nitroglycerin (NG)) and those with a triple base (such as NC/NG/nitroguanidine). Cast pressed or bag-charges of smokeless powder are listed under <I>charges, propelling</I> and <I>charges, propelling for cannon.</I></P>
+<P><I>Primers, cap type.</I> Articles consisting of a metal or plastic cap containing a small amount of primary explosive mixture that is readily ignited by impact. They serve as igniting elements in small arms cartridges and in percussion primers for propelling charges.</P>
+<P><I>Primers, tubular.</I> Articles consisting of a primer for ignition and an auxiliary charge of deflagrating explosive, such as black powder, used to ignite the propelling charge in a cartridge case for cannon, etc.</P>
+<P><I>Projectiles.</I> Articles, such as a shell or bullet, which are projected from a cannon or other artillery gun, rifle, or other small arm. They may be inert, with or without tracer, or may contain a burster, expelling charge or bursting charge. The term includes: projectiles, inert, with tracer; projectiles, with burster or expelling charge; and projectiles, with bursting charge.</P>
+<P><I>Propellant, liquid.</I> Substances consisting of a deflagrating liquid explosive, used for propulsion.</P>
+<P><I>Propellant, solid.</I> Substances consisting of a deflagrating solid explosive, used for propulsion.</P>
+<P><I>Propellants.</I> Deflagrating explosives used for propulsion or for reducing the drag of projectiles.</P>
+<P><I>Release devices, explosive.</I> Articles consisting of a small charge of explosive with means of initiation. They sever rods or links to release equipment quickly.</P>
+<P><I>Rocket motors.</I> Articles consisting of a solid, liquid, or hypergolic propellant contained in a cylinder fitted with one or more nozzles. They are designed to propel a rocket or guided missile. The term includes: rocket motors; rocket motors with hypergolic liquids with or without an expelling charge; and rocket motors, liquid fuelled.</P>
+<P><I>Rockets.</I> Articles containing a rocket motor and a payload which may be an explosive warhead or other device. The term includes: guided missiles; rockets, line-throwing; rockets, liquid fuelled, with bursting charge; rockets, with bursting charge; rockets, with expelling charge; and rockets, with inert head.</P>
+<P><I>Signals.</I> Articles consisting of pyrotechnic substances designed to produce signals by means of sound, flame, or smoke or any combination thereof. The term includes: signal devices, hand; signals, distress ship; signals, railway track, explosive; signals, smoke.</P>
+<P><I>Sounding devices, explosive.</I> Articles consisting of a charge of detonating explosive. They are dropped from ships and function when they reach a predetermined depth or the sea bed.</P>
+<P><I>Substance, explosive, very insensitive (Substance, EVI) N.O.S.</I> Substances which present a mass explosive hazard but which are so insensitive that there is very little probability of initiation, or of transition from burning to detonation under normal conditions of transport and which have passed test series 5.</P>
+<P><I>Torpedoes.</I> Articles containing an explosive or non-explosive propulsion system and designed to be propelled through water. They may contain an inert head or warhead. The term includes: torpedoes, liquid fuelled, with inert head; torpedoes, liquid fuelled, with or without bursting charge; and torpedoes, with bursting charge.</P>
+<P><I>Tracers for ammunition.</I> Sealed articles containing pyrotechnic substances, designed to reveal the trajectory of a projectile.</P>
+<P><I>Warheads.</I> Articles containing detonating explosives, designed to be fitted to a rocket, guided missile, or torpedo. They may contain a burster or expelling charge or bursting charge. The term includes: warhead rocket with bursting charge; and warheads, torpedo, with bursting charge.</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617 Dec. 21, 1990, as amended at 56 FR 66267, Dec. 20, 1991; Amdt. 173-241, 59 FR 67492, Dec. 29, 1994; 64 FR 10777, Mar. 5, 1999; 66 FR 45379, Aug. 28, 2001; 76 FR 3371, Jan. 19, 2011; 78 FR 1074, Jan. 7, 2013; 78 FR 42477, July 16, 2013; 85 FR 75713, Nov. 25, 2020; 87 FR 44992, July 26, 2022]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.60" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.60&quot;,&quot;citation&quot;:&quot;49 CFR 173.60&quot;}">
+<HEAD>&#xA7; 173.60 General packaging requirements for explosives.</HEAD>
+<P>(a) Unless otherwise provided in this subpart and in &#xA7; 173.7(a), packaging used for Class 1 (explosives) materials must meet Packing Group II requirements. Each packaging used for an explosive must be capable of meeting the test requirements of subpart M of part 178 of this subchapter, at the specified level of performance, and the applicable general packaging requirements of paragraph (b) of this section.</P>
+<P>(b) The general requirements for packaging of explosives are as follows:</P>
+<P>(1) Nails, staples, and other closure devices, made of metal, having no protective covering may not penetrate to the inside of the outer packaging unless the inner packaging adequately protects the explosive against contact with the metal.</P>
+<P>(2) The closure device of containers for liquid explosives must provide double protection against leakage, such as a screw cap secured in place with tape.</P>
+<P>(3) Inner packagings, fittings, and cushioning materials, and the placing of explosive substances or articles in packages, must be such that the explosive substance is prevented from becoming loose in the outer packaging during transportation. Metallic components of articles must be prevented from making contact with metal packagings. Articles containing explosive substances not enclosed in an outer casing must be separated from each other in order to prevent friction and impact. Padding, trays, partitioning in the inner or outer packaging, molded plastics or receptacles may be used for this purpose.</P>
+<P>(4) When the packaging includes water that could freeze during transportation, a sufficient amount of anti-freeze, such as denatured ethyl alcohol, must be added to the water to prevent freezing. If the anti-freeze creates a fire hazard, it may not be used. When a percentage of water in the substance is specified, the combined weight of water and anti-freeze may be substituted.</P>
+<P>(5) If an article is fitted with its own means of ignition or initiation, it must be effectively protected from accidental actuation during normal conditions of transportation.</P>
+<P>(6) The entry of explosive substances into the recesses of double-seamed metal packagings must be prevented.</P>
+<P>(7) The closure device of a metal drum must include a suitable gasket; if the closure device includes metal-to-metal screw-threads, the ingress of explosive substances into the threading must be prevented.</P>
+<P>(8) Whenever loose explosive substances or the explosive substance of an uncased or partly cased article may come into contact with the inner surface of metal packagings (1A2, 1B2, 4A, 4B and metal receptacles), the metal packaging should be provided with an inner liner or coating.</P>
+<P>(9) Packagings must be made of materials compatible with, and impermeable to, the explosives contained in the package, so that neither interaction between the explosives and the packaging materials, nor leakage, causes the explosive to become unsafe in transportation, or the hazard division or compatibility group to change (<I>see</I> &#xA7; 173.24(e)(2)).</P>
+<P>(10) An explosive article containing an electrical means of initiation that is sensitive to external electromagnetic radiation, must have its means of initiation effectively protected from electromagnetic radiation sources (for example, radar or radio transmitters) through either design of the packaging or of the article, or both.</P>
+<P>(11) Plastic packagings may not be able to generate or accumulate sufficient static electricity to cause the packaged explosive substances or articles to initiate, ignite or inadvertently function. Metal packagings must be compatible with the explosive substance they contain.</P>
+<P>(12) Explosive substances may not be packed in inner or outer packagings where the differences in internal and external pressures, due to thermal or other effects, could cause an explosion or rupture of the package.</P>
+<P>(13) Packagings for water soluble substances must be water resistant. Packagings for desensitized or phlegmatized substances must be closed to prevent changes in concentration during transport. When containing less alcohol, water, or phlegmatizer than specified in its proper shipping description, the substance is a &#x201C;forbidden&#x201D; material.</P>
+<P>(14) Large and robust explosives articles, normally intended for military use, without their means of initiation or with their means of initiation containing at least two effective protective features, may be carried unpackaged provided that a negative result was obtained in Test Series 4 of the UN Manual of Tests and Criteria on an unpackaged article. When such articles have propelling charges or are self-propelled, their ignition systems must be protected against conditions encountered during normal transportation. Such unpackaged articles may be fixed to cradles or contained in crates or other suitable handling, storage or launching devices in such a way that they will not become loose during normal conditions of transport and are in accordance with DOD-approved procedures. When such large explosive articles, as part of their operational safety and suitability tests, are subjected to testing that meets the intentions of Test Series 4 of the UN Manual of Tests and Criteria with successful test results, they may be offered for transportation in accordance with the requirements prescribed in (b)(14) above subject to approval by the Associate Administrator.</P>
+<CITA TYPE="N">[Amdt. 173-260, 62 FR 24719, May 6, 1997, as amended at 65 FR 50461, Aug. 18, 2000; 76 FR 43529, July 20, 2011]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.61" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.61&quot;,&quot;citation&quot;:&quot;49 CFR 173.61&quot;}">
+<HEAD>&#xA7; 173.61 Mixed packaging requirements.</HEAD>
+<P>(a) An explosive may not be packed in the same outside packaging with any other material that could, under normal conditions of transportation, adversely affect the explosive or its packaging unless packaged by DOD or DOE in accordance with &#xA7; 173.7(a).</P>
+<P>(b) Hardware necessary for assembly of explosive articles at the point-of-use may be packed in the same outside packaging with the explosive articles. The hardware must be securely packed in a separate inside packaging. Sufficient cushioning materials must be used to ensure that all inside packagings are securely packed in the outside packaging.</P>
+<P>(c) The following explosives may not be packed together with other Class 1 explosives: UN 0029, UN 0030, UN 0073, UN 0106, UN 0107, UN 0255, UN 0257, UN 0267, UN 0350, UN 0360, UN 0361, UN 0364, UN 0365, UN 0366, UN 0367, UN 0408, UN 0409, UN 0410, UN 0455, UN 0456, and UN 0500. These explosives may be mix-packed with each other in accordance with the compatibility requirements prescribed in paragraph (e) of this section.</P>
+<P>(d) Division 1.1 and 1.2 explosives may not be packed with the following explosives: UN 0333, UN 0334, UN 0335, UN 0336, and UN 0337.</P>
+<P>(e) Except as prescribed in paragraphs (c) and (d) of this section, different explosives may be packed in one outside packaging in accordance with the following compatibility requirements:</P>
+<P>(1) Explosives of the same compatibility group and same division number may be packed together.</P>
+<P>(2) Explosives of the same compatibility group or authorized combination of compatibility group but different division number may be packed together, provided that the whole package is treated as though its entire contents were comprised of the lower division number. For example, a mixed package of Division 1.2 explosives and Division 1.4 explosives, compatibility group D, must be treated as 1.2D explosives. However, when 1.5D explosives are packed together with 1.2D explosives, the whole package must be treated as 1.1D explosives.</P>
+<P>(3) Explosives of compatibility group S may be packaged together with explosives of any other compatibility group except A or L, and the combined package may be treated as belonging to any of the packaged compatibility groups except S.</P>
+<P>(4) Explosives of compatibility group L shall only be packed with an identical explosive.</P>
+<P>(5) Explosives articles of compatibility groups C, D, or E may be packed together and the entire package shall be treated as belonging to compatibility group E.</P>
+<P>(6) Explosives articles of compatibility groups C, D, E, or N may be packed together and the entire package shall be treated as belonging to compatibility group D.</P>
+<P>(7) Explosives substances of compatibility groups C and D may be packaged together and the entire package shall be treated as belonging to compatibility group D.</P>
+<P>(8) Explosive articles of compatibility group G, except for fireworks and articles requiring special packaging, may be packaged together with explosive articles of compatibility groups C, D or E and the combined package shall be treated as belonging to compatibility group E.</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617 Dec. 21, 1990, as amended at 56 FR 66267, Dec. 20, 1991; 65 FR 50461, Aug. 18, 2000; 66 FR 33429, June 21, 2001; 66 FR 45381, Aug. 28, 2001; 69 FR 54046, Sept. 7, 2004; 73 FR 4717, Jan. 28, 2008]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.62" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.62&quot;,&quot;citation&quot;:&quot;49 CFR 173.62&quot;}">
+<HEAD>&#xA7; 173.62 Specific packaging requirements for explosives.</HEAD>
+<P>(a) Except as provided in &#xA7; 173.7 of this subchapter, when the &#xA7; 172.101 Table specifies that an explosive must be packaged in accordance with this section, only packagings which conform to the provisions of paragraphs (b) and (c) of this section or &#xA7; 173.7(e) of this subchapter and the applicable requirements in &#xA7;&#xA7; 173.60 and 173.61 may be used unless otherwise approved by the Associate Administrator.</P>
+<P>(b) <I>Explosives Table.</I> The Explosives Table specifies the Packing Instructions assigned to each explosive. Explosives are identified in the first column in numerical sequence by their identification number (ID #), which is listed in column 4 of the &#xA7; 172.101 table, of this subchapter. The second column of the Explosives Table specifies the Packing Instruction (PI) which must be used for packaging the explosive. The Explosives Packing Method Table in paragraph (c) of this section defines the methods of packaging. The Packing Instructions are identified using a 3 digit designation. The Packing Instruction prefixed by the letters &#x201C;US&#x201D; is particular to the United States and not found in applicable international regulations.</P>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%" data-point-width="105">
+<CAPTION><P class="title">Table 1 to Paragraph (<E T="01">b</E>): Explosives Table</P></CAPTION>
+<THEAD>
+<TR>
+<TH class="center border-top-single border-bottom-single border-right-single">ID#</TH>
+<TH class="center border-top-single border-bottom-single">PI</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">UN0004</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0005</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0006</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0007</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0009</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0010</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0012</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0014</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0015</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0016</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0018</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0019</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0020</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0021</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0027</TD>
+<TD class="left">113</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0028</TD>
+<TD class="left">113</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0029</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0030</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0033</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0034</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0035</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0037</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0038</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0039</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0042</TD>
+<TD class="left">132</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0043</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0044</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0048</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0049</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0050</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0054</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0055</TD>
+<TD class="left">136</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0056</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0059</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0060</TD>
+<TD class="left">132</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0065</TD>
+<TD class="left">139</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0066</TD>
+<TD class="left">140</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0070</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0072</TD>
+<TD class="left">112(a)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0073</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0074</TD>
+<TD class="left">110(a) or 110(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0075</TD>
+<TD class="left">115</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0076</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0077</TD>
+<TD class="left">114(a) or 114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0078</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0079</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0081</TD>
+<TD class="left">116</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0082</TD>
+<TD class="left">116 or 117</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0083</TD>
+<TD class="left">116</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0084</TD>
+<TD class="left">116</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0092</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0093</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0094</TD>
+<TD class="left">113</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0099</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0101</TD>
+<TD class="left">140</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0102</TD>
+<TD class="left">139</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0103</TD>
+<TD class="left">140</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0104</TD>
+<TD class="left">139</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0105</TD>
+<TD class="left">140</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0106</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0107</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0110</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0113</TD>
+<TD class="left">110(a) or 110(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0114</TD>
+<TD class="left">110(a) or 110(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0118</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0121</TD>
+<TD class="left">142</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0124</TD>
+<TD class="left">US1</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0129</TD>
+<TD class="left">110(a) or 110(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0130</TD>
+<TD class="left">110(a) or 110(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0131</TD>
+<TD class="left">142</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0132</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0133</TD>
+<TD class="left">112(a)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0135</TD>
+<TD class="left">110(a) or 110(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0136</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0137</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0138</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0143</TD>
+<TD class="left">115</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0144</TD>
+<TD class="left">115</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0146</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0147</TD>
+<TD class="left">112(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0150</TD>
+<TD class="left">112(a) or 112(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0151</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0153</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0154</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0155</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0159</TD>
+<TD class="left">111</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0160</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0161</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0167</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0168</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0169</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0171</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0173</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0174</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0180</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0181</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0182</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0183</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0186</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0190</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0191</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0192</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0193</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0194</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0195</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0196</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0197</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0204</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0207</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0208</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0209</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0212</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0213</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0214</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0215</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0216</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0217</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0218</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0219</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0220</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0221</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0222</TD>
+<TD class="left">112(b), 112(c) or 117</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0224</TD>
+<TD class="left">110(a) or 110(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0225</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0226</TD>
+<TD class="left">112(a)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0234</TD>
+<TD class="left">114(a) or 114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0235</TD>
+<TD class="left">114(a) or 114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0236</TD>
+<TD class="left">114(a) or 114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0237</TD>
+<TD class="left">138</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0238</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0240</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0241</TD>
+<TD class="left">116 or 117</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0242</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0243</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0244</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0245</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0246</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0247</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0248</TD>
+<TD class="left">144</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0249</TD>
+<TD class="left">144</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0250</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0254</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0255</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0257</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0266</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0267</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0268</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0271</TD>
+<TD class="left">143</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0272</TD>
+<TD class="left">143</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0275</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0276</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0277</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0278</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0279</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0280</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0281</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0282</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0283</TD>
+<TD class="left">132</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0284</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0285</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0286</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0287</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0288</TD>
+<TD class="left">138</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0289</TD>
+<TD class="left">139</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0290</TD>
+<TD class="left">139</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0291</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0292</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0293</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0294</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0295</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0296</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0297</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0299</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0300</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0301</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0303</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0305</TD>
+<TD class="left">113</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0306</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0312</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0313</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0314</TD>
+<TD class="left">142</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0315</TD>
+<TD class="left">142</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0316</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0317</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0318</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0319</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0320</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0321</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0322</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0323</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0324</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0325</TD>
+<TD class="left">142</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0326</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0327</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0328</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0329</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0330</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0331</TD>
+<TD class="left">116 or 117</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0332</TD>
+<TD class="left">116 or 117</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0333</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0334</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0335</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0336</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0337</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0338</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0339</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0340</TD>
+<TD class="left">112(a) or 112(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0341</TD>
+<TD class="left">112(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0342</TD>
+<TD class="left">114(a)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0343</TD>
+<TD class="left">111</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0344</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0345</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0346</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0347</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0348</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0349</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0350</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0351</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0352</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0353</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0354</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0355</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0356</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0357</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0358</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0359</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0360</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0361</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0362</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0363</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0364</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0365</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0366</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0367</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0368</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0369</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0370</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0371</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0372</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0373</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0374</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0375</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0376</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0377</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0378</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0379</TD>
+<TD class="left">136</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0380</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0381</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0382</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0383</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0384</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0385</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0386</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0387</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0388</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0389</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0390</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0391</TD>
+<TD class="left">112(a)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0392</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0393</TD>
+<TD class="left">112(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0394</TD>
+<TD class="left">112(a)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0395</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0396</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0397</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0398</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0399</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0400</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0401</TD>
+<TD class="left">112</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0402</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0403</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0404</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0405</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0406</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0407</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0408</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0409</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0410</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0411</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0412</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0413</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0414</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0415</TD>
+<TD class="left">143</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0417</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0418</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0419</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0420</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0421</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0424</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0425</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0426</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0427</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0428</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0429</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0430</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0431</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0432</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0433</TD>
+<TD class="left">111</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0434</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0435</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0436</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0437</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0438</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0439</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0440</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0441</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0442</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0443</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0444</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0445</TD>
+<TD class="left">137</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0446</TD>
+<TD class="left">136</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0447</TD>
+<TD class="left">136</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0448</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0449</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0450</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0451</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0452</TD>
+<TD class="left">141</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0453</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0454</TD>
+<TD class="left">142</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0455</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0456</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0457</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0458</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0459</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0460</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0461</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0462</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0463</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0464</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0465</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0466</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0467</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0468</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0469</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0470</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0471</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0472</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0473</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0474</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0475</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0476</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0477</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0478</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0479</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0480</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0481</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0482</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0483</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0484</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0485</TD>
+<TD class="left">101
+</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0486</TD>
+<TD class="left">101</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0487</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0488</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0489</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0490</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0491</TD>
+<TD class="left">143</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0492</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0493</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0494</TD>
+<TD class="left">US1</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0495</TD>
+<TD class="left">115</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0496</TD>
+<TD class="left">112(b) or 112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0497</TD>
+<TD class="left">115</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0498</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0499</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0500</TD>
+<TD class="left">131</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0501</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0502</TD>
+<TD class="left">130</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0503</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0504</TD>
+<TD class="left">112(c)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0505</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0506</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0507</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0508</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0509</TD>
+<TD class="left">114(b)</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">UN0510</TD>
+<TD class="left">130
+</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">NA0124</TD>
+<TD class="left">US1</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">NA0276</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">NA0323</TD>
+<TD class="left">134</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">NA0331</TD>
+<TD class="left">116 or 117</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">NA0337</TD>
+<TD class="left">135</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">NA0349</TD>
+<TD class="left">133</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single">NA0494</TD>
+<TD class="left border-bottom-single">US1</TD>
+</TR>
+</TBODY>
+</TABLE>
+</DIV></DIV>
+<P>(c) Explosives must be packaged in accordance with the following table:</P>
+<P>(1) The first column lists, in alphanumeric sequence, the packing methods prescribed for explosives in the Explosives Table of paragraph (b) of this section.</P>
+<P>(2) The second column specifies the inner packagings that are required. If inner packagings are not required, a notation of &#x201C;Not necessary&#x201D; appears in the column. The term &#x201C;Not necessary&#x201D; means that a suitable inner packaging may be used but is not required.</P>
+<P>(3) The third column specifies the intermediate packagings that are required. If intermediate packagings are not required, a notation of &#x201C;Not necessary&#x201D; appears in the column. The term &#x201C;Not necessary&#x201D; means that a suitable intermediate packaging may be used but is not required.</P>
+<P>(4) The fourth column specifies the outer packagings which are required. If inner packagings and/or intermediate packagings are specified in the second and third columns, then the packaging specified in the fourth column must be used as the outer packaging of a combination packaging; otherwise it may be used as a single packaging.</P>
+<P>(5) Packing Instruction 101 may be used for any explosive substance or article if an equivalent level of safety is shown to be maintained subject to the approval of the Associate Administrator.</P>
+<img src="/graphics/er21de20.026.gif"/>
+<img src="/graphics/er21de20.027.gif"/>
+<img src="/graphics/er21de20.028.gif"/>
+<img src="/graphics/er21de20.029.gif"/>
+<img src="/graphics/er21de20.030.gif"/>
+<img src="/graphics/er21de20.031.gif"/>
+<img src="/graphics/er21de20.032.gif"/>
+<img src="/graphics/er21de20.033.gif"/>
+<img src="/graphics/er21de20.034.gif"/>
+<img src="/graphics/er21de20.035.gif"/>
+<img src="/graphics/er21de20.036.gif"/>
+<img src="/graphics/er21de20.037.gif"/>
+<img src="/graphics/er21de20.038.gif"/>
+<img src="/graphics/er21de20.039.gif"/>
+<img src="/graphics/er21de20.040.gif"/>
+<CITA TYPE="N">[Amdt. 173-260, 62 FR 24720, May 6, 1997]
+</CITA>
+<EDNOTE>
+<HED>Editorial Note:</HED><PSPACE>For <E T="04">Federal Register</E> citations affecting &#xA7; 173.62, see the List of CFR Sections Affected, which appears in the Finding Aids section of the printed volume and at <I>www.govinfo.gov.</I></PSPACE></EDNOTE>
+</DIV8>
+
+<DIV8 N="173.63" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.63&quot;,&quot;citation&quot;:&quot;49 CFR 173.63&quot;}">
+<HEAD>&#xA7; 173.63 Packaging exceptions.</HEAD>
+<P>(a) Cord, detonating (UN 0065), having an explosive content not exceeding 6.5 g (0.23 ounces) per 30 centimeter length (one linear foot) may be offered for transportation domestically and transported as Cord, detonating (UN 0289), Division 1.4 Compatibility Group D (1.4D) explosives, if the gross weight of all packages containing Cord, detonating (UN 0065), does not exceed 45 kg (99 pounds) per:</P>
+<P>(1) Transport vehicle, freight container, or cargo-only aircraft;</P>
+<P>(2) Off-shore down-hole tool pallet carried on an off-shore supply vessel;</P>
+<P>(3) Cargo compartment of a cargo vessel; or</P>
+<P>(4) Passenger-carrying aircraft used to transport personnel to remote work sites, such as offshore drilling units.</P>
+<P>(b) <I>Limited quantities of Cartridges, small arms, Cartridges, power device, Cartridges for tools, blank, and Cases, cartridge, empty with primer.</I> (1)(i) Cartridges, small arms, Cartridges, power device (used to project fastening devices), Cartridges for tools, blank, and Cases, cartridge, empty with primer that have been classed as Division 1.4S explosive may be offered for transportation and transported as limited quantities when packaged in accordance with paragraph (b)(2) of this section. Packages containing such articles may be marked with either the marking prescribed in &#xA7; 172.315(a) or (b) of this subchapter and offered for transportation and transported by any mode. For transportation by aircraft, the package must conform to the applicable requirements of &#xA7; 173.27 of this part. In addition, packages containing such articles offered for transportation by aircraft must be marked with the proper shipping name as prescribed in the &#xA7; 172.101 Hazardous Materials Table of this subchapter. Packages containing such articles are not subject to the shipping paper requirements of subpart C of part 172 of this subchapter unless the material meets the definition of a hazardous substance, hazardous waste, marine pollutant, or is offered for transportation and transported by aircraft or vessel. Additionally, packages containing such articles are excepted from the requirements of subparts E (Labeling) and F (Placarding) of part 172 of this subchapter.</P>
+<P>(ii) Cartridges, small arms, Cartridges, power device (<I>used to project fastening devices</I>), Cartridges for tools, blank, and Cases, cartridge empty with primer that may be shipped as a limited quantity are as follows:</P>
+<P>(A) Ammunition for rifle, pistol or shotgun;</P>
+<P>(B) Ammunition with inert projectiles or blank ammunition;</P>
+<P>(C) Ammunition having no tear gas, incendiary, or detonating explosive projectiles;</P>
+<P>(D) Ammunition not exceeding 12.7 mm (50 caliber or 0.5 inch) for rifle or pistol, cartridges or 8 gauge for shotshells;</P>
+<P>(E) Cartridges for tools, blank; and</P>
+<P>(F) Cases, cartridge, empty with primer.</P>
+<P>(G) Cartridges, power device (<I>used to project fastening devices</I>).</P>
+<P>(2) Packaging for Cartridges, small arms, Cartridges for tools, blank, Cases, cartridge empty with primer, and eligible Cartridges, power device as limited quantity must be as follows:</P>
+<P>(i) Ammunition must be packed in inside boxes, or in partitions that fit snugly in the outside packaging, or in metal clips;</P>
+<P>(ii) Primers must be protected from accidental initiation;</P>
+<P>(iii) Inside boxes, partitions or metal clips must be packed in securely-closed strong outside packagings;</P>
+<P>(iv) Maximum gross weight is limited to 30 kg (66 pounds) per package; and</P>
+<P>(v) Cartridges for tools, blank, Cartridges, power devices which are used to project fastening devices, Cases, cartridge, empty with primer, and 22 caliber rim-fire cartridges may be packaged loose in strong outside packagings.</P>
+<P>(c) [Reserved]</P>
+<P>(d) <I>Reverse logistics.</I> Hazardous materials meeting the definition of &#x201C;reverse logistics&#x201D; under &#xA7; 171.8 of this subchapter and in compliance with paragraph (b) of this section may be offered for transport and transported in highway transportation in accordance with &#xA7; 173.157.</P>
+<P>(e) [Reserved]</P>
+<P>(f) Detonators containing no more than 1 g explosive (excluding ignition and delay charges) that are electric blasting caps with leg wires 4 feet long or longer, delay connectors in plastic sheaths, or blasting caps with empty plastic tubing 12 feet long or longer may be packed as follows in which case they are excepted from the packaging requirements of &#xA7; 173.62:</P>
+<P>(1) No more than 50 detonators in one inner packaging;</P>
+<P>(2) IME Standard 22 container (IBR, see &#xA7; 171.7 of this subchapter) or compartment is used as the outer packaging;</P>
+<P>(3) No more than 1000 detonators in one outer packaging; and</P>
+<P>(4) No material may be loaded on top of the IME Standard 22 container and no material may be loaded against the outside door of the IME Standard 22 compartment.</P>
+<P>(g) Detonators that are classed as 1.4B or 1.4S and contain no more than 1 g of explosive (excluding ignition and delay charges) may be packed as follows in which case they are excepted from the packaging requirements of &#xA7; 173.62:</P>
+<P>(1) No more than 50 detonators in one inner packaging;</P>
+<P>(2) IME Standard 22 container is used as the outer packaging;</P>
+<P>(3) No more than 1000 detonators in one outer packaging; and</P>
+<P>(4) Each inner packaging is marked &#x201C;l.4B Detonators&#x201D; or &#x201C;1.4S Detonators&#x201D;, as appropriate.</P>
+<CITA TYPE="N">[Amdt. 173-224, 55 FR 52617, Dec. 21, 1990, as amended at 56 FR 66268, Dec. 20, 1991; Amdt. 173-236, 58 FR 50536, Sept. 24, 1993; Amdt. 173-253, 61 FR 27175, May 30, 1996; 68 FR 75743, Dec. 31, 2003; 71 FR 14602, Mar. 22, 2006; 76 FR 3371, Jan. 19, 2011; 78 FR 1084, 1113, Jan. 7, 2013; 78 FR 65480, Oct. 31, 2013; 81 FR 18539, Mar. 31, 2016; 87 FR 79776, Dec. 27, 2022]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.64" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.64&quot;,&quot;citation&quot;:&quot;49 CFR 173.64&quot;}">
+<HEAD>&#xA7; 173.64 Exceptions for Division 1.3 and 1.4 fireworks.</HEAD>
+<P>(a) Notwithstanding the requirements of &#xA7; 173.56(b), Division 1.3 and 1.4 fireworks (see &#xA7; 173.65 for Division 1.4G consumer fireworks) may be classed and approved by the Associate Administrator without prior examination and offered for transportation if the following conditions are met:</P>
+<P>(1) The fireworks are manufactured in accordance with the applicable requirements in APA 87-1A, 87-1B, and 87-1C (IBR, see &#xA7; 171.7 of this subchapter);</P>
+<P>(2) The device must pass a thermal stability test conducted by a third-party laboratory, or the manufacturer. The test must be performed by maintaining the device, or a representative prototype of a large device such as a display shell, at a temperature of 75 &#xB0;C (167 &#xB0;F) for 48 consecutive hours. When a device contains more than one component, those components that could be in physical contact with each other in the finished device must be placed in contact with each other during the thermal stability test;</P>
+<P>(3) The manufacturer applies in writing to the Associate Administrator following the applicable requirements in APA 87-1A, 87-1B, and 87-1C and is notified in writing by the Associate Administrator that the fireworks have been classed, approved, and assigned an EX number. Each application must be complete and include all relevant background data and copies of all applicable drawings, test results, and any other pertinent information on each device for which approval is being requested. The manufacturer must sign the application and certify that the device for which approval is requested conforms to the appropriate APA Standard, that the descriptions and technical information contained in the application are complete and accurate, and with respect to APA 87-1A that no duplicate application has been submitted to a fireworks certification agency. If the application is denied, the manufacturer will be notified in writing of the reasons for the denial. The Associate Administrator may require that the fireworks be examined by an agency listed in &#xA7; 173.56(b)(1) of this part.</P>
+<P>(b) [Reserved]</P>
+<CITA TYPE="N">[78 FR 42477, July 16, 2013, as amended at 85 FR 75713, Nov. 25, 2020]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.65" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.65&quot;,&quot;citation&quot;:&quot;49 CFR 173.65&quot;}">
+<HEAD>&#xA7; 173.65 Exceptions for Division 1.4G consumer fireworks.</HEAD>
+<P>(a) Notwithstanding the requirements of &#xA7;&#xA7; 173.56(b), 173.56(f), 173.56(i), and 173.64, Division 1.4G consumer fireworks may be offered for transportation provided the following conditions are met:</P>
+<P>(1) The fireworks are manufactured in accordance with the applicable requirements in APA 87-1A (IBR, see &#xA7; 171.7 of this subchapter);</P>
+<P>(2) The device must pass a thermal stability test. The test must be performed by maintaining the device, or a representative prototype of the device, at a temperature of 75 &#xB0;C (167 &#xB0;F) for 48 consecutive hours. When a device contains more than one component, those components that could be in physical contact with each other in the finished device must be placed in contact with each other during the thermal stability test;</P>
+<P>(3) The manufacturer of the Division 1.4G consumer firework applies in writing to a DOT-approved Fireworks Certification Agency, and is notified in writing by the DOT-approved Fireworks Certification Agency that the firework has been:</P>
+<P>(i) Certified that it complies with APA 87-1A, and meets the requirements of this section; and</P>
+<P>(ii) Assigned an FC number.</P>
+<P>(4) The manufacturer's application must be complete and include:</P>
+<P>(i) Detailed diagram of the device;</P>
+<P>(ii) Complete list of the chemical compositions, formulations and quantities used in the device;</P>
+<P>(iii) Results of the thermal stability test; and</P>
+<P>(iv) Signed certification declaring that the device for which certification is requested conforms to the APA 87-1A, that the descriptions and technical information contained in the application are complete and accurate, and that no duplicate applications have been submitted to PHMSA. If the application is denied, the Fireworks Certification Agency must notify the manufacturer in writing of the reasons for the denial. As detailed in the DOT-approval issued to the Fireworks Certification Agency, following the issuance of a denial from a Fireworks Certification Agency, a manufacturer may seek reconsideration from the Fireworks Certification Agency, or may appeal the reconsideration decision of the Fireworks Certification Agency to the PHMSA Administrator.</P>
+<P>(b) <I>Recordkeeping requirements.</I> Following the certification of each Division 1.4G consumer firework as permitted by paragraph (a) of this section, the manufacturer and importer must maintain a paper record or an electronic image of the certificate, demonstrating compliance with this section. Each record must clearly provide the unique identifier assigned to the firework device and the Fireworks Certification Agency that certified the device. The record must be accessible at or through its principal place of business and be made available, upon request, to an authorized official of a Federal, State, or local government agency at a reasonable time and location. Copies of certification records must be maintained by each importer, manufacturer, or a foreign manufacturer's U.S. agent, for five (5) years after the device is imported. The certification record must be made available to a representative of PHMSA upon request.</P>
+<CITA TYPE="N">[78 FR 42477, July 16, 2013, as amended at 85 FR 75713, Nov. 25, 2020]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.66" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.66&quot;,&quot;citation&quot;:&quot;49 CFR 173.66&quot;}">
+<HEAD>&#xA7; 173.66 Requirements for bulk packagings of certain explosives and oxidizers.</HEAD>
+<P>When &#xA7; 172.101 of this subchapter specifies that a hazardous material may be transported in accordance with this section (per special provision 148 in &#xA7; 172.102(c)(1)), only the bulk packagings specified for these materials in IME Standard 23 (IBR, see &#xA7; 171.7 of this subchapter) are authorized, subject to the requirements of subparts A and B of this part and the special provisions in column 7 of the &#xA7; 172.101 table. See Section I of IME Standard 23 for the standards for transporting a single bulk hazardous material for blasting by cargo tank motor vehicles (CTMV), and Section II of IME Standard 23 for the standards for CTMVs capable of transporting multiple hazardous materials for blasting in bulk and non-bulk packagings (<I>i.e.,</I> a multipurpose bulk truck (MBT) authorized to transport the Class 1 (explosive) materials, Division 5.1 (oxidizing) materials, Class 8 (corrosive) materials, and Combustible Liquid, n.o.s., NA1993, III, as specified in IME Standard 23 (also see &#xA7; 177.835(d) of this subchapter)). In addition, the requirements in paragraph (a) of this section apply to: A new multipurpose bulk truck constructed after April 19, 2016; and a modified existing multipurpose bulk truck after April 19, 2016 (see &#xA7; 173.66(b) regarding the term <I>modified</I>).</P>
+<P>(a) <I>Federal Motor Vehicle Safety Standard (FMVSS).</I> Multipurpose bulk trucks must be in compliance with the FMVSS found in 49 CFR part 571, as applicable. Furthermore, the multipurpose bulk truck manufacturer must maintain a certification record ensuring the final manufacturing is in compliance with the FMVSS, in accordance with the certification requirements found in 49 CFR part 567. These certification records must be made available to DOT representatives upon request.</P>
+<P>(b) <I>Modified.</I> The term <I>modified</I> means any change to the original design and construction of a multipurpose bulk truck (MBT) that affects its structural integrity or lading retention capability, (<I>e.g.</I> rechassising, etc.). Excluded from this category are the following:</P>
+<P>(1) A change to the MBT equipment such as lights, truck or tractor power train components, steering and brake systems, and suspension parts, and changes to appurtenances, such as fender attachments, lighting brackets, ladder brackets; and</P>
+<P>(2) Replacement of components such as valves, vents, and fittings with a component of a similar design and of the same size.</P>
+<CITA TYPE="N">[80 FR 79453, Dec. 21, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="173.67" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-49/section-173.67&quot;,&quot;citation&quot;:&quot;49 CFR 173.67&quot;}">
+<HEAD>&#xA7; 173.67 Exceptions for Division 1.1 jet perforating guns.</HEAD>
+<P>(a) Notwithstanding the requirements of &#xA7; 173.56(b), Division 1.1 jet perforating guns may be classed and approved by the Associate Administrator without prior examination and offered for transportation if the following conditions are met:</P>
+<P>(1) The jet perforating guns are manufactured in accordance with the applicable requirements in AESC/IME JPG Standard (IBR, see &#xA7; 171.7 of this subchapter);</P>
+<P>(2) The jet perforating gun must be of a type described in the AESC/IME JPG Standard;</P>
+<P>(3) The applicant applies in writing to the Associate Administrator following the applicable requirements in the AESC/IME JPG Standard, and is notified in writing by the Associate Administrator that the jet perforating gun has been classed, approved, and assigned an EX number. Each application must be complete and include all relevant background data, the applicable drawings, and any other pertinent information as described in the AESC/IME JPG Standard on each jet perforating gun for which approval is being requested. The manufacturer must sign the application and certify that the jet perforating gun for which approval is requested conforms to the AESC/IME JPG Standard and that the descriptions and technical information contained in the application are complete and accurate. If the application is denied, the applicant will be notified in writing of the reasons for the denial. The Associate Administrator may require that the jet perforating gun be examined as provided under &#xA7; 173.56(b)(1).</P>
+<P>(b) [Reserved]</P>
+<CITA TYPE="N">[85 FR 75713, Nov. 25, 2020]
+</CITA>
+</DIV8>
+
+</DIV6>

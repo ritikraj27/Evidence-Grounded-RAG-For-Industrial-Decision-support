@@ -1,0 +1,34 @@
+{
+  "annotator": "specialist_hazmat_transport_v1",
+  "model": "claude-sonnet-4-5",
+  "rubric_version": "mtp.revision-labels/1",
+  "regime": "hazmat_transport",
+  "blind": true,
+  "labels": {
+    "7": "no_conflict",
+    "8": "supersession",
+    "13": "supersession",
+    "23": "no_conflict",
+    "34": "granularity",
+    "69": "no_conflict",
+    "82": "no_conflict",
+    "89": "granularity",
+    "139": "term_mismatch",
+    "160": "term_mismatch",
+    "168": "term_mismatch"
+  },
+  "notes": {
+    "7": "Q6: same inner-packaging capacity requirement under different transport conditions (Column 9a vs 9b); overlapping band values agree, though Q1 term_mismatch is arguable.",
+    "8": "Q2: B reads as the same definition after amendment, adding electronic blasting detonators and dropping 'both'.",
+    "13": "Q2: B is paragraph (5) as amended, adding the aircraft one-side placement sentence absent from A.",
+    "23": "Q6: same lithium marking requirement, compatible; punctuation-only difference. Q2 supersession (editorial amendment) is arguable here.",
+    "34": "Q3: A is the table portion; B is the whole table provision with caption and explanatory footnotes; both true.",
+    "69": "Q6: same authorized bag type, only the list enumerator differs; the two statements are compatible.",
+    "82": "Q6: same authorized bag type, only the list enumerator differs; the two statements are compatible.",
+    "89": "Q3: A is the grandfathering provision, one part of B's full overpack-marking paragraph; both can stand.",
+    "139": "Q1: DOT specification cargo tank pressure and vapor limits versus portable tank relief, mass and viscosity rules.",
+    "160": "Q1: lithium cell and equipment carriage rules versus subpart applicability for engines and powered vehicles.",
+    "168": "Q1: small-arms cartridge classification exceptions versus magazine storage distances and magazine exclusions."
+  },
+  "unlabelled_pair_ids": []
+}

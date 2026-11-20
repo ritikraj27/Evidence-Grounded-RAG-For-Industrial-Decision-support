@@ -1,0 +1,9 @@
+{
+  "modality_balance": "\"modality balance\" OR \"modality imbalance\" OR \"modality quota\" OR \"modality-aware retrieval\" OR \"modality routing\"",
+  "modality_select_rag": "\"multimodal retrieval augmented generation\" AND (\"modality selection\" OR \"modality filter\")",
+  "rag_chunk_multimodal": "\"retrieval augmented generation\" AND \"chunking\" AND (\"table\" OR \"chart\" OR \"image\")",
+  "doc_parsing_rag": "\"document parsing\" AND \"retrieval augmented generation\" AND (benchmark OR evaluation)",
+  "chart_table_rag": "\"chart\" AND \"table\" AND \"retrieval augmented generation\" AND question answering",
+  "industrial_rag": "\"retrieval augmented generation\" AND (manufacturing OR industrial OR \"supply chain\")",
+  "ocr_free_retrieval": "\"OCR-free\" AND \"document\" AND retrieval"
+}

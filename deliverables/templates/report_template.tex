@@ -1,0 +1,236 @@
+% LaTeX template for the pandoc-rendered reports.
+%
+% Pandoc does the structural conversion; this file does the typography. It
+% is deliberately minimal and self-contained: the packages below are the ones
+% pandoc's LaTeX output actually needs, and nothing else, because every extra
+% package is another thing that can be missing from a TeX bundle.
+%
+% The two .tex papers in this project use their own class files; this
+% template is for the prose reports, which are markdown first and PDF second.
+$if(bodypt12)$
+\documentclass[12pt,a4paper]{article}
+$else$
+\documentclass[11pt,a4paper]{article}
+$endif$
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+$if(timesfont)$
+% Times for text and for maths, so a formula in the PDF is set in the same
+% face as the paragraph around it. The `lmodern` below is then redundant and
+% is not loaded, because the two would fight over the roman face.
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+$else$
+\usepackage{lmodern}
+$endif$
+$if(widepage)$
+% A document whose content is a full-width picture of a slide needs the
+% page to be wider than the prose margin, or the picture is too small to
+% read a table from.
+\usepackage[margin=1.6cm,top=2.2cm,bottom=2.1cm]{geometry}
+$else$
+\usepackage[margin=2.4cm,top=2.6cm,bottom=2.5cm]{geometry}
+$endif$
+\usepackage{amsmath}
+$if(timesfont)$
+% amssymb is not loaded alongside newtxmath: both define \Bbbk, and the
+% clash is a hard error, not a warning. newtxmath carries the symbols the
+% documents use.
+$else$
+\usepackage{amssymb}
+$endif$
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{framed}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% NOTE: the `caption` package is deliberately NOT loaded. It redefines the
+% float machinery in a way that breaks pandoc's longtable wrapper -- the
+% tables come out with "No counter 'none' defined" and the document does not
+% compile. The reports carry no figures, so nothing is lost by leaving it
+% out; if a figure is ever added, it will need a different fix than the
+% obvious one.
+
+% -- typography ----------------------------------------------------------
+% The theme is monochrome. These documents are printed, photocopied and
+% read on a projector in a room where the colour on a screen is not
+% guaranteed to survive, and a document whose meaning depends on a hue is
+% a document that fails on a mono printer. The hierarchy is carried by
+% weight, size and greyscale instead: black for the title and the section
+% headings, dark grey for the subsections, mid grey for the rules and the
+% running head, and a very light grey for the shading.
+\definecolor{brandnavy}{HTML}{000000}
+\definecolor{brandaccent}{HTML}{333333}
+\definecolor{shadecolor}{RGB}{242,242,242}
+\definecolor{rulegray}{HTML}{8C8C8C}
+
+% The section numbers are written into the markdown headings themselves, so
+% LaTeX must not add a second one. The text refers to sections by number
+% ("see 5.4"), and those numbers have to be the numbers on the page.
+\setcounter{secnumdepth}{0}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{brandnavy}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{brandaccent}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{brandnavy}}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{16pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+\setlength{\LTcapwidth}{\textwidth}
+\renewcommand{\arraystretch}{1.15}
+
+% -- code blocks ---------------------------------------------------------
+% Pandoc is invoked with --no-highlight, so a code block arrives as a plain
+% verbatim environment and no token macros are needed. The definitions
+% below are the fallbacks for the case where a document is rendered with
+% highlighting switched on.
+\providecommand{\passthrough}[1]{#1}
+
+% Pandoc emits \tightlist for a list with no blank lines between its items.
+% Its own template defines it; this template has to as well.
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Pandoc also wraps every image in \pandocbounded, which its own template
+% defines. Without it, any document carrying a figure fails to compile with
+% "Undefined control sequence" -- and the figures are the point.
+\providecommand{\pandocbounded}[1]{#1}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,frame=single,rulecolor=\color{rulegray},columns=fullflexible,keepspaces=true,showstringspaces=false,upquote=true}
+
+% -- page furniture ------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% The running head is short on purpose: the full title and the author
+% together overrun the width of the page and overlap.
+$if(deptfurniture)$
+% The department's own page furniture: no running head, and the page number
+% bottom right, which is what the reference report has.
+\fancyhead[L]{}
+\fancyhead[R]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\small\color{brandaccent}\thepage}
+$else$
+\fancyhead[L]{\small\color{brandaccent}Evidence-Grounded RAG for Industrial Decision Support}
+\fancyhead[R]{\small\color{gray}$if(shorttitle)$$shorttitle$$endif$}
+\fancyfoot[C]{\small\color{brandaccent}\thepage}
+$endif$
+\setlength{\headheight}{14pt}
+
+\begin{document}
+
+$if(frontmatter)$
+% ---------------------------------------------------------------- front matter
+% The title page and the certificate page, in the department's template. The
+% same two pages are built in the Word file; this is the reading copy of them,
+% so the two must carry the same text.
+\pagestyle{empty}
+\begin{center}
+\vspace*{0.4cm}
+{\fontsize{20}{24}\selectfont\bfseries AN EVIDENCE-GROUNDED\par}
+\vspace{0.1cm}
+{\fontsize{18}{22}\selectfont\bfseries RETRIEVAL-AUGMENTED GENERATION\par}
+\vspace{0.1cm}
+{\fontsize{18}{22}\selectfont\bfseries FRAMEWORK\par}
+\vspace{0.1cm}
+{\fontsize{16}{20}\selectfont\bfseries FOR INDUSTRIAL DECISION SUPPORT\par}
+\vspace{0.5cm}
+{\fontsize{14}{17}\selectfont\itshape M.Tech Project Report\par}
+\vspace{0.6cm}
+\includegraphics[width=5.66cm]{assets/iitkgp_emblem.png}\par
+\vspace{1.5cm}
+{\fontsize{13}{16}\selectfont By\par}
+\vspace{0.2cm}
+{\fontsize{15}{18}\selectfont\bfseries Ritik Raj [25IM60R12]\par}
+\vspace{0.35cm}
+{\fontsize{13}{16}\selectfont Under the supervision of\par}
+\vspace{0.15cm}
+{\fontsize{14}{17}\selectfont\bfseries Dr. Sri Krishna Kumar\par}
+\vspace{0.55cm}
+{\fontsize{12}{15}\selectfont\bfseries INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR)\par}
+\vspace{0.1cm}
+{\fontsize{12}{15}\selectfont\bfseries DEPARTMENT OF INDUSTRIAL AND SYSTEMS ENGINEERING\par}
+\vspace{0.1cm}
+{\fontsize{12}{15}\selectfont\bfseries INDIAN INSTITUTE OF TECHNOLOGY, KHARAGPUR\par}
+\vspace{0.1cm}
+{\fontsize{12}{15}\selectfont KHARAGPUR- 721302, INDIA\par}
+\vspace{0.3cm}
+{\fontsize{12}{15}\selectfont\bfseries NOVEMBER, 2026\par}
+\end{center}
+\newpage
+
+% The certificate page. The emblem sits in the margin beside the letterhead,
+% the way the department's template has it.
+\fancypagestyle{deptcert}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}\fancyfoot[R]{\small\thepage}}
+\thispagestyle{deptcert}
+\noindent
+\begin{minipage}[t]{2.4cm}
+  \includegraphics[width=1.81cm]{assets/iitkgp_emblem.png}
+\end{minipage}%
+\begin{minipage}[t]{12.2cm}
+  \fontsize{11}{13}\selectfont\bfseries
+  DEPARTMENT OF INDUSTRIAL AND SYSTEMS ENGINEERING\\
+  INDIAN INSTITUTE OF TECHLOGY KHARAGPUR,\\
+  KHARAGPUR, INDIA-721302
+\end{minipage}
+\par\vspace{0.35cm}
+\noindent\rule{\textwidth}{0.7pt}
+\par\vspace{1.1cm}
+\begin{center}
+{\fontsize{18}{22}\selectfont\bfseries CERTIFICATE\par}
+\end{center}
+\vspace{1.1cm}
+{\fontsize{12}{20.6}\selectfont
+This is to certify that this report entitled An Evidence-Grounded Retrieval-Augmented
+Generation Framework for Industrial Decision Support submitted by Ritik Raj [25IM60R12]
+to the Indian Institute of Technology Kharagpur is a record of the bona fide project
+work carried out under my supervision and is worthy of consideration for the MTP
+Project. This project has fulfilled all the requirements as per the regulations of
+the Institute and has reached the standard needed for the submission.\par}
+\vfill
+{\fontsize{10.6}{13}\selectfont
+\textbf{Dr. Sri Krishna Kumar}\\
+Department of Industrial and Systems Engineering\\
+Indian Institute of Technology Kharagpur\\
+India-721302\\
+Date: 18-11-2026\par}
+\newpage
+\pagestyle{fancy}
+$else$
+$if(title)$
+\begin{center}
+  {\LARGE\bfseries\color{brandnavy} $title$ \par}
+  \vspace{0.4em}
+  $if(subtitle)${\large\color{brandaccent} $subtitle$ \par}\vspace{0.6em}$endif$
+  $for(author)${\large $author$ \par}$endfor$
+  $if(date)${\small\color{gray} $date$ \par}$endif$
+\end{center}
+\vspace{1.2em}
+$endif$
+$endif$
+
+$if(toc)$
+$if(toc-on-own-page)$
+% The title block gets a page to itself and the contents start on the next
+% one. A contents list that begins halfway down the title page reads as part
+% of the title, and the reader cannot tell where the document proper starts.
+\newpage
+$endif$
+\tableofcontents
+\newpage
+$endif$
+
+$body$
+
+\end{document}

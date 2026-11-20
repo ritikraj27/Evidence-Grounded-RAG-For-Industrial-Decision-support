@@ -1,0 +1,100 @@
+{
+  "schema": "mtp.claim-band-ablation/1",
+  "n_claims": 76,
+  "n_pairs_scored": 1520,
+  "n_claims_with_markdown": 27,
+  "markdown_strip_only": {
+    "n": 76,
+    "kappa_3class": -0.049433858050262354,
+    "kappa_3class_ci95": [
+      -0.1841459836848044,
+      0.0852782675842797
+    ],
+    "kappa_binary": -0.10508922670191684,
+    "kappa_binary_ci95": [
+      -0.25845065365110004,
+      0.04827220024726636
+    ],
+    "per_band_error_rate": {
+      "grounded": {
+        "n": 15,
+        "error_rate": 0.6
+      },
+      "inferred": {
+        "n": 8,
+        "error_rate": 0.5
+      },
+      "uncertain": {
+        "n": 53,
+        "error_rate": 0.41509433962264153
+      }
+    }
+  },
+  "as_shipped": {
+    "n": 76,
+    "kappa_3class": 0.20372526193247958,
+    "kappa_3class_ci95": [
+      0.05817803221417939,
+      0.3492724916507798
+    ],
+    "kappa_binary": 0.20405405405405394,
+    "kappa_binary_ci95": [
+      0.04970977962255249,
+      0.3583983284855554
+    ],
+    "per_band_error_rate": {
+      "grounded": {
+        "n": 26,
+        "error_rate": 0.3076923076923077
+      },
+      "inferred": {
+        "n": 6,
+        "error_rate": 0.5
+      },
+      "uncertain": {
+        "n": 44,
+        "error_rate": 0.5454545454545454
+      }
+    }
+  },
+  "shipped_support_from_generation": {
+    "n": 76,
+    "kappa_3class": 0.06251752172694136,
+    "kappa_3class_ci95": [
+      -0.07873592308254732,
+      0.20377096653643004
+    ],
+    "kappa_binary": 0.0026917900403769326,
+    "kappa_binary_ci95": [
+      -0.15396817966321366,
+      0.1593517597439675
+    ],
+    "per_band_error_rate": {
+      "grounded": {
+        "n": 24,
+        "error_rate": 0.4583333333333333
+      },
+      "inferred": {
+        "n": 11,
+        "error_rate": 0.18181818181818182
+      },
+      "uncertain": {
+        "n": 41,
+        "error_rate": 0.5365853658536586
+      }
+    }
+  },
+  "band_shift_counts": {
+    "grounded->uncertain": 15,
+    "grounded->grounded": 7,
+    "uncertain->uncertain": 34,
+    "inferred->grounded": 2,
+    "uncertain->grounded": 6,
+    "grounded->inferred": 4,
+    "inferred->uncertain": 4,
+    "uncertain->inferred": 4
+  },
+  "note": "'shipped_support_from_generation' uses the support values recorded by the generation run, which scored the raw claim over a possibly different candidate set; 'as_shipped' recomputes it here over the same candidates so that the only difference between the two rows is the Markdown.",
+  "n_band_changed_by_stripping": 35,
+  "n_band_changed_toward_agreement": 7
+}

@@ -1,0 +1,86 @@
+{
+  "generator": "claude_agent_industrial_gen",
+  "batch": 1,
+  "answers": [
+    {
+      "index": 20,
+      "answer": "MMM — the delegation tables list subpart MMM with the source category [Reserved]."
+    },
+    {
+      "index": 21,
+      "answer": "No. Subpart AAA (New Residential Wood Heaters) is not delegated to ODEQ."
+    },
+    {
+      "index": 22,
+      "answer": "Deburring (grinding) — the Beryllium oxide operations entry in the row where Electrical Chemical Machining (ECM) appears under beryllium metal alloy operations."
+    },
+    {
+      "index": 23,
+      "answer": "Hospitalization, long-term care, ambulatory care, home health and hospice care, emergency medical response, and patient transport."
+    },
+    {
+      "index": 24,
+      "answer": "[Reserved]."
+    },
+    {
+      "index": 25,
+      "answer": "Indoor or outdoor locations under the control of the employer that more than one person may use or where people congregate (e.g., building lobbies, reception areas, waiting rooms, restrooms)."
+    },
+    {
+      "index": 26,
+      "answer": "<=72 mass % (ID No. UN3103, packing method OP5)."
+    },
+    {
+      "index": 27,
+      "answer": "No. Subpart AAb (Steel Plants: Electric Arc Furnaces & Argon-Oxygen Decarburization Vessels Constructed After May 16, 2022) is not delegated to LDEQ."
+    },
+    {
+      "index": 28,
+      "answer": "Openers and pickers means a general classification which includes breaker pickers, intermediate pickers, finisher pickers, single process pickers, multiple process pickers, willow machines, card and picker waste cleaners, thread extractors, shredding machines, roving waste openers, shoddy pickers, bale breakers, feeders, vertical openers, lattice cleaners, horizontal cleaners, and any similar machinery equipped with either cylinders, screen section, calender section, rolls, or beaters used for the preparation of stock for further processing."
+    },
+    {
+      "index": 29,
+      "answer": "Handwashing facilities means a facility providing an adequate supply of running potable water, soap, and single-use towels or air-drying machines."
+    },
+    {
+      "index": 30,
+      "answer": "20 percent — the rated load divided by the number of parts of rope shall not exceed 20 percent of the nominal breaking strength of the rope."
+    },
+    {
+      "index": 31,
+      "answer": "Product identifier means the name or number used for a hazardous chemical on a label or in the SDS. It provides a unique means by which the user can identify the chemical."
+    },
+    {
+      "index": 32,
+      "answer": "30 for the UN3103 entry (concentration <=72) and 22 for the UN3107 entry (concentration <=27); the other listed entries carry no note."
+    },
+    {
+      "index": 33,
+      "answer": ">=48 mass % (ID No. UN3105, concentration <=52, packing method OP7)."
+    },
+    {
+      "index": 34,
+      "answer": "12 mg/m3 (CAS No. 2179-59-1, with a limit of 2 ppm)."
+    },
+    {
+      "index": 35,
+      "answer": "Physical location means a site (including outdoor and indoor areas, a structure, or a group of structures) or an area within a site where work or any work-related activity (e.g., taking breaks, going to the restroom, eating, entering, or exiting work) occurs. A physical location includes the entirety of any space associated with the site (e.g., workstations, hallways, stairwells, breakrooms, bathrooms, elevators) and any other space that an employee might occupy in arriving, working, or leaving."
+    },
+    {
+      "index": 36,
+      "answer": "Cold Isostatic Pressing (CIP) — the Beryllium oxide operations entry in the row where Chemical Milling. appears under beryllium metal alloy operations."
+    },
+    {
+      "index": 37,
+      "answer": "Card clothing is the material with which many of the surfaces of a card are covered; e.g., the cylinder, doffer, etc. It consists of a thick foundation material, usually made of textile fabrics, through which are pressed many fine, closely spaced, specially bent wires."
+    },
+    {
+      "index": 38,
+      "answer": "New Residential Wood Heaters."
+    },
+    {
+      "index": 39,
+      "answer": "130 feet (39.6 m) — the suspended portion of the equipment in use must not exceed 130 feet above a safe surface or ground level."
+    }
+  ]
+}

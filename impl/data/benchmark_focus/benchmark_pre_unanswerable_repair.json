@@ -1,0 +1,1492 @@
+{
+  "label_standard": "silver",
+  "seed": 20261118,
+  "n_queries": 176,
+  "n_answerable": 32,
+  "n_unanswerable": 144,
+  "families": {
+    "unanswerable_ood": 34,
+    "unanswerable_near_miss": 110,
+    "table_lookup": 8,
+    "definition": 21,
+    "numeric_fact": 3
+  },
+  "categories": {
+    "unanswerable": 144,
+    "supply_chain_management": 32
+  },
+  "queries": [
+    {
+      "query": "Who wrote the opera The Magic Flute?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component PLT-1854?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Which planet has the shortest day?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset ASM-4911?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the half-life of the isotope carbon-14?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component MC-3514?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-8576?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family EQ-2468?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component SKU-5632?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the recommended word count for a college essay?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the boiling point of diesel fuel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for John Krafcik?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl36"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Coined the term \"Lean\" in 1988"
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine MC-9431?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Who wrote the play A Doll's House?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the molecular weight of sucrose?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine PN-9318?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is an RFID tag?",
+      "gold": [
+        "logistics::p1::t85"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "card containing a memory chip and an antenna that transmits signals to a reader"
+    },
+    {
+      "query": "What is the tallest building in South America?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset WC-2203?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the constraint?",
+      "gold": [
+        "theory-of-constraints::p1::t13"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "limiting factor that is preventing the organization from getting more throughput (typically, revenue through sales) even when nothing goes wrong"
+    },
+    {
+      "query": "How do I plant a hedge in a clay soil?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family ASM-3614?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family EQ-3319?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-2876?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU EQ-2316?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the legal age to vote in Japan?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement PLT-2084?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement PN-2578?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part SKU-2742?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part EQ-6359?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is inbound logistics?",
+      "gold": [
+        "logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the primary logistics processes, focusing on the procurement and coordination of the inbound movement of materials, parts, or unfinished inventory from suppliers to manufacturing or assembly plants, w"
+    },
+    {
+      "query": "What are kanban cards?",
+      "gold": [
+        "kanban::p1::t19"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "key component of kanban and they signal the need to move materials within a production facility or to move materials from an outside supplier into the production facility"
+    },
+    {
+      "query": "What is the economic order quantity for SKU EQ-8961?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the rate of photosynthesis in wheat?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I make sourdough bread rise faster?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family AST-4470?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job ASM-6293?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset PRT-4691?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement JOB-6357?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine MC-5497?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I change the tyre pressure on a bicycle?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-4542?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre EQ-1905?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Percentage yield for 0.023%?",
+      "gold": [
+        "six-sigma::p1::tbl46"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "99.977%"
+    },
+    {
+      "query": "What is the acceptable tolerance for part PLT-5821?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job INV-9880?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part JOB-6985?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset PN-141?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement EQ-2886?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-1339?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for What to change??",
+      "gold": [
+        "theory-of-constraints::p1::tbl49"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Current reality tree \"Current reality tree (theory of constraints)\")"
+    },
+    {
+      "query": "What is the setup time for product family INV-1140?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset INV-3928?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement ASM-1177?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset VND-8108?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre EQ-5619?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What was the population of Paris in 1850?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family VND-2652?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the drum?",
+      "gold": [
+        "theory-of-constraints::p1::t25"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "rate at which the physical constraint of the plant can work: the work center or machine or operation that limits the ability of the entire system to produce more"
+    },
+    {
+      "query": "What is the material handling cost for work centre PN-3318?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a prominent example?",
+      "gold": [
+        "theory-of-constraints::p1::t29"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "use of automated production lines in the beverage industry"
+    },
+    {
+      "query": "What is freight transportation?",
+      "gold": [
+        "logistics::p1::t29"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "central part of logistics and allows access to broad markets"
+    },
+    {
+      "query": "What is the economic order quantity for SKU PN-4945?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-9251?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part VND-2036?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement PLT-2271?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I remove a coffee stain from a wool sweater?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component PLT-6263?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre SKU-2144?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU SKU-3148?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the rope?",
+      "gold": [
+        "theory-of-constraints::p1::t28"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "work release mechanism for the plant"
+    },
+    {
+      "query": "What is the material handling cost for work centre ASM-973?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for the purpose in the source documentation?",
+      "gold": [
+        "six-sigma::p1::t42"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "6"
+    },
+    {
+      "query": "Who painted the ceiling of the Sistine Chapel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part WC-7588?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component PLT-6292?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job VND-8034?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Greeley for WIP stock reduction?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl28"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "22 days to 1 day"
+    },
+    {
+      "query": "What is the failure rate for component VND-8798?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I weld aluminium to steel?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the currency of Switzerland?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job WC-1256?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component MC-3203?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I convert a PNG file to a JPEG?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset WC-6013?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component ASM-7350?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is operations research?",
+      "gold": [
+        "strategic-sourcing::p1::t11"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "discipline of applying advanced techniques to help make better decisions"
+    },
+    {
+      "query": "According to the table in the source document, what is the Sufficient thinking (\"If\u2026 then\") for What to change to??",
+      "gold": [
+        "theory-of-constraints::p1::tbl49"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Future Reality Tree Negative Branch Reservations"
+    },
+    {
+      "query": "What is the economic order quantity for SKU ASM-7186?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component ASM-7718?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU MC-780?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part AST-8342?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the freezing point of ethanol in Fahrenheit?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU WC-3057?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Who composed the Brandenburg Concertos?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part PRT-3641?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for SF handled a total in the source documentation?",
+      "gold": [
+        "third-party-logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "3.05"
+    },
+    {
+      "query": "What is the tax rate in a country named Freedonia?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre MC-3086?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the Chartered Institute?",
+      "gold": [
+        "logistics::p1::t87"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "the professional bodies or institutions for the logistics and transport sectors that"
+    },
+    {
+      "query": "What are sourcing Business Models?",
+      "gold": [
+        "strategic-sourcing::p1::t15"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "systems-based approach to structuring supplier relationships"
+    },
+    {
+      "query": "What is the economic order quantity for SKU PLT-4612?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component AST-5132?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine AST-543?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component ASM-4663?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How do I train for a marathon in eight weeks?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement ASM-5533?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre VND-483?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU PLT-8422?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job MC-9585?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component MC-2885?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family AST-4267?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is outbound logistics?",
+      "gold": [
+        "logistics::p1::t30"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "process related to the storage and movement of finished products"
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset AST-2755?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is a sourcing business model?",
+      "gold": [
+        "strategic-sourcing::p1::t15"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "type of business model that is applied to business relationships where more than one party needs to work with another party to be successful"
+    },
+    {
+      "query": "What is the failure rate for component JOB-9599?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the capital city of Mongolia?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "How many bones are in the adult human hand?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part PRT-8863?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the average annual variable cost?",
+      "gold": [
+        "economic-order-quantity::p1::t18"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "sum of order costs, holding inventory costs and backorder costs: : K = \u03bb Q A + 1 2 Q I C ( Q \u2212 s ) 2 + 1 Q [ \u03c0 \u03bb s + 1 2 \u03c0 ^ s 2 ] {\\displaystyle {\\mathcal {K}}={\\frac {\\lambda }{Q}}A+{\\frac {1}{2Q}}I"
+    },
+    {
+      "query": "What is the material handling cost for work centre PRT-7879?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part PN-214?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component INV-7634?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family INV-8497?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is logistics management?",
+      "gold": [
+        "logistics::p1::t13"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "component that holds the supply chain"
+    },
+    {
+      "query": "What is the failure rate for component AST-7210?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU AST-6561?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the boiling point of water at 2000 metres altitude?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the speed of light in a vacuum?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre JOB-1428?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part PN-9539?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is regression analysis?",
+      "gold": [
+        "demand-forecasting::p1::t11"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "main statistical method for forecasting"
+    },
+    {
+      "query": "What is the reorder point for supplier part SKU-7771?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component PRT-4769?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement AST-2610?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component ASM-4009?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part PRT-8861?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is since manufacturing in an existing plant?",
+      "gold": [
+        "logistics::p1::t38"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "constantly changing process, machines are exchanged and new ones added, which allows for improving the production logistics system accordingly"
+    },
+    {
+      "query": "What is the warranty period on a diesel generator?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is safety stock?",
+      "gold": [
+        "safety-stock::p1::t0"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "additional quantity of an item held in the inventory to reduce the risk that the item will be out of stock"
+    },
+    {
+      "query": "What is the economic order quantity for SKU ASM-6014?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part PRT-780?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Percent defective for 66,807?",
+      "gold": [
+        "six-sigma::p1::tbl46"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "6.7%"
+    },
+    {
+      "query": "What is the sourcing plan?",
+      "gold": [
+        "strategic-sourcing::p1::t9"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "result of all planning efforts on strategic sourcing"
+    },
+    {
+      "query": "What is the control limit for measurement PLT-130?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What value is stated for a rule of thumb in the source documentation?",
+      "gold": [
+        "theory-of-constraints::p1::t37"
+      ],
+      "category": "supply_chain_management",
+      "family": "numeric_fact",
+      "modality_target": "text",
+      "answer": "20%"
+    },
+    {
+      "query": "What is the setup time for product family PRT-8920?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-4439?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the acceptable tolerance for part VND-2520?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the setup time for product family EQ-4517?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Computer Systems for 30% scrap, 79% rework?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl28"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "80% scrap"
+    },
+    {
+      "query": "What is the reorder point for supplier part PLT-2391?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component MC-6050?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component WC-3815?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job EQ-1680?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the safety stock level maintained for component VND-6624?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the material handling cost for work centre MC-6534?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the reorder point for supplier part ASM-7491?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the theory of constraints?",
+      "gold": [
+        "theory-of-constraints::p1::t5"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "overall management philosophy, introduced by Eliyahu M"
+    },
+    {
+      "query": "What is the average depth of the Mariana Trench?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "According to the table in the source document, what is the Contribution for Shigeo Shingo?",
+      "gold": [
+        "just-in-time-manufacturing::p1::tbl36"
+      ],
+      "category": "supply_chain_management",
+      "family": "table_lookup",
+      "modality_target": "table",
+      "answer": "Formalized the seven wastes; developed SMED and other TPS tools"
+    },
+    {
+      "query": "What is the setup time for product family PRT-5962?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the failure rate for component VND-9373?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the chemical formula for table salt?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is six Sigma?",
+      "gold": [
+        "six-sigma::p1::t47"
+      ],
+      "category": "supply_chain_management",
+      "family": "definition",
+      "modality_target": "text",
+      "answer": "result of the size of the organization rather than a requirement of Six Sigma itself"
+    },
+    {
+      "query": "What is the deepest point in the Atlantic Ocean?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine MC-2993?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the standard cycle time for job PN-5419?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Who won the 1998 FIFA World Cup final?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset WC-2797?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "Who was the first person to set foot on Antarctica?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the control limit for measurement SKU-6162?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the economic order quantity for SKU JOB-795?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the mean time between failures recorded for machine JOB-1527?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the recommended daily intake of vitamin D for adults?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_ood",
+      "modality_target": null,
+      "answer": null
+    },
+    {
+      "query": "What is the preventive maintenance interval for asset AST-2073?",
+      "gold": [],
+      "category": "unanswerable",
+      "family": "unanswerable_near_miss",
+      "modality_target": null,
+      "answer": null
+    }
+  ]
+}

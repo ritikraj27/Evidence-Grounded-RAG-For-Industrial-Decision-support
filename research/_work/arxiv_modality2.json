@@ -1,0 +1,835 @@
+{
+ "docvqa_benchmarks": {
+  "query": "all:\"DocVQA\" OR all:\"InfographicVQA\" OR all:\"ChartQA\" OR all:\"MMLongBench-Doc\"",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "table_rag": {
+  "query": "all:\"TableRAG\" OR (all:\"table\" AND all:\"retrieval augmented generation\" AND all:\"question answering\")",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "raptor_latechunk": {
+  "query": "all:\"RAPTOR\" OR all:\"Late Chunking\"",
+  "error": "HTTP Error 429: Unknown Error",
+  "results": []
+ },
+ "mm_parsing": {
+  "query": "all:\"document parsing\" AND (all:\"OCR\" OR all:\"layout\") AND all:\"retrieval augmented generation\"",
+  "results": [
+   {
+    "arxiv_id": "2410.21169",
+    "title": "Document Parsing Unveiled: Techniques, Challenges, and Prospects for Structured Information Extraction",
+    "authors": [
+     "Qintong Zhang",
+     "Bin Wang",
+     "Victor Shea-Jay Huang",
+     "Junyuan Zhang",
+     "Zhengren Wang",
+     "Hao Liang",
+     "Conghui He",
+     "Wentao Zhang"
+    ],
+    "abstract": "Document parsing (DP) transforms unstructured or semi-structured documents into structured, machine-readable representations, enabling downstream applications such as knowledge base construction and retrieval-augmented generation (RAG). This survey provides a comprehensive and timely review of document parsing research. We propose a systematic taxonomy that organizes existing approaches into modular pipeline-based systems and unified models driven by Vision-Language Models (VLMs). We provide a detailed review of key components in pipeline systems, including layout analysis and the recognition of heterogeneous content such as text, tables, mathematical expressions, and visual elements, and then systematically track the evolution of specialized VLMs for document parsing. Additionally, we summarize widely adopted evaluation metrics and high-quality benchmarks that establish current standards for parsing quality. Finally, we discuss key open challenges, including robustness to complex layouts, reliability of VLM-based parsing, and inference efficiency, and outline directions for building more accurate and scalable document intelligence systems.",
+    "published": "2024-10-28",
+    "updated": "2026-04-04",
+    "categories": [
+     "cs.MM",
+     "cs.AI",
+     "cs.CL",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2410.21169"
+   },
+   {
+    "arxiv_id": "2412.07626",
+    "title": "OmniDocBench: Benchmarking Diverse PDF Document Parsing with Comprehensive Annotations",
+    "authors": [
+     "Linke Ouyang",
+     "Yuan Qu",
+     "Hongbin Zhou",
+     "Jiawei Zhu",
+     "Rui Zhang",
+     "Qunshu Lin",
+     "Bin Wang",
+     "Zhiyuan Zhao",
+     "Man Jiang",
+     "Xiaomeng Zhao",
+     "Jin Shi",
+     "Fan Wu",
+     "Pei Chu",
+     "Minghao Liu",
+     "Zhenxiang Li",
+     "Chao Xu",
+     "Bo Zhang",
+     "Botian Shi",
+     "Zhongying Tu",
+     "Conghui He"
+    ],
+    "abstract": "Document content extraction is a critical task in computer vision, underpinning the data needs of large language models (LLMs) and retrieval-augmented generation (RAG) systems. Despite recent progress, current document parsing methods have not been fairly and comprehensively evaluated due to the narrow coverage of document types and the simplified, unrealistic evaluation procedures in existing benchmarks. To address these gaps, we introduce OmniDocBench, a novel benchmark featuring high-quality annotations across nine document sources, including academic papers, textbooks, and more challenging cases such as handwritten notes and densely typeset newspapers. OmniDocBench supports flexible, multi-level evaluations--ranging from an end-to-end assessment to the task-specific and attribute--based analysis using 19 layout categories and 15 attribute labels. We conduct a thorough evaluation of both pipeline-based methods and end-to-end vision-language models, revealing their strengths and weaknesses across different document types. OmniDocBench sets a new standard for the fair, diverse, and fine-grained evaluation in document parsing. Dataset and code are available at https://github.com/opendatalab/OmniDocBench.",
+    "published": "2024-12-10",
+    "updated": "2025-03-25",
+    "categories": [
+     "cs.CV",
+     "cs.AI",
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2412.07626"
+   },
+   {
+    "arxiv_id": "2511.10390",
+    "title": "MonkeyOCR v1.5 Technical Report: Unlocking Robust Document Parsing for Complex Patterns",
+    "authors": [
+     "Jiarui Zhang",
+     "Yuliang Liu",
+     "Zijun Wu",
+     "Guosheng Pang",
+     "Zhili Ye",
+     "Yupei Zhong",
+     "Junteng Ma",
+     "Tao Wei",
+     "Haiyang Xu",
+     "Weikai Chen",
+     "Zeen Wang",
+     "Qiangjun Ji",
+     "Fanxi Zhou",
+     "Qi Zhang",
+     "Yuanrui Hu",
+     "Jiahao Liu",
+     "Zhang Li",
+     "Ziyang Zhang",
+     "Qiang Liu",
+     "Xiang Bai"
+    ],
+    "abstract": "Document parsing is a core task in document intelligence, supporting applications such as information extraction, retrieval-augmented generation, and automated document analysis. However, real-world documents often feature complex layouts with multi-level tables, embedded images or formulas, and cross-page structures, which remain challenging for existing OCR systems. We introduce MonkeyOCR v1.5, a unified vision-language framework that enhances both layout understanding and content recognition through a two-stage pipeline. The first stage employs a large multimodal model to jointly predict layout and reading order, leveraging visual information to ensure sequential consistency. The second stage performs localized recognition of text, formulas, and tables within detected regions, maintaining high visual fidelity while reducing error propagation. To address complex table structures, we propose a visual consistency-based reinforcement learning scheme that evaluates recognition quality via render-and-compare alignment, improving structural accuracy without manual annotations. Additionally, two specialized modules, Image-Decoupled Table Parsing and Type-Guided Table Merging, are introduced to enable reliable parsing of tables containing embedded images and reconstruction of tables crossing pages or columns. Comprehensive experiments on OmniDocBench v1.5 demonstrate that MonkeyOCR v1.5 achieves state-of-the-art performance, outperforming PPOCR-VL and MinerU 2.5 while showing exceptional robustness in visually complex document scenarios. A trial link can be found at https://github.com/Yuliang-Liu/MonkeyOCR .",
+    "published": "2025-11-13",
+    "updated": "2025-11-16",
+    "categories": [
+     "cs.CV",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2511.10390"
+   },
+   {
+    "arxiv_id": "2602.03693",
+    "title": "OCRTurk: A Comprehensive OCR Benchmark for Turkish",
+    "authors": [
+     "Deniz Y\u0131lmaz",
+     "Evren Ayberk Munis",
+     "\u00c7a\u011fr\u0131 Toraman",
+     "S\u00fcha Ka\u011fan K\u00f6se",
+     "Burak Akta\u015f",
+     "Mehmet Can Baytekin",
+     "Bilge Kaan G\u00f6r\u00fcr"
+    ],
+    "abstract": "Document parsing is now widely used in applications, such as large-scale document digitization, retrieval-augmented generation, and domain-specific pipelines in healthcare and education. Benchmarking these models is crucial for assessing their reliability and practical robustness. Existing benchmarks mostly target high-resource languages and provide limited coverage for low-resource settings, such as Turkish. Moreover, existing studies on Turkish document parsing lack a standardized benchmark that reflects real-world scenarios and document diversity. To address this gap, we introduce OCRTurk, a Turkish document parsing benchmark covering multiple layout elements and document categories at three difficulty levels. OCRTurk consists of 180 Turkish documents drawn from academic articles, theses, slide decks, and non-academic articles. We evaluate seven OCR models on OCRTurk using element-wise metrics. Across difficulty levels, PaddleOCR achieves the strongest overall results, leading most element-wise metrics except figures and attaining high Normalized Edit Distance scores in easy, medium, and hard subsets. We also observe performance variation by document type. Models perform well on non-academic documents, while slideshows become the most challenging.",
+    "published": "2026-02-03",
+    "updated": "2026-02-03",
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2602.03693"
+   },
+   {
+    "arxiv_id": "2603.00122",
+    "title": "NovaLAD: A Fast, CPU-Optimized Document Extraction Pipeline for Generative AI and Data Intelligence",
+    "authors": [
+     "Aman Ulla"
+    ],
+    "abstract": "Document extraction is an important step before retrieval-augmented generation (RAG), knowledge bases, and downstream generative AI can work. It turns unstructured documents like PDFs and scans into structured text and layout-aware representations. We introduce NovaLAD, a comprehensive document parsing system that integrates two concurrent YOLO object detection models - element detection and layout detection - with rule-based grouping and optional vision-language enhancement. When a page image is sent in, the first thing that happens is that it goes through both models at the same time. The element model finds semantic content like the title, header, text, table, image, and so on, and the layout model finds structural regions like layout_box, column_group, multi_column, row_group, and so on. A key design decision is to first send an image or figure through an image classifier (ViT) that decides whether it is relevant or not. Only useful images are then submitted to the Vision LLM for title, summary, and structured information, which cuts down on noise and costs. NovaLAD is built for speed: it works on CPU, employs parallel execution for detection, classification, OCR, and conversion, and generates several forms, including structured JSON, Markdown, RAG-ready texts, and knowledge graphs. We test on the DP-Bench benchmark (upstage/dp-bench) and get 96.49% TEDS and 98.51% NID, which is better than both commercial and open-source parsers. This paper explains how to extract data, how the architecture works, how data flows, and how to make NovaLAD both accurate and usable without needing a GPU.",
+    "published": "2026-02-23",
+    "updated": "2026-02-23",
+    "categories": [
+     "cs.CV",
+     "cs.AI",
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2603.00122"
+   },
+   {
+    "arxiv_id": "2608.24976",
+    "title": "A Comparative Evaluation of Digitization Pipelines for Historiographical Sources",
+    "authors": [
+     "Marina G\u00f3mez Rey",
+     "Patricia Callejo",
+     "Mario Mu\u00f1oz-Organero",
+     "Carlos Alario-Hoyos"
+    ],
+    "abstract": "Purpose: The digitization of historical documents presents fundamental challenges for modern information retrieval and Artificial Intelligence (AI) systems. Optical character recognition (OCR) errors in source corpora propagate through retrieval-augmented generation (RAG) pipelines, compromising the factual accuracy of generated outputs. Methods: This study presents a systematic evaluation of PDF-to-text extraction pipelines applied to historiographical secondary sources on the Visigothic period. We assess thirteen distinct approaches spanning three methodological families: direct extraction, Large Language Model (LLM) post-correction, and chunk-and-extract. Documents are stratified into five categories based on production method and visual complexity. Performance is measured using character error rate (CER) and word error rate (WER) against manually corrected ground truth. Results: Results demonstrate that direct extraction with Marker achieves superior performance (98.70% CER accuracy; 97.71% WER accuracy overall), while conventional OCR pipelines exhibit substantial degradation on scanned documents and complex layouts. Embedded-text extraction performs well on digital PDFs but fails on scanned documents. LLM post-correction does not provide systematic improvements and frequently degrades accurate extractions. Conclusion: End-to-end document parsing is the most reliable approach for heterogeneous historical collections. Document characteristics such as scan quality, layout complexity, and the presence of embedded text layers have a significant impact on extraction accuracy. LLM-based post-correction should not be assumed beneficial by default and requires validation before large-scale application.",
+    "published": "2026-08-25",
+    "updated": "2026-08-25",
+    "categories": [
+     "cs.DL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2608.24976"
+   },
+   {
+    "arxiv_id": "2610.18238",
+    "title": "Heading Hierarchy Reconstruction for Complex and Long Documents with Level-Wise Multimodal Memory",
+    "authors": [
+     "Qian Chen",
+     "Xianyin Zhang",
+     "Lifan Guo",
+     "Chi Zhang"
+    ],
+    "abstract": "Vision-language models (VLMs) have been widely adopted for document parsing and optical character recognition (OCR), as they can accurately extract page-level elements. However, downstream applications such as retrieval-augmented generation (RAG) also require coherent document-level structure. Although these models indicate heading levels using different numbers of preceding ``\\#'' symbols, page-by-page prediction often lacks document-level consistency. In practice, input-resolution and context-length constraints make it infeasible for a VLM to jointly process all page images in documents containing tens or hundreds of pages. To address this limitation, we propose a VLM-based framework that incrementally reconstructs heading hierarchies with a \\emph{level-wise multimodal memory}. The memory retains a compact subset of all previously processed pages, selected by anchors. Our framework supports flexible anchor selection, and in this work we select the most recent node at each level, allowing the VLM to observe the visual, textual, and layout patterns of headings at every level. For comprehensive evaluation, we also introduce the Complex and Long Document Heading Hierarchy Reconstruction Benchmark (CLDoc-HHRBench), comprising 250 documents and 11,212 pages with expert-verified annotations. Experiments on CLDoc-HHRBench and three existing benchmarks demonstrate the effectiveness of our method.",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "categories": [
+     "cs.CV",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2610.18238"
+   },
+   {
+    "arxiv_id": "2602.11960",
+    "title": "Benchmarking Vision-Language Models for French PDF-to-Markdown Conversion",
+    "authors": [
+     "Bruno Rigal",
+     "Victor Dupriez",
+     "Alexis Mignon",
+     "Ronan Le Hy",
+     "Nicolas Mery"
+    ],
+    "abstract": "This report evaluates PDF-to-Markdown conversion using recent Vision-Language Models (VLMs) on challenging French documents. Document parsing is a critical step for Retrieval-Augmented Generation (RAG) pipelines, where transcription and layout errors propagate to downstream retrieval and grounding. Existing benchmarks often emphasize English or Chinese and can over-penalize benign formatting and linearization choices (e.g., line breaks, list segmentation, alternative table renderings) that are largely irrelevant for downstream use. We introduce a French-focused benchmark of difficult pages selected via model-disagreement sampling from a corpus of 60{,}000 documents, covering handwritten forms, complex layouts, dense tables, and graphics-rich pages. Evaluation is performed with unit-test-style checks that target concrete failure modes (text presence, reading order, and local table constraints) combined with category-specific normalization designed to discount presentation-only variance. Across 15 models, we observe substantially higher robustness for the strongest proprietary models on handwriting and forms, while several open-weights systems remain competitive on standard printed layouts.",
+    "published": "2026-02-12",
+    "updated": "2026-02-12",
+    "categories": [
+     "cs.CV",
+     "cs.CL",
+     "cs.LG"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2602.11960"
+   }
+  ]
+ },
+ "anyrag_ragbench": {
+  "query": "all:\"AnyRAG\" OR all:\"RAGBench\" OR all:\"RAG evaluation benchmark\"",
+  "results": [
+   {
+    "arxiv_id": "2407.11005",
+    "title": "RAGBench: Explainable Benchmark for Retrieval-Augmented Generation Systems",
+    "authors": [
+     "Robert Friel",
+     "Masha Belyi",
+     "Atindriyo Sanyal"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) has become a standard architectural pattern for incorporating domain-specific knowledge into user-facing chat applications powered by Large Language Models (LLMs). RAG systems are characterized by (1) a document retriever that queries a domain-specific corpus for context information relevant to an input query, and (2) an LLM that generates a response based on the provided query and context. However, comprehensive evaluation of RAG systems remains a challenge due to the lack of unified evaluation criteria and annotated datasets. In response, we introduce RAGBench: the first comprehensive, large-scale RAG benchmark dataset of 100k examples. It covers five unique industry-specific domains and various RAG task types. RAGBench examples are sourced from industry corpora such as user manuals, making it particularly relevant for industry applications. Further, we formalize the TRACe evaluation framework: a set of explainable and actionable RAG evaluation metrics applicable across all RAG domains. We release the labeled dataset at https://huggingface.co/datasets/rungalileo/ragbench. RAGBench explainable labels facilitate holistic evaluation of RAG systems, enabling actionable feedback for continuous improvement of production applications. Thorough extensive benchmarking, we find that LLM-based RAG evaluation methods struggle to compete with a finetuned RoBERTa model on the RAG evaluation task. We identify areas where existing approaches fall short and propose the adoption of RAGBench with TRACe towards advancing the state of RAG evaluation systems.",
+    "published": "2024-06-25",
+    "updated": "2025-01-16",
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2407.11005"
+   },
+   {
+    "arxiv_id": "2603.06198",
+    "title": "LIT-RAGBench: Benchmarking Generator Capabilities of Large Language Models in Retrieval-Augmented Generation",
+    "authors": [
+     "Koki Itai",
+     "Shunichi Hasegawa",
+     "Yuta Yamamoto",
+     "Gouki Minegishi",
+     "Masaki Otsuki"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) is a framework in which a Generator, such as a Large Language Model (LLM), produces answers by retrieving documents from an external collection using a Retriever. In practice, Generators must integrate evidence from long contexts, perform multi-step reasoning, interpret tables, and abstain when evidence is missing. However, existing benchmarks for Generators provide limited coverage, with none enabling simultaneous evaluation of multiple capabilities under unified conditions. To bridge the gap between existing evaluations and practical use, we introduce LIT-RAGBench (the Logic, Integration, Table, Reasoning, and Abstention RAG Generator Benchmark), which defines five categories: Integration, Reasoning, Logic, Table, and Abstention, each further divided into practical evaluation aspects. LIT-RAGBench systematically covers patterns combining multiple aspects across categories. By using fictional entities and scenarios, LIT-RAGBench evaluates answers grounded in the provided external documents. The dataset consists of 114 human-constructed Japanese questions and an English version generated by machine translation with human curation. We use LLM-as-a-Judge for scoring and report category-wise and overall accuracy. Across API-based and open-weight models, no model exceeds 90% overall accuracy. By making strengths and weaknesses measurable within each category, LIT-RAGBench serves as a valuable metric for model selection in practical RAG deployments and for building RAG-specialized models. We release LIT-RAGBench, including the dataset and evaluation code, at https://github.com/Koki-Itai/LIT-RAGBench.",
+    "published": "2026-03-06",
+    "updated": "2026-04-29",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2603.06198"
+   },
+   {
+    "arxiv_id": "2506.12071",
+    "title": "T$^2$-RAGBench: Text-and-Table Benchmark for Evaluating Retrieval-Augmented Generation",
+    "authors": [
+     "Jan Strich",
+     "Enes Kutay Isgorur",
+     "Maximilian Trescher",
+     "Chris Biemann",
+     "Martin Semmann"
+    ],
+    "abstract": "Since many real-world documents combine textual and tabular data, robust Retrieval Augmented Generation (RAG) systems are essential for effectively accessing and analyzing such content to support complex reasoning tasks. Therefore, this paper introduces $\\textbf{$T^2$-RAGBench}$, a benchmark comprising $\\textbf{23,088}$ question-context-answer triples, designed to evaluate RAG methods on real-world text-and-table data. Unlike typical QA datasets that operate under $\\textit{Oracle Context}$ settings, $\\textbf{$T^2$-RAGBench}$ challenges models to first retrieve the correct context before conducting numerical reasoning. Existing QA datasets containing text-and-table data typically contain context-dependent questions, which may yield multiple correct answers depending on the provided context. To address this, we transform SOTA datasets into a context-independent format, validated by experts as 91.3% context-independent questions, enabling reliable RAG evaluation. Our comprehensive evaluation identifies $\\textit{Hybrid BM25}$ , a technique that combines dense and sparse vectors, as the most effective approach for text-and-table data. However, results demonstrate that $\\textbf{$T^2$-RAGBench}$ remains challenging even for SOTA LLMs and RAG methods. Further ablation studies examine the impact of embedding models and corpus size on retrieval performance. $\\textbf{$T^2$-RAGBench}$ provides a realistic and rigorous benchmark for existing RAG methods on text-and-table data. Code and dataset are available online: https://github.com/uhh-hcds/g4kmu-paper",
+    "published": "2025-06-04",
+    "updated": "2026-01-16",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2506.12071"
+   },
+   {
+    "arxiv_id": "2412.13018",
+    "title": "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+    "authors": [
+     "Shuting Wang",
+     "Jiejun Tan",
+     "Zhicheng Dou",
+     "Ji-Rong Wen"
+    ],
+    "abstract": "As a typical and practical application of Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) techniques have gained extensive attention, particularly in vertical domains where LLMs may lack domain-specific knowledge. In this paper, we introduce an omnidirectional and automatic RAG benchmark, OmniEval, in the financial domain. Our benchmark is characterized by its multi-dimensional evaluation framework, including (1) a matrix-based RAG scenario evaluation system that categorizes queries into five task classes and 16 financial topics, leading to a structured assessment of diverse query scenarios; (2) a multi-dimensional evaluation data generation approach, which combines GPT-4-based automatic generation and human annotation, achieving an 87.47\\% acceptance ratio in human evaluations on generated instances; (3) a multi-stage evaluation system that evaluates both retrieval and generation performance, result in a comprehensive evaluation on the RAG pipeline; and (4) robust evaluation metrics derived from rule-based and LLM-based ones, enhancing the reliability of assessments through manual annotations and supervised fine-tuning of an LLM evaluator. Our experiments demonstrate the comprehensiveness of OmniEval, which includes extensive test datasets and highlights the performance variations of RAG systems across diverse topics and tasks, revealing significant opportunities for RAG models to improve their capabilities in vertical domains. We open source the code of our benchmark in \\href{https://github.com/RUC-NLPIR/OmniEval}{https://github.com/RUC-NLPIR/OmniEval}.",
+    "published": "2024-12-17",
+    "updated": "2025-02-17",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2412.13018"
+   },
+   {
+    "arxiv_id": "2508.20417",
+    "title": "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval",
+    "authors": [
+     "Chi Minh Bui",
+     "Ngoc Mai Thieu",
+     "Van Vinh Nguyen",
+     "Jason J. Jung",
+     "Khac-Hoai Nam Bui"
+    ],
+    "abstract": "The integration of knowledge graphs (KGs) with large language models (LLMs) offers significant potential to improve the retrieval phase of retrieval-augmented generation (RAG) systems. In this study, we propose KG-CQR, a novel framework for Contextual Query Retrieval (CQR) that enhances the retrieval phase by enriching the contextual representation of complex input queries using a corpus-centric KG. Unlike existing methods that primarily address corpus-level context loss, KG-CQR focuses on query enrichment through structured relation representations, extracting and completing relevant KG subgraphs to generate semantically rich query contexts. Comprising subgraph extraction, completion, and contextual generation modules, KG-CQR operates as a model-agnostic pipeline, ensuring scalability across LLMs of varying sizes without additional training. Experimental results on RAGBench and MultiHop-RAG datasets demonstrate KG-CQR's superior performance, achieving a 4-6% improvement in mAP and a 2-3% improvement in Recall@25 over strong baseline models. Furthermore, evaluations on challenging RAG tasks such as multi-hop question answering show that, by incorporating KG-CQR, the performance consistently outperforms the existing baseline in terms of retrieval effectiveness",
+    "published": "2025-08-28",
+    "updated": "2025-09-06",
+    "categories": [
+     "cs.CL",
+     "cs.DB"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2508.20417"
+   },
+   {
+    "arxiv_id": "2602.07739",
+    "title": "HypRAG: Hyperbolic Dense Retrieval for Retrieval Augmented Generation",
+    "authors": [
+     "Hiren Madhu",
+     "Ngoc Bui",
+     "Ali Maatouk",
+     "Leandros Tassiulas",
+     "Smita Krishnaswamy",
+     "Menglin Yang",
+     "Sukanta Ganguly",
+     "Kiran Srinivasan",
+     "Rex Ying"
+    ],
+    "abstract": "Embedding geometry plays a fundamental role in retrieval quality, yet dense retrievers for retrieval-augmented generation (RAG) remain largely confined to Euclidean space. However, natural language exhibits hierarchical structure from broad topics to specific entities that Euclidean embeddings fail to preserve, causing semantically distant documents to appear spuriously similar and increasing hallucination risk. To address these limitations, we introduce hyperbolic dense retrieval, developing two model variants in the Lorentz model of hyperbolic space: HyTE-FH, a fully hyperbolic transformer, and HyTE-H, a hybrid architecture projecting pre-trained Euclidean embeddings into hyperbolic space. To prevent representational collapse during sequence aggregation, we introduce the Outward Einstein Midpoint, a geometry-aware pooling operator that provably preserves hierarchical structure. On MTEB, HyTE-FH outperforms equivalent Euclidean baselines, while on RAGBench, HyTE-H achieves up to 29% gains over Euclidean baselines in context relevance and answer relevance using substantially smaller models than current state-of-the-art retrievers. Our analysis also reveals that hyperbolic representations encode document specificity through norm-based separation, with over 20% radial increase from general to specific concepts, a property absent in Euclidean embeddings, underscoring the critical role of geometric inductive bias in faithful RAG systems.",
+    "published": "2026-02-08",
+    "updated": "2026-06-04",
+    "categories": [
+     "cs.IR",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2602.07739"
+   },
+   {
+    "arxiv_id": "2606.13141",
+    "title": "Rethinking RAG in Long Videos: What to Retrieve and How to Use It?",
+    "authors": [
+     "Yuho Lee",
+     "Jisu Shin",
+     "Nicole Hee-Yeon Kim",
+     "Jihwan Bang",
+     "Juntae Lee",
+     "Kyuwoong Hwang",
+     "Fatih Porikli",
+     "Hwanjun Song"
+    ],
+    "abstract": "Retrieval-augmented generation is extending beyond text to long videos, where query-relevant chunks can be represented across multiple modalities and temporal granularities. Progress in this setting, VideoRAG, is limited by two gaps: existing benchmarks allow queries to be answered without the video, obscuring retrieval errors, and prior methods apply a single modality-granularity configuration per query, ignoring chunk-level variability. We address both by introducing V-RAGBench, a benchmark of $\\langle$query, evidence chunk, answer$\\rangle$ triplets over hour-scale videos, in which each answer depends on a unique evidence chunk, enabling decoupled evaluation of retrieval and generation, and CARVE, a training-free method that runs parallel retrievers across configurations and uses chunk-adaptive reranking to select a winning configuration for each chunk, which is then carried into generation. On V-RAGBench, CARVE outperforms eight recent VideoRAG baselines on both stages, with the evidence it supplies to the generator interleaving multiple configurations rather than sharing one. Its gains hold across egocentric and third-person long videos and extend to an expanded configuration space.",
+    "published": "2026-06-11",
+    "updated": "2026-10-02",
+    "categories": [
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2606.13141"
+   },
+   {
+    "arxiv_id": "2610.01218",
+    "title": "AGO AI Quality Gate: Evidence-First Release Decisions for Retrieval-Augmented Generation",
+    "authors": [
+     "Giulio Zeloni",
+     "Enrico Lo Conte",
+     "Salvatore Rionero",
+     "Giuseppe Santoro",
+     "Alessandro Rastelli",
+     "Fabio Sorrentino"
+    ],
+    "abstract": "Enterprises adopting retrieval-augmented generation (RAG) face a recurring operational decision: promote, revise, or block a system version. The evidence is incomplete and the metrics come from fallible LLM judges. We report on AGO AI Quality Gate (AGO), an evidence-first quality-gate framework deployed in industrial RAG assessment engagements. AGO integrates four key components: a four-state decision model that treats missing data and judge errors as explicit outcomes; layered scoring combining deterministic checks, local guardrails, and structured LLM evaluation; a stratified beta-binomial gate that quantifies regression risk probabilistically; and a mandatory meta-evaluation protocol to validate the LLM judge before it influences decisions. Since engagement data is proprietary, we evaluate the judge layer on RAGBench, a public benchmark of 100k annotated RAG traces across 12 datasets. On identical stratified test samples (N=1200 per judge), a low-cost judge (gpt-4.1-nano) detects non-adherent answers barely above chance (AUROC 0.603 [0.570, 0.634]), despite producing flawless protocol output, while gpt-4o reaches 0.783 [0.756, 0.807] -- yet its per-domain performance still ranges from 0.62 to 0.88. A fixed-seed gate study spanning regression, no change, and improvement quantifies unsafe promotion, false-alarm cost, and improvement throughput. Under regression, the decision-grade profile reduces unsafe promotion to 22.2%-35.1%, against 29.3%-41.8% for a naive gate. These results support the design choices that judge quality must be measured per engagement and that point estimates alone are not a release decision.",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "categories": [
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2610.01218"
+   },
+   {
+    "arxiv_id": "2607.04223",
+    "title": "Sentence-Level Context Sensitivity as a Training-Free Detector of Unsupported Content, Evaluated Against Trained Verifiers",
+    "authors": [
+     "Mohamed Aly Bouke"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) assistants summarize records in clinical and legal work, where one unsupported sentence can mislead a reader. The contrast between an output's likelihood with and without its source is an established faithfulness score for whole summaries and answers, but it has not been measured as a detector of the individual unsupported sentence in multi-passage RAG answers, against trained verifiers, or for its cost. We implement it as a training-free detector that re-scores a fixed answer under the full context, no context, and each chunk removed, and returns the chunk whose removal lowers a sentence's likelihood most as a candidate supporting passage. We evaluate it on RAGTruth, TofuEval, and RAGBench with six scorers and against five verifiers, up to a large language model (LLM) judge, on identical inputs under a source-level split. Scoring per sentence ranks unsupported sentences better than the answer-level form of the same signal on all three benchmarks, by 0.033 to 0.071 in the area under the receiver operating characteristic curve (AUC). On RAGTruth the training-free score reaches an AUC of 0.717 to 0.745 across scorers and 0.773 with a classifier, above entailment and attribution baselines and level with per-chunk fact-checkers, at about one forty-seventh of the LLM judge's compute on a 1.5B scorer, while a full-context fact-checker and the judge are more accurate and are not improved by it. The signal is weakest on short-answer question answering, where the scorer can answer from memory.",
+    "published": "2026-07-05",
+    "updated": "2026-10-02",
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "cs.LG"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2607.04223"
+   },
+   {
+    "arxiv_id": "2609.34179",
+    "title": "RAGWarrant: Evidence-Preserving Governance for RAG Policy Promotion Under Quality, Cost, Latency, and Risk Constraints",
+    "authors": [
+     "Richard Krueger",
+     "Lucas Krause",
+     "Zach Pocquette"
+    ],
+    "abstract": "Retrieval-augmented generation systems are extensively instrumented with metrics, benchmarks, traces, and automated judges, but these tools do not decide whether a proposed policy change is safe to release. We present RAGWarrant, an open-source promotion-control framework that treats deployment as a constrained evidence decision rather than a leaderboard choice. RAGWarrant normalizes evaluator outputs and operational telemetry, applies predeclared quality and hard-risk gates, assigns evidence-class claim ceilings, preserves negative outcomes, and emits auditable PROMOTE, BLOCK, REJECT, or INCONCLUSIVE decisions. We evaluate the framework across T2-RAGBench, MultiHop-RAG, CRAG, HotpotQA, synthetic reproduction, and bounded local generative experiments. On HotpotQA, operational savings were blocked because answer quality fell beyond the declared margin. A bounded CRAG study selected a lower-cost quality-tied policy, but related generative gains were unstable and a held-out guardrail failed closed. We claim an auditable promotion-control abstraction, not optimizer superiority, human validation, or production readiness. The tagged artifact reproduces from a fresh clone, runs as a hardened Docker job, accepts external evaluator exports, and verifies artifact integrity.",
+    "published": "2026-09-28",
+    "updated": "2026-09-28",
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2609.34179"
+   },
+   {
+    "arxiv_id": "2509.11552",
+    "title": "HiChunk: Evaluating and Enhancing Retrieval-Augmented Generation with Hierarchical Chunking",
+    "authors": [
+     "Wensheng Lu",
+     "Keyu Chen",
+     "Ruizhi Qiao",
+     "Xing Sun"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) enhances the response capabilities of language models by integrating external knowledge sources. However, document chunking as an important part of RAG system often lacks effective evaluation tools. This paper first analyzes why existing RAG evaluation benchmarks are inadequate for assessing document chunking quality, specifically due to evidence sparsity. Based on this conclusion, we propose HiCBench, which includes manually annotated multi-level document chunking points, synthesized evidence-dense quetion answer(QA) pairs, and their corresponding evidence sources. Additionally, we introduce the HiChunk framework, a multi-level document structuring framework based on fine-tuned LLMs, combined with the Auto-Merge retrieval algorithm to improve retrieval quality. Experiments demonstrate that HiCBench effectively evaluates the impact of different chunking methods across the entire RAG pipeline. Moreover, HiChunk achieves better chunking quality within reasonable time consumption, thereby enhancing the overall performance of RAG systems.",
+    "published": "2025-09-15",
+    "updated": "2025-10-09",
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2509.11552"
+   },
+   {
+    "arxiv_id": "2504.13128",
+    "title": "FreshStack: Building Realistic Benchmarks for Evaluating Retrieval on Technical Documents",
+    "authors": [
+     "Nandan Thakur",
+     "Jimmy Lin",
+     "Sam Havens",
+     "Michael Carbin",
+     "Omar Khattab",
+     "Andrew Drozdov"
+    ],
+    "abstract": "We introduce FreshStack, a holistic framework for automatically building information retrieval (IR) evaluation benchmarks by incorporating challenging questions and answers. FreshStack conducts the following steps: (1) automatic corpus collection from code and technical documentation, (2) nugget generation from community-asked questions and answers, and (3) nugget-level support, retrieving documents using a fusion of retrieval techniques and hybrid architectures. We use FreshStack to build five datasets on fast-growing, recent, and niche topics to ensure the tasks are sufficiently challenging. On FreshStack, existing retrieval models, when applied out-of-the-box, significantly underperform oracle approaches on all five topics, denoting plenty of headroom to improve IR quality. In addition, we identify cases where rerankers do not improve first-stage retrieval accuracy (two out of five topics) and oracle context helps an LLM generator generate a high-quality RAG answer. We hope FreshStack will facilitate future work toward constructing realistic, scalable, and uncontaminated IR and RAG evaluation benchmarks.",
+    "published": "2025-04-17",
+    "updated": "2025-06-13",
+    "categories": [
+     "cs.IR",
+     "cs.AI",
+     "cs.CL"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2504.13128"
+   }
+  ]
+ },
+ "multimodal_rag_survey2": {
+  "query": "all:\"multi-modal RAG\" OR all:\"multimodal RAG\" OR (all:\"multimodal\" AND all:\"retrieval augmented generation\" AND all:\"survey\")",
+  "results": [
+   {
+    "arxiv_id": "2502.08826",
+    "title": "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation",
+    "authors": [
+     "Mohammad Mahdi Abootorabi",
+     "Amirhosein Zobeiri",
+     "Mahdi Dehghani",
+     "Mohammadali Mohammadkhani",
+     "Bardia Mohammadi",
+     "Omid Ghahroodi",
+     "Mahdieh Soleymani Baghshah",
+     "Ehsaneddin Asgari"
+    ],
+    "abstract": "Large Language Models (LLMs) suffer from hallucinations and outdated knowledge due to their reliance on static training data. Retrieval-Augmented Generation (RAG) mitigates these issues by integrating external dynamic information for improved factual grounding. With advances in multimodal learning, Multimodal RAG extends this approach by incorporating multiple modalities such as text, images, audio, and video to enhance the generated outputs. However, cross-modal alignment and reasoning introduce unique challenges beyond those in unimodal RAG. This survey offers a structured and comprehensive analysis of Multimodal RAG systems, covering datasets, benchmarks, metrics, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation. We review training strategies, robustness enhancements, loss functions, and agent-based approaches, while also exploring the diverse Multimodal RAG scenarios. In addition, we outline open challenges and future directions to guide research in this evolving field. This survey lays the foundation for developing more capable and reliable AI systems that effectively leverage multimodal dynamic external knowledge bases. All resources are publicly available at https://github.com/llm-lab-org/Multimodal-RAG-Survey.",
+    "published": "2025-02-12",
+    "updated": "2025-06-02",
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2502.08826"
+   },
+   {
+    "arxiv_id": "2510.15253",
+    "title": "Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding",
+    "authors": [
+     "Sensen Gao",
+     "Shanshan Zhao",
+     "Xu Jiang",
+     "Lunhao Duan",
+     "Yong Xien Chng",
+     "Qing-Guo Chen",
+     "Weihua Luo",
+     "Kaifu Zhang",
+     "Jia-Wang Bian",
+     "Mingming Gong"
+    ],
+    "abstract": "Document understanding is critical for applications from financial analysis to scientific discovery. Current approaches, whether OCR-based pipelines feeding Large Language Models (LLMs) or native Multimodal LLMs (MLLMs), face key limitations: the former loses structural detail, while the latter struggles with context modeling. Retrieval-Augmented Generation (RAG) helps ground models in external data, but documents' multimodal nature, i.e., combining text, tables, charts, and layout, demands a more advanced paradigm: Multimodal RAG. This approach enables holistic retrieval and reasoning across all modalities, unlocking comprehensive document intelligence. Recognizing its importance, this paper presents a systematic survey of Multimodal RAG for document understanding. We propose a taxonomy based on domain, retrieval modality, and granularity, and review advances involving graph structures and agentic frameworks. We also summarize key datasets, benchmarks, applications and industry deployment, and highlight open challenges in efficiency, fine-grained representation, and robustness, providing a roadmap for future progress in document AI.",
+    "published": "2025-10-17",
+    "updated": "2026-04-20",
+    "categories": [
+     "cs.CL",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2510.15253"
+   },
+   {
+    "arxiv_id": "2504.08748",
+    "title": "A Survey of Multimodal Retrieval-Augmented Generation",
+    "authors": [
+     "Lang Mei",
+     "Siyu Mo",
+     "Zhihan Yang",
+     "Chong Chen"
+    ],
+    "abstract": "Multimodal Retrieval-Augmented Generation (MRAG) enhances large language models (LLMs) by integrating multimodal data (text, images, videos) into retrieval and generation processes, overcoming the limitations of text-only Retrieval-Augmented Generation (RAG). While RAG improves response accuracy by incorporating external textual knowledge, MRAG extends this framework to include multimodal retrieval and generation, leveraging contextual information from diverse data types. This approach reduces hallucinations and enhances question-answering systems by grounding responses in factual, multimodal knowledge. Recent studies show MRAG outperforms traditional RAG, especially in scenarios requiring both visual and textual understanding. This survey reviews MRAG's essential components, datasets, evaluation methods, and limitations, providing insights into its construction and improvement. It also identifies challenges and future research directions, highlighting MRAG's potential to revolutionize multimodal information retrieval and generation. By offering a comprehensive perspective, this work encourages further exploration into this promising paradigm.",
+    "published": "2025-03-26",
+    "updated": "2025-03-26",
+    "categories": [
+     "cs.IR",
+     "cs.AI",
+     "cs.CL",
+     "cs.ET",
+     "cs.LG"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2504.08748"
+   },
+   {
+    "arxiv_id": "2505.01146",
+    "title": "Retrieval-Augmented Generation in Biomedicine: A Survey of Technologies, Datasets, and Clinical Applications",
+    "authors": [
+     "Jiawei He",
+     "Boya Zhang",
+     "Hossein Rouhizadeh",
+     "Yingjian Chen",
+     "Rui Yang",
+     "Jin Lu",
+     "Xudong Chen",
+     "Nan Liu",
+     "Douglas Teodoro"
+    ],
+    "abstract": "Large language models (LLMs) in biomedicine face a fundamental conflict between static parameter knowledge and the dynamic nature of clinical evidence. Retrieval-Augmented Generation (RAG) addresses this by grounding generation in external data, yet it introduces new complexities in latency and architecture. This survey synthesizes the biomedical RAG landscape (2020-2025), classifying systems into naive, advanced, and modular paradigms. Beyond a technological taxonomy, we formalize the biomedical RAG trilemma, identifying the inherent trade-offs between reasoning depth, inference latency, and data privacy that constrain current clinical deployment. We analyze how recent agentic workflows enhance diagnostic reasoning but risk prohibitive latency, and how privacy constraints dictate the choice between powerful cloud-based models and local deployment. Finally, we outline the alignment gap in multimodal RAG and propose future directions for self-correcting, verifiable clinical agents.",
+    "published": "2025-05-02",
+    "updated": "2025-12-18",
+    "categories": [
+     "q-bio.OT"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2505.01146"
+   },
+   {
+    "arxiv_id": "2505.21419",
+    "title": "Diagnosing and Resolving Cloud Platform Instability with Multi-modal RAG LLMs",
+    "authors": [
+     "Yifan Wang",
+     "Kenneth P. Birman"
+    ],
+    "abstract": "Today's cloud-hosted applications and services are complex systems, and a performance or functional instability can have dozens or hundreds of potential root causes. Our hypothesis is that by combining the pattern matching capabilities of modern AI tools with a natural multi-modal RAG LLM interface, problem identification and resolution can be simplified. ARCA is a new multi-modal RAG LLM system that targets this domain. Step-wise evaluations show that ARCA outperforms state-of-the-art alternatives.",
+    "published": "2025-05-27",
+    "updated": "2025-05-28",
+    "categories": [
+     "cs.AI",
+     "cs.OS"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2505.21419"
+   },
+   {
+    "arxiv_id": "2503.18016",
+    "title": "Retrieval Augmented Generation and Understanding in Vision: A Survey and New Outlook",
+    "authors": [
+     "Xu Zheng",
+     "Ziqiao Weng",
+     "Yuanhuiyi Lyu",
+     "Lutao Jiang",
+     "Haiwei Xue",
+     "Bin Ren",
+     "Danda Paudel",
+     "Nicu Sebe",
+     "Luc Van Gool",
+     "Xuming Hu"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) has emerged as a pivotal technique in artificial intelligence (AI), particularly in enhancing the capabilities of large language models (LLMs) by enabling access to external, reliable, and up-to-date knowledge sources. In the context of AI-Generated Content (AIGC), RAG has proven invaluable by augmenting model outputs with supplementary, relevant information, thus improving their quality. Recently, the potential of RAG has extended beyond natural language processing, with emerging methods integrating retrieval-augmented strategies into the computer vision (CV) domain. These approaches aim to address the limitations of relying solely on internal model knowledge by incorporating authoritative external knowledge bases, thereby improving both the understanding and generation capabilities of vision models. This survey provides a comprehensive review of the current state of retrieval-augmented techniques in CV, focusing on two main areas: (I) visual understanding and (II) visual generation. In the realm of visual understanding, we systematically review tasks ranging from basic image recognition to complex applications such as medical report generation and multimodal question answering. For visual content generation, we examine the application of RAG in tasks related to image, video, and 3D generation. Furthermore, we explore recent advancements in RAG for embodied AI, with a particular focus on applications in planning, task execution, multimodal perception, interaction, and specialized domains. Given that the integration of retrieval-augmented techniques in CV is still in its early stages, we also highlight the key limitations of current approaches and propose future research directions to drive the development of this promising area.",
+    "published": "2025-03-23",
+    "updated": "2025-03-23",
+    "categories": [
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2503.18016"
+   },
+   {
+    "arxiv_id": "2503.10677",
+    "title": "A Survey on Knowledge-Oriented Retrieval-Augmented Generation",
+    "authors": [
+     "Mingyue Cheng",
+     "Yucong Luo",
+     "Jie Ouyang",
+     "Qi Liu",
+     "Huijie Liu",
+     "Li Li",
+     "Shuo Yu",
+     "Bohou Zhang",
+     "Jiawei Cao",
+     "Jie Ma",
+     "Daoyu Wang",
+     "Enhong Chen"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) has gained significant attention in recent years for its potential to enhance natural language understanding and generation by combining large-scale retrieval systems with generative models. RAG leverages external knowledge sources, such as documents, databases, or structured data, to improve model performance and generate more accurate and contextually relevant outputs. This survey aims to provide a comprehensive overview of RAG by examining its fundamental components, including retrieval mechanisms, generation processes, and the integration between the two. We discuss the key characteristics of RAG, such as its ability to augment generative models with dynamic external knowledge, and the challenges associated with aligning retrieved information with generative objectives. We also present a taxonomy that categorizes RAG methods, ranging from basic retrieval-augmented approaches to more advanced models incorporating multimodal data and reasoning capabilities. Additionally, we review the evaluation benchmarks and datasets commonly used to assess RAG systems, along with a detailed exploration of its applications in fields such as question answering, summarization, and information retrieval. Finally, we highlight emerging research directions and opportunities for improving RAG systems, such as enhanced retrieval efficiency, model interpretability, and domain-specific adaptations. This paper concludes by outlining the prospects for RAG in addressing real-world challenges and its potential to drive further advancements in natural language processing.",
+    "published": "2025-03-11",
+    "updated": "2026-07-20",
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2503.10677"
+   },
+   {
+    "arxiv_id": "2502.17832",
+    "title": "MM-PoisonRAG: Disrupting Multimodal RAG with Local and Global Poisoning Attacks",
+    "authors": [
+     "Hyeonjeong Ha",
+     "Qiusi Zhan",
+     "Jeonghwan Kim",
+     "Dimitrios Bralios",
+     "Saikrishna Sanniboina",
+     "Nanyun Peng",
+     "Kai-Wei Chang",
+     "Daniel Kang",
+     "Heng Ji"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) has become a common practice in multimodal large language models (MLLM) to enhance factual grounding and reduce hallucination. Yet, its reliance on retrieval exposes MLLMs to knowledge poisoning attacks, in which adversaries deliberately inject malicious multimodal content into external knowledge bases to steer models toward generating incorrect or even harmful responses. We present MM-PoisonRAG, a framework to systematically study the vulnerability of multimodal RAG under knowledge poisoning. Specifically, we design two novel attack strategies: Localized Poisoning Attack (LPA), which implants targeted, query-specific multimodal misinformation to manipulate outputs toward attacker-controlled responses, and Globalized Poisoning Attack (GPA), which uses a single, untargeted adversarial injection to broadly corrupt reasoning and collapse generation quality across all queries. Extensive experiments on diverse tasks, multimodal RAG components, and attacker access levels reveal severe vulnerabilities: LPA achieves up to 56% attack success rate even under restricted access, and transfers effectively across four different retrievers without re-optimizing the adversaries. GPA completely disrupts model generation to 0% accuracy with just one poisoned content. Moreover, both LPA and GPA bypass existing defenses, underscoring the fragility of multimodal RAG and establishing MM-PoisonRAG as a foundation for future research on securing RAG frameworks against multimodal knowledge poisoning.",
+    "published": "2025-02-25",
+    "updated": "2026-05-27",
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CR",
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2502.17832"
+   },
+   {
+    "arxiv_id": "2604.08304",
+    "title": "A Survey of Secure Retrieval-Augmented Generation",
+    "authors": [
+     "Yuming Xu",
+     "Mingtao Zhang",
+     "Zhuohan Ge",
+     "Haoyang Li",
+     "Nicole Hu",
+     "Yongqi Zhang",
+     "Zhiyuan Wen",
+     "Jason Chen Zhang",
+     "Qing Li",
+     "Lei Chen"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) improves large language models (LLMs) with external knowledge, but this access path creates security risks distinct from inherent prompt-only or parametric-model flaws. We frame secure RAG as securing external knowledge access. We conducted a systematic search and curated 135 works on attacks, defenses, and security evaluation, and organized them with SLOT: a taxonomy along the attack Surface (S) and the corresponding defense Layer (L), with cross-cutting axes Objective (O) and attack-target scope (T). Mapping these studies onto an external knowledge-access pipeline, we expose three mismatches: target mismatch (T2 attacks outpace T2 defenses and evaluation), stage mismatch (S1 attacks outnumber L1 defenses), and signal mismatch (fluent, retrievable, corpus-fitting S1 attacks challenge anomaly-based L2/L3 defenses). Finally, we discuss directions for more realistic targets, surface-complete defense stacks, standardized evaluation, confidentiality, and multimodal and agentic systems, and release the screening process, selected-paper metadata, and machine-readable SLOT labels at https://github.com/TreeAI-Lab/Awesome-RAG-Security.",
+    "published": "2026-04-09",
+    "updated": "2026-10-12",
+    "categories": [
+     "cs.CR",
+     "cs.AI"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2604.08304"
+   },
+   {
+    "arxiv_id": "2507.20136",
+    "title": "Multi-Stage Verification-Centric Framework for Mitigating Hallucination in Multi-Modal RAG",
+    "authors": [
+     "Baiyu Chen",
+     "Wilson Wongso",
+     "Xiaoqian Hu",
+     "Yue Tan",
+     "Flora Salim"
+    ],
+    "abstract": "This paper presents the technical solution developed by team CRUISE for the KDD Cup 2025 Meta Comprehensive RAG Benchmark for Multi-modal, Multi-turn (CRAG-MM) challenge. The challenge aims to address a critical limitation of modern Vision Language Models (VLMs): their propensity to hallucinate, especially when faced with egocentric imagery, long-tail entities, and complex, multi-hop questions. This issue is particularly problematic in real-world applications where users pose fact-seeking queries that demand high factual accuracy across diverse modalities. To tackle this, we propose a robust, multi-stage framework that prioritizes factual accuracy and truthfulness over completeness. Our solution integrates a lightweight query router for efficiency, a query-aware retrieval and summarization pipeline, a dual-pathways generation and a post-hoc verification. This conservative strategy is designed to minimize hallucinations, which incur a severe penalty in the competition's scoring metric. Our approach achieved 3rd place in Task 1, demonstrating the effectiveness of prioritizing answer reliability in complex multi-modal RAG systems. Our implementation is available at https://github.com/Breezelled/KDD-Cup-2025-Meta-CRAG-MM .",
+    "published": "2025-07-27",
+    "updated": "2026-01-20",
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2507.20136"
+   },
+   {
+    "arxiv_id": "2610.24822",
+    "title": "VisR-RAG-Fin: Benchmarking Multimodal RAG over Visually Rich Financial Documents",
+    "authors": [
+     "Omar El Bachyr",
+     "Laura Maria Bernardy",
+     "Saad Ezzini",
+     "Jacques Klein",
+     "Tegawend\u00e9 F. Bissyand\u00e9",
+     "Charles Mont'e",
+     "Anas Zilali",
+     "Ulrick Ble",
+     "Anne Goujon"
+    ],
+    "abstract": "Enterprise documents such as financial reports are increasingly processed by automated systems, yet they are primarily designed for human reading and exhibit complex visual structure, combining dense text with tables, charts, diagrams, and rich layouts. These characteristics pose significant challenges for Retrieval-Augmented Generation (RAG) systems, which must retrieve relevant pages and leverage visual and structural information during answer generation. Despite recent advances in multimodal retrieval and vision-language models, there remains a limited understanding of how design choices across retrieval and generation components affect end-to-end RAG performance on visually rich documents. In this paper, we present a comprehensive empirical study of multimodal RAG for page-level Question Answering (QA) over financial documents. We introduce VisR-RAG-Fin (Visually Rich RAG for Finance), an open-source benchmark constructed through a general pipeline for visually rich documents that preserves original layout and visual content. Using this benchmark, we systematically analyze retrieval and generation behavior under text-only, multimodal, and hybrid configurations, providing a foundation for rigorous evaluation of RAG systems on complex enterprise document collections. Overall, this work provides actionable insights for practitioners designing and evaluating multimodal RAG pipelines over complex, visually rich enterprise documents.",
+    "published": "2026-10-17",
+    "updated": "2026-10-17",
+    "categories": [
+     "cs.IR"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2610.24822"
+   },
+   {
+    "arxiv_id": "2602.15650",
+    "title": "Concept-Enhanced Multimodal RAG: Towards Interpretable and Accurate Radiology Report Generation",
+    "authors": [
+     "Marco Salm\u00e8",
+     "Federico Siciliano",
+     "Fabrizio Silvestri",
+     "Paolo Soda",
+     "Rosa Sicilia",
+     "Valerio Guarrasi"
+    ],
+    "abstract": "Radiology Report Generation (RRG) through Vision-Language Models (VLMs) promises to reduce documentation burden, improve reporting consistency, and accelerate clinical workflows. However, their clinical adoption remains limited by the lack of interpretability and the tendency to hallucinate findings misaligned with imaging evidence. Existing research typically treats interpretability and accuracy as separate objectives, with concept-based explainability techniques focusing primarily on transparency, while Retrieval-Augmented Generation (RAG) methods targeting factual grounding through external retrieval. We present Concept-Enhanced Multimodal RAG (CEMRAG), a unified framework that decomposes visual representations into interpretable clinical concepts and integrates them with multimodal RAG. This approach exploits enriched contextual prompts for RRG, improving both interpretability and factual accuracy. Experiments on MIMIC-CXR and IU X-Ray across multiple VLM architectures, training regimes, and retrieval configurations demonstrate consistent improvements over both conventional RAG and concept-only baselines on clinical accuracy metrics and standard NLP measures. These results challenge the assumed trade-off between interpretability and performance, showing that transparent visual concepts can enhance rather than compromise diagnostic accuracy in medical VLMs. Our modular design decomposes interpretability into visual transparency and structured language model conditioning, providing a principled pathway toward clinically trustworthy AI-assisted radiology.",
+    "published": "2026-02-17",
+    "updated": "2026-02-17",
+    "categories": [
+     "cs.CV"
+    ],
+    "primary_category": "",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "abs_url": "https://arxiv.org/abs/2602.15650"
+   }
+  ]
+ }
+}

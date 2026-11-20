@@ -1,0 +1,196 @@
+{
+  "experiment": "form probe",
+  "question": "At the fitted operating point, what fraction of malformed queries does the retrieval-confidence gate let through?",
+  "corpus": "/Users/ritikraj/Documents/MTP/impl/data/corpus",
+  "n_candidates_harvested": 90,
+  "n_probed": 30,
+  "n_accepted_by_gate": 23,
+  "acceptance_rate": 0.7667,
+  "mean_posterior": 0.3225,
+  "tau": 0.2,
+  "seed": 20261118,
+  "population": "question stems the benchmark generator itself rejected under _subject_is_usable -- mid-clause fragments and truncated words, harvested by re-running the generator's extraction over the corpus",
+  "per_query": [
+    {
+      "query": "What are these focusing steps?",
+      "accepted": true,
+      "posterior": 0.3782,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for preliminary results show in the source documentation?",
+      "accepted": false,
+      "posterior": 0.0848,
+      "n_accepted_chunks": 0
+    },
+    {
+      "query": "What is riskSpectrum?",
+      "accepted": true,
+      "posterior": 0.4525,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is performance monitoring?",
+      "accepted": true,
+      "posterior": 0.4249,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What was there?",
+      "accepted": false,
+      "posterior": 0.0352,
+      "n_accepted_chunks": 0
+    },
+    {
+      "query": "What value is stated for we know the arrival rate in the source documentation?",
+      "accepted": true,
+      "posterior": 0.2746,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is a critical factor in production planning?",
+      "accepted": true,
+      "posterior": 0.5748,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is with parallel components the situation?",
+      "accepted": true,
+      "posterior": 0.45,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for hence in the source documentation?",
+      "accepted": false,
+      "posterior": 0.049,
+      "n_accepted_chunks": 0
+    },
+    {
+      "query": "What is this happens if there?",
+      "accepted": false,
+      "posterior": 0.1903,
+      "n_accepted_chunks": 0
+    },
+    {
+      "query": "What is the reason why this?",
+      "accepted": true,
+      "posterior": 0.2381,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What are following?",
+      "accepted": false,
+      "posterior": 0.057,
+      "n_accepted_chunks": 0
+    },
+    {
+      "query": "What is here?",
+      "accepted": false,
+      "posterior": 0.0349,
+      "n_accepted_chunks": 0
+    },
+    {
+      "query": "What value is stated for another meter shows a mean throughput in the source documentation?",
+      "accepted": true,
+      "posterior": 0.5965,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for if the customer demand in the source documentation?",
+      "accepted": true,
+      "posterior": 0.2963,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is if this?",
+      "accepted": true,
+      "posterior": 0.2319,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for sheffield and Lincolnshire Railway in in the source documentation?",
+      "accepted": true,
+      "posterior": 0.5677,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is MTBF?",
+      "accepted": true,
+      "posterior": 0.3205,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is the assumption that demand?",
+      "accepted": true,
+      "posterior": 0.2633,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is another point that distinguishes 2PL and 3PL?",
+      "accepted": true,
+      "posterior": 0.5548,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for is a document in the source documentation?",
+      "accepted": true,
+      "posterior": 0.2025,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for be it a delay in the source documentation?",
+      "accepted": true,
+      "posterior": 0.3062,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is FMEA?",
+      "accepted": true,
+      "posterior": 0.3514,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What are gathering Time series data and cross-sectional data?",
+      "accepted": true,
+      "posterior": 0.6468,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is CONWIP?",
+      "accepted": true,
+      "posterior": 0.5436,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What is mTTFd?",
+      "accepted": true,
+      "posterior": 0.3652,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for it commonly takes in the source documentation?",
+      "accepted": true,
+      "posterior": 0.2044,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What are functions?",
+      "accepted": true,
+      "posterior": 0.2794,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for of the Requirements and Measurements Handbooks in the source documentation?",
+      "accepted": true,
+      "posterior": 0.6041,
+      "n_accepted_chunks": 10
+    },
+    {
+      "query": "What value is stated for built-in test interval in the source documentation?",
+      "accepted": false,
+      "posterior": 0.0974,
+      "n_accepted_chunks": 0
+    }
+  ],
+  "retrieval_placement": "pre_rerank"
+}

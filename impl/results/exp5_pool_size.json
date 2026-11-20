@@ -1,0 +1,98 @@
+{
+  "seed": 20261118,
+  "pool_sizes": [
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "results": [
+    {
+      "pool_size": 5,
+      "n_queries": 276,
+      "recall@5": 0.9015151515151515,
+      "recall@10": 0.9015151515151515,
+      "recall@20": 0.9015151515151515,
+      "precision@10": 0.09015151515151495,
+      "mrr": 0.7772727272727273,
+      "nDCG@10": 0.8088745179003861,
+      "modality_recall": {
+        "text": 0.875,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 10,
+      "n_queries": 276,
+      "recall@5": 0.9166666666666666,
+      "recall@10": 0.9545454545454546,
+      "recall@20": 0.9545454545454546,
+      "precision@10": 0.09545454545454524,
+      "mrr": 0.807142857142857,
+      "nDCG@10": 0.84372201846206,
+      "modality_recall": {
+        "text": 0.9423076923076923,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 20,
+      "n_queries": 276,
+      "recall@5": 0.9242424242424242,
+      "recall@10": 0.9318181818181818,
+      "recall@20": 0.9621212121212122,
+      "precision@10": 0.09318181818181798,
+      "mrr": 0.8082107843137254,
+      "nDCG@10": 0.8383497055685083,
+      "modality_recall": {
+        "text": 0.9326923076923077,
+        "table": 0.9285714285714286
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 50,
+      "n_queries": 276,
+      "recall@5": 0.9090909090909091,
+      "recall@10": 0.9318181818181818,
+      "recall@20": 0.9393939393939394,
+      "precision@10": 0.09318181818181798,
+      "mrr": 0.8024739185900973,
+      "nDCG@10": 0.8342112374119272,
+      "modality_recall": {
+        "text": 0.9326923076923077,
+        "table": 0.9285714285714286
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 100,
+      "n_queries": 276,
+      "recall@5": 0.9090909090909091,
+      "recall@10": 0.9318181818181818,
+      "recall@20": 0.946969696969697,
+      "precision@10": 0.09318181818181798,
+      "mrr": 0.8030474225247931,
+      "nDCG@10": 0.8342112374119272,
+      "modality_recall": {
+        "text": 0.9326923076923077,
+        "table": 0.9285714285714286
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    }
+  ],
+  "retrieval_placement": "pre_rerank"
+}

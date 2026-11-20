@@ -1,0 +1,77 @@
+{
+  "schema": "mtp.contradiction-precision-pre-repair/1",
+  "status": "archived",
+  "note": "The result of the contradiction labelling run against the PRE-REPAIR detector, transcribed from that run's scored output (exp11_contradiction_precision.json) and its pairs file, which is archived alongside it as exp3_contradiction_pairs_pre_repair.jsonl. It is kept because the repair is a claim: without the 'before' measurement, 'the numeric branch was firing on citation years rather than on quantities' would be an assertion. The post-repair result is in exp11_contradiction_precision.json and the before/after counts are in exp3_contradiction.json under 'numeric_rule_repair'.",
+  "detector_state": {
+    "numeric_rule": "a number was keyed to the nearest non-generic, non-stopword word in the 60 characters before it; the numeric branch carried no subject check",
+    "verifiable_numeric_conflicts": 21,
+    "joint_gate_flagged": 81,
+    "alarms_numeric_branch_only": 6,
+    "numeric_conflict_keys": {
+      "identifier": 8,
+      "shigeo": 6,
+      "february": 3,
+      "dettmer": 2,
+      "october": 2,
+      "incoterms": 2,
+      "december": 1,
+      "than": 1,
+      "science": 1,
+      "management": 1,
+      "press": 1,
+      "april": 1
+    }
+  },
+  "annotators": {
+    "judge_a_model": {
+      "model": "MiniMax-M3",
+      "n_alarms_labelled": 66,
+      "n_alarms_true": 1,
+      "precision": 0.015151515151515152,
+      "precision_ci95": [
+        0.0026795715344567483,
+        0.08096112398225534
+      ]
+    },
+    "judge_b": {
+      "model": "a separate frontier instruction-tuned model",
+      "n_alarms_labelled": 66,
+      "n_alarms_true": 0,
+      "precision": 0.0,
+      "precision_ci95": [
+        0.0,
+        0.05500446725160935
+      ]
+    }
+  },
+  "agreement": {
+    "n_compared": 158,
+    "raw_agreement_2way": 0.9936708860759493,
+    "cohen_kappa_2way": 0.0,
+    "cohen_kappa_5way": 0.10354609929078004,
+    "n_disagreements_2way": 1
+  },
+  "verifiable_subset_control": {
+    "n_numeric_conflict_pairs_in_sheet": 17,
+    "by_annotator": {
+      "judge_a_model": {
+        "n": 17,
+        "n_labelled_contradiction": 1,
+        "distribution": {
+          "no_conflict": 16,
+          "contradiction": 1
+        }
+      },
+      "judge_b": {
+        "n": 17,
+        "n_labelled_contradiction": 0,
+        "distribution": {
+          "supersession": 1,
+          "no_conflict": 1,
+          "term_mismatch": 15
+        }
+      }
+    }
+  },
+  "rubric_note": "This run used the earlier rubric, in which 'no_conflict' and 'term_mismatch' overlapped; the five-way kappa of 0.10 is a property of that ambiguity, not of the pairs. The rubric was disambiguated before the post-repair run."
+}

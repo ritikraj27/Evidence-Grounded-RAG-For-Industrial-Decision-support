@@ -1,0 +1,8 @@
+{
+  "docvqa_benchmarks": "all:\"DocVQA\" OR all:\"InfographicVQA\" OR all:\"ChartQA\" OR all:\"MMLongBench-Doc\"",
+  "table_rag": "all:\"TableRAG\" OR (all:\"table\" AND all:\"retrieval augmented generation\" AND all:\"question answering\")",
+  "raptor_latechunk": "all:\"RAPTOR\" OR all:\"Late Chunking\"",
+  "mm_parsing": "all:\"document parsing\" AND (all:\"OCR\" OR all:\"layout\") AND all:\"retrieval augmented generation\"",
+  "anyrag_ragbench": "all:\"AnyRAG\" OR all:\"RAGBench\" OR all:\"RAG evaluation benchmark\"",
+  "multimodal_rag_survey2": "all:\"multi-modal RAG\" OR all:\"multimodal RAG\" OR (all:\"multimodal\" AND all:\"retrieval augmented generation\" AND all:\"survey\")"
+}

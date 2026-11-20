@@ -1,0 +1,427 @@
+{
+  "seed": 20261118,
+  "summary": {
+    "pairs_compared": 1350,
+    "verifiable_numeric_conflicts": 24,
+    "nli_recall_on_verifiable_subset": 0.8333333333333334,
+    "joint_recall_on_verifiable_subset": 1.0,
+    "conjunction_recall_on_verifiable_subset": 0.625,
+    "numeric_branch_only_caught": 9,
+    "tautology_note": "the verifiable subset is DEFINED by the presence of a numeric conflict, and the numeric detector is an OR-branch of the joint gate, so the joint gate's recall on this subset is 1.0 by construction and is not evidence. The informative quantity is 'conjunction_recall_on_verifiable_subset': how many of these conflicts the NLI-and-same-subject conjunction catches with the numeric branch removed, and therefore what the numeric branch adds.",
+    "nli_flag_rate": 0.0674074074074074,
+    "joint_flag_rate": 0.03777777777777778,
+    "nli_alarms_per_verifiable_conflict": 3.7916666666666665,
+    "joint_alarms_per_verifiable_conflict": 2.125,
+    "ground_truth_note": "recall on the verifiable subset uses numeric conflicts, which are checkable by inspection and independent of the NLI model; the precision/recall figures below are against an NLI-derived PROXY and are therefore not independent of the detector",
+    "proxy_ground_truth": true,
+    "prevalence_of_true_conflict": 0.03111111111111111,
+    "nli_only_flagged": 91,
+    "nli_only_false_positives": 49,
+    "nli_only_false_positive_rate": 0.5384615384615384,
+    "joint_gate_flagged": 51,
+    "conjunction_flagged": 35,
+    "joint_gate_false_positives": 9,
+    "joint_gate_false_positive_rate": 0.17647058823529413,
+    "joint_gate_precision": 0.8235294117647058,
+    "joint_gate_recall": 1.0,
+    "joint_gate_f1": 0.9032258064516129,
+    "revision_supersession_suppressed": 0,
+    "baseline_always_flag_false_positive_rate": 0.9688888888888889,
+    "baseline_never_flag_false_positive_rate": 0.9688888888888889,
+    "thresholds": {
+      "nli_threshold": 0.7,
+      "topic_threshold": 0.55,
+      "entity_overlap_min": 0.1
+    }
+  },
+  "examples": [
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "just-in-time-manufacturing::p1::tbl36",
+      "nli_contradiction_prob": 0.003277076230269145,
+      "topical_similarity": 0.3366658732264992,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.003 < 0.70; same-subject check failed (cos=0.337, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "just-in-time-manufacturing::p1::t51",
+      "nli_contradiction_prob": 0.0031556401295889606,
+      "topical_similarity": 0.3003986844111928,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.003 < 0.70; same-subject check failed (cos=0.300, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "kanban::p1::tbl8",
+      "nli_contradiction_prob": 0.0007869823665342548,
+      "topical_similarity": 0.718661131459734,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.001 < 0.70",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "just-in-time-manufacturing::p1::t16",
+      "nli_contradiction_prob": 0.001627431440408661,
+      "topical_similarity": 0.4068541347287428,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.002 < 0.70; same-subject check failed (cos=0.407, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "kanban::p1::t34",
+      "nli_contradiction_prob": 0.010122872476265867,
+      "topical_similarity": 0.537928303063006,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.010 < 0.70; same-subject check failed (cos=0.538, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "kanban::p1::t38",
+      "nli_contradiction_prob": 0.024604265608297107,
+      "topical_similarity": 0.5434108452438142,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.025 < 0.70; same-subject check failed (cos=0.543, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "just-in-time-manufacturing::p1::t13",
+      "nli_contradiction_prob": 0.0020868993869754926,
+      "topical_similarity": 0.4295773227651833,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.002 < 0.70; same-subject check failed (cos=0.430, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "kanban::p1::t17",
+      "nli_contradiction_prob": 0.016404827240470207,
+      "topical_similarity": 0.6494324474931817,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.016 < 0.70",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::t10",
+      "chunk_b": "just-in-time-manufacturing::p1::t41",
+      "nli_contradiction_prob": 0.006385646195656519,
+      "topical_similarity": 0.3906307243103708,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.006 < 0.70; same-subject check failed (cos=0.391, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "just-in-time-manufacturing::p1::t51",
+      "nli_contradiction_prob": 0.8585131439034002,
+      "topical_similarity": 0.6979801289951256,
+      "entity_overlap": 0.07692307692307693,
+      "flagged": true,
+      "reason": "NLI contradiction probability 0.859 >= 0.70 and same-subject check passed (cos=0.698, entity Jaccard=0.077)",
+      "numeric_conflicts": [],
+      "nli_and_subject": true,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "kanban::p1::tbl8",
+      "nli_contradiction_prob": 0.0006286119473080857,
+      "topical_similarity": 0.2722835720083532,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.001 < 0.70; same-subject check failed (cos=0.272, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "just-in-time-manufacturing::p1::t16",
+      "nli_contradiction_prob": 0.007928716037153689,
+      "topical_similarity": 0.48179077509984003,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.008 < 0.70; same-subject check failed (cos=0.482, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "kanban::p1::t34",
+      "nli_contradiction_prob": 0.9762644874451581,
+      "topical_similarity": 0.5630116242626837,
+      "entity_overlap": 0.08333333333333333,
+      "flagged": true,
+      "reason": "NLI contradiction probability 0.976 >= 0.70 and same-subject check passed (cos=0.563, entity Jaccard=0.083)",
+      "numeric_conflicts": [],
+      "nli_and_subject": true,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "kanban::p1::t38",
+      "nli_contradiction_prob": 0.9956578446997515,
+      "topical_similarity": 0.5258467965921572,
+      "entity_overlap": 0.1111111111111111,
+      "flagged": true,
+      "reason": "NLI contradiction probability 0.996 >= 0.70 and same-subject check passed (cos=0.526, entity Jaccard=0.111)",
+      "numeric_conflicts": [],
+      "nli_and_subject": true,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "just-in-time-manufacturing::p1::t13",
+      "nli_contradiction_prob": 0.0010979569885895587,
+      "topical_similarity": 0.45910852300393307,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.001 < 0.70; same-subject check failed (cos=0.459, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "kanban::p1::t17",
+      "nli_contradiction_prob": 0.0053200250288642885,
+      "topical_similarity": 0.286498611977388,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.005 < 0.70; same-subject check failed (cos=0.286, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::tbl36",
+      "chunk_b": "just-in-time-manufacturing::p1::t41",
+      "nli_contradiction_prob": 0.8743386560248839,
+      "topical_similarity": 0.7024405738317316,
+      "entity_overlap": 0.08333333333333333,
+      "flagged": true,
+      "reason": "NLI contradiction probability 0.874 >= 0.70 and same-subject check passed (cos=0.702, entity Jaccard=0.083)",
+      "numeric_conflicts": [],
+      "nli_and_subject": true,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::t51",
+      "chunk_b": "kanban::p1::tbl8",
+      "nli_contradiction_prob": 0.0029155780024462258,
+      "topical_similarity": 0.30842846489370546,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.003 < 0.70; same-subject check failed (cos=0.308, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::t51",
+      "chunk_b": "just-in-time-manufacturing::p1::t16",
+      "nli_contradiction_prob": 0.18727616362610275,
+      "topical_similarity": 0.422360749300809,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.187 < 0.70; same-subject check failed (cos=0.422, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::t51",
+      "chunk_b": "kanban::p1::t34",
+      "nli_contradiction_prob": 0.9913771673166047,
+      "topical_similarity": 0.6216168461982992,
+      "entity_overlap": 0.08695652173913043,
+      "flagged": true,
+      "reason": "NLI contradiction probability 0.991 >= 0.70 and same-subject check passed (cos=0.622, entity Jaccard=0.087); numeric conflict detected: [{'quantity': 'identifier', 'values_a': ['1100', '350', '4711', '89256', '915299', '978'], 'values_b': ['471', '915299', '93450']}, {'quantity': 'shigeo', 'values_a': ['1985'], 'values_b': ['1989']}]",
+      "numeric_conflicts": [
+        {
+          "quantity": "identifier",
+          "values_a": [
+            "1100",
+            "350",
+            "4711",
+            "89256",
+            "915299",
+            "978"
+          ],
+          "values_b": [
+            "471",
+            "915299",
+            "93450"
+          ]
+        },
+        {
+          "quantity": "shigeo",
+          "values_a": [
+            "1985"
+          ],
+          "values_b": [
+            "1989"
+          ]
+        }
+      ],
+      "nli_and_subject": true,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::t51",
+      "chunk_b": "kanban::p1::t38",
+      "nli_contradiction_prob": 0.985970299413927,
+      "topical_similarity": 0.6808233036793254,
+      "entity_overlap": 0.15789473684210525,
+      "flagged": true,
+      "reason": "NLI contradiction probability 0.986 >= 0.70 and same-subject check passed (cos=0.681, entity Jaccard=0.158); numeric conflict detected: [{'quantity': 'february', 'values_a': ['2022'], 'values_b': ['2015']}, {'quantity': 'identifier', 'values_a': ['1100', '350', '4711', '89256', '915299', '978'], 'values_b': ['915299', '9780915299140']}, {'quantity': 'shigeo', 'values_a': ['1985'], 'values_b': ['1989']}]",
+      "numeric_conflicts": [
+        {
+          "quantity": "february",
+          "values_a": [
+            "2022"
+          ],
+          "values_b": [
+            "2015"
+          ]
+        },
+        {
+          "quantity": "identifier",
+          "values_a": [
+            "1100",
+            "350",
+            "4711",
+            "89256",
+            "915299",
+            "978"
+          ],
+          "values_b": [
+            "915299",
+            "9780915299140"
+          ]
+        },
+        {
+          "quantity": "shigeo",
+          "values_a": [
+            "1985"
+          ],
+          "values_b": [
+            "1989"
+          ]
+        }
+      ],
+      "nli_and_subject": true,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::t51",
+      "chunk_b": "just-in-time-manufacturing::p1::t13",
+      "nli_contradiction_prob": 0.003188503842260196,
+      "topical_similarity": 0.38162560144834146,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.003 < 0.70; same-subject check failed (cos=0.382, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::t51",
+      "chunk_b": "kanban::p1::t17",
+      "nli_contradiction_prob": 0.0029445336694659584,
+      "topical_similarity": 0.29096814212425215,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.003 < 0.70; same-subject check failed (cos=0.291, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "just-in-time-manufacturing::p1::t51",
+      "chunk_b": "just-in-time-manufacturing::p1::t41",
+      "nli_contradiction_prob": 0.9446445184558703,
+      "topical_similarity": 0.7242752005117884,
+      "entity_overlap": 0.19047619047619047,
+      "flagged": true,
+      "reason": "NLI contradiction probability 0.945 >= 0.70 and same-subject check passed (cos=0.724, entity Jaccard=0.190); numeric conflict detected: [{'quantity': 'october', 'values_a': ['2020', '2021'], 'values_b': ['2024']}, {'quantity': 'identifier', 'values_a': ['1100', '350', '4711', '89256', '915299', '978'], 'values_b': ['0538', '4665', '915299', '978']}]",
+      "numeric_conflicts": [
+        {
+          "quantity": "october",
+          "values_a": [
+            "2020",
+            "2021"
+          ],
+          "values_b": [
+            "2024"
+          ]
+        },
+        {
+          "quantity": "identifier",
+          "values_a": [
+            "1100",
+            "350",
+            "4711",
+            "89256",
+            "915299",
+            "978"
+          ],
+          "values_b": [
+            "0538",
+            "4665",
+            "915299",
+            "978"
+          ]
+        }
+      ],
+      "nli_and_subject": true,
+      "numeric_only": false
+    },
+    {
+      "chunk_a": "kanban::p1::tbl8",
+      "chunk_b": "just-in-time-manufacturing::p1::t16",
+      "nli_contradiction_prob": 0.0007166113674383566,
+      "topical_similarity": 0.34502749345118533,
+      "entity_overlap": 0.0,
+      "flagged": false,
+      "reason": "NLI contradiction probability 0.001 < 0.70; same-subject check failed (cos=0.345, entity Jaccard=0.000)",
+      "numeric_conflicts": [],
+      "nli_and_subject": false,
+      "numeric_only": false
+    }
+  ]
+}

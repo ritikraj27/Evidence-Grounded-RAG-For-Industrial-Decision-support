@@ -1,0 +1,56 @@
+# ---- Secrets: never commit ------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*_key
+*_token
+credentials*
+secrets*
+.mtp_llm_key
+.claude/settings.local.json
+.mcp.json
+
+# ---- Environment and caches ----------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+~$*
+*.log
+
+# ---- Regenerable build output (rebuilt by impl/scripts/build_index.py) ----
+# Embedding indexes and model caches are 100+ MB and fully reproducible.
+impl/artifacts/
+impl/artifacts_focus/
+impl/artifacts_industrial/
+impl/artifacts_multi/
+impl/artifacts_demo/
+**/model_cache/
+.snapshot_preswap/
+
+# ---- Third-party clones: fetched by scripts/setup_external.sh -------------
+academic-research-skills/
+andrej-karpathy-skills/
+claude-code-paper-writing/
+
+# Symlinks into those clones (dangle until the clones exist)
+.claude/skills/
+.claude/references
+tools/_env.py
+tools/_schemas.py
+tools/discover.py
+tools/fetch_arxiv.py
+tools/fetch_deepxiv.py
+tools/fetch_s2.py
+tools/fetch_wikipedia.py
+tools/init_discovery.py
+tools/lint.py
+tools/prepare_paper_source.py
+tools/remote.py
+tools/research_wiki.py
+tools/reset_wiki.py

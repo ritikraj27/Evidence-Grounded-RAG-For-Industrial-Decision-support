@@ -1,0 +1,97 @@
+{
+  "seed": 20261118,
+  "pool_sizes": [
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "results": [
+    {
+      "pool_size": 5,
+      "n_queries": 176,
+      "recall@5": 0.96875,
+      "recall@10": 0.96875,
+      "recall@20": 0.96875,
+      "precision@10": 0.09687500000000004,
+      "mrr": 0.8072916666666666,
+      "nDCG@10": 0.8483416136742354,
+      "modality_recall": {
+        "text": 0.9583333333333334,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 10,
+      "n_queries": 176,
+      "recall@5": 0.9375,
+      "recall@10": 1.0,
+      "recall@20": 1.0,
+      "precision@10": 0.10000000000000005,
+      "mrr": 0.8052455357142857,
+      "nDCG@10": 0.8532327180617609,
+      "modality_recall": {
+        "text": 1.0,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 20,
+      "n_queries": 176,
+      "recall@5": 0.9375,
+      "recall@10": 0.96875,
+      "recall@20": 1.0,
+      "precision@10": 0.09687500000000004,
+      "mrr": 0.7968513257575757,
+      "nDCG@10": 0.8371138440609673,
+      "modality_recall": {
+        "text": 0.9583333333333334,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 50,
+      "n_queries": 176,
+      "recall@5": 0.90625,
+      "recall@10": 0.96875,
+      "recall@20": 1.0,
+      "precision@10": 0.09687500000000004,
+      "mrr": 0.7950520833333332,
+      "nDCG@10": 0.8361561684320136,
+      "modality_recall": {
+        "text": 0.9583333333333334,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    },
+    {
+      "pool_size": 100,
+      "n_queries": 176,
+      "recall@5": 0.90625,
+      "recall@10": 0.96875,
+      "recall@20": 1.0,
+      "precision@10": 0.09687500000000004,
+      "mrr": 0.7950520833333332,
+      "nDCG@10": 0.8361561684320136,
+      "modality_recall": {
+        "text": 0.9583333333333334,
+        "table": 1.0
+      },
+      "mean_candidates": 0.0,
+      "mean_accepted": 0.0,
+      "rejection_rate": 0.0
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "schema": "mtp.contested/1",
+  "items": [
+    {
+      "key": "0278db2c5e750250",
+      "claim": "Preferred Provider  \n4",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "09bf3133ea4cad0c",
+      "claim": "Vested Outsourcing Business Model  \n6",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "0bb4007941c12be7",
+      "claim": "Performance-Based/Managed Services Model  \n5",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "0d66416d4b2d23b5",
+      "claim": "Too much safety stock raises holding, spoilage, and management costs",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "1f6f2361369955a3",
+      "claim": "Subordinate everything else to that decision.\n4",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "2bdc2756d1555c52",
+      "claim": "It determines the best fit between buyers and suppliers, ranging from transactional models (such as Basic or Approved Provider) to investment-based models (such as Vested Outsourcing, Shared Services, and Equity Partnership)",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "2f13f33d8a3b1b3a",
+      "claim": "The technology can be used to identify and track items automatically",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "39b503f0dd43d646",
+      "claim": "Performance-Based/Managed Services Model  \n5",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "39ffa5463642b6db",
+      "claim": "They define it as the sum of annual ordering, inventory-carrying, and backorder costs:\n\n\\[\n\\mathcal K=\\frac{\\lambda}{Q}A+\\frac{1}{2Q}IC(Q-s)^2+\\frac{1}{Q}\\left(\\pi\\lambda s+\\frac{1}{2}\\hat{\\pi}s^2\\right)\n\\]\n\nwhere \\(Q\\) is order quantity, \\(A\\) is ordering cost per order, \\(IC\\) is inventory-carrying cost per unit, \\(s\\) is backorders, and \\(\\pi,\\hat{\\pi}\\) are backorder costs",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "3ce91b470aecc009",
+      "claim": "Elevate the constraint(s).\n5",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "3fda2207ae739bf2",
+      "claim": "Basic Provider  \n2",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "46d8bff12174076f",
+      "claim": "Shared Services Model  \n7",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "48669c2a7853b4ba",
+      "claim": "It is used when more than one party must work together successfully",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "4efd5d065a579d6c",
+      "claim": "Approved Provider  \n3",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "4f9e401bf2dc11fa",
+      "claim": "It is especially effective for **incremental improvement and commercial processes**",
+      "votes": {
+        "reader": "unsupported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "581bca4a49efd4ec",
+      "claim": "They indicate when a product, part, or inventory has been depleted and authorize replenishment\u2014either production of a fixed quantity or shipment of materials to a supplier",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "5890e5d6d50370b9",
+      "claim": "Vested Outsourcing Business Model  \n6",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "5c11b47f52fefde0",
+      "claim": "Preferred Provider  \n4",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "6477cbfdbe1ace36",
+      "claim": "Nothing is made or transported without a request.\n4",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "732d2d4a874ba38f",
+      "claim": "Basic Provider  \n2",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "7819f7e79aa0a33a",
+      "claim": "Each container may have a production (P) kanban authorizing a fixed quantity to be produced and a transportation (T) kanban authorizing the full container to be moved downstream",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "857a6a417b850efd",
+      "claim": "Identify the system\u2019s constraint(s).\n2",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8a086e8e6506b6d9",
+      "claim": "Approved Provider  \n3",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "8b4213a1207e72fb",
+      "claim": "Processes issue kanban requests when supplies are consumed.\n2",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "92c52343951c77dc",
+      "claim": "TOC differs from **Lean**, which primarily targets waste, flow, and inventory reduction",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "9e5a0d73ced8d4ab",
+      "claim": "Shared Services Model  \n7",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "9f3e5d3ca3467a94",
+      "claim": "The request remains attached to the item.\n5",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "contradicted"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "a36d3b3f8e2eb8bb",
+      "claim": "too little can cause lost sales and lower customer service",
+      "votes": {
+        "reader": "supported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "a56a3f21b9859345",
+      "claim": "Identifies the system\u2019s constraint.\n2",
+      "votes": {
+        "reader": "partially_supported",
+        "specialist": "unsupported"
+      },
+      "gold_answer": ""
+    },
+    {
+      "key": "a92ac7edc0f1d971",
+      "claim": "effective for incremental improvement and existing processes, it may be less suitable for exploratory research or highly creative discovery because its emphasis on measurement and variability reduction can restrict experimentation",
+      "votes": {
+        "reader": "unsupported",
+        "specialist": "partially_supported"
+      },
+      "gold_answer": ""
+    }
+  ]
+}

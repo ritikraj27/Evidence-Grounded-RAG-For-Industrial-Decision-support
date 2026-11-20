@@ -1,0 +1,20 @@
+{
+  "status": "run",
+  "n_truth": 33,
+  "n_truth_supported": 32,
+  "n_fabrication": 9,
+  "n_fabrication_rejected": 8,
+  "n_foreign": 32,
+  "n_foreign_rejected": 31,
+  "truth_recall": 0.9696969696969697,
+  "fabrication_rejection": 0.8888888888888888,
+  "foreign_rejection": 0.96875,
+  "known_limits": [
+    "a bare value that is a single digit cannot be located reliably by a literal test, and every miss on the truth test and every leak on the cross-question test is of that kind",
+    "a value the corpus implies but does not state verbatim -- a derived figure -- is scored unsupported, because the evidence does not literally contain it",
+    "the entailment model is strict about definitional fragments, which is why the literal test exists alongside it, and lenient about bare numbers, which is why a bare value is not put to it at all"
+  ],
+  "missed_truths": [
+    "6"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "environmental_control",
+  "regime_title": "Environmental control (OSHA air contaminants and EPA new source performance standards)",
+  "regime_governs": "workplace air contaminants and their exposure limits, and emission standards for stationary sources: cement plants, petroleum refineries, storage vessels, smelters, grain elevators, metallic mineral processing, equipment leaks.",
+  "reader_note": "This is the numeric regime. Almost every conflict here is a quantity conflict: the same substance, the same measured quantity, two different numbers. Be careful about *scope* before calling it a conflict \u2014 the same substance routinely has different limits for general industry and for construction, for an 8-hour average and for a 15-minute excursion, and for different equipment. A difference in scope is not a conflict; a difference in the limit applied to the same scope is.",
+  "parts": "29 CFR 1910 subpart Z; 40 CFR 60",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Only\n`quantity_conflict` and `semantic_conflict` count as a true contradiction;\neverything else counts as a false alarm. A pair that is about different\nsubjects is `term_mismatch` even when a number appears to disagree.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial regulations.\nDecide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, a standard number or a\nquantity, but they are not about the same thing: two different substances,\ntwo different pieces of equipment, two different kinds of workplace. A\nnumeric rule fires on \"clearance of 1/2 inch\" in one passage and \"clearance\nof 2 inches\" in another that is about a different machine; that pair is\n`term_mismatch`, and it is the failure mode a *subject* check is meant to\nsuppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Is one passage a later revision of the other?\n\n**Yes -> `supersession`**\n\n\"Raw material lead time is 21 days\" and \"Raw material lead time is 14 days\n(revised, Q3)\" are not a contradiction; they are a policy that changed. Look\nfor revision markers, effective dates, \"updated\", \"revised\", \"previously\",\n\"now\", \"as of\", version numbers, or one passage being the same rule as it\nread before an amendment.\n\nA pair is `supersession` even when the supersession is obvious and the\nsupersession check did **not** catch it -- that is a false negative of the\nsupersession branch and is exactly what the labelling is looking for.\n\n**No -> go to question 3.**\n\n## 3. Is one passage about a whole and the other about one of its parts, and\n##    can both be true at the same time?\n\n**Yes -> `granularity`**\n\n\"The total clearance required at the machine is 1 inch\" and \"the clearance\nat the belt guard is 1 inch\" are about a whole and one of its parts. The\ngeneral figure is true of the component in a different sense, so the two do\nnot contradict each other.\n\n**No -> go to question 4.**\n\n## 4. Do the two passages state facts that cannot both be true at the same\n##    time?\n\n**Yes -> go to question 5.** If neither passage is a revision of the other,\nand both cannot be true at once, the conflict is one of two kinds.\n\n**No -> go to question 6.**\n\n## 5. Which kind of conflict is it?\n\n**A numeric limit is different for the same thing -> `quantity_conflict`**\n\nThe same measured quantity is given two different values, and the subject is\nmatched: the same substance, the same machine, the same requirement.\n\"Pliable exposure limit for cadmium is 5 micrograms per cubic meter\" against\n\"Pliable exposure limit for cadmium is 100 micrograms per cubic meter\" is a\n`quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved:\n\"the employer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n## 6. Do the passages simply not conflict?\n\n**Yes -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\nA note on scope: two passages are NOT in conflict merely because they differ.\nTwo regulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, or for different\nsituations are not.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 33,
+      "passage_a": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], (Issued August 31, 1981), IBR approved for \u00a7\u00a7 60.56c(b), 60.63(f), 60.106(e), 60.104a(d), (h), (i), and (j), 60.105a(b), (d), (f), and (g), 60.106a(a), 60.107a(a), (c), and (d), tables 1 and 3 to subpart EEEE, tables 2 and 4 to subpart FFFF, table 2 to subpart JJJJ, \u00a7\u00a7 60.285a(f), 60.4415(a), 60.2145(s) and (t), 60.2710(s) and (t), 60.2730(q), 60.4900(b), 60.5220(b), tables 1 and 2 to subpart LLLL, tables 2 and 3 to subpart MMMM, \u00a7\u00a7 60.5406(c), 60.5406a(c), 60.5407a(g), 60.5413(b), 60.5413a(b), and 60.5413a(d).",
+      "passage_b": "(14) ASME/ANSI PTC 19.10-1981, Flue and Exhaust Gas Analyses [Part 10, Instruments and Apparatus], Issued August 31, 1981; IBR approved for \u00a7\u00a7 60.56c(b); 60.63(f); 60.106(e); 60.104a(d), (h), (i), and (j); 60.105a(b), (d), (f), and (g); 60.106a(a); 60.107a(a), (c), and (d); 60.275(e); 60.275a(e); 60.275b(e); Tables 1 and 3 to subpart EEEE; Tables 2 and 4 to subpart FFFF; Table 2 to subpart JJJJ; \u00a7\u00a7 60.285a(f); 60.396(a); 60.614a(b); 60.664a(b); 60.704(b); 60.704a(b); 60.2145(s) and (t); 60.2710(s) and (t); 60.2730(q); 60.4415(a); 60.4415a(b); 60.4900(b); 60.5220(b); Tables 1 and 2 to subpart LLLL; Tables 2 and 3 to subpart MMMM; \u00a7\u00a7 60.5406(c); 60.5406a(c); 60.5406b(c); 60.5407a(g); 60.5407b(g); 60.5413(b); 60.5413a(b) and (d); 60.5413b(b) and (d); 60.5413c(b) and (d); 60.5930(a); Tables 3 and 4 to subpart VVVV; 60.6485(a); Tables 4 and 5 to subpart WWWW."
+    },
+    {
+      "pair_id": 36,
+      "passage_a": "(38) ASTM D396-78, Standard Specification for Fuel Oils, IBR approved for \u00a7\u00a7 60.41b, 60.41c, 60.111(b), and 60.111a(b).",
+      "passage_b": "(39) ASTM D396-78, Standard Specification for Fuel Oils; IBR approved for \u00a7\u00a7 60.41b; 60.41c; 60.111(b); 60.111a(b)."
+    },
+    {
+      "pair_id": 38,
+      "passage_a": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method), IBR approved for \u00a7\u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3.",
+      "passage_b": "(20) ASTM D129-64, Standard Test Method for Sulfur in Petroleum Products (General Bomb Method); IBR approved for \u00a7 60.106(j) and appendix A-7 to part 60: Method 19, Section 12.5.2.2.3."
+    },
+    {
+      "pair_id": 42,
+      "passage_a": "(149) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method), IBR approved for \u00a7 60.334(h).",
+      "passage_b": "(155) ASTM D4084-94, Standard Test Method for Analysis of Hydrogen Sulfide in Gaseous Fuels (Lead Acetate Reaction Rate Method); IBR approved for \u00a7 60.334(h)."
+    },
+    {
+      "pair_id": 45,
+      "passage_a": "(84) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood, IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1.",
+      "passage_b": "(87) ASTM D2016-83, Standard Test Methods for Moisture Content of Wood; IBR approved for appendix A-8 to part 60: Method 28, Section 16.1.1."
+    },
+    {
+      "pair_id": 46,
+      "passage_a": "(125) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke, IBR approved for \u00a7 60.45(f).",
+      "passage_b": "(131) ASTM D3178-89, Standard Test Methods for Carbon and Hydrogen in the Analysis Sample of Coal and Coke; IBR approved for \u00a7 60.45(f)."
+    },
+    {
+      "pair_id": 48,
+      "passage_a": "Delegation Status for New Source Performance Standards for San Diego County APCD, San Joaquin Valley Unified APCD, San Luis Obispo County APCD, and Santa Barbara County APCD",
+      "passage_b": "(vii) Delegations for San Diego County Air Pollution Control District, San Joaquin Valley Unified Air Pollution Control District, San Luis Obispo County Air Pollution Control District, and Santa Barbara County Air Pollution Control District are shown in the following table:"
+    },
+    {
+      "pair_id": 50,
+      "passage_a": "(40) ASTM D396-90, Standard Specification for Fuel Oils, IBR approved for \u00a7\u00a7 60.41b, 60.41c, 60.111(b), and 60.111a(b).",
+      "passage_b": "(40) ASTM D396-89, Standard Specification for Fuel Oils; IBR approved for \u00a7\u00a7 60.41b; 60.41c; 60.111(b); 60.111a(b)."
+    },
+    {
+      "pair_id": 55,
+      "passage_a": "1 The Louisiana Department of Environmental Quality (LDEQ) has been delegated all Part 60 standards promulgated by EPA, except subpart AAA - Standards of Performance for New Residential Wood Heaters - as amended in the Federal Register through July 1, 2013.",
+      "passage_b": "(1) New Mexico. The New Mexico Environment Department has been delegated all part 60 standards promulgated by the EPA, except subpart AAA\u2014Standards of Performance for New Residential Wood Heaters; and subpart QQQQ\u2014Standards of Performance for New Residential Hydronic Heaters and Forced-Air Furnaces, as amended in the Federal Register through January 15, 2017."
+    },
+    {
+      "pair_id": 57,
+      "passage_a": "(37) ASTM D388-99 (Reapproved 2004) 1 Standard Classification of Coals by Rank, IBR approved for \u00a7\u00a7 60.41, 60.45(f), 60.41Da, 60.41b, 60.41c, 60.251, and 60.5580.",
+      "passage_b": "(38) ASTM D388-99 (Reapproved 2004) 1(ASTM D388-99R04), Standard Classification of Coals by Rank, approved June 1, 2004; IBR approved for \u00a7\u00a7 60.41; 60.45(f); 60.41Da; 60.41b; 60.41c; 60.251; 60.5580; 60.5580a."
+    },
+    {
+      "pair_id": 58,
+      "passage_a": "(f) The requirements of paragraphs (a) through (c) of this section remain in force until and unless EPA, in delegating enforcement authority to a State under section 111(c) of the Act, approves reporting requirements or an alternative means of compliance surveillance adopted by such State. In that event, affected sources within the State will be relieved of the obligation to comply with the requirements of paragraphs (a) through (c) of this section, provided that they comply with the requirements established by the State.",
+      "passage_b": "(f) The requirements of paragraphs (a) through (c) of this section remain in force until and unless EPA, in delegating enforcement authority to a State under section 111(c) of the Act, approves reporting requirements or an alternative means of compliance surveillance adopted by such State. In that event, affected sources within the State will be relieved of the obligation to comply with the requirements of paragraphs (a) through (c) of this section, provided that they comply with the requirements established by the State. The EPA will not approve a waiver of electronic reporting to the EPA in delegating enforcement authority. Thus, electronic reporting to the EPA cannot be waived, and as such, the provisions of this paragraph cannot be used to relieve owners or operators of affected facilities of the requirement to submit the electronic reports required in this section to the EPA."
+    },
+    {
+      "pair_id": 60,
+      "passage_a": "(85) ASTM D2234-76, Standard Methods for Collection of a Gross Sample of Coal, IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1.",
+      "passage_b": "(88) ASTM D2234-76, Standard Methods for Collection of a Gross Sample of Coal; IBR approved for appendix A-7 to part 60: Method 19, Section 12.5.2.1.1."
+    }
+  ]
+}

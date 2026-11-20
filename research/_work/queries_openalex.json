@@ -1,0 +1,15 @@
+{
+  "colpali": "ColPali Efficient Document Retrieval with Vision Language Models",
+  "visrag": "VisRAG Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+  "colqwen": "ColQwen Enhancing Document Retrieval with Visual Language Model",
+  "docvqa": "DocVQA A Large-Scale Multilingual Visual Question Answering Benchmark on Document Images",
+  "chartqa": "ChartQA A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+  "infovqa": "InfographicVQA Visual Question Answering on Infographics",
+  "tatdqa": "TAT-DQA A Multi-Shot Tabular Question Answering Benchmark on Realistic Financial Documents",
+  "mmbench_doc": "MMLongBench-Doc Benchmarking Long-Context Document Understanding",
+  "omni_doc": "OmniDocBench A Benchmark for Evaluating Document Parsing",
+  "raptor": "RAPTOR Recursive Abstractive Processing for Tree-Organized Retrieval",
+  "late_chunking": "Late Chunking Contextual Chunk Embeddings Using Long-Context Embedding Models",
+  "table_rag": "TableRAG Million-Table Schema Retrieval Augmented Generation",
+  "modality_bias": "modality bias retrieval augmented generation text table imbalance"
+}

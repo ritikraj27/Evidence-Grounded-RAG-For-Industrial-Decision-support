@@ -1,0 +1,240 @@
+{
+  "schema": "mtp.revision-judge-input/2",
+  "regime": "process_safety",
+  "regime_title": "Catastrophic-risk management (OSHA PSM and EPA RMP)",
+  "regime_governs": "the standards that manage low-frequency, high-consequence events: process safety management, hazardous waste operations, permit-required confined spaces, lockout/tagout, hazard communication, and EPA's risk management programme rule.",
+  "reader_note": "These rules are unusually explicit about scope and about exemptions, and they are the rules most likely to contain genuine, simultaneous, irreconcilable requirements \u2014 a process safety management programme and a hazard communication programme can demand different things of the same employer at the same time. Read them for whether both can be obeyed together, not for whether they sound different.",
+  "parts": "29 CFR 1910 subparts G, Z; 40 CFR 112",
+  "instructions": "For each pair, read both passages and set `label` to exactly one of:\nquantity_conflict, semantic_conflict, supersession, granularity,\nterm_mismatch, no_conflict. Use the rubric below. Follow its decision tree\nin order and stop at the first question that applies.\n\n`quantity_conflict` and `semantic_conflict` are true contradictions.\n`supersession` is a real conflict of a different kind: the two passages are\nthe same rule at two issues, so they cannot both be current.\n`term_mismatch`, `granularity` and `no_conflict` are false alarms.\n",
+  "rubric": "# Rubric for labelling pairs of industrial regulatory passages\n\nYou are given two passages from United States federal industrial\nregulations. Decide **one** of six labels for the pair. Exactly one applies.\n\nWork down the tree below and stop at the first question that applies.\n\n## 1. Are the two passages about different subjects, neither being a part of\n##    the other?\n\n**Yes -> `term_mismatch`**\n\nThe passages share vocabulary, a topic word, an entity name, a standard\nnumber or a quantity, but they are not about the same thing: two different\nsubstances, two different pieces of equipment, two different kinds of\nworkplace. A numeric rule fires on \"clearance of 1/2 inch\" in one passage\nand \"clearance of 2 inches\" in another that is about a different machine;\nthat pair is `term_mismatch`, and it is the failure mode a *subject* check\nis meant to suppress.\n\n**No -> go to question 2.** The two passages are about the same subject, or\none is about a part of what the other is about.\n\n## 2. Are the two passages two issues of the same rule?\n\n**Yes -> `supersession`**\n\nThe test is **structural**, not a marker test. The two passages address the\nsame requirement, about the same subject, in the same terms, and differ only\nin detail: a renumbered cross-reference, a changed edition of a cited\nstandard, a rewording that preserves the requirement, an added or removed\nparagraph, a changed incorporation-by-reference list. A version marker, an\neffective date, a \"supersedes\" note or an amended cross-reference is one way\nto see this; it is **not the only way**. Recognising that two passages are\nthe same rule as it read at two different times is a reading judgement, and\nyou are being asked to make it.\n\n**What `supersession` means, and what it does not.** It means the two\npassages cannot both be the current rule. It does **not** mean that one of\nthem is wrong, and it does **not** mean the pair is harmless: a practitioner\nholding both has to be told which one governs. If the passages carry no\nmarker saying which is current, that is a fact worth reporting, not a\nreason to call the pair a non-conflict.\n\n**No -> go to question 3.**\n\n## 3. Do the two passages state requirements that cannot both be obeyed?\n\n**A number differs for the same measured quantity, with the subject\nmatched -> `quantity_conflict`**\n\nThe same substance, the same machine, the same requirement, two different\nvalues. \"The permissible exposure limit for cadmium is 5 micrograms per\ncubic meter of air\" against \"the permissible exposure limit for cadmium is\n100 micrograms per cubic meter of air\" is a `quantity_conflict`.\n\n**Anything else -> `semantic_conflict`**\n\nThe same subject is required to have two different properties, or one\npassage permits what the other forbids, and no number is involved. \"The\nemployer shall inspect the fire extinguisher monthly\" against \"the\nemployer shall inspect the fire extinguisher annually\" is a\n`semantic_conflict`.\n\n**Neither -> `no_conflict`**\n\nThey are about the same subject and are compatible: they state different\naspects of the same requirement, one is more general than the other, or\nthey simply do not bear on the same point.\n\n## A note on scope\n\nTwo passages are **not** in conflict merely because they differ. Two\nregulations that impose different requirements on the same topic are in\nconflict only when they cannot both be obeyed at once. Two that impose\nrequirements at different times, on different equipment, for different\nsituations, or for different scopes are not \u2014 read the scope before\njudging the numbers.\n",
+  "labels_allowed": [
+    "quantity_conflict",
+    "semantic_conflict",
+    "supersession",
+    "granularity",
+    "term_mismatch",
+    "no_conflict"
+  ],
+  "pairs": [
+    {
+      "pair_id": 1,
+      "passage_a": "> C.3.3 Where an ingredient with unknown acute toxicity is used in a mixture at a concentration \u22651%, and the mixture is not classified based on testing of the mixture as a whole, a statement that X% of the mixture consists of ingredient(s) of unknown acute toxicity is required on the label.",
+      "passage_b": "> C.3.3 Where an ingredient with unknown acute toxicity is used in a mixture at a concentration \u22651%, and the mixture is not classified based on testing of the mixture as a whole, a statement that X% of the mixture consists of ingredient(s) of unknown acute toxicity (oral/dermal/inhalation) is required on the label and safety data sheet."
+    },
+    {
+      "pair_id": 4,
+      "passage_a": "> #### B.3.1 Definition",
+      "passage_b": "> #### B.3.1.1 Definition"
+    },
+    {
+      "pair_id": 6,
+      "passage_a": "> Table B.6.1\u2014Criteria for Flammable Liquids",
+      "passage_b": "> #### Table B.6.1: Criteria for Flammable Liquids"
+    },
+    {
+      "pair_id": 9,
+      "passage_a": "> Note: The available oxygen content (%) of an organic peroxide mixture is given by the formula:",
+      "passage_b": "> The available oxygen content (%) of an organic peroxide mixture is given by the formula:"
+    },
+    {
+      "pair_id": 10,
+      "passage_a": "> \u0394Hc = chemical heat of combustion (kJ/g);",
+      "passage_b": "> \u0394Hc(product) = specific heat of combustion (kJ/g) of the product;"
+    },
+    {
+      "pair_id": 12,
+      "passage_a": "> (b) Non-elevated - a permit space with the entrance portal located less than 4 feet above grade. This type of space will allow the rescue team to transport an injured employee normally.",
+      "passage_b": "> (b) Non-elevated\u2014a permit space with the entrance portal located less than 4 feet above grade. This type of space will allow the rescue team to transport an injured employee normally."
+    },
+    {
+      "pair_id": 15,
+      "passage_a": "> A.3.3.1 Existing human and animal data should be the first line of analysis, as they give information directly relevant to effects on the eye. Possible skin corrosion shall be evaluated prior to consideration of serious eye damage/eye irritation in order to avoid testing for local effects on eyes with skin corrosive substances. In vitro alternatives that have been scientifically validated and accepted shall be used to make classification decisions. Likewise, pH extremes like \u22642 and \u226511.5, may indicate serious eye damage, especially when associated with significant buffering capacity. Generally, such substances are expected to produce significant effects on the eyes. In the absence of any other information, a mixture/substance is considered to cause serious eye damage (Eye Category 1) if it has a pH \u22642 or \u226511.5. However, if consideration of acid/alkaline reserve suggests the substance may not have the potential to cause serious eye damage despite the low or high pH value, then further evaluation may be necessary. In some cases enough information may be available from structurally related compounds to make classification decisions.",
+      "passage_b": "> A.3.2.2.4 Likewise, pH extremes like \u22642 and \u226511.5, may indicate serious eye damage, especially when associated with significant acid/alkaline reserve (buffering capacity). Generally, such substances are expected to produce significant effects on the eyes. In the absence of any other information, a substance is considered to cause serious eye damage (Category 1) if it has a pH \u22642 or \u226511.5. However, if consideration of acid/alkaline reserve suggests the substance may not cause serious eye damage despite the low or high pH value, this needs to be confirmed by other data, preferably by data from an appropriate validated in vitro test."
+    },
+    {
+      "pair_id": 17,
+      "passage_a": "> B.11.2.3 Chemicals with a spontaneous ignition temperature higher than 50 \u00b0C (122 \u00b0F) for a volume of 450 liters shall not be classified in Category 1 of this class.",
+      "passage_b": "> B.11.2.3 Chemicals with a spontaneous ignition temperature higher than 50\u00b0 C (122\u00b0 F) for a volume of 450 liters shall not be classified in Category 1 of this class."
+    },
+    {
+      "pair_id": 18,
+      "passage_a": "> Carcinogen means a substance or a mixture of substances which induce cancer or increase its incidence. Substances and mixtures which have induced benign and malignant tumors in well-performed experimental studies on animals are considered also to be presumed or suspected human carcinogens unless there is strong evidence that the mechanism of tumor formation is not relevant for humans.",
+      "passage_b": "> Carcinogenicity refers to the induction of cancer or an increase in the incidence of cancer occurring after exposure to a substance or mixture. Substances and mixtures which have induced benign and malignant tumors in well-performed experimental studies on animals are considered also to be presumed or suspected human carcinogens unless there is strong evidence that the mechanism of tumor formation is not relevant for humans."
+    },
+    {
+      "pair_id": 20,
+      "passage_a": "> A.4.1.1 Respiratory sensitizer means a chemical that will lead to hypersensitivity of the airways following inhalation of the chemical.",
+      "passage_b": "> A.4.1.1 Respiratory sensitization refers to hypersensitivity of the airways occurring after inhalation of a substance or mixture."
+    },
+    {
+      "pair_id": 24,
+      "passage_a": "> The initial boiling point shall be determined in accordance with ASTM D86-07a or ASTM D1078 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> The initial boiling point shall be determined in accordance with ASTM D86-07a or ASTM D1078 (incorporated by reference; see \u00a7 1910.6). 1"
+    },
+    {
+      "pair_id": 26,
+      "passage_a": "> #### A.9.3.4 Classification of Mixtures When Data Are Available for All Ingredients or Only for Some Ingredients of the Mixture",
+      "passage_b": "> A.9.3.4 Classification of Mixtures When Data Are Available for All Ingredients or Only for Some Ingredients of the Mixture"
+    },
+    {
+      "pair_id": 28,
+      "passage_a": "> | Ingredient classified as: | Cut-off values/concentration limits triggering classification of a mixture as: |  |  |\n|---|---|---|---|\n| Respiratory Sensitizer Category 1 |  | Skin Sensitizer Category 1 |  |\n| Solid/liquid | Gas | All physical states |  |\n| Respiratory Sensitizer, Category 1 | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1A | \u22650.1% | \u22650.1% |  |\n| Respiratory Sensitizer, Sub-category 1B | \u22651.0% | \u22650.2% |  |\n| Skin Sensitizer, Category 1 |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1A |  |  | \u22650.1% |\n| Skin Sensitizer, Sub-category 1B |  |  | \u22651.0% |",
+      "passage_b": "> Table A.4.5\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as Either Respiratory Sensitizers or Skin Sensitizers That Would Trigger Classification of the Mixture\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |  |\n|---|---|---|---|\n| Respiratory sensitizer Category 1 |  | Skin sensitizer Category 1 |  |\n| Solid/liquid (%) | Gas (%) | All physical states (%) |  |\n| Respiratory Sensitizer Category 1 | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1A | \u22650.1 | \u22650.1 |  |\n| Respiratory Sensitizer Sub-category 1B | \u22651.0 | \u22650.2 |  |\n| Skin Sensitizer Category 1 |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1A |  |  | \u22650.1 |\n| Skin Sensitizer Sub-category 1B |  |  | \u22651.0 |"
+    },
+    {
+      "pair_id": 30,
+      "passage_a": "> #### A.7.2.2 Basis of Classification",
+      "passage_b": "> A.7.2.2 Basis of Classification"
+    },
+    {
+      "pair_id": 32,
+      "passage_a": "> (c) Mammalian erythrocyte micronucleus test (OECD 474)",
+      "passage_b": "> (b) Mammalian erythrocyte micronucleus test (OECD 474)"
+    },
+    {
+      "pair_id": 35,
+      "passage_a": "> A.8.2.1.9 Guidance values to assist with classification based on the results obtained from studies conducted in experimental animals for Category 1 and 2",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 37,
+      "passage_a": "> Table A.9.1\u2014Guidance Values To Assist in Category 1 Classification",
+      "passage_b": "> A.8.2.1.9 Guidance Values To Assist With Classification Based on the Results Obtained From Studies Conducted in Experimental Animals for Category 1 and 2"
+    },
+    {
+      "pair_id": 39,
+      "passage_a": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3.",
+      "passage_b": "> Flash point means the minimum temperature at which a liquid gives off vapor in sufficient concentration to form an ignitable mixture with air near the surface of the liquid, as determined by a method identified in Section B.6.3 of this appendix."
+    },
+    {
+      "pair_id": 40,
+      "passage_a": "> #### A.3.2 Classification Criteria for Substances Using Animal Test Data",
+      "passage_b": "> #### A.3.2 Classification Criteria for Substances"
+    },
+    {
+      "pair_id": 41,
+      "passage_a": "> B.3.3.3 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of the of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.3.3.4 The Ignition Distance Test, Enclosed Space Ignition Test and Aerosol Foam Flammability Test shall be performed in accordance with sub-sections 31.4, 31.5 and 31.6 of UN ST/SG/AC.10 (incorporated by reference; see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 44,
+      "passage_a": "> #### A.9.2.7 Effects Considered To Support Classification",
+      "passage_b": "> A.9.2.7 Effects Considered To Support Classification"
+    },
+    {
+      "pair_id": 49,
+      "passage_a": "> | Exposure route | Category 1 | Category 2 | Category 3 | Category 4 |\n|---|---|---|---|---|\n| Oral (mg/kg bodyweight) |  |  |  |  |\n| see: Note (a) | \u22645 | >5 and \u226450 | >50 and \u2264300 | >300 and \u22642000. |\n| Note (b) |  |  |  |  |\n| Dermal (mg/kg bodyweight) |  |  |  |  |\n| see: Note (a) | \u226450 | >50 and \u2264200 | >200 and \u22641000 | >1000 and \u22642000. |\n| Note (b) |  |  |  |  |\n| Inhalation\u2014Gases (ppmV) |  |  |  |  |\n| see: Note (a) | \u2264100 | >100 and \u2264500 | >500 and \u22642500 | >2500 and \u226420000. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |\n| Inhalation\u2014Vapors (mg/l) |  |  |  |  |\n| see: Note (a) | \u22640.5 | >0.5 and \u22642.0 | >2.0 and \u226410.0 | >10.0 and \u226420.0. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |\n| Note (d) |  |  |  |  |\n| Inhalation\u2014Dusts and Mists (mg/l) |  |  |  |  |\n| see: Note (a) | \u22640.05 | >0.05 and \u22640.5 | >0.5 and \u22641.0 | >1.0 and \u22645.0. |\n| Note (b) |  |  |  |  |\n| Note (c) |  |  |  |  |",
+      "passage_b": "> Table A.1.2\u2014Conversion From Experimentally Obtained Acute Toxicity Range Values (or Acute Toxicity Hazard Categories) to Acute Toxicity Point Estimates for Use in the Formulas for the Classification of Mixtures\n| Exposure routes | Classification category or experimentally obtained acute toxicity range estimate | Converted acute toxicity point estimate |\n|---|---|---|\n| Oral (mg/kg bodyweight) | 0 < Category 1 \u2264 5 | 0.5 |\n|  | 5 < Category 2 \u2264 50 | 5 |\n|  | 50 < Category 3 \u2264 300 | 100 |\n|  | 300 < Category 4 \u2264 2000 | 500 |\n| Dermal (mg/kg bodyweight) | 0 < Category 1 \u2264 50 | 5 |\n|  | 50 < Category 2 \u2264 200 | 50 |\n|  | 200 < Category 3 \u2264 1000 | 300 |\n|  | 1000 < Category 4 \u2264 2000 | 1100 |\n| Gases (ppmV) | 0 < Category 1 \u2264 100 | 10 |\n|  | 100 < Category 2 \u2264 500 | 100 |\n|  | 500 < Category 3 \u2264 2500 | 700 |\n|  | 2500 < Category 4 \u2264 20000 | 4500 |\n| Vapors (mg/l) | 0 < Category 1 \u2264 0.5 | 0.05 |\n|  | 0.5 < Category 2 \u2264 2.0 | 0.5 |\n|  | 2.0 < Category 3 \u2264 10.0 | 3 |\n|  | 10.0 < Category 4 \u2264 20.0 | 11 |\n| Dust/mist (mg/l) | 0 < Category 1 \u2264 0.05 | 0.005 |\n|  | 0.05 < Category 2 \u2264 0.5 | 0.05 |\n|  | 0.5 < Category 3 \u2264 1.0 | 0.5 |\n|  | 1.0 < Category 4 \u2264 5.0 | 1.5 |\n| Note: Gas concentrations are expressed in parts per million per volume (ppmV). |  |  |"
+    },
+    {
+      "pair_id": 51,
+      "passage_a": "(3) Mixtures. (i) Chemical manufacturers, importers, or employers evaluating chemicals shall follow the procedures described in Appendices A and B to \u00a7 1910.1200 to classify the hazards of the chemicals, including determinations regarding when mixtures of the classified chemicals are covered by this section.",
+      "passage_b": "(3) Mixtures. (i) Chemical manufacturers, importers, or employers evaluating chemicals shall follow the procedures described in appendices A and B to \u00a7 1910.1200 to classify the hazards of the chemicals, including determinations regarding when mixtures of the classified chemicals are covered by this section."
+    },
+    {
+      "pair_id": 52,
+      "passage_a": "> Mutagenicity: It is recognized that genetic events are central in the overall process of cancer development. Therefore evidence of mutagenic activity in vivo may indicate that a substance has a potential for carcinogenic effects.",
+      "passage_b": "> Mutagenicity: It is recognized that genetic events are central in the overall process of cancer development. Therefore, evidence of mutagenic activity in vivo may indicate that a substance has a potential for carcinogenic effects."
+    },
+    {
+      "pair_id": 53,
+      "passage_a": "> Table A.5.1\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as Germ Cell Mutagens That Would Trigger Classification of the Mixture",
+      "passage_b": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |\n|---|---|---|\n| Category 1 | Category 2 |  |\n| Category 1 Target organ toxicant | \u22651.0% |  |\n| Category 2 Target organ toxicant |  | \u22651.0% |"
+    },
+    {
+      "pair_id": 54,
+      "passage_a": "> #### A.1.3.6 Classification of Mixtures Based on Ingredients of the Mixture (Additivity Formula)",
+      "passage_b": "> A.1.3.6 Classification of mixtures based on ingredients of the mixture (additivity formula)"
+    },
+    {
+      "pair_id": 56,
+      "passage_a": "> | Category | Criteria |\n|---|---|\n| 1 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, spontaneously ignites; or the mean pressure rise time of a 1:1 mixture, by mass, of chemical and cellulose is less than that of a 1:1 mixture, by mass, of 50% perchloric acid and cellulose; |\n| 2 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 40% aqueous sodium chlorate solution and cellulose; and the criteria for Category 1 are not met; |\n| 3 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 65% aqueous nitric acid and cellulose; and the criteria for Categories 1 and 2 are not met. |",
+      "passage_b": "> Table B.13.1\u2014 Criteria for Oxidizing Liquids\n| Category | Criteria |\n|---|---|\n| 1 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, spontaneously ignites; or the mean pressure rise time of a 1:1 mixture, by mass, of chemical and cellulose is less than that of a 1:1 mixture, by mass, of 50% perchloric acid and cellulose; |\n| 2 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 40% aqueous sodium chlorate solution and cellulose; and the criteria for Category 1 are not met; |\n| 3 | Any chemical which, in the 1:1 mixture, by mass, of chemical and cellulose tested, exhibits a mean pressure rise time less than or equal to the mean pressure rise time of a 1:1 mixture, by mass, of 65% aqueous nitric acid and cellulose; and the criteria for Categories 1 and 2 are not met. |"
+    },
+    {
+      "pair_id": 59,
+      "passage_a": "> A.1.2.1 Substances can be allocated to one of four toxicity categories based on acute toxicity by the oral, dermal or inhalation route according to the numeric cut-off criteria as shown in Table A.1.1. Acute toxicity values are expressed as (approximate) LD50 (oral, dermal) or LC50 (inhalation) values or as acute toxicity estimates (ATE). See the footnotes following Table A.1.1 for further explanation on the application of these values.",
+      "passage_b": "> A.1.2.1 Substances can be allocated to one of four hazard categories based on acute toxicity by the oral, dermal or inhalation route according to the numeric cut-off criteria as shown in Table A.1.1. Acute toxicity values are expressed as (approximate) LD50 (oral, dermal) or LC50 (inhalation) values or as acute toxicity estimates (ATE). While some in vivo methods determine LD50/LC50 values directly, other newer in vivo methods (e.g., using fewer animals) consider other indicators of acute toxicity, such as significant clinical signs of toxicity, which are used by reference to assign the hazard category. See the footnotes following Table A.1.1 for further explanation on the application of these values."
+    },
+    {
+      "pair_id": 61,
+      "passage_a": "> Table B.12.1\u2014Criteria for Chemicals Which, in Contact With Water, Emit Flammable Gases",
+      "passage_b": "> #### B.12 Chemicals Which, in Contact With Water, Emit Flammable Gases"
+    },
+    {
+      "pair_id": 66,
+      "passage_a": "> #### Appendix F to \u00a7 1910.146 - Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)",
+      "passage_b": "> #### Appendix F to \u00a7 1910.146\u2014Rescue Team or Rescue Service Evaluation Criteria (Non-Mandatory)"
+    },
+    {
+      "pair_id": 67,
+      "passage_a": "> #### Appendix D to \u00a7 1910.1200\u2014Safety Data Sheets (Mandatory)",
+      "passage_b": "> #### Appendix D to \u00a7 1910.1200 Safety Data Sheet (Mandatory)"
+    },
+    {
+      "pair_id": 70,
+      "passage_a": "> A.2.2.2.2 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance might be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses could also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system.",
+      "passage_b": "> A.2.2.2.2.4 Animal irritant responses within a test can be quite variable, as they are with corrosion. A separate irritant criterion accommodates cases when there is a significant irritant response but less than the mean score criterion for a positive test. For example, a substance should be designated as an irritant if at least 1 of 3 tested animals shows a very elevated mean score according to test method used throughout the study, including lesions persisting at the end of an observation period of normally 14 days. Other responses should also fulfil this criterion. However, it should be ascertained that the responses are the result of chemical exposure. Addition of this criterion increases the sensitivity of the classification system."
+    },
+    {
+      "pair_id": 74,
+      "passage_a": "> #### A.3.4.1 Classification of Mixtures When Data Are Available for the Complete Mixture",
+      "passage_b": "> A.4.3.1 Classification of Mixtures When Data Are Available for the Complete Mixture"
+    },
+    {
+      "pair_id": 75,
+      "passage_a": "> A.2.3.3 The tiered approach explains how to organize information on a substance and to make a weight-of-evidence decision about hazard assessment and hazard classification.",
+      "passage_b": "> A.3.2.2.7 The tiered approach explains how to organize existing information and to make a weight-of-evidence decision about hazard assessment and hazard classification. Although information might be gained from the evaluation of single parameters within a tier, consideration should be given to the totality of existing information and making an overall weight of evidence determination. This is especially true when there is conflict in information available."
+    },
+    {
+      "pair_id": 76,
+      "passage_a": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2",
+      "passage_b": "> Table A.8.2\u2014Cut-Off Values/Concentration Limits of Ingredients of a Mixture Classified as a Specific Target Organ Toxicant That Would Trigger Classification of the Mixture as Category 1 or 2\n| Ingredient classified as | Cut-off values/concentration limits triggering classification of a mixture as |  |\n|---|---|---|\n| Category 1 | Category 2 |  |\n| Category 1 Target organ toxicant | \u22651.0% |  |\n| Category 2 Target organ toxicant |  | \u22651.0% |"
+    },
+    {
+      "pair_id": 77,
+      "passage_a": "> For mixtures classified in accordance with A.1, A.2, A.3, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1.",
+      "passage_b": "> For mixtures classified in accordance with A.1, A.2, A.3, A.4, A.8, A.9, or A.10 of this Appendix, if a tested mixture is classified in Category 1, and the concentration of the ingredients of the tested mixture that are in Category 1 is increased, the resulting untested mixture shall be classified in Category 1."
+    },
+    {
+      "pair_id": 79,
+      "passage_a": "> #### A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles",
+      "passage_b": "> A.8.3.3 Classification of Mixtures When Data Are Not Available for the Complete Mixture: Bridging Principles"
+    },
+    {
+      "pair_id": 80,
+      "passage_a": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which contain only extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation.",
+      "passage_b": "> (f) Division 1.6\u2014Extremely insensitive items which do not have a mass explosion hazard: items which predominantly contain extremely insensitive detonating chemicals and which demonstrate a negligible probability of accidental initiation or propagation."
+    },
+    {
+      "pair_id": 81,
+      "passage_a": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of the UN ST/SG/AC.10 (incorporated by reference; See \u00a7 1910.6).",
+      "passage_b": "> B.15.3.1 For purposes of classification, the properties of organic peroxides shall be determined in accordance with test series A to H as described in Part II of UN ST/SG/AC.10 (incorporated by reference, see \u00a7 1910.6)."
+    },
+    {
+      "pair_id": 83,
+      "passage_a": "> A.4.2.2.2 Human evidence.",
+      "passage_b": "> A.4.2.2.2 Human Evidence"
+    },
+    {
+      "pair_id": 86,
+      "passage_a": "> #### B.5 GASES UNDER PRESSURE",
+      "passage_b": "> #### B.5 Gases Under Pressure"
+    },
+    {
+      "pair_id": 88,
+      "passage_a": "> #### A.2.2.2 Irritation",
+      "passage_b": "> A.2.2.2.2 Skin Irritation"
+    },
+    {
+      "pair_id": 157,
+      "passage_a": "addressed in 1910.120 have been covered in the preceding section and are not re-addressed in each of the generic guidelines. Basic core requirements for training programs that are addressed include > 1. General Hazardous Waste Operations > 2. RCRA operations\u2014Treatment, storage, and disposal facilities. > 3. Emergency Response. > A. General Hazardous Waste Operations and Site-specific Training > 1. Off-site training.Training course content for hazardous waste operations, required by 29 CFR 1910.120(e), should include the following topics or procedures: > a. Regulatory knowledge. > (1) An review of 29 CFR 1910.120 and the core elements of an occupational safety and health program. > (2) The content of a medical surveillance program as outlined in 29 CFR 1910.120(f). > (3) The",
+      "passage_b": "associated hazards and control of such hazards of spill containment work. > These new tools and agents are the things that employers will want to evaluate as part of their new technology program. The treatment of spills of hazardous substances or wastes at an emergency incident as part of the immediate spill containment and control efforts is sometimes acceptable to EPA and a permit exception is described in 40 CFR 264.1(g)(8) and 265.1(c)(11). > #### Appendix D to \u00a7 1910.120\u2014References > The following references may be consulted for further information on the subject of this standard: > 1. OSHA Instruction DFO CPL 2.70\u2014January 29, 1986, Special Emphasis Program: Hazardous Waste Sites. > 2. OSHA Instruction DFO CPL 2-2.37A\u2014January 29, 1986,"
+    },
+    {
+      "pair_id": 165,
+      "passage_a": "of this section, the facility owner or operator may not self-certify alternative measures allowed under \u00a7 112.7(a)(2) or (d), that are included in the facility's Plan. Such measures must be reviewed and certified, in writing, by a licensed Professional Engineer. For each alternative measure allowed under \u00a7 112.7(a)(2), the Plan must be accompanied by a written statement by a Professional Engineer that states the reason for nonconformance and describes the alternative method and how it provides equivalent environmental protection in accordance with \u00a7 112.7(a)(2). For each determination of impracticability of secondary containment pursuant to \u00a7 112.7(d), the Plan must clearly explain why secondary containment measures are not practicable at this facility and provide the alternative measures required in \u00a7 112.7(d)",
+      "passage_b": "does not conform to the applicable requirements in paragraphs (g), (h)(2) and (3), and (i) of this section, or the requirements of subparts B and C of this part, except the secondary containment requirements in paragraph (c) and (h)(1) of this section, and \u00a7\u00a7 112.8(c)(2), 112.8(c)(11), 112.9(c)(2), 112.10(c), 112.12(c)(2), and 112.12(c)(11), you must state the reasons for nonconformance in your Plan and describe in detail alternate methods and how you will achieve equivalent environmental protection. If the Regional Administrator determines that the measures described in your Plan do not provide equivalent environmental protection, he may require that you amend your Plan, following the procedures in \u00a7 112.4(d) and (e). (3) Describe in your Plan the physical layout of the facility"
+    }
+  ]
+}

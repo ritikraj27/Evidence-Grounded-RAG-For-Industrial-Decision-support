@@ -1,0 +1,1018 @@
+{
+  "name": "InduSight industrial regulatory corpus",
+  "date": "2026-06-01",
+  "source": "Electronic Code of Federal Regulations (eCFR), https://www.ecfr.gov",
+  "licence": "public domain (US government work)",
+  "n_documents": 110,
+  "total_words": 226539,
+  "by_category": {
+    "environmental_control": {
+      "n_documents": 37,
+      "words": 87233
+    },
+    "hazmat_transport": {
+      "n_documents": 19,
+      "words": 21250
+    },
+    "occupational_safety": {
+      "n_documents": 44,
+      "words": 88529
+    },
+    "process_safety": {
+      "n_documents": 10,
+      "words": 29527
+    }
+  },
+  "documents": [
+    {
+      "identifier": "112.1",
+      "parent": "112.1",
+      "head": "\u00a7 112.1 General applicability.",
+      "category": "process_safety",
+      "subpart": "A",
+      "words": 1999,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "112.20_part1",
+      "parent": "112.20",
+      "head": "\u00a7 112.20 Facility response plans.",
+      "category": "process_safety",
+      "subpart": "D",
+      "words": 3485,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "112.5",
+      "parent": "112.5",
+      "head": "\u00a7 112.5 Amendment of Spill Prevention, Control, and Countermeasure Plan by owners or operators.",
+      "category": "process_safety",
+      "subpart": "A",
+      "words": 410,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.158",
+      "parent": "173.158",
+      "head": "\u00a7 173.158 Nitric acid.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 1303,
+      "n_table_blocks": 1
+    },
+    {
+      "identifier": "173.163",
+      "parent": "173.163",
+      "head": "\u00a7 173.163 Hydrogen fluoride.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 166,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.168",
+      "parent": "173.168",
+      "head": "\u00a7 173.168 Chemical oxygen generators.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 934,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.175",
+      "parent": "173.175",
+      "head": "\u00a7 173.175 Permeation devices.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 378,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.185_part1",
+      "parent": "173.185",
+      "head": "\u00a7 173.185 Lithium cells and batteries.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 3473,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.189",
+      "parent": "173.189",
+      "head": "\u00a7 173.189 Batteries containing sodium or cells containing sodium.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 589,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.196",
+      "parent": "173.196",
+      "head": "\u00a7 173.196 Category A infectious substances.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 787,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.217",
+      "parent": "173.217",
+      "head": "\u00a7 173.217 Carbon dioxide, solid (dry ice).",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 511,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.221",
+      "parent": "173.221",
+      "head": "\u00a7 173.221 Polymeric beads, expandable and Plastic molding compound.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 411,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.225_part2",
+      "parent": "173.225",
+      "head": "\u00a7 173.225 Packaging requirements and other provisions for organic peroxides.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 3298,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.228",
+      "parent": "173.228",
+      "head": "\u00a7 173.228 Bromine pentafluoride or bromine trifluoride.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 162,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.232",
+      "parent": "173.232",
+      "head": "\u00a7 173.232 Articles containing hazardous materials, n.o.s.",
+      "category": "hazmat_transport",
+      "subpart": "E",
+      "words": 844,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.243",
+      "parent": "173.243",
+      "head": "\u00a7 173.243 Bulk packaging for certain high hazard liquids and dual hazard materials which pose a moderate hazard.",
+      "category": "hazmat_transport",
+      "subpart": "F",
+      "words": 946,
+      "n_table_blocks": 1
+    },
+    {
+      "identifier": "173.24b",
+      "parent": "173.24b",
+      "head": "\u00a7 173.24b Additional general requirements for bulk packagings.",
+      "category": "hazmat_transport",
+      "subpart": "B",
+      "words": 835,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.29",
+      "parent": "173.29",
+      "head": "\u00a7 173.29 Empty packagings.",
+      "category": "hazmat_transport",
+      "subpart": "B",
+      "words": 729,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.36",
+      "parent": "173.36",
+      "head": "\u00a7 173.36 Hazardous materials in Large Packagings.",
+      "category": "hazmat_transport",
+      "subpart": "B",
+      "words": 737,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.52",
+      "parent": "173.52",
+      "head": "\u00a7 173.52 Classification codes and compatibility groups of explosives.",
+      "category": "hazmat_transport",
+      "subpart": "C",
+      "words": 821,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.59_part1",
+      "parent": "173.59",
+      "head": "\u00a7 173.59 Description of terms for explosives.",
+      "category": "hazmat_transport",
+      "subpart": "C",
+      "words": 3511,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "173.63",
+      "parent": "173.63",
+      "head": "\u00a7 173.63 Packaging exceptions.",
+      "category": "hazmat_transport",
+      "subpart": "C",
+      "words": 815,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1",
+      "parent": "1910.1",
+      "head": "\u00a7 1910.1 Purpose and scope.",
+      "category": "occupational_safety",
+      "subpart": "A",
+      "words": 228,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1000_part1",
+      "parent": "1910.1000",
+      "head": "\u00a7 1910.1000 Air contaminants.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3486,
+      "n_table_blocks": 1
+    },
+    {
+      "identifier": "1910.1001_part3",
+      "parent": "1910.1001",
+      "head": "\u00a7 1910.1001 Asbestos.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3463,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1001_part8",
+      "parent": "1910.1001",
+      "head": "\u00a7 1910.1001 Asbestos.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3500,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1018_part2",
+      "parent": "1910.1018",
+      "head": "\u00a7 1910.1018 Inorganic arsenic.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3502,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1024_part3",
+      "parent": "1910.1024",
+      "head": "\u00a7 1910.1024 Beryllium.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 1470,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1025_part5",
+      "parent": "1910.1025",
+      "head": "\u00a7 1910.1025 Lead.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3503,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1027_part1",
+      "parent": "1910.1027",
+      "head": "\u00a7 1910.1027 Cadmium.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3508,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1027_part14",
+      "parent": "1910.1027",
+      "head": "\u00a7 1910.1027 Cadmium.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3469,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1027_part2",
+      "parent": "1910.1027",
+      "head": "\u00a7 1910.1027 Cadmium.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3502,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1027_part7",
+      "parent": "1910.1027",
+      "head": "\u00a7 1910.1027 Cadmium.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3487,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1028_part3",
+      "parent": "1910.1028",
+      "head": "\u00a7 1910.1028 Benzene.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3482,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1030_part1",
+      "parent": "1910.1030",
+      "head": "\u00a7 1910.1030 Bloodborne pathogens.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3493,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.104",
+      "parent": "1910.104",
+      "head": "\u00a7 1910.104 Oxygen.",
+      "category": "occupational_safety",
+      "subpart": "H",
+      "words": 1745,
+      "n_table_blocks": 5
+    },
+    {
+      "identifier": "1910.1043_part3",
+      "parent": "1910.1043",
+      "head": "\u00a7 1910.1043 Cotton dust.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 822,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1045_part2",
+      "parent": "1910.1045",
+      "head": "\u00a7 1910.1045 Acrylonitrile.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3483,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1047_part3",
+      "parent": "1910.1047",
+      "head": "\u00a7 1910.1047 Ethylene oxide.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3500,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1048_part3",
+      "parent": "1910.1048",
+      "head": "\u00a7 1910.1048 Formaldehyde.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3436,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1050_part3",
+      "parent": "1910.1050",
+      "head": "\u00a7 1910.1050 Methylenedianiline.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3506,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1051_part4",
+      "parent": "1910.1051",
+      "head": "\u00a7 1910.1051 1,3-Butadiene.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3499,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1052_part4",
+      "parent": "1910.1052",
+      "head": "\u00a7 1910.1052 Methylene chloride.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 561,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.106_part5",
+      "parent": "1910.106",
+      "head": "\u00a7 1910.106 Flammable liquids.",
+      "category": "occupational_safety",
+      "subpart": "H",
+      "words": 3499,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1096_part1",
+      "parent": "1910.1096",
+      "head": "\u00a7 1910.1096 Ionizing radiation.",
+      "category": "environmental_control",
+      "subpart": "",
+      "words": 3498,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.109_part1",
+      "parent": "1910.109",
+      "head": "\u00a7 1910.109 Explosives and blasting agents.",
+      "category": "occupational_safety",
+      "subpart": "H",
+      "words": 3502,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.110_part1",
+      "parent": "1910.110",
+      "head": "\u00a7 1910.110 Storage and handling of liquefied petroleum gases.",
+      "category": "occupational_safety",
+      "subpart": "H",
+      "words": 3463,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.110_part6",
+      "parent": "1910.110",
+      "head": "\u00a7 1910.110 Storage and handling of liquefied petroleum gases.",
+      "category": "occupational_safety",
+      "subpart": "H",
+      "words": 3508,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.119_part1",
+      "parent": "1910.119",
+      "head": "\u00a7 1910.119 Process safety management of highly hazardous chemicals.",
+      "category": "process_safety",
+      "subpart": "H",
+      "words": 3496,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.12",
+      "parent": "1910.12",
+      "head": "\u00a7 1910.12 Construction work.",
+      "category": "occupational_safety",
+      "subpart": "B",
+      "words": 341,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1200_part1",
+      "parent": "1910.1200",
+      "head": "\u00a7 1910.1200 Hazard communication.",
+      "category": "process_safety",
+      "subpart": "",
+      "words": 3483,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1200_part14",
+      "parent": "1910.1200",
+      "head": "\u00a7 1910.1200 Hazard communication.",
+      "category": "process_safety",
+      "subpart": "",
+      "words": 2875,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.1200_part6",
+      "parent": "1910.1200",
+      "head": "\u00a7 1910.1200 Hazard communication.",
+      "category": "process_safety",
+      "subpart": "",
+      "words": 3508,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.120_part2",
+      "parent": "1910.120",
+      "head": "\u00a7 1910.120 Hazardous waste operations and emergency response.",
+      "category": "process_safety",
+      "subpart": "H",
+      "words": 3481,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.120_part7",
+      "parent": "1910.120",
+      "head": "\u00a7 1910.120 Hazardous waste operations and emergency response.",
+      "category": "process_safety",
+      "subpart": "H",
+      "words": 3501,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.132",
+      "parent": "1910.132",
+      "head": "\u00a7 1910.132 General requirements.",
+      "category": "occupational_safety",
+      "subpart": "I",
+      "words": 875,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.134_part4",
+      "parent": "1910.134",
+      "head": "\u00a7 1910.134 Respiratory protection.",
+      "category": "occupational_safety",
+      "subpart": "I",
+      "words": 3504,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.137",
+      "parent": "1910.137",
+      "head": "\u00a7 1910.137 Electrical protective equipment.",
+      "category": "occupational_safety",
+      "subpart": "I",
+      "words": 3004,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.145",
+      "parent": "1910.145",
+      "head": "\u00a7 1910.145 Specifications for accident prevention signs and tags.",
+      "category": "occupational_safety",
+      "subpart": "J",
+      "words": 1892,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.146_part3",
+      "parent": "1910.146",
+      "head": "\u00a7 1910.146 Permit-required confined spaces.",
+      "category": "process_safety",
+      "subpart": "J",
+      "words": 3289,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.15",
+      "parent": "1910.15",
+      "head": "\u00a7 1910.15 Shipyard employment.",
+      "category": "occupational_safety",
+      "subpart": "B",
+      "words": 271,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.158",
+      "parent": "1910.158",
+      "head": "\u00a7 1910.158 Standpipe and hose systems.",
+      "category": "occupational_safety",
+      "subpart": "L",
+      "words": 760,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.162",
+      "parent": "1910.162",
+      "head": "\u00a7 1910.162 Fixed extinguishing systems, gaseous agent.",
+      "category": "occupational_safety",
+      "subpart": "L",
+      "words": 387,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.177",
+      "parent": "1910.177",
+      "head": "\u00a7 1910.177 Servicing multi-piece and single piece rim wheels.",
+      "category": "occupational_safety",
+      "subpart": "N",
+      "words": 2425,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.179_part2",
+      "parent": "1910.179",
+      "head": "\u00a7 1910.179 Overhead and gantry cranes.",
+      "category": "occupational_safety",
+      "subpart": "N",
+      "words": 3115,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.184_part1",
+      "parent": "1910.184",
+      "head": "\u00a7 1910.184 Slings.",
+      "category": "occupational_safety",
+      "subpart": "N",
+      "words": 3498,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.211_part2",
+      "parent": "1910.211",
+      "head": "\u00a7 1910.211 Definitions.",
+      "category": "occupational_safety",
+      "subpart": "O",
+      "words": 931,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.215_part2",
+      "parent": "1910.215",
+      "head": "\u00a7 1910.215 Abrasive wheel machinery.",
+      "category": "occupational_safety",
+      "subpart": "O",
+      "words": 2310,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.217_part4",
+      "parent": "1910.217",
+      "head": "\u00a7 1910.217 Mechanical power presses.",
+      "category": "occupational_safety",
+      "subpart": "O",
+      "words": 3461,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.219_part2",
+      "parent": "1910.219",
+      "head": "\u00a7 1910.219 Mechanical power-transmission apparatus.",
+      "category": "occupational_safety",
+      "subpart": "O",
+      "words": 173,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.243_part1",
+      "parent": "1910.243",
+      "head": "\u00a7 1910.243 Guarding of portable powered tools.",
+      "category": "occupational_safety",
+      "subpart": "P",
+      "words": 3510,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.252_part2",
+      "parent": "1910.252",
+      "head": "\u00a7 1910.252 General requirements.",
+      "category": "occupational_safety",
+      "subpart": "Q",
+      "words": 1641,
+      "n_table_blocks": 1
+    },
+    {
+      "identifier": "1910.255",
+      "parent": "1910.255",
+      "head": "\u00a7 1910.255 Resistance welding.",
+      "category": "occupational_safety",
+      "subpart": "Q",
+      "words": 983,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.262_part1",
+      "parent": "1910.262",
+      "head": "\u00a7 1910.262 Textiles.",
+      "category": "occupational_safety",
+      "subpart": "R",
+      "words": 3479,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.265_part1",
+      "parent": "1910.265",
+      "head": "\u00a7 1910.265 Sawmills.",
+      "category": "occupational_safety",
+      "subpart": "R",
+      "words": 3501,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.266_part3",
+      "parent": "1910.266",
+      "head": "\u00a7 1910.266 Logging operations.",
+      "category": "occupational_safety",
+      "subpart": "R",
+      "words": 989,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.269_part10",
+      "parent": "1910.269",
+      "head": "\u00a7 1910.269 Electric power generation, transmission, and distribution.",
+      "category": "occupational_safety",
+      "subpart": "R",
+      "words": 3423,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.269_part15",
+      "parent": "1910.269",
+      "head": "\u00a7 1910.269 Electric power generation, transmission, and distribution.",
+      "category": "occupational_safety",
+      "subpart": "R",
+      "words": 1147,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.269_part6",
+      "parent": "1910.269",
+      "head": "\u00a7 1910.269 Electric power generation, transmission, and distribution.",
+      "category": "occupational_safety",
+      "subpart": "R",
+      "words": 3489,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.272_part1",
+      "parent": "1910.272",
+      "head": "\u00a7 1910.272 Grain handling facilities.",
+      "category": "occupational_safety",
+      "subpart": "R",
+      "words": 3510,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.3",
+      "parent": "1910.3",
+      "head": "\u00a7 1910.3 Petitions for the issuance, amendment, or repeal of a standard.",
+      "category": "occupational_safety",
+      "subpart": "A",
+      "words": 256,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.303_part2",
+      "parent": "1910.303",
+      "head": "\u00a7 1910.303 General.",
+      "category": "occupational_safety",
+      "subpart": "S",
+      "words": 988,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.306_part1",
+      "parent": "1910.306",
+      "head": "\u00a7 1910.306 Specific purpose equipment and installations.",
+      "category": "occupational_safety",
+      "subpart": "S",
+      "words": 3507,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.332",
+      "parent": "1910.332",
+      "head": "\u00a7 1910.332 Training.",
+      "category": "occupational_safety",
+      "subpart": "S",
+      "words": 498,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.36",
+      "parent": "1910.36",
+      "head": "\u00a7 1910.36 Design and construction requirements for exit routes.",
+      "category": "occupational_safety",
+      "subpart": "E",
+      "words": 1061,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.399_part2",
+      "parent": "1910.399",
+      "head": "\u00a7 1910.399 Definitions applicable to this subpart.",
+      "category": "occupational_safety",
+      "subpart": "S",
+      "words": 3324,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.421",
+      "parent": "1910.421",
+      "head": "\u00a7 1910.421 Pre-dive procedures.",
+      "category": "occupational_safety",
+      "subpart": "T",
+      "words": 464,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.426",
+      "parent": "1910.426",
+      "head": "\u00a7 1910.426 Mixed-gas diving.",
+      "category": "occupational_safety",
+      "subpart": "T",
+      "words": 338,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.502_part1",
+      "parent": "1910.502",
+      "head": "\u00a7 1910.502 Healthcare.",
+      "category": "occupational_safety",
+      "subpart": "U",
+      "words": 3503,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.66_part1",
+      "parent": "1910.66",
+      "head": "\u00a7 1910.66 Powered platforms for building maintenance.",
+      "category": "occupational_safety",
+      "subpart": "F",
+      "words": 3508,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.67",
+      "parent": "1910.67",
+      "head": "\u00a7 1910.67 Vehicle-mounted elevating and rotating work platforms.",
+      "category": "occupational_safety",
+      "subpart": "F",
+      "words": 1094,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.7_part2",
+      "parent": "1910.7",
+      "head": "\u00a7 1910.7 Definition and requirements for a nationally recognized testing laboratory.",
+      "category": "occupational_safety",
+      "subpart": "A",
+      "words": 1010,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "1910.94_part3",
+      "parent": "1910.94",
+      "head": "\u00a7 1910.94 Ventilation.",
+      "category": "occupational_safety",
+      "subpart": "G",
+      "words": 414,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.102",
+      "parent": "60.102",
+      "head": "\u00a7 60.102 Standard for particulate matter.",
+      "category": "environmental_control",
+      "subpart": "J",
+      "words": 245,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.108",
+      "parent": "60.108",
+      "head": "\u00a7 60.108 Performance test and compliance provisions.",
+      "category": "environmental_control",
+      "subpart": "J",
+      "words": 333,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.13",
+      "parent": "60.13",
+      "head": "\u00a7 60.13 Monitoring requirements.",
+      "category": "environmental_control",
+      "subpart": "A",
+      "words": 2371,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.17_part2",
+      "parent": "60.17",
+      "head": "\u00a7 60.17 Incorporations by reference.",
+      "category": "environmental_control",
+      "subpart": "A",
+      "words": 3441,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.301",
+      "parent": "60.301",
+      "head": "\u00a7 60.301 Definitions.",
+      "category": "environmental_control",
+      "subpart": "DD",
+      "words": 427,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.384",
+      "parent": "60.384",
+      "head": "\u00a7 60.384 Monitoring of operations.",
+      "category": "environmental_control",
+      "subpart": "LL",
+      "words": 175,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.42",
+      "parent": "60.42",
+      "head": "\u00a7 60.42 Standard for particulate matter (PM).",
+      "category": "environmental_control",
+      "subpart": "D",
+      "words": 407,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.46",
+      "parent": "60.46",
+      "head": "\u00a7 60.46 Test methods and procedures.",
+      "category": "environmental_control",
+      "subpart": "D",
+      "words": 1681,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.482-2",
+      "parent": "60.482-2",
+      "head": "\u00a7 60.482-2 Standards: Pumps in light liquid service.",
+      "category": "environmental_control",
+      "subpart": "VV",
+      "words": 1176,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.482-7",
+      "parent": "60.482-7",
+      "head": "\u00a7 60.482-7 Standards: Valves in gas/vapor service and in light liquid service.",
+      "category": "environmental_control",
+      "subpart": "VV",
+      "words": 766,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.484",
+      "parent": "60.484",
+      "head": "\u00a7 60.484 Equivalence of means of emission limitation.",
+      "category": "environmental_control",
+      "subpart": "VV",
+      "words": 564,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.489",
+      "parent": "60.489",
+      "head": "\u00a7 60.489 List of chemicals produced by affected facilities.",
+      "category": "environmental_control",
+      "subpart": "VV",
+      "words": 2416,
+      "n_table_blocks": 13
+    },
+    {
+      "identifier": "60.4_part4",
+      "parent": "60.4",
+      "head": "\u00a7 60.4 Address.",
+      "category": "environmental_control",
+      "subpart": "A",
+      "words": 3294,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.4_part9",
+      "parent": "60.4",
+      "head": "\u00a7 60.4 Address.",
+      "category": "environmental_control",
+      "subpart": "A",
+      "words": 3410,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.64",
+      "parent": "60.64",
+      "head": "\u00a7 60.64 Test methods and procedures.",
+      "category": "environmental_control",
+      "subpart": "F",
+      "words": 823,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.672",
+      "parent": "60.672",
+      "head": "\u00a7 60.672 Standard for particulate matter (PM).",
+      "category": "environmental_control",
+      "subpart": "OOO",
+      "words": 355,
+      "n_table_blocks": 0
+    },
+    {
+      "identifier": "60.8",
+      "parent": "60.8",
+      "head": "\u00a7 60.8 Performance tests.",
+      "category": "environmental_control",
+      "subpart": "A",
+      "words": 3179,
+      "n_table_blocks": 0
+    }
+  ]
+}

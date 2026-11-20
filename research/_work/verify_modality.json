@@ -1,0 +1,2598 @@
+{
+ "colpali": {
+  "queries": {
+   "arxiv": "ti:\"ColPali\"",
+   "crossref": "ColPali Efficient Document Retrieval Vision Language Models"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2407.01449",
+    "title": "ColPali: Efficient Document Retrieval with Vision Language Models",
+    "authors": [
+     "Manuel Faysse",
+     "Hugues Sibille",
+     "Tony Wu",
+     "Bilel Omrani",
+     "Gautier Viaud",
+     "C\u00e9line Hudelot",
+     "Pierre Colombo"
+    ],
+    "abstract": "Documents are visually rich structures that convey information through text, but also figures, page layouts, tables, or even fonts. Since modern retrieval systems mainly rely on the textual information they extract from document pages to index documents -often through lengthy and brittle processes-, they struggle to exploit key visual cues efficiently. This limits their capabilities in many practical document retrieval applications such as Retrieval Augmented Generation (RAG). To benchmark current systems on visually rich document retrieval, we introduce the Visual Document Retrieval Benchmark ViDoRe, composed of various page-level retrieval tasks spanning multiple domains, languages, and practical settings. The inherent complexity and performance shortcomings of modern systems motivate a new concept; doing document retrieval by directly embedding the images of the document pages. We release ColPali, a Vision Language Model trained to produce high-quality multi-vector embeddings from images of document pages. Combined with a late interaction matching mechanism, ColPali largely outperforms modern document retrieval pipelines while being drastically simpler, faster and end-to-end trainable. We release models, data, code and benchmarks under open licenses at https://hf.co/vidore.",
+    "published": "2024-06-27",
+    "updated": "2025-02-28",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2407.01449"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2510.25718",
+    "title": "Retrieval-Augmented Search for Large-Scale Map Collections with ColPali",
+    "authors": [
+     "Jamie Mahowald",
+     "Benjamin Charles Germain Lee"
+    ],
+    "abstract": "Multimodal approaches have shown great promise for searching and navigating digital collections held by libraries, archives, and museums. In this paper, we introduce map-RAS: a retrieval-augmented search system for historic maps. In addition to introducing our framework, we detail our publicly-hosted demo for searching 101,233 map images held by the Library of Congress. With our system, users can multimodally query the map collection via ColPali, summarize search results using Llama 3.2, and upload their own collections to perform inter-collection search. We articulate potential use cases for archivists, curators, and end-users, as well as future work with our system in both machine learning and the digital humanities. Our demo can be viewed at: http://www.mapras.com.",
+    "published": "2025-10-29",
+    "updated": "2025-10-29",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2510.25718"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2506.21601",
+    "title": "Hierarchical Patch Compression for ColPali: Efficient Multi-Vector Document Retrieval with Dynamic Pruning and Quantization",
+    "authors": [
+     "Duong Bach"
+    ],
+    "abstract": "Multi-vector document retrieval systems, such as ColPali, excel in fine-grained matching for complex queries but incur significant storage and computational costs due to their reliance on high-dimensional patch embeddings and late-interaction scoring. To address these challenges, we propose HPC-ColPali, a Hierarchical Patch Compression framework that enhances the efficiency of ColPali while preserving its retrieval accuracy. Our approach integrates three innovative techniques: (1) K-Means quantization, which compresses patch embeddings into 1-byte centroid indices, achieving up to 32$\\times$ storage reduction; (2) attention-guided dynamic pruning, utilizing Vision-Language Model attention weights to retain only the top-$p\\%$ most salient patches, reducing late-interaction computation by up to 60\\% with less than 2\\% nDCG@10 loss; and (3) optional binary encoding of centroid indices into $b$-bit strings ($b=\\lceil\\log_2 K\\rceil$), enabling rapid Hamming distance-based similarity search for resource-constrained environments. Evaluated on the ViDoRe and SEC-Filings datasets, HPC-ColPali achieves 30--50\\% lower query latency under HNSW indexing while maintaining high retrieval precision. When integrated into a Retrieval-Augmented Generation pipeline for legal summarization, it reduces hallucination rates by 30\\% and halves end-to-end latency. These advancements establish HPC-ColPali as a scalable and efficient solution for multi-vector document retrieval across diverse applications. Code is available at https://github.com/DngBack/HPC-ColPali.",
+    "published": "2025-06-19",
+    "updated": "2025-07-02",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2506.21601"
+   }
+  ],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.5220/0013732500004000",
+    "title": "Hierarchical Patch Compression for ColPali: Efficient Multi-Vector Document Retrieval with Dynamic Pruning and Quantization",
+    "authors": [
+     "Bach Duong",
+     "Pham Minh"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the 17th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.5220/0013732500004000"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.3997/2214-4609.202639035",
+    "title": "Leveraging ColPali for Vision-Language Retrieval in Geological Documents",
+    "authors": [
+     "R. Alsubaie",
+     "B. Hungund"
+    ],
+    "year": 2026,
+    "venue": "Sixth EAGE Digitalization Conference &amp; Exhibition",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.3997/2214-4609.202639035"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/mlsp62443.2025.11204231",
+    "title": "Colflor: Towards Bert-Size Vision-Language Document Retrieval Models",
+    "authors": [
+     "Ahmed Masry",
+     "Enamul Hoque"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE 35th International Workshop on Machine Learning for Signal Processing (MLSP)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 2,
+    "url": "https://doi.org/10.1109/mlsp62443.2025.11204231"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.61686/fdnkb86818",
+    "title": "",
+    "authors": [],
+    "year": null,
+    "venue": "",
+    "type": "grant",
+    "abstract": "",
+    "cited_by": null,
+    "url": "https://doi.org/10.61686/fdnkb86818"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2025.emnlp-main.1568",
+    "title": "SERVAL: Surprisingly Effective Zero-Shot Visual Document Retrieval Powered by Large Vision and Language Models",
+    "authors": [
+     "Thong Nguyen",
+     "Yibin Lei",
+     "Jia-Huei Ju",
+     "Andrew Yates"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.18653/v1/2025.emnlp-main.1568"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1007/s10791-009-9118-8",
+    "title": "Utilizing passage-based language models for ad hoc document retrieval",
+    "authors": [
+     "Michael Bendersky",
+     "Oren Kurland"
+    ],
+    "year": 2009,
+    "venue": "Information Retrieval",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 9,
+    "url": "https://doi.org/10.1007/s10791-009-9118-8"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.36227/techrxiv.176823075.51652052/v1",
+    "title": "Improving Query Understanding and Document Retrieval in Search Engines Using BERT and Large Language Models",
+    "authors": [
+     "Bangyi Yang"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>Information retrieval systems are examined from traditional lexical matching to modern neural models that are able to capture the semantic relationship between the query and the documents. A novel framework is proposed by integrating the query understanding component based on the BERT model and the rerank approach guided by the language model, aiming at enhancing the search engine effectiveness. Experiments conducted on the MSMARCO benchmark show significant improvements of 47.0% relative NDCG@10 values compared to the baseline BM25 model and an absolute 15.9% boost over the baseline BERT model. The query understanding model attains an accuracy of 94.3% on the intent classification task while being computationally efficient enough to be put into practice.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.36227/techrxiv.176823075.51652052/v1"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1145/3805622.3810864",
+    "title": "MURE: Hierarchical Multi-Resolution Encoding via Vision-Language Models for Visual Document Retrieval",
+    "authors": [
+     "Fengbin Zhu",
+     "Zijing Cai",
+     "Yuzhe Wang",
+     "Pengyang Shao",
+     "Wenjie Wang",
+     "Fuli Feng",
+     "Richang Hong",
+     "Tat-Seng Chua"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 2026 International Conference on Multimedia Retrieval",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1145/3805622.3810864"
+   }
+  ]
+ },
+ "visrag": {
+  "queries": {
+   "arxiv": "ti:\"VisRAG\"",
+   "crossref": "VisRAG Vision-based Retrieval-augmented Generation multi-modality documents"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2410.10594",
+    "title": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+    "authors": [
+     "Shi Yu",
+     "Chaoyue Tang",
+     "Bokai Xu",
+     "Junbo Cui",
+     "Junhao Ran",
+     "Yukun Yan",
+     "Zhenghao Liu",
+     "Shuo Wang",
+     "Xu Han",
+     "Zhiyuan Liu",
+     "Maosong Sun"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) is an effective technique that enables large language models (LLMs) to utilize external knowledge sources for generation. However, current RAG systems are solely based on text, rendering it impossible to utilize vision information like layout and images that play crucial roles in real-world multi-modality documents. In this paper, we introduce VisRAG, which tackles this issue by establishing a vision-language model (VLM)-based RAG pipeline. In this pipeline, instead of first parsing the document to obtain text, the document is directly embedded using a VLM as an image and then retrieved to enhance the generation of a VLM. Compared to traditional text-based RAG, VisRAG maximizes the retention and utilization of the data information in the original documents, eliminating the information loss introduced during the parsing process. We collect both open-source and synthetic data to train the retriever in VisRAG and explore a variety of generation methods. Experiments demonstrate that VisRAG outperforms traditional RAG in both the retrieval and generation stages, achieving a 20--40% end-to-end performance gain over traditional text-based RAG pipeline. Further analysis reveals that VisRAG is efficient in utilizing training data and demonstrates strong generalization capability, positioning it as a promising solution for RAG on multi-modality documents. Our code and data are available at https://github.com/openbmb/visrag.",
+    "published": "2024-10-14",
+    "updated": "2025-03-02",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2410.10594"
+   }
+  ],
+  "crossref": [],
+  "errors": {
+   "crossref": "<urlopen error [Errno 54] Connection reset by peer>"
+  }
+ },
+ "colqwen": {
+  "queries": {
+   "arxiv": "ti:\"ColQwen\"",
+   "crossref": "ColQwen Enhancing Document Retrieval with Visual Language Model"
+  },
+  "arxiv": [],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.21437/interspeech.2010-265",
+    "title": "Cluster-based language model for spoken document retrieval using NMF-based document clustering",
+    "authors": [
+     "Xinhui Hu",
+     "Ryosuke Isotani",
+     "Hisashi Kawai",
+     "Satoshi Nakamura"
+    ],
+    "year": 2010,
+    "venue": "Interspeech 2010",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 5,
+    "url": "https://doi.org/10.21437/interspeech.2010-265"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.21437/interspeech.2011-559",
+    "title": "Language model expansion using webdata for spoken document retrieval",
+    "authors": [
+     "Ryo Masumura",
+     "Seongjun Hahm",
+     "Akinori Ito"
+    ],
+    "year": 2011,
+    "venue": "Interspeech 2011",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 5,
+    "url": "https://doi.org/10.21437/interspeech.2011-559"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.7355983",
+    "title": "A Fully Local Offline Framework for Enterprise Document Intelligence Using Retrieval-Based Large Language Model Grounding",
+    "authors": [
+     "Anand Rawat",
+     "Sanjeev Kumar"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>Retrieval-Augmented Generation (RAG) has emerged as an effective paradigm for grounding Large Language Models (LLMs) with external knowledge, thereby reducing hallucinations and improving factual consistency in document-centric question answering. However, most practical RAG deployments rely on cloud-hosted Application Programming Interfaces (APIs), remote vector stores, or proprietary inference services, raising privacy, sovereignty, latency, and cost concerns for government, defense, finance, healthcare, and industrial organizations. This paper presents a fully local offline RAG framework that transforms Portable Document Format (PDF) rulebooks and enterprise documents into a secure on-premise conversational intelligence system without requiring external APIs or cloud connectivity.The proposed framework integrates page-wise PDF ingestion using PyMuPDF, document normalization, metadata-aware semantic chunking, local embedding generation using nomic-embed-text, Chroma vector database indexing, and answer synthesis through Ollama-hosted LLMs, including the Meta Llama 3 8-billion-parameter model and the Qwen 2.5 14-billion-parameter model. Structured metadata extraction, source-grounded citation generation, low-memory model routing, and an interactive Streamlit interface further support practical deployment. A hybrid retrieval strategy combining dense semantic similarity with metadata constraints is introduced to improve retrieval precision for rule-based documents.A real-world case study using the General Financial Rules (GFR 2017) demonstrates the effectiveness of the framework for procurement and compliance question answering. Experimental results show competitive retrieval quality, low hallucination rates, acceptable response latency, and modest memory requirements on consumer-grade hardware while preserving data confidentiality and eliminating recurring API costs. The proposed framework provides a practical approach for privacy-preserving enterprise document intelligence and sovereign Artificial Intelligence (AI) deployment.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.2139/ssrn.7355983"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1201/9781003244332-7",
+    "title": "Legal document summarization using hybrid model",
+    "authors": [
+     "Deekshitha",
+     "K. Nandhini"
+    ],
+    "year": 2023,
+    "venue": "Natural Language Processing and Information Retrieval",
+    "type": "book-chapter",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1201/9781003244332-7"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1145/3805622.3810802",
+    "title": "Mitigating Semantic Bias in Multilingual Visual Document Retrieval via Language-Vision-Aware Late Interaction",
+    "authors": [
+     "Haowei Li",
+     "Haojie Wu",
+     "Jie Bao",
+     "Zhen Chen",
+     "Yong Liao"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 2026 International Conference on Multimedia Retrieval",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1145/3805622.3810802"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/icalip.2012.6376744",
+    "title": "Image retrieval using accurate approximated inverse document frequency of geometry-preserving visual phrases",
+    "authors": [
+     "Fangyuan Wang",
+     "Shuwu Zhang"
+    ],
+    "year": 2012,
+    "venue": "2012 International Conference on Audio, Language and Image Processing",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/icalip.2012.6376744"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1023/a:1009911900286",
+    "title": "A Hierarchical Document Retrieval Language",
+    "authors": [
+     "Ronald R. Yager"
+    ],
+    "year": 2000,
+    "venue": "Information Retrieval",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 21,
+    "url": "https://doi.org/10.1023/a:1009911900286"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.4871785",
+    "title": "Enhancing Document-Level Translation of Large Language Model Via Translation Mixed-Instructions",
+    "authors": [
+     "Yachao Li",
+     "Junhui Li",
+     "jing jiang",
+     "Min Zhang"
+    ],
+    "year": 2024,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "",
+    "cited_by": 3,
+    "url": "https://doi.org/10.2139/ssrn.4871785"
+   }
+  ]
+ },
+ "docvqa": {
+  "queries": {
+   "arxiv": "ti:\"DocVQA\"",
+   "crossref": "DocVQA large-scale multilingual visual question answering document images"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2212.05935",
+    "title": "Hierarchical multimodal transformers for Multi-Page DocVQA",
+    "authors": [
+     "Rub\u00e8n Tito",
+     "Dimosthenis Karatzas",
+     "Ernest Valveny"
+    ],
+    "abstract": "Document Visual Question Answering (DocVQA) refers to the task of answering questions from document images. Existing work on DocVQA only considers single-page documents. However, in real scenarios documents are mostly composed of multiple pages that should be processed altogether. In this work we extend DocVQA to the multi-page scenario. For that, we first create a new dataset, MP-DocVQA, where questions are posed over multi-page documents instead of single pages. Second, we propose a new hierarchical method, Hi-VT5, based on the T5 architecture, that overcomes the limitations of current methods to process long multi-page documents. The proposed method is based on a hierarchical transformer architecture where the encoder summarizes the most relevant information of every page and then, the decoder takes this summarized information to generate the final answer. Through extensive experimentation, we demonstrate that our method is able, in a single stage, to answer the questions and provide the page that contains the relevant information to find the answer, which can be used as a kind of explainability measure.",
+    "published": "2022-12-07",
+    "updated": "2023-04-01",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2212.05935"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2007.00398",
+    "title": "DocVQA: A Dataset for VQA on Document Images",
+    "authors": [
+     "Minesh Mathew",
+     "Dimosthenis Karatzas",
+     "C. V. Jawahar"
+    ],
+    "abstract": "We present a new dataset for Visual Question Answering (VQA) on document images called DocVQA. The dataset consists of 50,000 questions defined on 12,000+ document images. Detailed analysis of the dataset in comparison with similar datasets for VQA and reading comprehension is presented. We report several baseline results by adopting existing VQA and reading comprehension models. Although the existing models perform reasonably well on certain types of questions, there is large performance gap compared to human performance (94.36% accuracy). The models need to improve specifically on questions where understanding structure of the document is crucial. The dataset, code and leaderboard are available at docvqa.org",
+    "published": "2020-07-01",
+    "updated": "2021-01-05",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2007.00398"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2502.03692",
+    "title": "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+    "authors": [
+     "Khanh Nguyen",
+     "Raouf Kerkouche",
+     "Mario Fritz",
+     "Dimosthenis Karatzas"
+    ],
+    "abstract": "Document Visual Question Answering (DocVQA) has introduced a new paradigm for end-to-end document understanding, and quickly became one of the standard benchmarks for multimodal LLMs. Automating document processing workflows, driven by DocVQA models, presents significant potential for many business sectors. However, documents tend to contain highly sensitive information, raising concerns about privacy risks associated with training such DocVQA models. One significant privacy vulnerability, exploited by the membership inference attack, is the possibility for an adversary to determine if a particular record was part of the model's training data. In this paper, we introduce two novel membership inference attacks tailored specifically to DocVQA models. These attacks are designed for two different adversarial scenarios: a white-box setting, where the attacker has full access to the model architecture and parameters, and a black-box setting, where only the model's outputs are available. Notably, our attacks assume the adversary lacks access to auxiliary datasets, which is more realistic in practice but also more challenging. Our unsupervised methods outperform existing state-of-the-art membership inference attacks across a variety of DocVQA models and datasets, demonstrating their effectiveness and highlighting the privacy risks in this domain.",
+    "published": "2025-02-06",
+    "updated": "2025-02-06",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2502.03692"
+   }
+  ],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.1109/jurse57346.2023.10144189",
+    "title": "Multilingual Augmentation for Robust Visual Question Answering in Remote Sensing Images",
+    "authors": [
+     "Zhenghang Yuan",
+     "Lichao Mou",
+     "Xiao Xiang Zhu"
+    ],
+    "year": 2023,
+    "venue": "2023 Joint Urban Remote Sensing Event (JURSE)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 15,
+    "url": "https://doi.org/10.1109/jurse57346.2023.10144189"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.6712901",
+    "title": "Visual RAG for Automated Question Answering over Large-Scale Bridge Inspection Reports",
+    "authors": [
+     "Chaemin Lee",
+     "Yangrok Choi",
+     "Jungsik Kong"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>Bridge detailed safety inspection reports are table-centric, semi-structured documents in which related information is distributed across hierarchically organized chapters, making manual information retrieval labor-intensive. Existing text-based retrieval-augmented generation (RAG) pipelines rarely exploit document structure or preserve complex table layouts lost in text conversion. This paper presents a RAG system integrating layout-aware document parsing, structured chunking, chapter-filtered hybrid retrieval, and visual answer generation. Evaluation on two primary bridges showed a statistically significant improvement over baseline RAG after Bonferroni correction. No significant difference was observed between the proposed system and a long-context language model that ingests the entire document, while the proposed system required 7\u20139 times lower answer-generation cost. The system also generalized to an unseen bridge report without code modification. Error analysis indicated that omission, rather than hallucination, was the dominant failure mode.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.2139/ssrn.6712901"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.70675/5c867489zfafbz4c06zaca0z1d86767da4a1",
+    "title": "Multi-level fusion for visual question answering on remote sensing images",
+    "authors": [
+     "Lucrezia Tosato"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "<jats:title>Fusion multi-niveaux pour la r\u00e9ponse automatique \u00e0 des questions visuelles sur des images de t\u00e9l\u00e9d\u00e9tection</jats:title>\n                <jats:p xml:lang=\"fr\">Cette th\u00e8se porte sur l'am\u00e9lioration des syst\u00e8mes de question-r\u00e9ponse visuelle appliqu\u00e9s \u00e0 la t\u00e9l\u00e9d\u00e9tection RSVQA qui visent \u00e0 r\u00e9pondre automatiquement \u00e0 des questions en langage naturel \u00e0 partir d'images satellites. Alors que de grandes quantit\u00e9s de donn\u00e9es optiques radar et topographiques sont aujourd'hui disponibles gratuitement gr\u00e2ce \u00e0 des initiatives publiques comme Copernicus et des organismes comme l'IGN l'extraction d'informations pertinentes reste un d\u00e9fi surtout pour les non experts et dans les contextes d'urgence o\u00f9 l'acc\u00e8s rapide \u00e0 l'information est essentiel. Cette recherche explore deux axes principaux. Le premier concerne l'int\u00e9gration de donn\u00e9es multi-modales et multi-r\u00e9solutions notamment les images optiques Sentinel-2 les donn\u00e9es radar Sentinel-1 et des orthophotos \u00e0 tr\u00e8s haute r\u00e9solution pour enrichir le cadre d'analyse. Cette compl\u00e9mentarit\u00e9 est exploit\u00e9e \u00e0 travers plusieurs strat\u00e9gies de fusion parmi lesquelles la fusion tardive s'av\u00e8re la plus efficace car elle permet de tirer parti des forces propres \u00e0 chaque modalit\u00e9. Un nouveau jeu de donn\u00e9es nomm\u00e9 TAMMI a \u00e9t\u00e9 construit pour soutenir cette approche et permettre \u00e0 un mod\u00e8le appel\u00e9 MM-RSVQA de traiter chaque modalit\u00e9 avec un extracteur d\u00e9di\u00e9 puis de fusionner les informations visuelles et textuelles \u00e0 l'aide d'un transformeur comme VisualBERT. Cela permet d'am\u00e9liorer les performances notamment pour les questions n\u00e9cessitant une grande pr\u00e9cision spatiale ou un contexte \u00e9tendu Le second axe porte sur l'interpr\u00e9tabilit\u00e9 des mod\u00e8les pour renforcer la transparence du raisonnement. Des m\u00e9canismes d'attention guid\u00e9e par des cartes de segmentation ont \u00e9t\u00e9 introduits afin de diriger le mod\u00e8le vers les zones les plus pertinentes en fonction de la question. Ces cartes sont g\u00e9n\u00e9r\u00e9es par un mod\u00e8le de segmentation entra\u00een\u00e9 \u00e0 reconna\u00eetre plusieurs classes d'occupation du sol et permettent une meilleure focalisation spatiale. Cela se traduit par une augmentation significative de la pr\u00e9cision et par une meilleure explicabilit\u00e9 du raisonnement visuel. Pour corriger les biais pr\u00e9sents dans les jeux de donn\u00e9es existants un nouveau benchmark appel\u00e9 Chessboard a \u00e9t\u00e9 cr\u00e9\u00e9 Il relie chaque question \u00e0 des r\u00e9gions pr\u00e9cises de l'image ce qui oblige les mod\u00e8les \u00e0 s'appuyer sur des indices visuels explicites. Enfin une nouvelle architecture appel",
+    "cited_by": 0,
+    "url": "https://doi.org/10.70675/5c867489zfafbz4c06zaca0z1d86767da4a1"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/icdar.2019.00156",
+    "title": "OCR-VQA: Visual Question Answering by Reading Text in Images",
+    "authors": [
+     "Anand Mishra",
+     "Shashank Shekhar",
+     "Ajeet Kumar Singh",
+     "Anirban Chakraborty"
+    ],
+    "year": 2019,
+    "venue": "2019 International Conference on Document Analysis and Recognition (ICDAR)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 230,
+    "url": "https://doi.org/10.1109/icdar.2019.00156"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2023.dialdoc-1.7",
+    "title": "SLDT: Sequential Latent Document Transformer for Multilingual Document-based Dialogue",
+    "authors": [
+     "Zhanyu Ma",
+     "Zeming Liu",
+     "Jian Ye"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the Third DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.18653/v1/2023.dialdoc-1.7"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2023.dialdoc-1.3",
+    "title": "Exploration of multilingual prompts in document-grounded dialogue",
+    "authors": [
+     "Xiaocheng Zhang",
+     "Huang Qing",
+     "Fu Lin"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the Third DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/v1/2023.dialdoc-1.3"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.4780937",
+    "title": "Medexpqa: Multilingual Benchmarking of Large Language Models for Medical Question Answering",
+    "authors": [
+     "I\u00f1igo Alonso",
+     "Maite Oronoz",
+     "Rodrigo Agerri"
+    ],
+    "year": 2024,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "",
+    "cited_by": 7,
+    "url": "https://doi.org/10.2139/ssrn.4780937"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.55041/isjem08461",
+    "title": "DocuMind: An Offline Multilingual Retrieval-Augmented Generation System for Document Question Answering Using Local Large Language Models",
+    "authors": [
+     "Swetha M S",
+     "Dr. Sripalreddy"
+    ],
+    "year": 2026,
+    "venue": "International Scientific Journal of Engineering and Management",
+    "type": "journal-article",
+    "abstract": "<jats:p>ABSTRACT\n\nDocuMind is a fully offline, privacy-preserving, multilingual Document Question Answering system built on the Retrieval-Augmented Generation (RAG) architecture. The system enables users to upload documents in any language and ask questions in their native language \u2014 including Kannada, Hindi, Tamil, Telugu, and English\n\n\u2014 receiving accurate, contextually grounded answers from a locally running Large Language Model (LLM) with zero cloud dependency and zero recurring cost. The system employs Language-Agnostic BERT Sentence Embeddings (LaBSE), a multilingual model supporting 109 languages, to map all text into a shared 768-dimensional semantic vector space, enabling true cross-lingual retrieval without any translation step. Document embeddings are persisted in a local ChromaDB vector database and answer generation is performed by LLaMA\n\n3.2 (3B parameters) running locally via the Ollama runtime. Evaluation using RAGAS-style metrics across five languages demonstrates Faithfulness scores of 0.77 to 0.87 and average query latency under 8 seconds on a standard consumer laptop with 8 GB RAM.\n\nKEYWORDS Retrieval-Augmented Generation, Large Language Models, Multilingual NLP, LaBSE, ChromaDB, Ollama, LLaMA, Document Question Answering, Indic Languages, Offline AI, Natural Language Processing, Cross-lingual Retrieval.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.55041/isjem08461"
+   }
+  ]
+ },
+ "chartqa": {
+  "queries": {
+   "arxiv": "ti:\"ChartQA\"",
+   "crossref": "ChartQA benchmark question answering about charts visual logical reasoning"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2408.04852",
+    "title": "MSG-Chart: Multimodal Scene Graph for ChartQA",
+    "authors": [
+     "Yue Dai",
+     "Soyeon Caren Han",
+     "Wei Liu"
+    ],
+    "abstract": "Automatic Chart Question Answering (ChartQA) is challenging due to the complex distribution of chart elements with patterns of the underlying data not explicitly displayed in charts. To address this challenge, we design a joint multimodal scene graph for charts to explicitly represent the relationships between chart elements and their patterns. Our proposed multimodal scene graph includes a visual graph and a textual graph to jointly capture the structural and semantical knowledge from the chart. This graph module can be easily integrated with different vision transformers as inductive bias. Our experiments demonstrate that incorporating the proposed graph module enhances the understanding of charts' elements' structure and semantics, thereby improving performance on publicly available benchmarks, ChartQA and OpenCQA.",
+    "published": "2024-08-09",
+    "updated": "2024-08-09",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2408.04852"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2504.13275",
+    "title": "ChartQA-X: Generating Explanations for Visual Chart Reasoning",
+    "authors": [
+     "Shamanthak Hegde",
+     "Pooyan Fazli",
+     "Hasti Seifi"
+    ],
+    "abstract": "The ability to explain complex information from chart images is vital for effective data-driven decision-making. In this work, we address the challenge of generating detailed explanations alongside answering questions about charts. We present ChartQA-X, a comprehensive dataset comprising 30,799 chart samples across four chart types, each paired with contextually relevant questions, answers, and explanations. Explanations are generated and selected based on metrics such as faithfulness, informativeness, coherence, and perplexity. Our human evaluation with 245 participants shows that model-generated explanations in ChartQA-X surpass human-written explanations in accuracy and logic and are comparable in terms of clarity and overall quality. Moreover, models fine-tuned on ChartQA-X show substantial improvements across various metrics, including absolute gains of up to 24.57 points in explanation quality, 18.96 percentage points in question-answering accuracy, and 14.75 percentage points on unseen benchmarks for the same task. By integrating explanatory narratives with answers, our approach enables agents to convey complex visual information more effectively, improving comprehension and greater trust in the generated responses.",
+    "published": "2025-04-17",
+    "updated": "2025-12-04",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2504.13275"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2203.10244",
+    "title": "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+    "authors": [
+     "Ahmed Masry",
+     "Do Xuan Long",
+     "Jia Qing Tan",
+     "Shafiq Joty",
+     "Enamul Hoque"
+    ],
+    "abstract": "Charts are very popular for analyzing data. When exploring charts, people often ask a variety of complex reasoning questions that involve several logical and arithmetic operations. They also commonly refer to visual features of a chart in their questions. However, most existing datasets do not focus on such complex reasoning questions as their questions are template-based and answers come from a fixed-vocabulary. In this work, we present a large-scale benchmark covering 9.6K human-written questions as well as 23.1K questions generated from human-written chart summaries. To address the unique challenges in our benchmark involving visual and logical reasoning over charts, we present two transformer-based models that combine visual features and the data table of the chart in a unified way to answer questions. While our models achieve the state-of-the-art results on the previous datasets as well as on our benchmark, the evaluation also reveals several challenges in answering complex reasoning questions.",
+    "published": "2022-03-19",
+    "updated": "2022-03-19",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2203.10244"
+   }
+  ],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2022.findings-acl.177",
+    "title": "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+    "authors": [
+     "Ahmed Masry",
+     "Do Long",
+     "Jia Qing Tan",
+     "Shafiq Joty",
+     "Enamul Hoque"
+    ],
+    "year": 2022,
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2022",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 452,
+    "url": "https://doi.org/10.18653/v1/2022.findings-acl.177"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.31274/td-20260223-71",
+    "title": "Beyond single plots: A benchmark for question answering on scientific multi-charts",
+    "authors": [
+     "Azher Ahmed Efat"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.31274/td-20260223-71"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.70675/2962dc92zc2e2z4ff4z982cz0a5cff281b69",
+    "title": "Bias and reasoning in visual question answering",
+    "authors": [
+     "Corentin Kervadec"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "<jats:title>Biais et raisonnement dans les syst\u00e8mes de questions r\u00e9ponses visuelles</jats:title>\n                <jats:p xml:lang=\"fr\">De quelle couleur est le terrain de tennis ? Quelle est la taille du chien ? Y a-t-il une voiture \u00e0 droite du v\u00e9lo sous le cocotier ? R\u00e9pondre \u00e0 ces questions fondamentales est le sujet de la t\u00e2che appel\u00e9e question-r\u00e9ponses visuelle (VQA, en anglais), dans laquelle un agent doit r\u00e9pondre \u00e0 des questions pos\u00e9es sur des images. Plus pr\u00e9cis\u00e9ment, le VQA requiert de mettre au point un agent capable de maitriser une grande vari\u00e9t\u00e9 de comp\u00e9tences : reconna\u00eetre des objets, reconnaitre des attributs (couleur, taille, mat\u00e9riaux, etc.), identifier des relations (e.g. spatiales), d\u00e9duire des enchainements logiques, etc. C'est pourquoi, le VQA est parfois d\u00e9sign\u00e9 comme un test de Turing visuel, dont le but est d'\u00e9valuer la capacit\u00e9 d'un agent \u00e0 raisonner sur des images. Cette t\u00e2che a r\u00e9cemment connu d'important progr\u00e8s gr\u00e2ce \u00e0 l'utilisation des r\u00e9seaux de neurones et de l'apprentissage profond. Apr\u00e8s une revue d\u00e9taill\u00e9e de l'\u00c9tat de l'Art sur le VQA, ainsi qu'une d\u00e9finition de notre utilisation du terme raisonnement, nous nous int\u00e9ressons \u00e0 la question suivante : les mod\u00e8les de VQA actuels raisonnent-ils vraiment ? La mise en \u0153uvre d'une nouvelle m\u00e9thode d'\u00e9valuation (GQA-OOD) nous permettra de r\u00e9pondre n\u00e9gativement \u00e0 cette question. En particulier, nous mettrons en \u00e9vidence la tendance des mod\u00e8les \u00e0 apprendre des raccourcis, autrement appel\u00e9s biais, pr\u00e9sent dans les donn\u00e9es d'entrainement, mais heurtant les capacit\u00e9s de g\u00e9n\u00e9ralisation. Nous proposerons alors, dans une troisi\u00e8me partie une analyse approfondie des m\u00e9canismes d'attention appris par les r\u00e9seaux de neurones artificiels. Nous \u00e9tudierons quels sont les enchainements aboutissant \u00e0 un raisonnement, ou, au contraire, \u00e0 une pr\u00e9diction biais\u00e9e par un raccourci frauduleux. La derni\u00e8re et quatri\u00e8me partie tire conclusion de nos \u00e9valuations et analyses, afin de d\u00e9velopper de nouvelles m\u00e9thodes am\u00e9liorant les performances des mod\u00e8les de VQA. En r\u00e9sum\u00e9, cette th\u00e8se a pour objet l'\u00e9tude du raisonnement visuel dans des r\u00e9seaux de neurones artificiels entrain\u00e9s par apprentissage profond, dans le cadre du VQA. Mais surtout, ce qui nous int\u00e9ressera en premier lieu, c'est l'\u00e9valuation et l'analyse de l'influence qu'ont les biais, pr\u00e9sents dans les donn\u00e9es d'apprentissage, sur les pr\u00e9dictions de nos mod\u00e8les.</jats:p>",
+    "cited_by": 1,
+    "url": "https://doi.org/10.70675/2962dc92zc2e2z4ff4z982cz0a5cff281b69"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/ijcnn60899.2024.10651165",
+    "title": "Explainable Visual Question Answering via Hybrid Neural-Logical Reasoning",
+    "authors": [
+     "Jingying Gao",
+     "Alan Blair",
+     "Maurice Pagnucco"
+    ],
+    "year": 2024,
+    "venue": "2024 International Joint Conference on Neural Networks (IJCNN)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 2,
+    "url": "https://doi.org/10.1109/ijcnn60899.2024.10651165"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.52202/075280-1333",
+    "title": "LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering",
+    "authors": [
+     "Jingying Gao",
+     "Qi Wu",
+     "Alan Blair",
+     "Maurice Pagnucco"
+    ],
+    "year": 2023,
+    "venue": "Advances in Neural Information Processing Systems 36",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.52202/075280-1333"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1145/3284432.3284456",
+    "title": "Non-monotonic Logical Reasoning and Deep Learning for Explainable Visual Question Answering",
+    "authors": [
+     "Heather Riley",
+     "Mohan Sridharan"
+    ],
+    "year": 2018,
+    "venue": "Proceedings of the 6th International Conference on Human-Agent Interaction",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 4,
+    "url": "https://doi.org/10.1145/3284432.3284456"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.3389/frobt.2019.00125",
+    "title": "Integrating Non-monotonic Logical Reasoning and Inductive Learning With Deep Learning for Explainable Visual Question Answering",
+    "authors": [
+     "Heather Riley",
+     "Mohan Sridharan"
+    ],
+    "year": 2019,
+    "venue": "Frontiers in Robotics and AI",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 17,
+    "url": "https://doi.org/10.3389/frobt.2019.00125"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/tcsvt.2026.3662386/mm1",
+    "title": "AVQACL++: Toward a Robust Framework and Benchmark for Audio-Visual Question Answering Continual Learning_supp1-3662386.pdf",
+    "authors": [
+     "Kaixuan Wu"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "component",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/tcsvt.2026.3662386/mm1"
+   }
+  ]
+ },
+ "infovqa": {
+  "queries": {
+   "arxiv": "ti:\"InfographicVQA\"",
+   "crossref": "InfographicVQA visual question answering infographics"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2104.12756",
+    "title": "InfographicVQA",
+    "authors": [
+     "Minesh Mathew",
+     "Viraj Bagal",
+     "Rub\u00e8n P\u00e9rez Tito",
+     "Dimosthenis Karatzas",
+     "Ernest Valveny",
+     "C. V Jawahar"
+    ],
+    "abstract": "Infographics are documents designed to effectively communicate information using a combination of textual, graphical and visual elements. In this work, we explore the automatic understanding of infographic images by using Visual Question Answering technique.To this end, we present InfographicVQA, a new dataset that comprises a diverse collection of infographics along with natural language questions and answers annotations. The collected questions require methods to jointly reason over the document layout, textual content, graphical elements, and data visualizations. We curate the dataset with emphasis on questions that require elementary reasoning and basic arithmetic skills. Finally, we evaluate two strong baselines based on state of the art multi-modal VQA models, and establish baseline performance for the new task. The dataset, code and leaderboard will be made available at http://docvqa.org",
+    "published": "2021-04-26",
+    "updated": "2021-08-22",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2104.12756"
+   }
+  ],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.31979/etd.8zhj-5qdc",
+    "title": "Visual Question Answering",
+    "authors": [
+     "Pankti Kansara"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "",
+    "cited_by": 3,
+    "url": "https://doi.org/10.31979/etd.8zhj-5qdc"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.70675/2d63990azacc8z421bzb575zdca5f4b9c022",
+    "title": "Shortcut Learning in Visual Question Answering",
+    "authors": [
+     "Corentin Dancette"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "<jats:title>\u00c9tude des biais dans les syst\u00e8mes de questions-r\u00e9ponses visuelles</jats:title>\n                <jats:p xml:lang=\"fr\">Cette th\u00e8se se concentre sur la t\u00e2che de VQA, c'est \u00e0 dire les syst\u00e8mes questions-r\u00e9ponses visuelles. Nous \u00e9tudions l'apprentissage des biais dans cette t\u00e2che. Les mod\u00e8les ont tendance \u00e0 apprendre des corr\u00e9lations superficielles les conduisant \u00e0 des r\u00e9ponses correctes dans la plupart des cas, mais qui peuvent \u00e9chouer lorsqu'ils rencontrent des donn\u00e9es d'entr\u00e9e inhabituelles. Nous proposons deux m\u00e9thodes pour r\u00e9duire l'apprentissage par raccourci sur le VQA. La premi\u00e8re, RUBi, consiste \u00e0 encourager le mod\u00e8le \u00e0 apprendre \u00e0 partir des exemples les plus difficiles et les moins biais\u00e9s gr\u00e2ce \u00e0 une loss sp\u00e9cifique. Nous proposons ensuite SCN, un mod\u00e8le pour la t\u00e2che de comptage visuel, avec une architecture con\u00e7ue pour \u00eatre robuste aux changements de distribution. Nous \u00e9tudions ensuite les raccourcis multimodaux dans le VQA. Nous montrons qu'ils ne sont pas seulement bas\u00e9s sur des corr\u00e9lations entre la question et la r\u00e9ponse, mais qu'ils peuvent aussi impliquer des informations sur l'image. Nous concevons un benchmark d'\u00e9valuation pour mesurer la robustesse des mod\u00e8les aux raccourcis multimodaux. L'apprentissage de ces raccourcis est particuli\u00e8rement probl\u00e9matique lorsque les mod\u00e8les sont test\u00e9s dans un contexte de changement de distribution. C'est pourquoi il est important de pouvoir \u00e9valuer la fiabilit\u00e9 des mod\u00e8les VQA. Nous proposons une m\u00e9thode pour leur permettre de s'abstenir de r\u00e9pondre lorsque leur confiance est trop faible. Cette m\u00e9thode consiste \u00e0 entra\u00eener un mod\u00e8le externe, dit \"s\u00e9lecteur\", pour pr\u00e9dire la confiance du mod\u00e8le VQA. Nous montrons que notre m\u00e9thode peut am\u00e9liorer la fiabilit\u00e9 des mod\u00e8les VQA existants.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.70675/2d63990azacc8z421bzb575zdca5f4b9c022"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.70675/2962dc92zc2e2z4ff4z982cz0a5cff281b69",
+    "title": "Bias and reasoning in visual question answering",
+    "authors": [
+     "Corentin Kervadec"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "<jats:title>Biais et raisonnement dans les syst\u00e8mes de questions r\u00e9ponses visuelles</jats:title>\n                <jats:p xml:lang=\"fr\">De quelle couleur est le terrain de tennis ? Quelle est la taille du chien ? Y a-t-il une voiture \u00e0 droite du v\u00e9lo sous le cocotier ? R\u00e9pondre \u00e0 ces questions fondamentales est le sujet de la t\u00e2che appel\u00e9e question-r\u00e9ponses visuelle (VQA, en anglais), dans laquelle un agent doit r\u00e9pondre \u00e0 des questions pos\u00e9es sur des images. Plus pr\u00e9cis\u00e9ment, le VQA requiert de mettre au point un agent capable de maitriser une grande vari\u00e9t\u00e9 de comp\u00e9tences : reconna\u00eetre des objets, reconnaitre des attributs (couleur, taille, mat\u00e9riaux, etc.), identifier des relations (e.g. spatiales), d\u00e9duire des enchainements logiques, etc. C'est pourquoi, le VQA est parfois d\u00e9sign\u00e9 comme un test de Turing visuel, dont le but est d'\u00e9valuer la capacit\u00e9 d'un agent \u00e0 raisonner sur des images. Cette t\u00e2che a r\u00e9cemment connu d'important progr\u00e8s gr\u00e2ce \u00e0 l'utilisation des r\u00e9seaux de neurones et de l'apprentissage profond. Apr\u00e8s une revue d\u00e9taill\u00e9e de l'\u00c9tat de l'Art sur le VQA, ainsi qu'une d\u00e9finition de notre utilisation du terme raisonnement, nous nous int\u00e9ressons \u00e0 la question suivante : les mod\u00e8les de VQA actuels raisonnent-ils vraiment ? La mise en \u0153uvre d'une nouvelle m\u00e9thode d'\u00e9valuation (GQA-OOD) nous permettra de r\u00e9pondre n\u00e9gativement \u00e0 cette question. En particulier, nous mettrons en \u00e9vidence la tendance des mod\u00e8les \u00e0 apprendre des raccourcis, autrement appel\u00e9s biais, pr\u00e9sent dans les donn\u00e9es d'entrainement, mais heurtant les capacit\u00e9s de g\u00e9n\u00e9ralisation. Nous proposerons alors, dans une troisi\u00e8me partie une analyse approfondie des m\u00e9canismes d'attention appris par les r\u00e9seaux de neurones artificiels. Nous \u00e9tudierons quels sont les enchainements aboutissant \u00e0 un raisonnement, ou, au contraire, \u00e0 une pr\u00e9diction biais\u00e9e par un raccourci frauduleux. La derni\u00e8re et quatri\u00e8me partie tire conclusion de nos \u00e9valuations et analyses, afin de d\u00e9velopper de nouvelles m\u00e9thodes am\u00e9liorant les performances des mod\u00e8les de VQA. En r\u00e9sum\u00e9, cette th\u00e8se a pour objet l'\u00e9tude du raisonnement visuel dans des r\u00e9seaux de neurones artificiels entrain\u00e9s par apprentissage profond, dans le cadre du VQA. Mais surtout, ce qui nous int\u00e9ressera en premier lieu, c'est l'\u00e9valuation et l'analyse de l'influence qu'ont les biais, pr\u00e9sents dans les donn\u00e9es d'apprentissage, sur les pr\u00e9dictions de nos mod\u00e8les.</jats:p>",
+    "cited_by": 1,
+    "url": "https://doi.org/10.70675/2962dc92zc2e2z4ff4z982cz0a5cff281b69"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.22215/etd/2019-13929",
+    "title": "Inverse Visual Question Answering with Multi-Level Attentions",
+    "authors": [
+     "Yaser Alwattar"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.22215/etd/2019-13929"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.55248/gengpi.6.0825.3178",
+    "title": "Visual question answering system",
+    "authors": [
+     "U. Sunitha",
+     "Dr. Harsha shastri"
+    ],
+    "year": 2025,
+    "venue": "International Journal of Research Publication and Reviews",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.55248/gengpi.6.0825.3178"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.21236/ad1214022",
+    "title": "Anomaly Detection with Visual Question Answering",
+    "authors": [
+     "Stephanie Lukin",
+     "Rahul Sharma"
+    ],
+    "year": 2023,
+    "venue": "",
+    "type": "report",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.21236/ad1214022"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.7717/peerj-cs.3679/supp-4",
+    "title": "Supplemental Information 4: Experimental results of medical visual question answering model classification.",
+    "authors": [],
+    "year": null,
+    "venue": "",
+    "type": "component",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.7717/peerj-cs.3679/supp-4"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.22541/au.169633350.04075219/v2",
+    "title": "Text-Image Transformer with Cross-Attention for Visual Question Answering",
+    "authors": [
+     "Mahdi Rezapour"
+    ],
+    "year": 2023,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.22541/au.169633350.04075219/v2"
+   }
+  ]
+ },
+ "tatdqa": {
+  "queries": {
+   "arxiv": "ti:\"TAT-DQA\"",
+   "crossref": "TAT-DQA multi-shot tabular question answering financial documents"
+  },
+  "arxiv": [],
+  "errors": {
+   "arxiv": "HTTP Error 429: Unknown Error"
+  },
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.17979/spu.23.c60",
+    "title": "Automated Code Generation for Tabular Question Answering in Zero-Shot Settings",
+    "authors": [],
+    "year": 2026,
+    "venue": "Proceedings XoveTIC 2025",
+    "type": "book-chapter",
+    "abstract": "<jats:p>Our work presents an effective and robust approach to Tabular Question Answering based on a zero-shot pipeline that uses a Large Language Model to generate executable code for extracting information from tables. Our system includes a modular architecture: a code generation module supported by column selection and type inference components to guide accurate code synthesis, together with an iterative repair mechanism for runtime errors into revised prompts. Our approach is successfully tested both in English and Spanish.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.17979/spu.23.c60"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.31979/etd.z9uq-nygw",
+    "title": "Natural Language Question Answering on Tabular Data Using Large Language Models",
+    "authors": [
+     "Yashasvi Kanchugantla"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.31979/etd.z9uq-nygw"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/iccvw60793.2023.00298",
+    "title": "Zero-Shot and Few-Shot Video Question Answering with Multi-Modal Prompts",
+    "authors": [
+     "Deniz Engin",
+     "Yannis Avrithis"
+    ],
+    "year": 2023,
+    "venue": "2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 5,
+    "url": "https://doi.org/10.1109/iccvw60793.2023.00298"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.6028/nist.sp.500-251.qa-clresearch",
+    "title": "Question Answering Using XML-Tagged Documents",
+    "authors": [
+     "Kenneth C. Litkowski"
+    ],
+    "year": 2002,
+    "venue": "",
+    "type": "component",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.6028/nist.sp.500-251.qa-clresearch"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.37591/joadms.v12i02.226214",
+    "title": "Retrieval Augmented Generation for Question Answering in Financial Documents",
+    "authors": [
+     "S. Sharon Benita",
+     "V. Srividhya"
+    ],
+    "year": 2025,
+    "venue": "Journal of Advanced Database Management &amp; Systems",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.37591/joadms.v12i02.226214"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.21203/rs.3.rs-9539202/v1",
+    "title": "AmbiTab-Sports: An Ambiguity-Aware Benchmark for Tabular Question Answering",
+    "authors": [
+     "Mahim Al Muntashir Billah",
+     "Tasrifa Sarker"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<title>Abstract</title>\n                <p>In this paper we propose a new test for table question answering, AmbiTab-Sports. It concentrates on three abilities: answering explicit questions, interpreting implicit questions, and managing ambiguous questions. The test has six sports: club football, international football, Olympics, basketball, tennis and Formula 1. There are 360 questions, divided equally between the three skills. A second person checked the questions, and any disagreements were resolved by the author. The benchmark also looks at five aspects: the subject, time, area, purpose, and method of the questions. It identifies where confusion might come from, if clarification is needed, what the best system response is, and flags to avoid shortcuts. The test was done using Qwen2.5-7B-Instruct, Gemma-4-E4B-it, Mistral-7B-Instruct-v0.2, and a basic clarification method. No one system was best in every area. Qwen was the best at straightforward questions Mistral was the best at vague questions Gemma was the best at muddled questions Manual checks show that automatic judging is good for large sorting, but not for detailed checks. The results suggest that confusion needs to be explicitly addressed in TQA tests instead of being aggregated into a single score.</p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.21203/rs.3.rs-9539202/v1"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2023.acl-industry.20",
+    "title": "Tab-CQA: A Tabular Conversational Question Answering Dataset on Financial Reports",
+    "authors": [
+     "Chuang Liu",
+     "Junzhuo Li",
+     "Deyi Xiong"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 5: Industry Track)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 4,
+    "url": "https://doi.org/10.18653/v1/2023.acl-industry.20"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.32503/proficiency.v6i2.5456",
+    "title": "ENHANCING QESTIONS FORMATION SKILLS THROUGH DEFINITIONAL QUESTION ANSWERING (DQA)",
+    "authors": [
+     "Hafizah Rifiyanti",
+     "Noerlina Anggraeni",
+     "Dyah Utami Dewi"
+    ],
+    "year": 2024,
+    "venue": "Jurnal Pendidikan Bahasa Inggris Proficiency",
+    "type": "journal-article",
+    "abstract": "<jats:p>Students often have difficulty in formulating questions that generate specific and definite answers. They lack proficiency in understanding and applying the grammatical structures and syntax required to form questions appropriately. This study aims to improve students' ability to formulate questions through the application of the Definitional Question Answering (DQA) learning method, where questions are designed to produce specific and definite answers. In this study, the experimental method was used to evaluate changes in students' abilities. The research sample consisted of 101 students majoring in management at the Faculty of Economics, Kosgoro Institute of Business and Informatics 1957 (IBIK 57). After intervention with the DQA program, a post-test was administered to assess the effectiveness of the program and students' progress. This study used an experimental design with a pre-test and post-test to evaluate the changes in students' abilities before and after the application of the DQA method. Before the application of the DQA method, all students took an initial test to measure their ability to formulate questions, comprehension of sentence elements, analytical ability, communication, and text comprehension. Thus, this study aims to contribute to improving students' skills in forming effective questions and deepening their understanding of the subject matter. The result is that the intervention or learning method that has been applied between the pre-test and post-test is effective in improving participants' performance</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.32503/proficiency.v6i2.5456"
+   }
+  ]
+ },
+ "mmlongbenchdoc": {
+  "queries": {
+   "arxiv": "ti:\"MMLongBench-Doc\"",
+   "crossref": "MMLongBench-Doc benchmarking long-context document understanding"
+  },
+  "arxiv": [],
+  "errors": {
+   "arxiv": "HTTP Error 429: Unknown Error"
+  },
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.52202/079017-3041",
+    "title": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "authors": [
+     "Yubo Ma",
+     "Yuhang Zang",
+     "Liangyu Chen",
+     "Meiqi Chen",
+     "Yizhu Jiao",
+     "Xinze Li",
+     "Xinyuan Lu",
+     "Ziyu Liu",
+     "Yan Ma",
+     "Xiaoyi Dong",
+     "Pan Zhang",
+     "Liangming Pan",
+     "Yu-Gang Jiang",
+     "Jiaqi Wang",
+     "Yixin Cao",
+     "Aixin Sun"
+    ],
+    "year": 2024,
+    "venue": "Advances in Neural Information Processing Systems 37",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 36,
+    "url": "https://doi.org/10.52202/079017-3041"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.52202/085713-3627",
+    "title": "MMLongBench: Benchmarking Long-Context Vision-Language Models Effectively and Thoroughly",
+    "authors": [
+     "Zhaowei Wang",
+     "Wenhao Yu",
+     "Xiyu REN",
+     "Jipeng Zhang",
+     "Yu Zhao",
+     "Rohit Saxena",
+     "Liang Cheng",
+     "Ginny Wong",
+     "Simon See",
+     "Pasquale Minervini",
+     "Yangqiu Song",
+     "Mark Steedman"
+    ],
+    "year": 2025,
+    "venue": "Advances in Neural Information Processing Systems 38",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 4,
+    "url": "https://doi.org/10.52202/085713-3627"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/2026.docinsights-1.9",
+    "title": "LongDA: Benchmarking LLM Agents for Long-Document Data Analysis",
+    "authors": [
+     "Yiyang Li",
+     "Zheyuan Zhang",
+     "Tianyi Ma",
+     "Zehong Wang",
+     "Keerthiram Murugesan",
+     "Chuxu Zhang",
+     "Yanfang Ye"
+    ],
+    "year": 2026,
+    "venue": "The Proceedings of Workshop on Document Intelligence and Understanding",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/2026.docinsights-1.9"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.35492/docam/3/2/5",
+    "title": "Gauguin's Savage Document Work: Understanding As Function",
+    "authors": [
+     "Tim Gorichanaz"
+    ],
+    "year": 2016,
+    "venue": "Proceedings from the Document Academy",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 2,
+    "url": "https://doi.org/10.35492/docam/3/2/5"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2024.emnlp-main.322",
+    "title": "Leave No Document Behind: Benchmarking Long-Context LLMs with Extended Multi-Doc QA",
+    "authors": [
+     "Minzheng Wang",
+     "Longze Chen",
+     "Fu Cheng",
+     "Shengyi Liao",
+     "Xinghua Zhang",
+     "Bingli Wu",
+     "Haiyang Yu",
+     "Nan Xu",
+     "Lei Zhang",
+     "Run Luo",
+     "Yunshui Li",
+     "Min Yang",
+     "Fei Huang",
+     "Yongbin Li"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 18,
+    "url": "https://doi.org/10.18653/v1/2024.emnlp-main.322"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.35492/docam/11/2/18",
+    "title": "Space and Context: Exploration of Information Experience and Document Experience",
+    "authors": [
+     "Carrie Boettcher"
+    ],
+    "year": 2024,
+    "venue": "Proceedings from the Document Academy",
+    "type": "journal-article",
+    "abstract": "<jats:p xml:lang=\"en\">This paper explores documents that are recorded and cataloged, but the original is a one-of-a-kind phenomenon that only exists once. It ponders where information ends, and document begins and the concepts of space and context that contribute to the shape or structure of the document. Specifically, the confidential counseling session, only experienced by the individuals present during the session, repeated but not duplicated, and how information and documents contribute to understanding of the counseling session.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.35492/docam/11/2/18"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/iccvw69036.2025.00428",
+    "title": "Document Haystack: A Long Context Multimodal Image/Document Understanding Vision LLM Benchmark",
+    "authors": [
+     "Goeric Huybrechts",
+     "Srikanth Ronanki",
+     "Sai Muralidhar Jayanthi",
+     "Jack Fitzgerald",
+     "Srinivasan Veeravanallur"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/iccvw69036.2025.00428"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.20944/preprints202409.1734.v1",
+    "title": "Leveraging Long-Context Large Language Models for Multi-Document Understanding and Summarization in Enterprise Applications",
+    "authors": [
+     "Aditi Godbole",
+     "Jabin Geevarghese George",
+     "Smitha Shandilya"
+    ],
+    "year": 2024,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>The rapid increase in unstructured data across various fields has made multi-document comprehension and summarization a critical task. Traditional approaches often fail to capture relevant context, maintain logical consistency, and extract essential information from lengthy documents. This paper explores the use of Long-context Large Language Models (LLMs) for multi-document summarization, demonstrating their exceptional capacity to grasp extensive connections, provide cohesive summaries, and adapt to various industry domains and integration with enterprise applications/systems. The paper discusses the workflow of multi-document summarization for effectively deploying long-context LLMs, supported by case studies in legal applications, enterprise functions such as HR, finance, and sourcing, as well as in the medical and news domains. These case studies show notable enhancements in both efficiency and accuracy. Technical obstacles, such as dataset diversity, model scalability, and ethical considerations like bias mitigation and factual accuracy, are carefully analyzed. Prospective research avenues are suggested to augment the functionalities and applications of long-context LLMs, establishing them as pivotal tools for transforming information processing across diverse sectors and enterprise applications.</jats:p>",
+    "cited_by": 3,
+    "url": "https://doi.org/10.20944/preprints202409.1734.v1"
+   }
+  ]
+ },
+ "omnidocbench": {
+  "queries": {
+   "arxiv": "ti:\"OmniDocBench\"",
+   "crossref": "OmniDocBench benchmark evaluating document parsing"
+  },
+  "arxiv": [],
+  "errors": {
+   "arxiv": "HTTP Error 429: Unknown Error"
+  },
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.1007/978-3-032-37350-2_12",
+    "title": "Real5-OmniDocBench: A Full-Scale Physical Reconstruction Benchmark for Robust Document Parsing in the Wild",
+    "authors": [
+     "Cheng Cui",
+     "Changda Zhou",
+     "Ziyue Gao",
+     "Xueqing Wang",
+     "Tingquan Gao",
+     "Jing Tang",
+     "Yi Liu"
+    ],
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "type": "book-chapter",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1007/978-3-032-37350-2_12"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/2026.findings-emnlp.1525",
+    "title": "HoloDP: A Multilingual Benchmark Suite and Script-Aware Framework for Document Parsing",
+    "authors": [
+     "Mengxiao Zhu",
+     "Wencan Ying",
+     "Yingjie Cao",
+     "Jie Liu",
+     "Jiu Sha"
+    ],
+    "year": 2026,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/2026.findings-emnlp.1525"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2025.findings-emnlp.1088",
+    "title": "Intelligent Document Parsing: Towards End-to-end Document Parsing via Decoupled Content Parsing and Layout Grounding",
+    "authors": [
+     "Hangdi Xing",
+     "Feiyu Gao",
+     "Qi Zheng",
+     "Zhaoqing Zhu",
+     "Zirui Shao",
+     "Ming Yan"
+    ],
+    "year": 2025,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.1088"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.4242/balisagevol28.prescod01",
+    "title": "Auto-Markup BenchMark: Towards an Industry-standard Benchmark for Evaluating Automatic Document Markup",
+    "authors": [
+     "Paul Prescod",
+     "Ben Feuer",
+     "Andrii Hladkyi",
+     "Sean Paulk",
+     "Arjun Prasad"
+    ],
+    "year": null,
+    "venue": "Balisage Series on Markup Technologies",
+    "type": "proceedings-article",
+    "abstract": "<jats:p>Recent large language models (LLMs) such as GPT, Bard and Claude have achieved impressive progress in comprehending and generating human language. We explore the potential for LLMs to automate markup of semi-structured texts into HTML, DITA, and other related languages. Automated markup could make it possible to move documents into XML at much lower cost. Currently, there is no standard benchmark for evaluating automatic markup systems. Establishing a benchmark for the understanding and generation of structured documents and markup languages can drive innovation, standardize evaluations, identify algorithm strengths and weaknesses, clarify the State of the Art and foster interdisciplinary collaborations. This paper introduces an early version of a benchmark for this purpose.</jats:p>",
+    "cited_by": 2,
+    "url": "https://doi.org/10.4242/balisagevol28.prescod01"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2025.findings-acl.429",
+    "title": "STEM-POM: Evaluating Language Models Math-Symbol Reasoning in Document Parsing",
+    "authors": [
+     "Jiaru Zou",
+     "Qing Wang",
+     "Pratyush Thakur",
+     "Nickvash Kani"
+    ],
+    "year": 2025,
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/v1/2025.findings-acl.429"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/cvpr52734.2025.02313",
+    "title": "OmniDocBench: Benchmarking Diverse PDF Document Parsing with Comprehensive Annotations",
+    "authors": [
+     "Linke Ouyang",
+     "Yuan Qu",
+     "Hongbin Zhou",
+     "Jiawei Zhu",
+     "Rui Zhang",
+     "Qunshu Lin",
+     "Bin Wang",
+     "Zhiyuan Zhao",
+     "Man Jiang",
+     "Xiaomeng Zhao",
+     "Jin Shi",
+     "Fan Wu",
+     "Pei Chu",
+     "Minghao Liu",
+     "Zhenxiang Li",
+     "Chao Xu",
+     "Bo Zhang",
+     "Botian Shi",
+     "Zhongying Tu",
+     "Conghui He"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 40,
+    "url": "https://doi.org/10.1109/cvpr52734.2025.02313"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1007/978-1-4302-2352-8_1",
+    "title": "Parsing Common Document Types",
+    "authors": [],
+    "year": 2009,
+    "venue": "Scripting Intelligence",
+    "type": "book-chapter",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1007/978-1-4302-2352-8_1"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2025.sdp-1.2",
+    "title": "TeXpert: A Multi-Level Benchmark for Evaluating LaTeX Code Generation by LLMs",
+    "authors": [
+     "Sahil Kale",
+     "Vijaykant Nadadur"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the Fifth Workshop on Scholarly Document Processing (SDP 2025)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.18653/v1/2025.sdp-1.2"
+   }
+  ]
+ },
+ "raptor": {
+  "queries": {
+   "arxiv": "ti:\"RAPTOR\"",
+   "crossref": "RAPTOR recursive abstractive processing tree-organized retrieval"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "1110.2343",
+    "title": "Annotated Raptor Codes",
+    "authors": [
+     "Kaveh Mahdaviani",
+     "Masoud Ardakani",
+     "Chintha Tellambura"
+    ],
+    "abstract": "In this paper, an extension of raptor codes is introduced which keeps all the desirable properties of raptor codes, including the linear complexity of encoding and decoding per information bit, unchanged. The new design, however, improves the performance in terms of the reception rate. Our simulations show a 10% reduction in the needed overhead at the benchmark block length of 64,520 bits and with the same complexity per information bit.",
+    "published": "2011-10-11",
+    "updated": "2011-10-11",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1110.2343"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2209.00114",
+    "title": "RAPTOR: Ravenous Throughput Computing",
+    "authors": [
+     "Andre Merzky",
+     "Matteo Turilli",
+     "Shantenu Jha"
+    ],
+    "abstract": "We describe the design, implementation and performance of the RADICAL-Pilot task overlay (RAPTOR). RAPTOR enables the execution of heterogeneous tasks -- i.e., functions and executables with arbitrary duration -- on HPC platforms, providing high throughput and high resource utilization. RAPTOR supports the high throughput virtual screening requirements of DOE's National Virtual Biotechnology Laboratory effort to find therapeutic solutions for COVID-19. RAPTOR has been used on $>8000$ compute nodes to sustain 144M/hour docking hits, and to screen $\\sim$10$^{11}$ ligands. To the best of our knowledge, both the throughput rate and aggregated number of executed tasks are a factor of two greater than previously reported in literature. RAPTOR represents important progress towards improvement of computational drug discovery, in terms of size of libraries screened, and for the possibility of generating training data fast enough to serve the last generation of docking surrogate models.",
+    "published": "2022-08-31",
+    "updated": "2022-08-31",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2209.00114"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "1803.01598",
+    "title": "RAPTOR: Ransomware Attack PredicTOR",
+    "authors": [
+     "Florian Quinkert",
+     "Thorsten Holz",
+     "KSM Tozammel Hossain",
+     "Emilio Ferrara",
+     "Kristina Lerman"
+    ],
+    "abstract": "Ransomware, a type of malicious software that encrypts a victim's files and only releases the cryptographic key once a ransom is paid, has emerged as a potentially devastating class of cybercrimes in the past few years. In this paper, we present RAPTOR, a promising line of defense against ransomware attacks. RAPTOR fingerprints attackers' operations to forecast ransomware activity. More specifically, our method learns features of malicious domains by looking at examples of domains involved in known ransomware attacks, and then monitors newly registered domains to identify potentially malicious ones. In addition, RAPTOR uses time series forecasting techniques to learn models of historical ransomware activity and then leverages malicious domain registrations as an external signal to forecast future ransomware activity. We illustrate RAPTOR's effectiveness by forecasting all activity stages of Cerber, a popular ransomware family. By monitoring zone files of the top-level domain .top starting from August 30, 2016 through May 31, 2017, RAPTOR predicted 2,126 newly registered domains to be potential Cerber domains. Of these, 378 later actually appeared in blacklists. Our empirical evaluation results show that using predicted domain registrations helped improve forecasts of future Cerber activity. Most importantly, our approach demonstrates the value of fusing different signals in forecasting applications in the cyber domain.",
+    "published": "2018-03-05",
+    "updated": "2018-03-05",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1803.01598"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "0811.0952",
+    "title": "Raptor Codes and Cryptographic Issues",
+    "authors": [
+     "Mikko Malinen"
+    ],
+    "abstract": "In this paper two cryptographic methods are introduced. In the first method the presence of a certain size subgroup of persons can be checked for an action to take place. For this we use fragments of Raptor codes delivered to the group members. In the other method a selection of a subset of objects can be made secret. Also, it can be proven afterwards, what the original selection was.",
+    "published": "2008-11-06",
+    "updated": "2008-11-06",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/0811.0952"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2602.00158",
+    "title": "RAPTOR: Ridge-Adaptive Logistic Probes",
+    "authors": [
+     "Ziqi Gao",
+     "Yaotian Zhu",
+     "Qingcheng Zeng",
+     "Xu Zhao",
+     "Ziqing Wang",
+     "Feng Ruan",
+     "Kaize Ding"
+    ],
+    "abstract": "Probing studies what information is encoded in a frozen LLM's layer representations by training a lightweight predictor on top of them. Beyond analysis, probes are often used operationally in probe-then-steer pipelines: a learned concept vector is extracted from a probe and injected via additive activation steering by adding it to a layer representation during the forward pass. The effectiveness of this pipeline hinges on estimating concept vectors that are accurate, directionally stable under ablation, and inexpensive to obtain. Motivated by these desiderata, we propose RAPTOR (Ridge-Adaptive Logistic Probe), a simple L2-regularized logistic probe whose validation-tuned ridge strength yields concept vectors from normalized weights. Across extensive experiments on instruction-tuned LLMs and human-written concept datasets, RAPTOR matches or exceeds strong baselines in accuracy while achieving competitive directional stability and substantially lower training cost; these quantitative results are supported by qualitative downstream steering demonstrations. Finally, using the Convex Gaussian Min-max Theorem (CGMT), we provide a mechanistic characterization of ridge logistic regression in an idealized Gaussian teacher-student model in the high-dimensional few-shot regime, explaining how penalty strength mediates probe accuracy and concept-vector stability and yielding structural predictions that qualitatively align with trends observed on real LLM embeddings.",
+    "published": "2026-01-29",
+    "updated": "2026-09-25",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2602.00158"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "1403.2111",
+    "title": "Protograph-Based Raptor-Like LDPC Codes",
+    "authors": [
+     "Tsung-Yi Chen",
+     "Kasra Vakilinia",
+     "Dariush Divsalar",
+     "Richard D. Wesel"
+    ],
+    "abstract": "This paper proposes a class of rate-compatible LDPC codes, called protograph-based Raptor-like (PBRL) codes. The construction is focused on binary codes for BI-AWGN channels. As with the Raptor codes, additional parity bits are produced by exclusive-OR operations on the precoded bits, providing extensive rate compatibility. Unlike Raptor codes, the structure of each additional parity bit in the protograph is explicitly designed through density evolution. The construction method provides low iterative decoding thresholds and the lifted codes result in excellent error rate performance for long-blocklength PBRL codes. For short-blocklength PBRL codes the protograph design and lifting must avoid undesired graphical structures such as trapping sets and absorbing sets while also seeking to minimize the density evolution threshold. Simulation results are shown in information block sizes of $k=192$, $16368$ and $16384$. Comparing at the same information block size of $k=16368$ bits, the PBRL codes outperform the best known standardized code, the AR4JA codes in the waterfall region. The PBRL codes also perform comparably to DVB-S2 codes even though the DVB-S2 codes use LDPC codes with longer blocklengths and are concatenated with outer BCH codes.",
+    "published": "2014-03-09",
+    "updated": "2014-03-09",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1403.2111"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2403.16457",
+    "title": "Raptor: Distributed Scheduling for Serverless Functions",
+    "authors": [
+     "Kevin Exton",
+     "Maria Read"
+    ],
+    "abstract": "To support parallelizable serverless workflows in applications like media processing, we have prototyped a distributed scheduler called Raptor that reduces both the end-to-end delay time and failure rate of parallelizable serverless workflows. As modern serverless frameworks are typically deployed to extremely large scale distributed computing environments by major cloud providers, Raptor is specifically designed to exploit the property of statistically independent function execution that tends to emerge at very large scales. To demonstrate the effect of horizontal scale on function execution, our evaluation demonstrates that mean delay time improvements provided by Raptor for RSA public-private key pair generation can be accurately predicted by mutually independent exponential random variables, but only once the serverless framework is deployed in a highly available configuration and horizontally scaled across three availability zones.",
+    "published": "2024-03-25",
+    "updated": "2024-12-13",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2403.16457"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2507.04647",
+    "title": "RAPTOR: Practical Numerical Profiling of Scientific Applications",
+    "authors": [
+     "Faveo Hoerold",
+     "Ivan R. Ivanov",
+     "Akash Dhruv",
+     "William S. Moses",
+     "Anshu Dubey",
+     "Mohamed Wahib",
+     "Jens Domke"
+    ],
+    "abstract": "The proliferation of low-precision units in modern high-performance architectures increasingly burdens domain scientists. Historically, the choice in HPC was easy: can we get away with 32 bit floating-point operations and lower bandwidth requirements, or is FP64 necessary? Driven by Artificial Intelligence, vendors introduce novel low-precision units for vector and tensor operations, and FP64 capabilities stagnate or are reduced. This forces scientists to re-evaluate their codes, but a trivial search-and-replace approach to go from FP64 to FP16 will not suffice. We introduce RAPTOR: a numerical profiling tool to guide scientists in their search for code regions where precision lowering is feasible. Using LLVM, we transparently replace high-precision computations using low-precision units, or emulate a user-defined precision. RAPTOR is a novel, feature-rich approach -- with focus on ease of use -- to change, profile, and reason about numerical requirements and instabilities, which we demonstrate with four real-world multi-physics Flash-X applications.",
+    "published": "2025-07-07",
+    "updated": "2025-09-22",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2507.04647"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "1312.6101",
+    "title": "Concatenated Raptor Codes in NAND Flash Memory",
+    "authors": [
+     "Geunyeong Yu",
+     "Jaekyun Moon"
+    ],
+    "abstract": "Two concatenated coding schemes based on fixed-rate Raptor codes are proposed for error control in NAND flash memory. One is geared for off-line recovery of uncorrectable pages and the other is designed for page error correction during the normal read mode. Both proposed coding strategies assume hard-decision decoding of the inner code with inner decoding failure generating erasure symbols for the outer Raptor code. Raptor codes allow low-complexity decoding of very long codewords while providing capacity- approaching performance for erasure channels. For the off-line page recovery scheme, one whole NAND block forms a Raptor codeword with each inner codeword typically made up of several Raptor symbols. An efficient look-up-table strategy is devised for Raptor encoding and decoding which avoids using large buffers in the controller despite the substantial size of the Raptor code employed. The potential performance benefit of the proposed scheme is evaluated in terms of the probability of block recovery conditioned on the presence of uncorrectable pages. In the suggested page-error-correction strategy, on the other hand, a hard-decision-iterating product code is used as the inner code. The specific product code employed in this work is based on row-column concatenation with multiple intersecting bits allowing the use of longer component codes. In this setting the collection of bits captured within each intersection of the row-column codes acts as the Raptor symbol(s), and the intersections of failed row codes and column codes are declared as erasures. The error rate analysis indicates that the proposed concatenation provides a considerable performance boost relative to the existing error correcting system based on long Bose-Chaudhuri-Hocquenghem (BCH) codes.",
+    "published": "2013-12-20",
+    "updated": "2013-12-20",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1312.6101"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "1503.03940",
+    "title": "RAPTOR: Routing Attacks on Privacy in Tor",
+    "authors": [
+     "Yixin Sun",
+     "Anne Edmundson",
+     "Laurent Vanbever",
+     "Oscar Li",
+     "Jennifer Rexford",
+     "Mung Chiang",
+     "Prateek Mittal"
+    ],
+    "abstract": "The Tor network is a widely used system for anonymous communication. However, Tor is known to be vulnerable to attackers who can observe traffic at both ends of the communication path. In this paper, we show that prior attacks are just the tip of the iceberg. We present a suite of new attacks, called Raptor, that can be launched by Autonomous Systems (ASes) to compromise user anonymity. First, AS-level adversaries can exploit the asymmetric nature of Internet routing to increase the chance of observing at least one direction of user traffic at both ends of the communication. Second, AS-level adversaries can exploit natural churn in Internet routing to lie on the BGP paths for more users over time. Third, strategic adversaries can manipulate Internet routing via BGP hijacks (to discover the users using specific Tor guard nodes) and interceptions (to perform traffic analysis). We demonstrate the feasibility of Raptor attacks by analyzing historical BGP data and Traceroute data as well as performing real-world attacks on the live Tor network, while ensuring that we do not harm real users. In addition, we outline the design of two monitoring frameworks to counter these attacks: BGP monitoring to detect control-plane attacks, and Traceroute monitoring to detect data-plane anomalies. Overall, our work motivates the design of anonymity systems that are aware of the dynamics of Internet routing.",
+    "published": "2015-03-13",
+    "updated": "2015-03-13",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/1503.03940"
+   }
+  ],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.1109/mipr54900.2022.00020",
+    "title": "Recursive Randomized Tree Coding of Speech",
+    "authors": [
+     "Hoontaek Oh",
+     "Jerry D. Gibson"
+    ],
+    "year": 2022,
+    "venue": "2022 IEEE 5th International Conference on Multimedia Information Processing and Retrieval (MIPR)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/mipr54900.2022.00020"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1023/a:1013853012954",
+    "title": "Text Retrieval Using Self-Organized Document Maps",
+    "authors": [
+     "Krista Lagus"
+    ],
+    "year": 2002,
+    "venue": "Neural Processing Letters",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 15,
+    "url": "https://doi.org/10.1023/a:1013853012954"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1016/0020-0190(91)90026-e",
+    "title": "Inversion of a recursive tree traversal",
+    "authors": [
+     "Jan L.A. van de Snepscheut"
+    ],
+    "year": 1991,
+    "venue": "Information Processing Letters",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 5,
+    "url": "https://doi.org/10.1016/0020-0190(91)90026-e"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1016/0020-0190(81)90046-6",
+    "title": "Tree equivalence of linear recursive schemata is polynomial-time decidable",
+    "authors": [
+     "V.K. Sabelfeld"
+    ],
+    "year": 1981,
+    "venue": "Information Processing Letters",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 4,
+    "url": "https://doi.org/10.1016/0020-0190(81)90046-6"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1049/cp:19970852",
+    "title": "Binary-tree recursive motion estimation for video coding",
+    "authors": [
+     "A. Druet"
+    ],
+    "year": 1997,
+    "venue": "6th International Conference on Image Processing and its Applications",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1049/cp:19970852"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.5220/0002320104590466",
+    "title": "RECURSIVE SELF-ORGANIZING NETWORKS FOR PROCESSING TREE STRUCTURES - Empirical Comparison",
+    "authors": [],
+    "year": 2009,
+    "venue": "Proceedings of the International Joint Conference on Computational Intelligence",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.5220/0002320104590466"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/icip.2002.1038190",
+    "title": "Optimal recursive similarity measure estimation for interactive content-based image retrieval",
+    "authors": [
+     "N. Doulamis",
+     "A. Doulamis"
+    ],
+    "year": null,
+    "venue": "Proceedings. International Conference on Image Processing",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 2,
+    "url": "https://doi.org/10.1109/icip.2002.1038190"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/icip.2001.958600",
+    "title": "A recursive optimal relevance feedback scheme for content based image retrieval",
+    "authors": [
+     "N. Doulamis",
+     "A. Doulamis"
+    ],
+    "year": null,
+    "venue": "Proceedings 2001 International Conference on Image Processing (Cat. No.01CH37205)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 4,
+    "url": "https://doi.org/10.1109/icip.2001.958600"
+   }
+  ]
+ },
+ "latechunking": {
+  "queries": {
+   "arxiv": "ti:\"Late Chunking\"",
+   "crossref": "Late Chunking contextual chunk embeddings long-context embedding models"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2409.04701",
+    "title": "Late Chunking: Contextual Chunk Embeddings Using Long-Context Embedding Models",
+    "authors": [
+     "Michael G\u00fcnther",
+     "Isabelle Mohr",
+     "Daniel James Williams",
+     "Bo Wang",
+     "Han Xiao"
+    ],
+    "abstract": "Many use cases require retrieving smaller portions of text, and dense vector-based retrieval systems often perform better with shorter text segments, as the semantics are less likely to be over-compressed in the embeddings. Consequently, practitioners often split text documents into smaller chunks and encode them separately. However, chunk embeddings created in this way can lose contextual information from surrounding chunks, resulting in sub-optimal representations. In this paper, we introduce a novel method called late chunking, which leverages long context embedding models to first embed all tokens of the long text, with chunking applied after the transformer model and just before mean pooling - hence the term late in its naming. The resulting chunk embeddings capture the full contextual information, leading to superior results across various retrieval tasks. The method is generic enough to be applied to a wide range of long-context embedding models and works without additional training. To further increase the effectiveness of late chunking, we propose a dedicated fine-tuning approach for embedding models.",
+    "published": "2024-09-07",
+    "updated": "2025-07-07",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2409.04701"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2603.22633",
+    "title": "Graph-Aware Late Chunking for Retrieval-Augmented Generation in Biomedical Literature",
+    "authors": [
+     "Pouria Mortezaagha",
+     "Arya Rahgozar"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) systems for biomedical literature are typically evaluated using ranking metrics like Mean Reciprocal Rank (MRR), which measure how well the system identifies the single most relevant chunk. We argue that for full-text scientific documents, this paradigm is incomplete: it rewards retrieval precision while ignoring retrieval breadth -- the ability to surface evidence from across a document's structural sections. We propose GraLC-RAG, a framework that unifies late chunking with graph-aware structural intelligence, introducing structure-aware chunk boundary detection, UMLS knowledge graph infusion, and graph-guided hybrid retrieval. We evaluate six strategies on 2,359 IMRaD-filtered PubMed Central articles using 2,033 cross-section questions and two metric families: standard ranking metrics (MRR, Recall@k) and structural coverage metrics (SecCov@k, CS Recall). Our results expose a sharp divergence: content-similarity methods achieve the highest MRR (0.517) but always retrieve from a single section, while structure-aware methods retrieve from up to 15.6x more sections. Generation experiments show that KG-infused retrieval narrows the answer-quality gap to delta-F1 = 0.009 while maintaining 4.6x section diversity. These findings demonstrate that standard metrics systematically undervalue structural retrieval and that closing the multi-section synthesis gap is a key open problem for biomedical RAG.",
+    "published": "2026-03-23",
+    "updated": "2026-03-23",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2603.22633"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2604.10167",
+    "title": "Visual Late Chunking: An Empirical Study of Contextual Chunking for Efficient Visual Document Retrieval",
+    "authors": [
+     "Yibo Yan",
+     "Mingdong Ou",
+     "Yi Cao",
+     "Jiahao Huo",
+     "Xin Zou",
+     "Shuliang Liu",
+     "James Kwok",
+     "Xuming Hu"
+    ],
+    "abstract": "Multi-vector models dominate Visual Document Retrieval (VDR) due to their fine-grained matching capabilities, but their high storage and computational costs present a major barrier to practical deployment. In this paper, we propose ColChunk, a plug-and-play framework that introduces multimodal late chunking to construct efficient, contextualized multi-vectors. Unlike existing pruning or fixed-token approaches, ColChunk employs hierarchical clustering on patch-level embeddings, fused with a 2D position prior to ensure spatial-semantic coherence. This adaptive grouping allows for a content-aware representation that preserves global context while drastically reducing the vector count. Evaluations across 24 VDR datasets demonstrate ColChunk achieves over a 90% reduction in storage requirements while simultaneously delivering a 9-point average improvement in nDCG@5 across representative single-vector models. ColChunk provides a practical solution for balancing retrieval accuracy and efficiency in visual document systems.",
+    "published": "2026-04-11",
+    "updated": "2026-04-11",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2604.10167"
+   }
+  ],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2024.acl-long.180",
+    "title": "Landmark Embedding: A Chunking-Free Embedding Method For Retrieval Augmented Long-Context Large Language Models",
+    "authors": [
+     "Kun Luo",
+     "Zheng Liu",
+     "Shitao Xiao",
+     "Tong Zhou",
+     "Yubo Chen",
+     "Jun Zhao",
+     "Kang Liu"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 13,
+    "url": "https://doi.org/10.18653/v1/2024.acl-long.180"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.70675/df0f1f11z8a2ez45b3z8bf2z660c4be2e250",
+    "title": "Explorations in Word Embeddings : graph-based word embedding learning and cross-lingual contextual word embedding learning",
+    "authors": [
+     "Zheng Zhang"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "<jats:title>Explorations de plongements lexicaux : apprentissage de plongements \u00e0 base de graphes et apprentissage de plongements contextuels multilingues</jats:title>\n                <jats:p xml:lang=\"fr\">Les plongements lexicaux sont un composant standard des architectures modernes de traitement automatique des langues (TAL). Chaque fois qu'une avanc\u00e9e est obtenue dans l'apprentissage de plongements lexicaux, la grande majorit\u00e9 des t\u00e2ches de traitement automatique des langues, telles que l'\u00e9tiquetage morphosyntaxique, la reconnaissance d'entit\u00e9s nomm\u00e9es, la recherche de r\u00e9ponses \u00e0 des questions, ou l'inf\u00e9rence textuelle, peuvent en b\u00e9n\u00e9ficier. Ce travail explore la question de l'am\u00e9lioration de la qualit\u00e9 de plongements lexicaux monolingues appris par des mod\u00e8les pr\u00e9dictifs et celle de la mise en correspondance entre langues de plongements lexicaux contextuels cr\u00e9\u00e9s par des mod\u00e8les pr\u00e9entra\u00een\u00e9s de repr\u00e9sentation de la langue comme ELMo ou BERT.Pour l'apprentissage de plongements lexicaux monolingues, je prends en compte des informations globales au corpus et g\u00e9n\u00e8re une distribution de bruit diff\u00e9rente pour l'\u00e9chantillonnage d'exemples n\u00e9gatifs dans word2vec. Dans ce but, je pr\u00e9calcule des statistiques de cooccurrence entre mots avec corpus2graph, un paquet Python en source ouverte orient\u00e9 vers les applications en TAL : il g\u00e9n\u00e8re efficacement un graphe de cooccurrence \u00e0 partir d'un grand corpus, et lui applique des algorithmes de graphes tels que les marches al\u00e9atoires. Pour la mise en correspondance translingue de plongements lexicaux, je relie les plongements lexicaux contextuels \u00e0 des plongements de sens de mots. L'algorithme am\u00e9lior\u00e9 de cr\u00e9ation d'ancres que je propose \u00e9tend \u00e9galement la port\u00e9e des algorithmes de mise en correspondance de plongements lexicaux du cas non-contextuel au cas des plongements contextuels.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.70675/df0f1f11z8a2ez45b3z8bf2z660c4be2e250"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2021.acl-long.408",
+    "title": "Obtaining Better Static Word Embeddings Using Contextual Embedding Models",
+    "authors": [
+     "Prakhar Gupta",
+     "Martin Jaggi"
+    ],
+    "year": 2021,
+    "venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 18,
+    "url": "https://doi.org/10.18653/v1/2021.acl-long.408"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.32920/ryerson.14657139.v1",
+    "title": "Chunk: an online platform for flow, play and pattern recognition through \"Chunking\"",
+    "authors": [
+     "Nathan-John Whitbourne"
+    ],
+    "year": 2023,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>A platform to highlight meaningful work.\nThis paper details the conceptual and initial prototype design of the online platform called Chunk, which aims to highlight personal projects and put passion-driven ideas at the forefront of an individual\u2019s online profile. This paper will define \u201cmeaningful work,\u201d and outline how the foundations, characteristics, and triggers of flow, play, and\u201cchunking\u201dconnects\u201cmeaningful work\u201d.                                                                                                                                                                                                  It describes why applying them into an online platform, such as Chunk, can help users use their own projects to find greater intrinsic meaning in work. It addresses the lack of focused attention in current social media platforms, within creative work and productivity, and how chunk is able to provide a solution. This paper presents initial images of Chunk\u2019s interface, and strategies to implement flow, play, and pattern recognition into its architecture. Lastly, this research paper will analyse and compare LinkedIn, Behance, Pinterest, and Climb (online platforms oriented towards work) to Chunk\u2019s platform.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.32920/ryerson.14657139.v1"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.32920/ryerson.14657139",
+    "title": "Chunk: an online platform for flow, play and pattern recognition through \"Chunking\"",
+    "authors": [
+     "Nathan-John Whitbourne"
+    ],
+    "year": 2023,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>A platform to highlight meaningful work.\nThis paper details the conceptual and initial prototype design of the online platform called Chunk, which aims to highlight personal projects and put passion-driven ideas at the forefront of an individual\u2019s online profile. This paper will define \u201cmeaningful work,\u201d and outline how the foundations, characteristics, and triggers of flow, play, and\u201cchunking\u201dconnects\u201cmeaningful work\u201d.                                                                                                                                                                                                  It describes why applying them into an online platform, such as Chunk, can help users use their own projects to find greater intrinsic meaning in work. It addresses the lack of focused attention in current social media platforms, within creative work and productivity, and how chunk is able to provide a solution. This paper presents initial images of Chunk\u2019s interface, and strategies to implement flow, play, and pattern recognition into its architecture. Lastly, this research paper will analyse and compare LinkedIn, Behance, Pinterest, and Climb (online platforms oriented towards work) to Chunk\u2019s platform.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.32920/ryerson.14657139"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.63317/4iz34o26i4tt",
+    "title": "Learning Long-Document Embeddings via Chunk\u2013Context Entailment",
+    "authors": [
+     "Waheed Ahmed Abro",
+     "Na\u00efm Es-Sebbani",
+     "Zied Bouraoui"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the Language Resources and Evaluation Conference",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.63317/4iz34o26i4tt"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.26493/scores26.18",
+    "title": "Geometric Characterization of Embedding Spaces Across Chunking Strategies and Embedding Models for Slovenian Text",
+    "authors": [
+     "Anja Jodl",
+     "Mitko Nikov"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 12th Student Computing Research Symposium (SCORES\u201926)",
+    "type": "book-chapter",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.26493/scores26.18"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.36227/techrxiv.174857727.77774878/v1",
+    "title": "TraceLM: Temporal Root-Cause Analysis with Contextual Embedding Language Models",
+    "authors": [
+     "Bingxin Zhu"
+    ],
+    "year": 2025,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>Temporal analysis represents a crucial challenge in understanding event sequences, particularly in identifying root causes. Traditional methods often rely on static feature extraction, limiting their effectiveness in dynamic contexts. To tackle this issue, we introduce TraceLM, a framework that employs contextual embedding language models to enhance temporal root-cause analysis. By incorporating advanced representation learning techniques, TraceLM captures the temporal dynamics and relationships inherent in data. The multi-layered architecture allows for the identification of significant patterns indicative of root causes by processing sequences dynamically. Evaluations on benchmark datasets reveal that TraceLM outperforms existing methods in both accuracy and efficiency, demonstrating its strength in uncovering complex causative relationships. This capability provides actionable insights relevant to real-world domains such as system diagnostics and incident management, thus significantly advancing the field of root-cause analysis.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.36227/techrxiv.174857727.77774878/v1"
+   }
+  ]
+ },
+ "tablerag": {
+  "queries": {
+   "arxiv": "all:\"TableRAG\"",
+   "crossref": "TableRAG table retrieval augmented generation"
+  },
+  "arxiv": [
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2506.10380",
+    "title": "TableRAG: A Retrieval Augmented Generation Framework for Heterogeneous Document Reasoning",
+    "authors": [
+     "Xiaohan Yu",
+     "Pu Jian",
+     "Chong Chen"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) has demonstrated considerable effectiveness in open-domain question answering. However, when applied to heterogeneous documents, comprising both textual and tabular components, existing RAG approaches exhibit critical limitations. The prevailing practice of flattening tables and chunking strategies disrupts the intrinsic tabular structure, leads to information loss, and undermines the reasoning capabilities of LLMs in multi-hop, global queries. To address these challenges, we propose TableRAG, an SQL-based framework that unifies textual understanding and complex manipulations over tabular data. TableRAG iteratively operates in four steps: context-sensitive query decomposition, text retrieval, SQL programming and execution, and compositional intermediate answer generation. We also develop HeteQA, a novel benchmark designed to evaluate the multi-hop heterogeneous reasoning capabilities. Experimental results demonstrate that TableRAG consistently outperforms existing baselines on both public datasets and our HeteQA, establishing a new state-of-the-art for heterogeneous document question answering. We release TableRAG at https://github.com/yxh-y/TableRAG/tree/main.",
+    "published": "2025-06-12",
+    "updated": "2025-09-30",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2506.10380"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2410.04739",
+    "title": "TableRAG: Million-Token Table Understanding with Language Models",
+    "authors": [
+     "Si-An Chen",
+     "Lesly Miculicich",
+     "Julian Martin Eisenschlos",
+     "Zifeng Wang",
+     "Zilong Wang",
+     "Yanfei Chen",
+     "Yasuhisa Fujii",
+     "Hsuan-Tien Lin",
+     "Chen-Yu Lee",
+     "Tomas Pfister"
+    ],
+    "abstract": "Recent advancements in language models (LMs) have notably enhanced their ability to reason with tabular data, primarily through program-aided mechanisms that manipulate and analyze tables. However, these methods often require the entire table as input, leading to scalability challenges due to the positional bias or context length constraints. In response to these challenges, we introduce TableRAG, a Retrieval-Augmented Generation (RAG) framework specifically designed for LM-based table understanding. TableRAG leverages query expansion combined with schema and cell retrieval to pinpoint crucial information before providing it to the LMs. This enables more efficient data encoding and precise retrieval, significantly reducing prompt lengths and mitigating information loss. We have developed two new million-token benchmarks from the Arcade and BIRD-SQL datasets to thoroughly evaluate TableRAG's effectiveness at scale. Our results demonstrate that TableRAG's retrieval design achieves the highest retrieval quality, leading to the new state-of-the-art performance on large-scale table understanding.",
+    "published": "2024-10-07",
+    "updated": "2024-12-26",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2410.04739"
+   },
+   {
+    "channel": "arxiv",
+    "arxiv_id": "2610.03958",
+    "title": "FICO: Find-Then-Compute for Corpus-Level Spreadsheet Question Answering",
+    "authors": [
+     "Sandarsita Guntupalli",
+     "Lu He",
+     "Kang Li"
+    ],
+    "abstract": "Question answering over spreadsheet collections requires finding the correct workbook and computing over complete tables. We introduce Find-then-Compute (FiCo), which retrieves document summaries, disambiguates similar workbooks, and executes constrained Structured Query Language (SQL) over the selected full table. On DataBench (80 datasets, 1,810 questions), FiCo reaches 76.2% accuracy: 9.9 points above a strong TableRAG-style baseline on the same frozen workbook choices (66.3%) under the tracks' prespecified evaluators, and 63.4 points above prefix RAG (12.8%). On 508 MiMoTable questions, FiCo reaches 79.7%, versus 22.2% for prefix RAG. Giving the strong baseline the gold workbook raises it from 66.3% to 76.3%, exposing a 10.0-point source-selection cost under fixed compute. Despite 95.1% document recall and 98.5% executable SQL, only 81.3% of questions execute on the gold workbook. FiCo's advantage comes from integrating semantic source selection with exact, schema-grounded computation.",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.03958"
+   }
+  ],
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2025.emnlp-main.710",
+    "title": "TableRAG: A Retrieval Augmented Generation Framework for Heterogeneous Document Reasoning",
+    "authors": [
+     "Xiaohan Yu",
+     "Pu Jian",
+     "Chong Chen"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 18,
+    "url": "https://doi.org/10.18653/v1/2025.emnlp-main.710"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.5040/9781350865778",
+    "title": "Master Retrieval-Augmented Generation (RAG) Systems",
+    "authors": [],
+    "year": 2024,
+    "venue": "Master Retrieval-Augmented Generation (RAG) Systems",
+    "type": "other",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.5040/9781350865778"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1002/9781394374717.ch03",
+    "title": "Retrieval\u2010Augmented Generation",
+    "authors": [],
+    "year": 2026,
+    "venue": "Advanced Retrieval\u2010Augmented Generation",
+    "type": "other",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1002/9781394374717.ch03"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2025.magmar-1.5",
+    "title": "Multimodal Retrieval-Augmented Generation: Unified Information Processing Across Text, Image, Table, and Video Modalities",
+    "authors": [
+     "Nazarii Drushchak",
+     "Nataliya Polyakovska",
+     "Maryna Bautina",
+     "Taras Semenchenko",
+     "Jakub Koscielecki",
+     "Wojciech Sykala",
+     "Michal Wegrzynowski"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the 1st Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2025)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 6,
+    "url": "https://doi.org/10.18653/v1/2025.magmar-1.5"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1002/9781394374717.ch07",
+    "title": "Graph\u2010based Retrieval\u2010augmented Generation",
+    "authors": [],
+    "year": 2026,
+    "venue": "Advanced Retrieval\u2010Augmented Generation",
+    "type": "other",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1002/9781394374717.ch07"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.59350/q2pq3-0fv85",
+    "title": "Efficient Information Retrieval and Response Generation with Retrieval-Augmented Generation (RAG)",
+    "authors": [
+     "Wenyi Pi"
+    ],
+    "year": 2024,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>&lt;strong&gt; How to efficiently retrieve information for different applications &lt;/strong&gt; Author Wenyi Pi (ORCID: 0009-0002-2884-2771) This article aims to explore various ways in which Retrieval-Augmented Generation (RAG) can be utilised to retrieve information and generate responses effectively within the dialogue system. The rationale behind utilising RAG as well as potential ways in which it can be employed effectively will be covered.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.59350/q2pq3-0fv85"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.59350/r9dj1-zkx52",
+    "title": "Efficient Information Retrieval and Response Generation with Retrieval-Augmented Generation (RAG)",
+    "authors": [
+     "Wenyi Pi"
+    ],
+    "year": 2024,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>&lt;strong&gt; How to efficiently retrieve information for different applications &lt;/strong&gt; Author Wenyi Pi (ORCID: 0009-0002-2884-2771) This article aims to explore various ways in which Retrieval-Augmented Generation (RAG) can be utilised to retrieve information and generate responses effectively within the dialogue system. The rationale behind utilising RAG as well as potential ways in which it can be employed effectively will be covered.</jats:p>",
+    "cited_by": 1,
+    "url": "https://doi.org/10.59350/r9dj1-zkx52"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.7634816",
+    "title": "An Enhanced Table Retrieval-Augmented Generation Method for Intelligent Question Answering over Large and Complex Enterprise Spreadsheets",
+    "authors": [
+     "Mingzhe Li",
+     "Shanshan Wang"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>To address the limitations of large language models (LLMs) in processing large and complex spreadsheets, including restricted context length, loss of tabular structure, and unstable numerical computation, this study develops an enhanced table retrieval-augmented generation (TableRAG) method. The main artificial-intelligence contribution is a cell-level structured representation that converts raw Excel worksheets into JavaScript Object Notation Lines (JSONL) records while explicitly preserving row context, multi-level column-header paths, merged-cell semantics, formulas, units, and numerical values. The original Schema and Cell retrieval workflow is retained, while a financial-domain prompt template guides the model in identifying financial indicators, reporting periods, organizational scopes, comparison bases, filtering conditions, and required calculations. The engineering application targets enterprise financial spreadsheets with merged cells and hierarchical headers, enabling information retrieval, conditional filtering, aggregation, ratio analysis, and rate-of-change calculation without providing the complete spreadsheet to the LLM. On the TabFact benchmark, the enhanced method with GPT-5.4 achieves 88.17% accuracy. On a 641 \u00d7 382 financial spreadsheet, all 30 test questions are judged correct, with an average score of 4.8 out of 5. On a second 2,232 \u00d7 52 financial spreadsheet, the method achieves 100% accuracy with an average execution time of 20.29 s. The results demonstrate that cell-level JSONL representation, complex-header preprocessing, and financial-domain prompting substantially improve the accuracy and robustness of question answering over large and structurally irregular spreadsheets.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.2139/ssrn.7634816"
+   }
+  ]
+ },
+ "colnest": {
+  "queries": {
+   "arxiv": "ti:\"ColNEST\"",
+   "crossref": "ColNEST visually nested multimodal embedding document retrieval"
+  },
+  "arxiv": [],
+  "errors": {
+   "arxiv": "HTTP Error 429: Unknown Error"
+  },
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2023.findings-emnlp.604",
+    "title": "On Task-personalized Multimodal Few-shot Learning for Visually-rich Document Entity Retrieval",
+    "authors": [
+     "Jiayi Chen",
+     "Hanjun Dai",
+     "Bo Dai",
+     "Aidong Zhang",
+     "Wei Wei"
+    ],
+    "year": 2023,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.604"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2024.emnlp-main.373",
+    "title": "Unifying Multimodal Retrieval via Document Screenshot Embedding",
+    "authors": [
+     "Xueguang Ma",
+     "Sheng-Chieh Lin",
+     "Minghan Li",
+     "Wenhu Chen",
+     "Jimmy Lin"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 33,
+    "url": "https://doi.org/10.18653/v1/2024.emnlp-main.373"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.70675/ae1f48c5z2eddz4011zaa7dz71608d50660a",
+    "title": "Fuzzy multilevel graph embedding for recognition, indexing and retrieval of graphic document images",
+    "authors": [
+     "Muhammad Muzzamil Luqman"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "dissertation",
+    "abstract": "<jats:title>Apport des mod\u00e8les graphiques \u00e0 l'analyse et \u00e0 l'indexation d'images de documents</jats:title>\n                <jats:p xml:lang=\"fr\">Cette th\u00e8se aborde le probl\u00e8me du manque de performance des outils exploitant des repr\u00e9sentations\u00e0 base de graphes en reconnaissance des formes. Nous proposons de contribuer aux nouvellesm\u00e9thodes proposant de tirer partie, \u00e0 la fois, de la richesse des m\u00e9thodes structurelles et de la rapidit\u00e9 des m\u00e9thodes de reconnaissance de formes statistiques. Deux principales contributions sontpr\u00e9sent\u00e9es dans ce manuscrit. La premi\u00e8re correspond \u00e0 la proposition d'une nouvelle m\u00e9thode deprojection explicite de graphes proc\u00e9dant par analyse multi-facettes des graphes. Cette m\u00e9thodeeffectue une caract\u00e9risation des graphes suivant diff\u00e9rents niveaux qui correspondent, selon nous,aux point-cl\u00e9s des repr\u00e9sentations \u00e0 base de graphes. Il s'agit de capturer l'information port\u00e9epar un graphe au niveau global, au niveau structure et au niveau local ou \u00e9l\u00e9mentaire. Ces informationscaptur\u00e9es sont encapsul\u00e9s dans un vecteur de caract\u00e9ristiques num\u00e9riques employantdes histogrammes flous. La m\u00e9thode propos\u00e9e utilise, de plus, un m\u00e9canisme d'apprentissage nonsupervis\u00e9e pour adapter automatiquement ses param\u00e8tres en fonction de la base de graphes \u00e0traiter sans n\u00e9cessit\u00e9 de phase d'apprentissage pr\u00e9alable. La deuxi\u00e8me contribution correspond\u00e0 la mise en place d'une architecture pour l'indexation de masses de graphes afin de permettre,par la suite, la recherche de sous-graphes pr\u00e9sents dans cette base. Cette architecture utilise lam\u00e9thode pr\u00e9c\u00e9dente de projection explicite de graphes appliqu\u00e9e sur toutes les cliques d'ordre 2pouvant \u00eatre extraites des graphes pr\u00e9sents dans la base \u00e0 indexer afin de pouvoir les classifier.Cette classification permet de constituer l'index qui sert de base \u00e0 la description des graphes etdonc \u00e0 leur indexation en ne n\u00e9cessitant aucune base d'apprentissage pr\u00e9-\u00e9tiquet\u00e9es. La m\u00e9thodepropos\u00e9e est applicable \u00e0 de nombreux domaines, apportant la souplesse d'un syst\u00e8me de requ\u00eatepar l'exemple et la granularit\u00e9 des techniques d'extraction cibl\u00e9e (focused retrieval).</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.70675/ae1f48c5z2eddz4011zaa7dz71608d50660a"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.5220/0010710300003058",
+    "title": "Lbl2Vec: An Embedding-based Approach for Unsupervised Document Retrieval on Predefined Topics",
+    "authors": [
+     "Tim Schopf",
+     "Daniel Braun",
+     "Florian Matthes"
+    ],
+    "year": 2021,
+    "venue": "Proceedings of the 17th International Conference on Web Information Systems and Technologies",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 18,
+    "url": "https://doi.org/10.5220/0010710300003058"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.5220/0010822900003116",
+    "title": "EmBoost: Embedding Boosting to Learn Multilevel Abstract Text Representation for Document Retrieval",
+    "authors": [
+     "Tolgahan Cakaloglu",
+     "Xiaowei Xu",
+     "Roshith Raghavan"
+    ],
+    "year": 2022,
+    "venue": "Proceedings of the 14th International Conference on Agents and Artificial Intelligence",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.5220/0010822900003116"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.6426702",
+    "title": "Context or Tuning? Layer-Level Analysis of Embedding Degradation in Clinical Document Retrieval",
+    "authors": [
+     "Yngve Mikkelsen"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>&lt;p&gt;&lt;b&gt;&lt;span&gt;Objective: &lt;/span&gt;&lt;/b&gt;&lt;span&gt;To identify the transformer layers where embedding degradation occurs in clinical retrieval models, whether degradation results from model tuning or input context, and if post-hoc corrections can restore performance without retraining.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;&lt;span&gt;Materials and Methods: &lt;/span&gt;&lt;/b&gt;&lt;span&gt;Embeddings were derived from all hidden layers of nine transformer models (eleven configurations) across three clinical corpora using two query formats. Embedding geometry and retrieval performance (MRR@10) were evaluated at each layer. Type II ANOVA estimated factor contributions per layer. Four no-retraining interventions were assessed.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;&lt;span&gt;Results: &lt;/span&gt;&lt;/b&gt;&lt;span&gt;All configurations displayed a U-shaped performance curve with mid-layer collapse. General-purpose models expanded effective dimensionality 2.3\u20134.0\u00d7 versus 1.0\u20131.4\u00d7 for domain encoders. Model \u03b7\u00b2 dominated early layers (0.85) while corpus effects grew to 0.24 at the final layer (R\u00b2 = 0.85\u20130.98). ZCA whitening improved MRR@10 by +0.16 to +0.27. Cross-source model rankings across two independent validation corpora were near-identical (\u03c1 = 0.976, p &amp;lt; 0.001).&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;&lt;span&gt;Discussion: &lt;/span&gt;&lt;/b&gt;&lt;span&gt;Mid-layer collapse extends prior work on embedding anisotropy to clinical text. The BioLORD-2023 comparison aligns more with contrastive retrieval-focused training than domain-specific pretraining alone. Corpus-only whitening was effective on diverse clinical texts but not on structurally uniform corpora.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;&lt;span&gt;Conclusion: &lt;/span&gt;&lt;/b&gt;&lt;span&gt;Mid-layer collapse was observed across all tested configurations but was recoverable through final-layer geometric restructuring. Model rankings remained stable at 5\u00d7 scale. These findings support final-layer embeddings as default, participation ratio as a geometry diagnostic, and corpus-only whitening as a conditional intervention on heterogeneous clinical text.&lt;/span&gt;&lt;/p&gt;</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.2139/ssrn.6426702"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2026.magmar-main.11",
+    "title": "KoViDoRe: A Benchmark for Korean Visual Document Retrieval",
+    "authors": [
+     "Yongbin Choi",
+     "Yongwoo Song",
+     "Mujeen Sung"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 2nd Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2026)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.18653/v1/2026.magmar-main.11"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1117/12.873685",
+    "title": "Automatic segmentation of subfigure image panels for multimodal biomedical document retrieval",
+    "authors": [
+     "Beibei Cheng",
+     "Sameer Antani",
+     "R. Joe Stanley",
+     "George R. Thoma"
+    ],
+    "year": 2011,
+    "venue": "SPIE Proceedings",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 16,
+    "url": "https://doi.org/10.1117/12.873685"
+   }
+  ]
+ },
+ "vidore": {
+  "queries": {
+   "arxiv": "all:\"ViDoRe\" AND all:\"benchmark\"",
+   "crossref": "ViDoRe visual document retrieval benchmark"
+  },
+  "arxiv": [],
+  "errors": {
+   "arxiv": "HTTP Error 429: Unknown Error"
+  },
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2026.magmar-main.11",
+    "title": "KoViDoRe: A Benchmark for Korean Visual Document Retrieval",
+    "authors": [
+     "Yongbin Choi",
+     "Yongwoo Song",
+     "Mujeen Sung"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 2nd Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2026)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.18653/v1/2026.magmar-main.11"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/icdarw.2019.30057",
+    "title": "Document Image Retrieval Based on Visual Saliency Maps",
+    "authors": [
+     "Fahimeh Alaei",
+     "Alireza Alaei",
+     "Umapada Pal",
+     "Michael Blumenstein"
+    ],
+    "year": 2019,
+    "venue": "2019 International Conference on Document Analysis and Recognition Workshops (ICDARW)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/icdarw.2019.30057"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/vl.1997.626581",
+    "title": "GUIDO: visualizing document retrieval",
+    "authors": [
+     "A. Nuchprayoon",
+     "R.R. Korfhage"
+    ],
+    "year": null,
+    "venue": "Proceedings. 1997 IEEE Symposium on Visual Languages (Cat. No.97TB100180)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1109/vl.1997.626581"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.52202/079017-2145",
+    "title": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+    "authors": [
+     "Yulong Hui",
+     "Yao Lu",
+     "Huanchen Zhang"
+    ],
+    "year": 2024,
+    "venue": "Advances in Neural Information Processing Systems 37",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 17,
+    "url": "https://doi.org/10.52202/079017-2145"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.21203/rs.3.rs-10707422/v1",
+    "title": "Visual, OCR-Text, and Hybrid Evidence Retrieval for Document Visual Question Answering: A Controlled Failure Analysis",
+    "authors": [
+     "Richmond Ampah-Mensah",
+     "Muhammad Munsarif",
+     "Muhammad Sam`an"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<title>Abstract</title>\n                <p>Purpose\n Document visual question answering (DocVQA) systems can fail because relevant evidence is not retrieved or because the answer generator fails to use correctly retrieved evidence. This study investigates how lexical, dense text, visual, and hybrid page retrieval affect evidence selection and downstream answer quality, and whether correct-page access resolves remaining generation errors.\nMethods\n BM25, BGE-M3, MiniLM, ColQwen, and reciprocal-rank fusion were evaluated on a document-disjoint DocVQA protocol. Fusion parameters were selected using development data and fixed before final evaluation. Answer generation used Qwen2.5-VL under matched evidence conditions from BM25, ColQwen, fusion, and oracle pages. Retrieval performance was additionally evaluated on MP-DocVQA without retuning.\nResults\n ColQwen achieved the strongest page-retrieval performance on DocVQA, with Recall@1 of 0.559 compared with 0.335 for BM25 and 0.274 for BGE-M3. Reciprocal-rank fusion did not improve over ColQwen. Better retrieved evidence translated into higher answer quality, with ANLS increasing from 0.127 using BM25 pages to 0.213 using ColQwen pages. Oracle evidence further increased ANLS to 0.395, showing that substantial answer-generation errors remained even when the annotated page was available. The visual retrieval advantage also transferred to MP-DocVQA.\nConclusion\n Visual page retrieval improved evidence selection and downstream answering in the evaluated settings, but retrieval alone did not resolve DocVQA errors. Fixed fusion provided no additional benefit, while the oracle results show that answer generation remains an important source of failure.</p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.21203/rs.3.rs-10707422/v1"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1007/978-1-4613-1295-6_6",
+    "title": "Document Retrieval",
+    "authors": [
+     "Qianhong Liu",
+     "Peter A. Ng"
+    ],
+    "year": 1996,
+    "venue": "Document Processing and Retrieval",
+    "type": "book-chapter",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1007/978-1-4613-1295-6_6"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1007/springerreference_64824",
+    "title": "Document Retrieval",
+    "authors": [],
+    "year": null,
+    "venue": "SpringerReference",
+    "type": "reference-entry",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1007/springerreference_64824"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.26599/cvm.2025.9450322",
+    "title": "Script-to-Storyboard: A New Contextual Retrieval Dataset and Benchmark",
+    "authors": [
+     "Xi Tian",
+     "Yong-Liang Yang",
+     "Qi Wu"
+    ],
+    "year": 2025,
+    "venue": "Computational Visual Media",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 3,
+    "url": "https://doi.org/10.26599/cvm.2025.9450322"
+   }
+  ]
+ },
+ "charxiv": {
+  "queries": {
+   "arxiv": "ti:\"CharXiv\"",
+   "crossref": "CharXiv chart understanding reasoning benchmark"
+  },
+  "arxiv": [],
+  "errors": {
+   "arxiv": "HTTP Error 429: Unknown Error"
+  },
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.1109/tip.2026.3725719/mm1",
+    "title": "Advancing Scientific Chart Understanding: The SCI-CQA Benchmark and Beyond_supp1-3725719.pdf",
+    "authors": [
+     "Kun Ding"
+    ],
+    "year": null,
+    "venue": "",
+    "type": "component",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/tip.2026.3725719/mm1"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.52202/079017-3609",
+    "title": "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+    "authors": [
+     "Zirui Wang",
+     "Mengzhou Xia",
+     "Luxi He",
+     "Howard Chen",
+     "Yitao Liu",
+     "Richard Zhu",
+     "Kaiqu Liang",
+     "Xindi Wu",
+     "Haotian Liu",
+     "Sadhika Malladi",
+     "Alexis Chevalier",
+     "Sanjeev Arora",
+     "Danqi Chen"
+    ],
+    "year": 2024,
+    "venue": "Advances in Neural Information Processing Systems 37",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 34,
+    "url": "https://doi.org/10.52202/079017-3609"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/v1/2025.findings-emnlp.721",
+    "title": "2Columns1Row: A Russian Benchmark for Textual and Multimodal Table Understanding and Reasoning",
+    "authors": [
+     "Vildan Saburov",
+     "Daniil Vodolazsky",
+     "Danil Sazanakov",
+     "Alena Fenogenova"
+    ],
+    "year": 2025,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.721"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.4703693",
+    "title": "Dcqa: Document-Level Chart Question Answering Towards Complex Reasoning and Common-Sense Understanding",
+    "authors": [
+     "Anran Wu",
+     "Luwei Xiao",
+     "XingJiao Wu",
+     "Shuwen Yang",
+     "Junjie Xu",
+     "Zisong Zhuang",
+     "Nian Xie",
+     "Cheng Jin",
+     "Liang He"
+    ],
+    "year": 2024,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.2139/ssrn.4703693"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1016/j.cviu.2026.104745",
+    "title": "GoT-CQA: Graph-of-Thought guided compositional reasoning for chart question answering",
+    "authors": [
+     "Lingling Zhang",
+     "Muye Huang",
+     "Qianying Wang",
+     "Yaxian Wang",
+     "Wenjun Wu",
+     "Ziqi He",
+     "Jun Liu"
+    ],
+    "year": 2026,
+    "venue": "Computer Vision and Image Understanding",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 1,
+    "url": "https://doi.org/10.1016/j.cviu.2026.104745"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/2026.findings-emnlp.144",
+    "title": "OCR-MetaReasoning Benchmark: Evaluating the Meta-Reasoning Ability of MLLMs in Text-Rich Image Understanding",
+    "authors": [
+     "Gengxu Li",
+     "Yuan Wu",
+     "Yi Chang"
+    ],
+    "year": 2026,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/2026.findings-emnlp.144"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1109/tip.2026.3725719",
+    "title": "Advancing Scientific Chart Understanding: The SCI-CQA Benchmark and Beyond",
+    "authors": [
+     "Lingdong Shen",
+     "Qigqi",
+     "Kun Ding",
+     "Jian Xu",
+     "Gaofeng Meng",
+     "Shiming Xiang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Image Processing",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1109/tip.2026.3725719"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.7717/peerj-cs.2688/supp-4",
+    "title": "Supplemental Information 4: The error bar chart for the 9 sets of noisy multitask benchmark test functions.",
+    "authors": [],
+    "year": null,
+    "venue": "",
+    "type": "component",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.7717/peerj-cs.2688/supp-4"
+   }
+  ]
+ },
+ "duedoc": {
+  "queries": {
+   "arxiv": "ti:\"DUDE\" AND all:\"document\"",
+   "crossref": "DUDE document understanding dataset evaluation"
+  },
+  "arxiv": [],
+  "errors": {
+   "arxiv": "HTTP Error 429: Unknown Error"
+  },
+  "crossref": [
+   {
+    "channel": "crossref",
+    "doi": "10.1109/iccv51070.2023.01789",
+    "title": "Document Understanding Dataset and Evaluation (DUDE)",
+    "authors": [
+     "Jordy Van Landeghem",
+     "Rafa\u0142 Powalski",
+     "Rub\u00e8n Tito",
+     "Dawid Jurkiewicz",
+     "Matthew Blaschko",
+     "\u0141ukasz Borchmann",
+     "Micka\u00ebl Coustaty",
+     "Sien Moens",
+     "Micha\u0142 Pietruszka",
+     "Bertrand Ackaert",
+     "Tomasz Stanis\u0142awek",
+     "Pawe\u0142 J\u00f3ziak",
+     "Ernest Valveny"
+    ],
+    "year": 2023,
+    "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 68,
+    "url": "https://doi.org/10.1109/iccv51070.2023.01789"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1037/e510992011-001",
+    "title": "Understanding Behavior in Organizations",
+    "authors": [
+     ""
+    ],
+    "year": 1978,
+    "venue": "PsycEXTRA Dataset",
+    "type": "dataset",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1037/e510992011-001"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.18653/2026.docinsights-1.28",
+    "title": "MaDOVE: a Dataset for Multilingual Document VQA Evaluation",
+    "authors": [
+     "Elio Musacchio",
+     "Lucia Siciliani",
+     "Pierpaolo Basile",
+     "Giovanni Semeraro",
+     "Mark Federico Zampedroni",
+     "Asia Beatrice Uboldi"
+    ],
+    "year": 2026,
+    "venue": "The Proceedings of Workshop on Document Intelligence and Understanding",
+    "type": "proceedings-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.18653/2026.docinsights-1.28"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1007/s10032-026-00601-w",
+    "title": "IndianPCL: A Dataset for Multimodal Legal Document Understanding",
+    "authors": [
+     "Sagar Chakraborty",
+     "Neeraj Boddeda",
+     "Aditya Palakurty",
+     "Gaurav Harit",
+     "Saptarshi Ghosh"
+    ],
+    "year": 2026,
+    "venue": "International Journal on Document Analysis and Recognition (IJDAR)",
+    "type": "journal-article",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1007/s10032-026-00601-w"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1037/e401522005-069",
+    "title": "State Leadership Conference: Document, Document, Document",
+    "authors": [
+     "Jamie Chamberlin"
+    ],
+    "year": 2005,
+    "venue": "PsycEXTRA Dataset",
+    "type": "dataset",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1037/e401522005-069"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1037/e505042006-007",
+    "title": "Debate: Designated Driver: Expect the Best, Prepare for the Worst: Promote Designated Driver Programs",
+    "authors": [
+     "Kim Dude"
+    ],
+    "year": 1995,
+    "venue": "PsycEXTRA Dataset",
+    "type": "dataset",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1037/e505042006-007"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.2139/ssrn.7527718",
+    "title": "EACS Dataset 4,407 Real-World Bangladeshi Admit Card Images with Field-level Ground Truth for OCR and Document Understanding",
+    "authors": [
+     "Baizid  MD Ashadzzaman"
+    ],
+    "year": 2026,
+    "venue": "",
+    "type": "posted-content",
+    "abstract": "<jats:p>Educational institutions in South Asia issue large volumes of machine-printed examination admit cards, yet no openly available corpus exists for research on optical character recognition (OCR) or automated verification of such documents. This data paper presents the EACS (Exam Admit Card) Dataset: 4,407 admit card images collected between 2022 and 2025 from the NationalSchoolIntra enterprise resource planning platform operated by Al Quran Academy, Chattogram, Bangladesh. Each record is a standardised 800 \u00d7 460 pixel JPEG rendering of one card and carries nine textual fields (student name, father's name, mother's name, institutional student identifier, examination roll number, class, session, group and semester) together with the list of registered subjects and the scheduled examination date. A companion metadata file supplies a verified ground-truth transcription for every field of every card, so that recognition error can be measured at character, word and field level. The images were exported from the live production system rather than generated synthetically, and consequently retain the typographic, alignment and print-quality variation that synthetic corpora typically omit, a property that materially affects measured OCR accuracy. Student photographs, contact details and signatures were removed, and all personal names and identifiers were systematically randomised while preserving their structural and linguistic characteristics, allowing the corpus to be distributed openly. The dataset is released on Mendeley Data (version 1, doi: 10.17632/mvzdksjzvb.1). Intended applications include OCR benchmarking, document layout analysis, key-information extraction from administrative documents, and the development of tamper-detection mechanisms for academic credentials.</jats:p>",
+    "cited_by": 0,
+    "url": "https://doi.org/10.2139/ssrn.7527718"
+   },
+   {
+    "channel": "crossref",
+    "doi": "10.1037/e619772007-001",
+    "title": "What We Have Learned From the AIDS Evaluation of Street Outreach Projects: A Summary Document",
+    "authors": [],
+    "year": 1998,
+    "venue": "PsycEXTRA Dataset",
+    "type": "dataset",
+    "abstract": "",
+    "cited_by": 0,
+    "url": "https://doi.org/10.1037/e619772007-001"
+   }
+  ]
+ }
+}

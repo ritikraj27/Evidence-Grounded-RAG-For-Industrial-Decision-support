@@ -1,0 +1,141 @@
+[
+ {
+  "id": "2401.15884",
+  "title": "Corrective Retrieval Augmented Generation",
+  "authors": [
+   "Shi-Qi Yan",
+   "Jia-Chen Gu",
+   "Yun Zhu",
+   "Zhen-Hua Ling"
+  ],
+  "published": "2024-01-29",
+  "comment": "Update results, add more analysis, and fix typos",
+  "journal_ref": "",
+  "doi": "",
+  "abstract": "Large language models (LLMs) inevitably exhibit hallucinations since the accuracy of generated texts cannot be secured solely by the parametric knowledge they encapsulate. Although retrieval-augmented generation (RAG) is a practicable complement to LLMs, it relies heavily on the relevance of retrieved documents, raising concerns about how the model behaves if retrieval goes wrong. To this end, we propose the Corrective Retrieval Augmented Generation (CRAG) to improve the robustness of generation. Specifically, a lightweight retrieval evaluator is designed to assess the overall quality of retrieved documents for a query, returning a confidence degree based on which different knowledge retrieval actions can be triggered. Since retrieval from static and limited corpora can only return sub-optimal documents, large-scale web searches are utilized as an extension for augmenting the retrieval results. Besides, a decompose-then-recompose algorithm is designed for retrieved documents to selectively focus on key information and filter out irrelevant information in them. CRAG is plug-and-play and can be seamlessly coupled with various RAG-based approaches. Experiments on four datasets covering short- and long-form generation tasks show that CRAG can significantly improve the performance of RAG-based approaches."
+ },
+ {
+  "id": "2305.06983",
+  "title": "Active Retrieval Augmented Generation",
+  "authors": [
+   "Zhengbao Jiang",
+   "Frank F. Xu",
+   "Luyu Gao",
+   "Zhiqing Sun",
+   "Qian Liu",
+   "Jane Dwivedi-Yu",
+   "Yiming Yang",
+   "Jamie Callan",
+   "Graham Neubig"
+  ],
+  "published": "2023-05-11",
+  "comment": "EMNLP 2023",
+  "journal_ref": "",
+  "doi": "",
+  "abstract": "Despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output. Augmenting LMs by retrieving information from external knowledge resources is one promising solution. Most existing retrieval augmented LMs employ a retrieve-and-generate setup that only retrieves information once based on the input. This is limiting, however, in more general scenarios involving generation of long texts, where continually gathering information throughout generation is essential. In this work, we provide a generalized view of active retrieval augmented generation, methods that actively decide when and what to retrieve across the course of the generation. We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens. We test FLARE along with baselines comprehensively over 4 long-form knowledge-intensive generation tasks/datasets. FLARE achieves superior or competitive performance on all tasks, demonstrating the effectiveness of our method. Code and datasets are available at https://github.com/jzbjyb/FLARE."
+ },
+ {
+  "id": "2410.21819",
+  "title": "Self-Preference Bias in LLM-as-a-Judge",
+  "authors": [
+   "Koki Wataoka",
+   "Tsubasa Takahashi",
+   "Ryokan Ri"
+  ],
+  "published": "2024-10-29",
+  "comment": "Accepted at NeurIPS 2024 Safe Generative AI Workshop",
+  "journal_ref": "",
+  "doi": "",
+  "abstract": "Automated evaluation leveraging large language models (LLMs), commonly referred to as LLM evaluators or LLM-as-a-judge, has been widely used in measuring the performance of dialogue systems. However, the self-preference bias in LLMs has posed significant risks, including promoting specific styles or policies intrinsic to the LLMs. Despite the importance of this issue, there is a lack of established methods to measure the self-preference bias quantitatively, and its underlying causes are poorly understood. In this paper, we introduce a novel quantitative metric to measure the self-preference bias. Our experimental results demonstrate that GPT-4 exhibits a significant degree of self-preference bias. To explore the causes, we hypothesize that LLMs may favor outputs that are more familiar to them, as indicated by lower perplexity. We analyze the relationship between LLM evaluations and the perplexities of outputs. Our findings reveal that LLMs assign significantly higher evaluations to outputs with lower perplexity than human evaluators, regardless of whether the outputs were self-generated. This suggests that the essence of the bias lies in perplexity and that the self-preference bias exists because LLMs prefer texts more familiar to them."
+ },
+ {
+  "id": "2310.11511",
+  "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+  "authors": [
+   "Akari Asai",
+   "Zeqiu Wu",
+   "Yizhong Wang",
+   "Avirup Sil",
+   "Hannaneh Hajishirzi"
+  ],
+  "published": "2023-10-17",
+  "comment": "30 pages, 2 figures, 12 tables",
+  "journal_ref": "",
+  "doi": "",
+  "abstract": "Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues. However, indiscriminately retrieving and incorporating a fixed number of retrieved passages, regardless of whether retrieval is necessary, or passages are relevant, diminishes LM versatility or can lead to unhelpful response generation. We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection. Our framework trains a single arbitrary LM that adaptively retrieves passages on-demand, and generates and reflects on retrieved passages and its own generations using special tokens, called reflection tokens. Generating reflection tokens makes the LM controllable during the inference phase, enabling it to tailor its behavior to diverse task requirements. Experiments show that Self-RAG (7B and 13B parameters) significantly outperforms state-of-the-art LLMs and retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA, reasoning and fact verification tas"
+ },
+ {
+  "id": "2403.14403",
+  "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+  "authors": [
+   "Soyeong Jeong",
+   "Jinheon Baek",
+   "Sukmin Cho",
+   "Sung Ju Hwang",
+   "Jong C. Park"
+  ],
+  "published": "2024-03-21",
+  "comment": "NAACL 2024",
+  "journal_ref": "",
+  "doi": "",
+  "abstract": "Retrieval-Augmented Large Language Models (LLMs), which incorporate the non-parametric knowledge from external knowledge bases into LLMs, have emerged as a promising approach to enhancing response accuracy in several tasks, such as Question-Answering (QA). However, even though there are various approaches dealing with queries of different complexities, they either handle simple queries with unnecessary computational overhead or fail to adequately address complex multi-step queries; yet, not all user requests fall into only one of the simple or complex categories. In this work, we propose a novel adaptive QA framework, that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity. Also, this selection process is operationalized with a classifier, which is a smaller LM trained to predict the complexity level of incoming queries with automatically collected labels, obtained from actual predicted outcomes of models and inherent inductive biases in datasets. This approach offers a balanced strategy, seamlessly adapting between the iterative and single-step retrieval-augmented LLMs, as well as the no-retrieval methods, in response to a range of query complexities. We validate our model on a set of open-domain QA datasets, covering multiple query complexities, and show that ours enha"
+ },
+ {
+  "id": "2309.17493",
+  "error": "ERROR: arXiv has no paper with id '2309.17493'"
+ },
+ {
+  "id": "2212.08037",
+  "title": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+  "authors": [
+   "Bernd Bohnet",
+   "Vinh Q. Tran",
+   "Pat Verga",
+   "Roee Aharoni",
+   "Daniel Andor",
+   "Livio Baldini Soares",
+   "Massimiliano Ciaramita",
+   "Jacob Eisenstein",
+   "Kuzman Ganchev",
+   "Jonathan Herzig",
+   "Kai Hui",
+   "Tom Kwiatkowski",
+   "Ji Ma",
+   "Jianmo Ni",
+   "Lierni Sestorain Saralegui",
+   "Tal Schuster",
+   "William W. Cohen",
+   "Michael Collins",
+   "Dipanjan Das",
+   "Donald Metzler",
+   "Slav Petrov",
+   "Kellie Webster"
+  ],
+  "published": "2022-12-15",
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "abstract": "Large language models (LLMs) have shown impressive results while requiring little or no direct supervision. Further, there is mounting evidence that LLMs may have potential in information-seeking scenarios. We believe the ability of an LLM to attribute the text that it generates is likely to be crucial in this setting. We formulate and study Attributed QA as a key first step in the development of attributed LLMs. We propose a reproducible evaluation framework for the task and benchmark a broad set of architectures. We take human annotations as a gold standard and show that a correlated automatic metric is suitable for development. Our experimental work gives concrete answers to two key questions (How to measure attribution?, and How well do current state-of-the-art methods perform on attribution?), and give some hints as to how to address a third (How to build LLMs with attribution?)."
+ },
+ {
+  "id": "2404.16130",
+  "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+  "authors": [
+   "Darren Edge",
+   "Ha Trinh",
+   "Newman Cheng",
+   "Joshua Bradley",
+   "Alex Chao",
+   "Apurva Mody",
+   "Steven Truitt",
+   "Dasha Metropolitansky",
+   "Robert Osazuwa Ness",
+   "Jonathan Larson"
+  ],
+  "published": "2024-04-24",
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "abstract": "The use of retrieval-augmented generation (RAG) to retrieve relevant information from an external knowledge source enables large language models (LLMs) to answer questions over private and/or previously unseen document collections. However, RAG fails on global questions directed at an entire text corpus, such as \"What are the main themes in the dataset?\", since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task. Prior QFS methods, meanwhile, do not scale to the quantities of text indexed by typical RAG systems. To combine the strengths of these contrasting methods, we propose GraphRAG, a graph-based approach to question answering over private text corpora that scales with both the generality of user questions and the quantity of source text. Our approach uses an LLM to build a graph index in two stages: first, to derive an entity knowledge graph from the source documents, then to pregenerate community summaries for all groups of closely related entities. Given a question, each community summary is used to generate a partial response, before all partial responses are again summarized in a final response to the user. For a class of global sensemaking questions over datasets in the 1 million token range, we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and divers"
+ }
+]

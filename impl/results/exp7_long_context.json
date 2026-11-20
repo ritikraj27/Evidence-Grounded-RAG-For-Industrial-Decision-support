@@ -1,0 +1,46 @@
+{
+  "seed": 20261118,
+  "summary": {
+    "corpus": {
+      "corpus_chunks": 2383,
+      "corpus_documents": 46,
+      "corpus_tokens": 680417,
+      "rag_context_tokens_mean": 2399.4,
+      "rag_context_tokens_mean_all_queries": 2033.4,
+      "rag_context_tokens_median": 2038.0,
+      "rag_context_chunks_mean": 9.55,
+      "question_tokens_mean": 11.3,
+      "token_ratio_long_over_rag": 282.3,
+      "token_ratio_long_over_rag_all_queries": 332.8,
+      "corpus_fraction_retrieved": 0.00344,
+      "context_window_fits": {
+        "claude-sonnet-4-5 / claude-opus-4-5 (1M)": true,
+        "a 256K-window model": false,
+        "a 128K-window model (most hosted models)": false,
+        "a 32K-window open model": false
+      },
+      "tokenizer": "the corpus's own embedding tokenizer (BGE-M3 / XLM-R)"
+    },
+    "retrieval_proxy": {
+      "n_queries": 132,
+      "sampled": false,
+      "top10_wilson_low": 0.8387814317373715,
+      "top10_wilson_high": 0.9415391769715952,
+      "n_with_gold_found": 132,
+      "candidate_set_size": 2383,
+      "gold_in_top10": 0.9015151515151515,
+      "gold_in_top20": 0.9318181818181818,
+      "gold_in_top50": 0.9696969696969697,
+      "median_gold_rank": 1.0,
+      "mean_gold_rank": 12.977272727272727,
+      "seconds": 8267.8
+    },
+    "generative": {
+      "ran": false,
+      "reason": "no API credential reachable from this machine: ANTHROPIC_API_KEY and MTP_LLM_API_KEY are unset, the Claude Code CLI is not logged in, and no local generative model is installed. The cost half and the retrieval-side proxy are reported; the quality half is not run and is not estimated."
+    },
+    "n_answerable": 132,
+    "n_unanswerable": 144
+  },
+  "retrieval_placement": "pre_rerank"
+}

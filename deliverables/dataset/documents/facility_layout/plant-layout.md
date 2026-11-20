@@ -1,0 +1,68 @@
+<!-- category: facility_layout -->
+# Plant layout
+
+Layout study for a manufacturing plant
+
+.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+.mw-empty-elt+.ambox,.mw-parser-output .ambox+.mw-empty-elt+.mw-empty-elt+.ambox,.mw-parser-output .ambox+.mw-empty-elt+.mw-empty-elt+.mw-empty-elt+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+
+|  |  |
+| --- | --- |
+| [icon](/wiki/File:Question_book-new.svg) | This article **needs [more citations](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](/wiki/Special:EditPage/Plant_layout_study "Special:EditPage/Plant layout study") by [adding citations to reliable sources](/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and [removed](/wiki/Wikipedia:Verifiability#Burden_of_evidence "Wikipedia:Verifiability"). 
+
+[![](//thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Lackawanna_steel_plant_1903.png/250px-Lackawanna_steel_plant_1903.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](/wiki/File:Lackawanna_steel_plant_1903.png)
+
+Lackawanna steel plant, 1903
+
+A **plant layout study** is an [engineering](/wiki/Engineering "Engineering") study used to analyze different physical configurations for a [manufacturing plant](/wiki/Manufacturing_plant "Manufacturing plant").[[1]](#cite_note-1) It is also known as facilities planning and layout.
+
+## Overview
+
+[[edit](/w/index.php?title=Plant_layout_study&veaction=edit&section=1 "Edit section: Overview") | [edit source](/w/index.php?title=Plant_layout_study&action=edit&section=1 "Edit section's source code: Overview")]
+
+The ability to design and operate manufacturing facilities that can quickly and effectively adapt to changing technological and market requirements is becoming increasingly important to the success of any manufacturing organization. In the face of shorter product life cycles, higher product variety, increasingly unpredictable demand, and shorter delivery times, manufacturing facilities dedicated to a single product line cannot be cost effective any longer. Investment efficiency now requires that manufacturing facilities be able to shift quickly from one product line to another without major retooling, resource reconfiguration, or replacement of equipment.
+
+Investment efficiency also requires that manufacturing facilities be able to simultaneously make several products so that smaller volume products can be combined in a single facility and that fluctuations in product mixes and volumes can be more easily accommodated. In short, manufacturing facilities must be able to exhibit high levels of flexibility and robustness despite significant changes in their operating requirements.
+
+In industry sectors, it is important to manufacture the products which have good quality and meet customers’ demand. This action could be conducted under existing resources such as employees, machines and other facilities. However, plant layout improvement, could be one of the tools to response to increasing industrial productivity. Plant layout design has become a fundamental basis of today’s industrial plants which can influence parts of work efficiency. It is needed to appropriately plan and position employees, materials, machines, equipment, and other manufacturing supports and facilities to create the most effective plant layout.
+
+The intended [products](/wiki/Product_(business) "Product (business)") to be manufactured influence the choice of layout.
+
+## See also
+
+[[edit](/w/index.php?title=Plant_layout_study&veaction=edit&section=2 "Edit section: See also") | [edit source](/w/index.php?title=Plant_layout_study&action=edit&section=2 "Edit section's source code: See also")]
+
+- [Routing diagram](/wiki/Routing_diagram "Routing diagram")
+
+## References
+
+[[edit](/w/index.php?title=Plant_layout_study&veaction=edit&section=3 "Edit section: References") | [edit source](/w/index.php?title=Plant_layout_study&action=edit&section=3 "Edit section's source code: References")]
+
+.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}body.skin-vector-2022 .mw-parser-output .reflist-columns-2{column-width:27em}body.skin-vector-2022 .mw-parser-output .reflist-columns-3{column-width:22.5em}.mw-parser-output .references[data-mw-group=upper-alpha]{list-style-type:upper-alpha}.mw-parser-output .references[data-mw-group=upper-roman]{list-style-type:upper-roman}.mw-parser-output .references[data-mw-group=lower-alpha]{list-style-type:lower-alpha}.mw-parser-output .references[data-mw-group=lower-greek]{list-style-type:lower-greek}.mw-parser-output .references[data-mw-group=lower-roman]{list-style-type:lower-roman}.mw-parser-output div.reflist-liststyle-upper-alpha .references{list-style-type:upper-alpha}.mw-parser-output div.reflist-liststyle-upper-roman .references{list-style-type:upper-roman}.mw-parser-output div.reflist-liststyle-lower-alpha .references{list-style-type:lower-alpha}.mw-parser-output div.reflist-liststyle-lower-greek .references{list-style-type:lower-greek}.mw-parser-output div.reflist-liststyle-lower-roman .references{list-style-type:lower-roman}
+
+1. **[^](#cite_ref-1)** *Systematic Layout Planning*, Muther, Cahners, 1973
+
+## Further reading
+
+[[edit](/w/index.php?title=Plant_layout_study&veaction=edit&section=4 "Edit section: Further reading") | [edit source](/w/index.php?title=Plant_layout_study&action=edit&section=4 "Edit section's source code: Further reading")]
+
+- Moran, Sean. Process Plant Layout . Second edition. Oxford, UK: Butterworth-Heinemann, 2016
+- Carrie, A. S. "Numerical taxonomy applied to group technology and plant layout." *THE INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH* 11.4 (1973): 399-416.
+- Francis, R. L. and J. A. White, *Facility Layout and Location: An Analytical Approach,* Prentice Hall, 2/E, Englewood Cliffs, NJ, 1993.
+- James Mendon Moore, *Plant layout and design.* Prentice Hall, 1962.
+- Reed, Ruddell. *Plant layout: Factors, principles, and techniques.* RD Irwin, 1961.
+- Rosenblatt, Meir J. "The dynamics of plant layout." *Management Science* 32.1 (1986): 76-86.
+- Yang, Taho, and Chih-Ching Hung. "Multiple-attribute decision making methods for plant layout design problem." *Robotics and computer-integrated manufacturing* 23.1 (2007): 126-137.
+
+## External links
+
+[[edit](/w/index.php?title=Plant_layout_study&veaction=edit&section=5 "Edit section: External links") | [edit source](/w/index.php?title=Plant_layout_study&action=edit&section=5 "Edit section's source code: External links")]
+
+- @media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img[src\*="Wiktionary-logo-en-v2.svg"]{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img[src\*="Wiktionary-logo-en-v2.svg"]{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}[![Wikimedia Commons logo](//thumb.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail)](/wiki/File:Commons-logo.svg) Media related to [Plant layout study](https://commons.wikimedia.org/wiki/Category:Plant_layout_study "commons:Category:Plant layout study") at Wikimedia Commons
+
+.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:"\a0 · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox-styles+.navbox,.mw-parser-output .navbox+span.mw-empty-elt+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd;color:inherit}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf;color:inherit}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf;color:inherit}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff;color:inherit}.mw-parser-output .navbox-even{background-color:#f7f7f7;color:inherit}.mw-parser-output .navbox-odd{background-color:transparent;color:inherit}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+
+| [Authority control databases](/wiki/Help:Authority_control "Help:Authority control") [Edit this at Wikidata](https://www.wikidata.org/wiki/Q278115#identifiers "Edit this at Wikidata") | |
+| --- | --- |
+| International | - [GND](https://d-nb.info/gnd/4072823-7) |
+| National | - [United States](https://id.loc.gov/authorities/sh85102758) - [Japan](https://id.ndl.go.jp/auth/ndlna/00566920) - [Israel](https://www.nli.org.il/en/authorities/987007553336405171) |
+| Other | - [Yale LUX](https://lux.collections.yale.edu/view/concept/9a7b36f8-1489-48d4-a5d2-e1b4310ff180) |

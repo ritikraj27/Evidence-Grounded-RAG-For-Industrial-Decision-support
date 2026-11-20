@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<DIV6 N="P" TYPE="SUBPART" VOLUME="5" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-29/part-1910/subpart-P&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;29 CFR Part 1910 Subpart P&amp;quot;}">
+<HEAD>Subpart P&#x2014;Hand and Portable Powered Tools and Other Hand-Held Equipment</HEAD>
+<AUTH>
+<HED>Authority:</HED><PSPACE>Sections 4, 6, and 8 of the Occupational Safety and Health Act of 1970 (29 U.S.C. 653, 655, 657); Secretary of Labor's Order No. 12-71 (36 FR 8754), 8-76 (41 FR 25059), 9-83 (48 FR 35736), 1-90 (55 FR 9033), or 5-2007 (72 FR 31159), as applicable; 29 CFR part 1911.
+</PSPACE><P>Section 1910.243 also issued under 29 CFR part 1910.
+</P></AUTH>
+<DIV8 N="1910.241" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-29/section-1910.241&quot;,&quot;citation&quot;:&quot;29 CFR 1910.241&quot;}">
+<HEAD>&#xA7; 1910.241 Definitions.</HEAD>
+<P>As used in this subpart:</P>
+<P>(a) <I>Explosive-actuated fastening tool terms</I>&#x2014;(1) <I>Hammer-operated piston tool</I>&#x2014;<I>low-velocity type.</I> A tool which, by means of a heavy mass hammer supplemented by a load, moves a piston designed to be captive to drive a stud, pin, or fastener into a work surface, always starting the fastener at rest and in contact with the work surface. It shall be so designed that when used with any load that accurately chambers in it and that is commercially available at the time the tool is submitted for approval, it will not cause such stud, pin, or fastener to have a mean velocity in excess of 300 feet per second when measured 6.5 feet from the muzzle end of the barrel.</P>
+<P>(2) <I>High-velocity tool.</I> A tool or machine which, when used with a load, propels or discharges a stud, pin, or fastener, at velocities in excess of 300 feet per second when measured 6.5 feet from the muzzle end of the barrel, for the purpose of impinging it upon, affixing it to, or penetrating another object or material.</P>
+<P>(3) <I>Low-velocity piston tool.</I> A tool that utilizes a piston designed to be captive to drive a stud, pin, or fastener into a work surface. It shall be so designed that when used with any load that accurately chambers in it and that is commercially available at the time the tool is submitted for approval, it will not cause such stud, pin, or fastener to have a mean velocity in excess of 300 feet per second when measured 6.5 feet from the muzzle end of the barrel.</P>
+<P>(4) <I>Stud, pin, or fastener.</I> A fastening device specifically designed and manufactured for use in explosive-actuated fastening tools.</P>
+<P>(5) <I>To chamber.</I> To fit properly without the use of excess force, the case being duly supported.</P>
+<P>(6) <I>Explosive powerload, also known as load.</I> Any substance in any form capable of producing a propellant force.</P>
+<P>(7) <I>Tool.</I> An explosive-actuated fastening tool, unless otherwise indicated, and all accessories pertaining thereto.</P>
+<P>(8) <I>Protective shield or guard.</I> A device or guard attached to the muzzle end of the tool, which is designed to confine flying particles.</P>
+<P>(b) <I>Abrasive wheel terms</I>&#x2014;(1) <I>Mounted wheels.</I> Mounted wheels, usually 2-inch diameter or smaller, and of various shapes, may be either organic or inorganic bonded abrasive wheels. They are secured to plain or threaded steel mandrels.</P>
+<P>(2) <I>Tuck pointing.</I> Removal, by grinding, of cement, mortar, or other nonmetallic jointing material.</P>
+<P>(3) <I>Tuck pointing wheels.</I> Tuck pointing wheels, usually Type 1, reinforced organic bonded wheels have diameter, thickness and hole size dimension. They are subject to the same limitations of use and mounting as Type 1 wheels defined in subparagraph (10) of this paragraph.</P>
+<EXTRACT>
+<P><E T="04">Limitation:</E> Wheels used for tuck pointing should be reinforced, organic bonded. (See &#xA7; 1910.243(c)(1)(ii)(<I>c.</I>))</P></EXTRACT>
+<P>(4) <I>Portable grinding.</I> A grinding operation where the grinding machine is designed to be hand held and may be easily moved from one location to another.</P>
+<P>(5) <I>Organic bonded wheels.</I> Organic wheels are wheels which are bonded by means of an organic material such as resin, rubber, shellac, or other similar bonding agent.</P>
+<P>(6) <I>Safety guard.</I> A safety guard is an enclosure designed to restrain the pieces of the grinding wheel and furnish all possible protection in the event that the wheel is broken in operation.</P>
+<P>(7) <I>Reinforced wheels.</I> The term <I>reinforced</I> as applied to grinding wheels shall define a class of organic wheels which contain strengthening fabric or filament. The term <I>reinforced</I> does not cover wheels using such mechanical additions as steel rings, steel cup backs or wire or tape winding.</P>
+<P>(8) <I>Type 11 flaring cup wheels.</I> Type 11 flaring cup wheels have double diameter dimensions D and J, and in addition have thickness, hole size, rim and back thickness dimensions. Grinding is always performed on rim face, W dimension. Type 11 wheels are subject to all limitations of use and mounting listed for Type 6 straight sided cup wheels definition in subparagraph (9) of this paragraph.</P>
+<TCAP><E T="15">Type 11 Flaring Cup Wheels</E>
+</TCAP>
+<img src="/graphics/ec27oc91.078.gif"/>
+<BCAP><E T="15">Figure P-1</E></BCAP>
+<EXTRACT>
+<HD2>Type 11&#x2014;Flaring-cup Wheel
+</HD2>
+<FP-1><I>Side grinding wheel having a wall flared or tapered outward from the back. Wall thickness at the back is normally greater than at the grinding face (W).</I>
+</FP-1>
+<P><E T="04">Limitation:</E> Minimum back thickness, E dimension, should not be less than one-fourth T dimension. In addition when unthreaded hole wheels are specified the inside flat, K dimension, shall be large enough to accommodate a suitable flange.</P></EXTRACT>
+<P>(9) <I>Type 6 straight cup wheels.</I> Type 6 cup wheels have diameter, thickness, hole size, rim thickness, and back thickness dimensions. Grinding is always performed on rim face, W dimension.</P>
+<EXTRACT>
+<P><E T="04">Limitation:</E> Minimum back thickness, E dimension, should not be less than one-fourth T dimension. In addition, when unthreaded hole wheels are specified, the inside flat, K dimension, must be large enough to accommodate a suitable flange.</P>
+<TCAP><E T="15">Type 6 Straight Cup Wheels</E>
+</TCAP>
+<img src="/graphics/ec27oc91.079.gif"/>
+<BCAP><E T="15">Figure P-2</E></BCAP>
+<HD2>Type 6&#x2014;Straight Cup Wheel
+</HD2>
+<FP-1><I>Side grinding wheel having a diameter, thickness and hole with one side straight or flat and the opposite side recessed. This type, however, differs from Type 5 in that the grinding is performed on the wall of the abrasive created by the difference between the diameter of the recess and the outside diameter of the wheel. Therefore, the wall dimension &#x201C;W&#x201D; takes precedence over the diameter of the recess as an essential intermediate dimension to describe this shape type.</I></FP-1></EXTRACT>
+<P>(10) <I>Type 1 straight wheels.</I> Type 1 straight wheels have diameter, thickness, and hole size dimensions and should be used only on the periphery. Type 1 wheels shall be mounted between flanges.</P>
+<EXTRACT>
+<P><E T="04">Limitation:</E> Hole dimension (H) should not be greater than two-thirds of wheel diameter dimension (D) for precision, cylindrical, centerless, or surface grinding applications. Maximum hole size for all other applications should not exceed one-half wheel diameter.</P>
+<TCAP><E T="15">Type 1 Straight Wheels</E>
+</TCAP>
+<img src="/graphics/ec27oc91.080.gif"/>
+<BCAP><E T="15">Figure P-3</E></BCAP>
+<HD2>Type 1&#x2014;Straight Wheel
+</HD2>
+<HD2>Peripheral grinding wheel having a diameter, thickness and hole.</HD2></EXTRACT>
+<P>(c) [Reserved]</P>
+<P>(d) <I>Jack terms</I>&#x2014;(1) <I>Jack.</I> A jack is an appliance for lifting and lowering or moving horizontally a load by application of a pushing force.</P>
+<NOTE>
+<HED>Note:</HED>
+<P>Jacks may be of the following types: Lever and ratchet, screw and hydraulic.</P></NOTE>
+<P>(2) <I>Rating.</I> The rating of a jack is the maximum working load for which it is designed to lift safely that load throughout its specified amount of travel.</P>
+<NOTE>
+<HED>Note:</HED>
+<P>To raise the rated load of a jack, the point of application of the load, the applied force, and the length of lever arm should be those designated by the manufacturer for the particular jack considered.</P></NOTE>
+<CITA TYPE="N">[39 FR 23502, June 27, 1974, as amended at 43 FR 49750, Oct. 24, 1978]
+</CITA>
+</DIV8>
+
+<DIV8 N="1910.242" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-29/section-1910.242&quot;,&quot;citation&quot;:&quot;29 CFR 1910.242&quot;}">
+<HEAD>&#xA7; 1910.242 Hand and portable powered tools and equipment, general.</HEAD>
+<P>(a) <I>General requirements.</I> Each employer shall be responsible for the safe condition of tools and equipment used by employees, including tools and equipment which may be furnished by employees.</P>
+<P>(b) <I>Compressed air used for cleaning.</I> Compressed air shall not be used for cleaning purposes except where reduced to less than 30 p.s.i. and then only with effective chip guarding and personal protective equipment.</P>
+</DIV8>
+
+<DIV8 N="1910.243" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-29/section-1910.243&quot;,&quot;citation&quot;:&quot;29 CFR 1910.243&quot;}">
+<HEAD>&#xA7; 1910.243 Guarding of portable powered tools.</HEAD>
+<P>(a) <I>Portable powered tool</I>&#x2014;(1) <I>Portable circular saws.</I> (i) All portable, power-driven circular saws having a blade diameter greater than 2 in. shall be equipped with guards above and below the base plate or shoe. The upper guard shall cover the saw to the depth of the teeth, except for the minimum arc required to permit the base to be tilted for bevel cuts. The lower guard shall cover the saw to the depth of the teeth, except for the minimum arc required to allow proper retraction and contact with the work. When the tool is withdrawn from the work, the lower guard shall automatically and instantly return to covering position.</P>
+<P>(ii) Paragraph (a)(1)(i) of this section does not apply to circular saws used in the meat industry for meat cutting purposes.</P>
+<P>(2) <I>Switches and controls.</I> (i) All hand-held powered circular saws having a blade diameter greater than 2 inches, electric, hydraulic or pneumatic chain saws, and percussion tools without positive accessory holding means shall be equipped with a constant pressure switch or control that will shut off the power when the pressure is released. All hand-held gasoline powered chain saws shall be equipped with a constant pressure throttle control that will shut off the power to the saw chain when the pressure is released.</P>
+<P>(ii) All hand-held powered drills, tappers, fastener drivers, horizontal, vertical, and angle grinders with wheels greater than 2 inches in diameter, disc sanders with discs greater than 2 inches in diameter, belt sanders, reciprocating saws, saber, scroll, and jig saws with blade shanks greater than a nominal one-fourth inch, and other similarly operating powered tools shall be equipped with a constant pressure switch or control, and may have a lock-on control provided that turnoff can be accomplished by a single motion of the same finger or fingers that turn it on.</P>
+<P>(iii)(<I>a</I>) All other hand-held powered tools, such as, but not limited to, platen sanders, grinders with wheels 2 inches in diameter or less, disc sanders with discs 2 inches in diameter or less, routers, planers, laminate trimmers, nibblers, shears, saber, scroll, and jig saws with blade shanks a nominal one-fourth of an inch wide or less, may be equipped with either a positive &#x201C;on-off&#x201D; control, or other controls as described by paragraph (a)(2)(i) and (ii) of this section.</P>
+<P>(<I>b</I>) Saber, scroll, and jig saws with nonstandard blade holders may use blades with shanks which are nonuniform in width, provided the narrowest portion of the blade shank is an integral part in mounting the blade.</P>
+<P>(<I>c</I>) Blade shank width shall be measured at the narrowest portion of the blade shank when saber, scroll, and jig saws have nonstandard blade holders.</P>
+<P>(<I>d</I>) <I>Nominal</I> in this subparagraph means &#xB1;0.05 inch.</P>
+<P>(iv) The operating control on hand-held power tools shall be so located as to minimize the possibility of its accidental operation, if such accidental operation would constitute a hazard to employees.</P>
+<P>(v) This subparagraph does not apply to concrete vibrators, concrete breakers, powered tampers, jack hammers, rock drills, garden appliances, household and kitchen appliances, personal care appliances, medical or dental equipment, or to fixed machinery.</P>
+<P>(3) <I>Portable belt sanding machines.</I> Belt sanding machines shall be provided with guards at each nip point where the sanding belt runs onto a pulley. These guards shall effectively prevent the hands or fingers of the operator from coming in contact with the nip points. The unused run of the sanding belt shall be guarded against accidental contact.</P>
+<P>(4) <I>Cracked saws.</I> All cracked saws shall be removed from service.</P>
+<P>(5) <I>Grounding.</I> Portable electric powered tools shall meet the electrical requirements of subpart S of this part.</P>
+<P>(b) <I>Pneumatic powered tools and hose</I>&#x2014;(1) <I>Tool retainer.</I> A tool retainer shall be installed on each piece of utilization equipment which, without such a retainer, may eject the tool.</P>
+<P>(2) <I>Airhose.</I> Hose and hose connections used for conducting compressed air to utilization equipment shall be designed for the pressure and service to which they are subjected.</P>
+<P>(c) <I>Portable abrasive wheels</I>&#x2014;(1) <I>General requirements.</I> Abrasive wheels shall be used only on machine provided with safety guards as defined in paragraph (c) (1) through (4) of this section.</P>
+<P>(i) <I>Exceptions.</I> The requirements of this paragraph (c)(1) shall not apply to the following classes of wheels and conditions.</P>
+<P>(<I>a</I>) Wheels used for internal work while within the work being ground;</P>
+<P>(<I>b</I>) Mounted wheels used in portable operations 2 inches and smaller in diameter; (see definition &#xA7; 1910.241(b)(1)); and</P>
+<P>(<I>c</I>) Types 16, 17, 18, 18R, and 19 cones, and plugs, and threaded hole pot balls where the work offers protection.</P>
+<P>(ii)(<I>a</I>) A safety guard shall cover the spindle end, nut and flange projections. The safety guard shall be mounted so as to maintain proper alignment with the wheel, and the strength of the fastenings shall exceed the strength of the guard.</P>
+<P>(<I>b</I>) <I>Exception.</I> Safety guards on all operations where the work provides a suitable measure of protection to the operator may be so constructed that the spindle end, nut and outer flange are exposed. Where the nature of the work is such as to entirely cover the side of the wheel, the side covers of the guard may be omitted.</P>
+<P>(<I>c</I>) <I>Exception.</I> The spindle end, nut, and outer flange may be exposed on portable machines designed for, and used with, type 6, 11, 27, and 28 abrasive wheels, cutting off wheels, and tuck pointing wheels.</P>
+<P>(2) <I>Cup wheels.</I> Cup wheels (Types 6 and 11) shall be protected by:</P>
+<P>(i) Safety guards as specified in paragraph (c)(1) of this section; or,</P>
+<P>(ii) Special &#x201C;revolving cup guards&#x201D; which mount behind the wheel and turn with it. They shall be made of steel or other material with adequate strength and shall enclose the wheel sides upward from the back for one-third of the wheel thickness. The mounting features shall conform with all regulations. (See paragraph (c)(5) of this section.) It is necessary to maintain clearance between the wheel side and the guard. The clearance shall not exceed one-sixteenth inch; or,</P>
+<P>(iii) Some other form of guard that will insure as good protection as that which would be provided by the guards specified in paragraph (c)(1) (i) or (ii) of this subparagraph.</P>
+<P>(3) <I>Vertical portable grinders.</I> Safety guards used on machines known as right angle head or vertical portable grinders shall have a maximum exposure angle of 180&#xB0;, and the guard shall be so located so as to be between the operator and the wheel during use. Adjustment of guard shall be such that pieces of an accidentally broken wheel will be deflected away from the operator. (See Figure P-4.)</P>
+<img src="/graphics/ec27oc91.081.gif"/>
+<BCAP><E T="15">Figure No. P-4</E></BCAP>
+<P>(4) <I>Other portable grinders.</I> The maximum angular exposure of the grinding wheel periphery and sides for safety guards used on other portable grinding machines shall not exceed 180&#xB0; and the top half of the wheel shall be enclosed at all times. (See Figures P-5 and P-6.)</P>
+<img src="/graphics/ec27oc91.082.gif"/>
+<BCAP><E T="15">Figure No. P-5</E></BCAP>
+<img src="/graphics/ec27oc91.083.gif"/>
+<BCAP><E T="15">Figure No. P-6</E></BCAP>
+<P>(5) <I>Mounting and inspection of abrasive wheels.</I> (i) Immediately before mounting, all wheels shall be closely inspected and sounded by the user (ring test, see subpart O, &#xA7; 1910.215(d)(1)) to make sure they have not been damaged in transit, storage, or otherwise. The spindle speed of the machine shall be checked before mounting of the wheel to be certain that it does not exceed the maximum operating speed marked on the wheel.</P>
+<P>(ii) Grinding wheels shall fit freely on the spindle and remain free under all grinding conditions. A controlled clearance between the wheel hole and the machine spindle (or wheel sleeves or adaptors) is essential to avoid excessive pressure from mounting and spindle expansion. To accomplish this, the machine spindle shall be made to nominal (standard) size plus zero minus .002 inch, and the wheel hole shall be made suitably oversize to assure safety clearance under the conditions of operating heat and pressure.</P>
+<P>(iii) All contact surfaces of wheels, blotters, and flangers shall be flat and free of foreign matter.</P>
+<P>(iv) When a bushing is used in the wheel hole it shall not exceed the width of the wheel and shall not contact the flanges.</P>
+<P>(v) Requirements for the use of flanges and blotters, see subpart O, &#xA7; 1910.215(c).</P>
+<P>(6) <I>Excluded machinery.</I> Natural sandstone wheels and metal, wooden, cloth, or paper discs, having a layer of abrasive on the surface are not covered by this paragraph.</P>
+<P>(d) <I>Explosive actuated fastening tools</I>&#x2014;(1) <I>General requirements.</I> (i) Explosive-actuated fastening tools that are actuated by explosives or any similar means, and propel a stud, pin, fastener, or other object for the purpose of affixing it by penetration to any other object shall meet the design requirements specified by paragraph (d)(2) of this section. This requirement does not apply to devices designed for attaching objects to soft construction materials, such as wood, plaster, tar, dry wallboard, and the like, or to stud-welding equipment.</P>
+<P>(ii) Operators and assistants using tools shall be safeguarded by means of eye protection. Head and face protection shall be used, as required by working conditions, as set forth in subpart I.</P>
+<P>(2) <I>Inspection, maintenance, and tool handling</I>&#x2014;(i) <I>High-velocity tools.</I> Tools of this type shall have the characteristics outlined in (<I>a</I>) through (<I>h</I>) of this section.</P>
+<P>(<I>a</I>) The muzzle end of the tool shall have a protective shield or guard at least 3
+<FR>1/2</FR> inches in diameter, mounted perpendicular to and concentric with the barrel, and designed to confine any flying fragments or particles that might otherwise create a hazard at the time of firing.</P>
+<P>(<I>b</I>) Where a standard shield or guard cannot be used, or where it does not cover all apparent avenues through which flying particles might escape, a special shield, guard, fixture, or jig designed and built by the manufacturer of the tool being used, which provides this degree of protection, shall be used as a substitute.</P>
+<P>(<I>c</I>) The tool shall be so designed that it cannot be fired unless it is equipped with a standard protective shield or guard, or a special shield, guard, fixture, or jig.</P>
+<P>(<I>d</I>)(<I>1</I>) The firing mechanism shall be so designed that the tool cannot fire during loading or preparation to fire, or if the tool should be dropped while loaded.</P>
+<P>(<I>2</I>) Firing of the tool shall be dependent upon at least two separate and distinct operations of the operator, with the final firing movement being separate from the operation of bringing the tool into the firing position.</P>
+<P>(<I>e</I>) The tool shall be so designed as not to be operable other than against a work surface, and unless the operator is holding the tool against the work surface with a force at least 5 pounds greater than the total weight of the tool.</P>
+<P>(<I>f</I>) The tool shall be so designed that it will not operate when equipped with the standard guard indexed to the center position if any bearing surface of the guard is tilted more than 8&#xB0; from contact with the work surface.</P>
+<P>(<I>g</I>) The tool shall be so designed that positive means of varying the power are available or can be made available to the operator as part of the tool, or as an auxiliary, in order to make it possible for the operator to select a power level adequate to perform the desired work without excessive force.</P>
+<P>(<I>h</I>) The tool shall be so designed that all breeching parts will be reasonably visible to allow a check for any foreign matter that may be present.</P>
+<P>(ii) Tools of the low-velocity-piston type shall have the characteristics outlined in paragraphs (d)(2)(ii) (<I>a</I>) through (<I>e</I>) of this section and any additional safety features he may wish to incorporate.</P>
+<P>(<I>a</I>) The muzzle end of the tool shall be designed so that suitable protective shields, guards, jigs, or fixtures, designed and built by the manufacturer of the tool being used, can be mounted perpendicular to the barrel. A standard spall shield shall be supplied with each tool.</P>
+<P>(<I>b</I>)(<I>1</I>) The tool shall be designed so that it shall not in ordinary usage propel or discharge a stud, pin, or fastener while loading or during preparation to fire, or if the tool should be dropped while loaded.</P>
+<P>(<I>2</I>) Firing of the tool shall be dependent upon at least two separate and distinct operations of the operator, with the final firing movement being separate from the operation of bringing the tool into the firing position.</P>
+<P>(<I>c</I>) The tool shall be so designed as not to be operable other than against a work surface, and unless the operator is holding the tool against the work surface with a force at least 5 pounds greater than the total weight of the tool.</P>
+<P>(<I>d</I>) The tool shall be so designed that positive means of varying the power are available or can be made available to the operator as part of the tool, or as an auxiliary, in order to make it possible for the operator to select a power level adequate to perform the desired work without excessive force.</P>
+<P>(<I>e</I>) The tool shall be so designed that all breeching parts will be reasonably visible to allow a check for any foreign matter that may be present.</P>
+<P>(iii) Tools of the hammer-operated piston tools&#x2014;low-velocity type shall have the characteristics outlined in paragraphs (d)(2)(iii) (<I>a</I>) through (<I>e</I>) of this section.</P>
+<P>(<I>a</I>) The muzzle end of the tool shall be so designed that suitable protective shields, guards, jigs, or fixtures, designed and built by the manufacturer of the tool being used, can be mounted perpendicular to the barrel. A standard spall shield shall be supplied with each tool.</P>
+<P>(<I>b</I>) The tool shall be so designed that it shall not in ordinary usage propel or discharge a stud, pin, or fastener while loading, or during preparation to fire, or if the tool should be dropped while loaded.</P>
+<P>(<I>c</I>) Firing of the tool shall be dependent upon at least two separate and distinct operations of the operator, with the final firing movement being separate from the operation of bringing the tool into the firing position.</P>
+<P>(<I>d</I>) The tool shall be so designed that positive means of varying the power are available or can be made available to the operator as part of the tool, or as an auxiliary, in order to make it possible for the operator to select a power level adequate to perform the desired work without excessive force.</P>
+<P>(<I>e</I>) The tool shall be so designed that all breeching parts will be reasonably visible to allow a check for any foreign matter that may be present.</P>
+<P>(3) <I>Requirements for loads and fasteners.</I> (i) There shall be a standard means of identifying the power levels of loads used in tools.</P>
+<P>(ii) [Reserved]</P>
+<P>(iii) No load (cased or caseless) shall be used if it will accurately chamber in any existing approved commercially available low-velocity piston tool or hammer operated piston tool&#x2014;low-velocity type and will cause a fastener to have a mean velocity in excess of 300 feet per second when measured 6.5 feet from the muzzle end of the barrel. No individual test firing of a series shall exceed 300 feet per second by more than 8 percent.</P>
+<P>(iv) Fasteners used in tools shall be only those specifically manufactured for use in such tools.</P>
+<P>(4) <I>Operating requirements.</I> (i) Before using a tool, the operator shall inspect it to determine to his satisfaction that it is clean, that all moving parts operate freely, and that the barrel is free from obstructions.</P>
+<P>(ii) When a tool develops a defect during use, the operator shall immediately cease to use it, until it is properly repaired.</P>
+<P>(iii) Tools shall not be loaded until just prior to the intended firing time. Neither loaded nor empty tools are to be pointed at any workmen.</P>
+<P>(iv) No tools shall be loaded unless being prepared for immediate use, nor shall an unattended tool be left loaded.</P>
+<P>(v) In case of a misfire, the operator shall hold the tool in the operating position for at least 30 seconds. He shall then try to operate the tool a second time. He shall wait another 30 seconds, holding the tool in the operating position; then he shall proceed to remove the explosive load in strict accordance with the manufacturer's instructions.</P>
+<P>(vi) A tool shall never be left unattended in a place where it would be available to unauthorized persons.</P>
+<P>(vii) Fasteners shall not be driven into very hard or brittle materials including, but not limited to, cast iron, glazed tile, surface-hardened steel, glass block, live rock, face brick, or hollow tile.</P>
+<P>(viii) Driving into materials easily penetrated shall be avoided unless such materials are backed by a substance that will prevent the pin or fastener from passing completely through and creating a flying-missile hazard on the other side.</P>
+<P>(ix)(<I>a</I>) Fasteners shall not be driven directly into materials such as brick or concrete closer than 3 inches from the unsupported edge or corner, or into steel surfaces closer than one-half inch from the unsupported edge or corner, unless a special guard, fixture, or jig is used. (Exception: Low-velocity tools may drive no closer than 2 inches from an edge in concrete or one-fourth inch in steel.)</P>
+<P>(<I>b</I>) When fastening other materials, such as a 2- by 4-inch wood section to a concrete surface, it is permissible to drive a fastener of no greater than
+<FR>7/32</FR>-inch shank diameter not closer than 2 inches from the unsupported edge or corner of the work surface.</P>
+<P>(x) Fasteners shall not be driven through existing holes unless a positive guide is used to secure accurate alignment.</P>
+<P>(xi) No fastener shall be driven into a spalled area caused by an unsatisfactory fastening.</P>
+<P>(xii) Tools shall not be used in an explosive or flammable atmosphere.</P>
+<P>(xiii) All tools shall be used with the correct shield, guard, or attachment recommended by the manufacturer.</P>
+<P>(xiv) Any tool found not in proper working order shall be immediately removed from service. The tool shall be inspected at regular intervals and shall be repaired in accordance with the manufacturer's specifications.</P>
+<P>(e) <I>Power lawnmowers</I>&#x2014;(1) <I>General requirements.</I> (i) Power lawnmowers of the walk-behind, riding-rotary, and reel power lawnmowers shall be guarded in accordance with the machine guarding requirements in 29 CFR 1910.212, General requirements for all machines.</P>
+<P>(ii) All power-driven chains, belts, and gears shall be so positioned or otherwise guarded to prevent the operator's accidental contact therewith, during normal starting, mounting, and operation of the machine.</P>
+<P>(iii) A shutoff device shall be provided to stop operation of the motor or engine. This device shall require manual and intentional reactivation to restart the motor or engine.</P>
+<P>(iv) All positions of the operating controls shall be clearly identified.</P>
+<P>(v) The words, &#x201C;Caution. Be sure the operating control(s) is in neutral before starting the engine,&#x201D; or similar wording shall be clearly visible at an engine starting control point on self-propelled mowers.</P>
+<P>(2) <I>Walk-behind and riding rotary mowers.</I> (i) The mower blade shall be enclosed except on the bottom and the enclosure shall extend to or below the lowest cutting point of the blade in the lowest blade position.</P>
+<P>(ii) Guards which must be removed to install a catcher assembly shall comply with the following:</P>
+<P>(<I>a</I>) Warning instructions shall be affixed to the mower near the opening stating that the mower shall not be used without either the catcher assembly or the guard in place.</P>
+<P>(<I>b</I>) The catcher assembly or the guard shall be shipped and sold as part of the mower.</P>
+<P>(<I>c</I>) The instruction manual shall state that the mower shall not be used without either the catcher assembly or the guard in place.</P>
+<P>(<I>d</I>) The catcher assembly, when properly and completely installed, shall not create a condition which violates the limits given for the guarded opening.</P>
+<P>(iii) Openings in the blade enclosure, intended for the discharge of grass, shall be limited to a maximum vertical angle of the opening of 30&#xB0;. Measurements shall be taken from the lowest blade position.</P>
+<P>(iv) The total effective opening area of the grass discharge opening(s) shall not exceed 1,000 square degrees on units having a width of cut less than 27
+<FR>1/2</FR> inches, or 2,000 square degrees on units having a width of cut 27
+<FR>1/2</FR> inches or over.</P>
+<P>(v) The word &#x201C;Caution.&#x201D; or stronger wording, shall be placed on the mower at or near each discharge opening.</P>
+<P>(vi) [Reserved]</P>
+<P>(vii) Blade(s) shall stop rotating from the manufacturer's specified maximum speed within 15 seconds after declutching, or shutting off power.</P>
+<P>(viii) In a multipiece blade, the means of fastening the cutting members to the body of the blade or disc shall be so designed that they will not become worn to a hazardous condition before the cutting members themselves are worn beyond use.</P>
+<P>(ix) The maximum tip speed of any blade shall be 19,000 feet per minute.</P>
+<P>(3) <I>Walk-behind rotary mowers.</I> (i) The horizontal angle of the opening(s) in the blade enclosure, intended for the discharge of grass, shall not contact the operator area.</P>
+<P>(ii) There shall be one of the following at all openings in the blade enclosure intended for the discharge of grass:</P>
+<P>(<I>a</I>) A minimum unobstructed horizontal distance of 3 inches from the end of the discharge chute to the blade tip circle.</P>
+<P>(<I>b</I>) A rigid bar fastened across the discharge opening, secured to prevent removal without the use of tools. The bottom of the bar shall be no higher than the bottom edge of the blade enclosure.</P>
+<P>(iii) The highest point(s) of the front of the blade enclosure, except discharge openings, shall be such that any line extending a maximum of 15&#xB0; downward from the horizontal toward the blade shaft axis (axes) shall not intersect the horizontal plane within the blade tip circle. The highest point(s) on the blade enclosure front, except discharge-openings, shall not exceed 1
+<FR>1/4</FR> inches above the lowest cutting point of the blade in the lowest blade position. Mowers with a swingover handle are to be considered as having no front in the blade enclosure and therefore shall comply with paragraph (e)(2)(i) of this section.</P>
+<P>(iv) The mower handle shall be fastened to the mower so as to prevent loss of control by unintentional uncoupling while in operation.</P>
+<P>(v) A positive upstop or latch shall be provided for the mower handle in the normal operating position(s). The upstop shall not be subject to unintentional disengagement during normal operation of the mower. The upstop or latch shall not allow the center or the handle grips to come closer than 17 inches horizontally behind the closest path of the mower blade(s) unless manually disengaged.</P>
+<P>(vi) A swing-over handle, which complies with the above requirements, will be permitted.</P>
+<P>(vii) Wheel drive disengaging controls, except deadman controls, shall move opposite to the direction of the vehicle motion in order to disengage the drive. Deadman controls shall automatically interrupt power to a drive when the operator's actuating force is removed, and may operate in any direction to disengage the drive.</P>
+<P>(4) <I>Riding rotary mowers.</I> (i) The highest point(s) of all openings in the blade enclosure, front shall be limited by a vertical angle of opening of 15&#xB0; and a maximum distance of 1
+<FR>1/4</FR> inches above the lowest cutting point of the blade in the lowest blade position.</P>
+<P>(ii) Opening(s) shall be placed so that grass or debris will not discharge directly toward any part of an operator seated in a normal operator position.</P>
+<P>(iii) There shall be one of the following at all openings in the blade enclosure intended for the discharge of grass:</P>
+<P>(<I>a</I>) A minimum unobstructed horizontal distance of 6 inches from the end of the discharge chute to the blade tip circle.</P>
+<P>(<I>b</I>) A rigid bar fastened across the discharge opening, secured to prevent removal without the use of tools. The bottom of the bar shall be no higher than the bottom edge of the blade enclosure.</P>
+<P>(iv) Mowers shall be provided with stops to prevent jackknifing or locking of the steering mechanism.</P>
+<P>(v) Vehicle stopping means shall be provided.</P>
+<P>(vi) Hand-operated wheel drive disengaging controls shall move opposite to the direction of vehicle motion in order to disengage the drive. Foot-operated wheel drive disengaging controls shall be depressed to disengage the drive. Deadman controls, both hand and foot operated, shall automatically interrupt power to a drive when the operator's actuating force is removed, and may operate in any direction to disengage the drive.</P>
+<CITA TYPE="N">[39 FR 23502, June 27, 1974, as amended at 43 FR 49750, Oct. 24, 1978; 49 FR 5323, Feb. 10, 1984; 50 FR 4649, Feb. 1, 1985; 61 FR 9240, Mar. 7, 1996; 70 FR 53929, Sept. 13, 2005; 72 FR 71070, Dec. 14, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="1910.244" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-29/section-1910.244&quot;,&quot;citation&quot;:&quot;29 CFR 1910.244&quot;}">
+<HEAD>&#xA7; 1910.244 Other portable tools and equipment.</HEAD>
+<P>(a) <I>Jacks</I>&#x2014;(1) <I>Loading and marking.</I> (i) The operator shall make sure that the jack used has a rating sufficient to lift and sustain the load.</P>
+<P>(ii) The rated load shall be legibly and permanently marked in a prominent location on the jack by casting, stamping, or other suitable means.</P>
+<P>(2) <I>Operation and maintenance.</I> (i) In the absence of a firm foundation, the base of the jack shall be blocked. If there is a possibility of slippage of the cap, a block shall be placed in between the cap and the load.</P>
+<P>(ii) The operator shall watch the stop indicator, which shall be kept clean, in order to determine the limit of travel. The indicated limit shall not be overrun.</P>
+<P>(iii) After the load has been raised, it shall be cribbed, blocked, or otherwise secured at once.</P>
+<P>(iv) Hydraulic jacks exposed to freezing temperatures shall be supplied with an adequate antifreeze liquid.</P>
+<P>(v) All jacks shall be properly lubricated at regular intervals.</P>
+<P>(vi) Each jack shall be thoroughly inspected at times which depend upon the service conditions. Inspections shall be not less frequent than the following:</P>
+<P>(<I>a</I>) For constant or intermittent use at one locality, once every 6 months,</P>
+<P>(<I>b</I>) For jacks sent out of shop for special work, when sent out and when returned,</P>
+<P>(<I>c</I>) For a jack subjected to abnormal load or shock, immediately before and immediately thereafter.</P>
+<P>(vii) Repair or replacement parts shall be examined for possible defects.</P>
+<P>(viii) Jacks which are out of order shall be tagged accordingly, and shall not be used until repairs are made.</P>
+<P>(b) <I>Abrasive blast cleaning nozzles.</I> The blast cleaning nozzles shall be equipped with an operating valve which must be held open manually. A support shall be provided on which the nozzle may be mounted when it is not in use.</P>
+<CITA TYPE="N">[39 FR 23502, June 27, 1974, as amended at 49 FR 5323, Feb. 10, 1984]
+</CITA>
+</DIV8>
+
+</DIV6>

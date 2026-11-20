@@ -1,0 +1,1251 @@
+{
+  "schema": "mtp.generator-answers/1",
+  "generator": "claude-haiku-4-5-20251001",
+  "base_url": "https://api.minimax.io/anthropic",
+  "condition": "cautious",
+  "system_prompt": "You answer questions about industrial engineering documentation. Answer only from the documents given. If the documents do not contain the answer, say that the documents do not contain it. Be brief.",
+  "max_tokens": 1024,
+  "n_items": 247,
+  "status_counts": {
+    "ok": 234,
+    "ok_after_retry": 10,
+    "empty": 3
+  },
+  "answers": [
+    {
+      "index": 0,
+      "answer": "Dispersion microscopy is a polarized-light microscopy method used to identify asbestos in bulk materials by determining fibers\u2019 differing refractive indices and characteristic dispersion colors. For asbestos, it operates as a dark-field technique: particles are imaged using scattered light while unscattered light is blocked.",
+      "status": "ok"
+    },
+    {
+      "index": 1,
+      "answer": "\u201cImmediate use\u201d means the hazardous chemical is under the control of, and used only by, the person who transfers it from a labeled container\u2014and only during the work shift in which the transfer occurs.",
+      "status": "ok"
+    },
+    {
+      "index": 2,
+      "answer": "A clinical laboratory is a workplace where diagnostic or other screening procedures are performed on blood or other potentially infectious materials.",
+      "status": "ok"
+    },
+    {
+      "index": 3,
+      "answer": "Except when the composition is **an explosive per se**.",
+      "status": "ok"
+    },
+    {
+      "index": 4,
+      "answer": "Rubber Tire Manufacturing Industry.",
+      "status": "ok"
+    },
+    {
+      "index": 5,
+      "answer": "Grinding.",
+      "status": "ok"
+    },
+    {
+      "index": 6,
+      "answer": "Basket hitch is a sling configuration in which the sling is passed under the load, with both ends, end attachments, eyes, or handles attached to the hook or a single master link.",
+      "status": "ok"
+    },
+    {
+      "index": 7,
+      "answer": "An **equivalent entity** is a person or organization (including an employer) that, through its equipment, technical knowledge, and skills, can perform the same repairs and tests with equal competence as the person or organization with which it is equated.",
+      "status": "ok"
+    },
+    {
+      "index": 8,
+      "answer": "Transportable outriggers are outriggers designed to be moved from one work location to another.",
+      "status": "ok"
+    },
+    {
+      "index": 9,
+      "answer": "Continuous pressure is the need for constant manual actuation for a control to function.",
+      "status": "ok"
+    },
+    {
+      "index": 10,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 11,
+      "answer": "The ppm (a) 1 limit for **n-Amyl acetate** is **100 ppm**.",
+      "status": "ok"
+    },
+    {
+      "index": 12,
+      "answer": "Guide roller means a rotating cylindrical member, operating separately or as part of a guide assembly, designed to provide continuous engagement between the platform and the building guides or guideways.",
+      "status": "ok"
+    },
+    {
+      "index": 13,
+      "answer": "A **regulated area** is an area demarcated by the employer where an employee\u2019s exposure to airborne cadmium exceeds, or can reasonably be expected to exceed, the permissible exposure limit (PEL).",
+      "status": "ok"
+    },
+    {
+      "index": 14,
+      "answer": "The table lists two concentrations for **Di-(tert-butylperoxyisopropyl) benzene(s)**:\n\n- **>42\u2013100 mass%** \u2014 UN3106  \n- **\u226442 mass%** \u2014 Exempt",
+      "status": "ok"
+    },
+    {
+      "index": 15,
+      "answer": "(C) 5 ppm.",
+      "status": "ok"
+    },
+    {
+      "index": 16,
+      "answer": "The **immediate outer package** is the first package enclosing the container of a hazardous chemical.",
+      "status": "ok"
+    },
+    {
+      "index": 17,
+      "answer": "An **airborne infection isolation room (AIIR)** is a dedicated **negative-pressure patient-care room** with special air-handling capability used to isolate persons with suspected or confirmed airborne-transmissible infectious disease. It may be a permanent room or a temporary structure, such as a booth or tent designed to operate under negative pressure.",
+      "status": "ok"
+    },
+    {
+      "index": 18,
+      "answer": "Glenn County Air Pollution Control District (Glenn County APCD).",
+      "status": "ok"
+    },
+    {
+      "index": 19,
+      "answer": "**Hazard class** means the nature of the physical or health hazard, such as a flammable solid, carcinogen, or oral acute toxicity.",
+      "status": "ok"
+    },
+    {
+      "index": 20,
+      "answer": "Subpart MMM is listed as **(Reserved)**.",
+      "status": "ok"
+    },
+    {
+      "index": 21,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 22,
+      "answer": "Laser Machining.",
+      "status": "ok"
+    },
+    {
+      "index": 23,
+      "answer": "Healthcare services are delivered through:\n\n- Hospitalization\n- Long-term care\n- Ambulatory care\n- Home health and hospice care\n- Emergency medical response\n- Patient transport",
+      "status": "ok"
+    },
+    {
+      "index": 24,
+      "answer": "[Reserved]",
+      "status": "ok"
+    },
+    {
+      "index": 25,
+      "answer": "Common areas are indoor or outdoor locations under the employer\u2019s control that more than one person may use or where people congregate, such as building lobbies, reception areas, waiting rooms, restrooms, and areas used for eating, entering, or exiting work.",
+      "status": "ok"
+    },
+    {
+      "index": 26,
+      "answer": "The Concentration (mass %) is **\u226472**.",
+      "status": "ok"
+    },
+    {
+      "index": 27,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 28,
+      "answer": "Openers and pickers are machines used to prepare textile stock for further processing. They include breaker, intermediate, finisher, single-process and multiple-process pickers; willow machines; card and picker waste cleaners; thread extractors; shredding machines; roving-waste openers; shoddy pickers; bale breakers; feeders; vertical openers; lattice cleaners; horizontal cleaners; and similar machinery using cylinders, screens, calender sections, rolls, or beaters.",
+      "status": "ok"
+    },
+    {
+      "index": 29,
+      "answer": "**Handwashing facilities** means a facility providing an adequate supply of running potable water, soap, and single-use towels or air-drying machines. (29 CFR 1910.1030)",
+      "status": "ok"
+    },
+    {
+      "index": 30,
+      "answer": "20 percent of the rope\u2019s nominal breaking strength.",
+      "status": "ok"
+    },
+    {
+      "index": 31,
+      "answer": "A **product identifier** is the name or number used for a hazardous chemical on a label or Safety Data Sheet (SDS), uniquely identifying it and permitting cross-references among the chemical list in the written Hazard Communication Program, the label, and the SDS.",
+      "status": "ok"
+    },
+    {
+      "index": 32,
+      "answer": "The nonblank Notes for **1,1-Di-(tert-butylperoxy)cyclohexane** are **30** and **22**. Other matching entries have no note listed.",
+      "status": "ok"
+    },
+    {
+      "index": 33,
+      "answer": "\u226548%",
+      "status": "ok"
+    },
+    {
+      "index": 34,
+      "answer": "12 mg/m\u00b3.",
+      "status": "ok"
+    },
+    {
+      "index": 35,
+      "answer": "A **physical location** is a site or area within a site where work or any work-related activity occurs, including breaks, eating, restroom use, and entering or exiting work. It includes all associated spaces\u2014such as workstations, hallways, stairwells, breakrooms, bathrooms, and elevators\u2014and any space employees might occupy while arriving, working, or leaving.",
+      "status": "ok"
+    },
+    {
+      "index": 36,
+      "answer": "Chemical Milling is not listed under **Beryllium oxide operations** in the provided table.",
+      "status": "ok"
+    },
+    {
+      "index": 37,
+      "answer": "Card clothing is the material covering many surfaces of a card, such as the cylinder and doffer. It consists of a thick foundation material, usually textile fabric, through which many fine, closely spaced, specially bent wires are pressed.",
+      "status": "ok"
+    },
+    {
+      "index": 38,
+      "answer": "New Residential Wood Heaters",
+      "status": "ok"
+    },
+    {
+      "index": 39,
+      "answer": "The provided documents do not state the value; the sentence ends at \u201cdoes not exceed.\u201d",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 40,
+      "answer": "A **multi-piece rim wheel** is the assemblage of a multi-piece wheel with the tire tube and other components.",
+      "status": "ok"
+    },
+    {
+      "index": 41,
+      "answer": "The mg/m\u00b3 (b) limit for **Acrylamide** is **0.3 mg/m\u00b3**.",
+      "status": "ok"
+    },
+    {
+      "index": 42,
+      "answer": "The filling density may not exceed **85% of the cylinder\u2019s water weight capacity**.",
+      "status": "ok"
+    },
+    {
+      "index": 43,
+      "answer": "50 pounds or less.",
+      "status": "ok"
+    },
+    {
+      "index": 44,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 45,
+      "answer": "A **working platform** is suspended or supported equipment intended to provide access to the face of a building and manned by persons engaged in building maintenance.",
+      "status": "ok"
+    },
+    {
+      "index": 46,
+      "answer": "**No** \u2014 For subpart XXa (Bulk Gasoline Terminals that commenced construction, modification, or reconstruction after June 10, 2022), the ODEQ column shows \"No\", meaning it is not delegated to ODEQ.",
+      "status": "ok"
+    },
+    {
+      "index": 47,
+      "answer": "A **ground rigged davit** is a davit that cannot be used to raise a suspended working platform above the building face being serviced.",
+      "status": "ok"
+    },
+    {
+      "index": 48,
+      "answer": "March 1, 1979.",
+      "status": "ok"
+    },
+    {
+      "index": 49,
+      "answer": "Contaminated laundry is laundry soiled with blood or other potentially infectious materials, or that may contain sharps.",
+      "status": "ok"
+    },
+    {
+      "index": 50,
+      "answer": "Ground rigging is \u201ca method of suspending a working platform starting from a safe surface to a point of suspension above the safe surface.\u201d",
+      "status": "ok"
+    },
+    {
+      "index": 51,
+      "answer": "**\u226452 mass %** (with \u226548 mass % diluent; packing method OP6, UN3103).",
+      "status": "ok"
+    },
+    {
+      "index": 52,
+      "answer": "\u201cInside bucket elevator\u201d means a bucket elevator with the boot and more than 20% of its total leg height (above grade or ground level) inside the grain elevator structure. Bucket elevators with leg casings inside rail or truck dump sheds, with the remainder of the leg outside the grain elevator structure, are not considered inside bucket elevators.",
+      "status": "ok"
+    },
+    {
+      "index": 53,
+      "answer": "The Water content is **\u226518% by mass**.",
+      "status": "ok"
+    },
+    {
+      "index": 54,
+      "answer": "\u201cService area\u201d means that part of an employer\u2019s premises used for servicing rim wheels, or any other place where an employee services rim wheels.",
+      "status": "ok"
+    },
+    {
+      "index": 55,
+      "answer": "Category 1A.",
+      "status": "ok"
+    },
+    {
+      "index": 56,
+      "answer": "A rim wheel is an assemblage of a tire, tube and liner (where appropriate), and wheel components.",
+      "status": "ok"
+    },
+    {
+      "index": 57,
+      "answer": "A **choker hitch** is a sling configuration with one end of the sling passing under the load and through an end attachment, handle, or eye on the other end of the sling.",
+      "status": "ok"
+    },
+    {
+      "index": 58,
+      "answer": "A **single piece rim wheel** is the assemblage of a single-piece wheel with the tire and other components. A single-piece wheel consists of one part designed to hold the tire on the wheel when inflated.",
+      "status": "ok"
+    },
+    {
+      "index": 59,
+      "answer": "A responsible party is someone who can provide additional information about the hazardous chemical and appropriate emergency procedures, if necessary.",
+      "status": "ok"
+    },
+    {
+      "index": 60,
+      "answer": "A person duly and currently registered and licensed by an authority within the United States or its territories to practice engineering.",
+      "status": "ok"
+    },
+    {
+      "index": 61,
+      "answer": "7\u00bd rems per calendar quarter.",
+      "status": "ok"
+    },
+    {
+      "index": 62,
+      "answer": "The ppm (a) 1 limit for **arsine** is **0.05 ppm**.",
+      "status": "ok"
+    },
+    {
+      "index": 63,
+      "answer": "Subpart LLL \u2014 **Onshore Natural Gas Processing: SO\u2082 Emissions**.",
+      "status": "ok"
+    },
+    {
+      "index": 64,
+      "answer": "Hot work is work involving electric or gas welding, cutting, brazing, or similar flame-producing operations.",
+      "status": "ok"
+    },
+    {
+      "index": 65,
+      "answer": "Rated strength means the strength of wire rope as designated by its manufacturer or vendor, based on standard testing procedures or acceptable engineering design practices.",
+      "status": "ok"
+    },
+    {
+      "index": 66,
+      "answer": "The CAS No. for Ammonia is **7664-41-7**.",
+      "status": "ok"
+    },
+    {
+      "index": 67,
+      "answer": "Di-(tert-butylperoxy)phthalate:\n\n- **>42\u201352 mass%** (UN3105)\n- **\u226442 mass%** (UN3107)",
+      "status": "ok"
+    },
+    {
+      "index": 68,
+      "answer": "**Other Potentially Infectious Materials** include:\n\n- Semen, vaginal secretions, cerebrospinal, synovial, pleural, pericardial, peritoneal, and amniotic fluids; saliva in dental procedures; visibly blood-contaminated body fluids; and body fluids that cannot be distinguished.\n- Any unfixed human tissue or organ, except intact skin.\n- HIV- or HBV-containing cell or tissue cultures, organ cultures, culture media or other solutions; blood, organs, and other potentially infectious materials.",
+      "status": "ok"
+    },
+    {
+      "index": 69,
+      "answer": "A **speed reducer** is a **positive-type speed-reducing machine**.",
+      "status": "ok"
+    },
+    {
+      "index": 70,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 71,
+      "answer": "Reasonably Anticipated (See Note 1).",
+      "status": "ok"
+    },
+    {
+      "index": 72,
+      "answer": "3 to 6 inches.",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 73,
+      "answer": "A **secondary brake** is a brake designed to arrest the descent of suspended or supported equipment in the event of an overspeed condition.",
+      "status": "ok"
+    },
+    {
+      "index": 74,
+      "answer": "For nickel-cadmium battery work:\n\n- **Plate making and plate preparation:** **50 \u00b5g/m\u00b3**\n- **All other processes:** **15 \u00b5g/m\u00b3**",
+      "status": "ok"
+    },
+    {
+      "index": 75,
+      "answer": "Stability factor is the ratio of the stabilizing moment to the overturning moment.",
+      "status": "ok"
+    },
+    {
+      "index": 76,
+      "answer": "Phase contrast microscopy (PCM) is a fiber-counting technique that uses polarized light to count airborne asbestos fibers on a cleared filter. It excludes non-fibrous particles and can be performed on-site for rapid exposure assessment. In phase-polar microscopy, two polarizing elements are positioned at right angles, with an optional compensator between them.",
+      "status": "ok"
+    },
+    {
+      "index": 77,
+      "answer": "A traction hoist is a hoisting machine that does not accumulate the suspension wire rope on the hoisting drum or sheave and raises and lowers a suspended load through friction between the rope and the drum or sheave.",
+      "status": "ok"
+    },
+    {
+      "index": 78,
+      "answer": "2,500 V RMS.",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 79,
+      "answer": "Angulated roping is a suspension method in which the upper suspension point is inboard from the attachments on the suspended unit, causing the unit to bear against the face of the building.",
+      "status": "ok"
+    },
+    {
+      "index": 80,
+      "answer": "Initiating switch voltage shall not exceed **24 volts**.",
+      "status": "ok"
+    },
+    {
+      "index": 81,
+      "answer": "UN3105 (UN3107 for \u226442% concentration; paste formulation: UN3106).",
+      "status": "ok"
+    },
+    {
+      "index": 82,
+      "answer": "0.375 inches.",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 83,
+      "answer": "A proof test is a nondestructive tension test performed by the sling manufacturer or an equivalent entity to verify a sling\u2019s construction and workmanship.",
+      "status": "ok"
+    },
+    {
+      "index": 84,
+      "answer": "Magnetic Tape Coating Operations",
+      "status": "ok"
+    },
+    {
+      "index": 85,
+      "answer": "**Regulated waste** includes:\n\n- Liquid or semi-liquid blood or other potentially infectious materials;\n- Contaminated items that could release blood or potentially infectious materials in a liquid or semi-liquid state if compressed;\n- Items caked with dried blood or potentially infectious materials that could release those materials during handling;\n- Contaminated sharps; and\n- Pathological and microbiological wastes containing blood or other potentially infectious materials.",
+      "status": "ok"
+    },
+    {
+      "index": 86,
+      "answer": "A physician or other licensed health care professional (PLHCP) is an individual whose legally permitted scope of practice allows them to independently provide, or be delegated responsibility to provide, some or all of the health care services referenced in paragraph (i) of the section.",
+      "status": "ok"
+    },
+    {
+      "index": 87,
+      "answer": "3.0 per unit.",
+      "status": "ok"
+    },
+    {
+      "index": 88,
+      "answer": "OP8.",
+      "status": "ok"
+    },
+    {
+      "index": 89,
+      "answer": "Part D is a table comparing GHS carcinogen hazard categories with IARC and NTP carcinogen classifications, enabling classifiers to complete GHS and HCS classifications.",
+      "status": "ok"
+    },
+    {
+      "index": 90,
+      "answer": "Rated load means the manufacturer\u2019s recommended maximum load.",
+      "status": "ok"
+    },
+    {
+      "index": 91,
+      "answer": "For the row labeled **\u201cstrength\u201d** (10-inch maximum wheel thickness), the grinding-wheel diameter dimensions are:\n\n- **3\u20136 in.:** A = 9/16; B = 7/16  \n- **Over 6\u201312 in.:** A = 5/8; B = 1/2  \n- **Over 12\u201316 in.:** A = 5/8; B = 1/2  \n- **Over 16\u201320 in.:** A = 5/8; B = 1/2  \n- **Over 20\u201324 in.:** A = 7/8; B = 5/8  \n\nNo values are listed for diameters over 24\u201330 or 30\u201348 inches.",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 92,
+      "answer": "14 mg/m\u00b3",
+      "status": "ok"
+    },
+    {
+      "index": 93,
+      "answer": "OP6",
+      "status": "ok"
+    },
+    {
+      "index": 94,
+      "answer": "The grinding wheel diameter ranges are: **3\u20136, over 6\u201312, over 12\u201316, over 16\u201320, over 20\u201324, over 24\u201330, and over 30\u201348 inches.**",
+      "status": "ok"
+    },
+    {
+      "index": 95,
+      "answer": "A **physical hazard** is a chemical classified as posing one or more of these hazardous effects: explosive; flammable gas, liquid, or solid; aerosol; chemical under pressure; oxidizer; self-reactive; pyrophoric liquid or solid; self-heating; organic peroxide; corrosive to metal; gas under pressure; emits flammable gas when in contact with water; or desensitized explosive. Classification criteria are detailed in Appendix B.",
+      "status": "ok"
+    },
+    {
+      "index": 96,
+      "answer": "The listed ID Nos. are **UN3101, UN3103, UN3107, and UN3110**, depending on concentration and formulation.",
+      "status": "ok"
+    },
+    {
+      "index": 97,
+      "answer": "- **Division 1:** Within 5 feet of the open end of the vent, extending in all directions.  \n- **Division 2:** Between 5 and 10 feet from the open end of the vent, extending in all directions.",
+      "status": "ok"
+    },
+    {
+      "index": 98,
+      "answer": "An **industrial organic solvent** is any organic volatile liquid or compound, or combination thereof, used to dissolve or suspend a nonvolatile or slightly volatile substance for industrial use. It also includes substances used as detergents or cleansing agents, but excludes petroleum products used as fuel.",
+      "status": "ok"
+    },
+    {
+      "index": 99,
+      "answer": "\u221220 to \u221210 \u00b0C.",
+      "status": "ok"
+    },
+    {
+      "index": 100,
+      "answer": "The CAS No. (c) for Ammonium sulfamate is **7773-06-0**.",
+      "status": "ok"
+    },
+    {
+      "index": 101,
+      "answer": "The entire area within the pit if any part is within a Division 1 or 2 classified area.",
+      "status": "ok"
+    },
+    {
+      "index": 102,
+      "answer": "\u22125 \u00b0C to 5 \u00b0C.",
+      "status": "ok"
+    },
+    {
+      "index": 103,
+      "answer": "A **highly hazardous chemical** is a substance possessing **toxic, reactive, flammable, or explosive properties** and specified by paragraph (a)(1) of \u00a7 1910.119.",
+      "status": "ok"
+    },
+    {
+      "index": 104,
+      "answer": "Rated working load means the combined static weight of men, materials, and suspended or supported equipment.",
+      "status": "ok"
+    },
+    {
+      "index": 105,
+      "answer": "Hand hygiene means cleaning and/or disinfecting one\u2019s hands using standard handwashing methods with soap and running water, or an alcohol-based hand rub containing at least 60% alcohol.",
+      "status": "ok"
+    },
+    {
+      "index": 106,
+      "answer": "An obstruction detector is a control that stops a suspended or supported unit in its direction of travel when it encounters an obstruction and allows it to move only away from the obstruction.",
+      "status": "ok"
+    },
+    {
+      "index": 107,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 108,
+      "answer": "Retests are required when an audit sample fails to produce acceptable results.",
+      "status": "ok"
+    },
+    {
+      "index": 109,
+      "answer": "For **Diisopropyl peroxydicarbonate**, the temperature ranges (control, maximum) are:\n\n- **UN3112, >52\u2013100%:** \u221215 \u00b0C, \u22125 \u00b0C  \n- **UN3115, \u226452%:** \u221220 \u00b0C, \u221210 \u00b0C  \n- **UN3115, \u226432%:** \u221215 \u00b0C, \u22125 \u00b0C",
+      "status": "ok"
+    },
+    {
+      "index": 110,
+      "answer": "Hoist rated load means the hoist manufacturer\u2019s maximum allowable operating load.",
+      "status": "ok"
+    },
+    {
+      "index": 111,
+      "answer": "A bridle wire rope sling is a sling composed of multiple wire rope legs with the top ends gathered in a fitting that goes over the lifting hook.",
+      "status": "ok"
+    },
+    {
+      "index": 112,
+      "answer": "A trolley carriage is a carriage suspended from an overhead track structure.",
+      "status": "ok"
+    },
+    {
+      "index": 113,
+      "answer": "A **health hazard** is a chemical classified as posing any of the following effects:\n\n- Acute toxicity (any route of exposure)\n- Skin corrosion or irritation\n- Serious eye damage or eye irritation\n- Respiratory or skin sensitization\n- Germ cell mutagenicity\n- Carcinogenicity\n- Reproductive toxicity\n- Specific target organ toxicity (single or repeated exposure)\n- Aspiration hazard",
+      "status": "ok"
+    },
+    {
+      "index": 114,
+      "answer": "Buffing.",
+      "status": "ok"
+    },
+    {
+      "index": 115,
+      "answer": "EC3 value \u2264 2%.",
+      "status": "ok"
+    },
+    {
+      "index": 116,
+      "answer": "For **Dicumyl peroxide**, the Notes are:\n\n- **9** for concentration **>52\u2013100%** (UN3110).\n- **29** for concentration **\u226452%** (Exempt).",
+      "status": "ok"
+    },
+    {
+      "index": 117,
+      "answer": "No numerical test-load value is stated in the provided excerpts. They define **proof load** as \u201cthe load applied in performance of a proof test.\u201d",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 118,
+      "answer": "A multi-piece wheel is a vehicle wheel consisting of two or more parts, including a side or locking ring designed to hold the tire on the wheel by interlocking components when the tire is inflated.",
+      "status": "ok"
+    },
+    {
+      "index": 119,
+      "answer": "- **UN3115** \u2014 concentration >27\u201352%\n- **UN3117** \u2014 concentration \u226427%\n- **UN3118** \u2014 stable dispersion in water (frozen)",
+      "status": "ok"
+    },
+    {
+      "index": 120,
+      "answer": "",
+      "status": "empty"
+    },
+    {
+      "index": 121,
+      "answer": "The stated phase-to-ground peak voltage at gap sparkover (VPPG Peak) is **732 kV** (665 kV \u00d7 1.10).",
+      "status": "ok"
+    },
+    {
+      "index": 122,
+      "answer": "For containers holding **251\u2013500 gallons**:\n\n- **Underground containers:** 10 feet  \n- **Aboveground containers:** 10 feet  \n- **Between aboveground containers:** 3 feet",
+      "status": "ok"
+    },
+    {
+      "index": 123,
+      "answer": "According to the table, **KKa is not delegated to LDEQ (\u201cNo\u201d)**.",
+      "status": "ok"
+    },
+    {
+      "index": 124,
+      "answer": "Braided wire rope is a wire rope formed by plaiting component wire ropes.",
+      "status": "ok"
+    },
+    {
+      "index": 125,
+      "answer": "Known.",
+      "status": "ok"
+    },
+    {
+      "index": 126,
+      "answer": "**Hazard not otherwise classified (HNOC)** is an adverse physical or health effect identified through scientific evidence that does **not** meet the criteria for any physical or health hazard class covered by \u00a7 1910.1200. It excludes effects below a class\u2019s cut-off or concentration limit and GHS hazard categories not adopted by OSHA, such as acute toxicity Category 5.",
+      "status": "ok"
+    },
+    {
+      "index": 127,
+      "answer": "Combustible dust means finely divided solid particulates of a substance or mixture that pose a flash-fire hazard or explosion hazard when dispersed in air or other oxidizing media.",
+      "status": "ok"
+    },
+    {
+      "index": 128,
+      "answer": "\u226523% by mass.",
+      "status": "ok"
+    },
+    {
+      "index": 129,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 130,
+      "answer": "Notes: **1, 9**.",
+      "status": "ok"
+    },
+    {
+      "index": 131,
+      "answer": "An atmospheric tank is a storage tank designed to operate at pressures from atmospheric through 0.5 psi gauge (3.45 kPa).",
+      "status": "ok"
+    },
+    {
+      "index": 132,
+      "answer": "A **rim manual** is a publication containing instructions from the manufacturer or another qualified organization on correct mounting, demounting, maintenance, and safety precautions specific to the type of wheel being serviced.",
+      "status": "ok"
+    },
+    {
+      "index": 133,
+      "answer": "[Reserved]",
+      "status": "ok"
+    },
+    {
+      "index": 134,
+      "answer": "Bloodborne pathogens are pathogenic microorganisms present in human blood that can cause disease in humans, including hepatitis B virus (HBV) and human immunodeficiency virus (HIV).",
+      "status": "ok"
+    },
+    {
+      "index": 135,
+      "answer": "UN3109",
+      "status": "ok"
+    },
+    {
+      "index": 136,
+      "answer": "**Work area** means a room or defined space in a workplace where hazardous chemicals are produced or used and where employees are present.",
+      "status": "ok"
+    },
+    {
+      "index": 137,
+      "answer": "Except when the substance is an explosive per se, the ammunition contains one or more of:\n\n- A propelling charge with primer and igniter charge; or  \n- A fuze with burster or expelling charge.",
+      "status": "ok"
+    },
+    {
+      "index": 138,
+      "answer": "Open wiring on insulators is an exposed wiring method using cleats, knobs, tubes, and flexible tubing to protect and support single insulated conductors run in or on buildings, without concealment by the building structure.",
+      "status": "ok"
+    },
+    {
+      "index": 139,
+      "answer": "For **unrefined petroleum products**:\n\n- **Non-jacketed tank cars:** DOT-111 not authorized on or after **January 1, 2018**.\n- **Jacketed tank cars:** DOT-111 not authorized on or after **March 1, 2018**.",
+      "status": "ok"
+    },
+    {
+      "index": 140,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 141,
+      "answer": "OP7.",
+      "status": "ok"
+    },
+    {
+      "index": 142,
+      "answer": "A selvage edge is the finished edge of synthetic webbing designed to prevent unraveling.",
+      "status": "ok"
+    },
+    {
+      "index": 143,
+      "answer": "The documents do not provide a general definition of \u201coccupational exposure.\u201d They reference it in 29 CFR 1910.1030 as defined in paragraph (b), but that paragraph is not included. For cadmium, \u201cemployee exposure\u201d means exposure to airborne cadmium that would occur if the employee were not using respiratory protective equipment.",
+      "status": "ok"
+    },
+    {
+      "index": 144,
+      "answer": "A grain elevator is a facility engaged in receiving, handling, storing, and shipping bulk raw agricultural commodities such as corn, wheat, oats, barley, sunflower seeds, and soybeans.",
+      "status": "ok"
+    },
+    {
+      "index": 145,
+      "answer": "309-00-2",
+      "status": "ok"
+    },
+    {
+      "index": 146,
+      "answer": "Deburring (grinding) is a listed beryllium oxide operation.",
+      "status": "ok"
+    },
+    {
+      "index": 147,
+      "answer": "Category 1B.",
+      "status": "ok"
+    },
+    {
+      "index": 148,
+      "answer": "The action level (AL) for cadmium is **2.5 \u00b5g/m\u00b3 of airborne cadmium**, calculated as an **8-hour time-weighted average (TWA)**.",
+      "status": "ok"
+    },
+    {
+      "index": 149,
+      "answer": "18.",
+      "status": "ok"
+    },
+    {
+      "index": 150,
+      "answer": "Didecanoyl peroxide: **30 \u00b0C and 35 \u00b0C**.",
+      "status": "ok"
+    },
+    {
+      "index": 151,
+      "answer": "Subpart QQQ: **VOC Emissions From Petroleum Refinery Wastewater Systems**.",
+      "status": "ok"
+    },
+    {
+      "index": 152,
+      "answer": "Universal Precautions is an infection-control approach that treats all human blood and certain body fluids as if known to be infectious for HIV, HBV, and other bloodborne pathogens. When body-fluid types cannot be distinguished, all body fluids are considered potentially infectious.",
+      "status": "ok"
+    },
+    {
+      "index": 153,
+      "answer": "The portion of a tag\u2019s inscription containing words intended to capture the employee\u2019s immediate attention.",
+      "status": "ok"
+    },
+    {
+      "index": 154,
+      "answer": "The concentration is **\u226472 mass%**.",
+      "status": "ok"
+    },
+    {
+      "index": 155,
+      "answer": "Per the table, **Di-sec-butyl peroxydicarbonate** appears with two ID Nos.:\n\n- **UN3113** (concentration >52\u2013100%, OP4, \u221220/\u221210 \u00b0C, note 6)\n- **UN3115** (concentration \u226452%, diluent \u226548%, OP7, \u221215/\u22125 \u00b0C)\n\nSo the ID Nos. are **UN3113 and UN3115**, depending on concentration.",
+      "status": "ok"
+    },
+    {
+      "index": 156,
+      "answer": "Fabric (metal mesh) is the flexible portion of a metal mesh sling consisting of a series of transverse coils and cross rods.",
+      "status": "ok"
+    },
+    {
+      "index": 157,
+      "answer": "A **product identifier**\u2014the name or number used for a hazardous chemical on a label or in the SDS\u2014provides a unique means for users to identify the chemical.",
+      "status": "ok"
+    },
+    {
+      "index": 158,
+      "answer": "\u22655 mass %",
+      "status": "ok"
+    },
+    {
+      "index": 159,
+      "answer": "The **Assistant Secretary** is the **Assistant Secretary of Labor for Occupational Safety and Health, or their designated representative (designee)**.",
+      "status": "ok"
+    },
+    {
+      "index": 160,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 161,
+      "answer": "The temperature for Di-(2-methylbenzoyl)peroxide is **30\u201335 \u00b0C**.",
+      "status": "ok"
+    },
+    {
+      "index": 162,
+      "answer": "- **OP4** for concentration **>52\u2013100%**\n- **OP7** for concentration **\u226452%**",
+      "status": "ok"
+    },
+    {
+      "index": 163,
+      "answer": "Combing machinery is a general classification including combers, sliver lap machines, ribbon lap machines, and gill boxes, but excluding cards.",
+      "status": "ok"
+    },
+    {
+      "index": 164,
+      "answer": "The concentration varies by UN ID No.:\n\n- **UN3101:** >90\u2013100%\n- **UN3103:** \u226490%, >57\u201390%, or \u226477%\n- **UN3107:** \u226457% or \u226432%\n- **UN3110:** \u226457%",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 165,
+      "answer": "The Notes entry for **Diisopropylbenzene dihydroperoxide** is **17**.",
+      "status": "ok"
+    },
+    {
+      "index": 166,
+      "answer": "A **single piece wheel** is a vehicle wheel consisting of one part, designed to hold the tire on the wheel when the tire is inflated.",
+      "status": "ok"
+    },
+    {
+      "index": 167,
+      "answer": "Di-n-butyl peroxydicarbonate:\n\n- **UN3115:** \u221215 to \u22125 \u00b0C  \n- **UN3117:** \u221210 to 0 \u00b0C",
+      "status": "ok"
+    },
+    {
+      "index": 168,
+      "answer": "Commercial account means an arrangement whereby a retail distributor sells hazardous chemicals to an employer, generally in large quantities over time and/or at costs below the regular retail price.",
+      "status": "ok"
+    },
+    {
+      "index": 169,
+      "answer": "Annealing is **not listed** under \u201cBeryllium oxide operations\u201d in Table A.1.",
+      "status": "ok"
+    },
+    {
+      "index": 170,
+      "answer": "A building face roller is a rotating cylindrical member designed to ride on the face of the building wall, preventing the platform from abrading the wall and helping stabilize the platform.",
+      "status": "ok"
+    },
+    {
+      "index": 171,
+      "answer": "\u201cFully vaccinated\u201d means **2 weeks or more following the final dose of a COVID-19 vaccine**.",
+      "status": "ok"
+    },
+    {
+      "index": 172,
+      "answer": "\u201cCommon name\u201d means any designation or identification\u2014such as a code name, code number, trade name, brand name, or generic name\u2014used to identify a chemical other than by its chemical name.",
+      "status": "ok"
+    },
+    {
+      "index": 173,
+      "answer": "\u226528% mass.",
+      "status": "ok"
+    },
+    {
+      "index": 174,
+      "answer": "A suspended scaffold (swinging scaffold) is a scaffold supported on wire or other ropes, used for work on or access to the vertical sides of structures on a temporary basis. It is not designed for use on a specific structure or group of structures.",
+      "status": "ok"
+    },
+    {
+      "index": 175,
+      "answer": "",
+      "status": "empty"
+    },
+    {
+      "index": 176,
+      "answer": "\u22655% by mass.",
+      "status": "ok"
+    },
+    {
+      "index": 177,
+      "answer": "The table lists multiple concentrations for **1,1-Di-(tert-butylperoxy)cyclohexane**:\n\n- **UN3101:** >80\u2013100%\n- **UN3103:** >52\u201380% and \u226472%\n- **UN3105:** >42\u201352%\n- **UN3106:** \u226442%\n- **UN3107:** \u226427%\n- **UN3109:** \u226442%, \u226437%, \u226425%, and \u226413%",
+      "status": "ok"
+    },
+    {
+      "index": 178,
+      "answer": "0.1 ppm",
+      "status": "ok"
+    },
+    {
+      "index": 179,
+      "answer": "The LDEQ for **OOOOb** is **No**.",
+      "status": "ok"
+    },
+    {
+      "index": 180,
+      "answer": "A master coupling link is an alloy steel welded coupling link used as an intermediate link to join alloy steel chain to master links.",
+      "status": "ok"
+    },
+    {
+      "index": 181,
+      "answer": "A safety data sheet (SDS) is written or printed material concerning a hazardous chemical, prepared in accordance with paragraph (g) of 29 CFR 1910.1200.",
+      "status": "ok"
+    },
+    {
+      "index": 182,
+      "answer": "Operating control means a mechanism regulating or guiding the operation of equipment that ensures a specific operating mode.",
+      "status": "ok"
+    },
+    {
+      "index": 183,
+      "answer": "For **\u201cMaterial,\u201d** the grinding-wheel diameter groups are:\n\n- **3\u20136 in.:** A = 1/4, B = 1/4  \n- **Over 6\u201312 in.:** A = 3/8, B = 5/16  \n- **Over 12\u201316 in.:** A = 1/2, B = 3/8  \n- **Over 16\u201320 in.:** A = 5/8, B = 1/2  \n- **Over 20\u201324 in.:** A = 7/8, B = 5/8  \n- **Over 24\u201330 in.:** A = 1, B = 3/4  \n- **Over 30\u201348 in.:** A = 11/4, B = 1 inch.",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 184,
+      "answer": "Combination cable is a cable with both steel structural members capable of supporting the platform and copper or other electrical conductors insulated from each other and from the structural members by nonconductive barriers.",
+      "status": "ok"
+    },
+    {
+      "index": 185,
+      "answer": "360 mg/m\u00b3",
+      "status": "ok"
+    },
+    {
+      "index": 186,
+      "answer": "Abrasive Sawing.",
+      "status": "ok"
+    },
+    {
+      "index": 187,
+      "answer": "The angle of loading is the inclination of a leg or branch of a sling measured from the horizontal or vertical plane. An angle of 5\u00b0 or less from vertical may be considered a vertical angle of loading.",
+      "status": "ok"
+    },
+    {
+      "index": 188,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 189,
+      "answer": "Di-tert-butyl peroxide has two ID Nos.:\n\n- **UN3107** \u2014 concentration >52\u2013100%\n- **UN3109** \u2014 concentration \u226452%",
+      "status": "ok"
+    },
+    {
+      "index": 190,
+      "answer": "15 mg/m\u00b3.",
+      "status": "ok"
+    },
+    {
+      "index": 191,
+      "answer": "A **guide shoe** is a device attached to the platform designed to provide sliding contact between the platform and the building guides.",
+      "status": "ok"
+    },
+    {
+      "index": 192,
+      "answer": "For steel (Grade V60-30), the grinding wheel diameter ranges are:\n\n- 3\u20136 inches  \n- Over 6\u201312 inches  \n- Over 12\u201316 inches  \n- Over 16\u201320 inches  \n- Over 20\u201324 inches  \n- Over 24\u201330 inches  \n- Over 30\u201348 inches  \n\nEach range has A and B values.",
+      "status": "ok"
+    },
+    {
+      "index": 193,
+      "answer": "An endless wire rope sling made from one length of strand wrapped six times around a core, with the ends of the strand hand-tucked inside the six wraps.",
+      "status": "ok"
+    },
+    {
+      "index": 194,
+      "answer": "Synthetic Fiber Production Facilities.",
+      "status": "ok"
+    },
+    {
+      "index": 195,
+      "answer": "An **Exposure Incident** is a specific eye, mouth, other mucous membrane, non-intact skin, or parenteral contact with blood or other potentially infectious materials resulting from the performance of an employee\u2019s duties.",
+      "status": "ok"
+    },
+    {
+      "index": 196,
+      "answer": "A **competent person** is someone who, through training and experience, can identify hazardous or dangerous conditions in powered platform installations and train employees to recognize those conditions.",
+      "status": "ok"
+    },
+    {
+      "index": 197,
+      "answer": "2179-59-1",
+      "status": "ok"
+    },
+    {
+      "index": 198,
+      "answer": "A surgical mask covers the user\u2019s nose and mouth and provides a physical barrier to fluids and particulate materials. It meets fluid-barrier protection standards and Class I or Class II flammability tests and is generally regulated by FDA as a Class II device under 21 CFR 878.4040.",
+      "status": "ok"
+    },
+    {
+      "index": 199,
+      "answer": "A precautionary statement is a phrase describing recommended measures to minimize or prevent adverse effects from exposure to a hazardous chemical, or from improper storage or handling.",
+      "status": "ok"
+    },
+    {
+      "index": 200,
+      "answer": "20\u201325 \u00b0C.",
+      "status": "ok"
+    },
+    {
+      "index": 201,
+      "answer": "13",
+      "status": "ok"
+    },
+    {
+      "index": 202,
+      "answer": "For containers with **501\u20132,000 gallons** capacity, the minimum distances are:\n\n- **25 feet** for underground containers  \n- **25 feet** for aboveground containers  \n- **3 feet** between aboveground containers  \n\n*Footnote 2 permits reduction to not less than 10 feet for a single container of 1,200 gallons or less under specified conditions.*",
+      "status": "ok"
+    },
+    {
+      "index": 203,
+      "answer": "Vertical hitch is a method of supporting a load by a single, vertical part or leg of the sling.",
+      "status": "ok"
+    },
+    {
+      "index": 204,
+      "answer": "\u226528% water (for UN3116). The UN3102 entry does not specify a water content.",
+      "status": "ok"
+    },
+    {
+      "index": 205,
+      "answer": "The Notes are **13, 20**.",
+      "status": "ok"
+    },
+    {
+      "index": 206,
+      "answer": "For **Di-sec-butyl peroxydicarbonate** (UN3113, concentration >52\u2013100%): **\u221220 \u00b0C and \u221210 \u00b0C**.",
+      "status": "ok"
+    },
+    {
+      "index": 207,
+      "answer": "Flexible Vinyl and Urethane Coating and Printing.",
+      "status": "ok"
+    },
+    {
+      "index": 208,
+      "answer": "Needleless systems are devices that do not use needles for:\n\n1. Collecting bodily fluids or withdrawing body fluids after initial venous or arterial access is established;\n2. Administering medication or fluids; or\n3. Any other procedure involving potential occupational exposure to bloodborne pathogens from percutaneous injuries caused by contaminated sharps.",
+      "status": "ok"
+    },
+    {
+      "index": 209,
+      "answer": "7429-90-5",
+      "status": "ok"
+    },
+    {
+      "index": 210,
+      "answer": "A replacement that satisfies the design specification.",
+      "status": "ok"
+    },
+    {
+      "index": 211,
+      "answer": "**Final medical determination** is the examining physician\u2019s written opinion of an employee\u2019s health status under paragraphs (l)(3)\u2013(12). If multiple-physician review under paragraph (l)(13) or an alternative physician determination under paragraph (l)(14) is invoked, it is the final written medical finding, recommendation, or determination resulting from that process.",
+      "status": "ok"
+    },
+    {
+      "index": 212,
+      "answer": "For **5. Lead pigment manufacturing**, the effective dates are **March 1, 1979; March 1, 1980; March 1, 1981; March 1, 1982; March 1, 1984; and March 1, 1989 (final)**.",
+      "status": "ok"
+    },
+    {
+      "index": 213,
+      "answer": "0.25 mg/m\u00b3",
+      "status": "ok"
+    },
+    {
+      "index": 214,
+      "answer": "Brushing.",
+      "status": "ok"
+    },
+    {
+      "index": 215,
+      "answer": "A **source individual** is any individual, living or dead, whose blood or other potentially infectious materials may expose an employee to occupational infection. Examples include hospital and clinic patients and clients.",
+      "status": "ok"
+    },
+    {
+      "index": 216,
+      "answer": "Ambulatory care is healthcare services provided on an outpatient basis, without admission to a hospital or other facility. Examples include physicians\u2019 offices, hospital outpatient departments, ambulatory surgical centers, specialty clinics, and urgent care clinics. It excludes home healthcare settings for purposes of this section.",
+      "status": "ok"
+    },
+    {
+      "index": 217,
+      "answer": "Di-tert-butyl peroxide (UN3109): **Note 24**.  \nThe UN3107 entry has no note listed.",
+      "status": "ok"
+    },
+    {
+      "index": 218,
+      "answer": "Nonmetallic Mineral Processing Plants.",
+      "status": "ok"
+    },
+    {
+      "index": 219,
+      "answer": "The question is truncated at \u201c(min\u2026?\u201d so no unique answer can be determined. Please specify the guard material/minimum tensile strength and the applicable wheel-thickness or wheel-diameter range.",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 220,
+      "answer": "Laser Cutting is listed as a **beryllium oxide operation**.",
+      "status": "ok"
+    },
+    {
+      "index": 221,
+      "answer": "For containers of **125\u2013250 gallons**, the minimum distances are:\n\n- **Underground container:** 10 feet  \n- **Aboveground container:** 10 feet  \n- **Between aboveground containers:** None required",
+      "status": "ok_after_retry"
+    },
+    {
+      "index": 222,
+      "answer": "200 ppm",
+      "status": "ok"
+    },
+    {
+      "index": 223,
+      "answer": "Building maintenance means operations such as window cleaning, caulking, metal polishing, reglazing, and general maintenance on building surfaces.",
+      "status": "ok"
+    },
+    {
+      "index": 224,
+      "answer": "Lake County Air Quality Management District (AQMD).",
+      "status": "ok"
+    },
+    {
+      "index": 225,
+      "answer": "Platform rated load is the combined weight of workers, tools, equipment, and other material permitted to be carried by the working platform at the installation, as stated on the load rating plate.",
+      "status": "ok"
+    },
+    {
+      "index": 226,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 227,
+      "answer": "The mg/m\u00b3 value for Allyl glycidyl ether (AGE) is **(C)45 mg/m\u00b3**.",
+      "status": "ok"
+    },
+    {
+      "index": 228,
+      "answer": "A **roof powered platform** is a working platform where the hoist(s) used to raise or lower the platform are located on the roof.",
+      "status": "ok"
+    },
+    {
+      "index": 229,
+      "answer": "\u226563 mass%",
+      "status": "ok"
+    },
+    {
+      "index": 230,
+      "answer": "The **Underground** (minimum distance between an underground container and other containers) column of the \u00a7 1910.110 table gives these values by water capacity per container:\n\n| Water capacity per container | Minimum distance (Underground) |\n|---|---|\n| Less than 125 gals | 10 feet |\n| 125 to 250 gals | 10 feet |\n| 251 to 500 gals | 10 feet |\n| 501 to 2,000 gals | 25 feet \u00b2 |\n| 2,001 to 30,000 gals | 50 feet |\n| 30,001 to 70,000 gals | 50 feet |\n| 70,001 to 90,000 gals | 50 feet |\n\nFootnotes: \u00b9 If the aggregate water capacity of a multi-container installation at a consumer site is 501 gallons or greater, the minimum distance shall comply with the appropriate portion of the table, applying the aggregate capacity rather than the capacity per container; separate installations shall be at least 25 feet apart, and the \"minimum distances between aboveground containers\" do not apply to such installations. \u00b2 The above distance requirements may be reduced to not less than 10 feet for a single container of 1,200 gallons water capacity or less, provided it is at least 25 feet from any other LP-Gas container of more than 125 gallons water capacity. \u00b3 \u00bc of sum of diameters of adjacent containers.",
+      "status": "ok"
+    },
+    {
+      "index": 231,
+      "answer": "UN3103",
+      "status": "ok"
+    },
+    {
+      "index": 232,
+      "answer": "No.",
+      "status": "ok"
+    },
+    {
+      "index": 233,
+      "answer": "**KKK \u2014 Equipment Leaks of VOC From Onshore Natural Gas Processing Plants** (listed in the ODEQ/LDEQ tables as \"VOC Equipment Leaks From Onshore Natural Gas Processing Plants\").",
+      "status": "ok"
+    },
+    {
+      "index": 234,
+      "answer": "A **designated representative** is any individual or organization to whom an employee gives written authorization to exercise the employee\u2019s rights under the HAZCOM section. A recognized or certified collective bargaining agent is automatically a designated representative without requiring written authorization.",
+      "status": "ok"
+    },
+    {
+      "index": 235,
+      "answer": "Close contact means being within 6 feet of another person for a cumulative total of 15 minutes or more over a 24-hour period during that person\u2019s potential transmission period.",
+      "status": "ok"
+    },
+    {
+      "index": 236,
+      "answer": "For Di-(tert-butylperoxy)phthalate (UN3105), the diluent is **\u226548 mass%**. The separate UN3107 formulation lists **\u226558 mass%**.",
+      "status": "ok"
+    },
+    {
+      "index": 237,
+      "answer": "1344-28-1",
+      "status": "ok"
+    },
+    {
+      "index": 238,
+      "answer": "",
+      "status": "empty"
+    },
+    {
+      "index": 239,
+      "answer": "A female handle (choker) is a handle with a handle eye and a slot sized to permit passage of a male handle, allowing use of a metal mesh sling in a choker hitch.",
+      "status": "ok"
+    },
+    {
+      "index": 240,
+      "answer": "VOC Emissions from SOCMI Distillation Operations.",
+      "status": "ok"
+    },
+    {
+      "index": 241,
+      "answer": "The diluent concentration is **\u226548 mass%**.",
+      "status": "ok"
+    },
+    {
+      "index": 242,
+      "answer": "A roof rigged davit is a davit used to raise a suspended working platform above the building face being serviced. It may also raise a platform that has been ground-rigged.",
+      "status": "ok"
+    },
+    {
+      "index": 243,
+      "answer": "Reaction time is the time, in seconds, for the activating or deactivating signal to travel through the system, measured from signal initiation until completion of the measured function.",
+      "status": "ok"
+    },
+    {
+      "index": 244,
+      "answer": "For electrical, electromechanical, and electronic devices, function completion occurs when the circuit produces a change of state in the output element. When the change of state is motion, measurement is made at the completion of the motion.",
+      "status": "ok"
+    },
+    {
+      "index": 245,
+      "answer": "\u22659% by mass.",
+      "status": "ok"
+    },
+    {
+      "index": 246,
+      "answer": "A wire rope sling made endless by joining the ends of a single length of cable-laid rope with one or more metallic fittings.",
+      "status": "ok"
+    }
+  ]
+}

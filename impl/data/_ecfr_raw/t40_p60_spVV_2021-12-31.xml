@@ -1,0 +1,2083 @@
+<?xml version="1.0"?>
+<DIV6 N="VV" TYPE="SUBPART" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-40/part-60/subpart-VV&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;40 CFR Part 60 Subpart VV&amp;quot;}">
+<HEAD>Subpart VV - Standards of Performance for Equipment Leaks of VOC in the Synthetic Organic Chemicals Manufacturing Industry for which Construction, Reconstruction, or Modification Commenced After January 5, 1981, and on or Before November 7, 2006</HEAD>
+<SOURCE>
+<HED>Source:</HED><PSPACE>48 FR 48335, Oct. 18, 1983, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV8 N="60.480" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.480&quot;,&quot;citation&quot;:&quot;40 CFR 60.480&quot;}">
+<HEAD>&#xA7; 60.480 Applicability and designation of affected facility.</HEAD>
+<P>(a)(1) The provisions of this subpart apply to affected facilities in the synthetic organic chemicals manufacturing industry.</P>
+<P>(2) The group of all equipment (defined in &#xA7; 60.481) within a process unit is an affected facility.</P>
+<P>(b) Any affected facility under paragraph (a) of this section that commences construction, reconstruction, or modification after January 5, 1981, and on or before November 7, 2006, shall be subject to the requirements of this subpart.</P>
+<P>(c) Addition or replacement of equipment for the purpose of process improvement which is accomplished without a capital expenditure shall not by itself be considered a modification under this subpart.</P>
+<P>(d)(1) If an owner or operator applies for one or more of the exemptions in this paragraph, then the owner or operator shall maintain records as required in &#xA7; 60.486(i).</P>
+<P>(2) Any affected facility that has the design capacity to produce less than 1,000 Mg/yr (1,102 ton/yr) of a chemical listed in &#xA7; 60.489 is exempt from &#xA7;&#xA7; 60.482-1 through 60.482-10.</P>
+<P>(3) If an affected facility produces heavy liquid chemicals only from heavy liquid feed or raw materials, then it is exempt from &#xA7;&#xA7; 60.482-1 through 60.482-10.</P>
+<P>(4) Any affected facility that produces beverage alcohol is exempt from &#xA7;&#xA7; 60.482-1 through 60.482-10.</P>
+<P>(5) Any affected facility that has no equipment in volatile organic compounds (VOC) service is exempt from &#xA7;&#xA7; 60.482-1 through 60.482-10.</P>
+<P>(e) <I>Alternative means of compliance</I>&#x2014;(1) <I>Option to comply with part 65.</I> (i) Owners or operators may choose to comply with the provisions of 40 CFR part 65, subpart F, to satisfy the requirements of &#xA7;&#xA7; 60.482 through 60.487 for an affected facility. When choosing to comply with 40 CFR part 65, subpart F, the requirements of &#xA7;&#xA7; 60.485(d), (e), and (f) and 60.486(i) and (j) still apply. Other provisions applying to an owner or operator who chooses to comply with 40 CFR part 65 are provided in 40 CFR 65.1.</P>
+<P>(ii) <I>Part 60, subpart A.</I> Owners or operators who choose to comply with 40 CFR part 65, subpart F must also comply with &#xA7;&#xA7; 60.1, 60.2, 60.5, 60.6, 60.7(a)(1) and (4), 60.14, 60.15, and 60.16 for that equipment. All sections and paragraphs of subpart A of this part that are not mentioned in this paragraph (e)(1)(ii) do not apply to owners and operators of equipment subject to this subpart complying with 40 CFR part 65, subpart F, except that provisions required to be met prior to implementing 40 CFR part 65 still apply. Owners and operators who choose to comply with 40 CFR part 65, subpart F, must comply with 40 CFR part 65, subpart A.</P>
+<P>(2) <I>Subpart VVa.</I> Owners or operators may choose to comply with the provisions of subpart VVa of this part 60 to satisfy the requirements of this subpart VV for an affected facility.</P>
+<P>(f) <I>Stay of standards.</I> Owners or operators are not required to comply with the definition of &#x201C;process unit&#x201D; in &#xA7; 60.481 and the requirements in &#xA7; 60.482-1(g) of this subpart until the EPA takes final action to require compliance and publishes a document in the <E T="04">Federal Register.</E> While the definition of &#x201C;process unit&#x201D; is stayed, owners or operators should use the following definition:</P>
+<P><I>Process unit</I> means components assembled to produce, as intermediate or final products, one or more of the chemicals listed in &#xA7; 60.489 of this part. A process unit can operate independently if supplied with sufficient feed or raw materials and sufficient storage facilities for the product.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 49 FR 22607, May 30, 1984; 65 FR 61762, Oct. 17, 2000; 65 FR 78276, Dec. 14, 2000; 72 FR 64879, Nov. 16, 2007, 73 FR 31379, June 2, 2008; 73 FR 31375, June 2, 2008]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.481" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.481&quot;,&quot;citation&quot;:&quot;40 CFR 60.481&quot;}">
+<HEAD>&#xA7; 60.481 Definitions.</HEAD>
+<P>As used in this subpart, all terms not defined herein shall have the meaning given them in the Act or in subpart A of part 60, and the following terms shall have the specific meanings given them.</P>
+<P><I>Capital expenditure</I> means, in addition to the definition in 40 CFR 60.2, an expenditure for a physical or operational change to an existing facility that:</P>
+<P>(a) Exceeds P, the product of the facility's replacement cost, R, and an adjusted annual asset guideline repair allowance, A, as reflected by the following equation: P = R &#xD7; A, where</P>
+<P>(1) The adjusted annual asset guideline repair allowance, A, is the product of the percent of the replacement cost, Y, and the applicable basic annual asset guideline repair allowance, B, divided by 100 as reflected by the following equation:</P>
+<FP-2>A = Y &#xD7; (B &#xF7; 100);
+</FP-2>
+<P>(2) The percent Y is determined from the following equation: Y = 1.0 &#x2212; 0.575 log X, where X is 1982 minus the year of construction; and</P>
+<P>(3) The applicable basic annual asset guideline repair allowance, B, is selected from the following table consistent with the applicable subpart:</P>
+<DIV width="100%"><DIV class="table_head"><P class="gpotbl_title">Table for Determining Applicable Value for B</P></DIV><DIV class="gpotbl_div"><TABLE border="1" cellpadding="1" cellspacing="1" class="gpotbl_table" frame="void" width="100%"><TR><TH class="gpotbl_colhed" scope="col">Subpart applicable to facility
+</TH><TH class="gpotbl_colhed" scope="col">Value of B to be used in equation
+</TH></TR><TR><TD align="left" class="gpotbl_cell" scope="row">VV</TD><TD align="left" class="gpotbl_cell">12.5
+</TD></TR><TR><TD align="left" class="gpotbl_cell" scope="row">DDD</TD><TD align="left" class="gpotbl_cell">12.5
+</TD></TR><TR><TD align="left" class="gpotbl_cell" scope="row">GGG</TD><TD align="left" class="gpotbl_cell">7.0
+</TD></TR><TR><TD align="left" class="gpotbl_cell" scope="row">KKK</TD><TD align="left" class="gpotbl_cell">4.5</TD></TR></TABLE></DIV></DIV>
+<P><I>Closed-loop system</I> means an enclosed system that returns process fluid to the process.</P>
+<P><I>Closed-purge system</I> means a system or combination of systems and portable containers to capture purged liquids. Containers for purged liquids must be covered or closed when not being filled or emptied.</P>
+<P><I>Closed vent system</I> means a system that is not open to the atmosphere and that is composed of hard-piping, ductwork, connections, and, if necessary, flow-inducing devices that transport gas or vapor from a piece or pieces of equipment to a control device or back to a process.</P>
+<P><I>Connector</I> means flanged, screwed, or other joined fittings used to connect two pipe lines or a pipe line and a piece of process equipment or that close an opening in a pipe that could be connected to another pipe. Joined fittings welded completely around the circumference of the interface are not considered connectors for the purpose of this subpart.</P>
+<P><I>Control device</I> means an enclosed combustion device, vapor recovery system, or flare.</P>
+<P><I>Distance piece</I> means an open or enclosed casing through which the piston rod travels, separating the compressor cylinder from the crankcase.</P>
+<P><I>Double block and bleed system</I> means two block valves connected in series with a bleed valve or line that can vent the line between the two block valves.</P>
+<P><I>Duct work</I> means a conveyance system such as those commonly used for heating and ventilation systems. It is often made of sheet metal and often has sections connected by screws or crimping. Hard-piping is not ductwork.</P>
+<P><I>Equipment</I> means each pump, compressor, pressure relief device, sampling connection system, open-ended valve or line, valve, and flange or other connector in VOC service and any devices or systems required by this subpart.</P>
+<P><I>First attempt at repair</I> means to take action for the purpose of stopping or reducing leakage of organic material to the atmosphere using best practices.</P>
+<P><I>Fuel gas</I> means gases that are combusted to derive useful work or heat.</P>
+<P><I>Fuel gas system</I> means the offsite and onsite piping and flow and pressure control system that gathers gaseous stream(s) generated by onsite operations, may blend them with other sources of gas, and transports the gaseous stream for use as fuel gas in combustion devices or in-process combustion equipment, such as furnaces and gas turbines, either singly or in combination.</P>
+<P><I>Hard-piping</I> means pipe or tubing that is manufactured and properly installed using good engineering judgment and standards such as ASME B31.3, Process Piping (available from the American Society of Mechanical Engineers, PO Box 2300, Fairfield, NJ 07007-2300).</P>
+<P><I>In gas/vapor service</I> means that the piece of equipment contains process fluid that is in the gaseous state at operating conditions.</P>
+<P><I>In heavy liquid service</I> means that the piece of equipment is not in gas/vapor service or in light liquid service.</P>
+<P><I>In light liquid service</I> means that the piece of equipment contains a liquid that meets the conditions specified in &#xA7; 60.485(e).</P>
+<P><I>In-situ sampling systems</I> means nonextractive samplers or in-line samplers.</P>
+<P><I>In vacuum service</I> means that equipment is operating at an internal pressure which is at least 5 kilopascals (kPa)(0.7 psia) below ambient pressure.</P>
+<P><I>In VOC service</I> means that the piece of equipment contains or contacts a process fluid that is at least 10 percent VOC by weight. (The provisions of &#xA7; 60.485(d) specify how to determine that a piece of equipment is not in VOC service.)</P>
+<P><I>Liquids dripping</I> means any visible leakage from the seal including spraying, misting, clouding, and ice formation.</P>
+<P><I>Open-ended valve or line</I> means any valve, except safety relief valves, having one side of the valve seat in contact with process fluid and one side open to the atmosphere, either directly or through open piping.</P>
+<P><I>Pressure release</I> means the emission of materials resulting from system pressure being greater than set pressure of the pressure relief device.</P>
+<P><I>Process improvement</I> means routine changes made for safety and occupational health requirements, for energy savings, for better utility, for ease of maintenance and operation, for correction of design deficiencies, for bottleneck removal, for changing product requirements, or for environmental control.</P>
+<P><I>Process unit</I> means the components assembled and connected by pipes or ducts to process raw materials and to produce, as intermediate or final products, one or more of the chemicals listed in &#xA7; 60.489. A process unit can operate independently if supplied with sufficient feed or raw materials and sufficient storage facilities for the product. For the purpose of this subpart, process unit includes any feed, intermediate and final product storage vessels (except as specified in &#xA7; 60.482-1(g)), product transfer racks, and connected ducts and piping. A process unit includes all equipment as defined in this subpart.</P>
+<P><I>Process unit shutdown</I> means a work practice or operational procedure that stops production from a process unit or part of a process unit during which it is technically feasible to clear process material from a process unit or part of a process unit consistent with safety constraints and during which repairs can be accomplished. The following are not considered process unit shutdowns:</P>
+<P>(1) An unscheduled work practice or operational procedure that stops production from a process unit or part of a process unit for less than 24 hours.</P>
+<P>(2) An unscheduled work practice or operational procedure that would stop production from a process unit or part of a process unit for a shorter period of time than would be required to clear the process unit or part of the process unit of materials and start up the unit, and would result in greater emissions than delay of repair of leaking components until the next scheduled process unit shutdown.</P>
+<P>(3) The use of spare equipment and technically feasible bypassing of equipment without stopping production.</P>
+<P><I>Quarter</I> means a 3-month period; the first quarter concludes on the last day of the last full month during the 180 days following initial startup.</P>
+<P><I>Repaired</I> means that equipment is adjusted, or otherwise altered, in order to eliminate a leak as defined in the applicable sections of this subpart and, except for leaks identified in accordance with &#xA7;&#xA7; 60.482-2(b)(2)(ii) and (d)(6)(ii) and (iii), 60.482-3(f), and 60.482-10(f)(1)(ii), is re-monitored as specified in &#xA7; 60.485(b) to verify that emissions from the equipment are below the applicable leak definition.</P>
+<P><I>Replacement cost</I> means the capital needed to purchase all the depreciable components in a facility.</P>
+<P><I>Sampling connection system</I> means an assembly of equipment within a process unit used during periods of representative operation to take samples of the process fluid. Equipment used to take nonroutine grab samples is not considered a sampling connection system.</P>
+<P><I>Sensor</I> means a device that measures a physical quantity or the change in a physical quantity such as temperature, pressure, flow rate, pH, or liquid level.</P>
+<P><I>Storage vessel</I> means a tank or other vessel that is used to store organic liquids that are used in the process as raw material feedstocks, produced as intermediates or final products, or generated as wastes. Storage vessel does not include vessels permanently attached to motor vehicles, such as trucks, railcars, barges, or ships.</P>
+<P><I>Synthetic organic chemicals manufacturing industry</I> means the industry that produces, as intermediates or final products, one or more of the chemicals listed in &#xA7; 60.489.</P>
+<P><I>Transfer rack</I> means the collection of loading arms and loading hoses, at a single loading rack, that are used to fill tank trucks and/or railcars with organic liquids.</P>
+<P><I>Volatile organic compounds</I> or VOC means, for the purposes of this subpart, any reactive organic compounds as defined in &#xA7; 60.2 Definitions.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 49 FR 22607, May 30, 1984; 49 FR 26738, June 29, 1984; 60 FR 43258, Aug. 18, 1995; 65 FR 61762, Oct. 17, 2000; 65 FR 78276, Dec. 14, 2000; 72 FR 64879, Nov. 16, 2007]
+</CITA>
+<EFFDNOT>
+<HED>Effective Date Note:</HED><PSPACE>At 73 FR 31375, June 2, 2008, in &#xA7; 60.481, the definition of &#x201C;process unit&#x201D; was stayed until further notice.</PSPACE></EFFDNOT>
+</DIV8>
+
+<DIV8 N="60.482-1" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-1&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-1&quot;}">
+<HEAD>&#xA7; 60.482-1 Standards: General.</HEAD>
+<P>(a) Each owner or operator subject to the provisions of this subpart shall demonstrate compliance with the requirements of &#xA7;&#xA7; 60.482-1 through 60.482-10 or &#xA7; 60.480(e) for all equipment within 180 days of initial startup.</P>
+<P>(b) Compliance with &#xA7;&#xA7; 60.482-1 to 60.482-10 will be determined by review of records and reports, review of performance test results, and inspection using the methods and procedures specified in &#xA7; 60.485.</P>
+<P>(c)(1) An owner or operator may request a determination of equivalence of a means of emission limitation to the requirements of &#xA7;&#xA7; 60.482-2, 60.482-3, 60.482-5, 60.482-6, 60.482-7, 60.482-8, and 60.482-10 as provided in &#xA7; 60.484.</P>
+<P>(2) If the Administrator makes a determination that a means of emission limitation is at least equivalent to the requirements of &#xA7; 60.482-2, &#xA7; 60.482-3, &#xA7; 60.482-5, &#xA7; 60.482-6, &#xA7; 60.482-7, &#xA7; 60.482-8, or &#xA7; 60.482-10, an owner or operator shall comply with the requirements of that determination.</P>
+<P>(d) Equipment that is in vacuum service is excluded from the requirements of &#xA7;&#xA7; 60.482-2 to 60.482-10 if it is identified as required in &#xA7; 60.486(e)(5).</P>
+<P>(e) Equipment that an owner or operator designates as being in VOC service less than 300 hours (hr)/yr is excluded from the requirements of &#xA7;&#xA7; 60.482-2 through 60.482-10 if it is identified as required in &#xA7; 60.486(e)(6) and it meets any of the conditions specified in paragraphs (e)(1) through (3) of this section.</P>
+<P>(1) The equipment is in VOC service only during startup and shutdown, excluding startup and shutdown between batches of the same campaign for a batch process.</P>
+<P>(2) The equipment is in VOC service only during process malfunctions or other emergencies.</P>
+<P>(3) The equipment is backup equipment that is in VOC service only when the primary equipment is out of service.</P>
+<P>(f)(1) If a dedicated batch process unit operates less than 365 days during a year, an owner or operator may monitor to detect leaks from pumps and valves at the frequency specified in the following table instead of monitoring as specified in &#xA7;&#xA7; 60.482-2, 60.482-7, and 60.483-2:</P>
+<DIV width="100%"><DIV class="gpotbl_div"><TABLE border="1" cellpadding="1" cellspacing="1" class="gpotbl_table" frame="void" width="100%"><TR><TH class="gpotbl_colhed" rowspan="2" scope="col">Operating time (percent of hours during year)
+</TH><TH class="gpotbl_colhed" colspan="3" scope="col">Equivalent monitoring frequency time in use
+</TH></TR><TR><TH class="gpotbl_colhed" scope="col">Monthly
+</TH><TH class="gpotbl_colhed" scope="col">Quarterly
+</TH><TH class="gpotbl_colhed" scope="col">Semiannually
+</TH></TR><TR><TD align="left" class="gpotbl_cell" scope="row">0 to &lt;25</TD><TD align="left" class="gpotbl_cell">Quarterly</TD><TD align="left" class="gpotbl_cell">Annually</TD><TD align="left" class="gpotbl_cell">Annually.
+</TD></TR><TR><TD align="left" class="gpotbl_cell" scope="row">25 to &lt;50</TD><TD align="left" class="gpotbl_cell">Quarterly</TD><TD align="left" class="gpotbl_cell">Semiannually</TD><TD align="left" class="gpotbl_cell">Annually.
+</TD></TR><TR><TD align="left" class="gpotbl_cell" scope="row">50 to &lt;75</TD><TD align="left" class="gpotbl_cell">Bimonthly</TD><TD align="left" class="gpotbl_cell">Three quarters</TD><TD align="left" class="gpotbl_cell">Semiannually.
+</TD></TR><TR><TD align="left" class="gpotbl_cell" scope="row">75 to 100</TD><TD align="left" class="gpotbl_cell">Monthly</TD><TD align="left" class="gpotbl_cell">Quarterly</TD><TD align="left" class="gpotbl_cell">Semiannually.</TD></TR></TABLE></DIV></DIV>
+<P>(2) Pumps and valves that are shared among two or more batch process units that are subject to this subpart may be monitored at the frequencies specified in paragraph (f)(1) of this section, provided the operating time of all such process units is considered.</P>
+<P>(3) The monitoring frequencies specified in paragraph (f)(1) of this section are not requirements for monitoring at specific intervals and can be adjusted to accommodate process operations. An owner or operator may monitor at any time during the specified monitoring period (e.g., month, quarter, year), provided the monitoring is conducted at a reasonable interval after completion of the last monitoring campaign. Reasonable intervals are defined in paragraphs (f)(3)(i) through (iv) of this section.</P>
+<P>(i) When monitoring is conducted quarterly, monitoring events must be separated by at least 30 calendar days.</P>
+<P>(ii) When monitoring is conducted semiannually (<I>i.e.</I>, once every 2 quarters), monitoring events must be separated by at least 60 calendar days.</P>
+<P>(iii) When monitoring is conducted in 3 quarters per year, monitoring events must be separated by at least 90 calendar days.</P>
+<P>(iv) When monitoring is conducted annually, monitoring events must be separated by at least 120 calendar days.</P>
+<P>(g) If the storage vessel is shared with multiple process units, the process unit with the greatest annual amount of stored materials (predominant use) is the process unit the storage vessel is assigned to. If the storage vessel is shared equally among process units, and one of the process units has equipment subject to subpart VVa of this part, the storage vessel is assigned to that process unit. If the storage vessel is shared equally among process units, none of which have equipment subject to subpart VVa of this part, the storage vessel is assigned to any process unit subject to this subpart. If the predominant use of the storage vessel varies from year to year, then the owner or operator must estimate the predominant use initially and reassess every 3 years. The owner or operator must keep records of the information and supporting calculations that show how predominant use is determined. All equipment on the storage vessel must be monitored when in VOC service.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 49 FR 22608, May 30, 1984; 65 FR 78276, Dec. 14, 2000; 72 FR 64880, Nov. 16, 2007]
+</CITA>
+<EFFDNOT>
+<HED>Effective Date Note:</HED><PSPACE>At 73 FR 31375, June 2, 2008, in &#xA7; 60.482-1, paragraph (g) was stayed until further notice.</PSPACE></EFFDNOT>
+</DIV8>
+
+<DIV8 N="60.482-2" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-2&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-2&quot;}">
+<HEAD>&#xA7; 60.482-2 Standards: Pumps in light liquid service.</HEAD>
+<P>(a)(1) Each pump in light liquid service shall be monitored monthly to detect leaks by the methods specified in &#xA7; 60.485(b), except as provided in &#xA7; 60.482-1(c) and (f) and paragraphs (d), (e), and (f) of this section. A pump that begins operation in light liquid service after the initial startup date for the process unit must be monitored for the first time within 30 days after the end of its startup period, except for a pump that replaces a leaking pump and except as provided in &#xA7; 60.482-1(c) and (f) and paragraphs (d), (e), and (f) of this section.</P>
+<P>(2) Each pump in light liquid service shall be checked by visual inspection each calendar week for indications of liquids dripping from the pump seal, except as provided in &#xA7; 60.482-1(f).</P>
+<P>(b)(1) If an instrument reading of 10,000 ppm or greater is measured, a leak is detected.</P>
+<P>(2) If there are indications of liquids dripping from the pump seal, the owner or operator shall follow the procedure specified in either paragraph (b)(2)(i) or (ii) of this section. This requirement does not apply to a pump that was monitored after a previous weekly inspection if the instrument reading for that monitoring event was less than 10,000 ppm and the pump was not repaired since that monitoring event.</P>
+<P>(i) Monitor the pump within 5 days as specified in &#xA7; 60.485(b). If an instrument reading of 10,000 ppm or greater is measured, a leak is detected. The leak shall be repaired using the procedures in paragraph (c) of this section.</P>
+<P>(ii) Designate the visual indications of liquids dripping as a leak, and repair the leak within 15 days of detection by eliminating the visual indications of liquids dripping.</P>
+<P>(c)(1) When a leak is detected, it shall be repaired as soon as practicable, but not later than 15 calendar days after it is detected, except as provided in &#xA7; 60.482-9.</P>
+<P>(2) A first attempt at repair shall be made no later than 5 calendar days after each leak is detected. First attempts at repair include, but are not limited to, the practices described in paragraphs (c)(2)(i) and (ii) of this section, where practicable.</P>
+<P>(i) Tightening the packing gland nuts;</P>
+<P>(ii) Ensuring that the seal flush is operating at design pressure and temperature.</P>
+<P>(d) Each pump equipped with a dual mechanical seal system that includes a barrier fluid system is exempt from the requirements of paragraph (a) of this section, provided the requirements specified in paragraphs (d)(1) through (6) of this section are met.</P>
+<P>(1) Each dual mechanical seal system is&#x2014;</P>
+<P>(i) Operated with the barrier fluid at a pressure that is at all times greater than the pump stuffing box pressure; or</P>
+<P>(ii) Equipped with a barrier fluid degassing reservoir that is routed to a process or fuel gas system or connected by a closed vent system to a control device that complies with the requirements of &#xA7; 60.482-10; or</P>
+<P>(iii) Equipped with a system that purges the barrier fluid into a process stream with zero VOC emissions to the atmosphere.</P>
+<P>(2) The barrier fluid system is in heavy liquid service or is not in VOC service.</P>
+<P>(3) Each barrier fluid system is equipped with a sensor that will detect failure of the seal system, the barrier fluid system, or both.</P>
+<P>(4)(i) Each pump is checked by visual inspection, each calendar week, for indications of liquids dripping from the pump seals.</P>
+<P>(ii) If there are indications of liquids dripping from the pump seal at the time of the weekly inspection, the owner or operator shall follow the procedure specified in either paragraph (d)(4)(ii)(A) or (B) of this section.</P>
+<P>(A) Monitor the pump within 5 days as specified in &#xA7; 60.485(b) to determine if there is a leak of VOC in the barrier fluid. If an instrument reading of 10,000 ppm or greater is measured, a leak is detected.</P>
+<P>(B) Designate the visual indications of liquids dripping as a leak.</P>
+<P>(5)(i) Each sensor as described in paragraph (d)(3) of this section is checked daily or is equipped with an audible alarm.</P>
+<P>(ii) The owner or operator determines, based on design considerations and operating experience, a criterion that indicates failure of the seal system, the barrier fluid system, or both.</P>
+<P>(iii) If the sensor indicates failure of the seal system, the barrier fluid system, or both, based on the criterion established in paragraph (d)(5)(ii) of this section, a leak is detected.</P>
+<P>(6)(i) When a leak is detected pursuant to paragraph (d)(4)(ii)(A) of this section, it shall be repaired as specified in paragraph (c) of this section.</P>
+<P>(ii) A leak detected pursuant to paragraph (d)(5)(iii) of this section shall be repaired within 15 days of detection by eliminating the conditions that activated the sensor.</P>
+<P>(iii) A designated leak pursuant to paragraph (d)(4)(ii)(B) of this section shall be repaired within 15 days of detection by eliminating visual indications of liquids dripping.</P>
+<P>(e) Any pump that is designated, as described in &#xA7; 60.486(e)(1) and (2), for no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, is exempt from the requirements of paragraphs (a), (c), and (d) of this section if the pump:</P>
+<P>(1) Has no externally actuated shaft penetrating the pump housing,</P>
+<P>(2) Is demonstrated to be operating with no detectable emissions as indicated by an instrument reading of less than 500 ppm above background as measured by the methods specified in &#xA7; 60.485(c), and</P>
+<P>(3) Is tested for compliance with paragraph (e)(2) of this section initially upon designation, annually, and at other times requested by the Administrator.</P>
+<P>(f) If any pump is equipped with a closed vent system capable of capturing and transporting any leakage from the seal or seals to a process or to a fuel gas system or to a control device that complies with the requirements of &#xA7; 60.482-10, it is exempt from paragraphs (a) through (e) of this section.</P>
+<P>(g) Any pump that is designated, as described in &#xA7; 60.486(f)(1), as an unsafe-to-monitor pump is exempt from the monitoring and inspection requirements of paragraphs (a) and (d)(4) through (6) of this section if:</P>
+<P>(1) The owner or operator of the pump demonstrates that the pump is unsafe-to-monitor because monitoring personnel would be exposed to an immediate danger as a consequence of complying with paragraph (a) of this section; and</P>
+<P>(2) The owner or operator of the pump has a written plan that requires monitoring of the pump as frequently as practicable during safe-to-monitor times but not more frequently than the periodic monitoring schedule otherwise applicable, and repair of the equipment according to the procedures in paragraph (c) of this section if a leak is detected.</P>
+<P>(h) Any pump that is located within the boundary of an unmanned plant site is exempt from the weekly visual inspection requirement of paragraphs (a)(2) and (d)(4) of this section, and the daily requirements of paragraph (d)(5) of this section, provided that each pump is visually inspected as often as practicable and at least monthly.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61762, Oct. 17, 2000; 65 FR 78276, Dec. 14, 2000; 72 FR 64880, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-3" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-3&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-3&quot;}">
+<HEAD>&#xA7; 60.482-3 Standards: Compressors.</HEAD>
+<P>(a) Each compressor shall be equipped with a seal system that includes a barrier fluid system and that prevents leakage of VOC to the atmosphere, except as provided in &#xA7; 60.482-1(c) and paragraphs (h), (i), and (j) of this section.</P>
+<P>(b) Each compressor seal system as required in paragraph (a) shall be:</P>
+<P>(1) Operated with the barrier fluid at a pressure that is greater than the compressor stuffing box pressure; or</P>
+<P>(2) Equipped with a barrier fluid system degassing reservoir that is routed to a process or fuel gas system or connected by a closed vent system to a control device that complies with the requirements of &#xA7; 60.482-10; or</P>
+<P>(3) Equipped with a system that purges the barrier fluid into a process stream with zero VOC emissions to the atmosphere.</P>
+<P>(c) The barrier fluid system shall be in heavy liquid service or shall not be in VOC service.</P>
+<P>(d) Each barrier fluid system as described in paragraph (a) shall be equipped with a sensor that will detect failure of the seal system, barrier fluid system, or both.</P>
+<P>(e)(1) Each sensor as required in paragraph (d) shall be checked daily or shall be equipped with an audible alarm.</P>
+<P>(2) The owner or operator shall determine, based on design considerations and operating experience, a criterion that indicates failure of the seal system, the barrier fluid system, or both.</P>
+<P>(f) If the sensor indicates failure of the seal system, the barrier system, or both based on the criterion determined under paragraph (e)(2), a leak is detected.</P>
+<P>(g)(1) When a leak is detected, it shall be repaired as soon as practicable, but not later than 15 calendar days after it is detected, except as provided in &#xA7; 60.482-9.</P>
+<P>(2) A first attempt at repair shall be made no later than 5 calendar days after each leak is detected.</P>
+<P>(h) A compressor is exempt from the requirements of paragraphs (a) and (b) of this section, if it is equipped with a closed vent system to capture and transport leakage from the compressor drive shaft back to a process or fuel gas system or to a control device that complies with the requirements of &#xA7; 60.482-10, except as provided in paragraph (i) of this section.</P>
+<P>(i) Any compressor that is designated, as described in &#xA7; 60.486(e) (1) and (2), for no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, is exempt from the requirements of paragraphs (a)-(h) if the compressor:</P>
+<P>(1) Is demonstrated to be operating with no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, as measured by the methods specified in &#xA7; 60.485(c); and</P>
+<P>(2) Is tested for compliance with paragraph (i)(1) of this section initially upon designation, annually, and at other times requested by the Administrator.</P>
+<P>(j) Any existing reciprocating compressor in a process unit which becomes an affected facility under provisions of &#xA7; 60.14 or &#xA7; 60.15 is exempt from paragraphs (a) through (e) and (h) of this section, provided the owner or operator demonstrates that recasting the distance piece or replacing the compressor are the only options available to bring the compressor into compliance with the provisions of paragraphs (a) through (e) and (h) of this section.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61762, Oct. 17, 2000; 65 FR 78277, Dec. 14, 2000; 72 FR 64881, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-4" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-4&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-4&quot;}">
+<HEAD>&#xA7; 60.482-4 Standards: Pressure relief devices in gas/vapor service.</HEAD>
+<P>(a) Except during pressure releases, each pressure relief device in gas/vapor service shall be operated with no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, as determined by the methods specified in &#xA7; 60.485(c).</P>
+<P>(b)(1) After each pressure release, the pressure relief device shall be returned to a condition of no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, as soon as practicable, but no later than 5 calendar days after the pressure release, except as provided in &#xA7; 60.482-9.</P>
+<P>(2) No later than 5 calendar days after the pressure release, the pressure relief device shall be monitored to confirm the conditions of no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, by the methods specified in &#xA7; 60.485(c).</P>
+<P>(c) Any pressure relief device that is routed to a process or fuel gas system or equipped with a closed vent system capable of capturing and transporting leakage through the pressure relief device to a control device as described in &#xA7; 60.482-10 is exempted from the requirements of paragraphs (a) and (b) of this section.</P>
+<P>(d)(1) Any pressure relief device that is equipped with a rupture disk upstream of the pressure relief device is exempt from the requirements of paragraphs (a) and (b) of this section, provided the owner or operator complies with the requirements in paragraph (d)(2) of this section.</P>
+<P>(2) After each pressure release, a new rupture disk shall be installed upstream of the pressure relief device as soon as practicable, but no later than 5 calendar days after each pressure release, except as provided in &#xA7; 60.482-9.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61762, Oct. 17, 2000; 65 FR 78277, Dec. 14, 2000]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-5" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-5&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-5&quot;}">
+<HEAD>&#xA7; 60.482-5 Standards: Sampling connection systems.</HEAD>
+<P>(a) Each sampling connection system shall be equipped with a closed-purge, closed-loop, or closed-vent system, except as provided in &#xA7; 60.482-1(c) and paragraph (c) of this section.</P>
+<P>(b) Each closed-purge, closed-loop, or closed-vent system as required in paragraph (a) of this section shall comply with the requirements specified in paragraphs (b)(1) through (4) of this section.</P>
+<P>(1) Gases displaced during filling of the sample container are not required to be collected or captured.</P>
+<P>(2) Containers that are part of a closed-purge system must be covered or closed when not being filled or emptied.</P>
+<P>(3) Gases remaining in the tubing or piping between the closed-purge system valve(s) and sample container valve(s) after the valves are closed and the sample container is disconnected are not required to be collected or captured.</P>
+<P>(4) Each closed-purge, closed-loop, or closed-vent system shall be designed and operated to meet requirements in either paragraph (b)(4)(i), (ii), (iii), or (iv) of this section.</P>
+<P>(i) Return the purged process fluid directly to the process line.</P>
+<P>(ii) Collect and recycle the purged process fluid to a process.</P>
+<P>(iii) Capture and transport all the purged process fluid to a control device that complies with the requirements of &#xA7; 60.482-10.</P>
+<P>(iv) Collect, store, and transport the purged process fluid to any of the following systems or facilities:</P>
+<P>(A) A waste management unit as defined in &#xA7; 63.111, if the waste management unit is subject to and operated in compliance with the provisions of 40 CFR part 63, subpart G, applicable to Group 1 wastewater streams;</P>
+<P>(B) A treatment, storage, or disposal facility subject to regulation under 40 CFR part 262, 264, 265, or 266;</P>
+<P>(C) A facility permitted, licensed, or registered by a state to manage municipal or industrial solid waste, if the process fluids are not hazardous waste as defined in 40 CFR part 261;</P>
+<P>(D) A waste management unit subject to and operated in compliance with the treatment requirements of &#xA7; 61.348(a), provided all waste management units that collect, store, or transport the purged process fluid to the treatment unit are subject to and operated in compliance with the management requirements of &#xA7;&#xA7; 61.343 through 61.347; or</P>
+<P>(E) A device used to burn off-specification used oil for energy recovery in accordance with 40 CFR part 279, subpart G, provided the purged process fluid is not hazardous waste as defined in 40 CFR part 261.</P>
+<P>(c) In situ sampling systems and sampling systems without purges are exempt from the requirements of paragraphs (a) and (b) of this section.</P>
+<CITA TYPE="N">[60 FR 43258, Aug. 18, 1995, as amended at 65 FR 61762, Oct. 17, 2000; 65 FR 78277, Dec. 14, 2000; 72 FR 64881, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-6" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-6&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-6&quot;}">
+<HEAD>&#xA7; 60.482-6 Standards: Open-ended valves or lines.</HEAD>
+<P>(a)(1) Each open-ended valve or line shall be equipped with a cap, blind flange, plug, or a second valve, except as provided in &#xA7; 60.482-1(c) and paragraphs (d) and (e) of this section.</P>
+<P>(2) The cap, blind flange, plug, or second valve shall seal the open end at all times except during operations requiring process fluid flow through the open-ended valve or line.</P>
+<P>(b) Each open-ended valve or line equipped with a second valve shall be operated in a manner such that the valve on the process fluid end is closed before the second valve is closed.</P>
+<P>(c) When a double block-and-bleed system is being used, the bleed valve or line may remain open during operations that require venting the line between the block valves but shall comply with paragraph (a) at all other times.</P>
+<P>(d) Open-ended valves or lines in an emergency shutdown system which are designed to open automatically in the event of a process upset are exempt from the requirements of paragraphs (a), (b) and (c) of this section.</P>
+<P>(e) Open-ended valves or lines containing materials which would autocatalytically polymerize or would present an explosion, serious overpressure, or other safety hazard if capped or equipped with a double block and bleed system as specified in paragraphs (a) through (c) of this section are exempt from the requirements of paragraphs (a) through (c) of this section.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 49 FR 22607, May 30, 1984; 65 FR 78277, Dec. 14, 2000; 72 FR 64881, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-7" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-7&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-7&quot;}">
+<HEAD>&#xA7; 60.482-7 Standards: Valves in gas/vapor service and in light liquid service.</HEAD>
+<P>(a)(1) Each valve shall be monitored monthly to detect leaks by the methods specified in &#xA7; 60.485(b) and shall comply with paragraphs (b) through (e) of this section, except as provided in paragraphs (f), (g), and (h) of this section, &#xA7; 60.482-1(c) and (f), and &#xA7;&#xA7; 60.483-1 and 60.483-2.</P>
+<P>(2) A valve that begins operation in gas/vapor service or light liquid service after the initial startup date for the process unit must be monitored according to paragraphs (a)(2)(i) or (ii), except for a valve that replaces a leaking valve and except as provided in paragraphs (f), (g), and (h) of this section, &#xA7; 60.482-1(c), and &#xA7;&#xA7; 60.483-1 and 60.483-2.</P>
+<P>(i) Monitor the valve as in paragraph (a)(1) of this section. The valve must be monitored for the first time within 30 days after the end of its startup period to ensure proper installation.</P>
+<P>(ii) If the valves on the process unit are monitored in accordance with &#xA7; 60.483-1 or &#xA7; 60.483-2, count the new valve as leaking when calculating the percentage of valves leaking as described in &#xA7; 60.483-2(b)(5). If less than 2.0 percent of the valves are leaking for that process unit, the valve must be monitored for the first time during the next scheduled monitoring event for existing valves in the process unit or within 90 days, whichever comes first.</P>
+<P>(b) If an instrument reading of 10,000 ppm or greater is measured, a leak is detected.</P>
+<P>(c)(1)(i) Any valve for which a leak is not detected for 2 successive months may be monitored the first month of every quarter, beginning with the next quarter, until a leak is detected.</P>
+<P>(ii) As an alternative to monitoring all of the valves in the first month of a quarter, an owner or operator may elect to subdivide the process unit into 2 or 3 subgroups of valves and monitor each subgroup in a different month during the quarter, provided each subgroup is monitored every 3 months. The owner or operator must keep records of the valves assigned to each subgroup.</P>
+<P>(2) If a leak is detected, the valve shall be monitored monthly until a leak is not detected for 2 successive months.</P>
+<P>(d)(1) When a leak is detected, it shall be repaired as soon as practicable, but no later than 15 calendar days after the leak is detected, except as provided in &#xA7; 60.482-9.</P>
+<P>(2) A first attempt at repair shall be made no later than 5 calendar days after each leak is detected.</P>
+<P>(e) First attempts at repair include, but are not limited to, the following best practices where practicable:</P>
+<P>(1) Tightening of bonnet bolts;</P>
+<P>(2) Replacement of bonnet bolts;</P>
+<P>(3) Tightening of packing gland nuts;</P>
+<P>(4) Injection of lubricant into lubricated packing.</P>
+<P>(f) Any valve that is designated, as described in &#xA7; 60.486(e)(2), for no detectable emissions, as indicated by an instrument reading of less than 500 ppm above background, is exempt from the requirements of paragraph (a) if the valve:</P>
+<P>(1) Has no external actuating mechanism in contact with the process fluid,</P>
+<P>(2) Is operated with emissions less than 500 ppm above background as determined by the method specified in &#xA7; 60.485(c), and</P>
+<P>(3) Is tested for compliance with paragraph (f)(2) of this section initially upon designation, annually, and at other times requested by the Administrator.</P>
+<P>(g) Any valve that is designated, as described in &#xA7; 60.486(f)(1), as an unsafe-to-monitor valve is exempt from the requirements of paragraph (a) if:</P>
+<P>(1) The owner or operator of the valve demonstrates that the valve is unsafe to monitor because monitoring personnel would be exposed to an immediate danger as a consequence of complying with paragraph (a), and</P>
+<P>(2) The owner or operator of the valve adheres to a written plan that requires monitoring of the valve as frequently as practicable during safe-to-monitor times.</P>
+<P>(h) Any valve that is designated, as described in &#xA7; 60.486(f)(2), as a difficult-to-monitor valve is exempt from the requirements of paragraph (a) if:</P>
+<P>(1) The owner or operator of the valve demonstrates that the valve cannot be monitored without elevating the monitoring personnel more than 2 meters above a support surface.</P>
+<P>(2) The process unit within which the valve is located either becomes an affected facility through &#xA7; 60.14 or &#xA7; 60.15 or the owner or operator designates less than 3.0 percent of the total number of valves as difficult-to-monitor, and</P>
+<P>(3) The owner or operator of the valve follows a written plan that requires monitoring of the valve at least once per calendar year.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 49 FR 22608, May 30, 1984; 65 FR 61762, Oct. 17, 2000; 72 FR 64881, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-8" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-8&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-8&quot;}">
+<HEAD>&#xA7; 60.482-8 Standards: Pumps and valves in heavy liquid service, pressure relief devices in light liquid or heavy liquid service, and connectors.</HEAD>
+<P>(a) If evidence of a potential leak is found by visual, audible, olfactory, or any other detection method at pumps and valves in heavy liquid service, pressure relief devices in light liquid or heavy liquid service, and connectors, the owner or operator shall follow either one of the following procedures:</P>
+<P>(1) The owner or operator shall monitor the equipment within 5 days by the method specified in &#xA7; 60.485(b) and shall comply with the requirements of paragraphs (b) through (d) of this section.</P>
+<P>(2) The owner or operator shall eliminate the visual, audible, olfactory, or other indication of a potential leak within 5 calendar days of detection.</P>
+<P>(b) If an instrument reading of 10,000 ppm or greater is measured, a leak is detected.</P>
+<P>(c)(1) When a leak is detected, it shall be repaired as soon as practicable, but not later than 15 calendar days after it is detected, except as provided in &#xA7; 60.482-9.</P>
+<P>(2) The first attempt at repair shall be made no later than 5 calendar days after each leak is detected.</P>
+<P>(d) First attempts at repair include, but are not limited to, the best practices described under &#xA7;&#xA7; 60.482-2(c)(2) and 60.482-7(e).</P>
+<CITA TYPE="N">[48 CFR 48335, Oct. 18, 1983, as amended at 65 FR 78277, Dec. 14, 2000; 72 FR 64882, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-9" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-9&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-9&quot;}">
+<HEAD>&#xA7; 60.482-9 Standards: Delay of repair.</HEAD>
+<P>(a) Delay of repair of equipment for which leaks have been detected will be allowed if repair within 15 days is technically infeasible without a process unit shutdown. Repair of this equipment shall occur before the end of the next process unit shutdown. Monitoring to verify repair must occur within 15 days after startup of the process unit.</P>
+<P>(b) Delay of repair of equipment will be allowed for equipment which is isolated from the process and which does not remain in VOC service.</P>
+<P>(c) Delay of repair for valves will be allowed if:</P>
+<P>(1) The owner or operator demonstrates that emissions of purged material resulting from immediate repair are greater than the fugitive emissions likely to result from delay of repair, and</P>
+<P>(2) When repair procedures are effected, the purged material is collected and destroyed or recovered in a control device complying with &#xA7; 60.482-10.</P>
+<P>(d) Delay of repair for pumps will be allowed if:</P>
+<P>(1) Repair requires the use of a dual mechanical seal system that includes a barrier fluid system, and</P>
+<P>(2) Repair is completed as soon as practicable, but not later than 6 months after the leak was detected.</P>
+<P>(e) Delay of repair beyond a process unit shutdown will be allowed for a valve, if valve assembly replacement is necessary during the process unit shutdown, valve assembly supplies have been depleted, and valve assembly supplies had been sufficiently stocked before the supplies were depleted. Delay of repair beyond the next process unit shutdown will not be allowed unless the next process unit shutdown occurs sooner than 6 months after the first process unit shutdown.</P>
+<P>(f) When delay of repair is allowed for a leaking pump or valve that remains in service, the pump or valve may be considered to be repaired and no longer subject to delay of repair requirements if two consecutive monthly monitoring instrument readings are below the leak definition.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 78277, Dec. 14, 2000; 72 FR 64882, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.482-10" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.482-10&quot;,&quot;citation&quot;:&quot;40 CFR 60.482-10&quot;}">
+<HEAD>&#xA7; 60.482-10 Standards: Closed vent systems and control devices.</HEAD>
+<P>(a) Owners or operators of closed vent systems and control devices used to comply with provisions of this subpart shall comply with the provisions of this section.</P>
+<P>(b) Vapor recovery systems (for example, condensers and absorbers) shall be designed and operated to recover the VOC emissions vented to them with an efficiency of 95 percent or greater, or to an exit concentration of 20 parts per million by volume, whichever is less stringent.</P>
+<P>(c) Enclosed combustion devices shall be designed and operated to reduce the VOC emissions vented to them with an efficiency of 95 percent or greater, or to an exit concentration of 20 parts per million by volume, on a dry basis, corrected to 3 percent oxygen, whichever is less stringent or to provide a minimum residence time of 0.75 seconds at a minimum temperature of 816 &#xB0;C.</P>
+<P>(d) Flares used to comply with this subpart shall comply with the requirements of &#xA7; 60.18.</P>
+<P>(e) Owners or operators of control devices used to comply with the provisions of this subpart shall monitor these control devices to ensure that they are operated and maintained in conformance with their designs.</P>
+<P>(f) Except as provided in paragraphs (i) through (k) of this section, each closed vent system shall be inspected according to the procedures and schedule specified in paragraphs (f)(1) and (f)(2) of this section.</P>
+<P>(1) If the vapor collection system or closed vent system is constructed of hard-piping, the owner or operator shall comply with the requirements specified in paragraphs (f)(1)(i) and (f)(1)(ii) of this section:</P>
+<P>(i) Conduct an initial inspection according to the procedures in &#xA7; 60.485(b); and</P>
+<P>(ii) Conduct annual visual inspections for visible, audible, or olfactory indications of leaks.</P>
+<P>(2) If the vapor collection system or closed vent system is constructed of ductwork, the owner or operator shall:</P>
+<P>(i) Conduct an initial inspection according to the procedures in &#xA7; 60.485(b); and</P>
+<P>(ii) Conduct annual inspections according to the procedures in &#xA7; 60.485(b).</P>
+<P>(g) Leaks, as indicated by an instrument reading greater than 500 parts per million by volume above background or by visual inspections, shall be repaired as soon as practicable except as provided in paragraph (h) of this section.</P>
+<P>(1) A first attempt at repair shall be made no later than 5 calendar days after the leak is detected.</P>
+<P>(2) Repair shall be completed no later than 15 calendar days after the leak is detected.</P>
+<P>(h) Delay of repair of a closed vent system for which leaks have been detected is allowed if the repair is technically infeasible without a process unit shutdown or if the owner or operator determines that emissions resulting from immediate repair would be greater than the fugitive emissions likely to result from delay of repair. Repair of such equipment shall be complete by the end of the next process unit shutdown.</P>
+<P>(i) If a vapor collection system or closed vent system is operated under a vacuum, it is exempt from the inspection requirements of paragraphs (f)(1)(i) and (f)(2) of this section.</P>
+<P>(j) Any parts of the closed vent system that are designated, as described in paragraph (l)(1) of this section, as unsafe to inspect are exempt from the inspection requirements of paragraphs (f)(1)(i) and (f)(2) of this section if they comply with the requirements specified in paragraphs (j)(1) and (j)(2) of this section:</P>
+<P>(1) The owner or operator determines that the equipment is unsafe to inspect because inspecting personnel would be exposed to an imminent or potential danger as a consequence of complying with paragraphs (f)(1)(i) or (f)(2) of this section; and</P>
+<P>(2) The owner or operator has a written plan that requires inspection of the equipment as frequently as practicable during safe-to-inspect times.</P>
+<P>(k) Any parts of the closed vent system that are designated, as described in paragraph (l)(2) of this section, as difficult to inspect are exempt from the inspection requirements of paragraphs (f)(1)(i) and (f)(2) of this section if they comply with the requirements specified in paragraphs (k)(1) through (k)(3) of this section:</P>
+<P>(1) The owner or operator determines that the equipment cannot be inspected without elevating the inspecting personnel more than 2 meters above a support surface; and</P>
+<P>(2) The process unit within which the closed vent system is located becomes an affected facility through &#xA7;&#xA7; 60.14 or 60.15, or the owner or operator designates less than 3.0 percent of the total number of closed vent system equipment as difficult to inspect; and</P>
+<P>(3) The owner or operator has a written plan that requires inspection of the equipment at least once every 5 years. A closed vent system is exempt from inspection if it is operated under a vacuum.</P>
+<P>(l) The owner or operator shall record the information specified in paragraphs (l)(1) through (l)(5) of this section.</P>
+<P>(1) Identification of all parts of the closed vent system that are designated as unsafe to inspect, an explanation of why the equipment is unsafe to inspect, and the plan for inspecting the equipment.</P>
+<P>(2) Identification of all parts of the closed vent system that are designated as difficult to inspect, an explanation of why the equipment is difficult to inspect, and the plan for inspecting the equipment.</P>
+<P>(3) For each inspection during which a leak is detected, a record of the information specified in &#xA7; 60.486(c).</P>
+<P>(4) For each inspection conducted in accordance with &#xA7; 60.485(b) during which no leaks are detected, a record that the inspection was performed, the date of the inspection, and a statement that no leaks were detected.</P>
+<P>(5) For each visual inspection conducted in accordance with paragraph (f)(1)(ii) of this section during which no leaks are detected, a record that the inspection was performed, the date of the inspection, and a statement that no leaks were detected.</P>
+<P>(m) Closed vent systems and control devices used to comply with provisions of this subpart shall be operated at all times when emissions may be vented to them.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 51 FR 2702, Jan. 21, 1986; 60 FR 43258, Aug. 18, 1995; 61 FR 29878, June 12, 1996; 65 FR 78277, Dec. 14, 2000]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.483-1" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.483-1&quot;,&quot;citation&quot;:&quot;40 CFR 60.483-1&quot;}">
+<HEAD>&#xA7; 60.483-1 Alternative standards for valves&#x2014;allowable percentage of valves leaking.</HEAD>
+<P>(a) An owner or operator may elect to comply with an allowable percentage of valves leaking of equal to or less than 2.0 percent.</P>
+<P>(b) The following requirements shall be met if an owner or operator wishes to comply with an allowable percentage of valves leaking:</P>
+<P>(1) An owner or operator must notify the Administrator that the owner or operator has elected to comply with the allowable percentage of valves leaking before implementing this alternative standard, as specified in &#xA7; 60.487(d).</P>
+<P>(2) A performance test as specified in paragraph (c) of this section shall be conducted initially upon designation, annually, and at other times requested by the Administrator.</P>
+<P>(3) If a valve leak is detected, it shall be repaired in accordance with &#xA7; 60.482-7(d) and (e).</P>
+<P>(c) Performance tests shall be conducted in the following manner:</P>
+<P>(1) All valves in gas/vapor and light liquid service within the affected facility shall be monitored within 1 week by the methods specified in &#xA7; 60.485(b).</P>
+<P>(2) If an instrument reading of 10,000 ppm or greater is measured, a leak is detected.</P>
+<P>(3) The leak percentage shall be determined by dividing the number of valves for which leaks are detected by the number of valves in gas/vapor and light liquid service within the affected facility.</P>
+<P>(d) Owners and operators who elect to comply with this alternative standard shall not have an affected facility with a leak percentage greater than 2.0 percent, determined as described in &#xA7; 60.485(h).</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61762, Oct. 17, 2000; 65 FR 78278, Dec. 14, 2000; 72 FR 64882, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.483-2" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.483-2&quot;,&quot;citation&quot;:&quot;40 CFR 60.483-2&quot;}">
+<HEAD>&#xA7; 60.483-2 Alternative standards for valves&#x2014;skip period leak detection and repair.</HEAD>
+<P>(a)(1) An owner or operator may elect to comply with one of the alternative work practices specified in paragraphs (b)(2) and (3) of this section.</P>
+<P>(2) An owner or operator must notify the Administrator before implementing one of the alternative work practices, as specified in &#xA7; 60.487(d).</P>
+<P>(b)(1) An owner or operator shall comply initially with the requirements for valves in gas/vapor service and valves in light liquid service, as described in &#xA7; 60.482-7.</P>
+<P>(2) After 2 consecutive quarterly leak detection periods with the percent of valves leaking equal to or less than 2.0, an owner or operator may begin to skip 1 of the quarterly leak detection periods for the valves in gas/vapor and light liquid service.</P>
+<P>(3) After 5 consecutive quarterly leak detection periods with the percent of valves leaking equal to or less than 2.0, an owner or operator may begin to skip 3 of the quarterly leak detection periods for the valves in gas/vapor and light liquid service.</P>
+<P>(4) If the percent of valves leaking is greater than 2.0, the owner or operator shall comply with the requirements as described in &#xA7; 60.482-7 but can again elect to use this section.</P>
+<P>(5) The percent of valves leaking shall be determined as described in &#xA7; 60.485(h).</P>
+<P>(6) An owner or operator must keep a record of the percent of valves found leaking during each leak detection period.</P>
+<P>(7) A valve that begins operation in gas/vapor service or light liquid service after the initial startup date for a process unit following one of the alternative standards in this section must be monitored in accordance with &#xA7; 60.482-7(a)(2)(i) or (ii) before the provisions of this section can be applied to that valve.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61762, Oct. 17, 2000; 65 FR 78278, Dec. 14, 2000; 72 FR 64882, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.484" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.484&quot;,&quot;citation&quot;:&quot;40 CFR 60.484&quot;}">
+<HEAD>&#xA7; 60.484 Equivalence of means of emission limitation.</HEAD>
+<P>(a) Each owner or operator subject to the provisions of this subpart may apply to the Administrator for determination of equivalence for any means of emission limitation that achieves a reduction in emissions of VOC at least equivalent to the reduction in emissions of VOC achieved by the controls required in this subpart.</P>
+<P>(b) Determination of equivalence to the equipment, design, and operational requirements of this subpart will be evaluated by the following guidelines:</P>
+<P>(1) Each owner or operator applying for an equivalence determination shall be responsible for collecting and verifying test data to demonstrate equivalence of means of emission limitation.</P>
+<P>(2) The Administrator will compare test data for demonstrating equivalence of the means of emission limitation to test data for the equipment, design, and operational requirements.</P>
+<P>(3) The Administrator may condition the approval of equivalence on requirements that may be necessary to assure operation and maintenance to achieve the same emission reduction as the equipment, design, and operational requirements.</P>
+<P>(c) Determination of equivalence to the required work practices in this subpart will be evaluated by the following guidelines:</P>
+<P>(1) Each owner or operator applying for a determination of equivalence shall be responsible for collecting and verifying test data to demonstrate equivalence of an equivalent means of emission limitation.</P>
+<P>(2) For each affected facility for which a determination of equivalence is requested, the emission reduction achieved by the required work practice shall be demonstrated.</P>
+<P>(3) For each affected facility, for which a determination of equivalence is requested, the emission reduction achieved by the equivalent means of emission limitation shall be demonstrated.</P>
+<P>(4) Each owner or operator applying for a determination of equivalence shall commit in writing to work practice(s) that provide for emission reductions equal to or greater than the emission reductions achieved by the required work practice.</P>
+<P>(5) The Administrator will compare the demonstrated emission reduction for the equivalent means of emission limitation to the demonstrated emission reduction for the required work practices and will consider the commitment in paragraph (c)(4).</P>
+<P>(6) The Administrator may condition the approval of equivalence on requirements that may be necessary to assure operation and maintenance to achieve the same emission reduction as the required work practice.</P>
+<P>(d) An owner or operator may offer a unique approach to demonstrate the equivalence of any equivalent means of emission limitation.</P>
+<P>(e)(1) After a request for determination of equivalence is received, the Administrator will publish a notice in the <E T="04">Federal Register</E> and provide the opportunity for public hearing if the Administrator judges that the request may be approved.</P>
+<P>(2) After notice and opportunity for public hearing, the Administrator will determine the equivalence of a means of emission limitation and will publish the determination in the <E T="04">Federal Register.</E></P>
+<P>(3) Any equivalent means of emission limitations approved under this section shall constitute a required work practice, equipment, design, or operational standard within the meaning of section 111(h)(1) of the Clean Air Act.</P>
+<P>(f)(1) Manufacturers of equipment used to control equipment leaks of VOC may apply to the Administrator for determination of equivalence for any equivalent means of emission limitation that achieves a reduction in emissions of VOC achieved by the equipment, design, and operational requirements of this subpart.</P>
+<P>(2) The Administrator will make an equivalence determination according to the provisions of paragraphs (b), (c), (d), and (e) of this section.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61762, Oct. 17, 2000; 72 FR 64882, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.485" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.485&quot;,&quot;citation&quot;:&quot;40 CFR 60.485&quot;}">
+<HEAD>&#xA7; 60.485 Test methods and procedures.</HEAD>
+<P>(a) In conducting the performance tests required in &#xA7; 60.8, the owner or operator shall use as reference methods and procedures the test methods in appendix A of this part or other methods and procedures as specified in this section, except as provided in &#xA7; 60.8(b).</P>
+<P>(b) The owner or operator shall determine compliance with the standards in &#xA7;&#xA7; 60.482-1 through 60.482-10, 60.483, and 60.484 as follows:</P>
+<P>(1) Method 21 shall be used to determine the presence of leaking sources. The instrument shall be calibrated before use each day of its use by the procedures specified in Method 21. The following calibration gases shall be used:</P>
+<P>(i) Zero air (less than 10 ppm of hydrocarbon in air); and</P>
+<P>(ii) A mixture of methane or n-hexane and air at a concentration of about, but less than, 10,000 ppm methane or n-hexane.</P>
+<P>(c) The owner or operator shall determine compliance with the no detectable emission standards in &#xA7;&#xA7; 60.482-2(e), 60.482-3(i), 60.482-4, 60.482-7(f), and 60.482-10(e) as follows:</P>
+<P>(1) The requirements of paragraph (b) shall apply.</P>
+<P>(2) Method 21 shall be used to determine the background level. All potential leak interfaces shall be traversed as close to the interface as possible. The arithmetic difference between the maximum concentration indicated by the instrument and the background level is compared with 500 ppm for determining compliance.</P>
+<P>(d) The owner or operator shall test each piece of equipment unless he demonstrates that a process unit is not in VOC service, i.e., that the VOC content would never be reasonably expected to exceed 10 percent by weight. For purposes of this demonstration, the following methods and procedures shall be used:</P>
+<P>(1) Procedures that conform to the general methods in ASTM E260-73, 91, or 96, E168-67, 77, or 92, E169-63, 77, or 93 (incorporated by reference&#x2014;see &#xA7; 60.17) shall be used to determine the percent VOC content in the process fluid that is contained in or contacts a piece of equipment.</P>
+<P>(2) Organic compounds that are considered by the Administrator to have negligible photochemical reactivity may be excluded from the total quantity of organic compounds in determining the VOC content of the process fluid.</P>
+<P>(3) Engineering judgment may be used to estimate the VOC content, if a piece of equipment had not been shown previously to be in service. If the Administrator disagrees with the judgment, paragraphs (d) (1) and (2) of this section shall be used to resolve the disagreement.</P>
+<P>(e) The owner or operator shall demonstrate that a piece of equipment is in light liquid service by showing that all the following conditions apply:</P>
+<P>(1) The vapor pressure of one or more of the organic components is greater than 0.3 kPa at 20 &#xB0;C (1.2 in. H<E T="52">2</E>O at 68 &#xB0;F). Standard reference texts or ASTM D2879-83, 96, or 97 (incorporated by reference&#x2014;see &#xA7; 60.17) shall be used to determine the vapor pressures.</P>
+<P>(2) The total concentration of the pure organic components having a vapor pressure greater than 0.3 kPa at 20 &#xB0;C (1.2 in. H<E T="52">2</E>O at 68 &#xB0;F) is equal to or greater than 20 percent by weight.</P>
+<P>(3) The fluid is a liquid at operating conditions.</P>
+<P>(f) Samples used in conjunction with paragraphs (d), (e), and (g) of this section shall be representative of the process fluid that is contained in or contacts the equipment or the gas being combusted in the flare.</P>
+<P>(g) The owner or operator shall determine compliance with the standards of flares as follows:</P>
+<P>(1) Method 22 shall be used to determine visible emissions.</P>
+<P>(2) A thermocouple or any other equivalent device shall be used to monitor the presence of a pilot flame in the flare.</P>
+<P>(3) The maximum permitted velocity for air assisted flares shall be computed using the following equation:</P>
+<MATH BORDER="NODRAW" DEEP="12" HTYPE="CENTER" POSITION="NOFLOAT" ROTATION="P" SPAN="1" STRIP="YES">
+<img src="/graphics/er17oc00.016.gif"/></MATH>
+<EXTRACT>
+<FP>Where:
+</FP>
+<FP-2>V<E T="52">max</E> = Maximum permitted velocity, m/sec (ft/sec)
+</FP-2>
+<FP-2>H<E T="52">T</E> = Net heating value of the gas being combusted, MJ/scm (Btu/scf).
+</FP-2>
+<FP-2>K<E T="52">1</E> = 8.706 m/sec (metric units)
+</FP-2>
+<FP-2> = 28.56 ft/sec (English units)
+</FP-2>
+<FP-2>K<E T="52">2</E> = 0.7084 m
+<SU>4</SU>/(MJ-sec) (metric units)
+</FP-2>
+<FP-2> = 0.087 ft
+<SU>4</SU>/(Btu-sec) (English units)</FP-2></EXTRACT>
+<P>(4) The net heating value (H<E T="52">T</E>) of the gas being combusted in a flare shall be computed using the following equation:</P>
+<MATH BORDER="NODRAW" DEEP="29" HTYPE="CENTER" POSITION="NOFLOAT" ROTATION="P" SPAN="1" STRIP="YES">
+<img src="/graphics/er16no07.039.gif"/></MATH>
+<EXTRACT>
+<FP>Where:
+</FP>
+<FP-2>K = Conversion constant, 1.740 &#xD7; 10<E T="51">&#x2212;7</E> (g-mole)(MJ)/(ppm-scm-kcal) (metric units) = 4.674 &#xD7; 10<E T="51">&#x2212;6</E> [(g-mole)(Btu)/(ppm-scf-kcal)] (English units)
+</FP-2>
+<FP-2>C<E T="52">i</E> = Concentration of sample component &#x201C;i,&#x201D; ppm
+</FP-2>
+<FP-2>H<E T="52">i</E> = Net heat of combustion of sample component &#x201C;i&#x201D; at 25 &#xB0;C and 760 mm Hg (77 &#xB0;F and 14.7 psi), kcal/g-mole</FP-2></EXTRACT>
+<P>(5) Method 18 or ASTM D6420-99 (2004) (where the target compound(s) are those listed in Section 1.1 of ASTM D6420-99, and the target concentration is between 150 parts per billion by volume and 100 parts per million by volume) and ASTM D2504-67, 77 or 88 (Reapproved 1993) (incorporated by reference&#x2014;see &#xA7; 60.17) shall be used to determine the concentration of sample component &#x201C;i.&#x201D;</P>
+<P>(6) ASTM D2382-76 or 88 or D4809-95 (incorporated by reference&#x2014;see &#xA7; 60.17) shall be used to determine the net heat of combustion of component &#x201C;i&#x201D; if published values are not available or cannot be calculated.</P>
+<P>(7) Method 2, 2A, 2C, or 2D, as appropriate, shall be used to determine the actual exit velocity of a flare. If needed, the unobstructed (free) cross-sectional area of the flare tip shall be used.</P>
+<P>(h) The owner or operator shall determine compliance with &#xA7; 60.483-1 or &#xA7; 60.483-2 as follows:</P>
+<P>(1) The percent of valves leaking shall be determined using the following equation:</P>
+<FP-2>%V<E T="52">L</E> = (V<E T="52">L</E>/V<E T="52">T</E>) * 100
+</FP-2>
+<EXTRACT>
+<FP>Where:
+</FP>
+<FP-2>%V<E T="52">L</E> = Percent leaking valves
+</FP-2>
+<FP-2>V<E T="52">L</E> = Number of valves found leaking
+</FP-2>
+<FP-2>V<E T="52">T</E> = The sum of the total number of valves monitored</FP-2></EXTRACT>
+<P>(2) The total number of valves monitored shall include difficult-to-monitor and unsafe-to-monitor valves only during the monitoring period in which those valves are monitored.</P>
+<P>(3) The number of valves leaking shall include valves for which repair has been delayed.</P>
+<P>(4) Any new valve that is not monitored within 30 days of being placed in service shall be included in the number of valves leaking and the total number of valves monitored for the monitoring period in which the valve is placed in service.</P>
+<P>(5) If the process unit has been subdivided in accordance with &#xA7; 60.482-7(c)(1)(ii), the sum of valves found leaking during a monitoring period includes all subgroups.</P>
+<P>(6) The total number of valves monitored does not include a valve monitored to verify repair.</P>
+<CITA TYPE="N">[54 FR 6678, Feb. 14, 1989, as amended at 54 FR 27016, June 27, 1989; 65 FR 61763, Oct. 17, 2000; 72 FR 64882, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.486" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.486&quot;,&quot;citation&quot;:&quot;40 CFR 60.486&quot;}">
+<HEAD>&#xA7; 60.486 Recordkeeping requirements.</HEAD>
+<P>(a)(1) Each owner or operator subject to the provisions of this subpart shall comply with the recordkeeping requirements of this section.</P>
+<P>(2) An owner or operator of more than one affected facility subject to the provisions of this subpart may comply with the recordkeeping requirements for these facilities in one recordkeeping system if the system identifies each record by each facility.</P>
+<P>(b) When each leak is detected as specified in &#xA7;&#xA7; 60.482-2, 60.482-3, 60.482-7, 60.482-8, and 60.483-2, the following requirements apply:</P>
+<P>(1) A weatherproof and readily visible identification, marked with the equipment identification number, shall be attached to the leaking equipment.</P>
+<P>(2) The identification on a valve may be removed after it has been monitored for 2 successive months as specified in &#xA7; 60.482-7(c) and no leak has been detected during those 2 months.</P>
+<P>(3) The identification on equipment except on a valve, may be removed after it has been repaired.</P>
+<P>(c) When each leak is detected as specified in &#xA7;&#xA7; 60.482-2, 60.482-3, 60.482-7, 60.482-8, and 60.483-2, the following information shall be recorded in a log and shall be kept for 2 years in a readily accessible location:</P>
+<P>(1) The instrument and operator identification numbers and the equipment identification number.</P>
+<P>(2) The date the leak was detected and the dates of each attempt to repair the leak.</P>
+<P>(3) Repair methods applied in each attempt to repair the leak.</P>
+<P>(4) &#x201C;Above 10,000&#x201D; if the maximum instrument reading measured by the methods specified in &#xA7; 60.485(a) after each repair attempt is equal to or greater than 10,000 ppm.</P>
+<P>(5) &#x201C;Repair delayed&#x201D; and the reason for the delay if a leak is not repaired within 15 calendar days after discovery of the leak.</P>
+<P>(6) The signature of the owner or operator (or designate) whose decision it was that repair could not be effected without a process shutdown.</P>
+<P>(7) The expected date of successful repair of the leak if a leak is not repaired within 15 days.</P>
+<P>(8) Dates of process unit shutdowns that occur while the equipment is unrepaired.</P>
+<P>(9) The date of successful repair of the leak.</P>
+<P>(d) The following information pertaining to the design requirements for closed vent systems and control devices described in &#xA7; 60.482-10 shall be recorded and kept in a readily accessible location:</P>
+<P>(1) Detailed schematics, design specifications, and piping and instrumentation diagrams.</P>
+<P>(2) The dates and descriptions of any changes in the design specifications.</P>
+<P>(3) A description of the parameter or parameters monitored, as required in &#xA7; 60.482-10(e), to ensure that control devices are operated and maintained in conformance with their design and an explanation of why that parameter (or parameters) was selected for the monitoring.</P>
+<P>(4) Periods when the closed vent systems and control devices required in &#xA7;&#xA7; 60.482-2, 60.482-3, 60.482-4, and 60.482-5 are not operated as designed, including periods when a flare pilot light does not have a flame.</P>
+<P>(5) Dates of startups and shutdowns of the closed vent systems and control devices required in &#xA7;&#xA7; 60.482-2, 60.482-3, 60.482-4, and 60.482-5.</P>
+<P>(e) The following information pertaining to all equipment subject to the requirements in &#xA7;&#xA7; 60.482-1 to 60.482-10 shall be recorded in a log that is kept in a readily accessible location:</P>
+<P>(1) A list of identification numbers for equipment subject to the requirements of this subpart.</P>
+<P>(2)(i) A list of identification numbers for equipment that are designated for no detectable emissions under the provisions of &#xA7;&#xA7; 60.482-2(e), 60.482-3(i) and 60.482-7(f).</P>
+<P>(ii) The designation of equipment as subject to the requirements of &#xA7; 60.482-2(e), &#xA7; 60.482-3(i), or &#xA7; 60.482-7(f) shall be signed by the owner or operator. Alternatively, the owner or operator may establish a mechanism with their permitting authority that satisfies this requirement.</P>
+<P>(3) A list of equipment identification numbers for pressure relief devices required to comply with &#xA7; 60.482-4.</P>
+<P>(4)(i) The dates of each compliance test as required in &#xA7;&#xA7; 60.482-2(e), 60.482-3(i), 60.482-4, and 60.482-7(f).</P>
+<P>(ii) The background level measured during each compliance test.</P>
+<P>(iii) The maximum instrument reading measured at the equipment during each compliance test.</P>
+<P>(5) A list of identification numbers for equipment in vacuum service.</P>
+<P>(6) A list of identification numbers for equipment that the owner or operator designates as operating in VOC service less than 300 hr/yr in accordance with &#xA7; 60.482-1(e), a description of the conditions under which the equipment is in VOC service, and rationale supporting the designation that it is in VOC service less than 300 hr/yr.</P>
+<P>(f) The following information pertaining to all valves subject to the requirements of &#xA7; 60.482-7(g) and (h) and to all pumps subject to the requirements of &#xA7; 60.482-2(g) shall be recorded in a log that is kept in a readily accessible location:</P>
+<P>(1) A list of identification numbers for valves and pumps that are designated as unsafe-to-monitor, an explanation for each valve or pump stating why the valve or pump is unsafe-to-monitor, and the plan for monitoring each valve or pump.</P>
+<P>(2) A list of identification numbers for valves that are designated as difficult-to-monitor, an explanation for each valve stating why the valve is difficult-to-monitor, and the schedule for monitoring each valve.</P>
+<P>(g) The following information shall be recorded for valves complying with &#xA7; 60.483-2:</P>
+<P>(1) A schedule of monitoring.</P>
+<P>(2) The percent of valves found leaking during each monitoring period.</P>
+<P>(h) The following information shall be recorded in a log that is kept in a readily accessible location:</P>
+<P>(1) Design criterion required in &#xA7;&#xA7; 60.482-2(d)(5) and 60.482-3(e)(2) and explanation of the design criterion; and</P>
+<P>(2) Any changes to this criterion and the reasons for the changes.</P>
+<P>(i) The following information shall be recorded in a log that is kept in a readily accessible location for use in determining exemptions as provided in &#xA7; 60.480(d):</P>
+<P>(1) An analysis demonstrating the design capacity of the affected facility,</P>
+<P>(2) A statement listing the feed or raw materials and products from the affected facilities and an analysis demonstrating whether these chemicals are heavy liquids or beverage alcohol, and</P>
+<P>(3) An analysis demonstrating that equipment is not in VOC service.</P>
+<P>(j) Information and data used to demonstrate that a piece of equipment is not in VOC service shall be recorded in a log that is kept in a readily accessible location.</P>
+<P>(k) The provisions of &#xA7; 60.7 (b) and (d) do not apply to affected facilities subject to this subpart.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61763, Oct. 17, 2000; 65 FR 78278, Dec. 14, 2000; 72 FR 64883, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.487" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.487&quot;,&quot;citation&quot;:&quot;40 CFR 60.487&quot;}">
+<HEAD>&#xA7; 60.487 Reporting requirements.</HEAD>
+<P>(a) Each owner or operator subject to the provisions of this subpart shall submit semiannual reports to the Administrator beginning six months after the initial startup date.</P>
+<P>(b) The initial semiannual report to the Administrator shall include the following information:</P>
+<P>(1) Process unit identification.</P>
+<P>(2) Number of valves subject to the requirements of &#xA7; 60.482-7, excluding those valves designated for no detectable emissions under the provisions of &#xA7; 60.482-7(f).</P>
+<P>(3) Number of pumps subject to the requirements of &#xA7; 60.482-2, excluding those pumps designated for no detectable emissions under the provisions of &#xA7; 60.482-2(e) and those pumps complying with &#xA7; 60.482-2(f).</P>
+<P>(4) Number of compressors subject to the requirements of &#xA7; 60.482-3, excluding those compressors designated for no detectable emissions under the provisions of &#xA7; 60.482-3(i) and those compressors complying with &#xA7; 60.482-3(h).</P>
+<P>(c) All semiannual reports to the Administrator shall include the following information, summarized from the information in &#xA7; 60.486:</P>
+<P>(1) Process unit identification.</P>
+<P>(2) For each month during the semiannual reporting period,</P>
+<P>(i) Number of valves for which leaks were detected as described in &#xA7; 60.482-7(b) or &#xA7; 60.483-2,</P>
+<P>(ii) Number of valves for which leaks were not repaired as required in &#xA7; 60.482-7(d)(1),</P>
+<P>(iii) Number of pumps for which leaks were detected as described in &#xA7; 60.482-2(b), (d)(4)(ii)(A) or (B), or (d)(5)(iii),</P>
+<P>(iv) Number of pumps for which leaks were not repaired as required in &#xA7; 60.482-2(c)(1) and (d)(6),</P>
+<P>(v) Number of compressors for which leaks were detected as described in &#xA7; 60.482-3(f),</P>
+<P>(vi) Number of compressors for which leaks were not repaired as required in &#xA7; 60.482-3(g)(1), and</P>
+<P>(vii) The facts that explain each delay of repair and, where appropriate, why a process unit shutdown was technically infeasible.</P>
+<P>(3) Dates of process unit shutdowns which occurred within the semiannual reporting period.</P>
+<P>(4) Revisions to items reported according to paragraph (b) if changes have occurred since the initial report or subsequent revisions to the initial report.</P>
+<P>(d) An owner or operator electing to comply with the provisions of &#xA7; 60.483-1 or &#xA7; 60.483-2 shall notify the Administrator of the alternative standard selected 90 days before implementing either of the provisions.</P>
+<P>(e) An owner or operator shall report the results of all performance tests in accordance with &#xA7; 60.8 of the General Provisions. The provisions of &#xA7; 60.8(d) do not apply to affected facilities subject to the provisions of this subpart except that an owner or operator must notify the Administrator of the schedule for the initial performance tests at least 30 days before the initial performance tests.</P>
+<P>(f) The requirements of paragraphs (a) through (c) of this section remain in force until and unless EPA, in delegating enforcement authority to a State under section 111(c) of the Act, approves reporting requirements or an alternative means of compliance surveillance adopted by such State. In that event, affected sources within the State will be relieved of the obligation to comply with the requirements of paragraphs (a) through (c) of this section, provided that they comply with the requirements established by the State.</P>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 49 FR 22608, May 30, 1984; 65 FR 61763, Oct. 17, 2000; 72 FR 64883, Nov. 16, 2007]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.488" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.488&quot;,&quot;citation&quot;:&quot;40 CFR 60.488&quot;}">
+<HEAD>&#xA7; 60.488 Reconstruction.</HEAD>
+<P>For the purposes of this subpart:</P>
+<P>(a) The cost of the following frequently replaced components of the facility shall not be considered in calculating either the &#x201C;fixed capital cost of the new components&#x201D; or the &#x201C;fixed capital costs that would be required to construct a comparable new facility&#x201D; under &#xA7; 60.15: pump seals, nuts and bolts, rupture disks, and packings.</P>
+<P>(b) Under &#xA7; 60.15, the &#x201C;fixed capital cost of new components&#x201D; includes the fixed capital cost of all depreciable components (except components specified in &#xA7; 60.488 (a)) which are or will be replaced pursuant to all continuous programs of component replacement which are commenced within any 2-year period following the applicability date for the appropriate subpart. (See the &#x201C;Applicability and designation of affected facility&#x201D; section of the appropriate subpart.) For purposes of this paragraph, &#x201C;commenced&#x201D; means that an owner or operator has undertaken a continuous program of component replacement or that an owner or operator has entered into a contractual obligation to undertake and complete, within a reasonable time, a continuous program of component replacement.</P>
+<CITA TYPE="N">[49 FR 22608, May 30, 1984]
+</CITA>
+</DIV8>
+
+<DIV8 N="60.489" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-40/section-60.489&quot;,&quot;citation&quot;:&quot;40 CFR 60.489&quot;}">
+<HEAD>&#xA7; 60.489 List of chemicals produced by affected facilities.</HEAD>
+<P>The following chemicals are produced, as intermediates or final products, by process units covered under this subpart. The applicability date for process units producing one or more of these chemicals is January 5, 1981.</P>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%">
+<THEAD>
+<TR>
+<TH class="center border-top-single border-bottom-single border-right-single">CAS No. <sup>a</sup></TH>
+<TH class="center border-top-single border-bottom-single">Chemical</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">105-57-7</TD>
+<TD class="left">Acetal.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-07-0</TD>
+<TD class="left">Acetaldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-89-1</TD>
+<TD class="left">Acetaldol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">60-35-5</TD>
+<TD class="left">Acetamide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">103-84-4</TD>
+<TD class="left">Acetanilide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">64-19-7</TD>
+<TD class="left">Acetic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-24-7</TD>
+<TD class="left">Acetic anhydride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">67-64-1</TD>
+<TD class="left">Acetone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-86-5</TD>
+<TD class="left">Acetone cyanohydrin.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-05-8</TD>
+<TD class="left">Acetonitrile.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-86-2</TD>
+<TD class="left">Acetophenone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-36-5</TD>
+<TD class="left">Acetyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">74-86-2</TD>
+<TD class="left">Acetylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-02-8</TD>
+<TD class="left">Acrolein.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-06-1</TD>
+<TD class="left">Acrylamide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-10-7</TD>
+<TD class="left">Acrylic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-13-1</TD>
+<TD class="left">Acrylonitrile.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">124-04-9</TD>
+<TD class="left">Adipic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-69-3</TD>
+<TD class="left">Adiponitrile.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">(<sup>b</sup>)</TD>
+<TD class="left">Alkyl naphthalenes.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-18-6</TD>
+<TD class="left">Allyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-05-1</TD>
+<TD class="left">Allyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1321-11-5</TD>
+<TD class="left">Aminobenzoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-41-1</TD>
+<TD class="left">Aminoethylethanolamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-30-8</TD>
+<TD class="left">p-Aminophenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">628-63-7, 123-92-2</TD>
+<TD class="left">Amyl acetates.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">71-41-0 <sup>c</sup></TD>
+<TD class="left">Amyl alcohols.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-58-7</TD>
+<TD class="left">Amyl amine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">543-59-9</TD>
+<TD class="left">Amyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-66-7 <sup>c</sup></TD>
+<TD class="left">Amyl mercaptans.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1322-06-1</TD>
+<TD class="left">Amyl phenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">62-53-3</TD>
+<TD class="left">Aniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">142-04-1</TD>
+<TD class="left">Aniline hydrochloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">29191-52-4</TD>
+<TD class="left">Anisidine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-66-3</TD>
+<TD class="left">Anisole.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">118-92-3</TD>
+<TD class="left">Anthranilic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">84-65-1</TD>
+<TD class="left">Anthraquinone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-52-7</TD>
+<TD class="left">Benzaldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">55-21-0</TD>
+<TD class="left">Benzamide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">71-43-2</TD>
+<TD class="left">Benzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-48-6</TD>
+<TD class="left">Benzenedisulfonic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-11-3</TD>
+<TD class="left">Benzenesulfonic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">134-81-6</TD>
+<TD class="left">Benzil.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">76-93-7</TD>
+<TD class="left">Benzilic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">65-85-0</TD>
+<TD class="left">Benzoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">119-53-9</TD>
+<TD class="left">Benzoin.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-47-0</TD>
+<TD class="left">Benzonitrile.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">119-61-9</TD>
+<TD class="left">Benzophenone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-07-7</TD>
+<TD class="left">Benzotrichloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-88-4</TD>
+<TD class="left">Benzoyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-51-6</TD>
+<TD class="left">Benzyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-46-9</TD>
+<TD class="left">Benzylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">120-51-4</TD>
+<TD class="left">Benzyl benzoate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-44-7</TD>
+<TD class="left">Benzyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-87-3</TD>
+<TD class="left">Benzyl dichloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">92-52-4</TD>
+<TD class="left">Biphenyl.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">80-05-7</TD>
+<TD class="left">Bisphenol A.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">10-86-1</TD>
+<TD class="left">Bromobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27497-51-4</TD>
+<TD class="left">Bromonaphthalene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-99-0</TD>
+<TD class="left">Butadiene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-98-9</TD>
+<TD class="left">1-butene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-86-4</TD>
+<TD class="left">n-butyl acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">141-32-2</TD>
+<TD class="left">n-butyl acrylate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">71-36-3</TD>
+<TD class="left">n-butyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-92-2</TD>
+<TD class="left">s-butyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-65-0</TD>
+<TD class="left">t-butyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">109-73-9</TD>
+<TD class="left">n-butylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">13952-84-6</TD>
+<TD class="left">s-butylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-64-9</TD>
+<TD class="left">t-butylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-73-7</TD>
+<TD class="left">p-tert-butyl benzoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-88-0</TD>
+<TD class="left">1,3-butylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-72-8</TD>
+<TD class="left">n-butyraldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-92-6</TD>
+<TD class="left">Butyric acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-31-0</TD>
+<TD class="left">Butyric anhydride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">109-74-0</TD>
+<TD class="left">Butyronitrile.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">105-60-2</TD>
+<TD class="left">Caprolactam.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-1-50</TD>
+<TD class="left">Carbon disulfide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">558-13-4</TD>
+<TD class="left">Carbon tetrabromide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">56-23-5</TD>
+<TD class="left">Carbon tetrachloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">9004-35-7</TD>
+<TD class="left">Cellulose acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-11-8</TD>
+<TD class="left">Chloroacetic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-42-9</TD>
+<TD class="left">m-chloroaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-51-2</TD>
+<TD class="left">o-chloroaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-47-8</TD>
+<TD class="left">p-chloroaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">35913-09-8</TD>
+<TD class="left">Chlorobenzaldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-90-7</TD>
+<TD class="left">Chlorobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">118-91-2, 535-80-8, 74-11-3 <sup>c</sup></TD>
+<TD class="left">Chlorobenzoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">2136-81-4, 2136-89-2, 5216-25-1<sup>c</sup></TD>
+<TD class="left">Chlorobenzotrichloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1321-03-5</TD>
+<TD class="left">Chlorobenzoyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25497-29-4</TD>
+<TD class="left">Chlorodifluoromethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-45-6</TD>
+<TD class="left">Chlorodifluoroethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">67-66-3</TD>
+<TD class="left">Chloroform.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25586-43-0</TD>
+<TD class="left">Chloronaphthalene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">88-73-3</TD>
+<TD class="left">o-chloronitrobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-00-5</TD>
+<TD class="left">p-chloronitrobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25167-80-0</TD>
+<TD class="left">Chlorophenols.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">126-99-8</TD>
+<TD class="left">Chloroprene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">7790-94-5</TD>
+<TD class="left">Chlorosulfonic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-41-8</TD>
+<TD class="left">m-chlorotoluene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-49-8</TD>
+<TD class="left">o-chlorotoluene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-43-4</TD>
+<TD class="left">p-chlorotoluene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-72-9</TD>
+<TD class="left">Chlorotrifluoromethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-39-4</TD>
+<TD class="left">m-cresol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-48-7</TD>
+<TD class="left">o-cresol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-44-5</TD>
+<TD class="left">p-cresol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1319-77-3</TD>
+<TD class="left">Mixed cresols.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1319-77-3</TD>
+<TD class="left">Cresylic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">4170-30-0</TD>
+<TD class="left">Crotonaldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">3724-65-0</TD>
+<TD class="left">Crotonic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-82-8</TD>
+<TD class="left">Cumene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">80-15-9</TD>
+<TD class="left">Cumene hydroperoxide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">372-09-8</TD>
+<TD class="left">Cyanoacetic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">506-77-4</TD>
+<TD class="left">Cyanogen chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-80-5</TD>
+<TD class="left">Cyanuric acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-77-0</TD>
+<TD class="left">Cyanuric chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-82-7</TD>
+<TD class="left">Cyclohexane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-93-0</TD>
+<TD class="left">Cyclohexanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-94-1</TD>
+<TD class="left">Cyclohexanone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-83-8</TD>
+<TD class="left">Cyclohexene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-91-8</TD>
+<TD class="left">Cyclohexylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-78-4</TD>
+<TD class="left">Cyclooctadiene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">112-30-1</TD>
+<TD class="left">Decanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-42-2</TD>
+<TD class="left">Diacetone alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27576-04-1</TD>
+<TD class="left">Diaminobenzoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-76-1, 95-82-9, 554-00-7, 608-27-5, 608-31-1, 626-43-7, 27134-27-6, 57311-92-9 <sup>c</sup></TD>
+<TD class="left">Dichloroaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">541-73-1</TD>
+<TD class="left">m-dichlorobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-50-1</TD>
+<TD class="left">o-dichlorobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-46-7</TD>
+<TD class="left">p-dichlorobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-71-8</TD>
+<TD class="left">Dichlorodifluoromethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-44-4</TD>
+<TD class="left">Dichloroethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-06-2</TD>
+<TD class="left">1,2-dichloroethane (EDC).</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">96-23-1</TD>
+<TD class="left">Dichlorohydrin.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">26952-23-8</TD>
+<TD class="left">Dichloropropene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">101-83-7</TD>
+<TD class="left">Dicyclohexylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">109-89-7</TD>
+<TD class="left">Diethylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-46-6</TD>
+<TD class="left">Diethylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">112-36-7</TD>
+<TD class="left">Diethylene glycol diethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-96-6</TD>
+<TD class="left">Diethylene glycol dimethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">112-34-5</TD>
+<TD class="left">Diethylene glycol monobutyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">124-17-4</TD>
+<TD class="left">Diethylene glycol monobutyl ether acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-90-0</TD>
+<TD class="left">Diethylene glycol monoethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">112-15-2</TD>
+<TD class="left">Diethylene glycol monoethyl ether acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-77-3</TD>
+<TD class="left">Diethylene glycol monomethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">64-67-5</TD>
+<TD class="left">Diethyl sulfate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-37-6</TD>
+<TD class="left">Difluoroethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25167-70-8</TD>
+<TD class="left">Diisobutylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">26761-40-0</TD>
+<TD class="left">Diisodecyl phthalate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27554-26-3</TD>
+<TD class="left">Diisooctyl phthalate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">674-82-8</TD>
+<TD class="left">Diketene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">124-40-3</TD>
+<TD class="left">Dimethylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">121-69-7</TD>
+<TD class="left">N,N-dimethylaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">115-10-6</TD>
+<TD class="left">N,N-dimethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">68-12-2</TD>
+<TD class="left">N,N-dimethylformamide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">57-14-7</TD>
+<TD class="left">Dimethylhydrazine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">77-78-1</TD>
+<TD class="left">Dimethyl sulfate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-18-3</TD>
+<TD class="left">Dimethyl sulfide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">67-68-5</TD>
+<TD class="left">Dimethyl sulfoxide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">120-61-6</TD>
+<TD class="left">Dimethyl terephthalate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">99-34-3</TD>
+<TD class="left">3,5-dinitrobenzoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">51-28-5</TD>
+<TD class="left">Dinitrophenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25321-14-6</TD>
+<TD class="left">Dinitrotoluene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-91-1</TD>
+<TD class="left">Dioxane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">646-06-0</TD>
+<TD class="left">Dioxilane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">122-39-4</TD>
+<TD class="left">Diphenylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">101-84-8</TD>
+<TD class="left">Diphenyl oxide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">102-08-9</TD>
+<TD class="left">Diphenyl thiourea.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25265-71-8</TD>
+<TD class="left">Dipropylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25378-22-7</TD>
+<TD class="left">Dodecene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">28675-17-4</TD>
+<TD class="left">Dodecylaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27193-86-8</TD>
+<TD class="left">Dodecylphenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-89-8</TD>
+<TD class="left">Epichlorohydrin.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">64-17-5</TD>
+<TD class="left">Ethanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">141-43-5 <sup>c</sup></TD>
+<TD class="left">Ethanolamines.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">141-78-6</TD>
+<TD class="left">Ethyl acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">141-97-9</TD>
+<TD class="left">Ethyl acetoacetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">140-88-5</TD>
+<TD class="left">Ethyl acrylate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-04-7</TD>
+<TD class="left">Ethylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-41-4</TD>
+<TD class="left">Ethylbenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">74-96-4</TD>
+<TD class="left">Ethyl bromide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">9004-57-3</TD>
+<TD class="left">Ethylcellulose.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-00-3</TD>
+<TD class="left">Ethyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">105-39-5</TD>
+<TD class="left">Ethyl chloroacetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">105-56-6</TD>
+<TD class="left">Ethylcyanoacetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">74-85-1</TD>
+<TD class="left">Ethylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">96-49-1</TD>
+<TD class="left">Ethylene carbonate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-07-3</TD>
+<TD class="left">Ethylene chlorohydrin.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-15-3</TD>
+<TD class="left">Ethylenediamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-93-4</TD>
+<TD class="left">Ethylene dibromide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-21-1</TD>
+<TD class="left">Ethylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-55-7</TD>
+<TD class="left">Ethylene glycol diacetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-71-4</TD>
+<TD class="left">Ethylene glycol dimethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-76-2</TD>
+<TD class="left">Ethylene glycol monobutyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">112-07-2</TD>
+<TD class="left">Ethylene glycol monobutyl ether acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-80-5</TD>
+<TD class="left">Ethylene glycol monoethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">111-15-9</TD>
+<TD class="left">Ethylene glycol monethyl ether acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">109-86-4</TD>
+<TD class="left">Ethylene glycol monomethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-49-6</TD>
+<TD class="left">Ethylene glycol monomethyl ether acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">122-99-6</TD>
+<TD class="left">Ethylene glycol monophenyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">2807-30-9</TD>
+<TD class="left">Ethylene glycol monopropyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-21-8</TD>
+<TD class="left">Ethylene oxide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">60-29-7</TD>
+<TD class="left">Ethyl ether</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">104-76-7</TD>
+<TD class="left">2-ethylhexanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">122-51-0</TD>
+<TD class="left">Ethyl orthoformate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-92-1</TD>
+<TD class="left">Ethyl oxalate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">41892-71-1</TD>
+<TD class="left">Ethyl sodium oxalacetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">50-00-0</TD>
+<TD class="left">Formaldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-12-7</TD>
+<TD class="left">Formamide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">64-18-6</TD>
+<TD class="left">Formic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-17-8</TD>
+<TD class="left">Fumaric acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-01-1</TD>
+<TD class="left">Furfural.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">56-81-5</TD>
+<TD class="left">Glycerol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">26545-73-7</TD>
+<TD class="left">Glycerol dichlorohydrin.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25791-96-2</TD>
+<TD class="left">Glycerol triether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">56-40-6</TD>
+<TD class="left">Glycine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-22-2</TD>
+<TD class="left">Glyoxal.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">118-74-1</TD>
+<TD class="left">Hexachlorobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">67-72-1</TD>
+<TD class="left">Hexachloroethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">36653-82-4</TD>
+<TD class="left">Hexadecyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">124-09-4</TD>
+<TD class="left">Hexamethylenediamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">629-11-8</TD>
+<TD class="left">Hexamethylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-97-0</TD>
+<TD class="left">Hexamethylenetetramine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">74-90-8</TD>
+<TD class="left">Hydrogen cyanide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-31-9</TD>
+<TD class="left">Hydroquinone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">99-96-7</TD>
+<TD class="left">p-hydroxybenzoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">26760-64-5</TD>
+<TD class="left">Isoamylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-83-1</TD>
+<TD class="left">Isobutanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-19-0</TD>
+<TD class="left">Isobutyl acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">115-11-7</TD>
+<TD class="left">Isobutylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-84-2</TD>
+<TD class="left">Isobutyraldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-31-2</TD>
+<TD class="left">Isobutyric acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25339-17-7</TD>
+<TD class="left">Isodecanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">26952-21-6</TD>
+<TD class="left">Isooctyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-78-4</TD>
+<TD class="left">Isopentane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-59-1</TD>
+<TD class="left">Isophorone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">121-91-5</TD>
+<TD class="left">Isophthalic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-79-5</TD>
+<TD class="left">Isoprene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">67-63-0</TD>
+<TD class="left">Isopropanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-21-4</TD>
+<TD class="left">Isopropyl acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-31-0</TD>
+<TD class="left">Isopropylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-29-6</TD>
+<TD class="left">Isopropyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25168-06-3</TD>
+<TD class="left">Isopropylphenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">463-51-4</TD>
+<TD class="left">Ketene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">(<sup>b</sup>)</TD>
+<TD class="left">Linear alkyl sulfonate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-01-3</TD>
+<TD class="left">Linear alkylbenzene (linear dodecylbenzene).</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-16-7</TD>
+<TD class="left">Maleic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-31-6</TD>
+<TD class="left">Maleic anhydride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">6915-15-7</TD>
+<TD class="left">Malic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">141-79-7</TD>
+<TD class="left">Mesityl oxide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">121-47-1</TD>
+<TD class="left">Metanilic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-41-4</TD>
+<TD class="left">Methacrylic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">563-47-3</TD>
+<TD class="left">Methallyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">67-56-1</TD>
+<TD class="left">Methanol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-20-9</TD>
+<TD class="left">Methyl acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">105-45-3</TD>
+<TD class="left">Methyl acetoacetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">74-89-5</TD>
+<TD class="left">Methylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-61-8</TD>
+<TD class="left">n-methylaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">74-83-9</TD>
+<TD class="left">Methyl bromide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">37365-71-2</TD>
+<TD class="left">Methyl butynol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">74-87-3</TD>
+<TD class="left">Methyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-87-2</TD>
+<TD class="left">Methylcyclohexane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1331-22-2</TD>
+<TD class="left">Methylcyclohexanone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-09-2</TD>
+<TD class="left">Methylene chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">101-77-9</TD>
+<TD class="left">Methylene dianiline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">101-68-8</TD>
+<TD class="left">Methylene diphenyl diisocyanate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-93-3</TD>
+<TD class="left">Methyl ethyl ketone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-31-3</TD>
+<TD class="left">Methyl formate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-11-2</TD>
+<TD class="left">Methyl isobutyl carbinol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-10-1</TD>
+<TD class="left">Methyl isobutyl ketone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">80-62-6</TD>
+<TD class="left">Methyl methacrylate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">77-75-8</TD>
+<TD class="left">Methylpentynol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-83-9</TD>
+<TD class="left">a-methylstyrene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-91-8</TD>
+<TD class="left">Morpholine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">85-47-2</TD>
+<TD class="left">a-naphthalene sulfonic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">120-18-3</TD>
+<TD class="left">b-naphthalene sulfonic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">90-15-3</TD>
+<TD class="left">a-naphthol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">135-19-3</TD>
+<TD class="left">b-naphthol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-98-9</TD>
+<TD class="left">Neopentanoic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">88-74-4</TD>
+<TD class="left">o-nitroaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-01-6</TD>
+<TD class="left">p-nitroaniline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">91-23-6</TD>
+<TD class="left">o-nitroanisole.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-17-4</TD>
+<TD class="left">p-nitroanisole.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-95-3</TD>
+<TD class="left">Nitrobenzene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27178-83-2<sup>c</sup></TD>
+<TD class="left">Nitrobenzoic acid (o,m, and p).</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-24-3</TD>
+<TD class="left">Nitroethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-52-5</TD>
+<TD class="left">Nitromethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">88-75-5</TD>
+<TD class="left">2-Nitrophenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25322-01-4</TD>
+<TD class="left">Nitropropane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1321-12-6</TD>
+<TD class="left">Nitrotoluene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27215-95-8</TD>
+<TD class="left">Nonene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25154-52-3</TD>
+<TD class="left">Nonylphenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27193-28-8</TD>
+<TD class="left">Octylphenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-63-7</TD>
+<TD class="left">Paraldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">115-77-5</TD>
+<TD class="left">Pentaerythritol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">109-66-0</TD>
+<TD class="left">n-pentane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">109-67-1</TD>
+<TD class="left">1-pentene</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">127-18-4</TD>
+<TD class="left">Perchloroethylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">594-42-3</TD>
+<TD class="left">Perchloromethyl mercaptan.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">94-70-2</TD>
+<TD class="left">o-phenetidine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">156-43-4</TD>
+<TD class="left">p-phenetidine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-95-2</TD>
+<TD class="left">Phenol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-67-9, 585-38-6, 609-46-1, 1333-39-7 <sup>c</sup></TD>
+<TD class="left">Phenolsulfonic acids.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">91-40-7</TD>
+<TD class="left">Phenyl anthranilic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">(<sup>b</sup>)</TD>
+<TD class="left">Phenylenediamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-44-5</TD>
+<TD class="left">Phosgene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">85-44-9</TD>
+<TD class="left">Phthalic anhydride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">85-41-6</TD>
+<TD class="left">Phthalimide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-99-6</TD>
+<TD class="left">b-picoline.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-85-0</TD>
+<TD class="left">Piperazine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">9003-29-6, 25036-29-7<sup>c</sup></TD>
+<TD class="left">Polybutenes.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25322-68-3</TD>
+<TD class="left">Polyethylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25322-69-4</TD>
+<TD class="left">Polypropylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">123-38-6</TD>
+<TD class="left">Propionaldehyde.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-09-4</TD>
+<TD class="left">Propionic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">71-23-8</TD>
+<TD class="left">n-propyl alcohol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">107-10-8</TD>
+<TD class="left">Propylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">540-54-5</TD>
+<TD class="left">Propyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">115-07-1</TD>
+<TD class="left">Propylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">127-00-4</TD>
+<TD class="left">Propylene chlorohydrin.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-87-5</TD>
+<TD class="left">Propylene dichloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">57-55-6</TD>
+<TD class="left">Propylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-56-9</TD>
+<TD class="left">Propylene oxide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-86-1</TD>
+<TD class="left">Pyridine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-51-4</TD>
+<TD class="left">Quinone.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-46-3</TD>
+<TD class="left">Resorcinol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">27138-57-4</TD>
+<TD class="left">Resorcylic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">69-72-7</TD>
+<TD class="left">Salicylic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">127-09-3</TD>
+<TD class="left">Sodium acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">532-32-1</TD>
+<TD class="left">Sodium benzoate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">9004-32-4</TD>
+<TD class="left">Sodium carboxymethyl cellulose.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">3926-62-3</TD>
+<TD class="left">Sodium chloroacetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">141-53-7</TD>
+<TD class="left">Sodium formate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">139-02-6</TD>
+<TD class="left">Sodium phenate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-44-1</TD>
+<TD class="left">Sorbic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-42-5</TD>
+<TD class="left">Styrene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-15-6</TD>
+<TD class="left">Succinic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-61-2</TD>
+<TD class="left">Succinonitrile.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">121-57-3</TD>
+<TD class="left">Sulfanilic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">126-33-0</TD>
+<TD class="left">Sulfolane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1401-55-4</TD>
+<TD class="left">Tannic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">100-21-0</TD>
+<TD class="left">Terephthalic acid.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-34-5 <sup>c</sup></TD>
+<TD class="left">Tetrachloroethanes.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">117-08-8</TD>
+<TD class="left">Tetrachlorophthalic anhydride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">78-00-2</TD>
+<TD class="left">Tetraethyl lead.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">119-64-2</TD>
+<TD class="left">Tetrahydronaphthalene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">85-43-8</TD>
+<TD class="left">Tetrahydrophthalic anhydride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-74-1</TD>
+<TD class="left">Tetramethyl lead.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-60-1</TD>
+<TD class="left">Tetramethylenediamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">110-18-9</TD>
+<TD class="left">Tetramethylethylenediamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-88-3</TD>
+<TD class="left">Toluene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-80-7</TD>
+<TD class="left">Toluene-2,4-diamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">584-84-9</TD>
+<TD class="left">Toluene-2,4-diisocyanate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">26471-62-5</TD>
+<TD class="left">Toluene diisocyanates (mixture).</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1333-07-9</TD>
+<TD class="left">Toluenesulfonamide.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">104-15-4 <sup>c</sup></TD>
+<TD class="left">Toluenesulfonic acids.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">98-59-9</TD>
+<TD class="left">Toluenesulfonyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">26915-12-8</TD>
+<TD class="left">Toluidines.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">87-61-6, 108-70-3, 120-82-1 <sup>c</sup></TD>
+<TD class="left">Trichlorobenzenes.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">71-55-6</TD>
+<TD class="left">1,1,1-trichloroethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-00-5</TD>
+<TD class="left">1,1,2-trichloroethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">79-01-6</TD>
+<TD class="left">Trichloroethylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-69-4</TD>
+<TD class="left">Trichlorofluoromethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">96-18-4</TD>
+<TD class="left">1,2,3-trichloropropane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">76-13-1</TD>
+<TD class="left">1,1,2-trichloro-1,2,2-trifluoroethane.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">121-44-8</TD>
+<TD class="left">Triethylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">112-27-6</TD>
+<TD class="left">Triethylene glycol.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">112-49-2</TD>
+<TD class="left">Triethylene glycol dimethyl ether.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">7756-94-7</TD>
+<TD class="left">Triisobutylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-50-3</TD>
+<TD class="left">Trimethylamine.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">57-13-6</TD>
+<TD class="left">Urea.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">108-05-4</TD>
+<TD class="left">Vinyl acetate.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-01-4</TD>
+<TD class="left">Vinyl chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">75-35-4</TD>
+<TD class="left">Vinylidene chloride.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">25013-15-4</TD>
+<TD class="left">Vinyl toluene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1330-20-7</TD>
+<TD class="left">Xylenes (mixed).</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">95-47-6</TD>
+<TD class="left">o-xylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">106-42-3</TD>
+<TD class="left">p-xylene.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">1300-71-6</TD>
+<TD class="left">Xylenol.</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single">1300-73-8</TD>
+<TD class="left border-bottom-single">Xylidine.
+</TD>
+</TR>
+</TBODY>
+<TFOOT><TR><TD colspan="2"><sup>a</sup> CAS numbers refer to the Chemical Abstracts Registry numbers assigned to specific chemicals, isomers, or mixtures of chemicals. Some isomers or mixtures that are covered by the standards do not have CAS numbers assigned to them. The standards apply to all of the chemicals listed, whether CAS numbers have been assigned or not.
+</TD></TR><TR><TD colspan="2"><sup>b</sup> No CAS number(s) have been assigned to this chemical, its isomers, or mixtures containing these chemicals.
+</TD></TR><TR><TD colspan="2"><sup>c</sup> CAS numbers for some of the isomers are listed; the standards apply to all of the isomers and mixtures, even if CAS numbers have not been assigned.</TD></TR></TFOOT></TABLE>
+</DIV></DIV>
+<CITA TYPE="N">[48 FR 48335, Oct. 18, 1983, as amended at 65 FR 61763, Oct. 17, 2000]
+</CITA>
+</DIV8>
+
+</DIV6>

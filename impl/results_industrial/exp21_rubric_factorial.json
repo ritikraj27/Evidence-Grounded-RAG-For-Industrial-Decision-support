@@ -1,0 +1,2766 @@
+{
+  "schema": "mtp.rubric-factorial/1",
+  "question": "does the rubric's wording or the reader's specialisation move the measured precision?",
+  "design": {
+    "factors": [
+      "rubric (v1 / v2)",
+      "reader type (generalist / specialist)"
+    ],
+    "held_constant": [
+      "the 240 pairs",
+      "the detector and its configuration",
+      "the regime assignment",
+      "the regime briefs",
+      "the reader model"
+    ],
+    "note": "every cell is read by more than one reader; the consensus takes the majority label and treats a contested pair as not a conflict, so a contested pair can only lower the measured precision."
+  },
+  "cells": {
+    "generalist_v1": {
+      "rubric": "v1",
+      "reader_type": "generalist",
+      "n_readers": 3,
+      "readers": {
+        "judge_b_reader": {
+          "n_flagged": 41,
+          "detection_precision": 0.6829268292682927,
+          "detection_precision_ci95": [
+            0.5301551434425414,
+            0.8043556679468827
+          ],
+          "typing_precision": 0.07317073170731707,
+          "typing_precision_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "recall_any_real_problem": 0.34146341463414637,
+          "n_annotated_conflicts": 82,
+          "n_pairs_total": 240,
+          "label_distribution_of_flagged": {
+            "supersession": 25,
+            "term_mismatch": 7,
+            "no_conflict": 6
+          }
+        },
+        "generalist_v1_a": {
+          "n_flagged": 32,
+          "detection_precision": 0.375,
+          "detection_precision_ci95": [
+            0.2293366846595921,
+            0.5474589941047487
+          ],
+          "typing_precision": 0.09375,
+          "typing_precision_ci95": [
+            0.032400962626319516,
+            0.24218499335778831
+          ],
+          "recall_any_real_problem": 0.5454545454545454,
+          "n_annotated_conflicts": 22,
+          "n_pairs_total": 120,
+          "label_distribution_of_flagged": {
+            "no_conflict": 17,
+            "supersession": 9,
+            "term_mismatch": 3
+          }
+        },
+        "generalist_v1_b": {
+          "n_flagged": 9,
+          "detection_precision": 0.0,
+          "detection_precision_ci95": [
+            0.0,
+            0.2991527535509594
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2991527535509594
+          ],
+          "recall_any_real_problem": null,
+          "n_annotated_conflicts": 0,
+          "n_pairs_total": 120,
+          "label_distribution_of_flagged": {
+            "term_mismatch": 3,
+            "no_conflict": 6
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 41,
+        "detection_precision": 0.2926829268292683,
+        "detection_precision_ci95": [
+          0.1760901763305888,
+          0.44479757076139725
+        ],
+        "typing_precision": 0.07317073170731707,
+        "typing_precision_ci95": [
+          0.025197373252564145,
+          0.19427740017211292
+        ],
+        "recall_any_real_problem": 0.5714285714285714,
+        "n_annotated_conflicts": 21,
+        "n_pairs_total": 240,
+        "label_distribution_of_flagged": {
+          "no_conflict": 24,
+          "supersession": 9,
+          "term_mismatch": 5
+        }
+      },
+      "pairwise_kappa_within_cell": {
+        "generalist_v1_a vs judge_b_reader": {
+          "n_labelled_by_both": 120,
+          "cohens_kappa": 0.22337078651685396,
+          "ci95": [
+            0.12364618596585561,
+            0.32309538706785235
+          ],
+          "agreement_rate": 0.4,
+          "crosstab": {
+            "no_conflict | supersession": 59,
+            "term_mismatch | term_mismatch": 19,
+            "supersession | supersession": 21,
+            "no_conflict | no_conflict": 8,
+            "no_conflict | granularity": 5,
+            "term_mismatch | no_conflict": 7,
+            "semantic_conflict | supersession": 1
+          }
+        },
+        "generalist_v1_b vs judge_b_reader": {
+          "n_labelled_by_both": 120,
+          "cohens_kappa": 0.5888244596731682,
+          "ci95": [
+            0.4872808990159453,
+            0.6903680203303911
+          ],
+          "agreement_rate": 0.7833333333333333,
+          "crosstab": {
+            "term_mismatch | term_mismatch": 51,
+            "granularity | no_conflict": 1,
+            "no_conflict | term_mismatch": 22,
+            "no_conflict | no_conflict": 43,
+            "term_mismatch | no_conflict": 1,
+            "no_conflict | supersession": 1,
+            "no_conflict | granularity": 1
+          }
+        }
+      }
+    },
+    "generalist_v2": {
+      "rubric": "v2",
+      "reader_type": "generalist",
+      "n_readers": 3,
+      "readers": {
+        "generalist_control": {
+          "n_flagged": 41,
+          "detection_precision": 0.6829268292682927,
+          "detection_precision_ci95": [
+            0.5301551434425414,
+            0.8043556679468827
+          ],
+          "typing_precision": 0.07317073170731707,
+          "typing_precision_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "recall_any_real_problem": 0.3181818181818182,
+          "n_annotated_conflicts": 88,
+          "n_pairs_total": 240,
+          "label_distribution_of_flagged": {
+            "supersession": 25,
+            "term_mismatch": 8,
+            "no_conflict": 5
+          }
+        },
+        "generalist_v2_a": {
+          "n_flagged": 32,
+          "detection_precision": 0.875,
+          "detection_precision_ci95": [
+            0.7193135021517204,
+            0.950299461555257
+          ],
+          "typing_precision": 0.09375,
+          "typing_precision_ci95": [
+            0.032400962626319516,
+            0.24218499335778831
+          ],
+          "recall_any_real_problem": 0.3333333333333333,
+          "n_annotated_conflicts": 84,
+          "n_pairs_total": 120,
+          "label_distribution_of_flagged": {
+            "supersession": 25,
+            "term_mismatch": 4
+          }
+        },
+        "generalist_v2_b": {
+          "n_flagged": 9,
+          "detection_precision": 0.0,
+          "detection_precision_ci95": [
+            0.0,
+            0.2991527535509594
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2991527535509594
+          ],
+          "recall_any_real_problem": 0.0,
+          "n_annotated_conflicts": 1,
+          "n_pairs_total": 120,
+          "label_distribution_of_flagged": {
+            "term_mismatch": 3,
+            "no_conflict": 6
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 41,
+        "detection_precision": 0.6585365853658537,
+        "detection_precision_ci95": [
+          0.5054955435372689,
+          0.7844138263335655
+        ],
+        "typing_precision": 0.07317073170731707,
+        "typing_precision_ci95": [
+          0.025197373252564145,
+          0.19427740017211292
+        ],
+        "recall_any_real_problem": 0.32926829268292684,
+        "n_annotated_conflicts": 82,
+        "n_pairs_total": 240,
+        "label_distribution_of_flagged": {
+          "supersession": 24,
+          "no_conflict": 8,
+          "term_mismatch": 6
+        }
+      },
+      "pairwise_kappa_within_cell": {
+        "generalist_control vs generalist_v2_a": {
+          "n_labelled_by_both": 120,
+          "cohens_kappa": 0.7130902570233115,
+          "ci95": [
+            0.6238698617090792,
+            0.8023106523375438
+          ],
+          "agreement_rate": 0.8666666666666667,
+          "crosstab": {
+            "supersession | supersession": 82,
+            "term_mismatch | term_mismatch": 14,
+            "term_mismatch | supersession": 1,
+            "supersession | term_mismatch": 1,
+            "supersession | no_conflict": 2,
+            "granularity | no_conflict": 2,
+            "no_conflict | supersession": 1,
+            "no_conflict | no_conflict": 8,
+            "term_mismatch | no_conflict": 8,
+            "no_conflict | term_mismatch": 1
+          }
+        },
+        "generalist_control vs generalist_v2_b": {
+          "n_labelled_by_both": 120,
+          "cohens_kappa": 0.5614722004698514,
+          "ci95": [
+            0.45772716969524635,
+            0.6652172312444563
+          ],
+          "agreement_rate": 0.7666666666666667,
+          "crosstab": {
+            "term_mismatch | term_mismatch": 48,
+            "no_conflict | no_conflict": 44,
+            "term_mismatch | no_conflict": 18,
+            "term_mismatch | quantity_conflict": 1,
+            "no_conflict | term_mismatch": 4,
+            "supersession | no_conflict": 3,
+            "granularity | term_mismatch": 2
+          }
+        }
+      }
+    },
+    "specialist_v1": {
+      "rubric": "v1",
+      "reader_type": "specialist",
+      "n_readers": 4,
+      "readers": {
+        "specialist_occupational_v1": {
+          "n_flagged": 12,
+          "detection_precision": 0.08333333333333333,
+          "detection_precision_ci95": [
+            0.014864709450773478,
+            0.35388592179859524
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "recall_any_real_problem": 0.5,
+          "n_annotated_conflicts": 2,
+          "n_pairs_total": 133,
+          "label_distribution_of_flagged": {
+            "no_conflict": 5,
+            "supersession": 1,
+            "term_mismatch": 6
+          }
+        },
+        "specialist_process_safety_v1": {
+          "n_flagged": 3,
+          "detection_precision": 0.6666666666666666,
+          "detection_precision_ci95": [
+            0.2076549551264879,
+            0.9385096847238394
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.5615060804490177
+          ],
+          "recall_any_real_problem": 0.18181818181818182,
+          "n_annotated_conflicts": 11,
+          "n_pairs_total": 44,
+          "label_distribution_of_flagged": {
+            "supersession": 2,
+            "term_mismatch": 1
+          }
+        },
+        "specialist_environmental_control_v1": {
+          "n_flagged": 25,
+          "detection_precision": 0.44,
+          "detection_precision_ci95": [
+            0.2666537494700256,
+            0.6293298298043557
+          ],
+          "typing_precision": 0.12,
+          "typing_precision_ci95": [
+            0.04166741357068093,
+            0.2995619218337349
+          ],
+          "recall_any_real_problem": 0.8461538461538461,
+          "n_annotated_conflicts": 13,
+          "n_pairs_total": 52,
+          "label_distribution_of_flagged": {
+            "supersession": 8,
+            "no_conflict": 11,
+            "term_mismatch": 3
+          }
+        },
+        "specialist_hazmat_transport_v1": {
+          "n_flagged": 1,
+          "detection_precision": 0.0,
+          "detection_precision_ci95": [
+            0.0,
+            0.7934567085261071
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.7934567085261071
+          ],
+          "recall_any_real_problem": 0.0,
+          "n_annotated_conflicts": 2,
+          "n_pairs_total": 11,
+          "label_distribution_of_flagged": {
+            "no_conflict": 1
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 41,
+        "detection_precision": 0.34146341463414637,
+        "detection_precision_ci95": [
+          0.2155861736664346,
+          0.4945044564627312
+        ],
+        "typing_precision": 0.07317073170731707,
+        "typing_precision_ci95": [
+          0.025197373252564145,
+          0.19427740017211292
+        ],
+        "recall_any_real_problem": 0.5,
+        "n_annotated_conflicts": 28,
+        "n_pairs_total": 240,
+        "label_distribution_of_flagged": {
+          "supersession": 11,
+          "no_conflict": 17,
+          "term_mismatch": 10
+        }
+      },
+      "pairwise_kappa_within_cell": {}
+    },
+    "specialist_v2": {
+      "rubric": "v2",
+      "reader_type": "specialist",
+      "n_readers": 4,
+      "readers": {
+        "specialist_occupational_safety": {
+          "n_flagged": 12,
+          "detection_precision": 0.25,
+          "detection_precision_ci95": [
+            0.08894003962896138,
+            0.53231033912066
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "recall_any_real_problem": 0.21428571428571427,
+          "n_annotated_conflicts": 14,
+          "n_pairs_total": 133,
+          "label_distribution_of_flagged": {
+            "supersession": 3,
+            "no_conflict": 3,
+            "term_mismatch": 6
+          }
+        },
+        "specialist_process_safety": {
+          "n_flagged": 3,
+          "detection_precision": 0.3333333333333333,
+          "detection_precision_ci95": [
+            0.0614903152761605,
+            0.7923450448735121
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.5615060804490177
+          ],
+          "recall_any_real_problem": 0.02631578947368421,
+          "n_annotated_conflicts": 38,
+          "n_pairs_total": 44,
+          "label_distribution_of_flagged": {
+            "supersession": 1,
+            "term_mismatch": 2
+          }
+        },
+        "specialist_environmental_control": {
+          "n_flagged": 25,
+          "detection_precision": 0.88,
+          "detection_precision_ci95": [
+            0.7004380781662651,
+            0.9583325864293191
+          ],
+          "typing_precision": 0.12,
+          "typing_precision_ci95": [
+            0.04166741357068093,
+            0.2995619218337349
+          ],
+          "recall_any_real_problem": 0.7096774193548387,
+          "n_annotated_conflicts": 31,
+          "n_pairs_total": 52,
+          "label_distribution_of_flagged": {
+            "supersession": 19,
+            "term_mismatch": 3
+          }
+        },
+        "specialist_hazmat_transport": {
+          "n_flagged": 1,
+          "detection_precision": 1.0,
+          "detection_precision_ci95": [
+            0.20654329147389294,
+            1.0
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.7934567085261071
+          ],
+          "recall_any_real_problem": 0.14285714285714285,
+          "n_annotated_conflicts": 7,
+          "n_pairs_total": 11,
+          "label_distribution_of_flagged": {
+            "supersession": 1
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 41,
+        "detection_precision": 0.6585365853658537,
+        "detection_precision_ci95": [
+          0.5054955435372689,
+          0.7844138263335655
+        ],
+        "typing_precision": 0.07317073170731707,
+        "typing_precision_ci95": [
+          0.025197373252564145,
+          0.19427740017211292
+        ],
+        "recall_any_real_problem": 0.3,
+        "n_annotated_conflicts": 90,
+        "n_pairs_total": 240,
+        "label_distribution_of_flagged": {
+          "supersession": 24,
+          "term_mismatch": 11,
+          "no_conflict": 3
+        }
+      },
+      "pairwise_kappa_within_cell": {}
+    },
+    "occupational_matched": {
+      "rubric": "v1+v2",
+      "reader_type": "specialist",
+      "n_readers": 2,
+      "readers": {
+        "specialist_occupational_v1": {
+          "n_flagged": 12,
+          "detection_precision": 0.08333333333333333,
+          "detection_precision_ci95": [
+            0.014864709450773478,
+            0.35388592179859524
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "recall_any_real_problem": 0.5,
+          "n_annotated_conflicts": 2,
+          "n_pairs_total": 133,
+          "label_distribution_of_flagged": {
+            "no_conflict": 5,
+            "supersession": 1,
+            "term_mismatch": 6
+          }
+        },
+        "specialist_occupational_safety_v2_replicate": {
+          "n_flagged": 12,
+          "detection_precision": 0.16666666666666666,
+          "detection_precision_ci95": [
+            0.04696414761482223,
+            0.44803635738467273
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "recall_any_real_problem": 0.25,
+          "n_annotated_conflicts": 8,
+          "n_pairs_total": 133,
+          "label_distribution_of_flagged": {
+            "supersession": 2,
+            "no_conflict": 5,
+            "term_mismatch": 5
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 12,
+        "detection_precision": 0.0,
+        "detection_precision_ci95": [
+          0.0,
+          0.2425007574992425
+        ],
+        "typing_precision": 0.0,
+        "typing_precision_ci95": [
+          0.0,
+          0.2425007574992425
+        ],
+        "recall_any_real_problem": null,
+        "n_annotated_conflicts": 0,
+        "n_pairs_total": 133,
+        "label_distribution_of_flagged": {
+          "no_conflict": 8,
+          "term_mismatch": 4
+        }
+      },
+      "pairwise_kappa_within_cell": {
+        "specialist_occupational_safety_v2_replicate vs specialist_occupational_v1": {
+          "n_labelled_by_both": 133,
+          "cohens_kappa": 0.5578181818181819,
+          "ci95": [
+            0.4593342094015165,
+            0.6563021542348473
+          ],
+          "agreement_rate": 0.7593984962406015,
+          "crosstab": {
+            "supersession | no_conflict": 8,
+            "no_conflict | no_conflict": 48,
+            "term_mismatch | term_mismatch": 53,
+            "term_mismatch | supersession": 1,
+            "no_conflict | supersession": 1,
+            "no_conflict | term_mismatch": 19,
+            "term_mismatch | no_conflict": 2,
+            "term_mismatch | granularity": 1
+          }
+        }
+      }
+    },
+    "first_measurement": {
+      "rubric": "v0 and v1 (its two readers differed)",
+      "reader_type": "generalist",
+      "n_readers": 2,
+      "readers": {
+        "judge_a_model": {
+          "n_flagged": 41,
+          "detection_precision": 0.0975609756097561,
+          "detection_precision_ci95": [
+            0.0385964597529614,
+            0.22547975519030555
+          ],
+          "typing_precision": 0.07317073170731707,
+          "typing_precision_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "recall_any_real_problem": 0.4444444444444444,
+          "n_annotated_conflicts": 9,
+          "n_pairs_total": 240,
+          "label_distribution_of_flagged": {
+            "no_conflict": 23,
+            "term_mismatch": 11,
+            "granularity": 3,
+            "supersession": 1
+          }
+        },
+        "judge_b_reader": {
+          "n_flagged": 41,
+          "detection_precision": 0.6829268292682927,
+          "detection_precision_ci95": [
+            0.5301551434425414,
+            0.8043556679468827
+          ],
+          "typing_precision": 0.07317073170731707,
+          "typing_precision_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "recall_any_real_problem": 0.34146341463414637,
+          "n_annotated_conflicts": 82,
+          "n_pairs_total": 240,
+          "label_distribution_of_flagged": {
+            "supersession": 25,
+            "term_mismatch": 7,
+            "no_conflict": 6
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 41,
+        "detection_precision": 0.0975609756097561,
+        "detection_precision_ci95": [
+          0.0385964597529614,
+          0.22547975519030555
+        ],
+        "typing_precision": 0.07317073170731707,
+        "typing_precision_ci95": [
+          0.025197373252564145,
+          0.19427740017211292
+        ],
+        "recall_any_real_problem": 1.0,
+        "n_annotated_conflicts": 4,
+        "n_pairs_total": 240,
+        "label_distribution_of_flagged": {
+          "no_conflict": 31,
+          "term_mismatch": 6,
+          "supersession": 1
+        }
+      },
+      "pairwise_kappa_within_cell": {
+        "judge_a_model vs judge_b_reader": {
+          "n_labelled_by_both": 240,
+          "cohens_kappa": 0.29632299927901945,
+          "ci95": [
+            0.22190593871823533,
+            0.37074005983980357
+          ],
+          "agreement_rate": 0.49166666666666664,
+          "crosstab": {
+            "granularity | supersession": 5,
+            "no_conflict | supersession": 68,
+            "term_mismatch | term_mismatch": 71,
+            "supersession | supersession": 4,
+            "no_conflict | no_conflict": 41,
+            "no_conflict | granularity": 4,
+            "term_mismatch | supersession": 2,
+            "semantic_conflict | supersession": 3,
+            "granularity | granularity": 2,
+            "granularity | no_conflict": 6,
+            "no_conflict | term_mismatch": 16,
+            "term_mismatch | no_conflict": 12,
+            "granularity | term_mismatch": 4,
+            "quantity_conflict | term_mismatch": 1,
+            "quantity_conflict | no_conflict": 1
+          }
+        }
+      }
+    },
+    "v0_generalist": {
+      "rubric": "v0",
+      "reader_type": "generalist",
+      "n_readers": 1,
+      "readers": {
+        "judge_a_model": {
+          "n_flagged": 41,
+          "detection_precision": 0.0975609756097561,
+          "detection_precision_ci95": [
+            0.0385964597529614,
+            0.22547975519030555
+          ],
+          "typing_precision": 0.07317073170731707,
+          "typing_precision_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "recall_any_real_problem": 0.4444444444444444,
+          "n_annotated_conflicts": 9,
+          "n_pairs_total": 240,
+          "label_distribution_of_flagged": {
+            "no_conflict": 23,
+            "term_mismatch": 11,
+            "granularity": 3,
+            "supersession": 1
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 41,
+        "detection_precision": 0.0975609756097561,
+        "detection_precision_ci95": [
+          0.0385964597529614,
+          0.22547975519030555
+        ],
+        "typing_precision": 0.07317073170731707,
+        "typing_precision_ci95": [
+          0.025197373252564145,
+          0.19427740017211292
+        ],
+        "recall_any_real_problem": 0.4444444444444444,
+        "n_annotated_conflicts": 9,
+        "n_pairs_total": 240,
+        "label_distribution_of_flagged": {
+          "no_conflict": 23,
+          "term_mismatch": 11,
+          "granularity": 3,
+          "supersession": 1
+        }
+      },
+      "pairwise_kappa_within_cell": {}
+    },
+    "v1_generalist_original": {
+      "rubric": "v1",
+      "reader_type": "generalist",
+      "n_readers": 1,
+      "readers": {
+        "judge_b_reader": {
+          "n_flagged": 41,
+          "detection_precision": 0.6829268292682927,
+          "detection_precision_ci95": [
+            0.5301551434425414,
+            0.8043556679468827
+          ],
+          "typing_precision": 0.07317073170731707,
+          "typing_precision_ci95": [
+            0.025197373252564145,
+            0.19427740017211292
+          ],
+          "recall_any_real_problem": 0.34146341463414637,
+          "n_annotated_conflicts": 82,
+          "n_pairs_total": 240,
+          "label_distribution_of_flagged": {
+            "supersession": 25,
+            "term_mismatch": 7,
+            "no_conflict": 6
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 41,
+        "detection_precision": 0.6829268292682927,
+        "detection_precision_ci95": [
+          0.5301551434425414,
+          0.8043556679468827
+        ],
+        "typing_precision": 0.07317073170731707,
+        "typing_precision_ci95": [
+          0.025197373252564145,
+          0.19427740017211292
+        ],
+        "recall_any_real_problem": 0.34146341463414637,
+        "n_annotated_conflicts": 82,
+        "n_pairs_total": 240,
+        "label_distribution_of_flagged": {
+          "supersession": 25,
+          "term_mismatch": 7,
+          "no_conflict": 6
+        }
+      },
+      "pairwise_kappa_within_cell": {}
+    }
+  },
+  "all_readers": {
+    "judge_a_model": {
+      "n_flagged": 41,
+      "detection_precision": 0.0975609756097561,
+      "detection_precision_ci95": [
+        0.0385964597529614,
+        0.22547975519030555
+      ],
+      "typing_precision": 0.07317073170731707,
+      "typing_precision_ci95": [
+        0.025197373252564145,
+        0.19427740017211292
+      ],
+      "recall_any_real_problem": 0.4444444444444444,
+      "n_annotated_conflicts": 9,
+      "n_pairs_total": 240,
+      "label_distribution_of_flagged": {
+        "no_conflict": 23,
+        "term_mismatch": 11,
+        "granularity": 3,
+        "supersession": 1
+      }
+    },
+    "judge_b_reader": {
+      "n_flagged": 41,
+      "detection_precision": 0.6829268292682927,
+      "detection_precision_ci95": [
+        0.5301551434425414,
+        0.8043556679468827
+      ],
+      "typing_precision": 0.07317073170731707,
+      "typing_precision_ci95": [
+        0.025197373252564145,
+        0.19427740017211292
+      ],
+      "recall_any_real_problem": 0.34146341463414637,
+      "n_annotated_conflicts": 82,
+      "n_pairs_total": 240,
+      "label_distribution_of_flagged": {
+        "supersession": 25,
+        "term_mismatch": 7,
+        "no_conflict": 6
+      }
+    },
+    "generalist_control": {
+      "n_flagged": 41,
+      "detection_precision": 0.6829268292682927,
+      "detection_precision_ci95": [
+        0.5301551434425414,
+        0.8043556679468827
+      ],
+      "typing_precision": 0.07317073170731707,
+      "typing_precision_ci95": [
+        0.025197373252564145,
+        0.19427740017211292
+      ],
+      "recall_any_real_problem": 0.3181818181818182,
+      "n_annotated_conflicts": 88,
+      "n_pairs_total": 240,
+      "label_distribution_of_flagged": {
+        "supersession": 25,
+        "term_mismatch": 8,
+        "no_conflict": 5
+      }
+    },
+    "specialist_occupational_safety": {
+      "n_flagged": 12,
+      "detection_precision": 0.25,
+      "detection_precision_ci95": [
+        0.08894003962896138,
+        0.53231033912066
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.2425007574992425
+      ],
+      "recall_any_real_problem": 0.21428571428571427,
+      "n_annotated_conflicts": 14,
+      "n_pairs_total": 133,
+      "label_distribution_of_flagged": {
+        "supersession": 3,
+        "no_conflict": 3,
+        "term_mismatch": 6
+      }
+    },
+    "specialist_process_safety": {
+      "n_flagged": 3,
+      "detection_precision": 0.3333333333333333,
+      "detection_precision_ci95": [
+        0.0614903152761605,
+        0.7923450448735121
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.5615060804490177
+      ],
+      "recall_any_real_problem": 0.02631578947368421,
+      "n_annotated_conflicts": 38,
+      "n_pairs_total": 44,
+      "label_distribution_of_flagged": {
+        "supersession": 1,
+        "term_mismatch": 2
+      }
+    },
+    "specialist_environmental_control": {
+      "n_flagged": 25,
+      "detection_precision": 0.88,
+      "detection_precision_ci95": [
+        0.7004380781662651,
+        0.9583325864293191
+      ],
+      "typing_precision": 0.12,
+      "typing_precision_ci95": [
+        0.04166741357068093,
+        0.2995619218337349
+      ],
+      "recall_any_real_problem": 0.7096774193548387,
+      "n_annotated_conflicts": 31,
+      "n_pairs_total": 52,
+      "label_distribution_of_flagged": {
+        "supersession": 19,
+        "term_mismatch": 3
+      }
+    },
+    "specialist_hazmat_transport": {
+      "n_flagged": 1,
+      "detection_precision": 1.0,
+      "detection_precision_ci95": [
+        0.20654329147389294,
+        1.0
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.7934567085261071
+      ],
+      "recall_any_real_problem": 0.14285714285714285,
+      "n_annotated_conflicts": 7,
+      "n_pairs_total": 11,
+      "label_distribution_of_flagged": {
+        "supersession": 1
+      }
+    },
+    "generalist_v1_a": {
+      "n_flagged": 32,
+      "detection_precision": 0.375,
+      "detection_precision_ci95": [
+        0.2293366846595921,
+        0.5474589941047487
+      ],
+      "typing_precision": 0.09375,
+      "typing_precision_ci95": [
+        0.032400962626319516,
+        0.24218499335778831
+      ],
+      "recall_any_real_problem": 0.5454545454545454,
+      "n_annotated_conflicts": 22,
+      "n_pairs_total": 120,
+      "label_distribution_of_flagged": {
+        "no_conflict": 17,
+        "supersession": 9,
+        "term_mismatch": 3
+      }
+    },
+    "generalist_v1_b": {
+      "n_flagged": 9,
+      "detection_precision": 0.0,
+      "detection_precision_ci95": [
+        0.0,
+        0.2991527535509594
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.2991527535509594
+      ],
+      "recall_any_real_problem": null,
+      "n_annotated_conflicts": 0,
+      "n_pairs_total": 120,
+      "label_distribution_of_flagged": {
+        "term_mismatch": 3,
+        "no_conflict": 6
+      }
+    },
+    "generalist_v2_a": {
+      "n_flagged": 32,
+      "detection_precision": 0.875,
+      "detection_precision_ci95": [
+        0.7193135021517204,
+        0.950299461555257
+      ],
+      "typing_precision": 0.09375,
+      "typing_precision_ci95": [
+        0.032400962626319516,
+        0.24218499335778831
+      ],
+      "recall_any_real_problem": 0.3333333333333333,
+      "n_annotated_conflicts": 84,
+      "n_pairs_total": 120,
+      "label_distribution_of_flagged": {
+        "supersession": 25,
+        "term_mismatch": 4
+      }
+    },
+    "generalist_v2_b": {
+      "n_flagged": 9,
+      "detection_precision": 0.0,
+      "detection_precision_ci95": [
+        0.0,
+        0.2991527535509594
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.2991527535509594
+      ],
+      "recall_any_real_problem": 0.0,
+      "n_annotated_conflicts": 1,
+      "n_pairs_total": 120,
+      "label_distribution_of_flagged": {
+        "term_mismatch": 3,
+        "no_conflict": 6
+      }
+    },
+    "specialist_occupational_v1": {
+      "n_flagged": 12,
+      "detection_precision": 0.08333333333333333,
+      "detection_precision_ci95": [
+        0.014864709450773478,
+        0.35388592179859524
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.2425007574992425
+      ],
+      "recall_any_real_problem": 0.5,
+      "n_annotated_conflicts": 2,
+      "n_pairs_total": 133,
+      "label_distribution_of_flagged": {
+        "no_conflict": 5,
+        "supersession": 1,
+        "term_mismatch": 6
+      }
+    },
+    "specialist_process_safety_v1": {
+      "n_flagged": 3,
+      "detection_precision": 0.6666666666666666,
+      "detection_precision_ci95": [
+        0.2076549551264879,
+        0.9385096847238394
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.5615060804490177
+      ],
+      "recall_any_real_problem": 0.18181818181818182,
+      "n_annotated_conflicts": 11,
+      "n_pairs_total": 44,
+      "label_distribution_of_flagged": {
+        "supersession": 2,
+        "term_mismatch": 1
+      }
+    },
+    "specialist_environmental_control_v1": {
+      "n_flagged": 25,
+      "detection_precision": 0.44,
+      "detection_precision_ci95": [
+        0.2666537494700256,
+        0.6293298298043557
+      ],
+      "typing_precision": 0.12,
+      "typing_precision_ci95": [
+        0.04166741357068093,
+        0.2995619218337349
+      ],
+      "recall_any_real_problem": 0.8461538461538461,
+      "n_annotated_conflicts": 13,
+      "n_pairs_total": 52,
+      "label_distribution_of_flagged": {
+        "supersession": 8,
+        "no_conflict": 11,
+        "term_mismatch": 3
+      }
+    },
+    "specialist_hazmat_transport_v1": {
+      "n_flagged": 1,
+      "detection_precision": 0.0,
+      "detection_precision_ci95": [
+        0.0,
+        0.7934567085261071
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.7934567085261071
+      ],
+      "recall_any_real_problem": 0.0,
+      "n_annotated_conflicts": 2,
+      "n_pairs_total": 11,
+      "label_distribution_of_flagged": {
+        "no_conflict": 1
+      }
+    },
+    "specialist_occupational_safety_v2_replicate": {
+      "n_flagged": 12,
+      "detection_precision": 0.16666666666666666,
+      "detection_precision_ci95": [
+        0.04696414761482223,
+        0.44803635738467273
+      ],
+      "typing_precision": 0.0,
+      "typing_precision_ci95": [
+        0.0,
+        0.2425007574992425
+      ],
+      "recall_any_real_problem": 0.25,
+      "n_annotated_conflicts": 8,
+      "n_pairs_total": 133,
+      "label_distribution_of_flagged": {
+        "supersession": 2,
+        "no_conflict": 5,
+        "term_mismatch": 5
+      }
+    }
+  },
+  "pairwise_kappa_all_readers": {
+    "generalist_control vs generalist_v1_a": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.21395060635566968,
+      "ci95": [
+        0.1157354166895076,
+        0.31216579602183175
+      ],
+      "agreement_rate": 0.38333333333333336,
+      "crosstab": {
+        "supersession | no_conflict": 63,
+        "term_mismatch | term_mismatch": 20,
+        "term_mismatch | no_conflict": 3,
+        "supersession | supersession": 21,
+        "granularity | term_mismatch": 1,
+        "granularity | no_conflict": 1,
+        "supersession | semantic_conflict": 1,
+        "no_conflict | no_conflict": 5,
+        "no_conflict | term_mismatch": 5
+      }
+    },
+    "generalist_control vs generalist_v1_b": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.5946999220576773,
+      "ci95": [
+        0.49388447141690683,
+        0.6955153726984478
+      ],
+      "agreement_rate": 0.7833333333333333,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 49,
+        "no_conflict | granularity": 1,
+        "term_mismatch | no_conflict": 18,
+        "no_conflict | no_conflict": 45,
+        "no_conflict | term_mismatch": 2,
+        "supersession | no_conflict": 3,
+        "granularity | no_conflict": 1,
+        "granularity | term_mismatch": 1
+      }
+    },
+    "generalist_control vs generalist_v2_a": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.7130902570233115,
+      "ci95": [
+        0.6238698617090792,
+        0.8023106523375438
+      ],
+      "agreement_rate": 0.8666666666666667,
+      "crosstab": {
+        "supersession | supersession": 82,
+        "term_mismatch | term_mismatch": 14,
+        "term_mismatch | supersession": 1,
+        "supersession | term_mismatch": 1,
+        "supersession | no_conflict": 2,
+        "granularity | no_conflict": 2,
+        "no_conflict | supersession": 1,
+        "no_conflict | no_conflict": 8,
+        "term_mismatch | no_conflict": 8,
+        "no_conflict | term_mismatch": 1
+      }
+    },
+    "generalist_control vs generalist_v2_b": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.5614722004698514,
+      "ci95": [
+        0.45772716969524635,
+        0.6652172312444563
+      ],
+      "agreement_rate": 0.7666666666666667,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 48,
+        "no_conflict | no_conflict": 44,
+        "term_mismatch | no_conflict": 18,
+        "term_mismatch | quantity_conflict": 1,
+        "no_conflict | term_mismatch": 4,
+        "supersession | no_conflict": 3,
+        "granularity | term_mismatch": 2
+      }
+    },
+    "generalist_control vs judge_a_model": {
+      "n_labelled_by_both": 240,
+      "cohens_kappa": 0.3036529680365297,
+      "ci95": [
+        0.22962451097030218,
+        0.3776814251027572
+      ],
+      "agreement_rate": 0.49166666666666664,
+      "crosstab": {
+        "supersession | granularity": 7,
+        "supersession | no_conflict": 72,
+        "term_mismatch | term_mismatch": 73,
+        "term_mismatch | no_conflict": 13,
+        "supersession | supersession": 4,
+        "supersession | term_mismatch": 2,
+        "granularity | no_conflict": 3,
+        "supersession | semantic_conflict": 3,
+        "no_conflict | granularity": 7,
+        "no_conflict | no_conflict": 41,
+        "term_mismatch | granularity": 3,
+        "no_conflict | term_mismatch": 9,
+        "term_mismatch | quantity_conflict": 1,
+        "no_conflict | quantity_conflict": 1,
+        "granularity | term_mismatch": 1
+      }
+    },
+    "generalist_control vs judge_b_reader": {
+      "n_labelled_by_both": 240,
+      "cohens_kappa": 0.7575129533678758,
+      "ci95": [
+        0.7004982157039978,
+        0.8145276910317538
+      ],
+      "agreement_rate": 0.8375,
+      "crosstab": {
+        "supersession | supersession": 79,
+        "term_mismatch | term_mismatch": 77,
+        "term_mismatch | supersession": 2,
+        "supersession | no_conflict": 3,
+        "supersession | granularity": 6,
+        "granularity | no_conflict": 1,
+        "granularity | supersession": 1,
+        "no_conflict | no_conflict": 45,
+        "term_mismatch | no_conflict": 11,
+        "no_conflict | term_mismatch": 13,
+        "granularity | term_mismatch": 2
+      }
+    },
+    "generalist_control vs specialist_environmental_control": {
+      "n_labelled_by_both": 52,
+      "cohens_kappa": 0.6856950973807924,
+      "ci95": [
+        0.547127229957221,
+        0.8242629648043638
+      ],
+      "agreement_rate": 0.8269230769230769,
+      "crosstab": {
+        "supersession | supersession": 31,
+        "supersession | no_conflict": 1,
+        "term_mismatch | term_mismatch": 10,
+        "no_conflict | term_mismatch": 7,
+        "term_mismatch | no_conflict": 1,
+        "no_conflict | no_conflict": 2
+      }
+    },
+    "generalist_control vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 52,
+      "cohens_kappa": 0.32256383533090155,
+      "ci95": [
+        0.1613624392855062,
+        0.4837652313762969
+      ],
+      "agreement_rate": 0.5192307692307693,
+      "crosstab": {
+        "supersession | no_conflict": 19,
+        "supersession | supersession": 13,
+        "term_mismatch | term_mismatch": 7,
+        "no_conflict | no_conflict": 7,
+        "term_mismatch | no_conflict": 4,
+        "no_conflict | term_mismatch": 2
+      }
+    },
+    "generalist_control vs specialist_hazmat_transport": {
+      "n_labelled_by_both": 11,
+      "cohens_kappa": 0.6507936507936509,
+      "ci95": [
+        0.33491104889570184,
+        0.9666762526916
+      ],
+      "agreement_rate": 0.8181818181818182,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "supersession | supersession": 7,
+        "term_mismatch | term_mismatch": 2,
+        "granularity | term_mismatch": 1
+      }
+    },
+    "generalist_control vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 11,
+      "cohens_kappa": 0.1979166666666667,
+      "ci95": [
+        -0.12123941750000886,
+        0.5170727508333423
+      ],
+      "agreement_rate": 0.36363636363636365,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "supersession | supersession": 2,
+        "supersession | no_conflict": 3,
+        "supersession | granularity": 2,
+        "term_mismatch | term_mismatch": 2,
+        "granularity | term_mismatch": 1
+      }
+    },
+    "generalist_control vs specialist_occupational_safety": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.6614450753867241,
+      "ci95": [
+        0.5727476759052245,
+        0.7501424748682238
+      ],
+      "agreement_rate": 0.8045112781954887,
+      "crosstab": {
+        "supersession | supersession": 9,
+        "no_conflict | no_conflict": 36,
+        "term_mismatch | term_mismatch": 62,
+        "term_mismatch | no_conflict": 8,
+        "term_mismatch | supersession": 3,
+        "no_conflict | granularity": 3,
+        "no_conflict | supersession": 2,
+        "no_conflict | term_mismatch": 7,
+        "supersession | no_conflict": 2,
+        "granularity | term_mismatch": 1
+      }
+    },
+    "generalist_control vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.6601808176100629,
+      "ci95": [
+        0.5713179621318198,
+        0.7490436730883059
+      ],
+      "agreement_rate": 0.8045112781954887,
+      "crosstab": {
+        "supersession | supersession": 7,
+        "no_conflict | no_conflict": 46,
+        "term_mismatch | term_mismatch": 54,
+        "term_mismatch | no_conflict": 19,
+        "supersession | term_mismatch": 1,
+        "no_conflict | supersession": 1,
+        "no_conflict | term_mismatch": 1,
+        "supersession | no_conflict": 3,
+        "granularity | term_mismatch": 1
+      }
+    },
+    "generalist_control vs specialist_occupational_v1": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.5716808643257842,
+      "ci95": [
+        0.47427429336199345,
+        0.669087435289575
+      ],
+      "agreement_rate": 0.7669172932330827,
+      "crosstab": {
+        "supersession | no_conflict": 10,
+        "no_conflict | no_conflict": 38,
+        "term_mismatch | term_mismatch": 62,
+        "term_mismatch | no_conflict": 10,
+        "supersession | supersession": 1,
+        "term_mismatch | supersession": 1,
+        "no_conflict | term_mismatch": 10,
+        "granularity | granularity": 1
+      }
+    },
+    "generalist_control vs specialist_process_safety": {
+      "n_labelled_by_both": 44,
+      "cohens_kappa": 0.7244258872651355,
+      "ci95": [
+        0.5746939194860877,
+        0.8741578550441832
+      ],
+      "agreement_rate": 0.9318181818181818,
+      "crosstab": {
+        "supersession | supersession": 37,
+        "term_mismatch | supersession": 1,
+        "supersession | term_mismatch": 1,
+        "granularity | no_conflict": 1,
+        "term_mismatch | term_mismatch": 2,
+        "granularity | granularity": 1,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "generalist_control vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 44,
+      "cohens_kappa": 0.13608666215301285,
+      "ci95": [
+        -0.024268931498528407,
+        0.2964422558045541
+      ],
+      "agreement_rate": 0.3409090909090909,
+      "crosstab": {
+        "supersession | no_conflict": 25,
+        "supersession | granularity": 2,
+        "term_mismatch | granularity": 1,
+        "supersession | supersession": 11,
+        "granularity | no_conflict": 1,
+        "term_mismatch | term_mismatch": 2,
+        "granularity | granularity": 1,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "generalist_v1_a vs generalist_v2_a": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.13172541743970312,
+      "ci95": [
+        0.033091106610624615,
+        0.23035972826878162
+      ],
+      "agreement_rate": 0.35,
+      "crosstab": {
+        "no_conflict | supersession": 64,
+        "term_mismatch | term_mismatch": 15,
+        "supersession | supersession": 19,
+        "supersession | term_mismatch": 1,
+        "no_conflict | no_conflict": 8,
+        "term_mismatch | no_conflict": 11,
+        "semantic_conflict | supersession": 1,
+        "supersession | no_conflict": 1
+      }
+    },
+    "generalist_v1_a vs judge_a_model": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.47806063707304597,
+      "ci95": [
+        0.36863122233290146,
+        0.5874900518131905
+      ],
+      "agreement_rate": 0.7166666666666667,
+      "crosstab": {
+        "no_conflict | granularity": 5,
+        "no_conflict | no_conflict": 64,
+        "term_mismatch | term_mismatch": 17,
+        "supersession | supersession": 4,
+        "supersession | no_conflict": 11,
+        "no_conflict | term_mismatch": 2,
+        "supersession | term_mismatch": 1,
+        "supersession | granularity": 4,
+        "term_mismatch | no_conflict": 8,
+        "supersession | semantic_conflict": 1,
+        "no_conflict | semantic_conflict": 1,
+        "semantic_conflict | semantic_conflict": 1,
+        "term_mismatch | granularity": 1
+      }
+    },
+    "generalist_v1_a vs judge_b_reader": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.22337078651685396,
+      "ci95": [
+        0.12364618596585561,
+        0.32309538706785235
+      ],
+      "agreement_rate": 0.4,
+      "crosstab": {
+        "no_conflict | supersession": 59,
+        "term_mismatch | term_mismatch": 19,
+        "supersession | supersession": 21,
+        "no_conflict | no_conflict": 8,
+        "no_conflict | granularity": 5,
+        "term_mismatch | no_conflict": 7,
+        "semantic_conflict | supersession": 1
+      }
+    },
+    "generalist_v1_a vs specialist_environmental_control": {
+      "n_labelled_by_both": 38,
+      "cohens_kappa": 0.2407231208372978,
+      "ci95": [
+        0.05541390294821458,
+        0.426032338726381
+      ],
+      "agreement_rate": 0.4473684210526316,
+      "crosstab": {
+        "no_conflict | supersession": 20,
+        "supersession | supersession": 11,
+        "no_conflict | no_conflict": 1,
+        "term_mismatch | term_mismatch": 5,
+        "no_conflict | term_mismatch": 1
+      }
+    },
+    "generalist_v1_a vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 38,
+      "cohens_kappa": 0.7157107231920199,
+      "ci95": [
+        0.5601400599423396,
+        0.8712813864417002
+      ],
+      "agreement_rate": 0.8421052631578947,
+      "crosstab": {
+        "no_conflict | no_conflict": 19,
+        "no_conflict | supersession": 3,
+        "supersession | supersession": 10,
+        "term_mismatch | term_mismatch": 3,
+        "supersession | no_conflict": 1,
+        "term_mismatch | no_conflict": 2
+      }
+    },
+    "generalist_v1_a vs specialist_hazmat_transport": {
+      "n_labelled_by_both": 8,
+      "cohens_kappa": -0.12280701754385964,
+      "ci95": [
+        -0.12280701754385964,
+        -0.12280701754385964
+      ],
+      "agreement_rate": 0.0,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "no_conflict | supersession": 7
+      }
+    },
+    "generalist_v1_a vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 8,
+      "cohens_kappa": -0.1111111111111111,
+      "ci95": [
+        -0.5584178664069968,
+        0.33619564418477454
+      ],
+      "agreement_rate": 0.375,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "no_conflict | supersession": 2,
+        "no_conflict | no_conflict": 3,
+        "no_conflict | granularity": 2
+      }
+    },
+    "generalist_v1_a vs specialist_occupational_safety": {
+      "n_labelled_by_both": 32,
+      "cohens_kappa": 0.3772455089820359,
+      "ci95": [
+        0.166556768160458,
+        0.5879342498036138
+      ],
+      "agreement_rate": 0.59375,
+      "crosstab": {
+        "no_conflict | supersession": 7,
+        "supersession | supersession": 2,
+        "no_conflict | no_conflict": 5,
+        "term_mismatch | term_mismatch": 12,
+        "term_mismatch | no_conflict": 5,
+        "term_mismatch | supersession": 1
+      }
+    },
+    "generalist_v1_a vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 32,
+      "cohens_kappa": 0.25925925925925924,
+      "ci95": [
+        0.04190724489512193,
+        0.47661127362339656
+      ],
+      "agreement_rate": 0.53125,
+      "crosstab": {
+        "no_conflict | supersession": 7,
+        "supersession | supersession": 1,
+        "no_conflict | no_conflict": 5,
+        "term_mismatch | term_mismatch": 11,
+        "term_mismatch | no_conflict": 7,
+        "supersession | term_mismatch": 1
+      }
+    },
+    "generalist_v1_a vs specialist_occupational_v1": {
+      "n_labelled_by_both": 32,
+      "cohens_kappa": 0.6151202749140894,
+      "ci95": [
+        0.4251268313665151,
+        0.8051137184616637
+      ],
+      "agreement_rate": 0.78125,
+      "crosstab": {
+        "no_conflict | no_conflict": 11,
+        "supersession | no_conflict": 1,
+        "term_mismatch | term_mismatch": 13,
+        "term_mismatch | no_conflict": 5,
+        "supersession | supersession": 1,
+        "no_conflict | supersession": 1
+      }
+    },
+    "generalist_v1_a vs specialist_process_safety": {
+      "n_labelled_by_both": 42,
+      "cohens_kappa": -0.0021052631578947394,
+      "ci95": [
+        -0.13423739620960673,
+        0.13002686989381723
+      ],
+      "agreement_rate": 0.19047619047619047,
+      "crosstab": {
+        "no_conflict | supersession": 30,
+        "supersession | supersession": 7,
+        "supersession | term_mismatch": 1,
+        "term_mismatch | no_conflict": 1,
+        "term_mismatch | term_mismatch": 1,
+        "no_conflict | granularity": 1,
+        "semantic_conflict | supersession": 1
+      }
+    },
+    "generalist_v1_a vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 42,
+      "cohens_kappa": 0.564516129032258,
+      "ci95": [
+        0.3876071858056693,
+        0.7414250722588467
+      ],
+      "agreement_rate": 0.7857142857142857,
+      "crosstab": {
+        "no_conflict | no_conflict": 25,
+        "no_conflict | granularity": 3,
+        "supersession | supersession": 7,
+        "no_conflict | supersession": 3,
+        "term_mismatch | no_conflict": 1,
+        "term_mismatch | term_mismatch": 1,
+        "semantic_conflict | supersession": 1,
+        "supersession | granularity": 1
+      }
+    },
+    "generalist_v1_b vs generalist_v2_b": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.6517894155036618,
+      "ci95": [
+        0.5558905638570816,
+        0.747688267150242
+      ],
+      "agreement_rate": 0.825,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 43,
+        "granularity | no_conflict": 1,
+        "no_conflict | term_mismatch": 11,
+        "no_conflict | no_conflict": 56,
+        "term_mismatch | no_conflict": 8,
+        "term_mismatch | quantity_conflict": 1
+      }
+    },
+    "generalist_v1_b vs judge_a_model": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.4855629807086118,
+      "ci95": [
+        0.37692288049725564,
+        0.594203080919968
+      ],
+      "agreement_rate": 0.7166666666666667,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 45,
+        "granularity | granularity": 1,
+        "no_conflict | term_mismatch": 20,
+        "no_conflict | no_conflict": 40,
+        "no_conflict | granularity": 6,
+        "term_mismatch | no_conflict": 6,
+        "term_mismatch | quantity_conflict": 1,
+        "no_conflict | quantity_conflict": 1
+      }
+    },
+    "generalist_v1_b vs judge_b_reader": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.5888244596731682,
+      "ci95": [
+        0.4872808990159453,
+        0.6903680203303911
+      ],
+      "agreement_rate": 0.7833333333333333,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 51,
+        "granularity | no_conflict": 1,
+        "no_conflict | term_mismatch": 22,
+        "no_conflict | no_conflict": 43,
+        "term_mismatch | no_conflict": 1,
+        "no_conflict | supersession": 1,
+        "no_conflict | granularity": 1
+      }
+    },
+    "generalist_v1_b vs specialist_environmental_control": {
+      "n_labelled_by_both": 14,
+      "cohens_kappa": 0.017543859649122733,
+      "ci95": [
+        -0.3223632484043323,
+        0.3574509677025778
+      ],
+      "agreement_rate": 0.42857142857142855,
+      "crosstab": {
+        "no_conflict | term_mismatch": 7,
+        "term_mismatch | term_mismatch": 4,
+        "term_mismatch | no_conflict": 1,
+        "no_conflict | no_conflict": 2
+      }
+    },
+    "generalist_v1_b vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 14,
+      "cohens_kappa": 0.2553191489361703,
+      "ci95": [
+        -0.10711940051416002,
+        0.6177576983865006
+      ],
+      "agreement_rate": 0.6428571428571429,
+      "crosstab": {
+        "no_conflict | no_conflict": 6,
+        "term_mismatch | no_conflict": 2,
+        "no_conflict | term_mismatch": 3,
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "generalist_v1_b vs specialist_hazmat_transport": {
+      "n_labelled_by_both": 3,
+      "cohens_kappa": 0.0,
+      "ci95": [
+        -0.6533333333333334,
+        0.6533333333333334
+      ],
+      "agreement_rate": 0.3333333333333333,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 1,
+        "no_conflict | term_mismatch": 2
+      }
+    },
+    "generalist_v1_b vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 3,
+      "cohens_kappa": 0.0,
+      "ci95": [
+        -0.6533333333333334,
+        0.6533333333333334
+      ],
+      "agreement_rate": 0.3333333333333333,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 1,
+        "no_conflict | term_mismatch": 2
+      }
+    },
+    "generalist_v1_b vs specialist_occupational_safety": {
+      "n_labelled_by_both": 101,
+      "cohens_kappa": 0.49373433583959897,
+      "ci95": [
+        0.3757605912519995,
+        0.6117080804271984
+      ],
+      "agreement_rate": 0.7227722772277227,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 41,
+        "granularity | granularity": 1,
+        "no_conflict | term_mismatch": 17,
+        "no_conflict | no_conflict": 31,
+        "no_conflict | supersession": 4,
+        "term_mismatch | no_conflict": 5,
+        "no_conflict | granularity": 2
+      }
+    },
+    "generalist_v1_b vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 101,
+      "cohens_kappa": 0.7231251223810455,
+      "ci95": [
+        0.6278814571899479,
+        0.8183687875721432
+      ],
+      "agreement_rate": 0.8613861386138614,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 39,
+        "granularity | no_conflict": 1,
+        "no_conflict | term_mismatch": 6,
+        "no_conflict | no_conflict": 48,
+        "term_mismatch | no_conflict": 7
+      }
+    },
+    "generalist_v1_b vs specialist_occupational_v1": {
+      "n_labelled_by_both": 101,
+      "cohens_kappa": 0.6551593323216994,
+      "ci95": [
+        0.551338864283467,
+        0.7589798003599318
+      ],
+      "agreement_rate": 0.8217821782178217,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 44,
+        "granularity | no_conflict": 1,
+        "no_conflict | term_mismatch": 15,
+        "no_conflict | no_conflict": 39,
+        "term_mismatch | no_conflict": 1,
+        "term_mismatch | granularity": 1
+      }
+    },
+    "generalist_v1_b vs specialist_process_safety": {
+      "n_labelled_by_both": 2,
+      "cohens_kappa": 0.0,
+      "ci95": [
+        -0.98,
+        0.98
+      ],
+      "agreement_rate": 0.5,
+      "crosstab": {
+        "no_conflict | term_mismatch": 1,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "generalist_v1_b vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 2,
+      "cohens_kappa": 0.0,
+      "ci95": [
+        -0.98,
+        0.98
+      ],
+      "agreement_rate": 0.5,
+      "crosstab": {
+        "no_conflict | term_mismatch": 1,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "generalist_v2_a vs judge_a_model": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.08639523336643497,
+      "ci95": [
+        0.0037851578098101746,
+        0.16900530892305976
+      ],
+      "agreement_rate": 0.23333333333333334,
+      "crosstab": {
+        "supersession | granularity": 7,
+        "supersession | no_conflict": 69,
+        "term_mismatch | term_mismatch": 13,
+        "supersession | supersession": 4,
+        "supersession | term_mismatch": 1,
+        "no_conflict | no_conflict": 11,
+        "supersession | semantic_conflict": 3,
+        "no_conflict | granularity": 3,
+        "no_conflict | term_mismatch": 6,
+        "term_mismatch | no_conflict": 3
+      }
+    },
+    "generalist_v2_a vs judge_b_reader": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.6395881006864989,
+      "ci95": [
+        0.5420235647486444,
+        0.7371526366243533
+      ],
+      "agreement_rate": 0.825,
+      "crosstab": {
+        "supersession | supersession": 77,
+        "term_mismatch | term_mismatch": 12,
+        "supersession | no_conflict": 2,
+        "supersession | granularity": 5,
+        "term_mismatch | supersession": 1,
+        "no_conflict | supersession": 3,
+        "no_conflict | no_conflict": 10,
+        "no_conflict | term_mismatch": 7,
+        "term_mismatch | no_conflict": 3
+      }
+    },
+    "generalist_v2_a vs specialist_environmental_control": {
+      "n_labelled_by_both": 38,
+      "cohens_kappa": 0.5966029723991509,
+      "ci95": [
+        0.40841329768026213,
+        0.7847926471180398
+      ],
+      "agreement_rate": 0.868421052631579,
+      "crosstab": {
+        "supersession | supersession": 31,
+        "no_conflict | no_conflict": 1,
+        "term_mismatch | term_mismatch": 1,
+        "no_conflict | term_mismatch": 5
+      }
+    },
+    "generalist_v2_a vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 38,
+      "cohens_kappa": 0.16114790286975714,
+      "ci95": [
+        -0.03927688129988044,
+        0.3615726870393947
+      ],
+      "agreement_rate": 0.47368421052631576,
+      "crosstab": {
+        "supersession | no_conflict": 18,
+        "supersession | supersession": 13,
+        "no_conflict | no_conflict": 4,
+        "term_mismatch | term_mismatch": 1,
+        "no_conflict | term_mismatch": 2
+      }
+    },
+    "generalist_v2_a vs specialist_hazmat_transport": {
+      "n_labelled_by_both": 8,
+      "cohens_kappa": 0.4666666666666667,
+      "ci95": [
+        -0.006718307042188287,
+        0.9400516403755217
+      ],
+      "agreement_rate": 0.875,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "supersession | supersession": 7
+      }
+    },
+    "generalist_v2_a vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 8,
+      "cohens_kappa": 0.04,
+      "ci95": [
+        -0.29948195828349994,
+        0.3794819582834999
+      ],
+      "agreement_rate": 0.25,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "supersession | supersession": 2,
+        "supersession | no_conflict": 3,
+        "supersession | granularity": 2
+      }
+    },
+    "generalist_v2_a vs specialist_occupational_safety": {
+      "n_labelled_by_both": 32,
+      "cohens_kappa": 0.7647058823529411,
+      "ci95": [
+        0.6103250030888531,
+        0.9190867616170292
+      ],
+      "agreement_rate": 0.84375,
+      "crosstab": {
+        "supersession | supersession": 8,
+        "supersession | no_conflict": 1,
+        "term_mismatch | term_mismatch": 11,
+        "no_conflict | no_conflict": 8,
+        "no_conflict | supersession": 2,
+        "no_conflict | term_mismatch": 1,
+        "term_mismatch | no_conflict": 1
+      }
+    },
+    "generalist_v2_a vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 32,
+      "cohens_kappa": 0.7159763313609467,
+      "ci95": [
+        0.5495316073416912,
+        0.8824210553802023
+      ],
+      "agreement_rate": 0.8125,
+      "crosstab": {
+        "supersession | supersession": 7,
+        "supersession | no_conflict": 1,
+        "term_mismatch | term_mismatch": 10,
+        "no_conflict | no_conflict": 9,
+        "supersession | term_mismatch": 1,
+        "no_conflict | term_mismatch": 1,
+        "term_mismatch | no_conflict": 2,
+        "no_conflict | supersession": 1
+      }
+    },
+    "generalist_v2_a vs specialist_occupational_v1": {
+      "n_labelled_by_both": 32,
+      "cohens_kappa": 0.42081447963800905,
+      "ci95": [
+        0.2123510210303657,
+        0.6292779382456524
+      ],
+      "agreement_rate": 0.625,
+      "crosstab": {
+        "supersession | no_conflict": 8,
+        "term_mismatch | term_mismatch": 11,
+        "no_conflict | no_conflict": 8,
+        "supersession | supersession": 1,
+        "no_conflict | term_mismatch": 2,
+        "no_conflict | supersession": 1,
+        "term_mismatch | no_conflict": 1
+      }
+    },
+    "generalist_v2_a vs specialist_process_safety": {
+      "n_labelled_by_both": 42,
+      "cohens_kappa": 0.7606837606837605,
+      "ci95": [
+        0.6162984999617249,
+        0.9050690214057961
+      ],
+      "agreement_rate": 0.9523809523809523,
+      "crosstab": {
+        "supersession | supersession": 37,
+        "term_mismatch | term_mismatch": 2,
+        "no_conflict | no_conflict": 1,
+        "no_conflict | granularity": 1,
+        "no_conflict | supersession": 1
+      }
+    },
+    "generalist_v2_a vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 42,
+      "cohens_kappa": 0.013312451057165196,
+      "ci95": [
+        -0.14726598651268025,
+        0.17389088862701063
+      ],
+      "agreement_rate": 0.2857142857142857,
+      "crosstab": {
+        "supersession | no_conflict": 25,
+        "supersession | granularity": 2,
+        "supersession | supersession": 10,
+        "term_mismatch | supersession": 1,
+        "no_conflict | no_conflict": 1,
+        "term_mismatch | term_mismatch": 1,
+        "no_conflict | granularity": 2
+      }
+    },
+    "generalist_v2_b vs judge_a_model": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.4682198024816409,
+      "ci95": [
+        0.35840765904743355,
+        0.5780319459158483
+      ],
+      "agreement_rate": 0.7083333333333334,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 44,
+        "no_conflict | granularity": 3,
+        "no_conflict | no_conflict": 40,
+        "no_conflict | term_mismatch": 21,
+        "quantity_conflict | quantity_conflict": 1,
+        "term_mismatch | granularity": 4,
+        "no_conflict | quantity_conflict": 1,
+        "term_mismatch | no_conflict": 6
+      }
+    },
+    "generalist_v2_b vs judge_b_reader": {
+      "n_labelled_by_both": 120,
+      "cohens_kappa": 0.6017522899243328,
+      "ci95": [
+        0.5012876408461017,
+        0.702216939002564
+      ],
+      "agreement_rate": 0.7916666666666666,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 52,
+        "no_conflict | no_conflict": 43,
+        "no_conflict | term_mismatch": 20,
+        "quantity_conflict | term_mismatch": 1,
+        "term_mismatch | no_conflict": 2,
+        "no_conflict | supersession": 1,
+        "no_conflict | granularity": 1
+      }
+    },
+    "generalist_v2_b vs specialist_environmental_control": {
+      "n_labelled_by_both": 14,
+      "cohens_kappa": -0.1965811965811965,
+      "ci95": [
+        -0.5028685874610135,
+        0.1097061942986205
+      ],
+      "agreement_rate": 0.2857142857142857,
+      "crosstab": {
+        "no_conflict | term_mismatch": 7,
+        "quantity_conflict | term_mismatch": 1,
+        "term_mismatch | term_mismatch": 3,
+        "term_mismatch | no_conflict": 2,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "generalist_v2_b vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 14,
+      "cohens_kappa": 0.1764705882352941,
+      "ci95": [
+        -0.18287522259976474,
+        0.5358163990703529
+      ],
+      "agreement_rate": 0.5714285714285714,
+      "crosstab": {
+        "no_conflict | no_conflict": 5,
+        "quantity_conflict | no_conflict": 1,
+        "no_conflict | term_mismatch": 3,
+        "term_mismatch | term_mismatch": 3,
+        "term_mismatch | no_conflict": 2
+      }
+    },
+    "generalist_v2_b vs specialist_hazmat_transport": {
+      "n_labelled_by_both": 3,
+      "cohens_kappa": 1.0,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "agreement_rate": 1.0,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "generalist_v2_b vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 3,
+      "cohens_kappa": 1.0,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "agreement_rate": 1.0,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "generalist_v2_b vs specialist_occupational_safety": {
+      "n_labelled_by_both": 101,
+      "cohens_kappa": 0.5271024671348821,
+      "ci95": [
+        0.4115314718446831,
+        0.642673462425081
+      ],
+      "agreement_rate": 0.7425742574257426,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 42,
+        "no_conflict | granularity": 3,
+        "no_conflict | no_conflict": 33,
+        "no_conflict | supersession": 3,
+        "no_conflict | term_mismatch": 16,
+        "term_mismatch | no_conflict": 3,
+        "term_mismatch | supersession": 1
+      }
+    },
+    "generalist_v2_b vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 101,
+      "cohens_kappa": 0.7000593941793704,
+      "ci95": [
+        0.6014991988862273,
+        0.7986195894725134
+      ],
+      "agreement_rate": 0.8514851485148515,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 38,
+        "no_conflict | no_conflict": 48,
+        "no_conflict | term_mismatch": 7,
+        "term_mismatch | no_conflict": 8
+      }
+    },
+    "generalist_v2_b vs specialist_occupational_v1": {
+      "n_labelled_by_both": 101,
+      "cohens_kappa": 0.6332186544342508,
+      "ci95": [
+        0.5267932661167555,
+        0.7396440427517462
+      ],
+      "agreement_rate": 0.8118811881188119,
+      "crosstab": {
+        "term_mismatch | term_mismatch": 43,
+        "no_conflict | no_conflict": 39,
+        "no_conflict | term_mismatch": 16,
+        "term_mismatch | no_conflict": 2,
+        "term_mismatch | granularity": 1
+      }
+    },
+    "generalist_v2_b vs specialist_process_safety": {
+      "n_labelled_by_both": 2,
+      "cohens_kappa": 0.0,
+      "ci95": [
+        -0.98,
+        0.98
+      ],
+      "agreement_rate": 0.5,
+      "crosstab": {
+        "no_conflict | term_mismatch": 1,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "generalist_v2_b vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 2,
+      "cohens_kappa": 0.0,
+      "ci95": [
+        -0.98,
+        0.98
+      ],
+      "agreement_rate": 0.5,
+      "crosstab": {
+        "no_conflict | term_mismatch": 1,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "judge_a_model vs judge_b_reader": {
+      "n_labelled_by_both": 240,
+      "cohens_kappa": 0.29632299927901945,
+      "ci95": [
+        0.22190593871823533,
+        0.37074005983980357
+      ],
+      "agreement_rate": 0.49166666666666664,
+      "crosstab": {
+        "granularity | supersession": 5,
+        "no_conflict | supersession": 68,
+        "term_mismatch | term_mismatch": 71,
+        "supersession | supersession": 4,
+        "no_conflict | no_conflict": 41,
+        "no_conflict | granularity": 4,
+        "term_mismatch | supersession": 2,
+        "semantic_conflict | supersession": 3,
+        "granularity | granularity": 2,
+        "granularity | no_conflict": 6,
+        "no_conflict | term_mismatch": 16,
+        "term_mismatch | no_conflict": 12,
+        "granularity | term_mismatch": 4,
+        "quantity_conflict | term_mismatch": 1,
+        "quantity_conflict | no_conflict": 1
+      }
+    },
+    "judge_a_model vs specialist_environmental_control": {
+      "n_labelled_by_both": 52,
+      "cohens_kappa": 0.20419763882815914,
+      "ci95": [
+        0.0655604319401854,
+        0.3428348457161329
+      ],
+      "agreement_rate": 0.3269230769230769,
+      "crosstab": {
+        "no_conflict | supersession": 25,
+        "supersession | supersession": 4,
+        "no_conflict | no_conflict": 4,
+        "term_mismatch | term_mismatch": 9,
+        "granularity | supersession": 2,
+        "no_conflict | term_mismatch": 6,
+        "granularity | term_mismatch": 1,
+        "quantity_conflict | term_mismatch": 1
+      }
+    },
+    "judge_a_model vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 52,
+      "cohens_kappa": 0.41880341880341887,
+      "ci95": [
+        0.2488036716736823,
+        0.5888031659331554
+      ],
+      "agreement_rate": 0.6730769230769231,
+      "crosstab": {
+        "no_conflict | no_conflict": 25,
+        "no_conflict | supersession": 7,
+        "supersession | supersession": 4,
+        "term_mismatch | term_mismatch": 6,
+        "granularity | supersession": 2,
+        "term_mismatch | no_conflict": 3,
+        "granularity | no_conflict": 1,
+        "quantity_conflict | no_conflict": 1,
+        "no_conflict | term_mismatch": 3
+      }
+    },
+    "judge_a_model vs specialist_hazmat_transport": {
+      "n_labelled_by_both": 11,
+      "cohens_kappa": 0.14563106796116504,
+      "ci95": [
+        -0.13963278073260105,
+        0.4308949166549311
+      ],
+      "agreement_rate": 0.2727272727272727,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "no_conflict | supersession": 6,
+        "granularity | supersession": 1,
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "judge_a_model vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 11,
+      "cohens_kappa": 0.46987951807228917,
+      "ci95": [
+        0.1266380915378808,
+        0.8131209446066976
+      ],
+      "agreement_rate": 0.6363636363636364,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "no_conflict | supersession": 2,
+        "no_conflict | no_conflict": 3,
+        "no_conflict | granularity": 1,
+        "granularity | granularity": 1,
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "judge_a_model vs specialist_occupational_safety": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.4357886617817201,
+      "ci95": [
+        0.33135984954944675,
+        0.5402174740139934
+      ],
+      "agreement_rate": 0.6691729323308271,
+      "crosstab": {
+        "no_conflict | supersession": 11,
+        "granularity | no_conflict": 3,
+        "term_mismatch | term_mismatch": 56,
+        "no_conflict | no_conflict": 32,
+        "term_mismatch | supersession": 2,
+        "no_conflict | term_mismatch": 10,
+        "granularity | term_mismatch": 4,
+        "term_mismatch | no_conflict": 10,
+        "granularity | granularity": 1,
+        "granularity | supersession": 1,
+        "no_conflict | granularity": 2,
+        "quantity_conflict | no_conflict": 1
+      }
+    },
+    "judge_a_model vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.40583738707435724,
+      "ci95": [
+        0.2992763528539726,
+        0.5123984212947419
+      ],
+      "agreement_rate": 0.6616541353383458,
+      "crosstab": {
+        "no_conflict | supersession": 8,
+        "granularity | no_conflict": 9,
+        "term_mismatch | term_mismatch": 49,
+        "no_conflict | no_conflict": 39,
+        "no_conflict | term_mismatch": 8,
+        "term_mismatch | no_conflict": 19,
+        "quantity_conflict | no_conflict": 1
+      }
+    },
+    "judge_a_model vs specialist_occupational_v1": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.6118407337919534,
+      "ci95": [
+        0.5177592714858607,
+        0.7059221960980461
+      ],
+      "agreement_rate": 0.7894736842105263,
+      "crosstab": {
+        "no_conflict | no_conflict": 44,
+        "granularity | no_conflict": 7,
+        "term_mismatch | term_mismatch": 61,
+        "no_conflict | supersession": 1,
+        "term_mismatch | supersession": 1,
+        "no_conflict | term_mismatch": 9,
+        "granularity | term_mismatch": 2,
+        "quantity_conflict | no_conflict": 1,
+        "term_mismatch | no_conflict": 6,
+        "no_conflict | granularity": 1
+      }
+    },
+    "judge_a_model vs specialist_process_safety": {
+      "n_labelled_by_both": 44,
+      "cohens_kappa": 0.0744336569579288,
+      "ci95": [
+        -0.021394287810437063,
+        0.17026160172629468
+      ],
+      "agreement_rate": 0.11363636363636363,
+      "crosstab": {
+        "granularity | supersession": 4,
+        "no_conflict | supersession": 30,
+        "term_mismatch | supersession": 1,
+        "term_mismatch | term_mismatch": 3,
+        "no_conflict | no_conflict": 2,
+        "no_conflict | granularity": 1,
+        "semantic_conflict | supersession": 3
+      }
+    },
+    "judge_a_model vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 44,
+      "cohens_kappa": 0.3104799216454457,
+      "ci95": [
+        0.11475060985515503,
+        0.5062092334357363
+      ],
+      "agreement_rate": 0.6363636363636364,
+      "crosstab": {
+        "granularity | no_conflict": 2,
+        "no_conflict | granularity": 3,
+        "no_conflict | no_conflict": 25,
+        "no_conflict | supersession": 5,
+        "term_mismatch | supersession": 2,
+        "granularity | supersession": 1,
+        "term_mismatch | term_mismatch": 2,
+        "semantic_conflict | supersession": 3,
+        "granularity | granularity": 1
+      }
+    },
+    "judge_b_reader vs specialist_environmental_control": {
+      "n_labelled_by_both": 52,
+      "cohens_kappa": 0.615849563465413,
+      "ci95": [
+        0.4662620574155634,
+        0.7654370695152626
+      ],
+      "agreement_rate": 0.7884615384615384,
+      "crosstab": {
+        "supersession | supersession": 31,
+        "supersession | no_conflict": 1,
+        "term_mismatch | term_mismatch": 9,
+        "no_conflict | term_mismatch": 8,
+        "term_mismatch | no_conflict": 2,
+        "no_conflict | no_conflict": 1
+      }
+    },
+    "judge_b_reader vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 52,
+      "cohens_kappa": 0.2683689421573736,
+      "ci95": [
+        0.10716754611197829,
+        0.4295703382027689
+      ],
+      "agreement_rate": 0.4807692307692308,
+      "crosstab": {
+        "supersession | no_conflict": 19,
+        "supersession | supersession": 13,
+        "term_mismatch | term_mismatch": 6,
+        "no_conflict | term_mismatch": 3,
+        "no_conflict | no_conflict": 6,
+        "term_mismatch | no_conflict": 5
+      }
+    },
+    "judge_b_reader vs specialist_hazmat_transport": {
+      "n_labelled_by_both": 11,
+      "cohens_kappa": 0.5540540540540542,
+      "ci95": [
+        0.21750413551915437,
+        0.890603972588954
+      ],
+      "agreement_rate": 0.7272727272727273,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "supersession | supersession": 5,
+        "granularity | supersession": 2,
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "judge_b_reader vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 11,
+      "cohens_kappa": 0.5368421052631578,
+      "ci95": [
+        0.21601064956327293,
+        0.8576735609630426
+      ],
+      "agreement_rate": 0.6363636363636364,
+      "crosstab": {
+        "term_mismatch | no_conflict": 1,
+        "supersession | supersession": 2,
+        "supersession | no_conflict": 3,
+        "granularity | granularity": 2,
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "judge_b_reader vs specialist_occupational_safety": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.5908910498114704,
+      "ci95": [
+        0.49569388667390935,
+        0.6860882129490316
+      ],
+      "agreement_rate": 0.7669172932330827,
+      "crosstab": {
+        "supersession | supersession": 8,
+        "no_conflict | no_conflict": 32,
+        "term_mismatch | term_mismatch": 62,
+        "term_mismatch | no_conflict": 13,
+        "term_mismatch | supersession": 1,
+        "no_conflict | supersession": 5,
+        "no_conflict | term_mismatch": 7,
+        "no_conflict | granularity": 3,
+        "supersession | term_mismatch": 1,
+        "granularity | no_conflict": 1
+      }
+    },
+    "judge_b_reader vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.6045197740112994,
+      "ci95": [
+        0.5104640069604512,
+        0.6985755410621476
+      ],
+      "agreement_rate": 0.7744360902255639,
+      "crosstab": {
+        "supersession | supersession": 7,
+        "no_conflict | no_conflict": 43,
+        "term_mismatch | term_mismatch": 53,
+        "term_mismatch | no_conflict": 23,
+        "supersession | term_mismatch": 1,
+        "no_conflict | supersession": 1,
+        "no_conflict | term_mismatch": 3,
+        "supersession | no_conflict": 1,
+        "granularity | no_conflict": 1
+      }
+    },
+    "judge_b_reader vs specialist_occupational_v1": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.578758445945946,
+      "ci95": [
+        0.4816876376626721,
+        0.67582925422922
+      ],
+      "agreement_rate": 0.7744360902255639,
+      "crosstab": {
+        "supersession | no_conflict": 8,
+        "no_conflict | no_conflict": 38,
+        "term_mismatch | term_mismatch": 64,
+        "term_mismatch | no_conflict": 11,
+        "supersession | supersession": 1,
+        "no_conflict | supersession": 1,
+        "no_conflict | term_mismatch": 8,
+        "granularity | no_conflict": 1,
+        "term_mismatch | granularity": 1
+      }
+    },
+    "judge_b_reader vs specialist_process_safety": {
+      "n_labelled_by_both": 44,
+      "cohens_kappa": 0.4440433212996389,
+      "ci95": [
+        0.24200919549861216,
+        0.6460774471006656
+      ],
+      "agreement_rate": 0.8409090909090909,
+      "crosstab": {
+        "supersession | supersession": 34,
+        "no_conflict | supersession": 1,
+        "granularity | supersession": 3,
+        "supersession | term_mismatch": 1,
+        "no_conflict | no_conflict": 2,
+        "term_mismatch | term_mismatch": 1,
+        "supersession | granularity": 1,
+        "no_conflict | term_mismatch": 1
+      }
+    },
+    "judge_b_reader vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 44,
+      "cohens_kappa": 0.10014104372355424,
+      "ci95": [
+        -0.0635165819413115,
+        0.26379866938842
+      ],
+      "agreement_rate": 0.3409090909090909,
+      "crosstab": {
+        "supersession | no_conflict": 21,
+        "supersession | granularity": 4,
+        "supersession | supersession": 11,
+        "no_conflict | no_conflict": 3,
+        "granularity | no_conflict": 3,
+        "term_mismatch | term_mismatch": 1,
+        "no_conflict | term_mismatch": 1
+      }
+    },
+    "specialist_environmental_control vs specialist_environmental_control_v1": {
+      "n_labelled_by_both": 52,
+      "cohens_kappa": 0.3333333333333333,
+      "ci95": [
+        0.17640774260434794,
+        0.4902589240623187
+      ],
+      "agreement_rate": 0.5,
+      "crosstab": {
+        "supersession | no_conflict": 18,
+        "supersession | supersession": 13,
+        "no_conflict | no_conflict": 4,
+        "term_mismatch | term_mismatch": 9,
+        "term_mismatch | no_conflict": 8
+      }
+    },
+    "specialist_hazmat_transport vs specialist_hazmat_transport_v1": {
+      "n_labelled_by_both": 11,
+      "cohens_kappa": 0.41489361702127653,
+      "ci95": [
+        0.08103973591982971,
+        0.7487474981227233
+      ],
+      "agreement_rate": 0.5454545454545454,
+      "crosstab": {
+        "no_conflict | no_conflict": 1,
+        "supersession | supersession": 2,
+        "supersession | no_conflict": 3,
+        "supersession | granularity": 2,
+        "term_mismatch | term_mismatch": 3
+      }
+    },
+    "specialist_occupational_safety vs specialist_occupational_safety_v2_replicate": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.5676450903528062,
+      "ci95": [
+        0.4712306188077232,
+        0.6640595618978892
+      ],
+      "agreement_rate": 0.7443609022556391,
+      "crosstab": {
+        "supersession | supersession": 7,
+        "no_conflict | no_conflict": 41,
+        "term_mismatch | term_mismatch": 51,
+        "supersession | term_mismatch": 2,
+        "supersession | no_conflict": 5,
+        "term_mismatch | no_conflict": 19,
+        "no_conflict | supersession": 1,
+        "granularity | no_conflict": 3,
+        "no_conflict | term_mismatch": 4
+      }
+    },
+    "specialist_occupational_safety vs specialist_occupational_v1": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.6257286432160806,
+      "ci95": [
+        0.5333455763153396,
+        0.7181117101168215
+      ],
+      "agreement_rate": 0.7894736842105263,
+      "crosstab": {
+        "supersession | no_conflict": 9,
+        "no_conflict | no_conflict": 40,
+        "term_mismatch | term_mismatch": 63,
+        "supersession | supersession": 2,
+        "supersession | term_mismatch": 3,
+        "term_mismatch | no_conflict": 6,
+        "no_conflict | term_mismatch": 6,
+        "granularity | no_conflict": 3,
+        "term_mismatch | granularity": 1
+      }
+    },
+    "specialist_occupational_safety_v2_replicate vs specialist_occupational_v1": {
+      "n_labelled_by_both": 133,
+      "cohens_kappa": 0.5578181818181819,
+      "ci95": [
+        0.4593342094015165,
+        0.6563021542348473
+      ],
+      "agreement_rate": 0.7593984962406015,
+      "crosstab": {
+        "supersession | no_conflict": 8,
+        "no_conflict | no_conflict": 48,
+        "term_mismatch | term_mismatch": 53,
+        "term_mismatch | supersession": 1,
+        "no_conflict | supersession": 1,
+        "no_conflict | term_mismatch": 19,
+        "term_mismatch | no_conflict": 2,
+        "term_mismatch | granularity": 1
+      }
+    },
+    "specialist_process_safety vs specialist_process_safety_v1": {
+      "n_labelled_by_both": 44,
+      "cohens_kappa": 0.12242090784044013,
+      "ci95": [
+        -0.03919799653446354,
+        0.2840398122153438
+      ],
+      "agreement_rate": 0.3409090909090909,
+      "crosstab": {
+        "supersession | no_conflict": 25,
+        "supersession | granularity": 3,
+        "supersession | supersession": 10,
+        "term_mismatch | supersession": 1,
+        "no_conflict | no_conflict": 2,
+        "term_mismatch | term_mismatch": 2,
+        "granularity | granularity": 1
+      }
+    }
+  },
+  "construction_labels": {
+    "n_flagged": 29,
+    "detection_precision": 1.0,
+    "detection_precision_ci95": [
+      0.8830264055344442,
+      1.0
+    ],
+    "typing_precision": 0.0,
+    "typing_precision_ci95": [
+      0.0,
+      0.11697359446555587
+    ],
+    "recall_any_real_problem": 0.32222222222222224,
+    "n_annotated_conflicts": 90,
+    "n_pairs_total": 90,
+    "label_distribution_of_flagged": {
+      "quantity_conflict": 24,
+      "supersession": 2
+    }
+  },
+  "effects": {
+    "rubric_effect_at_generalist": {
+      "difference": 0.3658536585365854,
+      "a": "generalist_v2",
+      "b": "generalist_v1"
+    },
+    "rubric_effect_at_specialist": {
+      "difference": 0.3170731707317073,
+      "a": "specialist_v2",
+      "b": "specialist_v1"
+    },
+    "specialisation_effect_at_v1": {
+      "difference": 0.04878048780487809,
+      "a": "specialist_v1",
+      "b": "generalist_v1"
+    },
+    "specialisation_effect_at_v2": {
+      "difference": 0.0,
+      "a": "specialist_v2",
+      "b": "generalist_v2"
+    },
+    "interaction": {
+      "difference_of_differences": 0.04878048780487809,
+      "reading": "the rubric's effect at the generalist cell minus its effect at the specialist cell; near zero means the two factors act independently"
+    },
+    "model_matched_rubric_contrast": {
+      "cell": "occupational_matched",
+      "readers": [
+        "specialist_occupational_v1",
+        "specialist_occupational_safety_v2_replicate"
+      ],
+      "per_reader": {
+        "specialist_occupational_v1": {
+          "n_flagged": 12,
+          "detection_precision": 0.08333333333333333,
+          "detection_precision_ci95": [
+            0.014864709450773478,
+            0.35388592179859524
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "recall_any_real_problem": 0.5,
+          "n_annotated_conflicts": 2,
+          "n_pairs_total": 133,
+          "label_distribution_of_flagged": {
+            "no_conflict": 5,
+            "supersession": 1,
+            "term_mismatch": 6
+          }
+        },
+        "specialist_occupational_safety_v2_replicate": {
+          "n_flagged": 12,
+          "detection_precision": 0.16666666666666666,
+          "detection_precision_ci95": [
+            0.04696414761482223,
+            0.44803635738467273
+          ],
+          "typing_precision": 0.0,
+          "typing_precision_ci95": [
+            0.0,
+            0.2425007574992425
+          ],
+          "recall_any_real_problem": 0.25,
+          "n_annotated_conflicts": 8,
+          "n_pairs_total": 133,
+          "label_distribution_of_flagged": {
+            "supersession": 2,
+            "no_conflict": 5,
+            "term_mismatch": 5
+          }
+        }
+      },
+      "consensus": {
+        "n_flagged": 12,
+        "detection_precision": 0.0,
+        "detection_precision_ci95": [
+          0.0,
+          0.2425007574992425
+        ],
+        "typing_precision": 0.0,
+        "typing_precision_ci95": [
+          0.0,
+          0.2425007574992425
+        ],
+        "recall_any_real_problem": null,
+        "n_annotated_conflicts": 0,
+        "n_pairs_total": 133,
+        "label_distribution_of_flagged": {
+          "no_conflict": 8,
+          "term_mismatch": 4
+        }
+      }
+    }
+  },
+  "decomposition": {
+    "generalist": {
+      "v1_conflicts": 21,
+      "v2_conflicts": 82,
+      "in_both": 19,
+      "v1_only": 2,
+      "v2_only_the_old_rubric_missed": 63,
+      "share_of_the_new_conflicts_the_old_rubric_missed": 0.768
+    },
+    "specialist": {
+      "v1_conflicts": 28,
+      "v2_conflicts": 90,
+      "in_both": 27,
+      "v1_only": 1,
+      "v2_only_the_old_rubric_missed": 63,
+      "share_of_the_new_conflicts_the_old_rubric_missed": 0.7
+    }
+  }
+}

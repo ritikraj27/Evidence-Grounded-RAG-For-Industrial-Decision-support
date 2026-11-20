@@ -1,0 +1,278 @@
+[
+  {
+    "title": "Economic order quantity",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/economic-order-quantity.md",
+    "bytes": 45156
+  },
+  {
+    "title": "Incoterms",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/incoterms.md",
+    "bytes": 68701
+  },
+  {
+    "title": "Safety stock",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/safety-stock.md",
+    "bytes": 34670
+  },
+  {
+    "title": "Just-in-time manufacturing",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/just-in-time-manufacturing.md",
+    "bytes": 59762
+  },
+  {
+    "title": "Material requirements planning",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/material-requirements-planning.md",
+    "bytes": 12305
+  },
+  {
+    "title": "Bill of materials",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/bill-of-materials.md",
+    "bytes": 25850
+  },
+  {
+    "title": "Kanban",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/kanban.md",
+    "bytes": 47854
+  },
+  {
+    "title": "Theory of constraints",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/theory-of-constraints.md",
+    "bytes": 96071
+  },
+  {
+    "title": "Inventory management",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/inventory-management.md",
+    "bytes": 4026
+  },
+  {
+    "title": "Strategic sourcing",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/strategic-sourcing.md",
+    "bytes": 28645
+  },
+  {
+    "title": "Third-party logistics",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/third-party-logistics.md",
+    "bytes": 48809
+  },
+  {
+    "title": "Logistics",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/logistics.md",
+    "bytes": 114359
+  },
+  {
+    "title": "Demand forecasting",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/demand-forecasting.md",
+    "bytes": 50005
+  },
+  {
+    "title": "Six Sigma",
+    "category": "supply_chain_management",
+    "path": "data/corpus/supply_chain_management/six-sigma.md",
+    "bytes": 107514
+  },
+  {
+    "title": "Predictive maintenance",
+    "category": "predictive_maintenance",
+    "path": "data/corpus/predictive_maintenance/predictive-maintenance.md",
+    "bytes": 34008
+  },
+  {
+    "title": "Total productive maintenance",
+    "category": "predictive_maintenance",
+    "path": "data/corpus/predictive_maintenance/total-productive-maintenance.md",
+    "bytes": 27782
+  },
+  {
+    "title": "Overall equipment effectiveness",
+    "category": "predictive_maintenance",
+    "path": "data/corpus/predictive_maintenance/overall-equipment-effectiveness.md",
+    "bytes": 50846
+  },
+  {
+    "title": "Root cause analysis",
+    "category": "predictive_maintenance",
+    "path": "data/corpus/predictive_maintenance/root-cause-analysis.md",
+    "bytes": 56093
+  },
+  {
+    "title": "Condition monitoring",
+    "category": "predictive_maintenance",
+    "path": "data/corpus/predictive_maintenance/condition-monitoring.md",
+    "bytes": 40212
+  },
+  {
+    "title": "Failure mode and effects analysis",
+    "category": "predictive_maintenance",
+    "path": "data/corpus/predictive_maintenance/failure-mode-and-effects-analysis.md",
+    "bytes": 90529
+  },
+  {
+    "title": "Job shop scheduling",
+    "category": "production_scheduling",
+    "path": "data/corpus/production_scheduling/job-shop-scheduling.md",
+    "bytes": 42795
+  },
+  {
+    "title": "Flow shop scheduling",
+    "category": "production_scheduling",
+    "path": "data/corpus/production_scheduling/flow-shop-scheduling.md",
+    "bytes": 20491
+  },
+  {
+    "title": "Production planning",
+    "category": "production_scheduling",
+    "path": "data/corpus/production_scheduling/production-planning.md",
+    "bytes": 15909
+  },
+  {
+    "title": "Gantt chart",
+    "category": "production_scheduling",
+    "path": "data/corpus/production_scheduling/gantt-chart.md",
+    "bytes": 35866
+  },
+  {
+    "title": "Lean manufacturing",
+    "category": "production_scheduling",
+    "path": "data/corpus/production_scheduling/lean-manufacturing.md",
+    "bytes": 59752
+  },
+  {
+    "title": "Takt time",
+    "category": "production_scheduling",
+    "path": "data/corpus/production_scheduling/takt-time.md",
+    "bytes": 36739
+  },
+  {
+    "title": "Line balancing",
+    "category": "production_scheduling",
+    "path": "data/corpus/production_scheduling/line-balancing.md",
+    "bytes": 29262
+  },
+  {
+    "title": "Statistical process control",
+    "category": "quality_engineering",
+    "path": "data/corpus/quality_engineering/statistical-process-control.md",
+    "bytes": 82661
+  },
+  {
+    "title": "Control chart",
+    "category": "quality_engineering",
+    "path": "data/corpus/quality_engineering/control-chart.md",
+    "bytes": 85062
+  },
+  {
+    "title": "Eight disciplines problem solving",
+    "category": "quality_engineering",
+    "path": "data/corpus/quality_engineering/eight-disciplines-problem-solving.md",
+    "bytes": 23646
+  },
+  {
+    "title": "Quality control",
+    "category": "quality_engineering",
+    "path": "data/corpus/quality_engineering/quality-control.md",
+    "bytes": 57088
+  },
+  {
+    "title": "ISO 9001",
+    "category": "quality_engineering",
+    "path": "data/corpus/quality_engineering/iso-9001.md",
+    "bytes": 135061
+  },
+  {
+    "title": "Design for manufacturability",
+    "category": "quality_engineering",
+    "path": "data/corpus/quality_engineering/design-for-manufacturability.md",
+    "bytes": 62251
+  },
+  {
+    "title": "Taguchi methods",
+    "category": "quality_engineering",
+    "path": "data/corpus/quality_engineering/taguchi-methods.md",
+    "bytes": 78172
+  },
+  {
+    "title": "Material handling",
+    "category": "facility_layout",
+    "path": "data/corpus/facility_layout/material-handling.md",
+    "bytes": 34859
+  },
+  {
+    "title": "Warehouse",
+    "category": "facility_layout",
+    "path": "data/corpus/facility_layout/warehouse.md",
+    "bytes": 80910
+  },
+  {
+    "title": "Plant layout",
+    "category": "facility_layout",
+    "path": "data/corpus/facility_layout/plant-layout.md",
+    "bytes": 13618
+  },
+  {
+    "title": "Queueing theory",
+    "category": "facility_layout",
+    "path": "data/corpus/facility_layout/queueing-theory.md",
+    "bytes": 79727
+  },
+  {
+    "title": "Little's law",
+    "category": "facility_layout",
+    "path": "data/corpus/facility_layout/little-s-law.md",
+    "bytes": 39178
+  },
+  {
+    "title": "Reliability engineering",
+    "category": "reliability_engineering",
+    "path": "data/corpus/reliability_engineering/reliability-engineering.md",
+    "bytes": 222747
+  },
+  {
+    "title": "Mean time between failures",
+    "category": "reliability_engineering",
+    "path": "data/corpus/reliability_engineering/mean-time-between-failures.md",
+    "bytes": 46340
+  },
+  {
+    "title": "Mean time to repair",
+    "category": "reliability_engineering",
+    "path": "data/corpus/reliability_engineering/mean-time-to-repair.md",
+    "bytes": 13625
+  },
+  {
+    "title": "Failure rate",
+    "category": "reliability_engineering",
+    "path": "data/corpus/reliability_engineering/failure-rate.md",
+    "bytes": 81987
+  },
+  {
+    "title": "Maintainability",
+    "category": "reliability_engineering",
+    "path": "data/corpus/reliability_engineering/maintainability.md",
+    "bytes": 24133
+  },
+  {
+    "title": "Weibull distribution",
+    "category": "reliability_engineering",
+    "path": "data/corpus/reliability_engineering/weibull-distribution.md",
+    "bytes": 125022
+  },
+  {
+    "title": "Fault tree analysis",
+    "category": "reliability_engineering",
+    "path": "data/corpus/reliability_engineering/fault-tree-analysis.md",
+    "bytes": 51670
+  }
+]
